@@ -90,15 +90,28 @@ def run():
     # Export snapshot
     export_json_snapshot(DATA_DIR / "snapshot.json")
 
+    now_utc = datetime.now(timezone.utc)
+    period_from = now_utc - timedelta(hours=cfg["schedule"]["interval_hours"])
+
+    # Always render and save digest for GitHub Pages (even if no new articles)
+    all_recent = get_articles_since(period_from - timedelta(hours=cfg["schedule"]["interval_hours"] * 4))
+    display_articles = new_articles if new_articles else all_recent
+    if display_articles:
+        html = render_digest(display_articles, period_from, now_utc)
+        save_last_digest(html)
+        logger.info("Digest saved (%d articles)", len(display_articles))
+
     if not new_articles:
         logger.info("No new articles — skipping email")
         return
 
-    now_utc = datetime.now(timezone.utc)
-    period_from = now_utc - timedelta(hours=cfg["schedule"]["interval_hours"])
-
     html = render_digest(new_articles, period_from, now_utc)
     save_last_digest(html)
+
+    if not os.environ.get("GMAIL_USER"):
+        logger.info("GMAIL_USER not set — skipping email send")
+        return
+
     send_email(html, now_utc)
     logger.info("Done.")
 
