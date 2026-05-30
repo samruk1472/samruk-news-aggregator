@@ -50,6 +50,18 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python main.py
 
+      - name: Publish digest to GitHub Pages
+        if: always()
+        run: |
+          if [ -f data/last_digest.html ]; then
+            cp data/last_digest.html docs/index.html
+            git config user.email "actions@github.com"
+            git config user.name "GitHub Actions"
+            git add docs/index.html
+            git diff --cached --quiet || git commit -m "chore: update digest [skip ci]"
+            git push
+          fi
+
       - name: Upload snapshot artifact
         uses: actions/upload-artifact@v4
         if: always()

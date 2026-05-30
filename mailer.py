@@ -73,3 +73,10 @@ def send_email(html_body: str, period_to: datetime):
         server.sendmail(gmail_user, [recipient], msg.as_string())
 
     logger.info("Email sent to %s: %s", recipient, subject)
+
+
+def save_last_digest(html_body: str):
+    path = Path(__file__).parent / "data" / "last_digest.html"
+    path.parent.mkdir(exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(html_body)

@@ -50,7 +50,7 @@ def run():
     from telegram_collector import collect_telegram
     from filter import filter_articles
     from sentiment import classify, generate_summary
-    from mailer import render_digest, send_email
+    from mailer import render_digest, send_email, save_last_digest
 
     init_db()
     purge_old_articles(cfg["storage"]["retention_days"])
@@ -98,6 +98,7 @@ def run():
     period_from = now_utc - timedelta(hours=cfg["schedule"]["interval_hours"])
 
     html = render_digest(new_articles, period_from, now_utc)
+    save_last_digest(html)
     send_email(html, now_utc)
     logger.info("Done.")
 
