@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 31.05.2026 15:05</div>
+  <div class="meta">2 источников · Обновлено: 31.05.2026 16:46</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">19</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">17</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-07-24">
+      <input type="date" id="date-from" value="2025-12-04">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-05-31">
+      <input type="date" id="date-to" value="2026-03-26">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,13 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -108,196 +104,47 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-03-18" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5PMUlKUjZ1R1Z2RXlQU0E2VnpTZkQwb3lFSFFWS25jRFdvTTQ4NVphdl9IdVlJVVpwazRxalFhUFJLdFNVdkxmMVpn?oc=5" target="_blank">КТЖ вводит ограничения на приписку собственных вагонов - АПК Новости</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 18.03.2026 07:43</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ вводит ограничения на приписку собственных вагонов - АПК Новости</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(17)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-05-31" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://egemen.kz/article/413755-qazaqstannan-tayau-shyghysqa-ushatyn-reyster-tamyzgha-deyin-shegerildi" target="_blank">Қазақстаннан Таяу Шығысқа ұшатын рейстер тамызға дейін шегерілді</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Egemen.kz</span>
-        <span class="date">📅 31.05.2026 18:19</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Қазақстаннан Таяу Шығысқа ұшатын рейстер тамызға дейін шегерілді</div>
-    </div>
-    
-    <div class="article" data-date="2026-01-15" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNN2Q3NUhkeE1aRDJQS1pSZzR2WVhqU1ZiQlVuQUllQ3padDZvWlVRQm1pYktsRnRRSk9CaHQ2bl8zYXFHdVg0cTdkN0ZBT3ZyUWZFMTNzbDluVEdWc2hpSUNwVTlFNUVRdHBERHhTTWVDQ21TYVlHMkVKekVFay1BMmJLYUVrb3ZDRjZSZE1wN0NyclA2WTluSlZoX0NHM3h5dDNOalIzeU0zVmI2NjI0ZGdLRjd6TEJLUUZR?oc=5" target="_blank">Фонд «Самрук-Казына» удвоил финансовую поддержку бизнеса в 2025 году - Ритм Евразии</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 15.01.2026 08:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Фонд «Самрук-Казына» удвоил финансовую поддержку бизнеса в 2025 году - Ритм Евразии</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-10" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOWFlYTnlYMEoydzdadGlvWl9vNkZzcWdkVmpDU0U0S0doT1NaYUtwTVAtbkZINFdsTy1CS01FalB4aWhzMlB6S1VwU3FrXzRQM3lFZzJLNTNkeS1hRl9kQTdDcldqeTBMVExybS05cUFZUlFwZUZva2ltb2pWWW1GN0M2S3ZfRVN5SmhIb01xcURpdUNrMlBxeFJHZw?oc=5" target="_blank">Транзитный рывок или «цифровая» реальность: что стоит за планами «Самрук-Казына» по КТЖ? - Деловой Казахстан</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 10.02.2026 08:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Транзитный рывок или «цифровая» реальность: что стоит за планами «Самрук-Казына» по КТЖ? - Деловой Казахстан</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-12" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQNmlfeGVINnJBRXpOdHZKaWxjeGR5REFTNk9EOWd5Sk5ISHBVZGdtQXRwd2owNDREVTlBZTByY2l0VmxIbktLTE9UMlRCR19wTGVRcC1OQzI5VVZWcjljLUFxRUhtWUNQaVBSbXFwUl9mcloxVENpVkhveHJNQThTSnFfRHd2Q2g0NTJjazZaaFoxd0hVbVR6R2t2VQ?oc=5" target="_blank">Самрук-Казына: как национальные активы превращают в семейный подряд - Shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 12.03.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Самрук-Казына: как национальные активы превращают в семейный подряд - Shyndyk.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5uQ2twazNjZ2plOV94bzNIb3FlTjFCWWpVVTJvclUxRXJOeTNUUEZDNVhic2diYWJibU44aHk4ZVRERmM3ME01alNtUVJYT3BQOTlFSWRCWTR2a18zTjVXRENfU3BLZElMMUJZNVoyQdIBdEFVX3lxTE90VzluX1JPcmVPTGJQQ1lhUTZtdGI2bzFOd1hoWFVDUDA4V19NaUwtUzlweS04Nno4UnFLSm41Z0VYemdlZTl4ZXB2cTlTRDNPVEFRVDBXVDhidWhiQzNHSHA2OTVZd3N4ZTFOUHo5Zm5WWmlo?oc=5" target="_blank">Когда Air Astana запустит прямой рейс в Нью-Йорк, ответил новый CEO - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.04.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Когда Air Astana запустит прямой рейс в Нью-Йорк, ответил новый CEO - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-28" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYy1INlJ5ZnBheFpZTElyS0I5QWhwV1AyRUZhT051cTJsRnZnVmVIMVNWb01JZDRLc0dsVHk1b0RQa01IbHFESnpxUFRwTVBKWUlOTV90Vkpaa1Z1TjdMWk1xdEV2ZmtxaHV6aVg1bkZCVXF4SkswQlNscV8wZWhqbm5YT0JHUUxKaHFB?oc=5" target="_blank">Air Astana приостанавливает полеты на Ближний Восток - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 28.02.2026 08:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana приостанавливает полеты на Ближний Восток - Inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE03aFQzQXFrOENDUnN5Q3ZaYmIyVEFVa2JGemV0Z1NjOTVnTkVRSHVzYWhBNUZ1NFpMcGU2RlB5N0pSa3dDWWRNWTNYOUdxTENFOFJHdVFUYmtDSHpyTEJVZzZhcTZQS3hobWtTSEhrV0QtWGtwb3FV0gF8QVVfeXFMTTlyaTYzM3FNQktTTUQtdmJXNWhnby1yMkt3Z3VzaDFfdU03aWhGTDJDNHAxdU9kc1NjRi1NdTgzbnF4dUhNVTExV3d0bTJOdjlOVl92akJKTVF1d2NiX3p2RUJrblVHMmllSUFlQl9nQjF5blJlZUVKNFFWTQ?oc=5" target="_blank">Поднимет ли Air Astana цены на авиабилеты, рассказал новый глава - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.04.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Поднимет ли Air Astana цены на авиабилеты, рассказал новый глава - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2025-11-17" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYm9DS013SUJ0VFBlblRpTXlXalJteGgtaGxib3RtWGoyX2dPUzFSOHNlU29hczM3a1hKYnpJWF95Zk12bDlRUEhJNEpXN00zNFlYNEpjUUtmMEVjQnpkMG85WmdzcmR1RnZmTTZSQ1FvdUZtbVJiSXFZUzRuME5XSzZONGhxVFplTS0xeGdyWUZzVTVjRUdYd1pWVTZOaXl0V3I3UVk5cmFVNWZRYjY0aUVDdDJQdVJ0VS1MMXhwM1paQlRoOE45YnpQaGZ1NjhzSEJid2JR?oc=5" target="_blank">Новости закупок пассажирского подвижного состава: КТЖ, ScotRail, Сан-Паулу, MAV, Vasttrafik, УЗ - rollingstock</a></div>
+    <div class="article" data-date="2025-12-04" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNc0pvVHp4WDM5UDM4cTBYQ3lVSVk2YWdmenc4ajhCcDRHcTVweVYyWGpXZDVsWU85RFNYNDVoOVc3b3pDbkJSYnVuR0cycVZqT3RTQk1rY0tfTUZiT3IwclFpc0twSWJRVXhtZkZvUnR1Rk9OVUxVUUkwZlJzUThqVWc1OXQ4N09QOW9IOFZCQVpIckdZQkt2S2tsbEhFUjlaeDlDLUtnY1U1V1l6dDZDVDc0cw?oc=5" target="_blank">$1,6 млн – во столько КТЖ обойдется один вагон от Stadler в 2025 году - rollingstock</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 17.11.2025 08:00</span>
+        <span class="date">📅 04.12.2025 08:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Новости закупок пассажирского подвижного состава: КТЖ, ScotRail, Сан-Паулу, MAV, Vasttrafik, УЗ - rollingstock</div>
+      <div class="art-summary">$1,6 млн – во столько КТЖ обойдется один вагон от Stadler в 2025 году - rollingstock</div>
     </div>
     
-    <div class="article" data-date="2025-11-27" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTEk3V3FtSW15N1NVNU9PSHFJZFRSemVPeEpuTkg2RTk5c1hRMnpNYVBmWldwNW9kRzlFMERrQ0N0SzVCZzdneFFhQi1lNXhEUHBscHo4Qm9sOWRlbkRmbXdmVS1vWVlnTjRibndGUDVYMzB0WjhDZUJwRFV5NXZpMlZURV95RVExYUpZU2kzYUppM0x1RGJRUTF1SzdlOHJET21HWnllbzM?oc=5" target="_blank">КТЖ показала пассажирские вагоны «45-й» серии от RWS Wagon - rollingstock</a></div>
+    <div class="article" data-date="2026-02-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOc0N0NC1VbzM4TnlFX0lsblFLa21lb3Y2Wm5oYjlqWVVBdHpXZVg4N0NOVkt4VVNoNklrV25QQWRadGtQaGhzSFFfdmZrenVuanh0SUdRYjFMcHp5TXh3TGs1WmEyakt2eXN5WUdRTVdzWVgyamFsSmc2b1l2WnlWUzRKLVNHcW9wTUpqTkpJUFnSAZgBQVVfeXFMT055NUdzQzZPLTlxUXVRT29FcncwdVkyOExJQ2NUeXlkdE53aDM0NWg2djZrNWpSQU9xcDdMVm0xTXVvUnNPanNHZnFNcDFiblE5alJmM3FTNy1CbDBJUUJZRjYyTDdreC1rU3BOZ2VQVG5Za3U2UVVvNWlxbXJYdE9uQ0F5QXB0VzRwUWlHYVdFMi1VMnNZdHM?oc=5" target="_blank">КТЖ отказывается приписывать &#34;чужие&#34; вагоны - ElDala.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 27.11.2025 08:00</span>
+        <span class="date">📅 17.02.2026 08:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ показала пассажирские вагоны «45-й» серии от RWS Wagon - rollingstock</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-27" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxOMmNWVXAwNEdHUk1tSl82RHdKeFJHWEI1b0NOazJYV2RZd1VwZ3VBTmdnSjdvZ1BmNW1IZnVtaTZ5WGRWSU0xZERCWmh6VEFMMWdmM3RTNk9JTjNkR2x1Z1phZndyMmlSZG9Oa3F4cDNFZHJ0MUE4MGZVUHdCem9FeDJVQ2hTdVdrMW1TUg?oc=5" target="_blank">КТЖ модернизирует четверть магистральной сети страны - Bizmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 27.05.2026 07:57</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ модернизирует четверть магистральной сети страны - Bizmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-12-10" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPZU90N1Blc0xWb1I1WnJGQXhQalhudE1hVnVvd3pXV0ltdFNxLXdjOU1fN1JrZWlWWGNJdWVYa1E2dG1OVlhmeEZXQ0RyR1dGY3NzclRkZ0hfYnBkRnRCOXlVaFhPaUkwd0toU2x1dkFOX2Q3SzZhU3gwclJhRXRtcEdxaXNWdTdzYjF5LThsbXpTdzUwYzlKQ0h3X2ExS19xb0pLNGJDbw?oc=5" target="_blank">Технический семинар с участием Alstom прошёл в КТЖ - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 10.12.2025 08:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Технический семинар с участием Alstom прошёл в КТЖ - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2025-07-24" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNMndMY2dReC1EOGF5amU1VWRoLVFpbE12aVZkV210b1JwYjN1THc2R3U4SnhQVU9jSzV3cTR3RTlfUmpGRTNEZEgxSGIzdl9GVWw4ZHpVV1NWZTV1bFVyN1dQTVV5ODZiUElGRDA0US13eTR6S1Y3S1hoYWQyNnhIYmJ4OEVvZUhQNGhXdVdqSFh6SG5IVFdmYUUwdkpYYXUtT2wyTi1R?oc=5" target="_blank">Kazakhtelecom Partners Day: партнёрская модель и 70% охвата новостроек - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 24.07.2025 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Kazakhtelecom Partners Day: партнёрская модель и 70% охвата новостроек - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-11-13" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdWltZ2U4b0RYNE1zUFBQeG1qNWpUeHJKNFZTSFc2MVdiZzJpYy0tZU9QeVNGN2JPN2FmTXg3c0dNVkJJNkxTVk5hVEF4TkQ1MmZmNGFuQk96MXF5QWo2b0puLWtNc0ZJVEVyc3ZieGhqTk1STGlzTTBQRDVlOFd1ak1PSE9kTlFDam5yOEowYXEzbXlpaFdobUJjVFRWcVp0X1E3eWtnSUY0dmtfUHlzUzQzdTFkUDczbC0yOFFQc2QyVVlDQkdlSk45bm1SY3Y2SXozOdIB2gFBVV95cUxQblExRmRZWlQ3NEUwOHlCWTgtM1I5RGJBTGJhX2o2amlZMVZjZHhlMXJ5eHNmNlVPQmFXSE0yWkMtQWxtNGlCZU9peFZWYmhjX2l6WUI1SDNocDZXcGRXdlV3VnNlRnYwY2JLR2U1dWNUVERHYkxvTnFaYkpFcUJRaGtSVzU4eDdHMEF1QnNfT3VJUHpMM3BxRThwdkpHVlE0SFA4SERKaUFOMl9lTWZxc0hlTlFWOF84emp1Wjd0VDlXcGNCVFc4WFNQck15Nl9qbjl4Q29FOE9jQQ?oc=5" target="_blank">&#34;Казахтелеком&#34; прокомментировал обращение сотрудников: компания открыта к диалогу и развитию - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 13.11.2025 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; прокомментировал обращение сотрудников: компания открыта к диалогу и развитию - Новости Zakon.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-09-22" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNR2llSkJJbG9rVFZ6T2V2Ylk0cHhGTU5rQ2IzR1VuTWZRVFJZQVhlSzVTSWE1YVg4STFmS01TcEVXcU1YTUNTaDRfcHEwR2NEVUxFRFlyRjRTNGw2RHJXMHRLM0pYY1AtSDQ3Zk9pRnhIRjFGQmw4Vm5haGM2d09CU3UwTjRRV1ptbVBOVlE4R0I0eDJRem1ybtIBngFBVV95cUxNTUo2MUVFZTRCeTB3TDdjOUhzcUw2aE5Vel9UeW95WXZuM2FObm41M0tjR01nRktpcUNlTnluZUNROWx5X2k1RHlxdDBUa1BWRzI3QVVPbjU0RFV6NzMwbEtPVndZQk02M0JjcHhaNGJPcXdiQUdjbUN2U0ZPZVBxWlMzalA5SEhQZkIzMlF6S0czMVpGTnN2OUlEalJoUQ?oc=5" target="_blank">&#34;Казахтелеком&#34; стал дистрибьютором Amazon Kuiper в РК - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 22.09.2025 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; стал дистрибьютором Amazon Kuiper в РК - Новости Zakon.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-09-04" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNbTFydU8xM1F3T3FhZjM5WEtfX05vMUZNbU1zOVA4YXNzNlZLcVZaV3NjajJTeDR3Y0Q3SThFY3JMWlhQTU1kcHFFMVczM3VRUkJRaFpVb2dhemdURXFhQzdndXBXNG9Uc3NaN3BFVndMX2t2NUtlVmdvaGFzODJMbDc5VHZyMERmUXdsSUJNeUgtRVRvT085bGJfNWZLUQ?oc=5" target="_blank">&#34;Казахтелеком&#34; получит 400 млн долларов за Tele2/Altel в течение трёх лет - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 04.09.2025 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; получит 400 млн долларов за Tele2/Altel в течение трёх лет - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2025-08-19" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPS1dWWlpTbkhGeGNaRHMxMGpXWWdCeVM2Q3F1WXEwN0N4d1Vfa09NZ0sxeVp5SDN2N0lfTTJRN21YZk9LTjFITzdZNTRNMW9ySjViODdMeU41M3BiQUF0MG40SkVyd0ZOR19fV0liYk1YY2k1T2xRQ1o2Y2dza0xWV1pDMlVvWFotRnp2enFYQy1RWV9KY3ppblJR0gGfAUFVX3lxTE00dFc5aHkzdnNKOXU0VzlQOVFuTEE0NmVJTFB6dHBydEIwbGVBTXE4eGc1d1NUY2liQ3BJTWFZUlVhd2JQd2IyQ3RnQVRfdmQwc3VqeHdJOEtTM2JFaTJMYjZPU2pBZEZvZkxZc19OaHN1OFhBV0lEYlE0em81d0hoNVpSeFdsTXZmR1lqVGJTODd0cEFPQ25EcEtUWHZ2RQ?oc=5" target="_blank">Казахтелеком продолжает обновлять роутеры у казахстанцев - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 19.08.2025 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком продолжает обновлять роутеры у казахстанцев - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-26" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNTGkzZ3dnTl9wUEJfTHFyN2hxM3hhM0hEZ1EyV2tfNHYwN3pzbkY4RHJiUWozbllLM0hBYl81b3UwOVAxQjhiQTNTS0FjQ1VpRl9WVG90blhaZlV2aUItam5WdmJJbHJEUnpyZWVOM0szd2ZrckgtMFVQa0dzWkM0ZkVWbVVaSzVMOXJ5cm9tRQ?oc=5" target="_blank">Аким района Айбек Копенов принял генерального директора АО “Казахтелеком &#34; Актюбинской области Нуржана Жумабаева - GOV.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 26.02.2026 18:22</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Аким района Айбек Копенов принял генерального директора АО “Казахтелеком &#34; Актюбинской области Нуржана Жумабаева - GOV.KZ</div>
+      <div class="art-summary">КТЖ отказывается приписывать &#34;чужие&#34; вагоны - ElDala.kz</div>
     </div>
     
   </div>
@@ -307,26 +154,26 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-05-04" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxORzVJOGQtckNqMGVlNzh0SmRNWWtIdFJNRXdzeHA4YTBzOUw0ckx2VmJUYU9kTlZLZTFYbzBfdnM2YVFvQ1BDZ2t1Qzc5Q1lmb2Qzai1lSGt2M0dsZ1hCVFVlRUh5OW15eHp0VFEtdkt0VWhGTXhjRURra2lOcjlSOEhFWGNsekUxdm1lWndOcG5faV9GRFRZVHIxQ1Y2UXdyTnFab1NvblF0T1U5MkY0TDYtSFdialQ5?oc=5" target="_blank">КТЖ завершило отопительный сезон с ростом перевозок угля на 5% - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-03-26" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9qek01dkdZRWlXYjd2MG1HbDlHU2VlYzdQOWNjeC13U1p0a1ZjUG5mNVRpQ21ZRXY0T1hNRS1UYmFsMnhqUWV0LU5sX1FheDRBSXJRLVR5dkFIRFFtOS1GZ2Q2QWY0Vm44SmJHbjJLM1lzel9oUjA3eA?oc=5" target="_blank">Казмунайгаз в 25г получил чистую прибыль в $2,1 млрд - TradingView</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 26.03.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз в 25г получил чистую прибыль в $2,1 млрд - TradingView</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-12" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWm9qTDZSZHQ5VzZYTEMzNGJjc1NIOGI1M3RicjVEOTJnM3BHTVNRcFNfcEh4Q05EM1h4NFBpVFIzYk9VUzBWZHdval9QbUFqQk54R1V4NTdCSmI5TFJlS253dG1BcUlBVEpaRlk0RzdvUG42WG9KdTFZWXgtMTNGd2VsR0ozTlFDVWJrTXJkWnBwcmt3SHNBLW5kN1JyOXVxdE5Rc2MteTA4cDU3el9Lc2RHU2RDb1lKUlpWY3ZPeDI5aTB4UVVVbGZfVDBMRG1sQXc?oc=5" target="_blank">RWS Wagon досрочно завершил контракт на поставку КТЖ пассажирских вагонов «45-й» серии - rollingstock</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 04.05.2026 07:00</span>
+        <span class="date">📅 12.03.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ завершило отопительный сезон с ростом перевозок угля на 5% - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-04" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNTXlPNGlDUHdvMXpiLTFJLW44SWVIMUJRMWt6bWNTaFlhUmNGMXRzajJYbzhWdExpQUNKQXh5RUhEeXhkZDRsWTZ1dDJ1TXQtYWJuaUZUd0R5SVZrOGF0NkVoN3VKRGhGemV5azZZRlU0V0ozeVVkT08zUG4ya3RtNFMwcjhsOXhuTUZUYzVFNjMyMkZGd3RMc2t3aG54YWpwbXY0bEh1SGhFdUMzbEZXQdIBtgFBVV95cUxQVXVhbTRBLXlPMlVvV2plUklWMkNFOE1PQ21SUHY1dWc1VnpNcUwtTVpnMmpTQ0w4N3BFMkw3Q1FXSWVkeGVveWgzaFc5MDEtVnNHaUN1cVotcUdJQkZDR1NnV0hDYnVtZWNJSmV4NXZVVmJhQWM5aUIxb0dRdXlEUk5ERVZKRnJteTJMRTFGUi1RTHpwYjNxWUg2dWE0bTFrNjVtTXJTck43aEVMeHF1SE8zVTY1QQ?oc=5" target="_blank">«Казахтелеком» выплатит дивиденды, которые в 82 раза меньше прошлогодних - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 04.05.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» выплатит дивиденды, которые в 82 раза меньше прошлогодних - Kursiv Media</div>
+      <div class="art-summary">RWS Wagon досрочно завершил контракт на поставку КТЖ пассажирских вагонов «45-й» серии - rollingstock</div>
     </div>
     
   </div>
@@ -388,8 +235,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-07-24';
-  document.getElementById('date-to').value   = '2026-05-31';
+  document.getElementById('date-from').value = '2025-12-04';
+  document.getElementById('date-to').value   = '2026-03-26';
   applyFilters();
 }
 
