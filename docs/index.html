@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 01.06.2026 21:55</div>
+  <div class="meta">4 источников · Обновлено: 01.06.2026 22:35</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">12</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">11</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-10-15">
+      <input type="date" id="date-from" value="2025-12-12">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-06-01">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -107,15 +111,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neg">
     <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-01" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9RZ2VvaTgyWEVDUk9oemZxQmFpUkZCTkJ5UXU1QUdMQXFlcnkwY3pubWR3ZzNlNURzbjU2UDJpM2JZOXJTZC11UUFtd1lzWGRHaEE?oc=5" target="_blank">SOCAR и &#34;КазМунайГаз&#34; обсудили транспортировку казахстанской нефти через Азербайджан - DAY.AZ</a></div>
+    <div class="article" data-date="2026-01-22" data-co="Казатомпром" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQbGxVMXpXR2lVUFZNVk1zU0lnZW5WMDhCQzh4Y2owcmVGQTJKLUdlcWN4QkRMYWlELThwYlhVQkJ3NVp0Mld0NjEydzd4VXg0RVdWdWRVa0xNUGJORC1SUllnNFQ2bl9NVE5MMDRWOU9Md01SYm9BX2VoanpERzdiSUItLXdKYTR2TEpwd2RGMHItQXNrR2x6ZjRJOGdQX01YRFZuS1hLXzc2RnBiNWJmMDdmcmVxUE0?oc=5" target="_blank">Лицензии Aral Resources получены на твердые полезные ископаемые - Казатомпром - Kapital.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 01.06.2026 21:21</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 22.01.2026 08:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">SOCAR и &#34;КазМунайГаз&#34; обсудили транспортировку казахстанской нефти через Азербайджан - DAY.AZ</div>
+      <div class="art-summary">Лицензии Aral Resources получены на твердые полезные ископаемые - Казатомпром - Kapital.kz</div>
     </div>
     
   </div>
@@ -123,83 +127,127 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(11)</span></div>
     
-    <div class="article" data-date="2026-06-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNLWlwc3NQTG10TDluaXY5V0lTMUZkUkc2RmhHTkVqTXF1eVR6cmlCRzJpWGtfdWlpZlZ6a3QtaVFoSE92eXo4UGhqTjdURG1NcmVnM0R0V1J4a0ZkbG0zUWREaGdvT19JLW5UdWVGSTdjaG5kejEyeG9rUGJ6UmJHV20xOEZsU1k5TlVQVzc3ZW9WNEdZaWJYbS1Kb09saDExSlJTbWJtamk2blUx0gGsAUFVX3lxTE0taXBzc1BMbXRMOW5pdjlXSVMxRmRSRzZGaEdORWpNcXV5VHpyaUJHMmlYa191aWlmVnprdC1pUWhIT3Z5ejhQaGpON1REbU1yZWczRHRXUnhrRmRsbTNRZERoZ29PX0ktblR1ZUZJN2NobmR6MTJ4b2tQYnpSYkdXbTE4RmxTWTlOVVBXNzdlb1Y0R1lpYlhtLUpvT2xoMTFKUlNtYm1qaTZuVTE?oc=5" target="_blank">Полеты из Астаны в Кызылорду и Шымкент возобновляет Air Astana - Azattyq Ruhy</a></div>
+    <div class="article" data-date="2026-06-01" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxObUNEYWc3Z2hGRlpmeWVtMmZzUG51NFVlVkVMT3daMnlXU01GTmpvVDFHZGhwZEhFU29SRXJvTnpXNEE5eUd0d2llZWxadW9lWmhaOG5weVdOMEswOTNGVTM5clZBV3AzamNVYXk4YXVQTGU5TjBiOVRtanlfNWhocldPWFpESUxfYWJ0cUpoUzdzWFRQcFVN?oc=5" target="_blank">&#34;Самрук-Казына&#34; займёт на рынке 2 миллиарда долларов - nationalbusiness.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.06.2026 03:39</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 01.06.2026 15:28</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Полеты из Астаны в Кызылорду и Шымкент возобновляет Air Astana - Azattyq Ruhy</div>
+      <div class="art-summary">&#34;Самрук-Казына&#34; займёт на рынке 2 миллиарда долларов - nationalbusiness.kz</div>
     </div>
     
-    <div class="article" data-date="2025-10-15" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOWFdjOWdsODB1TG4wVXJrOUxSQ2RnTWJwMm1GSm5oekNoZzg3cGc1LWwxMzJQdE53VFdYWXRIT09ZZW9kYnNncU1ZSFVIcDVjcHpxSDBqX016UTRYc2tSNldGM2traC1wdVhWakIwZmx5cktYamcwZndMc1MyLVJBSzVJMWd2ODRVRm9WU3psNk5ERzVvckQ2dlhGRlo2WHYwa3c2YQ?oc=5" target="_blank">Air Astana сама обратилась в органы по делу о хищениях на 1 млрд тенге - BES.media</a></div>
+    <div class="article" data-date="2026-05-14" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFBDQ3I4OUdyMGtVcUdZQ2NoTF9NdjB0ZUl4bnVOSkFsOGhDT0FhelVET2lxRTRETFh2U01jT2tqa1V3cVFYTVRaaUFRcjhWR1hOVFNleHNNUQ?oc=5" target="_blank">«КазМунайГаз» начал производство сополимера полипропилена в Румынии | Экономика | Селдон Новости - Seldon.News</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 15.10.2025 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 14.05.2026 08:33</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Air Astana сама обратилась в органы по делу о хищениях на 1 млрд тенге - BES.media</div>
+      <div class="art-summary">«КазМунайГаз» начал производство сополимера полипропилена в Румынии | Экономика | Селдон Новости - Seldon.News</div>
     </div>
     
-    <div class="article" data-date="2025-12-30" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOM1hNOFh0eUpHNEtkd0dSUWliV2V4T29PRVo0SV9lTVlCcFBYT00yX3A4OUEzTE1wV3owOHpTNmRHX29naTY2SHd1UjVxUmxzbGxQV1hXTDNJMDdRb2NaREhvS0RpUTExbzc4cTM0R043Vm9ZdnVYX3FGMTQ4MHYzSG9MLXBBLWp3djB1WFEtcFZWS19LdFZfaHgwR2kzS2FDTm9kT3VuUEJGN3RxNnhn0gGwAUFVX3lxTE51TTdqLTZKQm1NYURDeWlVMmJab0FlcThHdHQzbmxFd2IxRDJ1SWd4Qnhad0VfTTNLTmdSQzdUd3h6V0RvNERJMUxjS2ZIenB5X0FxZ05vdGlhWXdob1VIRjM5VG5MNkpKSFRBYmNHcE1HVjNHOVdnTGNqVnNieC1nZF8zaGhiM29GRHplZlA1MXBtTHVIN3dXWGhlRjRiNWpKeEJfenZ6TGhxeVpmSGxn?oc=5" target="_blank">Возвраты, багаж и стыковки: правила перевозок уточнили Air Astana и FlyArystan - Казинформ</a></div>
+    <div class="article" data-date="2026-01-22" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPVWdJeHdGdlJtT0tqVlFuS2ZYN3o1Tkthcm9wZ3ZSSFNvamVQSFgwU2F5R3lJWTNud3FmUnRNblI2ck82ekhqd3o3U3FwTVB6bnhKQVg3TUhCOVVweDBkRjlNQ0NVQW1DbUY2eVh1b0lYNVFCTTJJYTFETldtWXZvV2NMV3BER29ZMnBrSXNKdDVMYll0Zm9UOUg4ZjlESW9hU3c?oc=5" target="_blank">«Казатомпром» отреагировал на уход иностранного инвестора из уранового проекта - Orda.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 30.12.2025 08:00</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 22.01.2026 08:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Возвраты, багаж и стыковки: правила перевозок уточнили Air Astana и FlyArystan - Казинформ</div>
+      <div class="art-summary">«Казатомпром» отреагировал на уход иностранного инвестора из уранового проекта - Orda.kz</div>
     </div>
     
-    <div class="article" data-date="2026-04-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQZE9nemp2OE05bjdld0ZrSFMwX0NkRWJnMGhRUDRVVjdkRmt5ODJoUTE3UlpyT3JKZ3UzTWN1b29KWV9vSDRMdkdQYUxPRGVlR0MwQ00xbjRyRGUyd3FndHNVa01TLUdqMl91TUxMM0phQXNHY2djOEk5amVFRThkWW5Qajc3OTMxR0pJcHRsaWXSAZYBQVVfeXFMTWtsLUVvellRQXZteU85aWY1X2l6OVZDRF9XMTRaMUJoTExzWDdSTDdwdVpuZGh4X0lvOTRIV2g1VE1aU2NjQ3FlNmpad2x6WUtGZVEzaDRxUlNyMkNhVWNjcHVsNmVMdENGQVZPcmFZWjg3cjIwMzRrUklsUjhpbm14NVM5Q0JPd0ZhbmZhMTJtZkE5Nnh3?oc=5" target="_blank">Ибрахим Жанлыел вступил в должность главы Air Astana - Vlast.kz</a></div>
+    <div class="article" data-date="2026-03-18" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPbzlPU2VjZWhHdlNFNlpoT1lFLThrSVpUS2ctcnhJRF81aGlvLWk2OXEwNGZ5MC1nQmhkWFh2S2t1RTdQZGRLWUx3Wklqek85QTg1LWhxYU8zaHE1WlNoX2JDUm9UcHYxS3F3cWNqNUdfQnJJaGl1UjVSTW9uTXF1MTd0Mzk5QlNlSjJ6by0td2c4RkJ4Mk5iUmNHejloUWZpX3JNSld3?oc=5" target="_blank">Президент принял председателя правления АО «НАК «Казатомпром» - khabar.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.04.2026 07:00</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 18.03.2026 07:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Ибрахим Жанлыел вступил в должность главы Air Astana - Vlast.kz</div>
+      <div class="art-summary">Президент принял председателя правления АО «НАК «Казатомпром» - khabar.kz</div>
     </div>
     
-    <div class="article" data-date="2026-03-17" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOZDFOVGU3eV9LREpreVV4ZEEwZUNzVmVHUVBoVVpqZ2syaFVKZEFGUzNndFB0aGF5TFZ1eXA1eFYtTHo1WDVNLWlSMDN2MFBZVy1VVTdEYTMxcEU5bGswbjBjM012anN0WG5VNWZkcHNnMGd5TE1MeGcxLTRGeERfbV9hcVdwMzVWejIzTUI3SDYwc0tKb1ZDYVZpNUxLUV9TT2xkeUdqNWhCb0RfVFZBM3ZDNA?oc=5" target="_blank">Buyback: в 2026 году Air Astana намерена выкупить свои бумаги на $4 млн - Kapital.kz</a></div>
+    <div class="article" data-date="2026-01-09" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxONGxzbGdDMkgzSFFJWDJ6NG1meVdtYkxPT1RhWTdUNjh4Tk5GeDlEalMxY0pwNC0yQlJXNW8xLVNpc2JpcElZQ3k4THhrdHJkb3NqclZvZHFoa3FXUlk4cnl3dGE3ZElrZ0taaWRyTmxtdkdhOGtURzRSdGlYYkZDeWJZemE4YlZXT1JyNXJNV3lnYXJNYTlDRnoxTTVPTWNMOHdrZzVjcmVObFUwY1FPT3VfNjBOUmNtcFE?oc=5" target="_blank">Bernstein считает &#34;Казатомпром&#34; одним из двух фаворитов растущего рынка урана - nationalbusiness.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 17.03.2026 07:00</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 09.01.2026 08:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Buyback: в 2026 году Air Astana намерена выкупить свои бумаги на $4 млн - Kapital.kz</div>
+      <div class="art-summary">Bernstein считает &#34;Казатомпром&#34; одним из двух фаворитов растущего рынка урана - nationalbusiness.kz</div>
     </div>
     
-    <div class="article" data-date="2026-02-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQdmFkWTNwcWduRjJ3VEZGNTFBXzlIRWZPWjh6WmtBSzV0Rnd3MGtvZmVaVDdZcVFlU2x3d1Y2Z21ZRldmVGNNZEVUX05YczZDdTY5T1hmRGsyNmRCQ1pISXpJRDFpZmJyZVVVV2JMaTN2ZXpUSk8xTUJnSVZkVlFBdmhoaFRjMjM0ZDVHZnVxeGRzeWo1LUZvMW85Q3hFc3BW0gGmAUFVX3lxTE9WV1hzY2xkTGJ6NnhqSWZzRDBUWmVuSU13bmprZXNsN0paWTFZRTlyVENFR2hZbGZ4TGZVaE1LemFMQVFzQ3Fma0VFZnFSTWZzcVFJV2Zxbk1MallPRUFyQ2tFZjVveEREWFZfdkw3QmJ3RXpPYXhTMGNlZGNreHhHOGdZNmV5Ujh4aDR0SklLMHJaUzdiNW5hcHppMnk1NGRwOTZ0cHc?oc=5" target="_blank">Air Astana в июне начнет выполнять прямые сезонные рейсы на Кипр - Vlast.kz</a></div>
+    <div class="article" data-date="2025-12-23" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5GRjhpcm5QOXRMWWU4WmRHOFlHRU5yTFZsNDJOcF9RSFdNVzBOMERIY1FVQl8tU2FDTE1LTDVZUWlIcDFnLXdrRkI3Z2pDOTdJaTJrZVJ0aFNteDBiQU5kMW5mZTZOV180aWRCNzAwVEVlS2xVTmE0SmhHaGxTbVU?oc=5" target="_blank">«КАЗАТОМПРОМ» БУДЕТ ПОСТАВЛЯТЬ УРАН В ЯПОНИЮ - THE TENGE</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.02.2026 08:00</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 23.12.2025 08:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Air Astana в июне начнет выполнять прямые сезонные рейсы на Кипр - Vlast.kz</div>
+      <div class="art-summary">«КАЗАТОМПРОМ» БУДЕТ ПОСТАВЛЯТЬ УРАН В ЯПОНИЮ - THE TENGE</div>
     </div>
     
-    <div class="article" data-date="2026-02-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOZ2tneTRIV2dHcE9PWWRkcDQxRnpidnNhOFNMV21oUjhRREhYcU9LekF0akRBNE13R3owc3VsZnRLcldBY1d6WkdkbFBKSWtGNkFwSnVONHF5U1hjcDdKVU5aTi1CWEJwR2pKaWZmMlpmMVZaM2hDYzNZWElPeDJKZ3FzV2lvTXRWUlN3dUp2VkpyQ0RlZV8zTlFCQ1hOZTVvc2NIaEh5OXEySnVNV3pJd0l6S3c?oc=5" target="_blank">&#34;Мы очень амбициозны&#34;: как Ибрахим Жанлыел собирается решать проблемы Air Astana - nationalbusiness.kz</a></div>
+    <div class="article" data-date="2026-01-07" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNZFRUaEFETEF5OXZDbE1lVHQ5Z2RJMkRqU1lYM0U1UkNvc3hwMkY3TzV4T2V5dmJ4YWV0XzlDNlo0eFR1ZTFZRmcxZ1d6VXdVLWJXMWViX3N0bEtvVDlHczctVFhUUDJxM0xUTlAzaC1lcElST2F6RllONHhOTG1jcWg2T3FFMEpsODlLOHZtLUZhdVZ4QkFZTmp1SnJwcEpjSXJpOTJQQ2IwYzla0gG4AUFVX3lxTE9tdl9GaGoybTlwemNpU1dEX0ozTUZuSzJFSDBaak9DdjVFM1dycXdXdHRvdm1WUVZHWmE0cU9kRERNQlZBS0I3d2haLXI3bHpVTGpDa1RndE10cWpuLVVGWm5SbjUyTXBBaDdoMWdWeEtacWpFNk0wb2J0dHBBSHdvX0hmZ1dJbEVySlREQXNEOTl0MXlzbm02cVVwcXpmRU5rTDgxbkc3MVhFZGNBYTRzLVd5Mng4cE4?oc=5" target="_blank">Мошенники выдают себя за &#34;Казатомпром&#34;: полиция предупреждает казахстанцев - BAQ.KZ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.02.2026 08:00</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 07.01.2026 08:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">&#34;Мы очень амбициозны&#34;: как Ибрахим Жанлыел собирается решать проблемы Air Astana - nationalbusiness.kz</div>
+      <div class="art-summary">Мошенники выдают себя за &#34;Казатомпром&#34;: полиция предупреждает казахстанцев - BAQ.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2025-12-22" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYXpWRnFEMEFUcGxGWV9jUUdZaUxMdHJIVlg3aVRaRUw5bnBLSHoyWjFWYVlCbXd0RkNfVFNmREtoSXJOSFBKNl9ERVByVy1USmdJdFpGYkVWUGQtVUpEVm0yT2VXVlN3a1NHdnBhdklMbEZhUGhzWi01Ung3dkRIWXc5QmxjTGZhR3JwWFNtQ3p1Mm5jWnFqTmNtamxnVEtkSldqcEloZHFad9IBrwFBVV95cUxPdkc1ZUlVSnRja2lISEdTWHBjZEh1N1RoTW00VmgyRjlwZmRvMkx3OU5TX0s1dmh0RVNTMlhzOHl4Y0huSFo0VG1ram9JcHRCSzFvalNqYi15aURWcVE2Q2p5dmZFaUYxTV9sdVFjUjcwX0kyZThwLWJDV2N6NjVoaEdxc0dkb3lhMldBWGs2QjVtMVpncmpmMGpVd19FN0NqWXQzTlFldXNITDhLMEtZ?oc=5" target="_blank">Казахстанцев предупредили о мошенничестве под видом “инвестиций“ в “Казатомпром“ - Tengrinews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 22.12.2025 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казахстанцев предупредили о мошенничестве под видом “инвестиций“ в “Казатомпром“ - Tengrinews</div>
+    </div>
+    
+    <div class="article" data-date="2025-12-12" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPc3BqSTRzZUN3MjFYc3RQQTZfWkhocGEtdlVKWVZvbzk1cVhsNTZoQ2ItREhxWDVRZUh0TGpudE9sR2ttOEhWT1JqQWgybkV3a2RSU1Z2a0JIX1RhWDBOTnI4cWxsOXdncmlPcy1fdUx2QVdNekpxMEZTNjZTcEI3MEpTYnhSaDBjTDQ4dXAwYkRmSzg2d1BvbnlLdDRHQmpCd0x1NGlBbk5mQQ?oc=5" target="_blank">Вложить в геологоразведку 85 млрд тенге до 2030 года планирует «Казатомпром» - Bizmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 12.12.2025 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Вложить в геологоразведку 85 млрд тенге до 2030 года планирует «Казатомпром» - Bizmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-13" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQLUdSTkFPcjNWSU1vTS1lcm56WFltT3FObVVRMzEzeVNHdHNrLUd5STRrX0JTX3dSWTk2UmRhTU9vdHRpalBheVpkRFdpSzd0SU0weHF4RzN5MmFNLWktTUxpT2xVYmNIbThhUkYxVDBEcVVJSUJEWFAyRGx2VU8taEt4dEM2dDMyWDh0bVlwbjF4UjA1YmhJX2I3b0ZlNVJFZDFNY0s2dVl1ME0?oc=5" target="_blank">«Самрук-Казына» — это черная дыра бюджета? Экономист предложил радикальное решение - Shyndyk.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 13.03.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Самрук-Казына» — это черная дыра бюджета? Экономист предложил радикальное решение - Shyndyk.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-23" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBFT0RzcFFQN2ZjdEN0X2lkZ01UUng5YmdPWUh6Wm1XX0s0Y1Z6WC16OFRjRk1TdDdqYkRPSThKWVZOcnM4VUVWUEZn?oc=5" target="_blank">Казахстанцы смогут купить акции КТЖ в 2026 году - Ак Жайык</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 23.05.2026 05:32</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Казахстанцы смогут купить акции КТЖ в 2026 году - Ак Жайык</div>
     </div>
     
   </div>
@@ -263,7 +311,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-10-15';
+  document.getElementById('date-from').value = '2025-12-12';
   document.getElementById('date-to').value   = '2026-06-01';
   applyFilters();
 }
