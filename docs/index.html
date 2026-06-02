@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 02.06.2026 20:31</div>
+  <div class="meta">2 источников · Обновлено: 02.06.2026 22:13</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-24">
+      <input type="date" id="date-from" value="2026-03-19">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-05-26">
+      <input type="date" id="date-to" value="2026-05-23">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -104,58 +104,101 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-05-26" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNdlBHQjRsbnFTSUhGR1M4SFhpcnRHSW82dS1tYS1SZkoxZWNTa1dqNTZLYWo2YkgtaVRma0JWOFhsbW9BWW9ORjhZVkFGSWtvemFMbm1nLXhmMDJOdDkyTlZqQlF4c19QTkd6R3FoNG82OWVWRjNsYS1KbXFPX2ViVjFrdVVaYzhtYThvOFZ5dG1WTVRNcGl3YldyUzZrTm8?oc=5" target="_blank">Каждый пассажир КТЖ обходится Казахстану в восемь тысяч тенге - paddock.pro</a></div>
+    <div class="article" data-date="2026-05-08" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNN053RmQzRjlUbkNsSHlhNjdhMkxsX0RKTG9wV0diR3F0WG1zYzZjTmwza2pVSzhrYUs4Uy1JcnlFMndEYWE4SWkwWTBwcktQOVdEdURhT3VTSmozR2dsZWN1WmwwTVNrLTg5VElDZHpKdmxzVVY3d2RCZ3ROQnVWYmZqdjhCWDhKZnNRbnd4VGY3ZXJtZFV0X3FzNjVNYlF1TjFDUzlPdUdjd2VySG1EVFRyS1htdTNTN2dNQw?oc=5" target="_blank">Самолёт Air Astana сел в Актобе после отказа двигателя: Минтранспорта начало расследование - Informburo.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 26.05.2026 18:09</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 08.05.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Каждый пассажир КТЖ обходится Казахстану в восемь тысяч тенге - paddock.pro</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-30" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZU1GNGFYR250YXVYRjVrc2l4TUgyek5jVnJtX2ZlUXdnM000UmktekRYckp1bE1IN1FGbFhUY2tkekZMWTBVMk9wRGFldzNhNDVYOUlSaVh0WmpiVmctMEZDUW9rR0JHNUNLV0xYQmFJTU1hVE91X2k4dTJKOWRkN2dxNmdiZlJ0RDJTSmRHeDhIR2VxTXp0N05tdXE4V2FOZEsyTU5VTUbSAa4BQVVfeXFMTlNyemVwZFREZ1ctM042TXhmUmdYdXE2eVhvZHk2NnpSREtKSmg4UklOM3h5OGYxTW90NzN5TFFUczJoekpqNjJOa1FMUTV4UUdwSmo4SHl3SGtQZGtWV2hKTXlQaWgxZkRzbFRUQjQtVWdNTGJuVFBKY0taUzRjZmdfa2JIdFBOcjkzdEZCWHNTVWVfd1oxNDE1SnVpbmh5LVNCVEp6dUNrZHlHd0hB?oc=5" target="_blank">КТЖ заявила о строительстве собственных морских контейнеровозов - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 30.04.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ заявила о строительстве собственных морских контейнеровозов - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-04" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxQT295SlEzVUEyckZzTkZuTk5ZUUgwWEh3V3Q4R083Yk1nR2ZfSm5wemhWdFNwN2tiUkdDZjN6VWRfdk90QlpOWUJaUnowM05NUkdTNXE4R0FLN3FsT2NLT05pVmltZm9jOGRTYUZKaHZZd3RLUklQTWlvT3BISTROQXpfeDhwLUlmVXdsVkw5d0ZKWDVQOEdRR2VPTGZ3aFprT243V1duN1B6NExqOVZGaUI1QmR1X1psNmtRR2Z1MWJPYndHUTV5QdIBzgFBVV95cUxPdUVxck1PamFvRENyRkFPbWNlcmN0ejl5dEVXa0VMNTcxSWd4Y1JYbWplN0ZjWTlvOHNsSGRsVzVuelJJdWlrLURQMWhOdU5NRWtWdWJNeDlYV2lJXzRnSnpWdmhoU2p0RWlpeEI4NmtiU0Q2Yy02clE1cS15WHduemx3YkxLNi05UE9vS2NybXFOdVNxR21mVHRGamVma01nUWY4MUF1Mng3bFB2RDk3TGZYWXo5WFVjMDV3ZkozUWpRRE12X3Z3QnhzUEFsUQ?oc=5" target="_blank">&#34;Казахтелеком&#34; строит цифровой коридор между Европой и Азией - Arbat media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 04.03.2026 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; строит цифровой коридор между Европой и Азией - Arbat media</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-24" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPeEhfUWo4OVJDSFRTRFlFaXBXWHN1ZnRBcUtoYU9ieHc3d1otMmxheWlIeGxCNFVPcHA2Q2ZXb3hPaFRrSXQ2czNFVzJTeV9hU0dNU205aURxRWNDajNvcjhtMlVNMVZ4Y2dMTFBUUmNpclFKMm50ZFhsMWlZWEVVb1B3TE0yRmUwNUVDRA?oc=5" target="_blank">«Казахтелеком» продолжает прокладывать опто-волоконный кабель по дну Каспия. - Exclusive.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 24.02.2026 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» продолжает прокладывать опто-волоконный кабель по дну Каспия. - Exclusive.kz</div>
+      <div class="art-summary">Самолёт Air Astana сел в Актобе после отказа двигателя: Минтранспорта начало расследование - Informburo.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    
+    <div class="article" data-date="2026-05-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQTUx2VGtUSXFZUE5HQUxWbzVIbVdqWW9ZNEtCMFJGOWtTM3hMV1B3VEQ3TXg2UEFxRHBUYU1RaU1HYjNYUWhRSTNSRmNoRXFjY1N6UVh1ekNlWWo2N1RqZ1pUMHJ2Yi00cWgtSHlpcHZMTzVPSXl6Z3RUdmdBcTdMdmo1NGExZ2VKNDM2TnBR0gGTAUFVX3lxTE80dlNBVDZUNElrTHpWMmFVWmZXY1d0VjZXdTUxZzUzNmN4Sl9wSllGSmxfbUc1S0I0bC1FTF9Cc1B6cHBVNUdmTzduTWJzVDBsMVVXZkN0TGRqTUpOUTJXSTU4T0lPOVVyeFFpT1RtTmRFRGU3OU9mTnlmWW9VWWhLaFZJd2NOLXJjM2VmVnhfMzRMZw?oc=5" target="_blank">Air Astana перевела рейсы во Франкфурте в новый терминал - 24.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.05.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana перевела рейсы во Франкфурте в новый терминал - 24.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-19" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFA1Nl9ZOXZHMVFUeTFYLTYxXzNXbVZCRmJXVzZVRW5qMGhzUy1RZWJzeko5N3EzbUp1QVAySV8tWEpRX0NfQmlGZF9B?oc=5" target="_blank">В Air Astana ответили, получат ли пассажиры компенсацию при замене самолета на FlyArystan - Ак Жайык</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 19.05.2026 07:59</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">В Air Astana ответили, получат ли пассажиры компенсацию при замене самолета на FlyArystan - Ак Жайык</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-19" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNS0hwRjhrcHRmWU9pVUVSOEtzUUFZbHN3WGtNUGRQZkNDaERSZXhldFo3Q1hFVUQwcTJLUGRONVlGOE9QczIyTFZWUGtvRkp2TjJQMU5mdW9ydGxmNW9qdWNRNy1rZlhGX2N2WXdZWWt4b2tJSjRLM2cyRFBqSExxcDBTOEZTWkhaanFXa0dVdmhhR0ZFYnRiMXhtMUtUREZlNklfa0RscEVxSFXSAbABQVVfeXFMTkRPbjZFUUV3ZGhGa0VZb0xUZ3RROWRLbS1razNVSTFPNTVxd3hRTEpYTlVKWXFkV1dKa01nM0dZa3hLNnQ4aGk1SG54XzN1bklMUGpzVXpiSEUxVmkyWnBuc2x4YmJUeTE5d3ZQa3habFJnT2lMRGFhbGZqU3ZVaGk0OEtpVnlFTVJQYy10S0VQQU9VTDJEOWk4aXdOYzdZQktxU3JFQjhXNGZsdUdSTy0?oc=5" target="_blank">Британская BAE Systems продаст долю в Air Astana cо скидкой в 15% - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 19.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Британская BAE Systems продаст долю в Air Astana cо скидкой в 15% - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-23" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNR3VISnFBUFRiamluUHExUlY5ZmFfUkZWMkI0X3IyZGJZeG5mZVFiMkNlejduSVlNTFpEZFQwUmEtMm9NbnZ5S055YTVyb2ZIcUJiUmtsZDlCeE5xTzBNZ192eVkyQVRNblphUl9EWG9pTWs5d2Z3c1lfSEtoSGpJaGM5QXNueTlxd0Q5VXBDbkVMdw?oc=5" target="_blank">В Казахстане готовят КТЖ к выходу на IPO в 2026 году - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 23.05.2026 04:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">В Казахстане готовят КТЖ к выходу на IPO в 2026 году - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-09" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNLUpuTnl0OVpoUS15RHJtT1pfOW5nQmxwcFVZSUNiUXhNMHM2SDh6enJCamJENWpZTm9Ibk5NeUZYbEJaZEZ4TWQyNlZDRVRZUkczaE1GN3I5NHZSakNteUN2ejVjbDVNaGpCd29iSnp1MzM3RHRkeFZWeDJaZHhJLXBid0JSMzdMR1RoTjBVTndYY1lvVWgyU0RhekhabEU?oc=5" target="_blank">КТЖ высадит более 100 тысяч деревьев в Алматинской области - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 09.04.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ высадит более 100 тысяч деревьев в Алматинской области - Қазақстан теміржолшысы</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-05-19" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOSFNIV3k0NjIxdVlfZFdKTUFLbXBmZVk2RzRSQlcyVWtyNy1fNlAwTXA4NFRJWmxoUDBDekdvTHlqTzItVm85R0tRS1oxcGtNcHIyNC1HcFlYS1VYWmJYM09ERjlzQnN2YWJtYnJyZ1gzTzdXamZqR0tpbXZuZGdYZlVYcWkxSUw2YlZXM3hBOHR1N3ROdDN5U2xLQ1loOTFUeWRPSEc5a1RQUmdFQlE?oc=5" target="_blank">Air Astana назвала условия для запуска прямых рейсов в Нью-Йорк и Токио - smartnews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 19.05.2026 11:17</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana назвала условия для запуска прямых рейсов в Нью-Йорк и Токио - smartnews.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -214,8 +257,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-24';
-  document.getElementById('date-to').value   = '2026-05-26';
+  document.getElementById('date-from').value = '2026-03-19';
+  document.getElementById('date-to').value   = '2026-05-23';
   applyFilters();
 }
 
