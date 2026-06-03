@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 03.06.2026 21:37</div>
+  <div class="meta">1 источников · Обновлено: 03.06.2026 22:18</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-01-08">
+      <input type="date" id="date-from" value="2026-05-08">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-04-07">
+      <input type="date" id="date-to" value="2026-06-02">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,11 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
     </div>
   </div>
@@ -106,79 +102,36 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-02-09" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNYldueThFZy12Q3RyZGsxTXQ1UnVnMHZXWFZRV3MxQ3FIdFhHTmQzdlJfN1UtbEdnd3ZkRUNyci1NRFE1aml5c1B6TFhvLUlUS1FqbUxhbHJ0cm9tc0N6ektQamo1WjM5NUxCc2VBemY2czdFak1INnE3MVRaX1RfN1ZXYnozWGhMWk83VmFicUFNbVA0ZTNmMWJfMEYzTmJIdk02UkR6VlNieVhHRzlXRUZB0gG3AUFVX3lxTE85dHdzcG0wQTkwUlRSNE5HOXRtRjhob0ZpaEJiaW8tR3k5RUprTWxlUVFjUDhyNFdBc3FvUU4xN2xsNHlBOHh0anY1ci1BUlZDVFVSd1hxeFlFRnB3YmpzaTVuaVZoZkZjUnhkSjZmWW8tdWVjSGRnZ19yelJORmJyVkplSzkwNTc0OTBKZnZIU3hwSXJtSDE5TnlkUDJjYnlmNmpaa2lHR1ZzcnpHS0tieXdoTVN2Yw?oc=5" target="_blank">Топ-менеджера КТЖ исключили из совета директоров дочерней компании - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 09.02.2026 08:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Топ-менеджера КТЖ исключили из совета директоров дочерней компании - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-03-19" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxOd0tIeGRnVHp6YzFWTFdpdFhaOVY2Z0tvS0ZaR2FUdHhhX1JFbzRsV25ROUNCSkhtYVE3Q2luRVJlS2VJSnVpZzBCOUdGR2t5aXhHNDFHWEhGWjJuN2tGV2lyY0F5bGt1NV9saGs3MkEwNWFQUVJpN2N4b0F6cVBITmxYMVdORl9TVzJrT1dHQUp1YUJhRFR1Wmh4NE8zOHl2NkctZElraVRMbWNqeXhhM21ReEZGYUxTNnZCdjRUSkVuOU90UkVoRw?oc=5" target="_blank">«Казатомпром» будет поставлять уран энергокомпаниям Швейцарии, Чехии и Японии - Ритм Евразии</a></div>
+    <div class="article" data-date="2026-06-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxNQV8yLTRzV3JVWDdGWDBuWVNETXdQNlc2NEZwTGlNWjZGalFxZjltQmJXU1dQLXphNmpnbGc0NEE4cExVcFJEMmt4VVZINWVxOFVJY2YzM1lHTy1YMU8wX2FSdGg3eWJqeVVFZXRxUHQxN2pSMldLZFE2MURWMC13MDZqMW9WV2oyLUJOZ0lUamZFeVE?oc=5" target="_blank">Авиакомпания Air Astana открыла рейсы из Казахстана на Кипр - Караван</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 19.03.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.06.2026 11:29</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">«Казатомпром» будет поставлять уран энергокомпаниям Швейцарии, Чехии и Японии - Ритм Евразии</div>
+      <div class="art-summary">Авиакомпания Air Astana открыла рейсы из Казахстана на Кипр - Караван</div>
     </div>
     
-    <div class="article" data-date="2026-02-24" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOOUptOXJ3ZjVkWkZoOFRXdUNIaGMtV3FRaXktNE44Vk1wb05FUU9BYnVyUW5ybW02MjNaVVN0TFY1WTdoTEVfY1dHR3ZtRHJCZ0RFa1pPdWcyV0RZRF9JZkl2OEVsN3J5d2IxM0JZS0RXWjFWcU5Qa2RjWGZ4b19uVzlUQjZXdmE3NEd3MElnaWx5ZE9WdlNHNEdJZlJmVVRZUi1FNVFFNUpEWUhXQXh3UzlpNUo5dE0weUHSAb8BQVVfeXFMTkNFczhzUDNPbmxNZXlsUTBVd0lRN3cydXVndGwzQXd5VndqSm5CZ0VFdEJhaThCQmlTeTRuMmUzMTdIR2M3ZkFBYjV5c3N5OXk2ZDdhNXhwSFVJY2wwdmRWUzNUa2JiR3VmT214U0xQLUJJRU9WTGRXOXI0blhzTGowalZlTXpxNjVoa3RaNkdtTWJoV1VfaUhQUXJ6bVVuR2VoOU50OGlNX0drR1djOEdiUmN4WG9TVk4xbzZleTQ?oc=5" target="_blank">Бесплатные финики и безалкогольные вагоны-рестораны ввели в поездах КТЖ на Рамадан - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+    <div class="article" data-date="2026-05-08" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPVkljLUIwZEUzSnRqdkp3eVU4SlJCSTQ1ZmlxNFkySEwtZGQ2WkNOVTlCekNLTm5sN0VleU85d0x5dHJ2Z3c1bVlkdXZKRzVoSkIwZVdXZW9BRkl3dnp0aTUyVmdPWF9OdTFjaVJNbnRRVFhmWFJpZ0poZnFrXzFFTGpwdFJqV3dvR3Q3Z0REMXdXc2tZa0RFSdIBSkFVX3lxTFBvQlpOY1plMzNEMV9sOFl3cnFELVBKZHVaRjdqXy0tTmsyVDRxbE9YTWFaeVhpSmtGMXJEQTJDMUZoeWE1WklseDRR?oc=5" target="_blank">Двигатель отказал у самолета Air Astana по пути во Франкфурт - Вестник Кавказа</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 24.02.2026 08:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 08.05.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Бесплатные финики и безалкогольные вагоны-рестораны ввели в поездах КТЖ на Рамадан - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-07" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE9WWGxPTVA0cUFzOC1aT2R3T2V3eERuRXdxZFJQQTJMOElpT2psWC12ZHpyM29IcGNCZEVtY1lPbkxYQ29fMF9CeGJn?oc=5" target="_blank">Об объемах экспорта зерна и муки рассказали в КТЖ - АПК Новости</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 07.04.2026 09:05</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Об объемах экспорта зерна и муки рассказали в КТЖ - АПК Новости</div>
+      <div class="art-summary">Двигатель отказал у самолета Air Astana по пути во Франкфурт - Вестник Кавказа</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-01-08" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPODhnSDk3QXc4M1Z4RER4VmNVYmM3dVhHYVd2RjRaTExtTmctMDFrMkpoSklCVmpQRUlUVWhDUEpnMGxWeDIyQzRFdHoxbFF0U1pEUXo0N3lvYXgzd0FJMXNzdGJkeVFBVXZXRVNuZ09VUFRLNjU1UGFOTXBUVE9ESWxxM01BSzI4WkxnMkw2dEtwdWEzdVptNmtVUVBCcnFhVG53VVh30gGqAUFVX3lxTFBjWGMycUM0dTVuS1lFWWl5NGNWM0QyS2NnWDB4Y2tySDZXR0w5Tk9BSUE5eGNCSVE0Q09Kd0U2YXRVRUVyckEzakhBNUREWTlsRVlBRGozUm9kOWdqT0RwdTdzUmxTazBRWVlleFg3ekxDNDhxZ2tHOGphLWNFRmhpTEhEZ0xZazBCZjdLT2pTMzFrakt1cUdqVzZFbThlTGp2WjhNd0hfenJB?oc=5" target="_blank">Повышение цен на интернет в 2026 году: «Казахтелеком» назвал причины - Finratings</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 08.01.2026 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Повышение цен на интернет в 2026 году: «Казахтелеком» назвал причины - Finratings</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -237,8 +190,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-01-08';
-  document.getElementById('date-to').value   = '2026-04-07';
+  document.getElementById('date-from').value = '2026-05-08';
+  document.getElementById('date-to').value   = '2026-06-02';
   applyFilters();
 }
 
