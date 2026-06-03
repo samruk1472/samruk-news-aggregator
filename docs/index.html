@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 03.06.2026 20:05</div>
+  <div class="meta">3 источников · Обновлено: 03.06.2026 21:37</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-01-03">
+      <input type="date" id="date-from" value="2026-01-08">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-03-31">
+      <input type="date" id="date-to" value="2026-04-07">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -106,91 +106,79 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-03-31" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE1RT09LR1pTNVFMSFpIcXgzc2k1TXNkYm8xaVpIdUxmRWxRZGNVd0lSSms4dndMOUh3RXhYOFBWZkwwY1k0MUg1QlI5RXp5NzBaZ3J0ZHVDc29JU2JkMUZkRmhZUXc0c0d6c0VqSXZENDJpSEpyU05hTVdFOG95dw?oc=5" target="_blank">Что меняет уход BAE Systems из Air Astana - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 31.03.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Что меняет уход BAE Systems из Air Astana - Inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1mZlRuaUZ0aTFqUVhudVVJNUdhd0F0VUZEOTE2ZFFqa3FVUk9FcEVOR3Nsd0ozdXM2M3JhMDdKbi1GV1RyNWFvZVRBOC01M0ExMjNScElIOVhWTUkxZmZwbGVoeGtpQjVpZzlTUHpIS1k1QlhadGlMRtIBfkFVX3lxTFBveHlqLWhjN0Uxcl9sVW8tcmlKcFN5UF9qMllsbGtleDUtTlAtLTBDRGYxaXk4NU41aVVQak1JamV5dDBYMzc2X2I2cHJQMDNXaG5vcDVhendscF9GRHhoWDhmMlhPa1hXdFN1SXNQYlZyODNSd1h6RU00REhvUQ?oc=5" target="_blank">КТЖ займет миллиарды юаней - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+    <div class="article" data-date="2026-02-09" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNYldueThFZy12Q3RyZGsxTXQ1UnVnMHZXWFZRV3MxQ3FIdFhHTmQzdlJfN1UtbEdnd3ZkRUNyci1NRFE1aml5c1B6TFhvLUlUS1FqbUxhbHJ0cm9tc0N6ektQamo1WjM5NUxCc2VBemY2czdFak1INnE3MVRaX1RfN1ZXYnozWGhMWk83VmFicUFNbVA0ZTNmMWJfMEYzTmJIdk02UkR6VlNieVhHRzlXRUZB0gG3AUFVX3lxTE85dHdzcG0wQTkwUlRSNE5HOXRtRjhob0ZpaEJiaW8tR3k5RUprTWxlUVFjUDhyNFdBc3FvUU4xN2xsNHlBOHh0anY1ci1BUlZDVFVSd1hxeFlFRnB3YmpzaTVuaVZoZkZjUnhkSjZmWW8tdWVjSGRnZ19yelJORmJyVkplSzkwNTc0OTBKZnZIU3hwSXJtSDE5TnlkUDJjYnlmNmpaa2lHR1ZzcnpHS0tieXdoTVN2Yw?oc=5" target="_blank">Топ-менеджера КТЖ исключили из совета директоров дочерней компании - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.02.2026 08:00</span>
+        <span class="date">📅 09.02.2026 08:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ займет миллиарды юаней - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-18" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPOEtFV2ZjNjJvMXEzbmQ1RlVNd2FpVk1kMEROSGZYTjdRYVFMOXAtTHpiT0lqLXBXZGZjMGFWYXU4Wnp5aVZSZnhTSEpMQ2xiLVFQdFB1RXVCZDE4TlRVeGkxSldMcE8yWVVLT3NIRFhpQmU2VWZDZ0NqdlNLSUcxMTlvTDhscktpQnJpNXY0MG9xNDlOQzRMSlRFZGo0c1R2dDhwbFNwaUdwRHJIRnRvODVBZ3HSAboBQVVfeXFMTWZGaWhzNzhOV3I3YVpIbTA5RVBHSE9wZk9YbjFUazNhdk05NUlfcUN1d1Jxc203WlgyaGx2MEZzRF9SVHNDUE94d19xRWJMOTVGLUJuRHdCbVkydUV6clR2c1p5VjZPZzUtYkxwMURfeHlWZzZUQmJNRUdFVEpENUhWYXlVaW9fV3E1NWdZTUt3MldPM2hhTWZpTWFQR2JwbC1Yd2NnV3RuTkY0bmxmaDlmcngzR1E2Y1R3?oc=5" target="_blank">Поезда давят сайгаков: в КТЖ объяснили шокирующие видео в соцсетях - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 18.03.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Поезда давят сайгаков: в КТЖ объяснили шокирующие видео в соцсетях - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
-    </div>
-    
-    <div class="article" data-date="2026-01-27" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOZFhVenpibm94Y3JwVE1YdHB4azJLcnhxYmYtTVF2a05iUHI0NXV3ZlBXSi1mU0FzOUZ2czAtRFAxZzM1cDJuYVdXQy16Wm9EbnN6YXlPeG9lSVNOYmNLal9nQWtfOW5IY0Rmem1KbWpQOVp1OFdWX0dRaTl4XzV1MGgwWWNTYWJzbWRUbFhhM29RRWJPdW55S3paNTJEVXNGNEF4dG1fMWtpamhja3NzY0530gG2AUFVX3lxTE5tTExBSGtzWkhFQ1ZrV1ZZR3BkS1ZDVFd2T3ZWWENFYWxCOWxlQTktSldCby1kbkZFNkp3RzZhTmZqd0luaktiMzhOTjYtTlpzaW5UT3lxRDI1Q3dnVHFUMElOQ05KUHVrQ0EzdXFrV0hjMUZsVkFiOUNFSHVibXpqZzBpcG5mWHd1d184RGZxRUotUTR1Sy1LZTY2SkptRUlkOE52TzlwcU1EVFNzbmltN0hzYWhn?oc=5" target="_blank">Казахтелеком используют мошенники: что происходит после перехода по ссылке - Finratings</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 27.01.2026 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком используют мошенники: что происходит после перехода по ссылке - Finratings</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-13" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQVpkRGxuOFFLVzAwVFl1a3NzN2twQ2w4N2pBVmVfVk43Q21MeEQ3UTJ6Z3NWU0xNelVvUi03NlBSWGVQeTV0TzhMdUhERm4ydTY1b2ZTcEU1WTlfcENnakJaU2hpaW9RZVNmMDdLN2Joc2tXZ0dycDY3dV9IMDJDWGszbFhLOHNFY25keGI0NDdjaW9VN0U1QXh5eGwtNmQ1cjI5em1lY2o3SXdfUnlBNU1yMjdrNk84V0J6WklSNkZMX3E1TEo4X2s1ZE1wSTR5dWtRVlZn0gHbAUFVX3lxTE5hV2kxbjNGUGhVVFQwdkx0czA0alZMN0prZmZfbTB1eE9wQTVMMkFpcUlsb3lIQlV4Smp0czh5R09yMVJvNGEwTGFtSE1LbEl3VmR4OHVlb2tqVEJZVVlEZURSbHlNM19DNlJEc0lKRmhpS0RZYkZ6M1BSQjRGTjNBcmVybVdzVDI2bDBwN2xZUGRPbGI5a25DWHZtNDNLdXNiWFB6RHhHY0ZuMEpfZ3dlbWR1eW9SV3FSMXptVmRDYWY1YXNJWGFoYUY3Z2xrWC0wblpHdUFiRVNZaw?oc=5" target="_blank">Интернет в аулы и AI в школы: &#34;Казахтелеком&#34; презентовал цифровые проекты в Кызылординской области - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 13.02.2026 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Интернет в аулы и AI в школы: &#34;Казахтелеком&#34; презентовал цифровые проекты в Кызылординской области - Новости Zakon.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-01-03" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQeXhuQlVzUDVNNjltWndsem9oTWN3SlUzMUtCdnRjUHk0NzRuSUYxZ0VTUlZaUTljLUVWNXo3ZlFlSzVaR2lPLWVfY2p0V3Q1emxXOFdNdEh2RWZnQ2pSck8xTzdFcE5PQVlDMTlXREF1anhxbVdKLWZPbnFEMTJ3WThZdVNlQk3SAYsBQVVfeXFMTVBmcWhqMWtON1BTdnNfLXFqUkFhSkdDb2UwTHFGd1kxWkxMSUNVSlVWeEdJcDJWSFZQT3YyTGtOUjhqUEF0YzFnM0NqYWRUdS1vWWM0TDh6d28yR1V5d3lPTjRCVExXajZWUkIwVng3OVZkZnBmc3N2aGVvU3NGQWROZFFwUFhnUVgwaw?oc=5" target="_blank">«YouTube не грузит»: что сказали в Казахтелеком - Finratings</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 03.01.2026 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«YouTube не грузит»: что сказали в Казахтелеком - Finratings</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-02" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxONFU4MVhidUlUNm9ZdjZMd2l0NE02cV93ZWNXNkZZWFlOQngzUzJPaXpDLTZ2ZDkyQUt3eVlfNTI4dndtSDFlNFYtVEg4bk5CZGM1S0xuaVlkTGVobnZBRk9JWFQ4aGR2RV9ZbFFhWXU1OW9PRl9zLTZaZWpBM2g1bmFVQkdGS0pCSlVKM0dETEU4dnpHNlVISXowY2dnQXNBMXdV0gGnAUFVX3lxTE1ISmxmQzF0TzFHdEhFanM4X3YyNWF6cUx4VlVlMjJNSGc1Ui1DUGVwOE9sT3VNMkZ5UTljRG9CbEEzOVhQRE5Sd1NEZG1ZTE1jR29LUmFmWjVXcXRrRjNtSXVqZXVMSGJlOWYzc2tOS1k0SFMtLTBTQkd3NFF3Nk9Mc3VmQzhYaEVocXdSN3IxeDVSQ1R4SGtUYlVBZlAxeXNwUmRwTk9r?oc=5" target="_blank">Казахтелеком отключает аналоговое ТВ в Астане, Алматы и Павлодаре - Finratings</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 02.02.2026 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком отключает аналоговое ТВ в Астане, Алматы и Павлодаре - Finratings</div>
+      <div class="art-summary">Топ-менеджера КТЖ исключили из совета директоров дочерней компании - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-03-19" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxOd0tIeGRnVHp6YzFWTFdpdFhaOVY2Z0tvS0ZaR2FUdHhhX1JFbzRsV25ROUNCSkhtYVE3Q2luRVJlS2VJSnVpZzBCOUdGR2t5aXhHNDFHWEhGWjJuN2tGV2lyY0F5bGt1NV9saGs3MkEwNWFQUVJpN2N4b0F6cVBITmxYMVdORl9TVzJrT1dHQUp1YUJhRFR1Wmh4NE8zOHl2NkctZElraVRMbWNqeXhhM21ReEZGYUxTNnZCdjRUSkVuOU90UkVoRw?oc=5" target="_blank">«Казатомпром» будет поставлять уран энергокомпаниям Швейцарии, Чехии и Японии - Ритм Евразии</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 19.03.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» будет поставлять уран энергокомпаниям Швейцарии, Чехии и Японии - Ритм Евразии</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-24" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOOUptOXJ3ZjVkWkZoOFRXdUNIaGMtV3FRaXktNE44Vk1wb05FUU9BYnVyUW5ybW02MjNaVVN0TFY1WTdoTEVfY1dHR3ZtRHJCZ0RFa1pPdWcyV0RZRF9JZkl2OEVsN3J5d2IxM0JZS0RXWjFWcU5Qa2RjWGZ4b19uVzlUQjZXdmE3NEd3MElnaWx5ZE9WdlNHNEdJZlJmVVRZUi1FNVFFNUpEWUhXQXh3UzlpNUo5dE0weUHSAb8BQVVfeXFMTkNFczhzUDNPbmxNZXlsUTBVd0lRN3cydXVndGwzQXd5VndqSm5CZ0VFdEJhaThCQmlTeTRuMmUzMTdIR2M3ZkFBYjV5c3N5OXk2ZDdhNXhwSFVJY2wwdmRWUzNUa2JiR3VmT214U0xQLUJJRU9WTGRXOXI0blhzTGowalZlTXpxNjVoa3RaNkdtTWJoV1VfaUhQUXJ6bVVuR2VoOU50OGlNX0drR1djOEdiUmN4WG9TVk4xbzZleTQ?oc=5" target="_blank">Бесплатные финики и безалкогольные вагоны-рестораны ввели в поездах КТЖ на Рамадан - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 24.02.2026 08:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Бесплатные финики и безалкогольные вагоны-рестораны ввели в поездах КТЖ на Рамадан - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-07" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE9WWGxPTVA0cUFzOC1aT2R3T2V3eERuRXdxZFJQQTJMOElpT2psWC12ZHpyM29IcGNCZEVtY1lPbkxYQ29fMF9CeGJn?oc=5" target="_blank">Об объемах экспорта зерна и муки рассказали в КТЖ - АПК Новости</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 07.04.2026 09:05</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Об объемах экспорта зерна и муки рассказали в КТЖ - АПК Новости</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-01-08" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPODhnSDk3QXc4M1Z4RER4VmNVYmM3dVhHYVd2RjRaTExtTmctMDFrMkpoSklCVmpQRUlUVWhDUEpnMGxWeDIyQzRFdHoxbFF0U1pEUXo0N3lvYXgzd0FJMXNzdGJkeVFBVXZXRVNuZ09VUFRLNjU1UGFOTXBUVE9ESWxxM01BSzI4WkxnMkw2dEtwdWEzdVptNmtVUVBCcnFhVG53VVh30gGqAUFVX3lxTFBjWGMycUM0dTVuS1lFWWl5NGNWM0QyS2NnWDB4Y2tySDZXR0w5Tk9BSUE5eGNCSVE0Q09Kd0U2YXRVRUVyckEzakhBNUREWTlsRVlBRGozUm9kOWdqT0RwdTdzUmxTazBRWVlleFg3ekxDNDhxZ2tHOGphLWNFRmhpTEhEZ0xZazBCZjdLT2pTMzFrakt1cUdqVzZFbThlTGp2WjhNd0hfenJB?oc=5" target="_blank">Повышение цен на интернет в 2026 году: «Казахтелеком» назвал причины - Finratings</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 08.01.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Повышение цен на интернет в 2026 году: «Казахтелеком» назвал причины - Finratings</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -249,8 +237,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-01-03';
-  document.getElementById('date-to').value   = '2026-03-31';
+  document.getElementById('date-from').value = '2026-01-08';
+  document.getElementById('date-to').value   = '2026-04-07';
   applyFilters();
 }
 
