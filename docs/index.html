@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 04.06.2026 14:16</div>
+  <div class="meta">2 источников · Обновлено: 04.06.2026 17:36</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-03">
+      <input type="date" id="date-from" value="2025-10-22">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-04">
+      <input type="date" id="date-to" value="2026-06-02">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,13 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
-      
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -111,93 +107,44 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-04-20" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE04c1RGYkFCYkIzeHBVQXBYZ0ZXbGsxTGJIcndBMERIX3FPYWFjbnNNS2Y1TlVpS2dxSjNBTUQxaVVfMUxCZkRyZ2NTc0x6aG5iY3FaeEJOZl9jUGxVcUxz?oc=5" target="_blank">КазМунайГаз сформировал портфель из 23 геологоразведочных проектов - Energyland.info</a></div>
+    <div class="article" data-date="2025-10-22" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcnczYVE1UzlRR09pN0ZvZjRfbmRVUGU1Q3V5aUpzSXBNZHJEc0w1ZjZjc2ZIOUZyYmxKT2lGU01YRl9jWlJOdWhKeTJiSG5hMjh6TFlLZnU0YjFYUl9MTnI0M1k4TG1xeGNadW5vbEdYOG9uVmRRNkNmVHY3QlJpYjgyaXRuNTZkTHFsd1JSVEhGYm5EUjBnWElROHZCR195YW12bkR6U3JJdW10TkhIMkY3aHRyQlBEQjJJ0gHAAUFVX3lxTE5IMWxpcTV2cjhDZkxPQmdlLUJoWVgwVGx5YU9NdTNZRm9OcHBZUW1KNmVTb3hJOElWMVRBR2YxTDNVTkw2VjlTNTAtbWM1dzFFUVhXczBJRHJBWjI4WDhaMkVxMDdleXV3c1Fnc3czNC0weXk3NlFiZTBVWFlDek9sNWdoVWNFMnFrY1MzU2VWLTFXWFJ3Rm90dXVGZnZwUHh3emVUa1ZpSHRxNjhIeWFIVjNkUW5hdkgxcU1NenFubw?oc=5" target="_blank">Почему «Самрук-Казына» не отчисляет в бюджет 50% своей прибыли, объяснил премьер - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.04.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 22.10.2025 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">КазМунайГаз сформировал портфель из 23 геологоразведочных проектов - Energyland.info</div>
+      <div class="art-summary">Почему «Самрук-Казына» не отчисляет в бюджет 50% своей прибыли, объяснил премьер - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
     </div>
     
-    <div class="article" data-date="2026-04-03" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxNelVGUjlja3U2SkFYdlJZUGRqeXoyV0tNX2llTXd0QTdrMndPczhTa181eEhJWjlRT0I5d0FZY3MxdnFEZHRYcUdyXzVEdnFneTRrWUphNENTdzhvVmt1bDM5SFM1ZFUzcDdDWTk3aHE0b1c4SXV3aVJ1ZVJUUVdlbEcxNlF5NW1lajEwNUlWZ3RfaHdOcXpPTjhxV2VxRkU0YlhySWRMbExPU0NGeldHU3lNWjdmUmZsUWFSV25DcWRwZ2toSWYtQTA0ZGlSbWc?oc=5" target="_blank">КазМунайГаз на GECA-2026. Новая стратегия геологоразведки и новые партнерства - Neftegaz.RU</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 03.04.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз на GECA-2026. Новая стратегия геологоразведки и новые партнерства - Neftegaz.RU</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-03" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1OZ2VSUFVYR1AtQVRnU1Y5NTJLbkYwMjdnSVp1LVBUMldmZjZCcXA3c3Y4T0xSRjJQZFN3blhESXo3VWRKaDQyWDBMNHlzcjBuZlo2cjFvVQ?oc=5" target="_blank">Аналитика. КазМунайГаз выполнил моделирование 5 из 15 осадочных бассейнов Казахстана - Energyland.info</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 03.04.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Аналитика. КазМунайГаз выполнил моделирование 5 из 15 осадочных бассейнов Казахстана - Energyland.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-22" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNU25yOEl2S0ladjQyVzRtaVR0VDMybmhwbVJoTS1CTGw0T25idENfS1R2UmxMWG9SUmdDZUx4WHl1UTV4RkNRZHBES1VZbjMwTVVlZldfdjVMV2Fackt2QXVNMDI4dmcxNk5PNGRQYlZtWUx5aWMxVWhHcjY4bXo3NV9jRUZjQlpFN0I3N3pBRkdwVm5sNnF5T2daaE05Qzl1NnFNZThaVmdtX0FJSUMzZQ?oc=5" target="_blank">КазМунайГаз внедряет предиктивную аналитику с использованием ИИ на своих НПЗ - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 22.05.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз внедряет предиктивную аналитику с использованием ИИ на своих НПЗ - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-29" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNMlNMR2pkSm9WNXZTNmJLWGdKVlM1SmI4eU9yTEFUblNQMHQyc0lXdjVHaTNfRU00d24yMXZrRzFnMHRSNVFkdDhYMzNvbWR5Wm9JWnM5MDBZc05fVjA3eDJoeVBMRzNLTENKWmZCVmpjSkZvakhKcDNoM1p2Z0wtSktEd3p3S0xJdFFtNkRXV2dNT1hBeGhxWEhXYVZ4UQ?oc=5" target="_blank">АО «Самрук-Қазына» сообщает о приобретении акций АО «Казахтелеком» - Mail.KZ</a></div>
+    <div class="article" data-date="2026-06-02" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXZNMkZaUFF1Z09YNk1FSHM1NnZoNDltWFcwd1B6REsxZFhrbDR3dUppSER5Sm9WV2ZsMkVrS2VxY25yRDdYVGU5c29CXzdmamhUOTJUVXVxTlY0Y3NWVVhTdEZNQTNpMXEza2V1VHJEQUk5UlZpRkEyUXJxZFoxcElMcnd4RkRLTXUzR2RmdDlVLU9weWdMSFZB?oc=5" target="_blank">Казахтелеком: итоги 1-го квартала 2026 года - Freedom Broker</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 29.04.2026 07:00</span>
+        <span class="date">📅 02.06.2026 08:05</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">АО «Самрук-Қазына» сообщает о приобретении акций АО «Казахтелеком» - Mail.KZ</div>
+      <div class="art-summary">Казахтелеком: итоги 1-го квартала 2026 года - Freedom Broker</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-02" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQjlpcHdpZG5YTm1peDc0UXFlUkxBZmtjVkZZYjVja0tqYUItQ01wQzNSOGxSdWhnRVZiSU1KdWdQNjNzNVhNQW5aeDJaY0RJc0lsRUtuZ2EtZHRhVm1lV3VSNEhBWEs0WlllVXVzWnpVdnZfOVRDNWI3R3BlS2FiODYwWHJzaWIz?oc=5" target="_blank">«Казахтелеком» признал сбои в работе YouTube - kz24.news</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 02.01.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» признал сбои в работе YouTube - kz24.news</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-06-04" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-04/fvfv-shulbinskaya-ges-uvelichila-chistuyu-pribyl-do-9-2-mlrd-tenge/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-shulbinskaya-ges-uvelichila-chistuyu-pribyl-do-9-2-mlrd-tenge" target="_blank">Самая мощная ГЭС Казахстана увеличила прибыль до 9 млрд тенге</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 04.06.2026 12:45</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Самая мощная ГЭС Казахстана увеличила прибыль до 9 млрд тенге</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-04" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-04/zhnb-buhtarminskaya-ges-uvelichila-pochti-vshestero-pribyl-na-fone-obnovleniya-dogovora-arendy-s-kazczinkom/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-buhtarminskaya-ges-uvelichila-pochti-vshestero-pribyl-na-fone-obnovleniya-dogovora-arendy-s-kazczinkom" target="_blank">Одна из крупнейших ГЭС в Казахстане увеличила прибыль в шесть раз за счет «Казцинка»</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 04.06.2026 12:38</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Одна из крупнейших ГЭС в Казахстане увеличила прибыль в шесть раз за счет «Казцинка»</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -256,8 +203,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-03';
-  document.getElementById('date-to').value   = '2026-06-04';
+  document.getElementById('date-from').value = '2025-10-22';
+  document.getElementById('date-to').value   = '2026-06-02';
   applyFilters();
 }
 
