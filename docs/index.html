@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 05.06.2026 19:23</div>
+  <div class="meta">1 источников · Обновлено: 05.06.2026 21:12</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-12-26">
+      <input type="date" id="date-from" value="2026-06-05">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-06-05">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,11 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
     </div>
   </div>
@@ -109,39 +105,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2025-12-26" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNM1ZLSlhzTk9mNFI1aTZ5bV9TaVhHc0dmYWJBNE1QaXFPbGxhQ2FUYmlEM25qNWFBc1F0R3ZlVW9jY0ZvYlFNeDhmQmhmdVd5cXV1c0FrbVdDWXJNUF93cU41T1ZSbUNXSnc0NXZhdEtleDdGNUplOGNSbXBVdTZoYWpxN2lFN1JmMWkzODR3QUIzTWVkbDdiZGhhclFXRjZHV24yWU1ocUU?oc=5" target="_blank">&#34;КазМунайГаз-Аэро&#34; выводит региональные аэропорты на новый уровень - NUR.KZ</a></div>
+    <div class="article" data-date="2026-06-05" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-06/nvbr-kak-muhtar-dzhakishev-vstrechaet-v-almaty-svoih-svatov-iz-londona/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=nvbr-kak-muhtar-dzhakishev-vstrechaet-v-almaty-svoih-svatov-iz-londona" target="_blank">Как Мухтар Джакишев встречает в Алматы своих сватов из Лондона</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 26.12.2025 08:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 05.06.2026 19:49</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">&#34;КазМунайГаз-Аэро&#34; выводит региональные аэропорты на новый уровень - NUR.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQN2xPME1LRUJSN1dqdFhBV1BNZ2FpLWRONm1RQ3d1RjZrQV90R2xtYmlacnpYa1VEUUlpdDdhSEg2akxHNU5lQTlGM1g0RHIzMko1UzdRMk1lVUY2SkN0M1ZlemhhMVhLNGoxSEFjazdXdC04d0llY2NVbktEM2c2b09GZU9pam1TRlNsStIBlAFBVV95cUxOaS1IQzVrNnphWWVaMHUzeUxlaUp3UjE1OEp6Y0pUOGdvT1RoZ2RYa1hNeHdkY0NqVjZHMTl4WUlWYXRJcnk1ZEZnMm83WkRYYUpNVlpzTDVHbE1DTnlGVVVPTG40QWZwU21wN1JCRXBKNXk4eGk2MDBZdXhZTkhWMFZLclI1dThjWkxsSm1iR0xJMy0t?oc=5" target="_blank">Air Astana возобновляет рейсы в Дубай - Central Media 24/7</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 08:52</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana возобновляет рейсы в Дубай - Central Media 24/7</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE8wc2std3ZyZUNKWTVEeGtUa0p2TVczYjJzaFRmY2NpcVBjaHpnZHJQcjd2WXJOMWpITEVvR2RlZmFldW90aFNKd3hR?oc=5" target="_blank">Тараканы в поезде: в КТЖ извинились перед пассажирами и наказали виновных - Ак Жайык</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.06.2026 16:34</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Тараканы в поезде: в КТЖ извинились перед пассажирами и наказали виновных - Ак Жайык</div>
+      <div class="art-summary">Как Мухтар Джакишев встречает в Алматы своих сватов из Лондона</div>
     </div>
     
   </div>
@@ -205,7 +179,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-12-26';
+  document.getElementById('date-from').value = '2026-06-05';
   document.getElementById('date-to').value   = '2026-06-05';
   applyFilters();
 }
