@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">8 источников · Обновлено: 05.06.2026 12:23</div>
+  <div class="meta">3 источников · Обновлено: 05.06.2026 14:06</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">26</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">20</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-01-05">
+      <input type="date" id="date-from" value="2025-12-02">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-06-05">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -88,8 +88,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
@@ -108,267 +106,53 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-05/satl-spisok-smertej-v-ktzh-kompaniya-obyasnila-sliv-dannyh-pogibshih-na-rabote/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=satl-spisok-smertej-v-ktzh-kompaniya-obyasnila-sliv-dannyh-pogibshih-na-rabote" target="_blank">Список смертей в КТЖ: компания отреагировала на слив закрытого документа</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 05.06.2026 12:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Список смертей в КТЖ: компания отреагировала на слив закрытого документа</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-28" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQSWwxUlFjOUNIMFp2MVp1bVdlMktNMDRmM1o2YVVLbzBWU0s2czRFMmNwZVNwYTJaSGNxZWx5eUhRSTBzTTk2eXE4djlTQVhsLThCZHZEZEQ1MEFzNFl5UDNoLXRXTWF0R3hma1h5QVptZTZQY0xDOHUzVDh2d2RhWktVVEZJcWNXYjBxXzVIMENxZE5hWllRSHRJdw?oc=5" target="_blank">Сокращение в «Самрук-Казына»: сколько денег сэкономила компания - Mail.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 28.05.2026 12:54</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Сокращение в «Самрук-Казына»: сколько денег сэкономила компания - Mail.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQb3VYb250Mjd3eGE2VFNGVXRKSGNPOFM2RDBhZm5mX3RkWGVjbTdfcFNIYWg5NHF3VVRlXzNoM3hCVU1wSmFWNERaYTcyaXU1T24xNWlId01rZG5mVlctdUxBWXlSZXhyejFHaWNGMDJhYnVoTlA2cXJmR0s1dTFyRjB5V3lyMTBZa3pNa01TOW1rUjFvd3IteXhmSU9KTHZfTHFPVGNCa3QxQXZKbXhvVDdkV0wzVlk?oc=5" target="_blank">Через порт Батуми транспортировали 31 тысячу тонн грузов из Казахстана - &#34;КазМунайГаз&#34; - ИА Кокшетау Азия</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 05.06.2026 07:46</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Через порт Батуми транспортировали 31 тысячу тонн грузов из Казахстана - &#34;КазМунайГаз&#34; - ИА Кокшетау Азия</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(20)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-06-05" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-05/kaye-trevozhnyi-signal-dlya-tenge-rossiiskie-vlasti-zadumalis-ob-oslablenii-rublya/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-trevozhnyi-signal-dlya-tenge-rossiiskie-vlasti-zadumalis-ob-oslablenii-rublya" target="_blank">Тревожный сигнал для тенге? Российские власти задумались о девальвации рубля</a></div>
+    <div class="article" data-date="2025-12-02" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPSi1tZkhPMV83QXdaWXNvVnM2eEtWNTBENkVVWkhxT3ZSajhaaEY5RlBILVR5Y2Q2NVZFbEdZZy1MTk1sOVFmdFptT2ZPTWh6cTF3YjlrVGJycW5mbWd6X0d6ZFlvLXVOOFZfMnZLU3pRYmhWRVd4RjBPS0g0M0d6eHVzUHBFOGpBMUVIY0JPbFA4T1dSTVp2TGdKZGRyUdIBowFBVV95cUxNSXNDQzhYYVlHSVQ3OFh3ODBkbnEzSVNUMjdkcmR0RHRXR0FreDJGb3NvSVpvVkFUSmk5NThRdWx6UXVSRkM0bjZEcUctUjVCcjVtNFF1ZW04T2VGdEdndjl0OU1ZQVRwcm05bV9LQURNc2VGRTRhM2FyZG1Bdm83Vk1ibDNUNlIyRHJVUlYtS1hxaFdEbGhHTjduaHRDYmlGYjRn?oc=5" target="_blank">Токаев поставил задачи перед главой “Самрук-Казына“ - Tengrinews</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 05.06.2026 07:09</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 02.12.2025 08:00</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Тревожный сигнал для тенге? Российские власти задумались о девальвации рубля</div>
+      <div class="art-summary">Токаев поставил задачи перед главой “Самрук-Казына“ - Tengrinews</div>
     </div>
     
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://egemen.kz/article/414203-pakistan-arqyly-ushady-almaty-men-astanadan-dubaygha-qatynaytyn-reysterdinh-kest" target="_blank">Пәкістан арқылы ұшады: Алматы мен Астанадан Дубайға қатынайтын рейстердің кестесі шықты</a></div>
+    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQWDVPTXU0TG10OWJHR3V5a0JVOHRoNDBqWW9hUDU3Q081eU5JaEp5ckdCWF9GUWdhalpWc2drMnAyRkZBSkQ3UkxSbWtrY3I3OWJibUhtbktQWkxoUlVWM0g5Nlp0b0p1dy1pYzlKVzlTQU1TLVNUNjhPaXU2YkxZT2xMSDB6dHhMVEdTNDN3YkM5NTExN0NDR2ZXalNpV2ZaZFZ3QU01QW5SVjBx0gGyAUFVX3lxTE1aX1FidWJEcXNxVUFvY1V1XzJpeEpUY0NkX3lKRzdINUVkcFBKRVVGOG1uUVg0OVZqU3BpYTVlTEFHRm1YNmgtQ1MzWWEyYVdGMDh2VFc2dmFIYURfelVQaUp4OXNvcUJOSjhFVF9Rb2J5ZnNnQ19sakRrb05EcHdFYUtPTUF0Z01rODVGdVB4dkVSVnNGNENsQTZ0M1hxUEF2TDQtaHJmZmljYVludk9WTXc?oc=5" target="_blank">КазМунайГаз и BP планируют сотрудничать в геологоразведке - Report.az</a></div>
       <div class="art-meta">
-        <span class="src">📰 Egemen.kz</span>
-        <span class="date">📅 05.06.2026 14:15</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 02.04.2026 07:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Пәкістан арқылы ұшады: Алматы мен Астанадан Дубайға қатынайтын рейстердің кестесі шықты</div>
+      <div class="art-summary">КазМунайГаз и BP планируют сотрудничать в геологоразведке - Report.az</div>
     </div>
     
     <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOU1MyRzMzc2sxTmxITm1rNUFOUXYyMGpDdi1kNVRSVDNjOWFrTGoxRjlWZTRWdGYtVmNqd3RzNF9WWWJzcl9rX1YwWjJSQ2xMWVZWWXhFdW02NXVZU3hhM29EcVJBbWRLeVRrVTRiNEEwZXV4RTVnTC01eUtnVjA5aHprZnBTTVNPdlBJNFlGc2VUVE0wb05lNURYS1A3b0xYMkZHbGpFZTQ0MkpEZS05eA?oc=5" target="_blank">Air Astana возобновит рейсы в Дубай через Пакистан - The Village Казахстан</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9RQ3htSGNqaTNyYWw0UllnZkpYM0w5aGVSQllDODFBQ0tLVU9OWDRMblYxZmJIX19teVhaVEpOS0hvYTFWelNKNWdUbXVuelNrcm1PQnJMWk96SDdHSXcybzBmaVdqeG45RHhOOEZUWQ?oc=5" target="_blank">Air Astana возобновит рейсы в Дубай - Masa Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 10:49</span>
+        <span class="date">📅 05.06.2026 12:42</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana возобновит рейсы в Дубай через Пакистан - The Village Казахстан</div>
+      <div class="art-summary">Air Astana возобновит рейсы в Дубай - Masa Media</div>
     </div>
     
     <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1lVUFZODlmQm8tRHhLemdBcy1IN0xMZEhiazFLaG9vZEVCbDdVdGxid3QzVVhjTE0zN2pGU0NYM1phTVU5dVR0eWI4emloZG1OaFd5dGIzWXdmQWp5MURyaVBEWHhEQ2lIWHJjLXA0YkhicHVJY1E?oc=5" target="_blank">Air Astana возвращает рейсы в Дубай - BES.media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBueTYzSENZWkNVZVRQTHYwOGNxOERHZWpaOThGWjdCZTlSdXluLThBQVVVZ1NKTkU4VkNUUmNPd08wWWJvcnJISmlidnVDRGxhMHJ0WjEwNEpFbE5vZnRYcHBDeUxOS0FhemozOA?oc=5" target="_blank">Air Astana вновь начнёт летать в Дубай. - Exclusive.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 08:46</span>
+        <span class="date">📅 05.06.2026 12:25</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana возвращает рейсы в Дубай - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBCNTYwLTN5UGkydlNFMXNRbjhELXNvTFJzaVpZSU5ZdEdLUFhyQXRZRnA2TWlmUmtaa0F4OGhONDZqZkNCYmZabU56aE9Sc3d1bm1fc2RXTm9YWFJXYlNXX0Q2S2lTaXM3dTFkNGJxX0lkZ0JXTHkyQmdiMzU?oc=5" target="_blank">Air Astana возобновляет рейсы в Дубай - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 07:51</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana возобновляет рейсы в Дубай - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxOMkZxRVZWYjJIU0JZbkhIemtqUk1hRW1ZN2VMaVBwYl82Z1BEY1hRWFh1ZEtTOURvbDdvc0JDN1lVRnoxRFZzVmoxTEZ0Z1JjQm5VSzFWdE1Rb2lTTUw1M0JtUGFQT3hPank0YW93eXB2a1Nsa29Jd0hkNkhmZHVGTTlucG53YnljUUx3NGEtZmtWSC12clBSSDNhNk91SWxpeUhLX2pvaFRzUUlXcVl0WEZhallvTFZWMVJLOUstQ29aVzA1cnfSAcsBQVVfeXFMT3BKX0FRQUlfQWlCUWFJNlRQVm42OFEzYnJHdXdoMlgxXzZpX08xbkFIZkpKcENyWUMyTTk2Umk0c29oSmkyYUQweU11bDhEelZIdWotUjBKSTlDN3BLbERFUjFLS3VmT3JCbG1YTnpkLXMtTE5zbnQ3NDJfZ3ZpekpTR3VDalM4VHBfOXI3Qlk4eWNsSGJYNko0andYTEdReFVRQU02R1JkSUM0OXB4djJUZnlZV0VkUld5MjA5ZnNFTVRPWThUbW1TZ3c?oc=5" target="_blank">Air Astana возобновляет прямые рейсы в Дубай из Алматы и Астаны - Arbat media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 09:16</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana возобновляет прямые рейсы в Дубай из Алматы и Астаны - Arbat media</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPeUIxdGxQbUpxZUFibjRxOWs2clRiOFJ2TW9Mb3BYRjJTWTVOTnFKWTVmeWNXMk5kZ0trMVV6RWIzeTlEd0doS2duVDlHRHVUQ01rMThRNy00UWNWN1RTU2pPVnlwV3VRN0h3Y0ctV1B6WW9pOEJac0ZPN1pRVFpMcWdmZDRsOV85TXl5Nk03bDc3bGk5Z1lFVkFqa1RGOVlX?oc=5" target="_blank">Air Astana запустит рейсы в Дубай после длительных ограничений - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 08:24</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana запустит рейсы в Дубай после длительных ограничений - NUR.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxORnl4MjA5RERvTHNhTTlpVHZTMC0tMTU5TmNkcFpOS3J5bTA5clNmVVVLVmc0ZnhoNHI1TkFYM203Mks0cktIOUhRSHhtMVlRR3RSNVM3S2pSNWhlSnpacm1ZWloxUTlYSnhiOUdtd09JLTl2RU9lbGwyZktwS1NCdHhYMNIBgwFBVV95cUxORnl4MjA5RERvTHNhTTlpVHZTMC0tMTU5TmNkcFpOS3J5bTA5clNmVVVLVmc0ZnhoNHI1TkFYM203Mks0cktIOUhRSHhtMVlRR3RSNVM3S2pSNWhlSnpacm1ZWloxUTlYSnhiOUdtd09JLTl2RU9lbGwyZktwS1NCdHhYMA?oc=5" target="_blank">Air Astana возобновляет рейсы в Дубай - Vlast.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 07:56</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana возобновляет рейсы в Дубай - Vlast.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOWjRwNnJDeHV6WUZPR2JPaUdjXzdzSE90SVp1TlZJYW5LLVN2cENuRXdHMlRWWVU4WEVSUEtJaGhjTzBPUkZ2NFJnV0I1WVNMdF9fVjFtSEZ2NE1FcW55Um1KRTdXRmN2RWZVbDFDbS1oQnlEVTl3MDlpOFZFcmVqNEtPaHRwRnpyZ3MycjNJcm91WGl0cWhoU3V0YnYtdDhSSFI1ZmJodUNSM283Z2c?oc=5" target="_blank">Air Astana возобновляет регулярные рейсы в Дубай из Алматы и Астаны - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 09:54</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana возобновляет регулярные рейсы в Дубай из Алматы и Астаны - Kapital.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPR01HZUdaenJsUGEyUjBBX0ZSckFFUmFFb2kwRDdEUWxiWkFudDFpTXhXeWVLVE5SX2pOSFJueWJmRVhLeHRDWWg2MWhJWnhTMUZPYnBELXpDbkNxMHVhVlJoN3BNbnI3VC1Xa1lOeEpaMzFVOHl2Ymcyd2JseEZ1aXlxOF9Da3ZxQm9HNg?oc=5" target="_blank">Air Astana возобновит рейсы из Алматы и Астаны в Дубай - Informburo.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 08:15</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana возобновит рейсы из Алматы и Астаны в Дубай - Informburo.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQbjBqLTR0NWU5alNYVWR2cGhXNnhrejZIWUNvd1UxZV9veC1fMnE0Vy1PUG5laWZKNFhHSU1WQTQ1YkdJTVBITUpfWjZzYkxPNUcyeTZtT1RzWnhfd1ZEcDAtNkdodDhTV09NM1F6dEVRdzQ4a2xLajBUZW1ueGZ2RjF3TnJhQWNjYm9QNkVOMjFSN0t1bkRoQjhzb25udmlHVzJza3VyUdIBqwFBVV95cUxOTFl3OVgwTlhKS01uS3lVa1hyRFFUNldEQWNZZGJrMzE3REhZcnVFWXgxdkFCZTZsRzJETlNsRE13aWdSQTlDVmxqcG1zMGZwZ1VtbDFsUVA0cW94R3ViRUpBZzZMcGRBdVVOaTNoSm1ibGtoUXAzSFg1X3kwbC1jOUdtY3llZHFxeUR4VjJ2SGFCUkhoSlBoUmVsN09MUDljM3FJSmhKV0J2OFk?oc=5" target="_blank">Air Astana возобновляет рейсы в Дубай: когда снова можно будет улететь - Finratings</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 11:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana возобновляет рейсы в Дубай: когда снова можно будет улететь - Finratings</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MNmVPQk9YYmpEYW1ZSFRqUzBEakNIS3IxdHlWMXFNdXhYbEh5OGpRQ09zWGRaaktFUXRLaHo2c051N1BEeG1wT09OZDZJNTRNVmViTTdDbE5pbk55dkEtckVqSzg?oc=5" target="_blank">Air Astana снова летает в Дубай - Central Media News</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 11:20</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana снова летает в Дубай - Central Media News</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5kZmR5Yi1Kd0JUZ1J6OFVMLXFJWDVKaXdta3I4OVE0QnY5bnJ0TktPWjJYWmFWemd3enVHclJKa0FFckwzU0h1TXd3NERTeGRCa3ZIX0xzeVpMUVAwTmFkSEhMRmtwQTV3dDEtTjRwZmM1RHkyOUVfUGUtR0c?oc=5" target="_blank">Air Astana восстанавливает авиасообщение с Дубаем - Ratel.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 10:34</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana восстанавливает авиасообщение с Дубаем - Ratel.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOWlZRYVN6WnZDd2J1VnUzUjBScVFNekRrN1dhN19sc3k2NWFnSDdvdlhONEdGbGJkTW12Sm1UY0ZjTmQ2MmZQcUVqeWtXSzdFX1hhbmpGSGZhcXNoaUlEWThxNHJtRkk4NXJfSjU3UWM1cWNEa2kxZXNXRGg1MS1oaXhrcjNiUUFyOFFsYk5pbHAxZUM4d0JB?oc=5" target="_blank">Рейсы из Алматы и Астаны в Дубай планирует вернуть Air Astana - Bizmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 10:24</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Рейсы из Алматы и Астаны в Дубай планирует вернуть Air Astana - Bizmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOd0xVSmR5aXdqM2lhemlQVWpXcFRWVHFZRnQ4bkY3TUVqbm15Z2tQRTVrZzNPYU1pak5DSVVlVUJWN3RKcC10YS0wQnJfMGIyNnU0UHllWmRtTWVnMjdxVlhIYmwwZkd3TXMtWkU3ck04bGRiYnQzVHRhazFOVWh5RHlnUnZlRWQ2SEE?oc=5" target="_blank">Air Astana возобновляет рейсы в Дубай из Алматы и Астаны - Shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 11:04</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana возобновляет рейсы в Дубай из Алматы и Астаны - Shyndyk.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPVGtJNGtXUlJ6TEdVMmUzQ21WaHBLMFVMRUNHOHYyTUtwektHd0k2Z2Zxem5mNHdpYVlPZ0lycTJBa3dqWVo2UTVVYlEwWjREVURzUFlMRG1RN3VZSGwxY1pROUhOSWhNMzA1YVVodFdDNDNnMkFMQnBJZFl3aHgyYWNTNWg?oc=5" target="_blank">Air Astana возобновит полеты в Дубай уже в июне - Караван</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 08:46</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana возобновит полеты в Дубай уже в июне - Караван</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMFhtR3BKaC1zOEtIeDFreDVvbXVhQjNlSkJVSzJnZ2sxcE9QNGhidk1TZVkzSk5ubXpKTllEUWdQMmN5RTMxRHFXYjd0N21PUXRRZy15LWlBbGlESVVkTkczaWdWS2RLcW0zSDVMUzluTU9GX1RsVDB2VGJDbWhqMlhxUEZrbXk2S2lzTGdzeFhBZ2dUSkpPWEw4OW5Qa1hsT1NzcVprUV9jQWdLWW9VOHY1cjR0ZTJ5R21vdGtHZHM?oc=5" target="_blank">КТЖ предупредила о возможных изменениях в графике поездов из-за масштабного ремонта железных дорог - pkzsk.info</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.06.2026 01:14</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ предупредила о возможных изменениях в графике поездов из-за масштабного ремонта железных дорог - pkzsk.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPekZ6ZmJrNUs4TDNZRkNBbUhTMWhRQThBWGdrRDZQbDBsMzhxOFBsWGNFRndUN1ZYWHJPUXlfejhBdG5pWUZKM0pEeVdGSGYwOHV2Q0pBaGZkdHdkaURwOW9MUjdmc3lJOXFxMHBhcE1BY0kwRjVNam9xT1k5MzhtMTRZQlFxZFNKRDFqcEhn?oc=5" target="_blank">В Сети обсуждают список происшествий в КТЖ - newtimes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.06.2026 11:10</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В Сети обсуждают список происшествий в КТЖ - newtimes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-01-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxPSDlQZktMeHdaRTItcEVMTVFESC0xRjFIdlpQY0F6TEVVSnlsOW9CUk5XcGtlUE1kTkd5VWJWeEdpX3ViX09xdndmS2lhUTVxQkt6RXk2RV92alJNSWxrNVhjMlg3NWNacDJSV2xFOEpvOUNVU01GazROZUF6TV93VGVSSnNOMWk4WmpMUzFXQlZPOFN6WUg0N2xwb3M1T2JRWjc5QWVUTE9ScHZnTmoyOWlnbHFlamM1UEtmQnp5REl1elJKT0FkRVQySzA3dw?oc=5" target="_blank">Алматинская дистанция электроснабжения КТЖ получила сертификат доверия по охране труда - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.01.2026 08:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Алматинская дистанция электроснабжения КТЖ получила сертификат доверия по охране труда - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-01-06" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOVG5Id2VHdk5GN2N0b1pvQVRVdlRrWkdOR2EzR2NmcWcwMEZKT0FEbl9jVXY5TVdPNGRQT2QwMmVMbmFrXzhfVVM3R3RVVzdMLXVwZWV5Vno5d1NEakotWmJzTWpCS0o2dFBRRlN2WUZEdUhaMGNLV3NVR3VBcHp5MEFxNWdOX0t5V3dmOUhMSThIMFMzS3N3Sw?oc=5" target="_blank">Парк путевого хозяйства КТЖ пополнился современной техникой - Железнодорожник Казахстана - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 06.01.2026 08:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Парк путевого хозяйства КТЖ пополнился современной техникой - Железнодорожник Казахстана - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Air Astana вновь начнёт летать в Дубай. - Exclusive.kz</div>
     </div>
     
   </div>
@@ -376,39 +160,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-05/devy-reysy-v-dubay-snova-otkryty-dlya-kazakhstantsev/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-reysy-v-dubay-snova-otkryty-dlya-kazakhstantsev" target="_blank">Рейсы в Дубай возобновили для казахстанцев</a></div>
+    <div class="article" data-date="2026-06-01" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPcmY5Y3pTcXdhazE3UVVBY2RITzVWQVFNTmkyTkZQUjZLVXdnUUgzcE1OX3F4SW5ORnN3bUVNUEtVU0V6WG9xbnpuOHdKbkxrNF9lWmRBcjVDY3JWNnRxV04xdzVKTjVVLVZRaGkyVFlIc0VMQ3RRZDUxMWFlUUJQVUNyWHE4UQ?oc=5" target="_blank">ЧИСТАЯ ПРИБЫЛЬ «КАЗМУНАЙГАЗ» В I КВАРТАЛЕ ДОСТИГЛА ₸373 МЛРД - THE TENGE</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 05.06.2026 07:59</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 01.06.2026 10:16</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Рейсы в Дубай возобновили для казахстанцев</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://vlast.kz/novosti/69648-air-astana-vozobnovlaet-rejsy-v-dubaj.html" target="_blank">Air Astana возобновляет рейсы в Дубай</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 05.06.2026 12:56</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana возобновляет рейсы в Дубай</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/06/air-astana-resumes-dubai-flights-with-gradual-schedule-restoration/" target="_blank">Air Astana Resumes Dubai Flights with Gradual Schedule Restoration</a></div>
-      <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 05.06.2026 09:20</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana Resumes Dubai Flights with Gradual Schedule Restoration</div>
+      <div class="art-summary">ЧИСТАЯ ПРИБЫЛЬ «КАЗМУНАЙГАЗ» В I КВАРТАЛЕ ДОСТИГЛА ₸373 МЛРД - THE TENGE</div>
     </div>
     
   </div>
@@ -470,7 +232,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-01-05';
+  document.getElementById('date-from').value = '2025-12-02';
   document.getElementById('date-to').value   = '2026-06-05';
   applyFilters();
 }
