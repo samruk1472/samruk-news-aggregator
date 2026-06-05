@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 05.06.2026 17:29</div>
+  <div class="meta">3 источников · Обновлено: 05.06.2026 19:23</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-16">
+      <input type="date" id="date-from" value="2025-12-26">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-02">
+      <input type="date" id="date-to" value="2026-06-05">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -107,69 +111,42 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-05-14" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3R19DbXJHVjFVSXhuTDZIbk5fOWZjdnlRX1hiX3pUYXJsNW5NdDZoaDBXemE1bTBfWnlQVDR0Q3hNNlc5cktvUXBMd0pTQlZKNlNVbjV1RzRFVGMwSnJV?oc=5" target="_blank">КазМунайГаз и Rystad Energy рассмотрели глобальные тренды в нефтегазовой отрасли - Energyland.info</a></div>
+    <div class="article" data-date="2025-12-26" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNM1ZLSlhzTk9mNFI1aTZ5bV9TaVhHc0dmYWJBNE1QaXFPbGxhQ2FUYmlEM25qNWFBc1F0R3ZlVW9jY0ZvYlFNeDhmQmhmdVd5cXV1c0FrbVdDWXJNUF93cU41T1ZSbUNXSnc0NXZhdEtleDdGNUplOGNSbXBVdTZoYWpxN2lFN1JmMWkzODR3QUIzTWVkbDdiZGhhclFXRjZHV24yWU1ocUU?oc=5" target="_blank">&#34;КазМунайГаз-Аэро&#34; выводит региональные аэропорты на новый уровень - NUR.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 14.05.2026 07:00</span>
+        <span class="date">📅 26.12.2025 08:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КазМунайГаз и Rystad Energy рассмотрели глобальные тренды в нефтегазовой отрасли - Energyland.info</div>
+      <div class="art-summary">&#34;КазМунайГаз-Аэро&#34; выводит региональные аэропорты на новый уровень - NUR.KZ</div>
     </div>
     
-    <div class="article" data-date="2026-04-29" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE44ZmVLMWJMM1dFUl9TZlpOUkVtbkkxaTNhTUJXejZDRzF2aTZkM3NHaWpnNkFOM2xGWXROeHNnTEZUam1RRDlLWVFDbjJhaHBVeXgyQjB4dTgyNGtNd2tjZ0RuOA?oc=5" target="_blank">КазМунайГаз и Air Products обсудили перспективы сотрудничества - Energyland.info</a></div>
+    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQN2xPME1LRUJSN1dqdFhBV1BNZ2FpLWRONm1RQ3d1RjZrQV90R2xtYmlacnpYa1VEUUlpdDdhSEg2akxHNU5lQTlGM1g0RHIzMko1UzdRMk1lVUY2SkN0M1ZlemhhMVhLNGoxSEFjazdXdC04d0llY2NVbktEM2c2b09GZU9pam1TRlNsStIBlAFBVV95cUxOaS1IQzVrNnphWWVaMHUzeUxlaUp3UjE1OEp6Y0pUOGdvT1RoZ2RYa1hNeHdkY0NqVjZHMTl4WUlWYXRJcnk1ZEZnMm83WkRYYUpNVlpzTDVHbE1DTnlGVVVPTG40QWZwU21wN1JCRXBKNXk4eGk2MDBZdXhZTkhWMFZLclI1dThjWkxsSm1iR0xJMy0t?oc=5" target="_blank">Air Astana возобновляет рейсы в Дубай - Central Media 24/7</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 29.04.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.06.2026 08:52</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">КазМунайГаз и Air Products обсудили перспективы сотрудничества - Energyland.info</div>
+      <div class="art-summary">Air Astana возобновляет рейсы в Дубай - Central Media 24/7</div>
     </div>
     
-    <div class="article" data-date="2026-03-16" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQTjNkUzdDcFl3TlRlZEZQSUlCSEpweHNGM1Qxd0lqSFd6ZkVPQ3ZUYlRCaHRlSklON0NqQTlNaDVrZmE3OGFTYlBYb3lmc181TGlXb2dWbllBd3UtY2N0TWJYRnlSdTIzR0tXT2JQeS1mZ0NlX3VyMzdzZ0pPNk1Gd2FOYlBxYWJfNExZLWdyd1d5bWtVS0VtX2xYTkNTQW5NYXBJMTdicFFSMkV4?oc=5" target="_blank">&#34;КазМунайГаз&#34; в плюсе, &#34;Казатомпром&#34; падает: чьи акции растут в цене на KASE - nationalbusiness.kz</a></div>
+    <div class="article" data-date="2026-06-05" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE8wc2std3ZyZUNKWTVEeGtUa0p2TVczYjJzaFRmY2NpcVBjaHpnZHJQcjd2WXJOMWpITEVvR2RlZmFldW90aFNKd3hR?oc=5" target="_blank">Тараканы в поезде: в КТЖ извинились перед пассажирами и наказали виновных - Ак Жайык</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 16.03.2026 07:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 05.06.2026 16:34</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; в плюсе, &#34;Казатомпром&#34; падает: чьи акции растут в цене на KASE - nationalbusiness.kz</div>
+      <div class="art-summary">Тараканы в поезде: в КТЖ извинились перед пассажирами и наказали виновных - Ак Жайык</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-06-02" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPclVscEVMV2xwc3pWVTRyclNWWFoyNHNWTFpiZjZFUWJoQVFzNDZGTnRfdGpBb1U4aHRaa1JZSkJ1Q0o3eDdBSW5WT01KeGxLVExzYTRPYmM1aWVEaC1vdXFTLWFGbzZGajFNU2RDR1ZJeDV2MFhDMkZZTjhraGQwb2RwSjBWLXN3anY3VlRfS1loYlZUQlo3RFh6X2RObGJsN1gzemNPMFVzTGZRRDJIT3pWVQ?oc=5" target="_blank">SOCAR и &#34;КазМунайГаз&#34; обсудили сотрудничество в рамках Бакинской энергетической недели - cbctv.az</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.06.2026 05:43</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">SOCAR и &#34;КазМунайГаз&#34; обсудили сотрудничество в рамках Бакинской энергетической недели - cbctv.az</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-29" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE4wRWxKSDlTRGZiZmJPb2RuNXdGLVowT1NPNlBNVVhpSmZPZzJmQ2FHbnF6TWVYTGV2TjJ2bnVmakxyX1pQd2lHRENOQzBOSWZLRUhKNTdPdFNPX1RuY2VZYWNPWUQ1YkdXRm5reTRVcFQ1QlBQeDNreQ?oc=5" target="_blank">Казмунайгаз в 1 кв 26г увеличил чистую прибыль почти в два раза - TradingView</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 29.05.2026 12:10</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Казмунайгаз в 1 кв 26г увеличил чистую прибыль почти в два раза - TradingView</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -228,8 +205,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-16';
-  document.getElementById('date-to').value   = '2026-06-02';
+  document.getElementById('date-from').value = '2025-12-26';
+  document.getElementById('date-to').value   = '2026-06-05';
   applyFilters();
 }
 
