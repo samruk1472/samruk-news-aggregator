@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 06.06.2026 10:59</div>
+  <div class="meta">5 источников · Обновлено: 06.06.2026 12:01</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-15">
+      <input type="date" id="date-from" value="2025-12-11">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-05-15">
+      <input type="date" id="date-to" value="2026-06-06">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -105,7 +111,62 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    
+    <div class="article" data-date="2026-06-05" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-06/nvbr-kak-muhtar-dzhakishev-vstrechaet-v-almaty-svoih-svatov-iz-londona/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=nvbr-kak-muhtar-dzhakishev-vstrechaet-v-almaty-svoih-svatov-iz-londona" target="_blank">Как Мухтар Джакишев встречает в Алматы своих сватов из Лондона</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 05.06.2026 19:49</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Как Мухтар Джакишев встречает в Алматы своих сватов из Лондона</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-06" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQLXRFbXZKRUQwYU41a3dRdU5RRnlBY3FuSWdVSXBRUmhfTUZhcHhLVHB2RnB2bUdJbmlKZ1dXWHBaeGh4bDE0MHpaSHBtejJhem1abDdHUFExX2pBelJSZ3BWd1ZicjdicmFHam9VSkRWaUx0V1h4UnlfdkNOdjRSRHZjbjR6VWFtbXlZMW55U2Jnell5RV9rR2M4VGZyQ2loYk9QWHY4SQ?oc=5" target="_blank">Air Astana возвращает рейсы в Дубай: когда начнутся полёты - Noks.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 06.06.2026 09:03</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana возвращает рейсы в Дубай: когда начнутся полёты - Noks.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-06" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNdXc3NHZxSE9OTWpqTWRZOHRWWjduT1ZBZU51ejliSlBYM1BYQTBoMmVyaTJsZktwRVB2SnpneEZ6dVlPZkZNQm9VSFdFMFdRT0lrcFNYWW9qMk11eG9rRmZwRVkxV1BWSlRHVEMzemRkZGc1aE8tRzA2LUhVVGh3QlN5NjBZSDJqUlZBNTJLTmRJeGFWZ0pQY3RVaERRYlZhMnI2U29kdVdwdlM0QVE?oc=5" target="_blank">КТЖ оснастило системой Trip Optimizer более 92% парка тепловозов ТЭ33А - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 06.06.2026 04:04</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ оснастило системой Trip Optimizer более 92% парка тепловозов ТЭ33А - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-06" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPcXZ4TzlLSmhEdUNNMl9Fb2VUYlpVUkVhd25mc0JZX2JqYjlIZnJVeXNIcVdzRjdzU0tCYVZsY3RDRXphM2JtLTVmeGpKS0F0cDBtSFVCTGc2cEFvY1d2dVpseXhXbTk1YXZ2dWJBRVQ4SFhnS1J3bE9NOVlpRjRjVWhKV19ZZjZ0dHAzV1NycnNmU2Va0gGaAUFVX3lxTE40XzBKYVdPR3EtNEx2SzFiX2lMMXZwT1h2SE90OTNPNVFqQkVDZ0NhMkJsb2RlS1JrSDBnQ3BTc0xiTHhXUEx3ZElkd2lxMV9tWFlKVVJ4SG8xNVVDUTJYN2Z0TWNqcnM5d3lVLUlhVi1qdHJJSVlvejhUZ2ZjeERyT2diUEFhdHl4cnZMX0g1cXdfR0NpcUpnWlE?oc=5" target="_blank">Тараканы бегали по постели: в КТЖ наказали сотрудников поезда - Liter.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 06.06.2026 08:19</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Тараканы бегали по постели: в КТЖ наказали сотрудников поезда - Liter.kz</div>
+    </div>
+    
+    <div class="article" data-date="2025-12-11" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNcWNDQ1JJRXNRVkFEQUtTbXEyM28xajNBYmhOQ2JBM0c5OXJrc0ZfTGkxTGsxaXF4UzdNMFU1MnExVkNvTVJ6V1FFUmJLTUtVaTl2VGFIS0M1MkhNaUpmcTlvZlpodDhvVVJMeTZsMHBaaGJ2Um5rUW0tRGs1Si12SzFaYTl3YTRlZ0xxZWh4MV9KVVMwS092Um9HX0c4N2tHeXdDLXp4NTF1TEQ1VEpiU2tpSWJfQXBJTHhuM2lZY2hOSjFqem1HUmRTS0zSAc8BQVVfeXFMTjFtWHA0ZUNIX0l0MGJUNWdNVVoxRjQ2V192blhIajBmT3M4OFd5Q2FfTmtqNW10aHBYVkk5UDBHWW5CcWQ1R2dzeW0tNGsyRHR4a3VmVkFZcEpvUktCWTJ5bFJqQmRRMlJnOVpzNWFYLWs3bnM0Vk9NakZtR083ZUd2Y2tmOGFuZUpma0g3TGNRWUtfZWF2UUlBUUctbm1sdElVT2laTzNTek56ak1nSDMzMlE3SFJTMENrS3lPMlRPNndnNDg2cFBoUGJNMVI0?oc=5" target="_blank">КТЖ создала спецкомиссию по расследованию после гибели четырёх работников на путях - Азаттык Азия</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 11.12.2025 08:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ создала спецкомиссию по расследованию после гибели четырёх работников на путях - Азаттык Азия</div>
+    </div>
     
     <div class="article" data-date="2026-05-15" data-co="КазМунайГаз" data-s="neutral">
       <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9ySlZjdlZ6U1VhWUd2OUJWZ2FnRmxqaVhUVlJjMm1Uejh2cG96QVg0aTV4YU5DdzZ0T1ZNVWRxMFg5RVozM2NIVHJZOS1id3YyNXVRZjhhbWFRalVPWllsNF9TUFFRSDlxakprT0ZOSGxVbG5QWjJXcGR3?oc=5" target="_blank">«КАЗМУНАЙГАЗ» ПЛАНИРУЕТ ВЫПЛАТИТЬ ₸350 МЛРД В КАЧЕСТВЕ ДИВИДЕНДОВ ЗА 2025 ГОД - THE TENGE</a></div>
@@ -121,6 +182,33 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-06-06" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-06/aina-novyi-marshrut-flyarystan-svyazal-aktau-i-batumi/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=aina-novyi-marshrut-flyarystan-svyazal-aktau-i-batumi" target="_blank">Новый маршрут FlyArystan связал Актау и Батуми</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 06.06.2026 06:41</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Новый маршрут FlyArystan связал Актау и Батуми</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-06" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/06/kazakhstan-begins-construction-of-first-container-ship-to-boost-middle-corridor-capacity/" target="_blank">Kazakhstan Begins Construction of First Container Ship to Boost Middle Corridor Capacity</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 06.06.2026 05:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Kazakhstan Begins Construction of First Container Ship to Boost Middle Corridor Capacity</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,8 +267,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-15';
-  document.getElementById('date-to').value   = '2026-05-15';
+  document.getElementById('date-from').value = '2025-12-11';
+  document.getElementById('date-to').value   = '2026-06-06';
   applyFilters();
 }
 
