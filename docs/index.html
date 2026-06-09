@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 09.06.2026 17:38</div>
+  <div class="meta">3 источников · Обновлено: 09.06.2026 20:31</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-13">
+      <input type="date" id="date-from" value="2025-11-04">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-04-13">
+      <input type="date" id="date-to" value="2026-06-09">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -105,22 +109,49 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-04-13" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPLXJnSXhxenk2T0dwaEl5Y0o3b05FeWMzWkc3VVkwVTNBeFVMejFjalN1Wi03UWhUaXFUYlBUR3ZKM081eExtNmVsSWIyTkNsbUFnUXhqR0hTVGFhaFZ2dUs5SFo0ZDl0VVR5eGQyVXZNVFJ2UGJ1THRJTGtCVFh4M0JSNkhKUGNCOGFkWEx2STJ2X3MzWGN2dzhGZllZZjhuNktfeVFR0gHmAUFVX3lxTFBDbEVjZ0tiYlpHa1NrWTh3WlVRdE1QMnFSUlkzUEo1N2JGbXN3dTRyZTktMjk1LUxOdXlqOGstUklhMGFwN2xCVFRlajZDZXdGR3Y0RjFDZHRuOU5xT0l5eW15LXNkZmtnSldmZFNLOEdzOWd5OVFnQ3dmbTZaU25CaEpkeU9MZzZrbFQ5aUVxZFVQRmpLWi1CQ0pUSlY4aWNUUnlVWVZpM1lYUXhkeXdlaUtuRG5VM3pEQU02SlhYdnhYQlJpV1BWbktyVnhtcm40dkZ1UE1BRW9sS2czMGYyOUJpUHFn?oc=5" target="_blank">«Самрук-Энерго» заплатит своему владельцу всего 1% дивидендов от прибыли - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+    <div class="article" data-date="2026-01-19" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9Jd3VtQmREYWhNMTVTQ0RnNHpZdlRvRWd6RFViRDlKR2tfMkhZejAtTnNHZnBGM3J3RVhyYWdzbGJzbXF5eE5BZThiZzZMZDhVaXk5YXJLYXprcFkwU3BLcUxTS2lMbzZwY1E?oc=5" target="_blank">Итоги недели на KASE: рынок в «красной зоне», «Казатомпром» на взлете - Investing.com</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 13.04.2026 07:00</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 19.01.2026 08:00</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«Самрук-Энерго» заплатит своему владельцу всего 1% дивидендов от прибыли - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+      <div class="art-summary">Итоги недели на KASE: рынок в «красной зоне», «Казатомпром» на взлете - Investing.com</div>
+    </div>
+    
+    <div class="article" data-date="2025-11-04" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNbS1jMnV6Vm9JVjM2aVg0a3U4NmRka3d0eTU3Vm5BVmNIT21OVlpiRGl3VVNqM0RjSUZiaVh5ZHhucVBMQTEwd0hpT25CdTdkNGpHbzloeUxQUGVuSUtmQ2lGdEdxMjdEbnhUcl9XdXR1Ui1jX1BHUFl5cWx1OEZNOXRwTDU2V2o3Y1Znb2FFNjBhcDZ4YUV2c2ZGN3dmclVNblpnRE5OeW85TjU2dmRr?oc=5" target="_blank">Зерновой союз: ограничения погрузки КТЖ — вынужденная мера и направлены на нормализацию перевозок - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 04.11.2025 08:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Зерновой союз: ограничения погрузки КТЖ — вынужденная мера и направлены на нормализацию перевозок - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-06-09" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-09/svvo-air-serbia-hochet-zapustit-reisy-iz-belgrada-v-kazahstan/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-air-serbia-hochet-zapustit-reisy-iz-belgrada-v-kazahstan" target="_blank">Air Serbia хочет запустить рейсы из Белграда в Казахстан</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 09.06.2026 18:49</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Serbia хочет запустить рейсы из Белграда в Казахстан</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,8 +210,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-13';
-  document.getElementById('date-to').value   = '2026-04-13';
+  document.getElementById('date-from').value = '2025-11-04';
+  document.getElementById('date-to').value   = '2026-06-09';
   applyFilters();
 }
 
