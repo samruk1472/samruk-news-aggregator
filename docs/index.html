@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 11.06.2026 18:36</div>
+  <div class="meta">7 источников · Обновлено: 11.06.2026 19:45</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">20</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">17</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-02">
+      <input type="date" id="date-from" value="2026-03-01">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-02">
+      <input type="date" id="date-to" value="2026-06-11">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -103,7 +111,29 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-11/kaye-investor-iz-oae-vlozhit-bolee-40-mln-v-mestorozhdeniya-kazahstana/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-investor-iz-oae-vlozhit-bolee-40-mln-v-mestorozhdeniya-kazahstana" target="_blank">Казахстан едва не потерял $40 млн от арабского инвестора из-за решения чиновников</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 11.06.2026 13:10</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Казахстан едва не потерял $40 млн от арабского инвестора из-за решения чиновников</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-11/zhnb-synovya-trampa-zavershili-sdelku-poluchiv-kontrol-nad-krupnym-volframovym-proektom-kazahstana/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-synovya-trampa-zavershili-sdelku-poluchiv-kontrol-nad-krupnym-volframovym-proektom-kazahstana" target="_blank">«Самрук-Казына» продала сыновьям Трампа крупное месторождение вольфрама</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 11.06.2026 09:15</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Самрук-Казына» продала сыновьям Трампа крупное месторождение вольфрама</div>
+    </div>
     
     <div class="article" data-date="2026-06-02" data-co="Казахстан Темір Жолы" data-s="negative">
       <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNRllzbFV3RG9FdExoVENZMjFvRzhhQTJnVjFHS1p2MjItaEp1Sm1uUjEwQTN2eGk4a1pnWDhaRm1mVXAzM0w2ZERRSXAxUFgwWnhFS3dVb0g2UzBQczVISHNnU1ZNY3N0NFljX0dVVXZoejZEdEp4YXFkYU4tMFliU0tNTnlaekhtTHdfM1BMa0JCOU1NaEdnY09qZXhmd9IBowFBVV95cUxOZDFqZ01hcVZkS1BSMTRWbTVQWDdZWFhmN1B5XzBPbGpzY19oaVcyelF2djFob1RsWUJJM2hjb1FqTzFqWlExMzl5eU54OVF0YXFzMDk3aV9NWGx6S3R5TG50N1kwNzdsSGI3YzF5blpIVFBOejVyclBrZTZ5RWM0NV9ldW9WWndKSHJ1RVV2R2NXWG1JSXpTd2szRDJTTVpSMy1v?oc=5" target="_blank">В КТЖ подтвердили арест директора алматинского депо - Tengrinews</a></div>
@@ -119,6 +149,198 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(17)</span></div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-11/svan-pravitelstvo-mozhet-otdat-samruk-kazyna-svoi-40-v-erg/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-pravitelstvo-mozhet-otdat-samruk-kazyna-svoi-40-v-erg" target="_blank">Правительство может отдать «Самрук-Казына» свои 40% в ERG</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 11.06.2026 05:49</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Правительство может отдать «Самрук-Казына» свои 40% в ERG</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/novosti/69711-ni-odin-vagon-stadler-ne-budet-prinat-poka-ne-budet-podtverzdena-ih-bezopasnost-zaavil-nacperevozcik.html" target="_blank">Ни один вагон Stadler не будет принят, пока не подтвердится их безопасность, заявил нацперевозчик</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 11.06.2026 10:21</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Ни один вагон Stadler не будет принят, пока не подтвердится их безопасность, заявил нацперевозчик</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxQMlJ5aGY4YzU5U0hkNC1zcVV5SURLRS1LdWNfSGRUWlN4ODM3TndoVVN5TUk1YXY4WjRuX1FyWlZtemQtQVNxWE9Qd3hoUHF6UnE5ZDBmeEh6NU95WVdQMDlnZ1lhR3NkM1dtOWU0WnVkR0JZNU9WcW9vNTYwWmdEQkJfTklYSXJmcjBCaV9WQlB5QlVuODBVR0pfaGtGd3hIUnpYU0lQeEVsN3JlR01iY09JTkxFbGpDNzlqRHVVSmtaYjVaV2hZZ0YwYU9pYmPSAdQBQVVfeXFMUFNOTkg2OWZUSXItQVd3WG5FclRBSkM0bXRGQ2NUSnpGSWNlNmZlU09wNkhzZHBqc1p3SmJsdlhQY1czVjRKZW5EQVRSRE80Z2pGcGlmS1VfbUxoRjhiZ3BaVUFKNzYyU2NEWHlsSkFfT0p3Q0RQNEowTE1XQ01HcndQaDRndVc1N1JkZGI5NUUtdE5odjdTcndQVjM0MlZHZjJ2QXdsYUZNbWZ5M2VIYnota3hON1ZBSG1VNk82azczMjhNby1OaElzUXU1UEpTc0NfSWc?oc=5" target="_blank">«Самрук-Казына» продала сыновьям Трампа крупное месторождение вольфрама - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 11.06.2026 09:17</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Самрук-Казына» продала сыновьям Трампа крупное месторождение вольфрама - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxORDlER3FIZ3Frb2VOMVVYVTFFbWlOWnRDLWlOVDJ1OXR3ZFVkWE92MTJjSU9CLVpnYkJRMnhsWDRBVXFTdGswUmpJUU1fU0pBcjBXcFZJTHRMLUloOG11OWNJNVJnMkVnc2w2RHpBRnItR0RHQVdmdmJhQWFyc0w2c3pUX2EtdkxjTFJXS3BXTHhhZ1hxOFVYNjlB0gGfAUFVX3lxTE9JQkkybTdtYWRrT3FMc1JGRHBrVnpvNFJ4X25qVTVtOWRhelZHTmNJN3o1UWxLN3VuTGJXOHl0MkRyM1diWndfMTIzRkQ5ZDZfdDFpRjhqNlltVmp4V3BGTkhDWlFvX1R3RnJ4STVGQWJHYjRLaXJUSTM4Vm9NM2N2S2NlX2hGYUVxb1ctR3d2cmtyb05uM3MyejAwRGRzbw?oc=5" target="_blank">Правительство может отдать «Самрук-Казына» свои 40% в ERG - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 11.06.2026 05:53</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Правительство может отдать «Самрук-Казына» свои 40% в ERG - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeVN5TEN5SVdTLWJWVEJNbFFaXzl3THFFVGxSMEQxY3A2ejRrZHNFRzR6bWo5STJZVWN6THhzV0VqdmRfeXJSbzU1WC1Ld0x5UGlTZ3JBU1h0ZHRYeWVFZ2RBNHhCUjhFblRDVkdYSV9JQWFIOUVOSGNFeXBSZFpGcFJMV2dPWk1F?oc=5" target="_blank">Правительство передает &#34;Самрук-Казына&#34; пакет акций ERG - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 11.06.2026 05:08</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Правительство передает &#34;Самрук-Казына&#34; пакет акций ERG - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQVGhWZWhTaDUyQVZQM1poOExRRTFZcEdDY2JpSG1VVjQ0VFIwVnd4ZkpqRVBRUTl6b0lQOG9qN01iTFlzUzZNRVMyNnRkSW1xbnd5NUpnalRKd1o3aUdDSFJDNmJ4OEZPblMxYm42S0tnaUoyTWUtMmo0eVJhM01kam1vd2xDUXQ5WU81VWJ6d2RLeG8?oc=5" target="_blank">«Самрук-Казына» может получить государственную долю ERG - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 11.06.2026 07:22</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Самрук-Казына» может получить государственную долю ERG - Ulysmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOVE5CVHFOd01nYkRIanROTXp1dXBxUm0ySk1UYmZwRmFHM1JpWTYtb1lobnJQRnVCbi04eExlMFdxUkotdE9ZaEZubUZhNkEtWXgxQ0ItT0hHNGJ5dEdSaGF2S3FhQzJrdHJZbHNrSjVFc2JEQXFrOHM3VW1ySmhJLWhKcmF0TVdoSkV6RnpvLUg0TFhXSFE5QVZ3Z0dIQQ?oc=5" target="_blank">В «Казатомпром» ответили на обвинения Базарбека в фальсификации госзакупок - qumash.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 11.06.2026 08:10</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">В «Казатомпром» ответили на обвинения Базарбека в фальсификации госзакупок - qumash.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPNUg0X3hGMnAwRnpqRVFHLTA3VzhxMVVJbjY5ckU5NWhMUGp6anVGZUFib2JVamZ4UWNLR1JlQWJwTjNUUDVXR2NNZ016UWpmVnl1WEtEdXRJNXdQUmZEV1FsZWRvWmExbjBfaXJtcHozVkxXLVpRYjBUZ2xPeFY1M0tZNWdVTlJYeG5reUlrQS1ibWxMdGdpSXlQWXRubkpTYjU1amxrckg3anRiVGc?oc=5" target="_blank">Студенты Международного университета Астаны ознакомились с работой КТЖ - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 11.06.2026 07:06</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Студенты Международного университета Астаны ознакомились с работой КТЖ - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOMmNzNDV6TTIzcXBzQTE3ZGVyaWN4dXNiQnJoWVA4MjRGUjlscnBVOWgwbG11MHF5X1o3SUthcU05bnREODdsTkJBbEFaejRyOUdHRmFOQjhYbTBFQmljODZxdkRFNi1xR1dEem92d0JBZmFFLXhzSmE5eHNTNEdxaWVqZnoyQWNiX0JSbGxnLVEzNnFWRGljVg?oc=5" target="_blank">Stadler опровергла проблемы с тормозами новых вагонов для КТЖ - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 11.06.2026 10:14</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Stadler опровергла проблемы с тормозами новых вагонов для КТЖ - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxPdlEzdDVQNTJFenlCNk01dXNTUGp6RGJvamRIUTQ4b2pTdVdsdFBsWXpyV1hpRXMzdHh1MmRnVUxOSXpXR3RYRy02RldrNDJVN3N0bFYxcWpmd0I1WU9zR2lUSmZoeE5wbmNGdFdja2lFMGkxcjFyWE9ZLWdHcUtSaE03d3plTmE3MGRRRkMzRV9CYy1hT21XN0tFcHdIb1hXdVdrSVNRZUVvWjV2ZlpoOExXd2tPaDFiTENUeWlkT2staXA3cnoxcVNXVndacnFQZlFpMVJaSTFaSW5nMmc?oc=5" target="_blank">Новые вагоны Stadler не допустили к перевозке пассажиров в Казахстане: в КТЖ прервали молчание - Новости Актау и Мангистауской области</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 11.06.2026 02:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Новые вагоны Stadler не допустили к перевозке пассажиров в Казахстане: в КТЖ прервали молчание - Новости Актау и Мангистауской области</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPX3FxNTZXMW0zc0c3Z19GaGdQSXJkcnJkLWw2aF9sZFN3Z3psbEs0TlF0Ml81T05XaHNTeUdTeE5MQmVVSG16OGV2TW94OV9NeWVUTFhTY1pGOWxqRGcydGdxbVVPaE5fZFgwWnBVcE81bVVrVTlGTHY0aEFGYUNEZ1hhZ2hXeTQ5Y3ZEaWRVXzMtLTBRelpaMzA0T0lqVGt6VmZTcnlpZw?oc=5" target="_blank">КТЖ нарастила грузоперевозки до 131 млн тонн с начала года - Kazakhstan Today</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 11.06.2026 14:55</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ нарастила грузоперевозки до 131 млн тонн с начала года - Kazakhstan Today</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-22" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNRkZaT25fTGh6Nm1iVXY2NFpHY19pOGcySFRJc010OVhwUE5MWlhGQ0lnOGlNcENTWTZWWHg0Q28zQWdYRUpTVGQ3VEZCd1ZUd2xla0FMR2JJQlNFWl8yMU5kV2xILU5UTm5uYlhxZWpadDViSDlyclV6Y0YyUnhlMjRDNG03NFRNak91ZURLT2ZsTmxqZ2lBWlJhNTVWcGVUckJ5SWlFUEEwaXR0S01aTXpnbnhTLWtWaVUzQUc4NjdhN1BBdTZyQmx3?oc=5" target="_blank">КазМунайГаз внедряет предиктивную аналитику с использованием ИИ на своих нефтеперерабатывающих заводах - Orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 22.05.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз внедряет предиктивную аналитику с использованием ИИ на своих нефтеперерабатывающих заводах - Orda.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-03" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE9SdHZwbTlUUmlhNGtneDZTMjBmU3AySy1PbkRDN3RQd2NoeGo4Q0Yybm9ybGpFbEU1dDFrdEpDdE45dVoyNjAwTnB3?oc=5" target="_blank">Авиапарк Air Astana пополнился новым самолетом - Ак Жайык</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 03.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Авиапарк Air Astana пополнился новым самолетом - Ак Жайык</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-22" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNb2loQUQtLWlDZF9ET3ZQR241RjY1OEVpZ29ZVDAydkViLXIwa0o4YlUtZVRuRjZsT09YRktvVGk4ekdvTFlQMUhFOUUwcXRLU011Q01ORU14c3hLVDJVMVVGQWtHUGVwZUFZUkhqUWZMcms0enpRcThOUS0tVWl5OXVjdENJVTZiVzVMVTJpSVhoYzFQQ0VPMkVUNHN6WG4xQVo5MElWMmZyRFlC?oc=5" target="_blank">Air Astana назвала дату проведения годового общего собрания акционеров - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 22.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana назвала дату проведения годового общего собрания акционеров - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-26" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOMkdiMDFDakJxcHdOVTlBLTVtNjhRMDdsNDVENi01V2lkWl9CeEljUThhT0w4YnFlNnBkdWlxZ2pPZnNzYWRPWTVjbzFnajlRWDM4VGNXcVJmMU41ckJUck9xM0JWWWNobUJtWWN6Nm1aaXZSUW9kZ1ZyS2ZBNVN3Q0ZPWV9vaWlUeVpXNjVHQTBCcXdFTmc2VTQtY0RxY1hSU1BBRE5ha2liSW9YQTV0aEg5VQ?oc=5" target="_blank">«В чем логика?»: пассажир возмутился правилами провоза багажа у Air Astana - newtimes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 26.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">«В чем логика?»: пассажир возмутился правилами провоза багажа у Air Astana - newtimes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-19" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR3NJVFh5VFJEckNXSGVnU250djQ1YkRnWmJtdE5GSXVKX3hPb04tU2FDeFZ4UHVxdTE0MVlUQ3dWOXZuRG5xQ3o3SmI2emhhaW1tb3NCMmNjdHNFald3TEhONGJmQmF3MVlnNDNWNDNkNmVNUnhuMUdKNlNHaG9NVF9EdjBoNXgtT3o4VlZJc2JZSWliR3lXeUl2amxVOEJLVk9zT2U4NVdaWkHSAawBQVVfeXFMTjNEUktnTk9rTVg0Qjl3X2tzTjVQanQtakhVc09aejlKQk1menlkUkdYalNxMU0yNlY3Qm9keWhrSHdtVlhCYS0zSzdic00tQlpUaXRnbEJFOWx6SlMyXzBJWnUwM1k5cGFhZnVuTXZaeFVwUGpWZmhVUjBqOEVZZHJRaGpCcmdHWFc5M3hyaVJiQTlLYUlUTHdMRmNFbHZtdHVKa0xhQUJOajM0dQ?oc=5" target="_blank">Британская компания BAE Systems выходит из состава акционеров Air Astana - Казинформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 19.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Британская компания BAE Systems выходит из состава акционеров Air Astana - Казинформ</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-01" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQYXNCRG9SbHRUWU02MzhTYVRaUjZsVnJod01qNllEc245SXdZaFhUOUVLUWlSeTRDbDY1dGRhTW9TNFBKeTBIbnhQS3RKT0tpM0JHLWJ6dXFZVEdKd2ZCdUFjNmI3bkxiaUdxbm40c1RXcXNLM0d4YXRNcHRsWWRXMnUwd0pwemRiUXBlSA?oc=5" target="_blank">Казахстан поддерживает пассажиров на Ближнем Востоке: Air Astana принимает экстренные меры - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 01.03.2026 08:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Казахстан поддерживает пассажиров на Ближнем Востоке: Air Astana принимает экстренные меры - DKNews.kz</div>
+    </div>
+    
+  </div>
   
 
   
@@ -179,8 +401,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-02';
-  document.getElementById('date-to').value   = '2026-06-02';
+  document.getElementById('date-from').value = '2026-03-01';
+  document.getElementById('date-to').value   = '2026-06-11';
   applyFilters();
 }
 
