@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 12.06.2026 20:57</div>
+  <div class="meta">1 источников · Обновлено: 12.06.2026 22:04</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-12">
+      <input type="date" id="date-from" value="2021-08-27">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-12">
+      <input type="date" id="date-to" value="2026-03-18">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
     </div>
   </div>
@@ -105,22 +105,71 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-06-12" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1fRzFVSDhteDdIdmdTM1BOZDFCc3ZHOHVpaDBHeHl1WjZUYk5FUlNPbEpPdUpINkhhM2hDU1c3Tms3TTJIc2tkR3ZMaF9YeHVBcUFLQ3JPb3FJT1BfbUp4SmVBVE5uRXFuWXYtZFIzbXJsZm9XMmpObV8ydEw?oc=5" target="_blank">КТЖ ВЫПУСТИЛ ОБЛИГАЦИИ НА 615,6 МЛН ЮАНЕЙ - THE TENGE</a></div>
+    <div class="article" data-date="2026-03-18" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxOdlpnMXJtdEhXOTNibXRYelE2UF8yc1BmaGNNc0VnWmFjcTk1cW1jNm5SZHdyUEptQjZaN2pIdlBGUGNrT0Q2bXpnbTdEa1QtNFlXbWdFc2ZsN1BFbXhncTRHN25FY2l0T2RZYXpBSDI1enZUVHJJWlUwQnRvNzEycE50eUt2VzVlUE9RYTdJRk90NlNvbEVjYTRxODFDSG16SWg3STA5Unp5QVlyZVg5emRpVWJqMlJKX3QxaEJ3?oc=5" target="_blank">Глава государства принял председателя правления АО «НАК «Казатомпром» Меиржана Юсупова - Ақорда</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 12.06.2026 08:42</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 18.03.2026 10:35</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">КТЖ ВЫПУСТИЛ ОБЛИГАЦИИ НА 615,6 МЛН ЮАНЕЙ - THE TENGE</div>
+      <div class="art-summary">Глава государства принял председателя правления АО «НАК «Казатомпром» Меиржана Юсупова - Ақорда</div>
+    </div>
+    
+    <div class="article" data-date="2024-08-13" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYk1RVktERkRmRUo1WHZGNFVnNUY3N3gtOXZmVHlzYmwwQjdyR3N2NTBDNWpWMUVOalVvaTEzTjRTSmE3U29xNFZBdU85WWVObTRPTVRxZVlCelZYUlpxblV6eC1XcTNNc0twUUtDWUlnTzZESWI1eUR4MklzWHdNTEFBRHNKNzhTSW1TVW1iaHV2S0tXbC1wcU1OUjFmb1RzeDhYR2d3NVhxQ1ZldlJwdkZ2MlpmMzF3cDB5YlVLaFJ4dktMc3htd2tRcWozY1lUV1FOT180c2VmRkEwZnB1aw?oc=5" target="_blank">Глава государства принял председателя правления АО «Национальная атомная компания «Казатомпром» Меиржана Юсупова — Официальный сайт Президента Республики Казахстан - Ақорда</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 13.08.2024 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Глава государства принял председателя правления АО «Национальная атомная компания «Казатомпром» Меиржана Юсупова — Официальный сайт Президента Республики Казахстан - Ақорда</div>
+    </div>
+    
+    <div class="article" data-date="2021-08-27" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNTl9CeVhNMl9TdlV5c3R6VEk0cWVmdFdIM3FrRE9hdzR5d2p2Wlk5d29Nc0poVXBDeE8tZXhwU2o1QjJPNlgwM1V6RnFoUWs5aDNQdG9scHZJaExiZ0NGQ0JmN09WeEpldHdrMGJSSFRXYjA1Tm9GOGdVNm1KV21aRTNpWDg4OHU4d2NkUlhfTWo?oc=5" target="_blank">«Казатомпром» продал 49% акций своей «дочки» китайской компании - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 27.08.2021 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» продал 49% акций своей «дочки» китайской компании - Forbes.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2025-05-27" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQN2VhS2M2dmFTZENPa28xNkoycUhmXzVkNUJfTzdKbWVaVkF1aUROUHdud1RkYU1NYW5Hb0ExLVVNLXNsMnhERDBYb1B0d0lrZGNLWThmVUZlOTRTQ3M2eTVJRGxYSnktajVsUDlVbkZDSjlKYndPempldWpoVGgwdnI3cmdXaGlneWtmZzJIOWk0enNuUTNyQWF3?oc=5" target="_blank">Казатомпром выплатит дивиденды на сумму 327,9 млрд тенге - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 27.05.2025 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром выплатит дивиденды на сумму 327,9 млрд тенге - Kapital.kz</div>
+    </div>
+    
+    <div class="article" data-date="2025-04-23" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxQb0NVTTVmNHdXMkRRTG5VS1BHaDNxbXBucFhMaWYtTGR2Z0NDSlJ3ZFUweVQtR3RscVowVV9KejU1RzZZMnFzQ01DSjU0R0hublhGSWpIY1Fna2FmUERSVG44NXprRDlSUWxYel9qY1RkOGpPMEtJaGFfNjNqamlReXdiLXVhQVNGRmlQZGVnUTFtTllZNGlVNW5CdGZNY1U?oc=5" target="_blank">Казатомпром планирует направить на дивиденды 327,9 млрд тенге - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 23.04.2025 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром планирует направить на дивиденды 327,9 млрд тенге - Kapital.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,8 +228,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-12';
-  document.getElementById('date-to').value   = '2026-06-12';
+  document.getElementById('date-from').value = '2021-08-27';
+  document.getElementById('date-to').value   = '2026-03-18';
   applyFilters();
 }
 
