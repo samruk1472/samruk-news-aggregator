@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 13.06.2026 10:18</div>
+  <div class="meta">2 источников · Обновлено: 13.06.2026 11:29</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-01-23">
+      <input type="date" id="date-from" value="2026-04-15">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-13">
+      <input type="date" id="date-to" value="2026-05-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,8 +86,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -106,53 +104,36 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-04-15" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOcUwzT01fVzIwc3dYNEVIbGxyOVdJcWo2anVJak96QXR1T1ZUbW5FMTVpLWRKc3IzWlR4MVdCWjYtdkZfQ19jSEJTV2xjazNvQ3B5MVlfMTRhempVYjc5LWNiZ2p2STQ2aTZJMThPWjR5aVlobUVqUFFOb1VTall0ODIxMjZPVHl1UWlJaWRJTy12cl8yTVpvZWJtMjJ0bGNzZTlxVNIBqgFBVV95cUxQTXotZVpoQzdTajkwNWo2N19SU2xnd2dTQ2dvd3JaazJFd0xpM2M1LVd2X1ZwdmQ2ZmhGQkVGS05jdXFTSlZjcTQ3d0JhdnlvN1RadVhGUlhILWlvcjFQOU9YQlRYZDBkY3BrQTdaSlBBakRXSXMwSC0zblNKb2FWVGN2Nl9rcVN1b0ZrRUJ2azRiamR1SFFMRG9RcEowdXdHOHhGeVprMFAzQQ?oc=5" target="_blank">Air Astana и FlyArystan оштрафовали из-за топлива - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 15.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana и FlyArystan оштрафовали из-за топлива - Kursiv Media</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-13" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-13/svvo-uletet-v-kitai-iz-aktau-stalo-vozmozhno-za-41-tysyachu-tenge/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-uletet-v-kitai-iz-aktau-stalo-vozmozhno-za-41-tysyachu-tenge" target="_blank">Улететь в Китай из Актау стало возможно за 41 тысячу тенге</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 13.06.2026 06:02</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Улететь в Китай из Актау стало возможно за 41 тысячу тенге</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-26" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1NNXItYm0zYWV2LVRUU1ZTUGdBcDZ3WEIzcjVLbU9kY0FsYnhkNUNvQ3ZDNnB5YV82akU3Z2F2TDNPaVhXWFVDUFU5OHN6UGxfM0dKNzJNNA?oc=5" target="_blank">Аналитика. КазМунайГаз строит новый газоперерабатывающий завод в Жанаозене - Energyland.info</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 26.05.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Аналитика. КазМунайГаз строит новый газоперерабатывающий завод в Жанаозене - Energyland.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-31" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxNSXlQekxlWEZKNnNKUFpaRHlkTUtJUVZwSmh6eHJHTzVBRDNUbWJhNnY1Q2w4Z19VbkxnOHJPTzhFck9jTWl2ZVVkemxzdWxCYWVicUdjaHdJNDE0V18xRzJyM1RtbThyX0RIVk9oOG4yWXQ5SklRd2xYN3JJTmQtcEEwOU5Gd2tXYW5wYmswcFdFaWdvOXIwVzBDNWFsRVM2X0ZjeXJldkFfTUZSblN5QnVTakl6c09ERTh6TkxMSdIB_wFBVV95cUxQREFwd0tkUmtxZzJweGNOTVF2NUJZUXpiR1E0ZkVicUNXVTNDSGtWR0tYT0VpcDFtdXdTdjlQdUJfYWgzN0xKdWZSZDFYQXcyRGNDZnVacmtkbExVTDZoaXZ4VjJSRG1VQ2plamNMOE5aS3ZXS1pnSll5Sl9RNjJ6WDlIN2Q1RS1USTdfN3BPSkg3cDVFbTdjdW1iU0RMUnpjQ3pJNXhpcFUxT3JqVW01UTRPMFFtemR5ZFNwM3ZHTjBIdFVHSjh0XzBhSUtFcUVvOXBIUGJVRWh5Y1lhN0FCQzZSWlFoWWtYTlVfWTVodU45djBiX2N0SUNyRVBHVGc?oc=5" target="_blank">Акции Air Astana растут на 10% в день ухода Питера Фостера и объявления дивидендов - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 31.03.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Акции Air Astana растут на 10% в день ухода Питера Фостера и объявления дивидендов - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-01-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNZXJfSkxrdExGZ1JYY0ZlMlZ3SGVZSS0wZm93bl82YnVxSGJqUXdaUDF0cFA3cWl4ZVdiSWs4WTdqTDZCdkxzVGVSd3FETDliNV9zcDJpQW5tMFZLY1RuWEwtYzNOMTE1eV9UZFE1QUVTNmllaTA2TDNHSlIyWURoaHQ2b2NHeUdzYUpIb1YycDltbllBU0JiZlhkRQ?oc=5" target="_blank">КТЖ подвело итоги работы на пограничной станции Достык - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-05-25" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBSU1lxVUhmWEJiY3VwTmJzX0JwcHpHbFd3WDVUU3IzU2laTk40MUtjUVROdElXUWlfdDd5Wmo5dk5SYnp3b01YVGpuSlJadEMwMGN4YUczWE93R2JpbHJFZmdrZE9oN2lOTUJRLWJMLS1ic3JOcXhrYktueU5yZw?oc=5" target="_blank">КТЖ готовится к IPO на биржах Лондона и Гонконга. - Exclusive.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.01.2026 08:00</span>
+        <span class="date">📅 25.05.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ подвело итоги работы на пограничной станции Достык - Қазақстан теміржолшысы</div>
+      <div class="art-summary">КТЖ готовится к IPO на биржах Лондона и Гонконга. - Exclusive.kz</div>
     </div>
     
   </div>
@@ -216,8 +197,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-01-23';
-  document.getElementById('date-to').value   = '2026-06-13';
+  document.getElementById('date-from').value = '2026-04-15';
+  document.getElementById('date-to').value   = '2026-05-25';
   applyFilters();
 }
 
