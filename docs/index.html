@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 13.06.2026 20:49</div>
+  <div class="meta">2 источников · Обновлено: 14.06.2026 11:15</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-01">
+      <input type="date" id="date-from" value="2026-06-14">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-04-01">
+      <input type="date" id="date-to" value="2026-06-14">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,6 +86,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -102,20 +104,47 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-06-14" data-co="Казахтелеком" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-14/zhki-bagdat-musin-obyasnil-pochemu-promenyal-amanat-radi-quot-d-let-quot/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhki-bagdat-musin-obyasnil-pochemu-promenyal-amanat-radi-quot-d-let-quot" target="_blank">Багдат Мусин объяснил, почему променял Amanat ради &amp;#171;Әділет&amp;#187;</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 14.06.2026 10:19</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Багдат Мусин объяснил, почему променял Amanat ради &amp;#171;Әділет&amp;#187;</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-04-01" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNQ1d3NFlwcmU1SEN4VTRpRDRDSHNVNTF5N1EzYUs0OVZNeGRuQUxnM2E4aGFxMjV6UjZRYlQ0cU0xdDJlc2pBQUVDZHdxWjFrd25vSF9HT0RkdnFHRWZTS2lnOXE4OE40ckRDa0NlWjhoLXBtM3laZm41UkN1ak4tUGJGV29fVjI1MkNibU5yZnd1ZEIzaXJxSEhyZWpxQXAydEJZNm5EVQ?oc=5" target="_blank">JPMorgan и Citigroup помогут КТЖ разместить бумаги на $1 млрд – Вloomberg - nationalbusiness.kz</a></div>
+    <div class="article" data-date="2026-06-14" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxOV0FTSmF0U0NaT2RmWWl2RVZ3WHdpMEtqMGZjYVdlc2tpZ1Y0VUxucGNRd1VPcTAyLWMweEdDUDdYMXdXcDhKTDlCWnh2QTNCbDNMcHRzWGN1dW11UkhsRjNNcUlLLW4zM0VyZFE2ZHdYb3dTSXVRWnM2Q01QeFJQbGRIYkV2QW9mMWYyc1V4bUdkbTNmUWx6S1dZQ25temdnS3FJTWtlVUVQV1JLZC02WHFpS0V6WWthNmsxSkVHWWthOW1ZdklLdzk5RE9yTWs?oc=5" target="_blank">Волонтеры КТЖ организовали для воспитанников детского дома экскурсию в железнодорожный музей - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 01.04.2026 07:00</span>
+        <span class="date">📅 14.06.2026 09:03</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">JPMorgan и Citigroup помогут КТЖ разместить бумаги на $1 млрд – Вloomberg - nationalbusiness.kz</div>
+      <div class="art-summary">Волонтеры КТЖ организовали для воспитанников детского дома экскурсию в железнодорожный музей - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-14" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUTFDdEJGYXREZmMtUE05emhxRzJCc295dThMUmlVVHBPN3Qwc0N1NUlUNVVZZ19ZUjQ3TTV4czRzeHRBRjhLSG5VaW1Nb2NGR2lUMUl2end6ZVJNWEs4TEVpcjhMamFsY0VNaTBGMl9IYWVPUUtSa092OWxxNk9xdDdDbnBmTVVnRFZEZkktU0I5cDM4cEpVX2V2b3h2TGp2NDlyWVNaMDVjQ1NsQUdYRkE0Q3dhaGNsaHhwM0R2b2l6R2huMlJXVzdnVTk3b3pjTVHSAdcBQVVfeXFMT0hrN1E3OUtTNFExVmwzOHI3eGViNmhMd0FfNzJ4SVk2OU9EOHRrUnlxQlFKOVNMZGttdFNzMHNKTG1pRTVLMzBpalFSNXhrUzZ0R2xhbFhHUkstazVtTngtT3JMN21rSm5wRnJmQTdKVWNYSmhmUHJHVlJJNUczang2R0U1eHhGcTBoVDhJMEMzc2JpSmFlLUVZT3hDWUl4eEpqM2FsODB3SV9LYTFnZTBubm8waEhzSy1WUDRyVkFMdzdBeURCVkpjN3E0Ujc0WER0cktLdUU?oc=5" target="_blank">Полная перезагрузка: КТЖ анонсировала масштабные изменения в правилах труда для своих сотрудников - Qaz365.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 14.06.2026 10:23</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Полная перезагрузка: КТЖ анонсировала масштабные изменения в правилах труда для своих сотрудников - Qaz365.kz</div>
     </div>
     
   </div>
@@ -179,8 +208,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-01';
-  document.getElementById('date-to').value   = '2026-04-01';
+  document.getElementById('date-from').value = '2026-06-14';
+  document.getElementById('date-to').value   = '2026-06-14';
   applyFilters();
 }
 
