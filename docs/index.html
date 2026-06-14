@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 14.06.2026 18:02</div>
+  <div class="meta">1 источников · Обновлено: 14.06.2026 20:48</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-11-21">
+      <input type="date" id="date-from" value="2026-04-20">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-02-13">
+      <input type="date" id="date-to" value="2026-04-20">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,8 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
@@ -104,47 +102,20 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-02-13" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSEQ2V0szbW1SZDQ1WVEzUXNEZGpoUGNQNWVaS0tZbU9VVW9LMllORHc4d1BIcDhBNzZ1eDZTbWFxd1RZOW9fRnk0UmV0cUtQMmptUVBlQzBkbXFGQU0tYXBXUWJNTlNIR0RMcm1oLUU4cHJ4dmUwYXNMY1NpTlR4SVBtN2FNS0RodjlLMVZIMTFuVWx0eDBlYkN3MUV6ZzB0VUZPcXZQdVpwdw?oc=5" target="_blank">КазМунайГаз до 2029 года планирует пробурить 24 поисковые скважины - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 13.02.2026 08:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз до 2029 года планирует пробурить 24 поисковые скважины - Kapital.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-01-14" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE0wX0hKeDlrUEVEME5mT3RBcXZpdjhiNVdhY3piWkxzeWNvVTFFcUdnLWZBRGZFYnpYbF9BX2U1OERJeDBFRnk3ZkFB?oc=5" target="_blank">Назначен новый гендиректор «КазМунайГаз-Бурение» - Ак Жайык</a></div>
+    <div class="article" data-date="2026-04-20" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQZ04tUlFRX00wUk5vdHdfcklqR0VSTEZDQi1NN2QydHAtcXRlNDJpZlBiZVNQRG1TWjJIc09GUGU1c1RqNzdzRXVBSW1qZ0k2dzhRbi1WdEg2STN1akx5RFJoR2cwVXROYjFnX1FOMWFhdjZVWW5xSmk3bG5nUUQtR0k2dllJVmFIMHJOeHVFYWtacWFxcTRNSW54NULSAZsBQVVfeXFMTjVPYUcxR3YyXzVxYWItaXNWVEJfSnB4cy1XbDBONnJ2Wll6akkwVEM3RU10YkVsT2tZaUUzYnVCUHVsZlBqVmJwUDdMOGVhYkt6WW1wcDQ2OHdNaWs5bm5OdFRBaEMtOFh1dHhZUjV4cEdSVHNWemUxeHcwNEFyeGNSSnVDdlRpOWdFTWdvalltaENzek5pMlYzM2M?oc=5" target="_blank">КазМунайГаз поддержал талантливых школьников Мангистауской области - SKNEWS.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 14.01.2026 08:00</span>
+        <span class="date">📅 20.04.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Назначен новый гендиректор «КазМунайГаз-Бурение» - Ак Жайык</div>
-    </div>
-    
-    <div class="article" data-date="2025-11-21" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRllidzNVclVzd1VaWTMtY1FaWXBLcml4WGljM3lsYjgtVXRqaEFCdmxnaGg2OWdnRzI4Y3Y2eFQ0TmNWdXFCNzlXYWt6Y19MRGU3THV2cGZCdlFjSTMzX0RoejdsazZHcEhJTE0tMUZWdmIwV0VhY19zUVlqT0RXQ2FJazhSTjRISjNFb2VWcGVfOHhrZEt6RXdaRTBkOU1weW5oT3NwQXFVb2fSAbABQVVfeXFMT0pIVE82dmFDSlgtZGltLXVpWjVkUjhPNXJWZzFmYkl1dmF6elJRc25ieEticGlTT2hoNkxlaGFFenc4a3F2QTJFOWw4MUpEWlViN2lIMl90a00tMDNEQjFnR1A4RU13bjJ3R0FITXFWU0tDdlhUNDlkU0RNYm94empLb09uYWE0YnBxNDhTN0pVVV9zZnlQQ1l6elRaNWp4Uk9LRjVOQjgzdElaalRoYVY?oc=5" target="_blank">Air Astana подписала меморандум на поставку до 50 самолетов Airbus A320 - Vlast.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 21.11.2025 08:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana подписала меморандум на поставку до 50 самолетов Airbus A320 - Vlast.kz</div>
+      <div class="art-summary">КазМунайГаз поддержал талантливых школьников Мангистауской области - SKNEWS.kz</div>
     </div>
     
   </div>
@@ -208,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-11-21';
-  document.getElementById('date-to').value   = '2026-02-13';
+  document.getElementById('date-from').value = '2026-04-20';
+  document.getElementById('date-to').value   = '2026-04-20';
   applyFilters();
 }
 
