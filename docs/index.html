@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 14.06.2026 13:16</div>
+  <div class="meta">1 источников · Обновлено: 14.06.2026 16:00</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-08-12">
+      <input type="date" id="date-from" value="2026-01-16">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2025-08-12">
+      <input type="date" id="date-to" value="2026-03-26">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
     </div>
   </div>
@@ -105,22 +105,49 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2025-08-12" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQZmZrODVFZkRqSFFNcU51YmQ5bTNSVTBWZWpaN05pMjlXS19GeHFHWEc5RzhxTG9CUDdENmZ6dWpidkwwZkluYmhRSlkyWDdoa1YzYlBIRmVoMFZaYUFyR3J6eW43Vl9YdXpqdWQ4anBaa0ZhcmVMWENpVmN4X1VUMDlKaXB2elpQZUFrYw?oc=5" target="_blank">Свыше 3 млн тенге вложила женщина в фейковый «Казатомпром» - Казахстанская правда</a></div>
+    <div class="article" data-date="2026-02-25" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOWkxZVVdBcmJlNWpfSWtyTXd0REgtSjI2cnMtVmpQblNuMEpQYzkxYnhvZ2ExUHI5RG1McUFtUERlQzlYV0d3eTNjanhMZ2tZeWROUWZrLWw2ODJxbUVpekZtYzdPamZaZmFZQ1JpS1FQay1aUzFDNEd1b3FzbTdqMzNaei02V1JEWUZ0enVOVHJlWjNwN2dLd05qRW1VMkJjT3RLbDVOTzNOeWx3RUxSUkxucjhaNndGLWZOcQ?oc=5" target="_blank">«Узбекнефтегаз» и «КазМунайГАЗ» обсудили ускорение проекта по производству линейного алкилбензола - UzDaily.uz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 12.08.2025 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 25.02.2026 08:00</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Свыше 3 млн тенге вложила женщина в фейковый «Казатомпром» - Казахстанская правда</div>
+      <div class="art-summary">«Узбекнефтегаз» и «КазМунайГАЗ» обсудили ускорение проекта по производству линейного алкилбензола - UzDaily.uz</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-16" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQSXJyaE5LOFV2UXZPMGJ3LWdFWUR6Yk00YUJfU0VLSmFOUHZHZm91QWxPTllmTlE0aDNTelU2VGY2YUhsckxpNHFZRkgtZDRUSFI1S2toTlJrMkJ5OVliaVhrUmpuYzJNd0lTY1ZZcU1Hd19Ma2p3cW9SWVotRGhQMk1sb1hrbWcxVVdZUzRiNVpVUQ?oc=5" target="_blank">«КазМунайГаз»: Казахстан перенаправил почти 300 тысяч тонн нефти - в том числе и на Баку-Тбилиси-Джейхан - Caliber.Az</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 16.01.2026 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз»: Казахстан перенаправил почти 300 тысяч тонн нефти - в том числе и на Баку-Тбилиси-Джейхан - Caliber.Az</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-03-26" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNMGxVbW4wTFdhX083d1hfRFYxNFpCb1dPcEdfSXJHQkl2U09OVHd1Z0hGZGM3RnFSaDBoUFRBdDVja1pwdGp1UjlER2p4SUdvb0ZRX2Juc3ZMZEl2RVZwSlRyMkFJUEstZV9vTVRVekhQcWNCWFgzaDlxb0s3UFlqd00zM1g?oc=5" target="_blank">Стабильную прибыль показала КазМунайГаз за год - Bizmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 26.03.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Стабильную прибыль показала КазМунайГаз за год - Bizmedia.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,8 +206,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-08-12';
-  document.getElementById('date-to').value   = '2025-08-12';
+  document.getElementById('date-from').value = '2026-01-16';
+  document.getElementById('date-to').value   = '2026-03-26';
   applyFilters();
 }
 
