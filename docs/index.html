@@ -60,14 +60,14 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 15.06.2026 20:18</div>
+  <div class="meta">5 источников · Обновлено: 15.06.2026 21:35</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">12</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">4</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
@@ -76,7 +76,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="date-row">
       <input type="date" id="date-from" value="2026-01-13">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-01-28">
+      <input type="date" id="date-to" value="2026-06-15">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -88,6 +88,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -105,7 +109,18 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-06-15" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE9SOV9SSmlfTFF1MjVCVEw0YU01MGthemJHMWxobTVlamJvXzJjVmwwRjdfYldTYkdFSWZwN3I4a0dMV0RycW9Vdm1aTdIBUEFVX3lxTFA1d29WSDFrY0FENkthZThSMjhpeVpIdVpKbEpFeTJaazc3NFhBQVVXY2ZoQm83MU56VVhEU05CYkFXbEV5UHFINmdkb1oxN2o0?oc=5" target="_blank">Из-за долгов по зарплате без охраны могут остаться стратегические объекты КТЖ в ВКО - «Астана» телеарнасы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 15.06.2026 14:39</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Из-за долгов по зарплате без охраны могут остаться стратегические объекты КТЖ в ВКО - «Астана» телеарнасы</div>
+    </div>
     
     <div class="article" data-date="2026-01-13" data-co="КазМунайГаз" data-s="negative">
       <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPYWZBM0lFMWYtbUNFVEZQeE1wOTJ0eWVRYjJlOU1NMy1RRk5Qc1dVM01uY2s0MmZiTTNnZENJYUIyS1FOcTdDYkZ4VFgxMnpWNjNTOF93ZHl6dFVFNHlyMVdiZS1TeS1tVXExMjdJOUxrRmxWc1plWUNMVTNKd2lEUmF2dXlhTkQ1NHBPQ2liYVlHaE9RaTJwa3k3WTV4c01pQmJvS1BUWXBZRTFq?oc=5" target="_blank">Произошёл взрыв: «КазМунайГаз» оценивает ущерб от атаки дрона на танкер своей «дочки» - Orda.kz</a></div>
@@ -123,7 +138,62 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    
+    <div class="article" data-date="2026-06-15" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-15/svan-prodazhi-benzina-i-dizelya-na-azs-kazahstana-budut-kontrolirovat-s-pomoshyu-ii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-prodazhi-benzina-i-dizelya-na-azs-kazahstana-budut-kontrolirovat-s-pomoshyu-ii" target="_blank">Продажу бензина на АЗС Казахстана будут контролировать с помощью ИИ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 15.06.2026 07:49</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Продажу бензина на АЗС Казахстана будут контролировать с помощью ИИ</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-12" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxOTWV1cHlVenJva1RHUjVoZi1tZnNJcjNfaE5rakxTRHRPei1aZEo1aXlKSVp1S0lwenRjVkkya0owcEF2eTcwLVF5YkVhdU5KRGwwaTMxYXFySjk2WTJJLU1KMmtoVkU2Ti1VMVVYbUdMWUtRdWFuNTVncmxZVmJsYjlTd1RFMFB3eHJZcnZpeE9YZXNaSEwwdUxEbzFMbnFrTlc2a1gxajd1Ujh0XzdYMTNWMTZGSnpFaUlDMHdITXNQZEZv?oc=5" target="_blank">News on tag «КазМунайГаз-Аэро» - Kazakhstan Today</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 12.06.2026 22:11</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">News on tag «КазМунайГаз-Аэро» - Kazakhstan Today</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-15" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPY1ppaTFYQkM0VU1qd0wwNW5hN3YwUVZpNWc4ZGVEcklHc2pQM29NUTRRT1hkNFdoVG9mdDVjakJIRF9pLS1XYTIzcTVlWkpRcGwtTS03VWtLTmNmSVlyTkw5bFA1UjgzeWM3VVVIWkhTVXB6bTV5QkxpaWp2U3huMGdRX0lMV1RwOXphcHpTVWFIdVU4ZEd4emNlc2YwaFBQeEpSRWFZQnFlcG1tODd4SjI2Ti1OV3YycmdDNnBiS2VEMFFp0gHKAUFVX3lxTE1Kbk56aGlLUzhERjQ5TkxtSUFQR1NBTkM3NzdIdDJYN1hWcTVVdG9pd1p1Z1dUei1ReWM2UF9JdWl3R28xX3V1bUV1NUpjNzg1MGNZMmJNdkRYTUtRWnNlcmQ5UXgzeFo2SWZhU1Z6MjlFZzNyRG5CQTFnOW9mVE92REk4ajRFb19wS2RodTcwS0U2NGRWeGlyMi1uNHdCSkJsd00zc1F3am9OdThoamJEX0Jha0xMcFlYdGxTWVpPdFZZMVBBVGJhWnc?oc=5" target="_blank">Новый музей c локомотивами КТЖ и «симулятором машиниста» открылся в Астане - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 15.06.2026 10:18</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Новый музей c локомотивами КТЖ и «симулятором машиниста» открылся в Астане - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-15" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOSHlnWU1JbnptdXY1djgtSWpOYjA4VWZWOU1HWHZyTVBDRzVyUE83WUJNYjRfOHpqankxSl92WjB1a3EwY0JzQ1VZUHdlVy1Gbm9Ka01Eb1J3Ni1nRG9ocFl5NE9MZjl5Y21OUE82RjZYZVJ0LUtkT3RadG1aUEV4MUlkRjNRaDEwZWd5VE9UVDJPYzZsNlVPdVlsMW4wYllPZl9xc1lR0gGrAUFVX3lxTE5ZWDJ4U3dQaUZBakpRcm84MnNocEVrSnp0VUFKc2Vsb2F2b2gyNHZEbjViblU5d2FidEJ1TUFCZU9KTERHUmlGLVhrdHpEdjdfRGp6TFp4WEt5RElTSVFDMjBCZGlyM1VCNWVQQmx4OVk1UV9qb2drSzRpRlQzMTFzVUU3U1ZKYU96SHIwV2Q0eGwyM1Nic3laQk90c3Vob0pjRHRiYThCcDEtcw?oc=5" target="_blank">Компания экс-главы КТЖ получила более 200 млн тенге прибыли - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 15.06.2026 12:08</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Компания экс-главы КТЖ получила более 200 млн тенге прибыли - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-15" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVTJPcGE1VXVGcGV2cHNZRWtfeExwTGxpSjNKbWowYVlPTFI4MGJkSHBGOGZtZ0tPWFZCTlN4cmhURjFMalNiODBrZ18yelhWaUVNR1B6RzltRFR6ZHpfRXBodzhacHBobldvcFVLTHIxQUtnY2xvSlBlQXBLU0k3ZDdiVF9pZm1PRDV0QkhCR0xIdUo5SVJPSVJmUVkxMXFELVNkQU9JVk7SAa4BQVVfeXFMT0RteWNFRm1mdWhQR3JGNFVoNHVlZi1XRGhEWW9jTWxGbzJSVjQ1UHRvNV9FdzB0dmZJYlhHYjQxY0pmQ1FkM1NDeU1hRjI4Q2VfNUduUk5uNnB1YXNXcnI3RTBHc1hDaExTRmp4WnhOdVF4Y2RldGpnZTN5YnYteEpXUXBsWHYyUkoxZ2VpTXlXV1dtYVNtdnJKQmJrSEZGV3FTWEZSeXRNYVdXZ3JR?oc=5" target="_blank">“Казахтелеком“ уволит тысячи сотрудников? Что говорят в компании, Минтруда и сам Мусин - Tengrinews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 15.06.2026 14:13</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">“Казахтелеком“ уволит тысячи сотрудников? Что говорят в компании, Минтруда и сам Мусин - Tengrinews</div>
+    </div>
     
     <div class="article" data-date="2026-01-28" data-co="Air Astana" data-s="neutral">
       <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNa3dOaGpkNFNCMW93VFRPOUk3T1hLZmt6NXVuS3JYU19HT1ZIM3BIWTRCakEzcUpaYUV5eDhRTGw4WkFLcHRtSU5GdGhnN3ZkX29QdEJiLVFaeUhTTVVCb2VIaVYxOS12bzBZQmZ5c3FfcTR0bk9hcUk0cnNiOFJCcFItR0JqYmpCRGwzNlVROUtpZS1WVVZYQlBkR21vX29HRGfSAacBQVVfeXFMT0ZjT1JMTlhPZGJYV2tPdkd3WnhRbjgzd0xDUXo5Y05qYUlaczhPc0h2X3lHazZuNFdYaW1NOWl0WFJJVWpOelFwbUNUam9fUVA1RU5ZSE5TOXVLUURSdndlaUtsMHV4dGJXOEU0NGQ5djhreldteVl0eDRINEtyWmJpSU1lMHQwekF2dHpRQnBFbnNTR0xPejF6NU55cGdCeVk3b3paN2c?oc=5" target="_blank">Air Astana открыла продажу билетов на рейсы Алматы – Шанхай - Kursiv Media</a></div>
@@ -139,6 +209,55 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    
+    <div class="article" data-date="2026-06-15" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-15/zhnb-kompaniya-eks-glavy-ktzh-poluchila-bolee-200-mln-tenge-pribyli/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kompaniya-eks-glavy-ktzh-poluchila-bolee-200-mln-tenge-pribyli" target="_blank">Компания экс-главы КТЖ получила более 200 млн тенге прибыли</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 15.06.2026 12:07</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Компания экс-главы КТЖ получила более 200 млн тенге прибыли</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-15" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-15/devy-noviy-muzey-c-realnymi-lokomotivami-ktzh-i-simulyatorom-mashinista-otkrylsya-v-astane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-noviy-muzey-c-realnymi-lokomotivami-ktzh-i-simulyatorom-mashinista-otkrylsya-v-astane" target="_blank">Новый музей c локомотивами КТЖ и «симулятором машиниста» открылся в Астане</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 15.06.2026 10:16</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Новый музей c локомотивами КТЖ и «симулятором машиниста» открылся в Астане</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-15" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-15/svan-kazahstan-vmeste-s-nvidia-sozdadut-moshnosti-dlya-ii-proektov-na-10-mlrd/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-kazahstan-vmeste-s-nvidia-sozdadut-moshnosti-dlya-ii-proektov-na-10-mlrd" target="_blank">Казахстан вместе с NVIDIA создадут мощности для ИИ-проектов на $10 млрд</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 15.06.2026 09:48</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Казахстан вместе с NVIDIA создадут мощности для ИИ-проектов на $10 млрд</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-01" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlb2tOdHdvQkRIaDR3UG1ZaDFCRURLZVFIZnBZVDU0TlkwMGtBNWl4MTJVWk5UaW1HV3FjOFJ4V2NPYzZWSWdMYjhsMXFYeFoxem5yVg?oc=5" target="_blank">КТЖ формирует собственный морской флот: подписаны контракты на строительство шести судов - АПК-Інформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 01.05.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ формирует собственный морской флот: подписаны контракты на строительство шести судов - АПК-Інформ</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -198,7 +317,7 @@ function toggleS(btn) {
 
 function resetDates() {
   document.getElementById('date-from').value = '2026-01-13';
-  document.getElementById('date-to').value   = '2026-01-28';
+  document.getElementById('date-to').value   = '2026-06-15';
   applyFilters();
 }
 
