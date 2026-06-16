@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 16.06.2026 22:02</div>
+  <div class="meta">2 источников · Обновлено: 16.06.2026 22:56</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-10-01">
+      <input type="date" id="date-from" value="2026-04-03">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-06-16">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -107,15 +107,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neg">
     <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-16" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOMnFUM1c1SEl1YWpkT3pabUFXbTVrSnItQWtuS25rZDVzci1objNIX05qRmpiMWhYNEd6bFpReTZ1b0FZYlJiLXNqUEMyXy1yR3JMMkEzeUtWMFhZWjVXMWJLTEdnbXBMQWlFQktjaVNqNmNITGR4TGJscTZ2NTNTTnFYU2lRTTRwX1cxLWxoczkzSEdmSDNEcw?oc=5" target="_blank">КазМунайГаз начал внедрение цифровых двойников месторождений с использованием искусственного интеллекта - ҚазМұнайГаз</a></div>
+    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQQTFEajZfNEJFbXl2dmExR01JLWRnd19hU0ZCaFN6VmZkNVptVTZheDhKYUZ4NWVPRURMSDJBSmI4S3ZIMl9QaWdkX0pPd2liREZXS0xNdExRQTVKaUtTcmFkTUlUVUVWUXByS2RDR2JMeDNaalgxS0xTZWJYVTkyQi1tYjgyZ2c2Ui15OTFXZ1RHUjJ0eHVSQjAyNndjcm81UjAtMjY0ZV9nMzNlak9RQ1NWSVdyaUE?oc=5" target="_blank">Что случилось с Асетом Куралбаем, убытки ЕНПФ, КТЖ получил нагоняй – главное за день - Ulysmedia.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 16.06.2026 07:53</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.06.2026 18:08</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КазМунайГаз начал внедрение цифровых двойников месторождений с использованием искусственного интеллекта - ҚазМұнайГаз</div>
+      <div class="art-summary">Что случилось с Асетом Куралбаем, убытки ЕНПФ, КТЖ получил нагоняй – главное за день - Ulysmedia.kz</div>
     </div>
     
   </div>
@@ -123,61 +123,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2025-10-01" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNN214Qkp4RldiTGliWmwxRDY3eDU4bVZCUnBCVkdFSnZNZVU1TmpRa051SEJ2WFdmNXpHMTRYd0NZLUNINlU2Rm52Y0NzQUdvZ2V4bHpacTFUTVV4ZFVJQTNxbGVydTU2XzdPcjVDLXlWdmZvbnBhTXJFbDNQMk00Ti1EeUs?oc=5" target="_blank">«КазМунайГаз» вошёл в СП с китайской компанией - Forbes.kz</a></div>
+    <div class="article" data-date="2026-04-03" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE4tWUMwMElHMnBrRjM0b1ZsMXNhd2s0VDhnNjRFOHdOYnhlckhXc0JGZ3pBZUxnNmk3djA0cWpXOVlNbXdUMG9xWUlHN1dXM2k5dVhhamFGMTJBYmRueEZSSDBuVDRSMTNlMlE?oc=5" target="_blank">Фонд национального благосостояния Казахстана разместит облигации в юанях От Frankmedia - Investing.com</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 01.10.2025 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 03.04.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» вошёл в СП с китайской компанией - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-11-21" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPaVdSb2JneHpzNkMzcmFqS0VNdU5IY0F1NG51MDZ2aEZJcFdYU2tZb1I4X010NHZiS1FSc3hyVUhjRW5BLTViLVdPXzU1WEZZbUNjRWtPTVo4UkdoMVdlWm5nY2wxc0FKSzEzOFpWTmVWeXdvX09PTU04eFlnaHB6aE1VLTczcmgxY0l6YTZlaDR4cHZXdF9aUmNFSURfTUlRMW1zRVNB?oc=5" target="_blank">«КазМунайГаз» продаст половину своих европейских активов, включая румынские НПЗ - Orda.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 21.11.2025 08:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» продаст половину своих европейских активов, включая румынские НПЗ - Orda.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxOMElsaE4wZUt5MlV0cWc4QUtXMzlsRERfbUgwNTcyWXBmR19uTkJiOWFKMlM4U1JYME5DaFpFOFhVX1ZBaUdOWjBDa1Bpc3p1U1ZnNVNYV2pqbFNRYzZxVXoweWZ5Z01qalhHLUhlN3FGbUh0NDhIR0dtWTh6OVppXzIzRFJTNHRzT1I3UFdVeU1ETmxSaFJubF9RNTlROG1oeHRFWndXdzBYSFpxcC1QVDl1MG9TeF9GbGkwMG5B?oc=5" target="_blank">Вагоны Stadler могут принять только через 2–3 месяца: КТЖ потребует компенсацию за задержку - Informburo</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.06.2026 09:30</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Вагоны Stadler могут принять только через 2–3 месяца: КТЖ потребует компенсацию за задержку - Informburo</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5UUVQ3Qm9XTm1DeWNCTkxGbmRRX000ZGtOMlY0V210Q0t5ZXl4cjFxOURoeXV5MFd2ajJTdVZKT0g1S0E4TUIxSFNn?oc=5" target="_blank">«Все задекларировано»: глава КТЖ прокомментировал компании жены и родственников - Ак Жайык</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.06.2026 09:43</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">«Все задекларировано»: глава КТЖ прокомментировал компании жены и родственников - Ак Жайык</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQSXpzSFh2RC01NGlONmRqRHhta3E4SkRyTDJoaXdORnNucUN2RmFWaFpvS01jOFNJUHM4alo2U0FDWFk3NXVaUmktNHpSOVM2N211UnBfdVpuZUtoY1NFOGg0VFVJUDZCaVpwaTNfZHJ4STZSRmpaMkhqVHdCak41UUdkRm1aRXdXSkp6Y2M4TDJ6c05iTXJFTmp5bEc?oc=5" target="_blank">Глава КТЖ Алдыбергенов признал, что владеет частной логистической компанией - Belles.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.06.2026 09:19</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Глава КТЖ Алдыбергенов признал, что владеет частной логистической компанией - Belles.kz</div>
+      <div class="art-summary">Фонд национального благосостояния Казахстана разместит облигации в юанях От Frankmedia - Investing.com</div>
     </div>
     
   </div>
@@ -241,7 +197,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-10-01';
+  document.getElementById('date-from').value = '2026-04-03';
   document.getElementById('date-to').value   = '2026-06-16';
   applyFilters();
 }
