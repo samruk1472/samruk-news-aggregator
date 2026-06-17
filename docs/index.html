@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 16.06.2026 22:56</div>
+  <div class="meta">7 источников · Обновлено: 17.06.2026 14:26</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">27</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">26</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-03">
+      <input type="date" id="date-from" value="2026-06-15">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-16">
+      <input type="date" id="date-to" value="2026-06-17">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,6 +84,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -107,15 +113,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neg">
     <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQQTFEajZfNEJFbXl2dmExR01JLWRnd19hU0ZCaFN6VmZkNVptVTZheDhKYUZ4NWVPRURMSDJBSmI4S3ZIMl9QaWdkX0pPd2liREZXS0xNdExRQTVKaUtTcmFkTUlUVUVWUXByS2RDR2JMeDNaalgxS0xTZWJYVTkyQi1tYjgyZ2c2Ui15OTFXZ1RHUjJ0eHVSQjAyNndjcm81UjAtMjY0ZV9nMzNlak9RQ1NWSVdyaUE?oc=5" target="_blank">Что случилось с Асетом Куралбаем, убытки ЕНПФ, КТЖ получил нагоняй – главное за день - Ulysmedia.kz</a></div>
+    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMnJ3d2ZvT0ZUVzRENlV3Ri04SHkzUjhzNmFhb09PTEhjS1RQb3g5bmdoTW1LZU9XcTBkMVg3M042bmswSXhjTkZBblhPVzZiaWFBUzNPX1Q2QnRoUG4tRW40V0NuSjVSYmVHRUUwempXTWxlcnNicXFhRjV5RFdKbEJEeHNjZjBS?oc=5" target="_blank">IPO КТЖ: Рискует ли Казахстан утратить контроль над нацперевозчиком - lsm.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.06.2026 18:08</span>
+        <span class="date">📅 17.06.2026 11:08</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Что случилось с Асетом Куралбаем, убытки ЕНПФ, КТЖ получил нагоняй – главное за день - Ulysmedia.kz</div>
+      <div class="art-summary">IPO КТЖ: Рискует ли Казахстан утратить контроль над нацперевозчиком - lsm.kz</div>
     </div>
     
   </div>
@@ -123,17 +129,292 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(26)</span></div>
     
-    <div class="article" data-date="2026-04-03" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE4tWUMwMElHMnBrRjM0b1ZsMXNhd2s0VDhnNjRFOHdOYnhlckhXc0JGZ3pBZUxnNmk3djA0cWpXOVlNbXdUMG9xWUlHN1dXM2k5dVhhamFGMTJBYmRueEZSSDBuVDRSMTNlMlE?oc=5" target="_blank">Фонд национального благосостояния Казахстана разместит облигации в юанях От Frankmedia - Investing.com</a></div>
+    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-17/fvfv-ipo-ktzh-tochno-proydet-v-kazahstane-ekonomist/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-ipo-ktzh-tochno-proydet-v-kazahstane-ekonomist" target="_blank">IPO КТЖ точно пройдет в Казахстане – экономист</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 17.06.2026 10:45</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">IPO КТЖ точно пройдет в Казахстане – экономист</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://egemen.kz/article/415087-air-astana-aue-kompaniyasynynh-eks-basshysy-dganha-qyzmetke-taghayyndaldy" target="_blank">Air Astana әуе компаниясының экс-басшысы жаңа қызметке тағайындалды</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Egemen.kz</span>
+        <span class="date">📅 17.06.2026 16:57</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana әуе компаниясының экс-басшысы жаңа қызметке тағайындалды</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNVGpxQTZzY1FuUks3M3k3NkJWZDVMb3dCUExMTS1TaWhIUGJlcWN1cXFsLTQtbHJiZmMtZUgwY2N3S0Z2SWRvU3gwMHY2OThsNGVLMHRTZmszNExNZWlwMTViWEhpZnAybFBiQUx4bXFoME1CMGRpX0pwWERBUlBfRUlVZw?oc=5" target="_blank">Активы &#34;Самрук-Казына&#34; составили 88 млрд долларов - Inbusiness.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 03.04.2026 07:00</span>
+        <span class="date">📅 17.06.2026 12:51</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Фонд национального благосостояния Казахстана разместит облигации в юанях От Frankmedia - Investing.com</div>
+      <div class="art-summary">Активы &#34;Самрук-Казына&#34; составили 88 млрд долларов - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxNVmcwc3ZRamZxM0pabl9tWXFkaTQ3cTlUZTUzNHItOFU4MlcwdlJhWm5ja09jdU9FODNBQk43QjJwdVRhdjdNUGd3NVBXSjJYbXZnRmQ3RTk2MW5oUnJkU0V1MDc3MlhMcU5jWUlvMl9iMFFKV1BOZXVxMzZhNzhoRnV0cUdyZldoUkJxdURZalhfY2pCS01ENGNDU1IySHpq?oc=5" target="_blank">Проекты на 3,3 трлн тенге намерен завершить &#34;Самрук-Казына&#34; до конца года - Informburo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 17.06.2026 11:40</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Проекты на 3,3 трлн тенге намерен завершить &#34;Самрук-Казына&#34; до конца года - Informburo.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBUeUhQbDlsVzg0SEd1SUZoaUpTQ2NMM29IYkNJZ1pxaEdOeXItZjlLWWpJdUhYSUNaa3JzZDdmeTZzS096NzFyR19n?oc=5" target="_blank">Токаев заслушал отчет «Самрук-Казына»: что построят в Казахстане до конца года - Ак Жайык</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 17.06.2026 11:46</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Токаев заслушал отчет «Самрук-Казына»: что построят в Казахстане до конца года - Ак Жайык</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQeFNmY29jN19vSkdqTjZOS0lZNFROcllfXzAwVml5V0NiNUwzUER0aXJVaXpuUmU1eVY0aHdxaXZqTW9hRGlfLWdwNDRnSF9jcTRpS2FBb0NJMjAtWFI2dWtNcmRuYW03WTdOb18zNnFzVGozRlhYbWtOQXBpZFFPV2hOS0I?oc=5" target="_blank">&#34;Қазақстан темір жолы&#34; выйдет на IPO до конца года - Informburo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.06.2026 08:01</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">&#34;Қазақстан темір жолы&#34; выйдет на IPO до конца года - Informburo.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5XVlAzRm9aUVZ4WFZ3RVFZRjRDRDhaU2ZLa1JlZlgzYS13OHJvTU9nUzlOdzMwQkd5U3pUMDZfemJhOGpzeVBzS1M3RG1vczJMNmFXemlyTlNPVUNfdW9V?oc=5" target="_blank">КазМунайГаз внедряет цифровые двойники месторождений с использованием ИИ - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 17.06.2026 01:31</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз внедряет цифровые двойники месторождений с использованием ИИ - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9vZkEzcmFoMkNqemtLYUF0NFhwSXExYVlKeHN0T01iYUU0WjBoWVRVOF92TDdtOUZpMG1yZXVYd25aelY4M0JHMUhMR3ZDVlhRS0ljSUtxUQ?oc=5" target="_blank">КазМунайГаз-Аэро обеспечит заправку нового рейса Centrum Air по маршруту Ташкент – Костанай - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 17.06.2026 02:28</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз-Аэро обеспечит заправку нового рейса Centrum Air по маршруту Ташкент – Костанай - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPN0ZLQi1qSWgyaTlJU0p0bHNYdlFJZDZoeWJqNHNWUE1MWWFqdXZRR052RHQySjgyNTN6NFhfWHVMWThwTEdiR0o4VTBjWVB5c1U1LTFrNkxnLTFKUUVxRGstM00yVkR2ekI1UWFSd09JUFN5d3Z5ME0yUzJMd0RtMFlOd2ZZeWw0OHk0TF9QemRDNUVieWpYcG96UzBKZGtpWWtObjV1d3d2VjZLeVJEOENhRG9HaWFybjJ1WENqc3hROU5YdzVLYVRtdV9IbnFrYXc?oc=5" target="_blank">«КазМунайГаз-Аэро» заключила договор с авиакомпанией Узбекистана Centrum Air - SteppeNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 17.06.2026 09:43</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз-Аэро» заключила договор с авиакомпанией Узбекистана Centrum Air - SteppeNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-15" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPVEtrNDBGem8yYWZoSjItbmN1LXdPVEpMYmZSRlNvRG8wRVBkTDhxU191QWFJQmxKSERWejEwSUR6OUhuTlB1RFhSMFhoUTF6N19KczZXMV9sM0E1QVlnQmZoN2Y1d0tRbk8ybTJGY1R6bHh3Sm5RY1RQQnViTjZJaWFMQ0dwLWFoNTVFRnU3WDhQLWI0RGQwS3l3?oc=5" target="_blank">Казатомпром: итоги за 1-й квартал 2026 года - Freedom Broker</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 15.06.2026 08:33</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром: итоги за 1-й квартал 2026 года - Freedom Broker</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOQ2xneklQZU5YbDVEeVNQMTB6Y2R2Wkw1V3hpNE5MRkZPankyVERmVG5hdVA2YnBORjV5YlNqcWJoRWRjY2JwY19YZEd2eFJzUkRhaWpfcllYbXhrenFoVzJIeGYwaEYwQUxFSlVlNUQtNlp2VDc3Wk1EbGMtN2tLeGlYZks1aHd0d3NYXzNuTVJ6elY4eEMwUHRqT3Etay1GS2VhQkZB?oc=5" target="_blank">Экс-глава Air Astana Питер Фостер получил новую должность в Казахстане - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.06.2026 11:13</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Экс-глава Air Astana Питер Фостер получил новую должность в Казахстане - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZGpBZGJ0WHNUUkRZUWFvRF81NUZBb0pCZkJVQzRSNkZERHBJQ0NNQWR5T2ZkZGpud3R1TnNlRFprWjVhZ0dQbUZsY2dZRGtMSVppMHVJQ3RfaUFaaXNyQ0pkc0JoSDRtOFEzVHlNQ1VjV2tJN3B1UzliZ09fREczY3BXQ3IybjBhbUlld1VCcldhMFpESmNjYXlaSmIyTTdnaHVSdkQ4N0NUSHhNd3UxOFZwSnZJRFktZnlZ?oc=5" target="_blank">Экс-глава Air Astana Питер Фостер вошёл в совет директоров авиакомпании Тимура Турлова и КТЖ - Orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.06.2026 14:01</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Экс-глава Air Astana Питер Фостер вошёл в совет директоров авиакомпании Тимура Турлова и КТЖ - Orda.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQaUtuMWRTZ0xuLTM2ZVdOUjZEVFRBbnFwVzlOSV9OcGFMbFlaQkJjOTI0U3RoSmEwQXFDTEstcGt0WExOMEtwOEdrUkpzT0NxcFRPZS1Cd09CdWdjUDFhcU4xcFBkbVNLeGtHaEpvVTVqV3RzUDZlLTBBR3A2U1N0MDVaSFhaV0k?oc=5" target="_blank">Экс-глава Air Astana получил новую должность - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.06.2026 13:15</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Экс-глава Air Astana получил новую должность - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUjFack53TUN6T3BzTnBUeW1WbDM2WWc4WV9PU29LaUZlci15TmFndmJKaVdqd3c5aWhzdW4wdHhYYWxlWGpHcnRhOEI2R3VWcWhYbjhEcEcxLVpRczFwc3Q4NzlXSUFSZEhkRDZmNWNtMmJ6LVVrX2piRUZoeHQ3dHF1clFiTlV3Qy1MVDBLQ1pXenMwZmt5TUtaNmg0N1RleHF0VzUyUGlRakU4bExqbEFIaGRoczc1?oc=5" target="_blank">Зачем Тимур Турлов «вернул с пенсии» легенду Air Astana Питера Фостера? - Новости Актау и Мангистауской области</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.06.2026 10:05</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Зачем Тимур Турлов «вернул с пенсии» легенду Air Astana Питера Фостера? - Новости Актау и Мангистауской области</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPd1lEcjhpTUtBYnV1VmpxYW5CeHVKXzRzbjUtQnJvN2VOMmJralBrenB5S2padjU3RG4zTlE2U3kzWGZmd0pZZzJBSkdWNV9FM0ZRVVY1b2U1d0liZEhaRWdSOFF5VFNyQ3JkTDVWdlVfa3QyOXhKcXZLeXJCTHpIYWpweFM5SmcyT3NqRFJNeHF3YUE5TVZobzkzNmJrUnVjcjlNRHdJMHg4M1ZyVjRuQkMyRDBQaXhaUE84MzE5RQ?oc=5" target="_blank">Экс-глава Air Astana Питер Фостер получил новую должность в Казахстане - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.06.2026 12:43</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Экс-глава Air Astana Питер Фостер получил новую должность в Казахстане - NUR.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOdUtRdjI2bEJkYUFZb091RGZPYjEyVk40MDg3aUFJQU9ObjNTRzRoQklxVENyMzg5X0tmbHducG5EdElLN2U3SkkzYzBULTh3bjZPdzRwWjdhVDlUU2pMWVhRdjRvQWFJV1ZIQVpRMGJPeHJCNXp1eWpFN3pNZXV4Z0hJUzYyX2hLbUNibmd3djZFZktfR2Z3aVI4bw?oc=5" target="_blank">Экс-глава Air Astana Питер Фостер получил новую должность в Казахстане. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.06.2026 10:35</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Экс-глава Air Astana Питер Фостер получил новую должность в Казахстане. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOaWFSMGlOUHdTekFQcnJsb1RXNERXSWpseFg5VUpudW9Wc3FYX2d2Z3JrUHIyd2VRZ19HM0piUTUtYWFkeV9ubGdZVVZJYmRkV3JpY2t6YWFPWWhQZ3pycUh2RGE2UHRieFQwTlYxSVhlZGhpM01pRHBuQ25YMElkTmhNemFnb0ZCa2xyYTd1T1NVaHRQbHfSAZYBQVVfeXFMTmlhUjBpTlB3U3pBUHJybG9UVzREV0lqbHhYOVVKbnVvVnNxWF9ndmdya1ByMndlUWdfRzNKYlE1LWFhZHlfbmxnWVVWSWJkZFdyaWNremFhT1loUGd6cnFIdkRhNlB0YnhUME5WMUlYZWRoaTNNaURwbkNuWDBJZE5oTXphZ29GQmtscmE3dU9TVWh0UGx3?oc=5" target="_blank">Бывший президент Air Astana присоединился к команде Тимура Турлова - BAQ.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.06.2026 10:07</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Бывший президент Air Astana присоединился к команде Тимура Турлова - BAQ.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPejF1VUxqWHJQQ3RvTEVfSGlTRXJpOWIta0owVU1yWlNTYXp6SnRNZHFkUXRMV2ZIQ1pLUkJzVEJtN21xTGV6eDlpN1VRbXpXZzQ2amxHdER0Vm1VelBpclVEVXVoRWNnWm5ZWWdHNllYODlfZzQ3SklEVVpQSTItWUg2a05rSjZZenlqT2Fya2ZWSWxKM0hIQWJ2WmozbjkweUlWZ09JTFpMLWppSG1wRng3RWswLVJ1c0E?oc=5" target="_blank">Почему путешествия на поездах становятся дороже, чем на самолёте, ответили в КТЖ - Kazlenta.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.06.2026 09:47</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Почему путешествия на поездах становятся дороже, чем на самолёте, ответили в КТЖ - Kazlenta.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ0p4YURodWxCUnEtUEtTRDJFbDZGN3BLdXNhVkR5bXZVWFRDNUJyZko3Qk5MTVVYa1VSRkxzNXNDV1RQZV82SEdJOTJ4bmxxSGQ0Q2xHT2tmUmdsMFltZXpXSVV3b3R5VGJEbVFsMzRpUFB2WFhUckdJNEpjR0VlSVR5ZjFFMkpSbTdqa2tDdjNWMEdNaUJlcVpjVUxyQXEtTmMzOQ?oc=5" target="_blank">Казахстан построит терминалы КТЖ в России, Азербайджане и Беларуси - ИА Чеченинфо</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.06.2026 04:24</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Казахстан построит терминалы КТЖ в России, Азербайджане и Беларуси - ИА Чеченинфо</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNYXA2Vi02c2lEOTZvX0N1WDAyLXFkQnhUclNGTzk1NHoyRjV2cl9hbGsybUYxRXBiaXFuMzhoSzdSaEtKLU5DLTI3YmloY05nUXM5UWV3TS0tWWFpNVhHb0hqTEI5WVN6eWRIRzZZdjdUYnFCSHhRdGNVZkg2TEdrbkJPT2NDZURlQ0xqd25nVGJCY0xRc0HSAZYBQVVfeXFMTWFwNlYtNnNpRDk2b19DdVgwMi1xZEJ4VHJTRk85NTR6MkY1dnJfYWxrMm1GMUVwYmlxbjM4aEs3UmhLSi1OQy0yN2JpaGNOZ1FzOVFld00tLVlhaTVYR29IakxCOVlTenlkSEc2WXY3VGJxQkh4UXRjVWZINkxHa25CT09jQ2VEZUNManduZ1RiQmNMUXNB?oc=5" target="_blank">IPO КТЖ точно пройдет в Казахстане – экономист - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.06.2026 10:47</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">IPO КТЖ точно пройдет в Казахстане – экономист - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPeUZ4Y05Qc19oWDdKb1M2ZkJXTDc4ZzZac1NCMy1Wel9KSmJNNEczMDdTV3FJMzFuY0FyeDVHSzgzMmdzdEJCZWlsVERxQkRYOWFQOE1wd0FwUGRMTFNWWEwzMDE0dlMxczRHTXp0MDg4TENRRkhfbUFVSmFBQ2hXc2o5R1IwT1o1cUFvag?oc=5" target="_blank">Какие интересы стоят за IPO КТЖ и при чем тут Китай - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.06.2026 12:50</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Какие интересы стоят за IPO КТЖ и при чем тут Китай - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPMjRheUN2NFREb0NaYTJCbUlVT19yYkJPZWJrd1dKc2l6SnBHLVlucUlpQWFEbGhDZkdZNzQ4X0FDd1YtOEhyNWNmRXJXVEV3N3pfenk1dkdma0FCT09lMzRScXVERDcxUVpfbHAwRUpzVEZmRWRCSXpIeFFqMTMzeEppSzJzVjRLVVc1U1dueXdUZVNHWnowclRDVjhwZFhYTmdWU19FZ011R294aFdfbXpMNDdrSEFPWEs4dXpGZHZaNTA0V0HSAcYBQVVfeXFMTzI0YXlDdjRURG9DWmEyQm1JVU9fcmJCT2Via3dXSnNpekpwRy1ZbnFJaUFhRGxoQ2ZHWTc0OF9BQ3dWLThIcjVjZkVyV1RFdzd6X3p5NXZHZmtBQk9PZTM0UnF1REQ3MVFaX2xwMEVKc1RGZkVkQkl6SHhRajEzM3hKaUsyc1Y0S1VXNVNXbnl3VGVTR1p6MHJUQ1Y4cGRYWE5nVlNfRWdNdUdveGhXX216TDQ3a0hBT1hLOHV6RmR2WjUwNFdB?oc=5" target="_blank">КТЖ снизила на 70% тарифы на перевозку продтоваров и пшеницы внутри Казахстана - ElDala.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.06.2026 04:40</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ снизила на 70% тарифы на перевозку продтоваров и пшеницы внутри Казахстана - ElDala.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPTEkxbVp6eHVKMmoxWVY5dzdFZU01YTlXWGZQMWNINUlIdzdUeWtkbTg0UmJZdDZTd1hubnpkbEw5aDBkUE91VUNQeXl6Mkl4SjdtLXZ6WG10OTg4N19oazZudEpvaG1ueVJqOHlpaU81dnljd05udXNVQ1l4TmYxdjk2VEZadnNHRFIzVmFFVXBwcUpZS3pZZnNkYzUtSUZkb29vTC1UN1U4Sm5XRjlEaG5XeGY?oc=5" target="_blank">Дайджест NBK: КТЖ выходит на IPO, &#34;Ордабасы&#34; продали, недвижимость в Дубае - nationalbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.06.2026 05:27</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Дайджест NBK: КТЖ выходит на IPO, &#34;Ордабасы&#34; продали, недвижимость в Дубае - nationalbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNMml0NkJnM0RmVV9ZdWhvNU9uM0Z1cGpLUlo4c0dhMWpiNXppNWlmY3V3T3BCaUVyY2Q4TWNKcGR6Q3ZneXYyVmdSZWNFZFUzME9SOTNFTHA0RVRQOTd1X044Tnd3Wm9WaG5hZDloWW1IN3Jwenh3ei1idWlLM2V5WFRtYjg3aGdLNXoydTlkc3kwUHVJR3l0UQ?oc=5" target="_blank">Семья главы &#34;КТЖ&#34; владеет активами в логистике, строительстве и финансах - qumash.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.06.2026 09:25</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Семья главы &#34;КТЖ&#34; владеет активами в логистике, строительстве и финансах - qumash.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPY0RhZVhCRDlhLU9kSkF3RHNlV2kxVi1wQjdDanJ5dWdWWUc2bzNHVHowZERmYk9QejlrRGRyT3dpaDUteGFOdEZ6b0JfSEN0bS02QmYwRHNMNzk3TFl0LUNsa1NLeU56elRxZzM0Z1VGWFlid1NaeXVtczdVN1ZWNzNjREQ2LXdjTEFSeHhiMFRGUkJYdjBhdUVjaW1mX0ZLS2dtVnNNVdIBrAFBVV95cUxOSzNtOXRydGFYQUpfQzRFOW1rQmpiZVFoMi1GZV8yZWhSb0FRd1plR0pDaTVZdy0xdXZsWTVRWnpLNWM2SmRDUGhOXzV6WE9pV3RsZEljRkI0VUg4dEFrdVZXRVRoQU9fRUlyUmhqOEp4QUNqNGVaSWJrU045SHA0RDFrX2p2aGpuRzkyaDdINS1weUV6ZnhpWUZlVUVvQTV3bWRydU4zUEh5bzZT?oc=5" target="_blank">Поезда КТЖ будут обеспечены спутниковым интернетом до конца лета - ru.elordainfo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.06.2026 10:44</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Поезда КТЖ будут обеспечены спутниковым интернетом до конца лета - ru.elordainfo.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQQVl1ZWk2SERzX3ZGcG4xYXNHRFVZbnJ0cGxFUUxOdHFFdThSbV9mODZNVm5sUy1ZbllNQ1pDQmk2dm9kTmswcmpIa1RNQ3VDZWFmc3hDblZuRUx3ajlTak5ndWlYZHVwdXlZOXprUTd0b2czeXlscFBQdlpEX3BMbzF5eUdkQQ?oc=5" target="_blank">КТЖ готовит размещение акций на международных площадках - 7kun.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.06.2026 13:45</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ готовит размещение акций на международных площадках - 7kun.kz</div>
     </div>
     
   </div>
@@ -197,8 +478,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-03';
-  document.getElementById('date-to').value   = '2026-06-16';
+  document.getElementById('date-from').value = '2026-06-15';
+  document.getElementById('date-to').value   = '2026-06-17';
   applyFilters();
 }
 
