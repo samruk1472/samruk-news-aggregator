@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 18.06.2026 14:35</div>
+  <div class="meta">3 источников · Обновлено: 18.06.2026 18:13</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-18">
+      <input type="date" id="date-from" value="2026-06-03">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-06-18">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -105,17 +109,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-06-18" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="http://profit.kz/news/74029/V-Kazahstane-osenu-otkrout-superkomputernij-klaster-na-baze-NVIDIA/" target="_blank">В Казахстане осенью откроют суперкомпьютерный кластер на базе NVIDIA</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Profit.kz</span>
+        <span class="date">📅 18.06.2026 09:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">В Казахстане осенью откроют суперкомпьютерный кластер на базе NVIDIA</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-03" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFBYcnBOQkdCVGlsRWpYMmJVTnUyTExmOFZnWEUwQXJvT3Y0NEJ6TkJscEEyUnBZOVhtU3ljbElFanVsWHQ1WDJvbzNhTGl2Tm10ZlNPNldaMA?oc=5" target="_blank">КазМунайГаз внедрит цифровые двойники на 12 месторождениях, формирующих 90% добычи нефти - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 03.06.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз внедрит цифровые двойники на 12 месторождениях, формирующих 90% добычи нефти - Energyland.info</div>
+    </div>
     
     <div class="article" data-date="2026-06-18" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE14TC1DdDBRdzFPYjk3VTlHRmV6emhZMzFMaXprOHZtYkNKeEtLMGthTWdfVGdSRkQ0MTJsa0c3X0Ruai1TZGdLNHJFN3RLamxhUGlyZzNEa25WV1JiWDJZSVQxeUQ1cFRKQ3AzRVhvOVE?oc=5" target="_blank">КТЖ НЕ ОТКАЗАЛАСЬ ОТ ПЛАНОВ ВЫХОДА НА IPO В 2026 ГОДУ - THE TENGE</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNeXFkWUJzVlFxMmFGcmQwTkM2RzN6MjBPMFdMZmZfZkhLa0F0cTFsZ0UwUTlrSjlKdXlHYmQxR3hhMmRKcTlSanNPczFTeFhTQk44UTNwS1hxaDhoWV8xZlBSS1BBQlMzZjJkTGVBNF9JY0RTbGQ2RE1TM3dUN21QenNR?oc=5" target="_blank">Чемпионат по футзалу проходит в КТЖ - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 18.06.2026 03:33</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 18.06.2026 11:44</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ НЕ ОТКАЗАЛАСЬ ОТ ПЛАНОВ ВЫХОДА НА IPO В 2026 ГОДУ - THE TENGE</div>
+      <div class="art-summary">Чемпионат по футзалу проходит в КТЖ - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -179,7 +205,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-18';
+  document.getElementById('date-from').value = '2026-06-03';
   document.getElementById('date-to').value   = '2026-06-18';
   applyFilters();
 }
