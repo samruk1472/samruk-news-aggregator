@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 20.06.2026 12:26</div>
+  <div class="meta">5 источников · Обновлено: 20.06.2026 15:56</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-16">
+      <input type="date" id="date-from" value="2026-01-16">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-16">
+      <input type="date" id="date-to" value="2026-06-20">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -102,10 +108,59 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-06-20" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-20/svvo-v-kazahstane-usilivayut-kontrol-za-vyvozom-topliva-bektenov-dal-porucheniya/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-v-kazahstane-usilivayut-kontrol-za-vyvozom-topliva-bektenov-dal-porucheniya" target="_blank">В Казахстане усиливают контроль за вывозом топлива — Бектенов дал поручения</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 20.06.2026 10:06</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">В Казахстане усиливают контроль за вывозом топлива — Бектенов дал поручения</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    
+    <div class="article" data-date="2026-06-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/obsshestvo/69838-nedela-v-kazahstane-kiberpank.html" target="_blank">​Неделя в Казахстане: Киберпанк</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 20.06.2026 15:11</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">​Неделя в Казахстане: Киберпанк</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-16" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTE9kc2xBRC1ka0hrQ3g0anNhX0FYUXlBU0V0N0dBQmNwTVFqX2RyQjQ4YXRvcDl1M3dMNFVabUotaDlGbjhQZ000?oc=5" target="_blank">КазМунайГаз (Казахстан) перенаправил порядка 300 тыс. тонн нефти в декабре 2025 года на период ограничений КТК - Portnews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 16.01.2026 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз (Казахстан) перенаправил порядка 300 тыс. тонн нефти в декабре 2025 года на период ограничений КТК - Portnews</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPLTVacmk5SUVDUzg0Z1FWNFVQaHJPTHZzRExGODV5TVAxR2YxMTVsS2hVS3B6YllTeThHb0t4dVFHc3o5WHRLNFNqNlNKd3JZU2x4TTZyTk1FcGF1VTc4dER6TnVXMnh4cG1WMjF0dG5yZEFOX2poZlVEZ2RvN3lDOFZnZk5SSkJtYWlFSVc1bHBYU1F2a1pLdUdB0gGaAUFVX3lxTE8tNVpyaTlJRUNTODRnUVY0VVBock9MdnNETEY4NXlNUDFHZjExNWxLaFVLcHpiWVN5OEdvS3h1UUdzejlYdEs0U2o2U0p3cllTbHhNNnJOTUVwYXVVNzh0RHpOdVcyeHhwbVYyMXR0bnJkQU5famhmVURnZG83eUM4VmdmTlJKQm1haUVJVzVscFhTUXZrWkt1R0E?oc=5" target="_blank">Почему до сих пор не приняли вагоны Stadler, объяснили в КТЖ - Казинформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.06.2026 07:37</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Почему до сих пор не приняли вагоны Stadler, объяснили в КТЖ - Казинформ</div>
+    </div>
     
     <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
       <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQmhYQnFEVTVOeW81V3BOS2FSUUUteENzNWVLRHJQSWgwZnEybFpzTjBjS0NZSi1VUlUyS3RMbTdpMGxlY0xmU0lUeXk4bEdCQzFYVlBiVmZSWEducmc0QlZQTmJHTUVnMDdVZlNPOGwtaU9tSHVFaU01aU5BTl9jdEs0VU1ObEhURTFnclNXUmhpenM0QlRGUHVxYzBnbHN5d1MwSk92ODI?oc=5" target="_blank">Заработали: топ-менеджеры КТЖ нашли оправдание своим высоким зарплатам - Ulysmedia.kz</a></div>
@@ -121,6 +176,33 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-06-20" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-20/svvo-azal-zapuskaet-aviareisy-v-baku-iz-shymkenta-aktobe-i-atyrau/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-azal-zapuskaet-aviareisy-v-baku-iz-shymkenta-aktobe-i-atyrau" target="_blank">AZAL запускает авиарейсы в Баку из Шымкента, Актобе и Атырау</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 20.06.2026 05:50</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">AZAL запускает авиарейсы в Баку из Шымкента, Актобе и Атырау</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-09" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1ocHVHV2pHaWh2ZjBNZXJwbk9teHBXbGhYQi1YZjRUSFljMmNLb2tVZDFUVFU3WjNrX09OZEhhbjNkREdVNENvUGdtWkNnYmt2d1NmamZtOGU0RmhXdThuMkNGMHluQXVwV0E5NC15NVRLSy1BZGRESQ?oc=5" target="_blank">Самрук-Казына разместил Panda bonds на 3 млрд юаней с доходностью 2,18% - TradingView</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 09.04.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Самрук-Казына разместил Panda bonds на 3 млрд юаней с доходностью 2,18% - TradingView</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,8 +261,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-16';
-  document.getElementById('date-to').value   = '2026-06-16';
+  document.getElementById('date-from').value = '2026-01-16';
+  document.getElementById('date-to').value   = '2026-06-20';
   applyFilters();
 }
 
