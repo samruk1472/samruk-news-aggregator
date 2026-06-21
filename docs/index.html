@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 21.06.2026 11:36</div>
+  <div class="meta">1 источников · Обновлено: 21.06.2026 12:20</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">15</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">4</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-10-03">
+      <input type="date" id="date-from" value="2026-05-25">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-21">
+      <input type="date" id="date-to" value="2026-05-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,11 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -106,189 +102,25 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
-    
-    <div class="article" data-date="2026-05-05" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQelNrb3dIYVJDdXlSQXVSMy1EMWpzOVpjdmR3Q3Nhb29ZUlh3eGgtTmxqNTJyQV9wUDJWekwwcmRMS2ZmcmZ6aW5VcndYYVpzMFhwOUFJZG9yQ3dxMVNEcFB0ZUN6X0RJY1VXWmZmMXYwXzVmR09aUFNsdEp4Qno1QkJ6RXotR1VsUmdsZm9MNDZ3eG0ydlpmRjduUlJ4SWlaUGxHYQ?oc=5" target="_blank">Убыток Air Astana вырос в 2,9 раза в первом квартале 2026 года - nationalbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.05.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Убыток Air Astana вырос в 2,9 раза в первом квартале 2026 года - nationalbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-20" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE5vR0FaNmhSaHJSbnpHUVZJeDZ6d09Nc1Jyb0M0eE1jVjA2UlZBVGJNX0NpRVFxNDg1bnZXWS1NclVUVlVEZnNpZFZxTTN3WTREeEoyMy1Cams1dER0TWNudjJCeFNCcjBPYUVONnllNElnNEZsT1U4?oc=5" target="_blank">КТЖ влезает в крупные валютные долги - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.04.2026 10:45</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ влезает в крупные валютные долги - Inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-24" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPRV9JcXBBMDNTVHV3SnBEQXB2bUhIMk1qallOcVU3d3M3SUlLQXJSOEVzeWR1YjFiMVJhYndDRnBFS0xKTlBDM0RGZFJyTFlKZGZ1em9hVmtRTVJKa21wZGRRLXU4UVJRZnV2TzFhcHc1VGtpQUNucXJ6OHYtSUJZSXR4QlZPbUVpWTY0QXJ5VmozSTNsNHRZQ1dJa0wxM2ph?oc=5" target="_blank">КТЖ планирует IPO в конце 2026 года для погашения долгов - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 24.04.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ планирует IPO в конце 2026 года для погашения долгов - Kapital.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-04" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOTmdmWU1HQkNGc3k4bGx0YzdPZWpOa0tzNHFRTG5fVWE2ZmE5eDYwX0FOQUxZNWpuRHROWXhEem1pS3N1WHR3bkREQTA2RGFUQW5Qempzd1NZLW4xekljcXR1OFdJdGM3dEZVb0hpTUFxVXFVLUppc0hWU0hXYkhzcjZCaXlqRFNLMHc?oc=5" target="_blank">Как КТЖ рушит транспортно-логистические планы Казахстана. - Exclusive.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 04.03.2026 08:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Как КТЖ рушит транспортно-логистические планы Казахстана. - Exclusive.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-03-13" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9CWll4Vk1jd0llUkJWRU9fZ1BmUEZRbWk3cmIwSWVLRUdhcFVSU0NSazNDZ3puMzBFWUVQUFFrUzVmb0NxOVdHQWRsNUw4MlVZNDV1SjM2QXhITENNeE9td0RQbkhJZVR6THdEUG9PaEhReEdNanhr?oc=5" target="_blank">Общая выручка казахстанской Air Astana в 25г выросла на 11,4% до $1,5 млрд — компания - TradingView</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 13.03.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Общая выручка казахстанской Air Astana в 25г выросла на 11,4% до $1,5 млрд — компания - TradingView</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-21" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxPaVBUckxhUG90Rk9INnhqamtoeVRiZktfaUoyd19PY3JwM3M4MlQ3T0xGbDRfN1lFd0tqRUZmdDg0ZXlJWVRxc3I0WUFqR3NtbkpwZUxXLWdOS2s1QVNfX3c1N2gwSk1Eci1KOEhCdWRsQ1AwY1E3aGNHWE5tRXNnaDRR?oc=5" target="_blank">Экс-замглавы «ҚазТемірТранс» заявил о коррупции в КТЖ - КазТАГ</a></div>
+    <div class="article" data-date="2026-05-25" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTm9YbllQMnhmOWhMd0ctZUVjbXdkdFU5MFY5YjJSb1pLdThmazdseFhQWWNsS2NFV3RLb3BRZWFiSzFsRkwtU29uMDNaa0k5UGxQNjAyaXA1U3Z2RXJpX181c0JXZm1rUHd3MldKbXI4ZFFhMVpwS3ZUZElTYXlIOEtMdXhZb2dLZk1B0gGQAUFVX3lxTE8yNHRzRlFXb2N5cEpjVHVRTkZRNlNmVHFjNnFoQUkyanhaWXNSWUxUSmRkdXF1dURYOWJ4cXJOR2lRMjZNUGI5LVQxQ19aWEhpSXdhSjEtOGE2TlB0ZzRkLXllRS1oZi1DTG15dHdpT3VvM0h0LTJDSmRvaGViYVF5RnUxWFdUYVR5c09XR3F2ag?oc=5" target="_blank">Глава КТЖ рассказал о своей зарплате в 1,5 млн тенге - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 21.06.2026 07:21</span>
+        <span class="date">📅 25.05.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Экс-замглавы «ҚазТемірТранс» заявил о коррупции в КТЖ - КазТАГ</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5weURHbVhUc1dRRWs2LTlBRTUzZHk3dmw3cmJvUGY4OGRxSFBvTFBZTzdxVWx0UHY3bGVxM1dQeWFKaEcxRnNwak5tMWdXS3ZoM09OYjQzeVpxQQ?oc=5" target="_blank">Когда в казахстанских поездах появится нормальный интернет, спросили у КТЖ - Новости Караганды</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 17.06.2026 03:33</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Когда в казахстанских поездах появится нормальный интернет, спросили у КТЖ - Новости Караганды</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOVFFVcnNmQ3NfbDBQbTVtaDdpWnVnazVial83MU5oaG5jZVVtN0NZeTJ6ci1RMnZubEczWEVPSDN5VFNVMWF0VmFvSUxWYmJRcEQ4OXVHSm1ub25GVlN1ZlpaaUJPYmhPeVpHX2NobUd0MlR2TE41b3A0NThaa094Z3RHMEF1UU9IbTljMkdPNlhVVmtLUXZjN1VR0gGiAUFVX3lxTE9FMkdQNnRHaDJFOHJ5UGZ4b0YwdTk0elczQ1F2ZTNGTk9aQl8yR0RjRkJMQ2ticDB4R0RZYjdDWU4yTjBFd3QyVDBrQnJOQnROLXNZREZVOThSS09KUlVSdnBKVEZnZEhCZDkwLVB4MGxwT0xYZWNZbFBfSHJRR1NVZDY1LUVZTl9yY2lWY3VuMndkeG5SdTFGcVE0RWJhNU8zQQ?oc=5" target="_blank">Бектенов отчитал главу КТЖ за срыв плана по транзитным перевозкам - Central Media 24/7</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.06.2026 07:02</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Бектенов отчитал главу КТЖ за срыв плана по транзитным перевозкам - Central Media 24/7</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-30" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPb3AyRFRiSnZ2NnU4SnNwOERNMlVlUFJNcEFRY0VnZFVPVE5DYUUxeER2M2pnMXlJMUhhaFdGdXJmSE9VWm5iSzFkLTdsdnB0aW02aHJKemRidUhheGFzdWJ2Y3huN2JnZlliNEt2TDQzZzZDeEV2M1Z3Y2p3T0VsRnVCVE9QU0FkYXFIcEN1Z1FvNG9IaUhDTThvazbSAaIBQVVfeXFMTVFGbHllWUtycHJPd2N3cFNlU21CUm1RRlFOY1dhaW5TNzZ6TDFfa0o3aU9PMlJ4RjcwZDE4MnpvdnN2T3luMWxjWE9sdDRMTHBiaWxBRm5Ba0x3SU9QRWswWnpFNWhtYjR1RUIwc0JFdnJ6bmdGM0ZYVlNuQS1NejRNakZQYnVHSGVKeUtiMWZKbzNwSWd2MlhIcUx3N2ctTldn?oc=5" target="_blank">В КТЖ обратились к пассажирам из-за майских выходных - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 30.04.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В КТЖ обратились к пассажирам из-за майских выходных - Новости Zakon.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1UNk1rT2FaX2hrRzcxcVRRNGJZX2t5TEVRMmNXNFFIQ25HVjVHLVdGeUNYOHJFQlFmeTdYcGhtUHQteTBqNEt0clJjX3RNejc1MlNCb3FmRGx0SjltdXZPbVZBV0htVlRLekkwNG9ZUUw?oc=5" target="_blank">КТЖ отказали в повышении тарифа - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.02.2026 08:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ отказали в повышении тарифа - Inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-25" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5PcTdfR1B0enVmLXJWZ1ZjOXI5UXVMU3ZSd0VSUE5pVF94S1lrc25RMGhfSW5vN1JtWS13alktY3h4MFFxaUItQUVOZ002bzFReURQZld1eW96TnFXZ2VqNndjWDJsSjhQVzFyTUdIaGEtbjFz0gF2QVVfeXFMTWl4Z1UxWk0yYlloRU16ZVhzX3VOY3RqSU9rMFlrb3dPRTZjOTY0NTBuUWo3WEc5X2ZKS0ZBck9CT0UtMUV2ZGViU0pQdGg3R2wtUmRxUEx0VDkzXzY0bjRhTUN3N0hhSkdhSUpIZ0p6M0JiVjA4UQ?oc=5" target="_blank">Удалось ли КТЖ выйти из зоны «дефолта» - Казинформ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 25.03.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Удалось ли КТЖ выйти из зоны «дефолта» - Казинформ</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxObV84d2ZfTEFqUTM1Skt4ZGdZOVZwWVprYTVXV29EZlBZVUZyX2p4NVBFUUV0cE95b2JYbUhZZDR0UW02VkxiN2hOcU5abXlFaldwdGtIb1prREtYOWRzVFlodlVRYU9yVW8zS1NNOHpiRFdOOU5pcDlUVjdpdTJPcG5XZkhxS0tWSGxWWUdPUDR3dw?oc=5" target="_blank">КТЖ готовит выпуск еврооблигаций на $1 млрд - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.04.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ готовит выпуск еврооблигаций на $1 млрд - Kapital.kz</div>
+      <div class="art-summary">Глава КТЖ рассказал о своей зарплате в 1,5 млн тенге - Kursiv Media</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
-    
-    <div class="article" data-date="2026-06-21" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-21/fvfv-mashinist-poezda-ktzh-ostanovil-sostav-i-spas-pyatiletnego-rebenka-na-putyah/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-mashinist-poezda-ktzh-ostanovil-sostav-i-spas-pyatiletnego-rebenka-na-putyah" target="_blank">Машинист поезда КТЖ остановил состав и спас пятилетнего ребенка на путях</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 21.06.2026 09:15</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Машинист поезда КТЖ остановил состав и спас пятилетнего ребенка на путях</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-21" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQRk85UWRzMV80bXFTWGp5TG1ROTBLSXVRaFkzSWZ3dzIyQ0pfTDRocGRaamJKVmZPX0ZOWWZLRHEtc2RyYUtMUnc5ODV5WDRUU0I5aDl6SGc3eDllc2toOGtLaGdsRmNzcmZneXBkNUVwM2ItTldocU8tdmllUXl1ZGgtNlBubnJabWF3ZS1fRERNM2pxU1hQMHNBMXVVbkZPZDViZ1lJekJMYl9PTFpCMHZ1eU4?oc=5" target="_blank">Казахстан уже не просто рынок нефти: как KASE, КТЖ и Kaspi меняют правила игры - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 21.04.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Казахстан уже не просто рынок нефти: как KASE, КТЖ и Kaspi меняют правила игры - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-10-03" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgJBVV95cUxOTjJHcWZpellZTjVzNHZNdWNNU1piR2F0SXZFLVM2c0lGczc4X1NtX1FhTmJLQ1RxcnBjVVd4bzdYN0RxMlZGUk0xLWZMc2JzX0RpN0plMl9Ed1FJWlJzMm01cTRocGswTmphdW5kM3diNTlFZjc5NjZPWGUyNm45SWtIT1ZOVzRERVBEX2tDMUg2RjFqSXZNd3pnS0xLNmZCSWpUd3F3M3VXVnFXUkxyVVdYbjRvWDlLZmNfZW5HZ3A1OTBkLUs5Z0FvNDBlT3NBMUZvNXRpejJ3OW1FNFpQRGV0LUlHbUlVQlRBcG92ZDV5NmpnbHZXQUp2SUQxZklaQnZDcDNjeHotZGxIeDFCNTB3?oc=5" target="_blank">AI-Farabium: &#34;Казахтелеком&#34; объявляет о запуске второго крупнейшего в Центральной Азии высокопроизводительного AI-кластера на базе NVIDIA - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 03.10.2025 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">AI-Farabium: &#34;Казахтелеком&#34; объявляет о запуске второго крупнейшего в Центральной Азии высокопроизводительного AI-кластера на базе NVIDIA - NUR.KZ</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -347,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-10-03';
-  document.getElementById('date-to').value   = '2026-06-21';
+  document.getElementById('date-from').value = '2026-05-25';
+  document.getElementById('date-to').value   = '2026-05-25';
   applyFilters();
 }
 
