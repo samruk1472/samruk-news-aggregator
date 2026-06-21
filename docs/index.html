@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 21.06.2026 16:19</div>
+  <div class="meta">2 источников · Обновлено: 21.06.2026 18:10</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2024-06-04">
+      <input type="date" id="date-from" value="2025-08-04">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2025-10-15">
+      <input type="date" id="date-to" value="2026-06-16">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,6 +84,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -105,55 +107,49 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2025-10-15" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTGt4bmtvT3drSjQwMTZ3OW02TmxSMWpIdjhMb0gwQ3RCRU1uUmtwQklHMUhQQVRoeXZpakVST3Q5S0ZSTE95S1ltZmoyalpLTkZJeXZYMFE0b3pXNXYwNldNWXNreTY2aHFSZUJrNGFIUmRkT2FtajNCTzFQRlRFcUowcTFNc291akVVVTlLSjJFRmVMd2luY3hPMnozNVdoWURrU184cDVDWW5USGpzMlBhbXZkX1FrR1JQb0pKbXZOQQ?oc=5" target="_blank">Комплексную подготовку к зиме проходят пассажирские поезда КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2025-11-04" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxOUThZNFZJLXJLdnRoaTNTbGpOUGcwNGFDQlNEeVZ4SktXNVRYbm9QVFNKb3dKc2pvb1FXZzBlZ1doVFIwNkZtcFhPSjhtU203eU5sSUNBXzJIZ0FzUC00Yk9jMm1RRjZLVlNxWkJlTmQzaXFBSWcxc2Vpc05GaXBlSzExSFlyenZrRzkzbTVFZWpMaFN3SGtMZ0l1UEw5LWowMHA3UEhuMTJIalFlcUhCaENRZTRpVXdXYWRDbzRVZWlOSGM4MkV0Y3BuLVlDVElZeWpXSlFZNFk2bzZEdDhxVEx6YUpKY0V30gHrAUFVX3lxTFBnSTFDQUdRWXd1My1OTmlBZEZDRmdGTXNSTVd0MkRkNXo2dE40Y0VRNk91VndiVVVEZHBYN1R3OEZmSVJJX2ZaZXJKbi1WZWxjcmc3emNyX3pHbDctRW5hM05lVkNOVWFEUkRQem15V1k0cVhzdjd6WTVmdFBjS0FrLWZaZEsxM1VNZUg1eXYwYkdzV1JfLTVYcFZSYnFMSUhrdzBMUmZQcGFjSzM5anN2bHZmQjdGdkxQMlVscGtaT01hQkFDbW4zd3dQdjV3UUNVRjB0cmx3a1Q2aWQ4SzlKeHhXWTdiVlYzVWs?oc=5" target="_blank">«КазМунайГаз» и подсанкционная «Лукойл» проводят комплексную оценку влияния санкций на совместные проекты - Азаттык Азия</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 15.10.2025 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 04.11.2025 08:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Комплексную подготовку к зиме проходят пассажирские поезда КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">«КазМунайГаз» и подсанкционная «Лукойл» проводят комплексную оценку влияния санкций на совместные проекты - Азаттык Азия</div>
     </div>
     
-    <div class="article" data-date="2024-09-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOY0dsbndaRzFTSmxWTTNVYVRXTHdONmdjVGgtTzZRZjdNUHVURkhFd24xcG1wNUdaajVFQVhEUFZseUptczVLd0FsQWFoY2V0UEY5ZEhhcDZjWnFRUHpQMnJDTDNzYW9veUg4djN2YVVGM1ZXdTlMTWFpWlFtSTNPYjln?oc=5" target="_blank">КТЖ и Антикор усилят взаимодействие - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxPaWxkUllfQmxQTXAyb1ZKTno3RGZpeTI3NFhHYzRnaTdJYUxscVctbEhWOVNUb0NBRXRsbkRXYnZPbVdPNzVBZndHdTdMMWU4V0JiMXFZT0x6SDFZVnczQ0xPeWZRWllJb043cGNRWklFMjlKOFp5VTVJWGhxZ1A0Z3hkSHYyQUhDMWVYRENTaHhaa2cxREhFS2J0VWxvdm_SAacBQVVfeXFMTlNvbzViU21ZMTd1UmF1MTVmOGRfZlY4UWlLWnJHTWdNZjVYdC1FQ0NKelpJNWI2cDg3NmFyeHdDak91TGlHRFBaR3VfNjlnakhNd2NUU3l3cno5RGlrUVVpNkNaMjkxd1l1VXV3OWpMVGtWamJKODExUDRFSEsyV05MdzBRMTNKZEMxbl9RSC1vdG9PNG9rNFlTeW80QUhXQmpnZXpCeTg?oc=5" target="_blank">КТЖ планирует увеличить транзитные перевозки в три раза - ElDala.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.09.2024 07:00</span>
+        <span class="date">📅 16.06.2026 07:34</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ и Антикор усилят взаимодействие - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2024-07-18" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOeTZMSjllZkw1YXZGd2NKTXhja21YeHBnNkxBLVFRRjFmRGo0NU9LR1YwRU9GQ2RFcWllS3I5UFF3XzF3OWVnX29VZlBCNVJ5S05kOWpRRmZ0c2xVd3hsbFZmQjctaEpPN1BKLVc2VWJRcGFMd1BLcEQ3M1BsWU16SFdQUm1NV2hWaDQzYWU3LTBXVXVNeXQzQg?oc=5" target="_blank">ТОО «КТЖ – Грузовые перевозки» приобретет 459 локомотивов - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 18.07.2024 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">ТОО «КТЖ – Грузовые перевозки» приобретет 459 локомотивов - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2024-06-04" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQN0E2S1dUVW9HVFNuRktLWEQxdkwtSFk2cGd4OTZVZGlDMWZhNUM1MHkzazcxRHJkWlRZbjVvQkU5Tkx0TC1SbmdDdllVQm5mRVlXYUVJYnNYS1pxRFI3QVhmYjdDM2NrMFpnV1d0bWFFb0tLUFpoUUpqTGhFXzR5R1c4cXl5ZXVhZERVY3pSN2lMRmJzcTZUSExNUnBZWXhxYXo4QUVKYy0?oc=5" target="_blank">Об услуге «Лист ожидания» напомнили в КТЖ - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 04.06.2024 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Об услуге «Лист ожидания» напомнили в КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">КТЖ планирует увеличить транзитные перевозки в три раза - ElDala.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2025-08-04" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQRTllMThqQUozekIxN2hUSnhuNW16MUg4MWhrdzg4ejlwNWd2bHp5aFZULWYwSG1jWkVQd1hUeVBsYldIazVZWDN1bkR6N2pzV2c4TlpmbUFoRHRPNFlCTjJtUG9TVzZZdjR5TWdOVmVEYVRlbTM1VkRFa05qemh4Vm9CR1M?oc=5" target="_blank">Подписано соглашение между КазМунайГаз и турецкой TPAO - Каспийский вестник</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 04.08.2025 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Подписано соглашение между КазМунайГаз и турецкой TPAO - Каспийский вестник</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -212,8 +208,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2024-06-04';
-  document.getElementById('date-to').value   = '2025-10-15';
+  document.getElementById('date-from').value = '2025-08-04';
+  document.getElementById('date-to').value   = '2026-06-16';
   applyFilters();
 }
 
