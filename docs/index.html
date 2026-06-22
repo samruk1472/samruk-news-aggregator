@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 22.06.2026 19:56</div>
+  <div class="meta">1 источников · Обновлено: 22.06.2026 20:21</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-29">
+      <input type="date" id="date-from" value="2026-06-22">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-06-22">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,8 +86,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -104,34 +102,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-23/tsse-tokaev-provel-vstrechu-s-glavoi-evrosoveta-pered-peregovorami-s-rukovodstvom-es/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tsse-tokaev-provel-vstrechu-s-glavoi-evrosoveta-pered-peregovorami-s-rukovodstvom-es" target="_blank">Токаев провел встречу с главой Евросовета перед переговорами с руководством ЕС</a></div>
+    <div class="article" data-date="2026-06-22" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE9xYi1zUzNtZE16VmlvMUR0M252NUVLb25DOG13TGFIWVRjMTl2OXM5OXBiUUh6MENzeXgwXzZ1MTM2YzU5R2FwaEx3?oc=5" target="_blank">На подстанции КТЖ в Астане произошел смертельный несчастный случай - Ак Жайык</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 22.06.2026 19:22</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 22.06.2026 11:05</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Токаев провел встречу с главой Евросовета перед переговорами с руководством ЕС</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-29" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPM09tN0ZQMFlWc0ZLaWZ6a2RMSDRjeC0zNUI4UkJHV2RVN1R6NGx5WmppUVdlbjdRakxmX1MzWGRZdEFOVEZXV3djaUpyLUNwUGNzdTFTTkRONUdOV1g5eUVDYl9EMlZ2LWItYVN3MmVfNXBqOHVfZlNQcnhzcUVtdkk3V2VfVlhyUmZsbmdaaTFSRXM?oc=5" target="_blank">«Казахтелеком» получил убыток из-за продажи Tele2 год назад - Profit.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 29.05.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» получил убыток из-за продажи Tele2 год назад - Profit.kz</div>
+      <div class="art-summary">На подстанции КТЖ в Астане произошел смертельный несчастный случай - Ак Жайык</div>
     </div>
     
   </div>
+  
+
   
 
   
@@ -192,7 +179,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-29';
+  document.getElementById('date-from').value = '2026-06-22';
   document.getElementById('date-to').value   = '2026-06-22';
   applyFilters();
 }
