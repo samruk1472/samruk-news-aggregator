@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 23.06.2026 17:25</div>
+  <div class="meta">2 источников · Обновлено: 23.06.2026 19:32</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">5</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-09-10">
+      <input type="date" id="date-from" value="2026-06-23">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-06-23">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,10 +86,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
     </div>
   </div>
@@ -106,76 +102,66 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2025-11-25" data-co="Казатомпром" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNcXk0MUVfSlI4LVlyZEVLNzk0cTdITXJVSTdjVldhdHJOaXhfbmdfdUdlbGRtd0l0Q25OdEl3QWxmNWN1RVQxbXVRd1A4QkFZdF83bHphSUs0X2RQUEpjclBXeEw1bWNScnk4bVF5UTlZQk5BbmRneThwUGhDSHQ5N01KSWdTSE5ueG53LThTZHA5VmhEbTVPcWk2eHE3WnF4dVZCRzR3?oc=5" target="_blank">Учительница потеряла 20 миллионов тенге, поверив рекламе “инвестиций“ в “Казатомпром“ - TengriNews</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2025 08:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Учительница потеряла 20 миллионов тенге, поверив рекламе “инвестиций“ в “Казатомпром“ - TengriNews</div>
-    </div>
-    
-  </div>
-  
 
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-06-23" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNLXVaM0FON1V0N2twdTRrb3dXQ2U5blQtS0pEaE16MzVrcWt2WTlDazVWaVVzNlhvRUp6RExOeFJmc0lrMTgtMmdPX3pranFBSUF6MWdjUXh0bXdzSW5UM3VtLVBnWTVJWkNLeHJEQU1WV0ZvWjVMcklTSTBQWU1xY2IwUmZ1bzBkVm51U3hHOHZ6Nk42SkE?oc=5" target="_blank">Air Astana закупит 50 самолетов Airbus на 7,1 млрд евро - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 23.06.2026 15:49</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana закупит 50 самолетов Airbus на 7,1 млрд евро - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-23" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPazdRVUxGUUdQbGF4U1R6dkpTOFRtcWRVdTNVRlV2X1ctYlRITEYwVEhDazZkODJ4MVFPRTYyMWVTRFBaVWpqYUh4TzhqYlh6aHFCc05WckZYUWJLc1VERFBLdV9VSHdBZ1JTQ0tCRFVNWjhENl91cjdNcEt3TjVVckQ3M05jekpXOEVKck81YWZNTzFuYlNlSzdOS0ZTNUxObC1IM0FSY1NaRi1kU0E?oc=5" target="_blank">Airbus поставит для Air Astana до 50 воздушных судов A320neo/A321neo - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 23.06.2026 17:08</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Airbus поставит для Air Astana до 50 воздушных судов A320neo/A321neo - Kapital.kz</div>
-    </div>
-    
-  </div>
   
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
     <div class="article" data-date="2026-06-23" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/visas-billions-of-euros-and-new-planes-tokayev-and-eu-271892/" target="_blank">Visas, billions of euros and new planes - Tokayev and EU leaders adopted a joint statement</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-24/tsse-tokaev-priglasil-evropeiskii-biznes-k-dolgosrochnoi-integraczii-s-kazahstanom/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tsse-tokaev-priglasil-evropeiskii-biznes-k-dolgosrochnoi-integraczii-s-kazahstanom" target="_blank">Токаев пригласил европейский бизнес к долгосрочной интеграции с Казахстаном</a></div>
       <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 23.06.2026 22:05</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 23.06.2026 19:19</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Visas, billions of euros and new planes - Tokayev and EU leaders adopted a joint statement</div>
+      <div class="art-summary">Токаев пригласил европейский бизнес к долгосрочной интеграции с Казахстаном</div>
     </div>
     
-    <div class="article" data-date="2025-09-10" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQMUIxblNwSDdZeENrQ19BcFVvb204b2E1VzVFbmZBZG9uLTczNzBCZmlodXJuMk85RTBGUlo1OHB4SlcyYmxIWjQxQXRuN3YwaGZJQ01ydjE0TnJCZHhGZjI3ZmlhbWVoLU0yVS15TGdsUDdVeVVVVGNoVEJTczZjemZWdDBfMldfWWg3TjRVbHVYMVhIZjRIaWpXRVIwd0U0Z1hFaXZ5dFRpY0VRdmlzd01TUdIBtAFBVV95cUxQLUs3VWViSTZhRlMxSEwzamZZQUxYNFNsd2VKM1hXOU9EQ3hXQlpuUHp5bnF1R1RvWUFHbUJhTzlCek1mSmVmcEsyN2hBRV9qVEFnN1N5bVdEaGNHamplVlJFWjN5cTRhakFTNFp3ek92eExOUWFnUC15Q3Y0UV9zVGoxb0tuM1hwV1lBa3ZBMGhOUVM3U3ZmOEd4MnpSckhTNXdhbzdYQVE5bU52eVlxVVVHdnU?oc=5" target="_blank">Развитие авиахаба: КазМунайГаз-Аэро приступил к реализации инвестпроекта в Актобе - Казинформ</a></div>
+    <div class="article" data-date="2026-06-23" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-24/tsse-tokaev-proekt-umnyi-gorod-alatau-otkroet-vozmozhnosti-dlya-kriptoindustrii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tsse-tokaev-proekt-umnyi-gorod-alatau-otkroet-vozmozhnosti-dlya-kriptoindustrii" target="_blank">Токаев: проект «умный город» Алатау откроет возможности для криптоиндустрии</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 10.09.2025 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 23.06.2026 19:14</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Развитие авиахаба: КазМунайГаз-Аэро приступил к реализации инвестпроекта в Актобе - Казинформ</div>
+      <div class="art-summary">Токаев: проект «умный город» Алатау откроет возможности для криптоиндустрии</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-23" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-24/tsse-tokaev-predlozhil-es-dostup-k-redkozemelnym-metallam-v-obmen-na-investiczii-i-tehnologii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tsse-tokaev-predlozhil-es-dostup-k-redkozemelnym-metallam-v-obmen-na-investiczii-i-tehnologii" target="_blank">Токаев предложил ЕС доступ к редкоземельным металлам в обмен на инвестиции</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 23.06.2026 19:08</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Токаев предложил ЕС доступ к редкоземельным металлам в обмен на инвестиции</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-23" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-06-23/lngr-tokayev-round-table-kazakhstan-eu/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lngr-tokayev-round-table-kazakhstan-eu" target="_blank">Казахстан и ЕС подписали соглашения почти на $1 млрд</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 23.06.2026 18:58</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Казахстан и ЕС подписали соглашения почти на $1 млрд</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-23" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOR2ozNGFPeVBPVTFpSmE1WkRWVEtHeVZkOFZYTlJvbmZMOUpIdXE4MDQ1dXgyNFR1Z1h6Wnc1ZEd1blRobVdCN0VLOTJPWENvbTZNdE5ZZHN1SGpTdDNhRHROMk1VUC1QSTg4OHJ5Q0pVQW92MzJ3dmRSYm03QXdlMUxtQW10MHZhdGwtQnBfVlBOYmYxQ01lSEZB?oc=5" target="_blank">Air Astana заключила соглашение с Airbus о поставке до 50 самолётов - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 23.06.2026 16:09</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana заключила соглашение с Airbus о поставке до 50 самолётов - BES.media</div>
     </div>
     
   </div>
@@ -237,7 +223,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-09-10';
+  document.getElementById('date-from').value = '2026-06-23';
   document.getElementById('date-to').value   = '2026-06-23';
   applyFilters();
 }
