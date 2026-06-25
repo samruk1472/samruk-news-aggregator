@@ -60,12 +60,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 24.06.2026 21:14</div>
+  <div class="meta">2 источников · Обновлено: 25.06.2026 11:20</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-05">
+      <input type="date" id="date-from" value="2026-06-13">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-05-05">
+      <input type="date" id="date-to" value="2026-06-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -102,20 +104,36 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-06-25" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1UYU1XbnhCeG1lay1TZjJMY25NTGFTb3JoT29KQ3pod1o0dVpURWJmLTRnMG03U05hODZHc2RJY2I1QWN3dG5WM2FhVnR2YmlLTjV0QzNwTGNoaVVHanYwNHVXWDNCTmwxcmVObDU2bkIwSFlGNU5v?oc=5" target="_blank">Попытка КТЖ поднять тарифы провалилась - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 25.06.2026 11:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Попытка КТЖ поднять тарифы провалилась - Inbusiness.kz</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-05-05" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBQZ3dLNmRUOTlIV2tHUndLM0pQbTMxS2RZdlVnY1ppVWRpWVBwNDZlT1E1YlRsckxvZ2ZLdWhmSE5KV2wyVWw2TS1JMmwyOFVDNEItVzhtS1NibGdKSE9oSHBpS0lTSHE0Z1VrVlF0TE1GSzBabVBkeDZGRXNFanc?oc=5" target="_blank">«КАЗАХТЕЛЕКОМ» НАПРАВИТ ВСЕГО ₸3,5 МЛРД НА ВЫПЛАТУ ДИВИДЕНДОВ - THE TENGE</a></div>
+    <div class="article" data-date="2026-06-13" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOX3NyUU11V28zSDliMTIxOTNvdDBvQ0pQLUlpMl92Z2FHRzlEMktLWjRGWWxCQTBlOEpxd25jWlJfRXNFYzNYMWgtdE5HNmMtenJzenFwNFp1UlJMTDYzelV2LWJWcWJraC1ZVkg3eV9SX3MtOXVNMlp2cU5uWDVNRzJMTWZ6WWxhSjd1cXRadHZ1ZFotM2NhRzF5YUgzQ2dM?oc=5" target="_blank">КазМунайГаз назвал объем поставок нефти в Азербайджан за 7 месяцев - cbctv.az</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 05.05.2026 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 13.06.2026 15:55</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КАЗАХТЕЛЕКОМ» НАПРАВИТ ВСЕГО ₸3,5 МЛРД НА ВЫПЛАТУ ДИВИДЕНДОВ - THE TENGE</div>
+      <div class="art-summary">КазМунайГаз назвал объем поставок нефти в Азербайджан за 7 месяцев - cbctv.az</div>
     </div>
     
   </div>
@@ -179,8 +197,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-05';
-  document.getElementById('date-to').value   = '2026-05-05';
+  document.getElementById('date-from').value = '2026-06-13';
+  document.getElementById('date-to').value   = '2026-06-25';
   applyFilters();
 }
 
