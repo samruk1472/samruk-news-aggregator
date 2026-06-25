@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 25.06.2026 19:31</div>
+  <div class="meta">6 источников · Обновлено: 25.06.2026 21:19</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">10</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-27">
+      <input type="date" id="date-from" value="2022-02-24">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-03-27">
+      <input type="date" id="date-to" value="2026-06-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -102,10 +112,125 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-06-25" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1UYU1XbnhCeG1lay1TZjJMY25NTGFTb3JoT29KQ3pod1o0dVpURWJmLTRnMG03U05hODZHc2RJY2I1QWN3dG5WM2FhVnR2YmlLTjV0QzNwTGNoaVVHanYwNHVXWDNCTmwxcmVObDU2bkIwSFlGNU5v?oc=5" target="_blank">Попытка КТЖ поднять тарифы провалилась - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 25.06.2026 11:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Попытка КТЖ поднять тарифы провалилась - Inbusiness.kz</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(10)</span></div>
+    
+    <div class="article" data-date="2026-06-13" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOX3NyUU11V28zSDliMTIxOTNvdDBvQ0pQLUlpMl92Z2FHRzlEMktLWjRGWWxCQTBlOEpxd25jWlJfRXNFYzNYMWgtdE5HNmMtenJzenFwNFp1UlJMTDYzelV2LWJWcWJraC1ZVkg3eV9SX3MtOXVNMlp2cU5uWDVNRzJMTWZ6WWxhSjd1cXRadHZ1ZFotM2NhRzF5YUgzQ2dM?oc=5" target="_blank">КазМунайГаз назвал объем поставок нефти в Азербайджан за 7 месяцев - cbctv.az</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 13.06.2026 15:55</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз назвал объем поставок нефти в Азербайджан за 7 месяцев - cbctv.az</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-20" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE4xVDNzQ3F4V3lZNGdIMmZmNWlVNE9GQlp3MVk2LV9abjBDdlVxNFRnMkJqT1dlUVhEdF85MFBxYXhkSlJGZmM5MldTYXB2Ukg3VlE2LV9rcw?oc=5" target="_blank">«Казатомпром» изучит 6 новых перспективных урановых участков на территории Казахстана - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 20.03.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» изучит 6 новых перспективных урановых участков на территории Казахстана - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2023-09-08" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNX3JOWWNadkp2TVU1X2cxcllFbk55NzlUQWdDMHRBaHFtVFpkbzVFZThCT2h5eEEwa01ma1UxeWZQVC1HTFlpNmFqSkF4aW9hU1hTa2FhRVVZWDJvU0VKa0MzQkgwUmZCSDA4bFdvRTRWa0VZQUlFRXdZY242R2ZlZUNsRlVGSFBFNXBSNmViMmdyTEc2QWhXX3hCS29JdVJUd2dmWVM2OGE5cnoxWml6bmN6QWY3UUNrb2Vr?oc=5" target="_blank">Глава государства принял председателя правления АО «Казахтелеком» Куанышбека Есекеева - Ақорда</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 08.09.2023 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Глава государства принял председателя правления АО «Казахтелеком» Куанышбека Есекеева - Ақорда</div>
+    </div>
+    
+    <div class="article" data-date="2022-02-24" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNbTBUVVA5Zmw1alMtLXBGSmY5SndBRWprTzRsUEE1TFo1d1ZpeUhiTWdzMTUyb2hKTkcwRVVZa2N6VFdGdWVKYXFndURfSHZkZFZtV2RTQVE3QkQ1UzZ4TzExQWR1U2VHLVQ4R0lrdXVqQ055blFhbmlnQldPUjRGX1MyQUJzTFZTeHlLYUducGhmcUx4U25WT2xCMFdUQ3hBdHBteGJYWkw2ZGNralR4SWNR?oc=5" target="_blank">Президент принял председателя правления АО &#34;Казахтелеком&#34; Куанышбека Есекеева - Ақорда</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 24.02.2022 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Президент принял председателя правления АО &#34;Казахтелеком&#34; Куанышбека Есекеева - Ақорда</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-25" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQR1pQMWlHMjQxS0szOGxYOTdITlQyS0dsSkxjUHM3TGNja1U2SDhMN2FYS2hxbW43dkxmSHl6amtLNDlrNlVrTWVpUnY4cUV5OWM3eUktSHRvdW16dUxPVHlzMG1oNXBjZTIybG5xN29sWXBNWHlCSGk3Ny15aG1CZlhFcHc?oc=5" target="_blank">&#34;Самрук-Казына&#34; займёт 1 млрд долларов через облигации - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 25.06.2026 12:36</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">&#34;Самрук-Казына&#34; займёт 1 млрд долларов через облигации - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-23" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1RR1B6RDU1dWRfN2Y2aERGTXo4XzZST2MxUFZtQXVYZDg0UklKckxwLTlwUkYzb2pmUVJTOVlkZnlPemJ2NXhfZGhIN01IemtXWkVOZG5PNA?oc=5" target="_blank">Аналитика. КазМунайГаз и ВЭФ обсудили перспективы сотрудничества - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 23.06.2026 06:42</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Аналитика. КазМунайГаз и ВЭФ обсудили перспективы сотрудничества - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-25" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPZWQtdU9WRzI0S1hIWDktRHk1OWhlSUdkVkhWSURtWVJ1MFEyamFCUGticUhtdUdXWTQ1ei1GUjcydkVnOFVGWFp0QmpDc19BY3JKTDh0RDJETHRYakpfaEdjbW5VOWNsWXgtcEh6dGJkOGtGNWItTE1DLVZ1TzNpSlBiVXlEVENQOW92NWI1VlhRSE1GVy1YQ0JOQQ?oc=5" target="_blank">Новый рейс Air Astana на Кипр: остров, где каждый найдёт отдых по душе - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 25.06.2026 11:04</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Новый рейс Air Astana на Кипр: остров, где каждый найдёт отдых по душе - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-01" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1nYkhONXZmdGlFbUVtVWJ1TlV6eGYtSklKS3EyWWUzMTJoSW1zaXVRRy1WSlNEYlNhX3BkM3VPeWdBMEViVFdmMW5YQlZnZUNUdlNfQXhHTQ?oc=5" target="_blank">«КазМунайГаз» сформировал портфель из 22 геологоразведочных проектов в Казахстане - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 01.04.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» сформировал портфель из 22 геологоразведочных проектов в Казахстане - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-25" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaWp2WGk5WFdVTk91dTVYWi14TnNkeUpqVURPNU82YXBuTmsyc25xYktxUlpTcXg3RGs2clliR2paT2tQMGNidnB3WnMyYWl5dC1Oa01jb2tjSEV6WkhQTHJCVlhkQWJPRUxSa3JmUEtCTWdNbE8zOGFIM2l5Y3hZUjZhUzl1QXItaXJLbzRZTVQzX0wteGlZakxNYS1IOGRjVEQ0eklBYkw?oc=5" target="_blank">Меры по повышению безопасности на железной дороге обсудили в КТЖ - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 25.06.2026 10:48</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Меры по повышению безопасности на железной дороге обсудили в КТЖ - Қазақстан теміржолшысы</div>
+    </div>
     
     <div class="article" data-date="2026-03-27" data-co="КазМунайГаз" data-s="neutral">
       <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWFlCMDlrMGhDQTAzZXZmR2dfVUpTaWxweERPV040MFpWZVlHYnRaZG40RnFTSTVxNDBRb1pJZlFlTzdreHM0VkJtOE13RXhSMThzb1A2RGNscndadHQ5cjlYZlFIZUJlRFJXcER0aDFTZ0JXVTBtVXliQUZ6aldNeTJIR1ZlQ0JoaHhKbG5nSTV0NjMtbjdTRkNhRkFjam8wTEUyZWhpVHF4dw?oc=5" target="_blank">“КазМунайГаз“ подвёл итоги года: выручка выросла до 9,4 триллиона тенге - TengriNews</a></div>
@@ -179,8 +304,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-27';
-  document.getElementById('date-to').value   = '2026-03-27';
+  document.getElementById('date-from').value = '2022-02-24';
+  document.getElementById('date-to').value   = '2026-06-25';
   applyFilters();
 }
 
