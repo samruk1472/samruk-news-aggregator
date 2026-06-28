@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 28.06.2026 12:10</div>
+  <div class="meta">1 источников · Обновлено: 28.06.2026 15:05</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">19</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">15</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2022-10-22">
+      <input type="date" id="date-from" value="2026-04-23">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-06-28">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
     </div>
   </div>
@@ -104,190 +102,20 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2024-12-30" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFB2Z2tSSUp1UXZyQ3RCUzhXRkhMSnk3aVBvXzZZVDVWUDdCOFBreUQ1RXdDSWJuZVlGVFJ3N2pkQkE0bHN0enpRcUVPU0VnSmlqTkZ1ZEZGQTNleTg0bVFzMzhSUEcxUHhndWVjUGlR?oc=5" target="_blank">КазМунайГаз построил новый спортивный комплекс для жителей Уральска - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 30.12.2024 08:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз построил новый спортивный комплекс для жителей Уральска - ҚазМұнайГаз</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(15)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2024-05-15" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE1Jc0F1LUZkWFhLNEN4bldXQXg2TXcyTWxGRDFMcE00cXJaZGU2MGdOSVFmOGZMSDNIdjRzbXFGTlRVZktfS3Y0elhtaDnSAUpBVV95cUxQMmNZd0tCQmpPb19tT1pFWUlHZVRnbWtYQmhrbWhIZlhleGh5TGc1VXIxZjE3N216Y0xObmxLRHBzdEFOYTBfX1Vydw?oc=5" target="_blank">В Казахстане сменился руководитель нацкомпании &#34;КазМунайГаз&#34; - Интерфакс</a></div>
+    <div class="article" data-date="2026-04-23" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNNEZVY1NTME92aXR4ZV9VcjR6UHFFbWNRb25WMVprbWhwQUZHTXpMZHdXTDNWajJZUGtyWms4bTJTUWUtVDZReVExUEx6elY0UTc2UmRhNlFDT3o5OURfZWtJREFuMUtpX1psSTNOcXFLNTlvcjlYbXBpWFJjNFl1NXM1LWJxMkNoM0EzN3dUVm9RWE8xT3NJYQ?oc=5" target="_blank">Дубай пока недоступен: Air Astana продлила приостановку рейсов - Mail.KZ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 15.05.2024 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 23.04.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">В Казахстане сменился руководитель нацкомпании &#34;КазМунайГаз&#34; - Интерфакс</div>
-    </div>
-    
-    <div class="article" data-date="2025-03-20" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1TNG9ka3VDM25uY2lXNlRIYlpDZ2FfaUhaeldiUVI3WHpYQkJ6SUx0T2w3NzlWbUNlUVpuNVdRWTlQNjhwX0N2QWJTM3NxNzJqZEFPclZtcThLRWZHeHhKNkZoYVBLb2ZYeE1WNDZsNA?oc=5" target="_blank">Финансовые результаты АО НК «КазМунайГаз» за 2024 год - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.03.2025 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Финансовые результаты АО НК «КазМунайГаз» за 2024 год - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2025-10-18" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPeTdwR1BoMXZHNFpoUG4zQzZUTWM2QWNrakVfMTVlN3NHZWVLZHdVSFh0UzZVTk85Q1NzUHRqM0dQM1VtaE14SExxbHZBMWtPVDBEMXZTQl94eTNtXzRWLVo5dW1udUV1U3pRM01tSlA0ZVRBRjQwNWpqamVDUVpRQUhYUjlKQkRTZC1uS2p3QjNzTmvSAZgBQVVfeXFMTndGYW56MktwNVZ5dTl6Zm9odnNhM2IwcTZLUnNaTmdqSURKUzdkQXVmNmwtek9xVjAyY2NQaFZya3prcnhUVVJFYlZQV1JfX3JiVnBUUncwSUJJN3NWWGhNR21uVWdIQnFhVjJBSkdNOFcxNWw4aFVZU0Zra053U1lBNmxSZ3I0MTZvTm9UYU5obWcwVXIwQVg?oc=5" target="_blank">В столице открылся парк нацкомпании «КазМунайГаз» - 24.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 18.10.2025 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">В столице открылся парк нацкомпании «КазМунайГаз» - 24.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-04-30" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5iTU14MlRhMng2MUpXSjA5N1pxMWtia0V5WnBlWGJzblB0Ulo3TUdTVXE0NzJJS1dCUHBmc3hlYnlPeGMxcGVPU2Z4dmhLaXZ0dHVPMUo1c0lyeGF2N0tkQVRsT3RNa2ttc2c?oc=5" target="_blank">АО НК «КазМунайГаз» опубликовало Годовой отчет за 2024 год - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 30.04.2025 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">АО НК «КазМунайГаз» опубликовало Годовой отчет за 2024 год - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2025-04-21" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9YN1RGOFVkMlgxVW1sc0h4NGsxNFlPZVNvNk55RWFZRE5xRlR1VmVjUnRhRkcwN1dZTm5hamRfTmlDWTJBaE0zanh1V2pOOFZKTlUzTXpGemJIRWt6R2pETjhoeUJsMER3eEI0?oc=5" target="_blank">Казбек Кусаинов назначен заместителем председателя Правления АО НК «КазМунайГаз» - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 21.04.2025 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Казбек Кусаинов назначен заместителем председателя Правления АО НК «КазМунайГаз» - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2025-02-28" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9JM0RMOTJWcFdRdHhGTENJZ0J6YXlOMS1HcnlvazFPckUtNjRVdlpSUDhnYTB5VWdFN25qQzFMM3ByY05RVGVlakNCVG5EY1pvMnhleEVQN04yamUybEpiUWlCS0tYRnFkYVE?oc=5" target="_blank">Производственные результаты АО НК «КазМунайГаз» за 2024 год - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 28.02.2025 08:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Производственные результаты АО НК «КазМунайГаз» за 2024 год - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2024-03-14" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1BQ0VJbUhNc2NrM1IwQ1hZdExaaTZtUFU0OXFudEpZRDF3bjRBT3R6MkY1NE9FcmJSenZ2d0U1MWVQUFhoZEdzSmlFZDBJOG9YTzlKdW16V0E3amozQ3B2dnBqVW45RHFvVkc5TjRHZw?oc=5" target="_blank">Финансовые результаты АО НК «КазМунайГаз» за 2023 год - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 14.03.2024 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Финансовые результаты АО НК «КазМунайГаз» за 2023 год - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2025-02-10" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1za3ExVDFGc0g4el9DRGQzdExEVEEzQzZ3SGFHQ3ZwR3BfQVJXVWlzMTJfbkJFOXFrWnZ3OXlhTWI1OTlCVUMzT1c2UjhwN1VVMTJHbHVqSFY2R0NUZjIxLTNsSHdsMjFTRWc?oc=5" target="_blank">АО НК «КазМунайГаз» сообщает о кадровых назначениях - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 10.02.2025 08:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">АО НК «КазМунайГаз» сообщает о кадровых назначениях - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2024-12-12" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9JMldWbEZTYTM4OVJnZzFBR2dTdUprUkllX1VYN0YxWXdGdjA0Ml9iVEV1TmktRjNxLVdsSU5uYUgxZUhFTlo4dUh5NnVkQm5uYUF5RU1GWl9QUWR3TllORmhvUlhHTGs5QkE?oc=5" target="_blank">С начала 2024 года акции АО НК «КазМунайГаз» выросли на 25% - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 12.12.2024 08:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">С начала 2024 года акции АО НК «КазМунайГаз» выросли на 25% - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2023-06-15" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5FRU1CWXVkVG03N1pqbjVOc3ZWQ3B1RVFOd0k4LVM4SE1YSVFHMGpPNklJWHJoakJyYk56ck5lUDRFZEt6ajNYcFdDZzdhUnRjTnUtT000WFVDSDhXMEI0WVZRbzFPOHM3ME9R?oc=5" target="_blank">Мошенники от лица «КазМунайГаз» привлекают деньги казахстанцев - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 15.06.2023 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Мошенники от лица «КазМунайГаз» привлекают деньги казахстанцев - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2022-10-22" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNcHNpQVN5TXh4eTJFdkhZS3RLdkowZ0Uxb29DT205NWExVEdiY0RIZk1HN3lncEFDanNVaUJaUHpwcnZZb1cyckVsUFJ5bDBVM1hKYWRmOVduTzVCTVRicFNVbW13ak1fWS1xSmFRZGxHU0ZneWo5ZEcybUNmY3NpSVZCSENjMFRVYW0wSUozVko1UVVDTGt5b0JxOFdGZU03RXp1RVRNQi1jN2dUcFU0?oc=5" target="_blank">«КазМунайГаз» открыл новый Диспетчерско-аналитический центр - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 22.10.2022 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» открыл новый Диспетчерско-аналитический центр - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2023-09-06" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9BeVBpbFdCM0p2ZEJHcjJGNUQ3cnVZWWF3dU5faEhOemFlanc5YmxKcHlOTXJudHlXMnptSWVMekN3cFNuOWFHTlRud214V1dnaHBwdFJxOEJ3QXdHUHdEcFNpZlp1SnlLUDJHU0hyQ0tuWXlwR0dYcHJNQTZjNW8?oc=5" target="_blank">«КазМунайГаз» сообщает о кадровых назначениях - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 06.09.2023 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» сообщает о кадровых назначениях - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2025-01-09" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQWTItME5VV2c0NXlCNWxEVkRwV3VjQlBmN2lFcW9jc18tOG5rY3ozM2dJZnhFZm9qckt2enNtMzhubVZCTTVXaXA0aGxORTM3R3lrenlhXzJZLUVZcDBKeThHLUZoSXA2OGJVQXRwTlVoRmZBLVloc01jOU5NLXRMSENMV2xJeUR0LUtoVXRmbHE4VFNyNW1wM3kycVpXeEx0dHZBSFRJczdNaWlGTEpseXlOWGd2QQ?oc=5" target="_blank">Глава государства принял председателя правления АО НК «КазМунайГаз» Асхата Хасенова - Ақорда</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 09.01.2025 08:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Глава государства принял председателя правления АО НК «КазМунайГаз» Асхата Хасенова - Ақорда</div>
-    </div>
-    
-    <div class="article" data-date="2024-05-27" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxORzgxSlFRNGxTSkNwdFF3RHNNU2JFOEJrOGFQellmNDBBclV4MkpLMVZUclVrQ2Zma3RKQ1JvYVV4eVh6R1prZnNCNl96U2NRb1V4ZVA4bVRZRXBqMGFvb0tWckFPVm1aNUZna25LX01fZmIyUE1UTHZQMWZUTktrSi15TXBQN19JWUhrN1A5VVRMdm5DTC1pbmhDTUNicXY0amxBc1c0WUo5ZnlKODgzTmJsa3dKOFZmSWVyZzVYUnc1MHd6cjFEMVVhUjk?oc=5" target="_blank">Президент Касым-Жомарт Токаев принял и.о. председателя Правления АО НК «КазМунайГаз» Асхата Хасенова - Ақорда</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 27.05.2024 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Президент Касым-Жомарт Токаев принял и.о. председателя Правления АО НК «КазМунайГаз» Асхата Хасенова - Ақорда</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-28" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcUc5MGVyNmJlcDh2eVVwTndEdWJrWFNrcVdqbkdiRFdyeGxPdm5pWW9RbW9GcTZiV0ZvYWZ3X0N0Mko1Zm1yUndxWHUxNzZtbE9jdmZlaWs2aF9yRV9rbmZSY01nTmEyYnBqMWJwUWZQY1N0SXVoYjYzeDVCdlZGQkN1OW1hMFZ6aHVCRXh0YVJHaFlsYkhTcjNwd0x0NjZQMWx5Rl8yVk0?oc=5" target="_blank">КТЖ завершила обновление трёх вокзалов в Кызылординской области - kz24.news</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 28.06.2026 11:54</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ завершила обновление трёх вокзалов в Кызылординской области - kz24.news</div>
+      <div class="art-summary">Дубай пока недоступен: Air Astana продлила приостановку рейсов - Mail.KZ</div>
     </div>
     
   </div>
@@ -295,39 +123,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2025-03-05" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE5MWFFFdWdmVFBKdkRWSmRZTWRDRDVvSXRRV2VPYVY5OUNCYTRlU2RFcWVjbVFOdm5FYzlfSWVKUU1McWlsY3NySjZ6bnEtNnl3LTJqUTlPNTZfdUY3cnB3aUh1LTNPSzVXRnJmTHZqV1BLWWVaQ24w?oc=5" target="_blank">КазМунайГаз, SOCAR, Татнефть и Узбекнефтегаз укрепляют сотрудничество по цифровизации и промышленной безопасности - ҚазМұнайГаз</a></div>
+    <div class="article" data-date="2026-06-28" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5EeVNhM21jT3YtSXZtdWV0RHo0ZFB1aG5YRmhqaDZ1cmhkMGxzX1BPdWp4MU9WUzVUcFhnUEwxT1d2ZzVwODMzRGhKcGwzb0Q3bGhpWURTX0JhTUNXdzJiZEtROFl0Q2xTdDRJ?oc=5" target="_blank">«Air Astana» отметила 15-летие со дня запуска первого прямого рейса в Тбилиси - Бизнес Грузия</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 05.03.2025 08:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 28.06.2026 14:39</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">КазМунайГаз, SOCAR, Татнефть и Узбекнефтегаз укрепляют сотрудничество по цифровизации и промышленной безопасности - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2025-05-28" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxORDJxN0R0bkY5RnRFdHk3eFJqbjl1ckJMbi03cU1vNDY1OEZJeURGbEhoZWpJaktUN3BQSnFveDB6X0dYM2Y4Tmh0OEtWQ0k0Y3J3RWxHaUpDbzJQOTJQa1hMc2Q4XzVya2RnOWdwSlhGV2pGVjY3WE5qVGlUVlhWblBDdnpLanA3cUE?oc=5" target="_blank">КазМунайГаз и Узбекнефтегаз расширяют сотрудничество - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 28.05.2025 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз и Узбекнефтегаз расширяют сотрудничество - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2023-10-18" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9iTEZURjBrMjlVdEtXNEpfdkJRSy1MX29UV1Njc29oY2l3S0JyUEQ1N0hKRHpnTXhGZ1ZfLWR2dzMxTk5mb3BJUnE5MlRvMmd3b1QtMUdab1ZGTUh1RFg2eUVSU2FXR25TX1Q1dDBB?oc=5" target="_blank">КазМунайГаз и Huawei готовы развивать сотрудничество - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 18.10.2023 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз и Huawei готовы развивать сотрудничество - ҚазМұнайГаз</div>
+      <div class="art-summary">«Air Astana» отметила 15-летие со дня запуска первого прямого рейса в Тбилиси - Бизнес Грузия</div>
     </div>
     
   </div>
@@ -389,7 +195,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2022-10-22';
+  document.getElementById('date-from').value = '2026-04-23';
   document.getElementById('date-to').value   = '2026-06-28';
   applyFilters();
 }
