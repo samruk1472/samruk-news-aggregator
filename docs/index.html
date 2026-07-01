@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 01.07.2026 12:33</div>
+  <div class="meta">3 источников · Обновлено: 01.07.2026 15:44</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">4</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-08">
+      <input type="date" id="date-from" value="2026-03-06">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-01">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,7 +87,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -104,80 +106,75 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-05-08" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxPLU83b0pSTE84MldRaVVZQXdlbzh2Tk5LYXNWYnlXdzVoVlFXZjNGUkhGUW1nMFVNYmU1d0NSdmVkWXBYaWxyM1JnNEJaVWtlaGNPUTNUOVBPTklNc3RCUlQzQUxGMnlXU0ljdUJ6QzluWGkxZ2NiRjREXzItajZDalZfRFRia0F5SDZvOUVqWXc5ZFBsMXJEU2Y5Rk55M0VLQWM2T1pUUzBnMFRWWTRIaFFqY1ZmRkNXZ041UFJ6OVVqVGlRNW1mNnhBOG54VmxLMDh2RWU4VzhGUdIB3wFBVV95cUxNQ1JqNWhZVEdKaUhHZVJ5ZXh5SU1qdUZYTEl4MHduY2dKa2ZybWVpMnVmSm92RWZUbTBUSG9MNW9STk82S2RMYUNDZjZzT3p4aVk2dTRfQlVDaUFiX3pJaWFxVnJuT1EyeWVJb29sZ3VaN080ZXlxVmRJcE5OSVRaU1MzNDRnV0ZQc0FuUExUQ0stSXFiRXpmTnBtWFo2WU5GX0QtZGplR09MQTNvZHYzdC1OX0YwOEZsWjd0VDEyaEpxMkFhMGs1VjY3UzNweUQ2UVV5TzNBcWtldUloeDJj?oc=5" target="_blank">Вынужденная посадка самолета Air Astana: в Минтранспорта раскрыли подробности и сделали заявление - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 08.05.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Вынужденная посадка самолета Air Astana: в Минтранспорта раскрыли подробности и сделали заявление - Новости Zakon.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-07-01" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE42emR5TVgxZzZtMF9BcTVnWXRDTmlQd2FxZXJxb0FhM1ZTQVIyMXRLM3lNRlhpVlZyMExrY1J4Y1hsUWV5ZU90NVJn?oc=5" target="_blank">КазМунайГаз и Shell провели переговоры по Кашагану и Карачаганаку - Ак Жайык</a></div>
+    <div class="article" data-date="2026-07-01" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWGdKNS01WVo5c2E3WlRVZFItZTZxZjJYTmxjaUVVOXNLRjEtRU1qamNtXzFKdVNuOUlqSFpjaVEtSTVZVGVOYno5M05ubkVPVmloYU4yZnlzM002V3N2TTlqOEpuTjAteEdRWGVMYkxqeE9IMmFGSlBtQ2h5YVBFWWpVVGNWeFhFZ1UybENjTlBPM0UtMml3dHJBRDREZGxxNGNLZ0EwTVdUbkk?oc=5" target="_blank">21 трлн тенге за три года: что построит &#34;Самрук-Казына&#34; в Казахстане - nationalbusiness.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 01.07.2026 11:14</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 01.07.2026 08:43</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">КазМунайГаз и Shell провели переговоры по Кашагану и Карачаганаку - Ак Жайык</div>
+      <div class="art-summary">21 трлн тенге за три года: что построит &#34;Самрук-Казына&#34; в Казахстане - nationalbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-06" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQWTlaTVBWM1VWTEtiWGV6LXRCdW13OGZhWUwyUGs3VmVBTGpiTWdjSnE1OEt3MDBaVS1TaU1OZkhuTVZYNmcwd3FuTXJkUml0THJ2X29hUVpNNkZOeEFiSUdlSVdUWnZwX0tnejY3WGpzZnBqbzBJbjZEQjVueE9rLXFNdl9KSkM0QnA1M19YY2s5UWR1cGFWMWh4c3pUdmpDUlpoWlc2SlZhSUNuRkNOWng0d9IBuAFBVV95cUxOSWFaVmdMSHFkUV96T3ZsdjFCc2xWYlM4UldhUTNxdnZoVDV3ZkQ0TjhydmswQ2RSeUZOQUFXR2hpTnJpNkRHSXpWOUp6TV9VVmlsRERvTVhlbU0yYnFMOTlLMjNzeldlWXFlM18ycVhydGxKeGZQYV9TU1hpSVFfVVh3ZDNVN3BFQjJZREZqX0pacHBjb1Q1VHRUck1hZ1Z1Wnc5QWdSaC14aTlsUnEzRE9KQVVRVFo4?oc=5" target="_blank">Эксперт усомнился, что сокращения в «Самрук-Казына» приведут к реальным реформам - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 06.03.2026 08:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Эксперт усомнился, что сокращения в «Самрук-Казына» приведут к реальным реформам - Kursiv Media</div>
     </div>
     
     <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE4xX0k0Y2w4dzFTQklrU3R4c2oxZGZPakhvWkEyUHNfUmxCUXoyVnMzWVRPNENaM25LUnU1cVNqTmNveXJud01JeElR?oc=5" target="_blank">Токаев указал главе Air Astana на постоянные задержки рейсов и замену самолетов - Ак Жайык</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPU1VaRHNwd1YydnBzdThQYlg2MU5sV0tfRkZhS29BTE5aV0dBSnJQN2NXcWphQnVBV0dPTVUxbWdOV2owa1RlbndPX2NoZ09FYXgwX0hrLTVTOVdtR2tnMzl5a0xEWjBPc3VBUDY5cjFsRGo0dkhkTERFazRqSFc3NFRZTEdsU1FZZXYzVXdUb3RIaWxPb1VqUHhuOGhra1M1LUw5MGNCbC1YRjhq?oc=5" target="_blank">Прямые рейсы в США и Японию должны стать приоритетом Air Astana — Токаев - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.07.2026 11:36</span>
+        <span class="date">📅 01.07.2026 10:48</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Токаев указал главе Air Astana на постоянные задержки рейсов и замену самолетов - Ак Жайык</div>
+      <div class="art-summary">Прямые рейсы в США и Японию должны стать приоритетом Air Astana — Токаев - Forbes.kz</div>
     </div>
     
     <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQX2JtTzlyQlZpX3NxekpYXzlfekZ1bEM0OHJsOTFxbnhSVk9Ha3ZPZVA5em9HVVMwV3VXSnZfXzhGbTdlVVdrRXJPcVdCZGhFa2Rma2RaNUZ4QjQycEpXSTlLWXNtNDhfUUdmQXNCX0JBNGhqd1N5YzBMY0lGbmFjWUhYRDhiQURyREZmNWxkRUlfTksxdmgxNnJmUVZmX0ExTlZYWDhLODk?oc=5" target="_blank">Токаев призвал руководство Air Astana решить проблему регулярных задержек рейсов - Мой ГОРОД</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1HNUFFdlp3YUNkaThFNTZsT0dlM3pIZlY2WmRUaVhIR3diMnhSeGZDekoyLU5kX1c4c3QwNzhHNDZrV1F3Nk1Hd2hVLWJtcmlYQ2RvZUZaVlhPWDBoV3owMTZuNEFsMWRC?oc=5" target="_blank">Токаев принял главу Air Astana - КазТАГ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.07.2026 11:00</span>
+        <span class="date">📅 01.07.2026 10:13</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Токаев призвал руководство Air Astana решить проблему регулярных задержек рейсов - Мой ГОРОД</div>
+      <div class="art-summary">Токаев принял главу Air Astana - КазТАГ</div>
     </div>
     
     <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPazh2ZjY4S0xIZ01PWThleVJwWFBMWXRRTUZmM3JVa1NoZ1hQck5Ib3pYM2I4S3U2c2cySjRtZFZrNlBoUkZqUlJwbml0SFNkYmZlTUM5RGpPUFppeW9ULTlEZ244ZHJWcUpsZndWTjZYcHN3X3pIeGRGZkFuM050UEZnejZJZ2s?oc=5" target="_blank">Air Astana представила Токаеву планы по расширению флота. - Exclusive.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPTWlQNTBtSnAtZGFGb3BqcVFSQ2JzdTAyMFRvVFp1MUJCemR2M2FGczB2akZWVUdGYm81b1VRY0dGbDZnS0JwRElXTlZwUVc5UWVGaThFZE8xY3ExcnJadDg3elZ1T2pZZ0Vmb1Jxa3RzQVdzMnJ0a2dQeDJZYjNQQmsteG4xLXZVbEV5c3VUT0xMM2x5c1VuNE42eWh6ZVpETF9aajhUUTlGZXVaa3YzcEtMTmw?oc=5" target="_blank">Токаев потребовал от Air Astana прекратить задержки рейсов и открыть полеты в США - Ulysmedia.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.07.2026 11:50</span>
+        <span class="date">📅 01.07.2026 10:23</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana представила Токаеву планы по расширению флота. - Exclusive.kz</div>
+      <div class="art-summary">Токаев потребовал от Air Astana прекратить задержки рейсов и открыть полеты в США - Ulysmedia.kz</div>
     </div>
     
-    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE8zd282X3hkU2tmb1BIajVTTVRJZjdTd09yRzNrWGF0bjRBUGJBT3RoZTNSNmpaYW5oNmZmbjdLenBiVm5YelhEemFKemV1YVh60gFQQVVfeXFMTzN3bzZfeGRTa2ZvUEhqNVNNVElmN1N3T3JHM2tYYXRuNEFQYkFPdGhlM1I2alphbmg2ZmZuN0t6cGJWblh6WER6YUp6ZXVhWHo?oc=5" target="_blank">Токаев указал руководству Air Astana на критику населения из-за задержек рейсов - «Астана» телеарнасы</a></div>
+    <div class="article" data-date="2026-07-01" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKTloydHFtZ2lrVzVMcWkySVZoLUJrZHdHZThrNFJ1eXpiZ1JtTFVLTGE1TFBYZlM3WFpPYnotcHVyd2dNelVWWEtZTWc0eE13UV9wZWI1NDlhZw?oc=5" target="_blank">В КТЖ объяснили задержки поездов - Новости Караганды</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.07.2026 10:35</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 01.07.2026 07:03</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Токаев указал руководству Air Astana на критику населения из-за задержек рейсов - «Астана» телеарнасы</div>
+      <div class="art-summary">В КТЖ объяснили задержки поездов - Новости Караганды</div>
     </div>
     
   </div>
@@ -185,28 +182,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
     <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/tokayev-points-out-complaints-of-kazakhstanis-due-to-flight-271985/" target="_blank">Tokayev points out complaints of Kazakhstanis due to flight delays to Air Astana head</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 01.07.2026 17:18</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Tokayev points out complaints of Kazakhstanis due to flight delays to Air Astana head</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOUEhlSmpLT2IyOW9VdHVTbmdnVkd5UVNSMnFsd1UzXzN1M0NyaDczS1lkSEtZN0NqcElUd3VxalRVdXY5SGFmaERENnpiaGhVdVV5SjRBWXVWeW5OelVXWGtlbFF4ZTZCc0YySkhZX2E0RUJtc2Q0YWtzaXFCZ0t1QTNQcVh1aDZIY0tYWUZQbVNGc3NkZHAtc2xsX0VMUENrbUpKOW1nSE4zaFR1bXJKa2NKQ1U?oc=5" target="_blank">Президент назвал приоритетом для Air Astana запуск прямых рейсов в США и Японию - BES.media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPcjhZblZwaURpaWtJUzJEVkY3aTVyTldSWWJoOU9ybmhvZEJ1bGlfbnVHZ2MtVlJERHpDdmlQSGdhYmRKWEtTcklyN29DZGd5aW5JckFIdVgtUnBzUnRZclIzQ0NtVHNZdThFNlQya1JqRUZqeEVta0dGR0JhV2pYTFl5RTEwTi1Uem9xUnVPazVfQTBoX1dSZnZBd29uRFdsbDVHVTVn?oc=5" target="_blank">Токаев принял главу Air Astana: обсуждены развитие авиакомпании и новые ре - Shyndyk.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.07.2026 10:50</span>
+        <span class="date">📅 01.07.2026 12:42</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Президент назвал приоритетом для Air Astana запуск прямых рейсов в США и Японию - BES.media</div>
+      <div class="art-summary">Токаев принял главу Air Astana: обсуждены развитие авиакомпании и новые ре - Shyndyk.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-19" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNTnlFQTljY0RxQlZYT1dJRmhHQnM5RVB2TERlaUtoX0pTbTkwTE5pam1TR1doaUFEcWhjenNVMWc5Vm01Ql83QVlYb2UyVlZoVFlfWnloa1F0MlFsNklLeUp2S3RsRjhfZmdsTWtkbG5hcmtkaDR0VHN2YlhlZXVvNXgzZGpNWl94Vm1EcWE2eG84cXpibmdwT2tFeTJWZ3lTSkQ0bGFkMnA1aDJqU1h2bQ?oc=5" target="_blank">В Air Astana рассказали, сколько будет стоить запуск прямых рейсов в США - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 19.05.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">В Air Astana рассказали, сколько будет стоить запуск прямых рейсов в США - Kapital.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-01" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNkJsbzBMUE1uR2dMb2o3T0ZnWHd0aHVtVjRYc044M0hOUDNOZ0s3YlZuUUxsWjFVeklsQ05Hek5qa2t1SGFPZHlYMldrTW1rTU83SnRHU3FMaHg3SGJQRzAtSmhrQ2h5M3RRTFVST1plemZJaUh4WG8yZ2RuMXVRdWpHWG9GMlFheHlEb3hMLWx3cDJLV1hPMGRta2lnbTZIUEJfSk0yT1h1Znh6SDhtR2ZRLVJmbGQ3T1ZCaTNycEUyXzNsZVFoYy1TSzV2eHZwdWtV?oc=5" target="_blank">Развитие партнерства КТЖ и Wabtec обсудили в рамках предстоящего Совета иностранных инвесторов - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 01.07.2026 13:01</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Развитие партнерства КТЖ и Wabtec обсудили в рамках предстоящего Совета иностранных инвесторов - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-01" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWk8tRDZkNjh5UmQ5UEdUdnZoQ2pnUjVJWFloRmZraU5qNGVWcXdJcVI3N1d4dDZhS250YzZ0QlJFWUNRXzBJcWN6dnA1bjJvT2k3TnZZMUVPVV9oeW94UlIwRzlPSEFPcFJtc2NLU2RtNDJFY18yWWROR3VLQ2I5RmRsbWp3MTIxUWFj?oc=5" target="_blank">КТЖ и Citi обсудили развитие сотрудничества - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 01.07.2026 13:31</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ и Citi обсудили развитие сотрудничества - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -268,7 +287,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-08';
+  document.getElementById('date-from').value = '2026-03-06';
   document.getElementById('date-to').value   = '2026-07-01';
   applyFilters();
 }
