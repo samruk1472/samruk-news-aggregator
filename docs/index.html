@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 30.06.2026 17:45</div>
+  <div class="meta">4 источников · Обновлено: 01.07.2026 05:22</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-12-04">
+      <input type="date" id="date-from" value="2026-01-19">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-03-12">
+      <input type="date" id="date-to" value="2026-07-01">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,6 +84,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -105,49 +109,77 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2025-12-04" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNc0pvVHp4WDM5UDM4cTBYQ3lVSVk2YWdmenc4ajhCcDRHcTVweVYyWGpXZDVsWU85RFNYNDVoOVc3b3pDbkJSYnVuR0cycVZqT3RTQk1rY0tfTUZiT3IwclFpc0twSWJRVXhtZkZvUnR1Rk9OVUxVUUkwZlJzUThqVWc1OXQ4N09QOW9IOFZCQVpIckdZQkt2S2tsbEhFUjlaeDlDLUtnY1U1V1l6dDZDVDc0cw?oc=5" target="_blank">$1,6 млн – во столько КТЖ обойдется один вагон от Stadler в 2025 году - rollingstock</a></div>
+    <div class="article" data-date="2026-07-01" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/novosti/69945-ktk-snizit-eksport-nefti-na-6-v-iule-iz-za-padenia-dobyci-na-karacaganake-reuters.html" target="_blank">КТК снизит экспорт нефти на 6% в июле из-за падения добычи на Карачаганаке--Reuters</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 04.12.2025 08:00</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 01.07.2026 09:45</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">$1,6 млн – во столько КТЖ обойдется один вагон от Stadler в 2025 году - rollingstock</div>
+      <div class="art-summary">КТК снизит экспорт нефти на 6% в июле из-за падения добычи на Карачаганаке--Reuters</div>
     </div>
     
-    <div class="article" data-date="2026-02-17" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOc0N0NC1VbzM4TnlFX0lsblFLa21lb3Y2Wm5oYjlqWVVBdHpXZVg4N0NOVkt4VVNoNklrV25QQWRadGtQaGhzSFFfdmZrenVuanh0SUdRYjFMcHp5TXh3TGs1WmEyakt2eXN5WUdRTVdzWVgyamFsSmc2b1l2WnlWUzRKLVNHcW9wTUpqTkpJUFnSAZgBQVVfeXFMT055NUdzQzZPLTlxUXVRT29FcncwdVkyOExJQ2NUeXlkdE53aDM0NWg2djZrNWpSQU9xcDdMVm0xTXVvUnNPanNHZnFNcDFiblE5alJmM3FTNy1CbDBJUUJZRjYyTDdreC1rU3BOZ2VQVG5Za3U2UVVvNWlxbXJYdE9uQ0F5QXB0VzRwUWlHYVdFMi1VMnNZdHM?oc=5" target="_blank">КТЖ отказывается приписывать &#34;чужие&#34; вагоны - ElDala</a></div>
+    <div class="article" data-date="2026-01-19" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZdmtRbnFLaENsWkNtNDlJbDRoaEJiRUtyZi1DN0NnU3k2bnppQ2NwbmNBQlhIUGM5SmdlcEpZSnRpTzZHNm4tWjdoaGltWkNuOXl6dGhZOWVUa1MzU0t1QTZXTVczczRaUGNvblAxSzZOdUo3ZEdfaTk5Y05YdVU?oc=5" target="_blank">КазМунайГаз диверсифицирует поставки нефти с Каспия - Каспийский вестник</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 19.01.2026 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз диверсифицирует поставки нефти с Каспия - Каспийский вестник</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-23" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOVkREcTlzNlYxQ2lzT0dyYXVadlpxYzNCanR1SG9VNDdSb0kxb0xEUEtJNE5EM1FpbzBBUXNHWGdEb1d5VV9QbDhEWVdwZkFsb2hrbllfY2lKYXB0Qmt4UFgtRXYtUVE1b2pLbjYzT1QtRWtTR0gyUGhoODh1VnozMmFaQThaN0JPck1GM21B?oc=5" target="_blank">Air Astana продлила ограничения на рейсы на Ближний Восток - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 23.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana продлила ограничения на рейсы на Ближний Восток - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-01" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ2NUaFoybFBkYnBOLWVJSFNheFRRMDhkYXRmdEU0a0tSekVnd19hbGpUY1VodENnUmh2bEp1YWxYd085ekNKbldtd3BfSEVtNEx1QUtWLTRUbkF4U09mMjc0YnBGTDRWMW1vS1lJZjhkT3RORFhlVEdqY2dMX0dfbDNndXYycTd5NWc4dGxiV3UtZEtqdk9OcU9LWWhyNkZKaU5Eb3dDRWxBYUlWMWhiMTk4RkpvWXh3eFkwWm9NVEtHZw?oc=5" target="_blank">Кампания по обновлению корпоративной культуры и укреплению имиджа стартовала в КТЖ - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 17.02.2026 08:00</span>
+        <span class="date">📅 01.07.2026 03:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ отказывается приписывать &#34;чужие&#34; вагоны - ElDala</div>
+      <div class="art-summary">Кампания по обновлению корпоративной культуры и укреплению имиджа стартовала в КТЖ - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-30" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBTMDlFWmhrMFoxY2RaMWkxTHRZaXQ5TmNZdXRuREJTYnNITHNOLU1icVhSQW1Wd1g5WkhyV19MTWpiem5WbEVsQnhSbG41S21YNDF5NzZ5OGRfeWtzNFIzallvMUtJbXNWdU5YUmRWcnF2ek1hc19udlNDQ3daUQ?oc=5" target="_blank">КТЖ объяснила задержки поездов аномальной жарой - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 30.06.2026 15:27</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ объяснила задержки поездов аномальной жарой - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-24" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFB0ZWl6Q09qeGF2T0FSTmFZWURfT1FCYUxvTUlmWXppTmc1YUFzemMwbFFDazl2ZnIzYWdJQ3hQMHF2eUFDZTdMS193?oc=5" target="_blank">Запрет введен на импорт российского зерна. КТЖ вернет уже груженые вагоны - АПК Новости</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 24.03.2026 13:04</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Запрет введен на импорт российского зерна. КТЖ вернет уже груженые вагоны - АПК Новости</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-03-12" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWm9qTDZSZHQ5VzZYTEMzNGJjc1NIOGI1M3RicjVEOTJnM3BHTVNRcFNfcEh4Q05EM1h4NFBpVFIzYk9VUzBWZHdval9QbUFqQk54R1V4NTdCSmI5TFJlS253dG1BcUlBVEpaRlk0RzdvUG42WG9KdTFZWXgtMTNGd2VsR0ozTlFDVWJrTXJkWnBwcmt3SHNBLW5kN1JyOXVxdE5Rc2MteTA4cDU3el9Lc2RHU2RDb1lKUlpWY3ZPeDI5aTB4UVVVbGZfVDBMRG1sQXc?oc=5" target="_blank">RWS Wagon досрочно завершил контракт на поставку КТЖ пассажирских вагонов «45-й» серии - rollingstock</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 12.03.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">RWS Wagon досрочно завершил контракт на поставку КТЖ пассажирских вагонов «45-й» серии - rollingstock</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -206,8 +238,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-12-04';
-  document.getElementById('date-to').value   = '2026-03-12';
+  document.getElementById('date-from').value = '2026-01-19';
+  document.getElementById('date-to').value   = '2026-07-01';
   applyFilters();
 }
 
