@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 03.07.2026 15:13</div>
+  <div class="meta">2 источников · Обновлено: 03.07.2026 17:10</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-21">
+      <input type="date" id="date-from" value="2026-05-13">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-03">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,11 +87,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -108,58 +104,31 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-03" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/69987-eks-glavred-izdania-orda-gulnar-bazkenova-otricaet-obvinenie-v-nezakonnom-predprinimatelstve-iz-za-prodazi-kvartir.html" target="_blank">Экс-главред издания Orda Гульнар Бажкенова отрицает обвинение в незаконном предпринимательстве из-за продажи квартир</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 03.07.2026 18:30</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Экс-главред издания Orda Гульнар Бажкенова отрицает обвинение в незаконном предпринимательстве из-за продажи квартир</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-07-03" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcm1td3I4S2gzV2NLMkxvdXVqRm5nb0RMTlozMk9Nd2lDMXl0R2xKZTBzcndVT25xdDdSQWNfRFlTNlpCVkVJYjZfdjlONDVUY0FjRm9MdGR4S3dKc1d2SUJpdUhMc1VocExXUGlqZnUxWGVRUHVKRnNaaF9rYmlvTWpGNXJPZmhGS01R?oc=5" target="_blank">«Самрук-Энерго» потратит на наемных сотрудников 2,5 млрд тенге - Qumash.kz</a></div>
+    <div class="article" data-date="2026-05-28" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNeDExQXN6Y1Q2UjZaRElKVDMwdmZRUWRlS1ExZWJvaERfSjM1RjNvZE1RdG9BUWIzQ1BxX1BvYnNGdzROV0Z6aWdDSTJzWHBmYTFULXY0ZUtzdGFLWVB5UGtQbFdRVWo1dVZqM1U5WEZUTnM0bnZLVDkzV0htWlplX29lRDNwblMyOHZhdzNGX0dXRnVUMVJsWXJUMEV6WjI0SV9VS9IBowFBVV95cUxOU043SnBDM25rXzlVNHNhY1YtTzZHM0V1cGpZMm9saWpjQy1IcmZyem1neUl4MkduWVFmM2lGSmNHcVZSTHp1eGMxU0I5elh6ak8wRVM1MzN3X2c1cGI0NENnejA2QjM0WnVnbkZZOVBXbmNzTkJBcm9La1VOMkI1VEdJY3NmMG5VcnVzLWRhbVRiSWdLalhOVjJ5Qm9XUTFWZXAw?oc=5" target="_blank">Свыше 2 млн зарубежных звонков от мошенников перехватили в «Казахтелеком» - SKNEWS.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 03.07.2026 08:10</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 28.05.2026 07:00</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«Самрук-Энерго» потратит на наемных сотрудников 2,5 млрд тенге - Qumash.kz</div>
+      <div class="art-summary">Свыше 2 млн зарубежных звонков от мошенников перехватили в «Казахтелеком» - SKNEWS.kz</div>
     </div>
     
-    <div class="article" data-date="2026-07-03" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNWHVta05pcHRLcmJzMVFHaEkwdU52S29HVzlsTFRBUWdwQk9GVjB3Z25USENDcTlfbW9qeENnT09ncmtockFTNERrVWNZSGRpS0JENTFEVEdwRmZkS2x5emV1WmNITFRXcjUtR1hXa0otU3Nza0ctZnhiY1dyV2E2bjFfM2tlZzBINlBqMHI2YkFZSmZDSmhj?oc=5" target="_blank">Сколько «КазМунайГаз» заплатит членам правления за 2025 год - Forbes.kz</a></div>
+    <div class="article" data-date="2026-05-13" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPMVh3V1RwRWxMRW81blZJS21Pb2o5dHhFaG9nVFBhUF9lc2JNRTY2UjZLVUdkbF9BWmxtcFJUbTdpMTBoSF9jYmI2enFaTU9yc09TWkpmT2l3UW1iMlhrRUp0RFBRYlhuMXpyUUpNbjlMYzRaYWwyRnJva1FOWmpqWnByNGp4WkdyMHozdmR5b0E3UQ?oc=5" target="_blank">«Казахтелеком» усиливает позиции, рынок связи получает новые правила - tribune.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 03.07.2026 12:22</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 13.05.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Сколько «КазМунайГаз» заплатит членам правления за 2025 год - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-21" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxONXJ4Z3k4VTlvbzRTMlZfS19YNUdnS09KMHlmQzV4eWV3cnRIQVluLTViVjcxOXo5SW5xLXYtenRzQmZySFlqVWVCMnlVdVZGNmpqWWM1ZFRUQnNTNUxOTFBzVmo2eEd3N08tOFhOWndfSVBfeHJZOWNSazM4bmlrZ3NQdmJLNlV0eUo2QmFzQQ?oc=5" target="_blank">Почему IPO КТЖ без реформы может стать ошибкой - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 21.05.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Почему IPO КТЖ без реформы может стать ошибкой - Inbusiness.kz</div>
+      <div class="art-summary">«Казахтелеком» усиливает позиции, рынок связи получает новые правила - tribune.kz</div>
     </div>
     
   </div>
@@ -170,14 +139,14 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-07-03" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/07/eu-ambassador-says-tokayevs-brussels-visit-reinforced-kazakhstan-eu-strategic-partnership/" target="_blank">EU Ambassador Says Tokayev’s Brussels Visit Reinforced Kazakhstan-EU Strategic Partnership</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOSHFyazBPTmdDRE9Zb2hyZloxOHJLY3RpcXF5aUFBS2pzV1NKTmh1X2Y1TUtfNEtkZHZSdTE2b2RtdXhqVjJVa05YbG04Rl9jWUV6ZEd5TWNNa2ctV0pNUmpETThyaUlNMGhWQTk5bm5ad1dXWEpnNERaNDl4c0M2V0xybUllZm9Ha1pwUGVKbG15STVmRmtOcm1VQzUtNHRrY1HSAacBQVVfeXFMTXRWN1RMY0xkVXhQbUtBLTlZLURTa1AyLXRza2FpaHVXOEdMZzdfVzhJZ1Jpb1FxanlKNHBEQ2tNTnNoVWRNVGFxSUgzN0NFeVZBVFpBb2NGN2xHMWotNzdjOTdUeDlvbDFkZmpRZmphVHdUSHlHVXhZdkxPanVmbnlOLWUxM1RHM2d2NlZHa2p2Nm9fRU1kZ1VVRFU2SERJRGJVRlhFMVk?oc=5" target="_blank">Новый глава Air Astana пообещал приносить прибыль акционерам - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 03.07.2026 12:09</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 03.07.2026 15:18</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">EU Ambassador Says Tokayev’s Brussels Visit Reinforced Kazakhstan-EU Strategic Partnership</div>
+      <div class="art-summary">Новый глава Air Astana пообещал приносить прибыль акционерам - Kursiv Media</div>
     </div>
     
   </div>
@@ -239,7 +208,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-21';
+  document.getElementById('date-from').value = '2026-05-13';
   document.getElementById('date-to').value   = '2026-07-03';
   applyFilters();
 }
