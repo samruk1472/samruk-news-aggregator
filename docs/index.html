@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 04.07.2026 06:42</div>
+  <div class="meta">2 источников · Обновлено: 04.07.2026 09:17</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-31">
+      <input type="date" id="date-from" value="2026-07-04">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-05-06">
+      <input type="date" id="date-to" value="2026-07-04">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -107,33 +107,38 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-05-06" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE8xeEtqUE9pZGNYT2UyRkNtZGVvNXg4aVdoQzhuRTlzbnU4QnlVVW1HX3dEXzBhTnc4OHF2LUV2LWl4UnRDSnZpYlN1Y3Zoek9rdVhxSkdMa3lXOGEtekpB?oc=5" target="_blank">КазМунайГаз определит перспективы разработки сланцевой нефти в Казахстане - Energyland.info</a></div>
+    <div class="article" data-date="2026-07-04" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQV0h2T1BIM3F5aDlLQURuNVlFRGtocmw3dDVrQXcwMGNFa0NKQ3BBMHZ2cW80MVNzWlI0enpxR3REMUxiaGktQlhHSjNseFF1dTBlTkwxUHRSYVVHWDJ0ajk3TmpPM0lDSS1sQ2xVdUJfeUFSaDFVUGdZSG5KMU9NWmFZOVhNYW91eVptcUlneV9SUkRYSERnd2RpdVdDOU9LOGtIeE5OZHJ6WldYRDl6c0lWMHA?oc=5" target="_blank">Председатель правления КТЖ поручил ускорить реконструкцию вокзала в Атырау - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 06.05.2026 07:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 04.07.2026 07:39</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КазМунайГаз определит перспективы разработки сланцевой нефти в Казахстане - Energyland.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-31" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE1RT09LR1pTNVFMSFpIcXgzc2k1TXNkYm8xaVpIdUxmRWxRZGNVd0lSSms4dndMOUh3RXhYOFBWZkwwY1k0MUg1QlI5RXp5NzBaZ3J0ZHVDc29JU2JkMUZkRmhZUXc0c0d6c0VqSXZENDJpSEpyU05hTVdFOG95dw?oc=5" target="_blank">Что меняет уход BAE Systems из Air Astana - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 31.03.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Что меняет уход BAE Systems из Air Astana - Inbusiness.kz</div>
+      <div class="art-summary">Председатель правления КТЖ поручил ускорить реконструкцию вокзала в Атырау - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-04" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://vlast.kz/obsshestvo/69989-nedela-v-kazahstane-vybory-i-seli.html" target="_blank">​Неделя в Казахстане: выборы и сели</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 04.07.2026 13:30</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">​Неделя в Казахстане: выборы и сели</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -192,8 +197,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-31';
-  document.getElementById('date-to').value   = '2026-05-06';
+  document.getElementById('date-from').value = '2026-07-04';
+  document.getElementById('date-to').value   = '2026-07-04';
   applyFilters();
 }
 
