@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 05.07.2026 11:35</div>
+  <div class="meta">3 источников · Обновлено: 05.07.2026 14:45</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-01">
+      <input type="date" id="date-from" value="2026-04-02">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-01">
+      <input type="date" id="date-to" value="2026-07-05">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -105,17 +109,72 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-06-01" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOVTloLTNVcU16TlZac3lyY0ozcTRUSFE4alZzYU5pcjBYbEJCMlo0Y0ZTTWxqMHBmY2JwbkNxUFp3ZmcxcWJ0MmRNNjJpLTl6NzhDNERBV0U0QUhfbEJjZS1KUTBMb0Y0V1owdTBGSDJWQ283RkF2UFlQSlZvUHQ4Y2NwVVh1aUJWN1haa2pxdi1rSndGQmZsMTZTa0NTd9IBowFBVV95cUxPUUdLZmNCdWtZNWRoZUZvQktkNWxyTUJrZW5QdXJpZ1ZSS1M5alVFUHpoUGUtNjFvQkJzaFB2ODUwTnVjOFFQZzhNY3ZxWnE4dkhRbm1SQkdYckxteUtrTXdfV0N1TXd1NWFNMVZTcjlXNE5Za3BuQ2czODNxUVpVWERWOWlLYTIxWWpBTGpoRzM4TnhIMV9INVFmeFdZNVpVUEpn?oc=5" target="_blank">«КазМунайГаз» нарастил прибыль на 94%, несмотря на падение добычи - Kursiv Media</a></div>
+    <div class="article" data-date="2026-07-05" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-05/lsbs-podryadchiku-vokzala-astana-1-poruchili-uskoritsya-chtoby-ulozhitsya-v-sroki/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lsbs-podryadchiku-vokzala-astana-1-poruchili-uskoritsya-chtoby-ulozhitsya-v-sroki" target="_blank">Подрядчику вокзала Астана-1 поручили ускориться, чтобы уложиться в сроки</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 05.07.2026 12:28</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Подрядчику вокзала Астана-1 поручили ускориться, чтобы уложиться в сроки</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQWDVPTXU0TG10OWJHR3V5a0JVOHRoNDBqWW9hUDU3Q081eU5JaEp5ckdCWF9GUWdhalpWc2drMnAyRkZBSkQ3UkxSbWtrY3I3OWJibUhtbktQWkxoUlVWM0g5Nlp0b0p1dy1pYzlKVzlTQU1TLVNUNjhPaXU2YkxZT2xMSDB6dHhMVEdTNDN3YkM5NTExN0NDR2ZXalNpV2ZaZFZ3QU01QW5SVjBx0gGyAUFVX3lxTE1aX1FidWJEcXNxVUFvY1V1XzJpeEpUY0NkX3lKRzdINUVkcFBKRVVGOG1uUVg0OVZqU3BpYTVlTEFHRm1YNmgtQ1MzWWEyYVdGMDh2VFc2dmFIYURfelVQaUp4OXNvcUJOSjhFVF9Rb2J5ZnNnQ19sakRrb05EcHdFYUtPTUF0Z01rODVGdVB4dkVSVnNGNENsQTZ0M1hxUEF2TDQtaHJmZmljYVludk9WTXc?oc=5" target="_blank">КазМунайГаз и BP планируют сотрудничать в геологоразведке - Report.az</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 01.06.2026 07:00</span>
+        <span class="date">📅 02.04.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» нарастил прибыль на 94%, несмотря на падение добычи - Kursiv Media</div>
+      <div class="art-summary">КазМунайГаз и BP планируют сотрудничать в геологоразведке - Report.az</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-06" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1lVUFZODlmQm8tRHhLemdBcy1IN0xMZEhiazFLaG9vZEVCbDdVdGxid3QzVVhjTE0zN2pGU0NYM1phTVU5dVR0eWI4emloZG1OaFd5dGIzWXdmQWp5MURyaVBEWHhEQ2lIWHJjLXA0YkhicHVJY1E?oc=5" target="_blank">Air Astana возвращает рейсы в Дубай - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 06.06.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana возвращает рейсы в Дубай - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9RQ3htSGNqaTNyYWw0UllnZkpYM0w5aGVSQllDODFBQ0tLVU9OWDRMblYxZmJIX19teVhaVEpOS0hvYTFWelNKNWdUbXVuelNrcm1PQnJMWk96SDdHSXcybzBmaVdqeG45RHhOOEZUWQ?oc=5" target="_blank">Air Astana возобновит рейсы в Дубай - Издание о политике, правах и законах Казахстана - Masa Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.06.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana возобновит рейсы в Дубай - Издание о политике, правах и законах Казахстана - Masa Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPeUIxdGxQbUpxZUFibjRxOWs2clRiOFJ2TW9Mb3BYRjJTWTVOTnFKWTVmeWNXMk5kZ0trMVV6RWIzeTlEd0doS2duVDlHRHVUQ01rMThRNy00UWNWN1RTU2pPVnlwV3VRN0h3Y0ctV1B6WW9pOEJac0ZPN1pRVFpMcWdmZDRsOV85TXl5Nk03bDc3bGk5Z1lFVkFqa1RGOVlX?oc=5" target="_blank">Air Astana запустит рейсы в Дубай после длительных ограничений - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.06.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустит рейсы в Дубай после длительных ограничений - NUR.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOU1MyRzMzc2sxTmxITm1rNUFOUXYyMGpDdi1kNVRSVDNjOWFrTGoxRjlWZTRWdGYtVmNqd3RzNF9WWWJzcl9rX1YwWjJSQ2xMWVZWWXhFdW02NXVZU3hhM29EcVJBbWRLeVRrVTRiNEEwZXV4RTVnTC01eUtnVjA5aHprZnBTTVNPdlBJNFlGc2VUVE0wb05lNURYS1A3b0xYMkZHbGpFZTQ0MkpEZS05eA?oc=5" target="_blank">Air Astana возобновит рейсы в Дубай через Пакистан - The Village Казахстан</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.06.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana возобновит рейсы в Дубай через Пакистан - The Village Казахстан</div>
     </div>
     
   </div>
@@ -179,8 +238,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-01';
-  document.getElementById('date-to').value   = '2026-06-01';
+  document.getElementById('date-from').value = '2026-04-02';
+  document.getElementById('date-to').value   = '2026-07-05';
   applyFilters();
 }
 
