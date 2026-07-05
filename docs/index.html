@@ -60,7 +60,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 05.07.2026 09:37</div>
+  <div class="meta">1 источников · Обновлено: 05.07.2026 11:35</div>
 </div>
 
 <div class="stats">
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-05">
+      <input type="date" id="date-from" value="2026-06-01">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-05">
+      <input type="date" id="date-to" value="2026-06-01">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
     </div>
   </div>
@@ -107,15 +107,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQTm5wV3lORTBodXNVSGdhbHVqTU5VUEp0NTFjeWl1X1IzS3ZTVDFzclBxRmNVNC0ydFpWLTZSNXZFNVdDV2VXNmxWR2p2cUpOcDk3TlZnNHBlendPZGpDbnZDNW81NUNhRFExN09WNDRJNWF6eVh0TGI3anJQeThIZjNWT3BMczExckRGSG1iT1l0MjM5YjFxbUZZZFFCdmxmaHNSZ0VqR2hYRjdvcUo4akhZa3NHLTVDRkE?oc=5" target="_blank">Аким столицы и глава КТЖ ознакомились с ходом реконструкции ж/д вокзала Астана-1 - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-06-01" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOVTloLTNVcU16TlZac3lyY0ozcTRUSFE4alZzYU5pcjBYbEJCMlo0Y0ZTTWxqMHBmY2JwbkNxUFp3ZmcxcWJ0MmRNNjJpLTl6NzhDNERBV0U0QUhfbEJjZS1KUTBMb0Y0V1owdTBGSDJWQ283RkF2UFlQSlZvUHQ4Y2NwVVh1aUJWN1haa2pxdi1rSndGQmZsMTZTa0NTd9IBowFBVV95cUxPUUdLZmNCdWtZNWRoZUZvQktkNWxyTUJrZW5QdXJpZ1ZSS1M5alVFUHpoUGUtNjFvQkJzaFB2ODUwTnVjOFFQZzhNY3ZxWnE4dkhRbm1SQkdYckxteUtrTXdfV0N1TXd1NWFNMVZTcjlXNE5Za3BuQ2czODNxUVpVWERWOWlLYTIxWWpBTGpoRzM4TnhIMV9INVFmeFdZNVpVUEpn?oc=5" target="_blank">«КазМунайГаз» нарастил прибыль на 94%, несмотря на падение добычи - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.07.2026 08:51</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 01.06.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Аким столицы и глава КТЖ ознакомились с ходом реконструкции ж/д вокзала Астана-1 - Қазақстан теміржолшысы</div>
+      <div class="art-summary">«КазМунайГаз» нарастил прибыль на 94%, несмотря на падение добычи - Kursiv Media</div>
     </div>
     
   </div>
@@ -179,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-05';
-  document.getElementById('date-to').value   = '2026-07-05';
+  document.getElementById('date-from').value = '2026-06-01';
+  document.getElementById('date-to').value   = '2026-06-01';
   applyFilters();
 }
 
