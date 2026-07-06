@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 06.07.2026 08:14</div>
+  <div class="meta">3 источников · Обновлено: 06.07.2026 11:24</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-06">
+      <input type="date" id="date-from" value="2025-12-11">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-06">
+      <input type="date" id="date-to" value="2026-06-06">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,6 +86,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -105,17 +109,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-07-06" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQM3JzRmpiX3NwM1hpbnB5NTlXdnZCSHlHNjVmckRyM0ExN0tyR1N0OGFRdXFjV0hURVA4OFg4X3VCMVZCMVhoRHVRaEhRckUzS3lXNGxWbUNaZ2VXek4xekJVb0NTdUNaM0l1ZzQ3UHg1ZUloQURaRE1CU0FVTUMwamFsLWdVLVcwYzl3elYtMFJhdmgzYkRaVXFudVJTczVibXp2bG10RjLSAagBQVVfeXFMUDNyc0ZqYl9zcDNYaW5weTU5V3Z2Qkh5RzY1ZnJEcjNBMTdLckdTdDhhUXVxY1dIVEVQODhYOF91QjFWQjFYaER1UWhIUXJFM0t5VzRsVm1DWmdlV3pOMXpCVW9DU3VDWjNJdWc0N1B4NWVJaEFEWkRNQlNBVU1DMGphbC1nVS1XMGM5d3pWLTBSYXZoM2JEWlVxbnVSU3M1Ym16dmxtdEYy?oc=5" target="_blank">Почти треть торгов индексными акциями KASE пришлась на КазМунайГаз - Finratings</a></div>
+    <div class="article" data-date="2026-05-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNdVZ2YjYyejEyZVVxVEJXcTYxSHlWU04xcGhzQkNCa0otakJDcWhyd2JxN2Q1VE1RcU9oak5yd1BkSnJNSm1QODBBbDFfYjJYT1hTclZFTzBfYl9VUlRrRmtKTnBBV1ZyT3V0TXlGVjJmMWlIN09Iel9VcXBrZzRnVEk3WWJKUFVSeFBYMHVGN1lSNFZMZ1E?oc=5" target="_blank">Цены растут: при чем тут голландская болезнь &#34;Самрук-Казына&#34; - caravan.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.05.2026 06:29</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Цены растут: при чем тут голландская болезнь &#34;Самрук-Казына&#34; - caravan.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-15" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9ySlZjdlZ6U1VhWUd2OUJWZ2FnRmxqaVhUVlJjMm1Uejh2cG96QVg0aTV4YU5DdzZ0T1ZNVWRxMFg5RVozM2NIVHJZOS1id3YyNXVRZjhhbWFRalVPWllsNF9TUFFRSDlxakprT0ZOSGxVbG5QWjJXcGR3?oc=5" target="_blank">«КАЗМУНАЙГАЗ» ПЛАНИРУЕТ ВЫПЛАТИТЬ ₸350 МЛРД В КАЧЕСТВЕ ДИВИДЕНДОВ ЗА 2025 ГОД - THE TENGE</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 06.07.2026 05:35</span>
+        <span class="date">📅 15.05.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Почти треть торгов индексными акциями KASE пришлась на КазМунайГаз - Finratings</div>
+      <div class="art-summary">«КАЗМУНАЙГАЗ» ПЛАНИРУЕТ ВЫПЛАТИТЬ ₸350 МЛРД В КАЧЕСТВЕ ДИВИДЕНДОВ ЗА 2025 ГОД - THE TENGE</div>
+    </div>
+    
+    <div class="article" data-date="2025-12-11" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNcWNDQ1JJRXNRVkFEQUtTbXEyM28xajNBYmhOQ2JBM0c5OXJrc0ZfTGkxTGsxaXF4UzdNMFU1MnExVkNvTVJ6V1FFUmJLTUtVaTl2VGFIS0M1MkhNaUpmcTlvZlpodDhvVVJMeTZsMHBaaGJ2Um5rUW0tRGs1Si12SzFaYTl3YTRlZ0xxZWh4MV9KVVMwS092Um9HX0c4N2tHeXdDLXp4NTF1TEQ1VEpiU2tpSWJfQXBJTHhuM2lZY2hOSjFqem1HUmRTS0zSAc8BQVVfeXFMTjFtWHA0ZUNIX0l0MGJUNWdNVVoxRjQ2V192blhIajBmT3M4OFd5Q2FfTmtqNW10aHBYVkk5UDBHWW5CcWQ1R2dzeW0tNGsyRHR4a3VmVkFZcEpvUktCWTJ5bFJqQmRRMlJnOVpzNWFYLWs3bnM0Vk9NakZtR083ZUd2Y2tmOGFuZUpma0g3TGNRWUtfZWF2UUlBUUctbm1sdElVT2laTzNTek56ak1nSDMzMlE3SFJTMENrS3lPMlRPNndnNDg2cFBoUGJNMVI0?oc=5" target="_blank">КТЖ создала спецкомиссию по расследованию после гибели четырёх работников на путях - Азаттык Азия</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 11.12.2025 08:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ создала спецкомиссию по расследованию после гибели четырёх работников на путях - Азаттык Азия</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-06" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNdXc3NHZxSE9OTWpqTWRZOHRWWjduT1ZBZU51ejliSlBYM1BYQTBoMmVyaTJsZktwRVB2SnpneEZ6dVlPZkZNQm9VSFdFMFdRT0lrcFNYWW9qMk11eG9rRmZwRVkxV1BWSlRHVEMzemRkZGc1aE8tRzA2LUhVVGh3QlN5NjBZSDJqUlZBNTJLTmRJeGFWZ0pQY3RVaERRYlZhMnI2U29kdVdwdlM0QVE?oc=5" target="_blank">КТЖ оснастило системой Trip Optimizer более 92% парка тепловозов ТЭ33А - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 06.06.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ оснастило системой Trip Optimizer более 92% парка тепловозов ТЭ33А - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -179,8 +216,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-06';
-  document.getElementById('date-to').value   = '2026-07-06';
+  document.getElementById('date-from').value = '2025-12-11';
+  document.getElementById('date-to').value   = '2026-06-06';
   applyFilters();
 }
 
