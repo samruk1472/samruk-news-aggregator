@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 07.07.2026 04:53</div>
+  <div class="meta">7 источников · Обновлено: 07.07.2026 07:32</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">16</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">4</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">9</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-05">
+      <input type="date" id="date-from" value="2025-11-28">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-06">
+      <input type="date" id="date-to" value="2026-07-07">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -87,7 +87,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -104,47 +110,200 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-07-06" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTFBwLV9tOHRMVm1ramRKalRRSXQ1RlFweGhoVmJySi11U09Gci13YzN1MUFfLVE4cXNNWFNVa2gtdncwUnQ0SW5tck9ZUQ?oc=5" target="_blank">Air Astana расширяет полетную программу в Турцию: что изменилось для туристов | ТУРПРОМ новости - Tourprom</a></div>
+    <div class="article" data-date="2026-07-07" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-07/zhki-deficita-net-minenergo-obyasnilo-ocheredi-na-zapravkah-posle-atak-na-rossiyskie-npz/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhki-deficita-net-minenergo-obyasnilo-ocheredi-na-zapravkah-posle-atak-na-rossiyskie-npz" target="_blank">«Дефицита нет»: Минэнерго объяснило очереди на заправках после атак на российские НПЗ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 06.07.2026 21:13</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana расширяет полетную программу в Турцию: что изменилось для туристов | ТУРПРОМ новости - Tourprom</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-08" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQVhrNGdGTEhQazhyWkpHNTlOdzIwdTZrTUwzcUlQTzRmLTdnQ24yVE13YlIzaGN3Tk1vQ1pRZ3V4TDV6UE94VmJjOWVrcF9lek5sanZJRndtTTRtMkxUOHpoNEpNSVhTYUNBLTJwLWZEZTFWUlAyNkdtMXZXSjgzTFNwV1Yxa0M3Yk9RLVNZa2FBYXU4azR2OEtONmU4dkFlM2FJaC1GeHlKNVdyUGxYSVl2cF9ueWVYZnFZ?oc=5" target="_blank">Самолет Air Astana совершил вынужденную посадку в Актобе из-за отказа двигателя - Azərtac</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 08.05.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Самолет Air Astana совершил вынужденную посадку в Актобе из-за отказа двигателя - Azərtac</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNS2F5UmxXZkV4QVQ3QkM5Q2R5ZnJXMWZaSUdsd0dEV0IzN0JsWVkzZ3k3S1o1SmYzaUdHTXZUMGNZU3YwQkNiUERtWUR1Rzh1NjBPZmd6dElmTzZhLUprX0FpT0dEaVowZWFoZFZZQjVaWnVWdkhzN0poaFJQbnFhRl9iN1hnaU1COHMzZThhUllKUE0xcTNrVk42SzQ?oc=5" target="_blank">КТЖ дополнительно обеспечит 16 тысяч мест на майские праздники - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.05.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.07.2026 06:33</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ дополнительно обеспечит 16 тысяч мест на майские праздники - BES.media</div>
+      <div class="art-summary">«Дефицита нет»: Минэнерго объяснило очереди на заправках после атак на российские НПЗ</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-07" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcnQ1b2RrYjViQ2djc2R6SklncTBpMEV6eFVFZXR6LWViSGprbWRXSmxHQ3JiUGQwVkVPYnBGQ01Ma1NQeVcwa3RGbEVlLXhCRkRLd2s5WVQzdDhIWkJLWHBkU3JsdGNYZXF2bTY2ZVhlcUdNVFV0bWphWDVodEZSWnBUM25nTEcxeU9SX3EwZFNZTklueGNvYU5jeXdtSzhaOWg3ZjdIVVFqQQ?oc=5" target="_blank">Часть руководителей попала под сокращение в &#34;КазМунайГаз&#34; - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.07.2026 06:15</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Часть руководителей попала под сокращение в &#34;КазМунайГаз&#34; - NUR.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2025-11-28" data-co="Казатомпром" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNX2c5MFd5M185Q0h2eC16VGFzMW5IRjMwU2JGTGFjN3J4VllUUTZlQk5VQnNNT1oyVDdJYmJwYjNqeWJZRGdHNW12V1RjT1FXY2x4TmFsZDkyVm83Vy1MLVRBTS1NQUtzLXAxS1F5RVpaOXQycFJySmtELXA2ZVE5OA?oc=5" target="_blank">«Казатомпром» признал санкционный риск из-за «Росатома» - Orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 28.11.2025 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» признал санкционный риск из-за «Росатома» - Orda.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-22" data-co="Казатомпром" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQSElYYUNYc3JvRTNSb2RFRWk5eEoxZmh0RHlZUWItczQzOUZaeEZxRk9YTlhuby1oWE5Zb0JTdVk3bF9KUnA0LW4tZ3JJbVN3S3hxOUtOVEJEVk9FUkV1YjZJbFRVUUhVaG5rajJya3NHc21nYThWMzl4VzBCS19hdzJQRjlTNWpZTUJhLVJXX2xTZVZ2OUF6RTA2X3IxaWotbnZ2dUxTWmE0aUNXRWg1OUR3X1dQU3Fya0Z4Yl9B?oc=5" target="_blank">Лицензии Laramide - на ТПИ и не дают исключительных прав на урановые ресурсы – Казатомпром - Bizmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 22.01.2026 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Лицензии Laramide - на ТПИ и не дают исключительных прав на урановые ресурсы – Казатомпром - Bizmedia.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
+    
+    <div class="article" data-date="2026-07-07" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQSEZ1SDBaczMwRksyVDd4MmJrZzRmdkR4djlnbHRlTm1wbU1YdDh4d1p4NE9xVVVidHJ1LVAwbDN3dWtWcmFLMHA0aTZYbkhnSzZKZ1UwNmZmZUM4bGNMOHJ5X1ljbDNIalJfX2FUSE1RRlBybUowUkVPWV9RYjFSTU5HdjFqaFJNUjkyS2N2cG9lWHNqelptUWp0X200SnF2b0HSAacBQVVfeXFMTzJhSlE0aFRDRGlYOVp1Y3psTHJQVUhpLXZXbjItM1VWTDZDcW5mb1I1eXdUQ3JNWlpKMVE4clRKTjVqdlVXUmluVVhPRUNtZzVhRzh1ME9hUWJtbjZ0Q0xhVDlINjduMFBQSmI0el9ncVBkYWQteGRVUlk4Q3FZTy1xczNBVjRDbDlzTkJxVWk0cU5QVVkxSmZnU2psaHVRc2RGZTFwUTA?oc=5" target="_blank">Как изменилась система закупок «Самрук-Казына» за два десятилетия - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 07.07.2026 05:17</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Как изменилась система закупок «Самрук-Казына» за два десятилетия - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-22" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPVWdJeHdGdlJtT0tqVlFuS2ZYN3o1Tkthcm9wZ3ZSSFNvamVQSFgwU2F5R3lJWTNud3FmUnRNblI2ck82ekhqd3o3U3FwTVB6bnhKQVg3TUhCOVVweDBkRjlNQ0NVQW1DbUY2eVh1b0lYNVFCTTJJYTFETldtWXZvV2NMV3BER29ZMnBrSXNKdDVMYll0Zm9UOUg4ZjlESW9hU3c?oc=5" target="_blank">«Казатомпром» отреагировал на уход иностранного инвестора из уранового проекта - Orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 22.01.2026 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» отреагировал на уход иностранного инвестора из уранового проекта - Orda.kz</div>
+    </div>
+    
+    <div class="article" data-date="2025-11-28" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQWkxUb0QtRWlTNE1IMlNPQW8xT3Q1eVRjeTJjeXJVXzd0SEdJak51SzlOTnl0RVNOQjJLdE1UWnJMYTQ3QjBTdkoxXzQ5OWRrUWg3azZrZTV3QklpNTBqR2R3THZUeGZWZUM2MG91SldpRVlQTjM4djUxNE5KWHlQLUZkbWtsRUowU2F3RGFWS2haV09RUjhtd1d30gGfAUFVX3lxTE9BX1JEaElvUTg1WTFOUl9jcDZSMGZubm1ITEd4N1F1Sll5eDE2TWJDQ0kzRzJReGNHNnktNnpjTmEwLXZzSUxfcjMwekhRN1pmNFg5dm1WYXR4NVR5MWZjT05CT042MlhaZ1hBRVNKZ3otY242SXZ6MFZQcUJ3RHZjV2xFckxOeTdoTnBMS3c5S2w2Rm5EaFBtTUYxNV9kTQ?oc=5" target="_blank">В 2025 году «Казатомпром» реализует соцпроекты на ₸7 млрд - 24.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 28.11.2025 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">В 2025 году «Казатомпром» реализует соцпроекты на ₸7 млрд - 24.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-22" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNaVE0VWVVeGFHclc3a09QcWZmRlNlZmRvSUFtX2o3NDlMTkFMdlhrSE1XMkE3NzBUU2theGtTajdaSmNDNnhTZXRld1lhSzF1N2RaZ3Q1alNNejloOTJ2bTNsdUFDOUdzQnZSeS13NG5NQ2ttcDdGak1sTjFHQkx0MkxrVFREWWhkZnlzbEtrcklDQXZHZTk5ZURIb2lKdmk3S0lDSklsQmdkRU1NTzVuOXRwZzl3Uno0RTdoRDJCaGpJQTB6?oc=5" target="_blank">«Они всё знали»: «Казатомпром» — об отказе иностранного инвестора от уранового проекта в Казахстане - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 22.01.2026 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Они всё знали»: «Казатомпром» — об отказе иностранного инвестора от уранового проекта в Казахстане - Ulysmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-07" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxQcFV0dzRVQnE3QVVPb3FzNWd5LTc1T1NGVkpnOXVva3NnMk1UWnNuc2JWUjFxdVRjSHJCUmxwWHBTbGo3LW9sdWxoTmNlMXlrSXYzaFhmU1hERmp4T2RJOG1rS2RxZ1RoV29tTzM4TnVyOG1RTmxfMTEwWXlCMXJ6ZUJLTnd2aDVxcXE5TElISHVBakFidTcxaDZSS0ZXdjluREk3aERlYnkyOGpTRGhpeEV5cTAwOGhRZW5mOHlPU3YtSm94d1JyWWdMY1MzNU5DMEJXdlJTcVpJQmtCMmdEcA?oc=5" target="_blank">Спутниковый интернет на борту самолетов Air Astana может появиться в конце 2026 года - The Village Казахстан</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 07.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Спутниковый интернет на борту самолетов Air Astana может появиться в конце 2026 года - The Village Казахстан</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-07" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQXpJS3lYaDBrb1AwZU9DRVBBZHdCVmxsMm1jZWF2SDducGlreEp1RFcyVkszTUpMVXp3R1JSVC1hLUJEM0E3czdkQnFLTmllWnZGcVg1UWhldjZobGcxWHM2UTlsNG9jeEgyU2k4Zy13X2NNNWFBZDNpSy1JNl9WS2g2blJWNjY0?oc=5" target="_blank">В самолетах Air Astana может появится интернет - Bizmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 07.07.2026 05:58</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">В самолетах Air Astana может появится интернет - Bizmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbHZTYklJTzdndGdWRlRCWW9XdTJZTktYSGNtcWNjd2x3eENmQjlvNVFFbGpFdWJUdHVOQzdqNmxRZS1wck5TZ0hzejBlV2xxbXFnQ0xWci1vbUNSWmJLSmsyR05Eb0M5dmRXU2prY09rU1dmOVl4YURKeXNaNUx6U1F5VjRhRHRia3NDMGg3YXJ3dGtZZkREZ3VJU2VkQ29EOFZYVEQ5WnZoekUzeDFvWFBROWF6ODlJT3JIOHFXazlyVmc?oc=5" target="_blank">Токаев указал Air Astana на частые жалобы казахстанцев по поводу задержек рейсов - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 01.07.2026 10:12</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Токаев указал Air Astana на частые жалобы казахстанцев по поводу задержек рейсов - NUR.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-28" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPR0pqcHE5eWo1TmJYcXlvTnFUUXNQMkhGM3FvTXByT1Y5MlJWdFZzdkM2U1RaWmYySjRZSV92SVpfdjVGdHZuOWdmTk15WWxHWDEtLU90QkRJbE52Ml9IVTR4WmwycUd2NTdwdERXWkM0N1Q5NGtVNURidDUxRVQxRy1wRF9kSHlvakkwVGllb1rSAZYBQVVfeXFMT2toaW9UZWMySUxuSkE4aVVpem1sbFptTWpoUXluTmZ4dHlWQlk1OEdJcC1LTGdWT09aQ0R2S2dvWGFaNi1VeDMyb3BzckQ2S3dsbC1WNkFOTE5IRlFtVmthaWcyQ2xuVEZUSVV2aDd5S3FLZ2lrRTUxaXROTURDZ25FTHA0R092Qldsa0FwT0RNZnliSVJB?oc=5" target="_blank">Air Astana отменяет рейсы на Ближний Восток - 24.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 28.02.2026 08:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana отменяет рейсы на Ближний Восток - 24.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-07" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFB2SXNhRWhIak1WVk1MLUV6NFFxVUFMVVlCa0ZDZFVyVGRZMGp1MklOS3NZVUxqTm1lQ3JYVUpTaDV1N2hxdWNEV2JR?oc=5" target="_blank">Сотни новых авто Changan везут через Казахстан в суперконтейнерах: КТЖ запустила новый проект - Ак Жайык</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 07.07.2026 06:13</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Сотни новых авто Changan везут через Казахстан в суперконтейнерах: КТЖ запустила новый проект - Ак Жайык</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-07-07" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-07/kak-izmenilas-sistema-zakupok-samruk-kazyna-za-dva-desyatiletiya/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kak-izmenilas-sistema-zakupok-samruk-kazyna-za-dva-desyatiletiya" target="_blank">Как изменилась система закупок «Самрук-Казына» за два десятилетия</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.07.2026 05:16</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Как изменилась система закупок «Самрук-Казына» за два десятилетия</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-07" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://vlast.kz/novosti/69997-gpz-v-zanaozene-postroat-v-fevrale-2027-goda-naladka-zajmet-do-polugoda.html" target="_blank">​ГПЗ в Жанаозене построят в феврале 2027 года, наладка займет до полугода</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 07.07.2026 12:08</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">​ГПЗ в Жанаозене построят в феврале 2027 года, наладка займет до полугода</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-07" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://vlast.kz/novosti/69995-air-astana-v-iv-kvartale-etogo-goda-nacnet-testirovat-sputnikovyj-internet-na-bortu-svoih-samoletov.html" target="_blank">Air Astana в IV квартале этого года начнет тестировать спутниковый интернет на борту своих самолетов</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 07.07.2026 11:37</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana в IV квартале этого года начнет тестировать спутниковый интернет на борту своих самолетов</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -203,8 +362,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-05';
-  document.getElementById('date-to').value   = '2026-07-06';
+  document.getElementById('date-from').value = '2025-11-28';
+  document.getElementById('date-to').value   = '2026-07-07';
   applyFilters();
 }
 
