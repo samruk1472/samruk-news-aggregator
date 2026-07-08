@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 08.07.2026 15:23</div>
+  <div class="meta">2 источников · Обновлено: 08.07.2026 17:17</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">17</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">15</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-25">
+      <input type="date" id="date-from" value="2026-03-19">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-08">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,13 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -108,201 +104,53 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxNdUIzUElYY1RhTFRWVDc0VVJfcFFFaVZMa1hfUXI0bUFoS0JDNGRnaVpmT3pCSTR2N0ZRZmZHeGthR2R1Z1RFZmY5NW0zTTMyenZ4YmxTOW5YYWNpY29QMHZEYXBhUzVZX0RIVlBLb3NGMnBGOGdkaThPVG5UZ0t2SjN5R2gwY0h4ZUZlemlqZDIxR3I1bUo0ZFpQNVRaZjJTTEtYbFFiU2xlQWZlNGh4TEUtTi1mRkk5MVJEQnJJWE9ORnp4eG1B0gHMAUFVX3lxTE0yYlNBMml6b0lSeWhMUTNEMjN5U1plc2tHenp6SWlQdmlDWGJ3TWllNTN0dm5PNzRhcmlJNXJmUmotOUdNM051S0h5YXE5OE9rWmdIRU9QbTR3MWVTYlowQlFMSFltcXMwbHQtYWl0STE3WHJKeVR2c0g0QWVxblB6YTk5VGFvOThDZXdfdXBSNjRLQUZQamxCZ2RLZHB4MUVNVE9YczJrUE9tVnF1Z3liM2J0UHJuUll3REdhanFWcXEzU2Zqd2JReXJ5TA?oc=5" target="_blank">Хвалят за дома и музеи, молчат про бизнес и долги: чем запомнился Алдыбергенов в КТЖ - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 08.07.2026 11:52</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Хвалят за дома и музеи, молчат про бизнес и долги: чем запомнился Алдыбергенов в КТЖ - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-08" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxOOERzSi1tUVFNOGtlTGhiQlBBMEhqc2xLQ0ZEejhudXhnc0tBZWdQMlF6LW1oNDFSVTE2WTFpV2FTdXM1dFE4RDQ4YVBFYTFYUDBqcWMwVURWVXV4MGE3SDM3YS1RclZIUnVTTFoyZ0NucG93d3NWNm8yX0NYcWE5VnNmVFFYcWtNcWg4U1RSMXNMQXJMZXVDcDJDaFRleVFXNG1ybTN1VVY5Q19HMFd0akJlODhVSDc0M0tYM2V0R1pmT3dmYjlydzZFTFhwN0Y1ckdPdkRwRmd3emZMaE91VTZicGRJR2xZY3dRSGdHQ3pVZ29L0gH6AUFVX3lxTE9Ic0Q5Mm9HU1lwcTNSMm9oaXVzbHN2dENSZy1BSjdSczJtaEZDd3lsLTlWU21tZDY1SFRFRkxpa2E2SnhWTTBLN2s5S1d6MHBJRW5sNGRnNVk5S2ZnRThVYklTa1o0MnJvSE1MSWFCamJnbFFoQkhLNUFUVFROOGc0MURvUGN1YXBWUHh6RlhLOUUySGZ6UVBfRjdPUmxTUVJmelBObEZsMWN2VUZQb2o4TUlHQjFheEZoTmpxc2FKSFppU2dCTDExVU1UcUZSUW5nenA0Q3hVV3hzN3NLYWpqdHlOVjUxeHZ1UzJKaHk1QzBNbXNpSjVtRXc?oc=5" target="_blank">Агентство по защите конкуренции привлекло Air Astana к штрафу в 876 млн тенге - 24.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 08.06.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Агентство по защите конкуренции привлекло Air Astana к штрафу в 876 млн тенге - 24.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(15)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
     <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-08/shlc-hvalyat-za-doma-i-muzei-molchat-pro-biznes-i-dolgi-chem-zapomnilsya-aldybergenov-v-ktzh/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-hvalyat-za-doma-i-muzei-molchat-pro-biznes-i-dolgi-chem-zapomnilsya-aldybergenov-v-ktzh" target="_blank">Хвалят за дома и музеи, молчат про бизнес и долги: чем запомнился Алдыбергенов в КТЖ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 08.07.2026 11:51</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Хвалят за дома и музеи, молчат про бизнес и долги: чем запомнился Алдыбергенов в КТЖ</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://egemen.kz/article/416749-qazaqstan-temir-zholy-kompaniyasy-basshysynynh-mindetin-atqarushy-taghayyndaldy" target="_blank">«Қазақстан темір жолы» компаниясы басшысының міндетін атқарушы тағайындалды</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Egemen.kz</span>
-        <span class="date">📅 08.07.2026 17:59</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">«Қазақстан темір жолы» компаниясы басшысының міндетін атқарушы тағайындалды</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPU2pDOWg2VEppaDR5MmtTY2tUVmF6VnVKUzFKZlkxTFh1d3JKLUhleG4zLXZrNnNlQXpJMUNPTFJGbHF3dGFuNzR5S1dSVnRxRUUtZmY5NkN6cFpJNHZRdEFKamFEa25Hcld6cEo5ZThVUmxoV0lIUERGODh1aGliaU12TTVrR0pkS2hEOUVvZ0o0SVBBdXpPNTNJMUlQSkRpOXRueVI5T0l2bUwzNkk4Y0EwQVJCZjFGanZr0gG7AUFVX3lxTE9TakM5aDZUSmloNHkya1Nja1RWYXpWdUpTMUpmWTFMWHV3ckotSGV4bjMtdms2c2VBekkxQ09MUkZscXd0YW43NHlLV1JWdHFFRS1mZjk2Q3pwWkk0dlF0QUpqYURrbkdyV3pwSjllOFVSbGhXSUhQREY4OHVoaWJpTXZNNWtHSmRLaEQ5RW9nSjRJUEF1ek81M0kxSVBKRGk5dG55UjlPSXZtTDM2SThjQTBBUkJmMUZqdms?oc=5" target="_blank">ОСДП предложила ликвидировать Самрук-Казына и передать его функции министерствам - BAQ.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 08.07.2026 11:15</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">ОСДП предложила ликвидировать Самрук-Казына и передать его функции министерствам - BAQ.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFA4c0RWUDlzM3AzUWRNam15TFQyNlNYVUYxajVlc1Rjc3R5SXJ6REhMRy0zcTVUdnhXa1JmNGptbFB0dTRIaUR1MWwwWjJXQUhDZ3NrM09TeTh6cjJobWE4UjYzWWNIb2E4Q3hVTjM3dzU?oc=5" target="_blank">Казахстанская авиакомпания Air Astana запустила рейсы по маршруту Алматы-Шанхай - Жэньминь жибао</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.04.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Казахстанская авиакомпания Air Astana запустила рейсы по маршруту Алматы-Шанхай - Жэньминь жибао</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOZ1M0cExLaElsUTdFYnV3OWFlTkJfOU9OQzFmeXdKTy15bUlYV2N0aWgxSWppZHFqS2c1R2pzMU5CQlZ2aTlremNtN0dhVEFMWWlXNlh3S1B2YjhlcHVNNVNnaVdUb1dlLWlWdXRiakxHbHFpUzB6LWdwaWd3d0FmMldoYnoyWXpENk80QnBBZFo1Q1RqbTB5MjdrUdIBoAFBVV95cUxPbTE0TzUxeHlWQTBlZHN0Um9weG14by1PNWFXZF9meXZON1dQYjVEamJYQ1g4NGtDOFd0c2hxN1ZjS0xpengwdF9oUWl4T1BKc19tQXZ2bjB5ZFlKSzNPRmY5aXY3c2E0LXlkeWNOcThUYWZOU3hGRmVMbkpXbjNSWlQ2TWRjV3A4V2JyMGhRaW1JNGdmOVREZ3JYQTFvTE9R?oc=5" target="_blank">Исполняющим обязанности главы КТЖ стал Бауыржан Урынбасаров - Vlast.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNNVFMNEpMeGc2T1h3RDB0TnNDN0I1MXdpRVBDUUQ2TGUzM00wZUhJTmV2SFNsUHJOQk9LNDJuMlZOODFXNUhoS1lzS2N2dndrdENWTVFvSEdlVWFmbUFPUDczVWVhYzdrLThDR0J3YnM5dFltcUZqUExnWFFqN0psdEt5TVhGV3d0U3MtWkY4cUZWVVFLazRpOFhmdElHU0ZPTUdr0gGoAUFVX3lxTE1fOVdBc2V4aTVEYmJjUzFuR0I2U1BxMlBqQ21hRS1XQk11XzRsdnNTdVgxb053bXdPV0cwYlJrNXN1VzN0cTNqZ3FieG8tTmZlRE42UlkzSTR1Ukx1N0xuVnN5VWVtSXkxMlE1TTRsTDE0R2JuNk9ueEV4WFhDc3FybWRDeV9JenF5dmpnd2tfa1FYOEo2ckdWRkFWZnVLQ005R21FbUp4bg?oc=5" target="_blank">Стало известно, кто будет исполнять обязанности главы КТЖ - Новости Zakon.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 10:52</span>
+        <span class="date">📅 08.07.2026 06:59</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Исполняющим обязанности главы КТЖ стал Бауыржан Урынбасаров - Vlast.kz</div>
+      <div class="art-summary">Стало известно, кто будет исполнять обязанности главы КТЖ - Новости Zakon.kz</div>
     </div>
     
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNcnZhSlVzTXV2WWRubjVZSVk4N1BGNmJOOHQyUjVzaTlBUjBXUE1ITHBGQ2JWZ0ZWSU1hTERHUVVLNTVnNUstNDUyLW9kd1U3S1RpWmlFc2Z2QWxBQV9ucmVqSjA1TnN4YUpGaEFhcjhkbGNLeGdYcm9yRUcxT3R0dDZfaE0?oc=5" target="_blank">Назначен исполняющий обязанности главы КТЖ - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 14:02</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Назначен исполняющий обязанности главы КТЖ - Inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPZ0Z3OWl3X2JYWXJGa3JrQ05FNHZKQnpSSEVMUVBzWWFNTno3dVk2Ri01SFNWY1I2RXQ1OEI4NncxVWpscHF3Wjc2VjRaM0dBa2pZcy0wY0N1Yy1Ic29aenlCdmVndFZKMThITEs1Q1VxWVJ6VW52emVYNkJfci1PVTZvT2hxN0tsLVRqMWhwMA?oc=5" target="_blank">Главу КТЖ Талгата Алдыбергенова освободили от должности - kokshetau.asia</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 06:57</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Главу КТЖ Талгата Алдыбергенова освободили от должности - kokshetau.asia</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE42eUFpZXBiVmdYYjkydGtwbDFXV2s3dXAyYUVZbVYtb2U1T2VVOHdxWk45X0VIT3NMeGZWQ2hNZjF1SDd0c3pSRzlVeTNjbXNTS2hWOXVLcTFMSkJzalQzanlPdmZTbm56bHFnSlNCaHI3TlpBeXRnSG1KeUc?oc=5" target="_blank">Бауыржан Урынбасаров назначен и.о. главы КТЖ - КазТАГ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 08:25</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Бауыржан Урынбасаров назначен и.о. главы КТЖ - КазТАГ</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1MLXAtdlRtc2U4MXJ1MnIyczdNUFd6WUx5OWt5bTBqN21xNFNOSWEzR3BURmVHVXNvaXYzVnhvSHZ2TlpBR0ctQmZOV3F3eUxZQ3FSeXNxVDNpcmstaDV2STJZLUptYmNwa25rQg?oc=5" target="_blank">Кто будет руководить КТЖ? - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 08:02</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Кто будет руководить КТЖ? - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNRWU5T0M5RUs0aEU5ZDNBN2pQYjFMcnV0Rnd6SS1IR2FPSWw5WXhwdHlIY0liUXZFeXFRVnlsd25leW41Vm9qSExSYnduSkxKTnVSVkZmM05uTUlhdDhyN2dMckt6VXNlVWVmUHp0bFB4eUZWbngtdE5scVNBSjAzVTlKZ2dVVmNGeFlleGJnSDVzQmVHdHJBSUp3?oc=5" target="_blank">Талгат Алдыбергенов покинул пост главы КТЖ - Noks.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 09:02</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Талгат Алдыбергенов покинул пост главы КТЖ - Noks.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNa0drZXZBUmlYVWkyekVTVDhFd0J6TVpqYll6cUlqYURjay1oekJqWEVmQ2h4djZGeUxlV1FpbW9wQ2FqenFhY3cxMTJyU296bVoxVnBRY2tKcnZUUWhwRVAxTlloZEl6YmhCZV9rZG02ZnB2UnFHZVpHRkp2SVR0QUhQRVhCbUpm0gGIAUFVX3lxTE1rR2tldkFSaVhVaTJ6RVNUOEV3QnpNWmpiWXpxSWphRGNrLWh6QmpYRWZDaHh2NkZ5TGVXUWltb3BDYWp6cWFjdzExMnJTb3ptWjFWcFFja0pydlRRaHBFUDFOWWhkSXpiaEJlX2tkbTZmcHZScUdlWkdGSnZJVHRBSFBFWEJtSmY?oc=5" target="_blank">Стало известно, кто временно возглавил КТЖ - BAQ.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 12:15</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Стало известно, кто временно возглавил КТЖ - BAQ.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5UNTVROWJqOTRaN0pYdEhONFFONGRZVGRCQ2FEbmptcHFnUDZUYWs1VGdDSGZlbk1IUU9oS3BlZnB4TWJTZmkyMFBn?oc=5" target="_blank">​Глава КТЖ покинул свой пост - Ак Жайык</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 04:46</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">​Глава КТЖ покинул свой пост - Ак Жайык</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxObFUtXzdXV3JKWmlieldUbzkzSzI1cWw5amx4Xzh2c0VEelRfTXRyVlBnb1JNT2kxX2ZMRC01NjhxY2x6LVpiNnN2NlJUMHM4b3l4MjdiWXdFa1BSX0NDblk2dXdlVnd5Qm5iRjZmZVdNbWI4bk5JSmstc3FZSEdvZmRHWENsVno3RXVNcFRRVmlIMzBYTkcyQ0h3czhuQ1I5Nk9peGZob2tCbjVuR212cWVCclMwTVpvSk12YQ?oc=5" target="_blank">«Он погиб на работе»: мать 22-летнего сотрудника КТЖ оспаривает официальную версию смерти - paddock.pro</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 14:39</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">«Он погиб на работе»: мать 22-летнего сотрудника КТЖ оспаривает официальную версию смерти - paddock.pro</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOTkdHN1FoRDRJZEI2ei1JT0p4dHBkOF9SczE3UlF5SVFZMXhUUUlYOVhBWHBGMDZTU3hXQjQ1WlhobENQOFdhYnlUYWZab2pOTnFoUFNqQVdkaDU2TlhNUmJoaHplWmRncmZBVGRBSTRDRU5jMUs5MkFvR21hUHlUc0xaMnVQRWhXcUw2eGVvX3FtQQ?oc=5" target="_blank">Председатель правления КТЖ Талгат Алдыбергенов снят с поста - 365info.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 05:20</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Председатель правления КТЖ Талгат Алдыбергенов снят с поста - 365info.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-25" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwJBVV95cUxPd2RGOWJ6cTRDOEJWWThwUmNrZm91NHlBaGNjNzBHdURHY05aQkI5a1VHX3BBZlRBck1WRGpGcDhsSlRBTFJ3b05tYmR2aFdJdlpwaWd4bmtLcER0VmNmYXRtQ2dKVEplZlVWSGFaV3l6bnFNTlp0ODB2blJCQXZ0V3NiWnZHWGpjZDFuT05oRmpyY19kVVljT2hjS3R3VEtqbmJ0S2JmdXJhbWRiZEt5b2dBNmM4bTE0WFAxUmQ2Q2FobjMxVllUSHNJMGROcE4zeHo0QXM1cnpjeXpLSGxCenZLbm5uYnFuSEdKeTIyVy12YnY1ZUh1RG5TdVduNFNlM2NzZmNTSDlVZm8?oc=5" target="_blank">&#34;Казахтелеком&#34; объявляет о переходе к новой стратегической модели: от оператора связи - к инфраструктурному провайдеру ИИ-экономики - NUR.KZ</a></div>
+    <div class="article" data-date="2026-04-29" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQMUpLd1BtZXVhLWhFVlV5NGNQdG1WeVZLQ21Yd1pBc3pXX2prNWgwdS14X2pZVmoyX2VsNGQ4RURjb1N3S0luOGdRMVV3T25idkF3N0RyNUlvYjJ6emNibzAtNmhZUzQ4M0Znb2Y2YmFkclllRVNhVkdVbkViRks2ZUNPMC1qbkt2QTZQTlVfZnJscnQ5eDBoRHloQjdrNE9HOXlIcDJLalkxbVRf0gGyAUFVX3lxTE4zVkRla1RXZXhxV2d6MmVGWUNMQ1JrSTZOcm1nc3MzcEx0aE93ZEpvSHNFSkFFcnJpeXlLaUVPcm91SGQ3dEs5QWVIZ0VJNG0wOFF3WWhBQUhQMFRxSjVsTHRHZXZCOTJhZ0I5TmVUbTVpNzQ2VzIyXzhSbzUwejlLZk1OcmxIaWFvYUN1OTZIeDhiMmVadkFWNF9iYWtHYXNYdW9pTWR5XzgxODd2aVJSMXc?oc=5" target="_blank">АО &#34;Самрук-Қазына&#34; сообщает о приобретении акций АО &#34;Казахтелеком&#34; - Новости Zakon.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 25.02.2026 08:00</span>
+        <span class="date">📅 29.04.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; объявляет о переходе к новой стратегической модели: от оператора связи - к инфраструктурному провайдеру ИИ-экономики - NUR.KZ</div>
+      <div class="art-summary">АО &#34;Самрук-Қазына&#34; сообщает о приобретении акций АО &#34;Казахтелеком&#34; - Новости Zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-19" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxNNml2clhWMUs0dUNyZkh4WmZIRE5rTG9TODBkRXgtWS1nckt1MzQ0Vl94dHNlWDVBd2MzRkt5d3ZaZ2V3VVJ1bzgwNzZha2xKbVRjY2c0d01ZcE1pVkp3ZEROUHp2dmhvdkg3aEI2SFhwSEZ0MDBkNU9xMEJtQ2Znd3Z0ZHNwVHl4UWJPR19RNUhxY0JJT3VjYlJGMDd3S0dycURFQ0VpQ1ltUWVvZVpwTC1RcFBsWWkwRDVDUmdISQ?oc=5" target="_blank">Kcell, Beeline, Tele2, Казахтелеком и ЕНПФ упомянули в предполагаемой утечке китайских документов - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 19.03.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Kcell, Beeline, Tele2, Казахтелеком и ЕНПФ упомянули в предполагаемой утечке китайских документов - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-28" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPdGhsNlJVMC1kWklIOXh5RFJHYV9ibE1wVWRrNjl5b3NIQVlsY29mNzdROFp0RTRLbWFjTWRkV1dfTml5dzhOR3c3UmVKMzFtblZ4TjRIekVjdGc4eHVUamRUa2ZyTDN2VWJTbmYxaVJfYUptb00yTlFnLU1sVHZhX0ZJY0QwLVhvaUlTUHB5QXRkaHkw?oc=5" target="_blank">Казахтелеком получил 700 млн чистого убытка за I квартал - Bizmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 28.05.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Казахтелеком получил 700 млн чистого убытка за I квартал - Bizmedia.kz</div>
     </div>
     
   </div>
@@ -366,7 +214,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-25';
+  document.getElementById('date-from').value = '2026-03-19';
   document.getElementById('date-to').value   = '2026-07-08';
   applyFilters();
 }
