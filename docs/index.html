@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 08.07.2026 04:15</div>
+  <div class="meta">6 источников · Обновлено: 08.07.2026 06:23</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">23</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">20</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-18">
+      <input type="date" id="date-from" value="2026-07-08">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-08">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -105,17 +107,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-03-18" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxONVZieEpwenduOVJXZjdkVXJhdndmYkp1QlpRMXdSS2pqRTVfZzZ3WnlJODlGMV9ZX2F5aTlHMnFSMmJVb0N6VXc2UkZxMm1WUmFnYzZjcWE4N3NSVnRnRE03RXNnSU83T1FqNEw1R1Fabkg0bUhqS0I0QUdPSTNuZWZ2bVB6dHF1NTF0Ml9uWDM2Q3RxX0RB?oc=5" target="_blank">КТЖ обязали изменить правила приписки вагонов после жалоб бизнеса - BES.media</a></div>
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-08/cntr-kitayskiye-avtomobili-povezut-v-rossiyu-cherez-kazakhstan-v-novykh-spetskonteynerakh/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=cntr-kitayskiye-avtomobili-povezut-v-rossiyu-cherez-kazakhstan-v-novykh-spetskonteynerakh" target="_blank">Китайские авто повезут в Россию через Казахстан в спецконтейнерах</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 18.03.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 08.07.2026 05:40</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ обязали изменить правила приписки вагонов после жалоб бизнеса - BES.media</div>
+      <div class="art-summary">Китайские авто повезут в Россию через Казахстан в спецконтейнерах</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/novosti/70016-talgata-aldybergenova-snali-s-posta-glavy-kazahstan-temir-zoly.html" target="_blank">Талгата Алдыбергенова сняли с поста главы «Казахстан Темир Жолы»</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 08.07.2026 10:16</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Талгата Алдыбергенова сняли с поста главы «Казахстан Темир Жолы»</div>
     </div>
     
   </div>
@@ -123,22 +136,247 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(20)</span></div>
     
-    <div class="article" data-date="2026-07-08" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFB0WDBHc2tpa0VjT1RJYkZkSTVBdmx0UFZTWXhDOWc5LWdXOFJKNmNYX3RqeUlucm9uYWhXTVRBYXgxOHkyb2dzbEZ0ZC1sSE1nQnlNTk55dUljT1RXWFBPbXVSUQ?oc=5" target="_blank">КазМунайГаз увеличит производство товарного газа до 4,5 млрд кубометров в год - Energyland.info</a></div>
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://egemen.kz/article/416717-qtzh-basshysy-talghat-aldybergenov-qyzmetinen-bosatyldy" target="_blank">ҚТЖ басшысы Талғат Алдыбергенов қызметінен босатылды</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 08.07.2026 03:08</span>
+        <span class="src">📰 Egemen.kz</span>
+        <span class="date">📅 08.07.2026 10:52</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КазМунайГаз увеличит производство товарного газа до 4,5 млрд кубометров в год - Energyland.info</div>
+      <div class="art-summary">ҚТЖ басшысы Талғат Алдыбергенов қызметінен босатылды</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="http://profit.kz/news/74158/aza-stan-Respublikasi-Zhasandi-intellekt-zh-ne-cifrli-damu-ministrl-g-nde-sha-tarda-internett-ske-osu-m-seles-tal-ilandi/" target="_blank">Қазақстан Республикасы Жасанды интеллект және цифрлық даму министрлігінде ұшақтарда интернетті іске қосу мәселесі талқыланды</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Profit.kz</span>
+        <span class="date">📅 08.07.2026 04:04</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Қазақстан Республикасы Жасанды интеллект және цифрлық даму министрлігінде ұшақтарда интернетті іске қосу мәселесі талқыланды</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQdy0zVm9pVllYTkNJYldXa0xvOG9UQUlyeXhnX1huU3V3NjRpWnVJMU50elRqMEdnMloyM1dtcUk0Q3BWd1JLVUlPYU1ZM2xfdk8xaW5yZHo4ODlWb3dnTXVzQkMyWFBDQlFJRWxqR3dLN3A5VXViMVdVdXFQNDU2blFib1A2UlY0LTJ6QmpOMjY3YVpCeWRDRkFzeVU2RTBkYnZESGVEdXN6NzdMMVpDTTRtaG1oWGljX2ZhUGxB?oc=5" target="_blank">Талгат Алдыбергенов снят с должности предправления Қазақстан темір жолы - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 08.07.2026 05:03</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгат Алдыбергенов снят с должности предправления Қазақстан темір жолы - Kapital.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPODh5MGdycmxzT0xPTHFCY0xhaDhvRG82YTdPUHJ1M0haT1d5eUhULW1GdmVpQXE2VEIzR2UxSkJMUDBUcC1FTmZVQWVEVjBJd3JSc3QtU0FKRGFVLXdmR21TOGdUZHQzN3R0ckpZQUhJYkdiZUhxbWFlOHVGUnBEZExTeTkzRzdkb0tNejR3?oc=5" target="_blank">Талгата Алдыбергенова освободили от должности главы КТЖ - Informburo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 08.07.2026 05:13</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгата Алдыбергенова освободили от должности главы КТЖ - Informburo.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPektKRWt2T3AxZEVmMGpEMG44THNwS2NSUjRSU0l5UVU3MzR6cE9YTDREajEzOGE2VmZxVlNYdEh2ZEpSbmgxR2hDTUtvVGtVcHV3SkJJMmgzTWgtX0w0bEZQRFpSNzJfdzJOenRySWhmekQ0UzdiWllyOHY0WG9fYlZxSXEzVDhZaGxkREYwSUFVTHN6REV2RTFpZE9PU3h1LVQ0Mm5hTVDSAaoBQVVfeXFMTUV6cEhHZVdoLUVLRFpVdXN3TEhWakdlb2dSQS1tbHE5MVZIam1GcTE1OGZnSHFPb1ZpQm5TNTBoMkNITFRySnFLTUk4eXQzbkEzbFhWNTFicEJiV0J4eXdCREh3dXA4RTJ5Zl9sUmo4VERQdGY5LW83Q3FJUEtYemdNeDRXa3lMTTk0bm5qMUUtdTFfYzdrZnFqWm9rd3hrdUpIQkxmeUljWmc?oc=5" target="_blank">Талгата Алдыбергенова сняли с должности председателя правления КТЖ - Казинформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 08.07.2026 05:15</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгата Алдыбергенова сняли с должности председателя правления КТЖ - Казинформ</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOejdxOWZZR050RTYwdFZDQmJETnpWcHE4dVhVR1dRcnFwOVd2WnNjQ29ZZC10VlJiRWhlUWw2ZVVaSGZtT1lOYmtwbjYzS0tUeExPZUg3TGVSQndUVk5aVF8zemViN1RKVmt5QURGWGFEVGwxdlp2RUl1LXZxaDE2RA?oc=5" target="_blank">Талгат Алдыбергенов покинул пост главы КТЖ - Bizmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 08.07.2026 05:14</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгат Алдыбергенов покинул пост главы КТЖ - Bizmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNMGVtT2RVYWdidFR0eHZPRW5XTGtlcjJLRmx3YUhGUVJxdGhwejc2a2JtV3NsQVg1dnA2U1RYb2o0V1NiYnlOd2RBc0FFaldQT2kzMGQ3QUhHeEZuczM0NkFJUGwtZHA1VTlhSnc4alpRNHZXQjZnUDc4QWw5V2lIcGJn0gGKAUFVX3lxTFA1eTZxeVMyTmJTdzgyeGg1Zm1mb2dYenNMY2dKYlBoZUt0S3U0MEN6WEd4cUZob1VKYnlmdnBwMnlLOHUtamptUGlTZ0xIa1QzbEQ5TjVLXzZ3NjR4U0hkR29SYW1tOWV5SlNVTzNLMGk4aDBmRWxKTm9JUk5VVzNtOW1TV2lIYVBrdw?oc=5" target="_blank">Председателя правления КТЖ сняли с должности - Central Media 24/7</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 08.07.2026 06:07</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Председателя правления КТЖ сняли с должности - Central Media 24/7</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNMUVmd2ZBMkpleHZfZG9rTVdWNlpPUnl5NWxESnFPWlpVYmNlX0Y5eEhtLUMxUnhfTUJqTGhKWFZSYmFmMkIzbjA5b2UwUjVSVDlQUVNvYnhST1dSUHJYTjlxRW1UWHVCTENPTUFwQlpmVEFQQk0tT1BqM2RENkl5NjRNdVNWaF9XTmdGV1l6c2rSAZYBQVVfeXFMTm0wcTUxZU8wVWpibEM4OWlBUEZVWXRkVU5HeEM3azBTRXVHYXZLN04xYmJicG5TNmY0OWxiSVRnM2I3Y1NIOTdBeWVvTWFhLTB3U3pjUjkydkZkVkwxUTVkQTZ1TlJibjBMdFdZQUgxdmNSYkFwUmY3Um9XZS1nbnl2NjBCTTRQbWJtb1dENTA0N2RnekFn?oc=5" target="_blank">Талгат Алдыбергенов снят с поста главы КТЖ - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 08.07.2026 03:51</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгат Алдыбергенов снят с поста главы КТЖ - Новости Zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQRzAzbEtGR3FfSVBPZDVTRktIc09GbDQxU2xTVkh6VXVrQjZSdE4wSWhObTNaUlpSb24tVzFJRWtZQ0xRU0toQlpiNVI0emtxOXR2a1FjOHhiWE1UUWJCd2VMZUxYTHU0TGtVOGhsclpmTlYxbzY3ckFYYUU0bVZheWpvc3EzeVFJQzFwMnJnSkE1NUl0NVhjZlpacnQ2MFUtdDQyZVF6c3RHU3pKbWZleWtn0gG3AUFVX3lxTE9zU1RfT0N0UEFxdHJ3Um5DVGNUUS1jMXRnczJjUzliNWlOb2RjdVo2dmg3OUNqQlJKYU1hSktVMzV3Y1JJY3pXYkE1Ym4ycXlmZnNiaDVTcEtJOXRXb2ZIY3dIaFA2elZ4Q3FHd2hlMl9aMlVhcnlYZVZFc1JPSzMzZmRxaV9ZLWh5WExnRHIwU3dEWTRSd3JyYUZfTGpNRHY1bHAtM0ZZUWxtNlpPTlYwSUVTTlBFbw?oc=5" target="_blank">Талгата Алдыбергенова сняли с должности председателя правления КТЖ - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 08.07.2026 05:25</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгата Алдыбергенова сняли с должности председателя правления КТЖ - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOMkx1X1ZXekdIQk1lZ2pHaXl3R2hOSi1oS2NSejVPbTUtcUpHdFBpZk80WERVaUlRSWtBNW9uRzBtSWN1cUkzdUxTci1rbzVYLUtyTVlITjlpVGVUM19tZ3l5eEVQNVFvSWUwdmJ5SWNBR09qOV9FWnJ6X2kyRl9xNHpicXpVX3c2RWZ4VDlXMm9sT01kbEt0b2ZhWGl2dXhGaU03X1JZODIweS1jajhmQXpR?oc=5" target="_blank">Талгат Алдыбергенов покинул пост председателя правления КТЖ - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 08.07.2026 05:13</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгат Алдыбергенов покинул пост председателя правления КТЖ - NUR.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOSmRDVFVqQzNhSnNFaEFkSEFKZF83VXYwcktsZEpmWWotMk9jblk3aVJ3b1NyVndZZklIaFd1TTFBSVNUM0l5bm54THlvU3hvbS1XVjRXWFpDY2stUXphZ3hSZml4RzZMVUFUaVFzUzV6SGR5OFJWTnZReVlrR1RuYjlIU1Nia21VWWttcndLWGlJaDIwQkZ4eTB3?oc=5" target="_blank">Талгата Алдыбергенова сняли с поста главы КТЖ - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 04:56</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгата Алдыбергенова сняли с поста главы КТЖ - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNbFNjU0VHaTZlNlhJNmlIbGZnOExWZ3BwNjFjX2I3UWFMcG1rdDhuTUkwb0hJNVRZYnJEYVl6dDVHZ1dVbGNtcEVVTFhLWmE2SDFvd2NpSm52Yl9TUmxNVHZfLS02UU9Td1dLQzFZRUVHTnRkeGMteHJJTjY3THZBYTg0UGFZRENySGg3V0pFR1E2SC10bGdn?oc=5" target="_blank">Талгат Алдыбергенов покинул пост главы КТЖ спустя всего год работы - Orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 05:04</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгат Алдыбергенов покинул пост главы КТЖ спустя всего год работы - Orda.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQXzFmdXJhQnhBZTIya1FuVDlMT0E5TUhtbHY2X2d3cms1Z1lDSXJBR0x0b2k1V24xY1V2SThLeHVsdUlBQkFfcXFmT3I5M0xyczNob1doTWZzeUFUS25GM1FKN0ZZdHB0MUZtMlNhY09sbFJJRGtBVVFRZGZ2UFU0em1BTG1JYWYtWXBvZm93?oc=5" target="_blank">«Самрук-Қазына» прекратило полномочия главы КТЖ - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 05:12</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">«Самрук-Қазына» прекратило полномочия главы КТЖ - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSTJHcmdqc2RQaXl3dUhLX0UtWkhRMHlScXhyWWRGN0lrOVdBblVFU2Z1UnpfUGtTZzIxQnk4YjlQemw1Vmd5TUxXeGhXdE8teTJ2LWRHX1htUVRkaURtS01Db1VyOTl1N1ZwREotVmRvdVNMLVRzdFhrWTJxNGNaNzY1ejIwWl9P0gGOAUFVX3lxTE9BUDZWYnh6NjBZajgwZThnM19aODNpMVFsQVpfbEVpeUdDSE1XMERpNXNRMkhSS0NYSkhrdURxcXFxdEVPdkRySDJCZUJla0dEdklQZmIyUkdYNTJiOXlOcG5TTzdabzF3eUNwUmNucEhBdFVQRWgyYWRzZ3lDMi1WNEJZdVNvOUEwbEtXbmc?oc=5" target="_blank">Главу КТЖ сняли с должности: что известно - Qaz365.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 05:06</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Главу КТЖ сняли с должности: что известно - Qaz365.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNYWdhZUt5NmRqanlHbW9HSG1ZOWt1YTNGLW5FOFRqOE9qdERPaFF6TDYxTnNJbFpFT0RjZ0xYX2NLWWlEckNDSk9ab2NuWmRhT3hUdDdJT0JtYTZrWWJ0V2ptcVB6VTJtUElsM2VYblBQMnFsYU1Yb0o1amlGeklabDZJckoza1JQMzFFMXpMa9IBlAFBVV95cUxPWHplQU03WlQ0a0lVM21zRHliaG0wZmhTOW1jR1VRQk50MFpmdlk4SlhYcWpaRFR1Vk1ZZWpTNWJjWWk5ZHNKeXZNVzFPRlpOZ2t4bXBHX0RqU1E0ak5qRjFicFIwWGlYeEFxMWpibUI0SjJyaDI5alZHWHRaeGRpVWdMYkV2OEdWVzVzZTJaeEhIQkdR?oc=5" target="_blank">Талгат Алдыбергенов покинул пост главы КТЖ - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 04:52</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгат Алдыбергенов покинул пост главы КТЖ - Новости Zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNa2Z0aHFsb0l5bFF5eXVQeGY1ZXZlVnhwbkJTWnlkZXIyWTNNdHZhT1NGYVVUWVNyVmx3MmZZb0xHNWRHLXNuaTNCZ1I5YV9fR1JqQnQ5TTVyLXV6RnlDMjdwUnV0ZGxsX1pzMjFJRzhGdW1DOExXQXhqeHNNRWJ0SVp5T05uR0g4MklxYU9xVjA?oc=5" target="_blank">Талгат Алдыбергенов снят с должности главы КТЖ - Kazakhstan Today</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 05:06</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгат Алдыбергенов снят с должности главы КТЖ - Kazakhstan Today</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQWFhPM3hySHlydTRfUHZidkVmR3R1SjBVR1JleUlNZjFzdVV6VHRtcVBwa1ZWVS0yTzVlMkkxV0Y0R05veUw4SG5SQ0xvTVRiaWtPVWxpdDdjM1Nsc0NaZUxZZ1ZMNE5TeWszbnB3QWxJTTByN3pWeVo2aUlxSGtqWdIBjAFBVV95cUxQTll6Vm96cDRGc1BRdkZ6TW0yaU0ycmZDY1BJVlZsS25MRFBPMDBMaF85elhaampGekotamNVdk9MYjAtWEhiZlRyTnpQSFJXQzZjQkoyMXdUcFkyYTRuUzFidUFZMW9ZV1JNV1dwQXBzVF9NRllJYVhIZ3llZlllcjBYdHpBTFVxcEpWaA?oc=5" target="_blank">Талгат Алдыбергенов покинул пост главы КТЖ - BAQ.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 05:25</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгат Алдыбергенов покинул пост главы КТЖ - BAQ.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE8ySU5JVk9abUdDY1dyWVdDYkk3RXVmTmVGTzNNcFJRVGJzTjNhN0lpUzF5OU9na0o0UVFINFpVSVRndkJNVTk5RXF0eGxXSWc4Nnp6WUpINGo4N1d4TERJYjNxUGNGWGxVNmNLTWRQcEFELWJ1TTVoUHFlZXE1SWM?oc=5" target="_blank">Глава КТЖ Талгат Алдыбергенов освобожден от должности - Belles.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 05:31</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Глава КТЖ Талгат Алдыбергенов освобожден от должности - Belles.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPYVBiRHVWc1RVZTlhcTRFeTlYVFhpR1VzWThzNkFDQVdiQVh2ekxYSVV1bmRHSDdOR05pWDBrUnJsd2w0UWNqUlJqbUk2dkUzSTdhNWhxNWl4SVNOUGxZSkRqczNWOHpwYUZISVJEYy13eC1vRDdKZlZaZ0FVcjVqbA?oc=5" target="_blank">Главу КТЖ Талгата Алдыбергенова отправили в отставку. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 05:41</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Главу КТЖ Талгата Алдыбергенова отправили в отставку. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNN2JXQXQ4M2V5Mnk1azBpQ1J0M0YzeXR3Q25sZnJ1VG4xNnVRUFF5UzNROTZKVzU2Z0RGS2JpWWtuTHhKRzJyVWVOdWpXVW90dTI0aGlncmFMcXc2T2sydjJiVHNscFhyYmdFNmFnWEZBNXNYcXppTy0wSkRXTVUwNkZoUmRyenFmelU4VVF1V2tvS2R5WWN0Y2Nn?oc=5" target="_blank">Талгат Алдыбергенов покинул пост председателя правления КТЖ » Лента новостей Казахстана - Kazlenta.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 05:26</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгат Алдыбергенов покинул пост председателя правления КТЖ » Лента новостей Казахстана - Kazlenta.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-08/dlzh-talgata-aldybergenova-snyali-s-dolzhnosti-predsedatelya-pravleniya-ktzh/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=dlzh-talgata-aldybergenova-snyali-s-dolzhnosti-predsedatelya-pravleniya-ktzh" target="_blank">Талгата Алдыбергенова сняли с должности председателя правления КТЖ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 08.07.2026 04:53</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгата Алдыбергенова сняли с должности председателя правления КТЖ</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -197,7 +435,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-18';
+  document.getElementById('date-from').value = '2026-07-08';
   document.getElementById('date-to').value   = '2026-07-08';
   applyFilters();
 }
