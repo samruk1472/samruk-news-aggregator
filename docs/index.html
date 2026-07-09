@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 09.07.2026 10:19</div>
+  <div class="meta">5 источников · Обновлено: 09.07.2026 12:45</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-09">
+      <input type="date" id="date-from" value="2026-03-04">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-09">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -89,7 +89,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -106,63 +108,96 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-09" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-09/zhnb-voina-na-blizhnem-vostoke-privela-k-zamedleniyu-rosta-passazhiropotoka-v-aeroportu-astany/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-voina-na-blizhnem-vostoke-privela-k-zamedleniyu-rosta-passazhiropotoka-v-aeroportu-astany" target="_blank">Аэропорт Астаны отказался от цели перевезти 10 млн пассажиров в 2026 году</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 09.07.2026 07:33</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Аэропорт Астаны отказался от цели перевезти 10 млн пассажиров в 2026 году</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-07-09" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUXFfdUxRNFRLUDIzbGhEd01vczdZbmY3QldzX2ZhZjlySDFMRC0zT2RDc0wzcThlYmhjdmp6dnh0YWRNYjVuSFJVdVIyMEpyVVhBMDgxcmZuR0dkTE92V0FJVU9qdmcxWTNTWGR0OVY0eURSZGF6M0xrQ05CVkRodkRRdVk5M3hMX281VUl0eHpSbTB1ZnlNckxPTVFWenI5Sm44ZjdSa0p0QjJlNVJKNU9CYnRXd2tza2pmaGVLcm10YnZuNlljMFBFUWp6MHM0VE5sYzNlVVlIVXJJ?oc=5" target="_blank">Атырауский НПЗ в Казахстане возобновил прием нефти 8 июля после остановки на плановый ремонт - Русская служба The Moscow Times</a></div>
+    <div class="article" data-date="2026-07-09" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-09/fvfv-u-kazahstanskoy-associacii-minoritariev-poyavilis-voprosy-k-rukovodstvu-air-astana/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-u-kazahstanskoy-associacii-minoritariev-poyavilis-voprosy-k-rukovodstvu-air-astana" target="_blank">У миноритариев появились вопросы к руководству Air Astana</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 09.07.2026 11:02</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">У миноритариев появились вопросы к руководству Air Astana</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-09" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFBoZmdUaW5QM3NzekpycW1HbDkyMmV1UHhCOUNDdF9vMlpyV2FibENWNTR6NzNkc19Pb0p4MF94Q2gwM182QXNLTlI4OXpPeDk2cl9kWldEWQ?oc=5" target="_blank">КазМунайГаз-Аэро обеспечит заправку рейсов нового международного перевозчика в Алматы - Energyland.info</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 09.07.2026 09:32</span>
+        <span class="date">📅 09.06.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Атырауский НПЗ в Казахстане возобновил прием нефти 8 июля после остановки на плановый ремонт - Русская служба The Moscow Times</div>
+      <div class="art-summary">КазМунайГаз-Аэро обеспечит заправку рейсов нового международного перевозчика в Алматы - Energyland.info</div>
     </div>
     
-    <div class="article" data-date="2026-07-09" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZ3o1dk9iX2ROMi1LQmlCSmtsNHMxR3k3SkJZWHZyTVJnUS1LTUt6ZXJUUDJXeUlDdjRBUHRIbDd0WXp0SmRxSm1SdkxVVEZKbnFFZFpCZGJrU1BUclVaM1NwSXlYTXEtTzJYc3lLRWN0Tld5QnFBYkhRSW92dTRvWHh2aDE5MHY0ZFBXdmNrN1ItTHhleHhZT29UQVJmUXBSVFk5OVVlWGwya3M?oc=5" target="_blank">КТЖ продолжает обновление стрелочных переводов на магистральной сети - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-06-08" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNM2ZKRzl0cUxVYzR0YlBJbWtPQnU3UnlKSDRPZE8tWkdKWWEwZ2xqUlc1ajFnMlJGUHdURVNCR1RSNThiclFTWGhlQkpPT0xXZ3lKcmNOVnNaQk9sdFpubkhaSzhGb3ZyWHVKNUdkM2JwU3ZlN3VTa19ZYVJaWGk1SDhEMUNRcXVsZU4yWXFYSG5rMlhMVERLd3RIZWVEblZUSTZjZmkxSF9pbkpfLXJicg?oc=5" target="_blank">КазМунайГаз-Аэро обеспечит заправку рейсов авиакомпании FlyOne Armenia - Kapital.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 09.07.2026 09:05</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 08.06.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КТЖ продолжает обновление стрелочных переводов на магистральной сети - Қазақстан теміржолшысы</div>
+      <div class="art-summary">КазМунайГаз-Аэро обеспечит заправку рейсов авиакомпании FlyOne Armenia - Kapital.kz</div>
     </div>
     
-    <div class="article" data-date="2026-07-09" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNYzlZLWtMNk9JWVZDblFiX1d2T1YwUUtiTE53YUFfRXlWU2R3dUFXV0luNG5LTDY3Tm9vNzFlWWNnb0lLLUJFYk91M3hBNVZ1bjh1OVB0emxUcEY4T29zNFpBbm9qZUhKcGJ2R0MtNUhJYW1fdjlwUHhCbW82UF9pWlVwVzNQdjVWX0NidlloRHRVXzZKWjZISg?oc=5" target="_blank">Еще 50 локомотивов Alstom и CRRC пополнили парк КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-07-09" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNb2FqZEh6VjhwdWxpMTNNQnpxWkJHZUtDX25NUEtRcEFVLV9qSjk0U2gwZW1hRnJYbmtKTTVKZU1kRl9pTW1xdzRWaGJUV1MwelpweUhfdVdac3R4OWwyNERvOXRPOXFCbXhHcGFiVnotdmstY3Nwa2JmbVNwUDlxMlIzRE5hTUlsX0RJZldaUmNMeFlJaWU4TXNSYVNMMk8zaHkxLW9XdGdNRnFfQVdkWDlnY3UxT3BhelhsUW9yc0FKaWRxelHSAcYBQVVfeXFMTW9hamRIelY4cHVsaTEzTUJ6cVpCR2VLQ19uTVBLUXBBVS1fako5NFNoMGVtYUZyWG5rSk01SmVNZEZfaU1tcXc0VmhiVFdTMHpacHlIX3VXWnN0eDlsMjREbzl0TzlxQm14R3BhYlZ6LXZrLWNzcGtiZm1TcFA5cTJSM0ROYU1JbF9ESWZXWlJjTHhZSWllOE1zUmFTTDJPM2h5MS1vV3RnTUZxX0FXZFg5Z2N1MU9wYXpYbFFvcnNBSmlkcXpR?oc=5" target="_blank">У миноритариев появились вопросы к руководству Air Astana - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 09.07.2026 04:04</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.07.2026 11:06</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Еще 50 локомотивов Alstom и CRRC пополнили парк КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">У миноритариев появились вопросы к руководству Air Astana - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-04" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNUmJiSzhSYUNrVnZwVVJIekNXMVJEVGlvaGRBalJpRjVUWUVWNlJFd09Ha2tJdE96SEZLaGpxa3AyNmpNajdaYWxrODdXSEhzUzJQNmNNLXdrSHBwV1ZiSFUxblN2QWJiMDB3UFV5WEJJSnhwa1QtLUJsWm5Gai1jZXNaVHRwUVJqTWl2TkoyVEJIYldwWkl0VnZ5cVkwOGpaZWZHeXdkWWN3V3FfNGRHeXVn0gG3AUFVX3lxTE1CbkJhV1BmVm53ZFBFWkQ3OFJaMF85TUd4WDZlZ3MydGJPR1JBWUowXzV3ejMzaGlHaWc5LXEzN2FuQTVCcW5Ia0hiakdNQ05SakRUZ29HbmhGRFVBbFZDUlVKX3JueGt3WmllbzFLRzVGSGpVbGVuUm1YSTUydmN5dGUzdzhBeWVxZ0toT1dGY3EyZUFzanAySjZfaW8yYlFvYUtaOEJiQ3hxTFg1RG4tRThQMVFFMA?oc=5" target="_blank">Президент принял председателя правления АО «Казахтелеком» Багдата Мусина - 24.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 04.03.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Президент принял председателя правления АО «Казахтелеком» Багдата Мусина - 24.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-07-09" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-09/zhnb-aeroport-astany-planiruet-uvelichit-passazhiropotok-v-chetyre-raza-k-2035-godu/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-aeroport-astany-planiruet-uvelichit-passazhiropotok-v-chetyre-raza-k-2035-godu" target="_blank">Аэропорт Астаны расширят до 40 млн пассажиров в год: что планируется</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 09.07.2026 10:36</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Аэропорт Астаны расширят до 40 млн пассажиров в год: что планируется</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-09" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://vlast.kz/novosti/70039-zasedanie-po-delu-bazkenovoj-perenesli-posle-togo-kak-podsudimoj-stalo-ploho.html" target="_blank">Заседание по делу Бажкеновой перенесли после того, как подсудимой стало плохо</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 09.07.2026 15:40</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Заседание по делу Бажкеновой перенесли после того, как подсудимой стало плохо</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -221,7 +256,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-09';
+  document.getElementById('date-from').value = '2026-03-04';
   document.getElementById('date-to').value   = '2026-07-09';
   applyFilters();
 }
