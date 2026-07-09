@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 09.07.2026 04:54</div>
+  <div class="meta">3 источников · Обновлено: 09.07.2026 10:19</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-08">
+      <input type="date" id="date-from" value="2026-07-09">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-09">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,6 +84,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
@@ -104,75 +106,58 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-09" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-09/zhnb-voina-na-blizhnem-vostoke-privela-k-zamedleniyu-rosta-passazhiropotoka-v-aeroportu-astany/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-voina-na-blizhnem-vostoke-privela-k-zamedleniyu-rosta-passazhiropotoka-v-aeroportu-astany" target="_blank">Аэропорт Астаны отказался от цели перевезти 10 млн пассажиров в 2026 году</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 09.07.2026 07:33</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Аэропорт Астаны отказался от цели перевезти 10 млн пассажиров в 2026 году</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
-    
-    <div class="article" data-date="2026-07-09" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-09/shlc-ktzh-poluchil-50-novyh-lokomotivov-alstom-i-crrc-kuda-napravyat-tehniku/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-ktzh-poluchil-50-novyh-lokomotivov-alstom-i-crrc-kuda-napravyat-tehniku" target="_blank">КТЖ получил 50 новых локомотивов Alstom и CRRC: куда направят технику</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 09.07.2026 04:23</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ получил 50 новых локомотивов Alstom и CRRC: куда направят технику</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
     <div class="article" data-date="2026-07-09" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5BWkFmMG9KVzJYUTgzZGs5VEl1ZkhSMkZNdUItMC1nX1FYaEdBZ2hnTC1vbzlUVWdRREpKa3ctb2dvd0x1ZVltSVFXOE52X0YxQ3BlY1VkYVFVVjJJYVVv?oc=5" target="_blank">КазМунайГаз представил ключевые проекты по развитию нефтегазовой отрасли Казахстана - Energyland.info</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUXFfdUxRNFRLUDIzbGhEd01vczdZbmY3QldzX2ZhZjlySDFMRC0zT2RDc0wzcThlYmhjdmp6dnh0YWRNYjVuSFJVdVIyMEpyVVhBMDgxcmZuR0dkTE92V0FJVU9qdmcxWTNTWGR0OVY0eURSZGF6M0xrQ05CVkRodkRRdVk5M3hMX281VUl0eHpSbTB1ZnlNckxPTVFWenI5Sm44ZjdSa0p0QjJlNVJKNU9CYnRXd2tza2pmaGVLcm10YnZuNlljMFBFUWp6MHM0VE5sYzNlVVlIVXJJ?oc=5" target="_blank">Атырауский НПЗ в Казахстане возобновил прием нефти 8 июля после остановки на плановый ремонт - Русская служба The Moscow Times</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 09.07.2026 02:28</span>
+        <span class="date">📅 09.07.2026 09:32</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КазМунайГаз представил ключевые проекты по развитию нефтегазовой отрасли Казахстана - Energyland.info</div>
+      <div class="art-summary">Атырауский НПЗ в Казахстане возобновил прием нефти 8 июля после остановки на плановый ремонт - Русская служба The Moscow Times</div>
     </div>
     
     <div class="article" data-date="2026-07-09" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBvcGloUWtoeUNTQ1pXTlgzQ1hKY3VoeDVaOS1IOVBMODY1OHI3TndqVEZ0ZEgzMUJCVng1b3NrOVNxay1vLUdEZjJ5UDlodGlWclNyY1lxN0xPUXlPbGFsUS1QWFZXU2x2U1VfOGZ4WQ?oc=5" target="_blank">50 новых локомотивов получил КТЖ - Informburo.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZ3o1dk9iX2ROMi1LQmlCSmtsNHMxR3k3SkJZWHZyTVJnUS1LTUt6ZXJUUDJXeUlDdjRBUHRIbDd0WXp0SmRxSm1SdkxVVEZKbnFFZFpCZGJrU1BUclVaM1NwSXlYTXEtTzJYc3lLRWN0Tld5QnFBYkhRSW92dTRvWHh2aDE5MHY0ZFBXdmNrN1ItTHhleHhZT29UQVJmUXBSVFk5OVVlWGwya3M?oc=5" target="_blank">КТЖ продолжает обновление стрелочных переводов на магистральной сети - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 09.07.2026 04:32</span>
+        <span class="date">📅 09.07.2026 09:05</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">50 новых локомотивов получил КТЖ - Informburo.kz</div>
+      <div class="art-summary">КТЖ продолжает обновление стрелочных переводов на магистральной сети - Қазақстан теміржолшысы</div>
     </div>
     
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE9mdmlxcmhDSzRhcjh2RVVYNEVmTjBDRFdCeTJ2WV95OFJLTjZWMFZVb20yM0RKZ2dzMEtsYVhQa1J1aGNqQ0ZSM3dn?oc=5" target="_blank">Руководитель сменился в КТЖ - АПК Новости</a></div>
+    <div class="article" data-date="2026-07-09" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNYzlZLWtMNk9JWVZDblFiX1d2T1YwUUtiTE53YUFfRXlWU2R3dUFXV0luNG5LTDY3Tm9vNzFlWWNnb0lLLUJFYk91M3hBNVZ1bjh1OVB0emxUcEY4T29zNFpBbm9qZUhKcGJ2R0MtNUhJYW1fdjlwUHhCbW82UF9pWlVwVzNQdjVWX0NidlloRHRVXzZKWjZISg?oc=5" target="_blank">Еще 50 локомотивов Alstom и CRRC пополнили парк КТЖ - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 11:43</span>
+        <span class="date">📅 09.07.2026 04:04</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Руководитель сменился в КТЖ - АПК Новости</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQSXFpYnNYcHNGRGFVMmU0WnkzMEJpRzJuVlh4QkVFSTRPOENzSktDWE9OVi16LXUwemNQWTJ2d2pXMTFXVlE5ZkVUR3Q5ZXFCOTJjM1hBN3VTNmViZXVfc3dOZUlVUFpWWk81eFBpcEdmcXBnTFkzblotWVBqZUFNQmxtY0NlVUVucXNwTUFIajlSUW9DdDRr?oc=5" target="_blank">Талгата Алдыбергенова сняли с должности главы КТЖ - ИА Кокшетау Азия</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 16:03</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Талгата Алдыбергенова сняли с должности главы КТЖ - ИА Кокшетау Азия</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMjN6WmtwdjNLS1gycHFkZ0lkZGY5MGVnd0lyaFRHZEdRZ0MydkxQTDZERFd6OHh1M0cwbEFmemFEcXpIeV9KeDNZdnJIck85VllsOVRkMTl1M0lScjJLZHlxY1NlQlRYZkNGYXp0cjI2cF9aUXE2Mm1TYW9DelNHOFN4YnhucjFaSFNn?oc=5" target="_blank">КТЖ подтвердил смерть дежурного на станции в Мангистау - airpres.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 18:45</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ подтвердил смерть дежурного на станции в Мангистау - airpres.kz</div>
+      <div class="art-summary">Еще 50 локомотивов Alstom и CRRC пополнили парк КТЖ - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -236,7 +221,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-08';
+  document.getElementById('date-from').value = '2026-07-09';
   document.getElementById('date-to').value   = '2026-07-09';
   applyFilters();
 }
