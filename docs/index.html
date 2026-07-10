@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 10.07.2026 07:29</div>
+  <div class="meta">4 источников · Обновлено: 10.07.2026 10:18</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-10">
+      <input type="date" id="date-from" value="2025-11-29">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-10">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -104,23 +110,67 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   
 
   
-
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-07-10" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-10/tele2-altel-i-yandex-qazaqstan-budut-sovmestno-razvivat-ii-servisy-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tele2-altel-i-yandex-qazaqstan-budut-sovmestno-razvivat-ii-servisy-v-kazahstane" target="_blank">Tele2/Altel и Yandex Qazaqstan будут совместно развивать ИИ-сервисы в Казахстане</a></div>
+    <div class="article" data-date="2026-07-10" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-10/svan-obnovlyayushaya-tec-2-i-tec-3-v-almaty-kompaniya-sokratila-pribyl-v-35-raza/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-obnovlyayushaya-tec-2-i-tec-3-v-almaty-kompaniya-sokratila-pribyl-v-35-raza" target="_blank">Обновляющая ТЭЦ-2 и ТЭЦ-3 в Алматы компания стала зарабатывать намного меньше</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 10.07.2026 06:14</span>
+        <span class="date">📅 10.07.2026 09:58</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Tele2/Altel и Yandex Qazaqstan будут совместно развивать ИИ-сервисы в Казахстане</div>
+      <div class="art-summary">Обновляющая ТЭЦ-2 и ТЭЦ-3 в Алматы компания стала зарабатывать намного меньше</div>
+    </div>
+    
+    <div class="article" data-date="2025-11-29" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNTBIWVJrcVdaSmlHd1loaVlfdHR2TDBaNm5UNW9RT2lXWk5HR3pPbGtqeWVZSEM0bjdvRzVuZjJZc1ZndjZlaUppakhYMGJlaXlhZHJtSEtrX2p6aS1HNjBVZ2NpMjA3c2NuWUIzOE15cUxiRTVObGNiYjNqdGp6a09mT3JKRG5Eak1ZZWpYUno5djFfYzd0OGNCUDZ1bUtxNWNkdWFaVFNtR2IzRk5JSnY3M2JpeXo40gG3AUFVX3lxTE05cFY3ZGNkemtLVHFGVE9POTZob2o0dUlITk45RFh3ZDUtN1NxemZXTFh3YTBmdmZJUTNTRGJRbzl2Q1RXNzlnTmFWa3BsSEZpRGN0b3lkMWY3MVFPcDRzc0dpVGVfUFlqWGo0S3RXTGRyejJEcV82R1dUWEdqM3hqY3dsTjdsNkdLS2NqaVBqWXBoRG5zWC1jLU05YkJsYUFqUTd2d0t0WmJnZ2dSMmZMZmttdWNSMA?oc=5" target="_blank">&#34;Самрук-Казына&#34; прокомментировал аудит ВАП: количество компаний в фонде сократилось вдвое - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 29.11.2025 08:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">&#34;Самрук-Казына&#34; прокомментировал аудит ВАП: количество компаний в фонде сократилось вдвое - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-19" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPWkpNb1VadW9uc0J1N0N4WVZXa3AtRGNyNjlkV1h1SUxodHFfbHVaUUE2TzhnSV9XZlhGcVVSYkVPQXB6THhJRHNUOVQ1Zmg4ZUlCcERxS29MWWdHU0d4cEtEMkxtQURWUXpySFlZam5vUVpsekRBbE81WkJ6TjBiWVhZRlNuaEFRekNoR29fSXJxdm8yb1V6NjRWd0RJb1hfLW5jaHMtaFZ1ek5wUUdhV2JWM2RSY0Vfd0pnaEh30gHDAUFVX3lxTE5SeWNDQUw3RW9LU00tdmEzZlctNWJGOTZUWUUzMVRLR09ac3FEb0RUM3FmMktRcklGWVlLN1ZhWDJrQ2RkNjZiOXhfZGdHZjRjS2dQMTB0OE16czFRTEJrSUFaQUVaMXNkemtOUVBTdGZlNXNCNkIzNGlTazVOZ0tGTzZUNi1IQmJiSGN1T0hQMVVhd1FzNksxaEJIR05ibTQzWDNzOE5VSVBZWmxrRE1KaWxHQUdMSEJWOElDVDI5Q3dyNA?oc=5" target="_blank">В «Самрук-Казына» рассказали, как развивается SKAI – цифровой член совета директоров - DigitalBusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 19.03.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">В «Самрук-Казына» рассказали, как развивается SKAI – цифровой член совета директоров - DigitalBusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-09" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxObWxvd05MMU9UMDQ1N0RaM0cyemhYMTZHM3FKLXhDSjluU0FvckVhZ3J1SDB0UVNsN2JZdFRsbGJnWEJZYW1pbzFoeExuWVduZHEwSU9vWlNZdDBLeWdvMEI5MENJVUh2SGczcGZwaTIwX3B6VmlnNXVYSTk5U2FuUWRiX0F6UlRSY3c3TVRyMW0zM0hVRnhfTHJaRkFITG9HXzNsbV93Rk4wUC01c3cyRVRfbU5UVXdiaFJPSTBzN0pqTE0?oc=5" target="_blank">Тимур Турлов пригласил в совет директоров Alatau Air Cargo экс-главу Air Astana - KubanPress</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.07.2026 16:27</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Тимур Турлов пригласил в совет директоров Alatau Air Cargo экс-главу Air Astana - KubanPress</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxPVk5RNkgyYkgycGhQcVhOU2NndXgzX0tHczEwb3FYLXRreUM4bFZPNzVLY1U3amh6TXlIOHExZjI1TklxbG04TjB3dkRkdXBBM3V2eDVXdGJMMnF1dFNMY2Vnb1V0QldqY29JbTQtYUZ5ODVqT1I2a2Z2Vk1UM1hBNWt3?oc=5" target="_blank">Талгат Алдыбергенов снят с поста главы КТЖ - Mail.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 03:51</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгат Алдыбергенов снят с поста главы КТЖ - Mail.KZ</div>
     </div>
     
   </div>
+  
+
   
 </div>
 
@@ -179,7 +229,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-10';
+  document.getElementById('date-from').value = '2025-11-29';
   document.getElementById('date-to').value   = '2026-07-10';
   applyFilters();
 }
