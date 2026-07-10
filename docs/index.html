@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 10.07.2026 15:32</div>
+  <div class="meta">2 источников · Обновлено: 10.07.2026 17:39</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-03">
+      <input type="date" id="date-from" value="2026-02-26">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-10">
+      <input type="date" id="date-to" value="2026-05-26">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,8 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -106,68 +104,36 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-10" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://www.caravan.kz/news/internet-v-kazahstane-kachestvennyj-ministr-iskusstvennogo-intellekta-i-cifrovogo-razvitija/" target="_blank">«Интернет в Казахстане качественный» — министр искусственного интеллекта и цифрового развития</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Caravan.kz</span>
-        <span class="date">📅 10.07.2026 12:30</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Интернет в Казахстане качественный» — министр искусственного интеллекта и цифрового развития</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-04-03" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxNelVGUjlja3U2SkFYdlJZUGRqeXoyV0tNX2llTXd0QTdrMndPczhTa181eEhJWjlRT0I5d0FZY3MxdnFEZHRYcUdyXzVEdnFneTRrWUphNENTdzhvVmt1bDM5SFM1ZFUzcDdDWTk3aHE0b1c4SXV3aVJ1ZVJUUVdlbEcxNlF5NW1lajEwNUlWZ3RfaHdOcXpPTjhxV2VxRkU0YlhySWRMbExPU0NGeldHU3lNWjdmUmZsUWFSV25DcWRwZ2toSWYtQTA0ZGlSbWc?oc=5" target="_blank">КазМунайГаз на GECA-2026. Новая стратегия геологоразведки и новые партнерства - Neftegaz.RU</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 03.04.2026 06:19</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз на GECA-2026. Новая стратегия геологоразведки и новые партнерства - Neftegaz.RU</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-10" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPRXRIWGJkU2syZEhXdkI0VGIwZHJkN3JzSXpDd1NWQmxtN01uaW5XRGVOd2JuMDhZZzU5MGFvbTdDQ1RIdXlWcURhUG9Sam1JU1hBX2NFSUNFc2dmOEduRWdVS2RUTEpwa0pYNWF6U0hkekRJb01mZll6VkQwS25SSHRtYjE4NHlFN3BWamVDVjFDSDk0RUxoMXVQY0JOSDNBVGJCdNIBqgFBVV95cUxQWGhYQU1aWmlQRmtvOE15cl9lc3h1SUl4bGtlWHlsT0U3NGZHRnFCUFY1NUozSTNSOVI2U01wSHhtc2FtRlNZU2xzMEtTUHdTZmt2Wk5DLWwwMHBGS2tPa3V2YTlwbnZ0bUh3aGlyeG1IcDY2NjFOejM1VV9XME9Felp0WVlYSHg5bjRwLWFSTlc2aXhPRG82Z1JRNkhobXNpbkJleF9jY0tJQQ?oc=5" target="_blank">В Stadler заявили о полной готовности вагонов к приемке КТЖ - Kursiv Media</a></div>
+    <div class="article" data-date="2026-05-26" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOSGhFS21YSHZQNlh3T2hMdGhIUlVoeUdQOTJUUEhobXZIdlFETWQyWjRxSE44dmx3UE5iM0xNcG9kc2RBa2Q5X0JobVVkZzVBYXFxUFctbXE1RTFjc3FTYk9DTkRKYV8tMm5EN2lScFB6Mlk1NlRiVWd1dzQyRXItbmFQeUx4ZzlqaXNDcHZrT2FMRU05S1BjbFZWVE5XbUNf0gGfAUFVX3lxTFBlNEZLR1ZOSVZXbVhidi1oTi1fdnRSVlRfdUthcU9vSnVHSV9ldzhkZ3RFNEFCemc5SDdwTnJBMXNFSzRRNElWZ1dXMmNDWmRpOU1kQkVUSTFsekxjeGxYM0ZvUDNKaGtwNC0wTE5odDNDQXFMSHdqTDRYVDFaTEJTMHVBT0Jaa0NDcmpmYjM2T09BNUllbkU1SDFpcERDbw?oc=5" target="_blank">+40 за бортом: в КТЖ рассказали о готовности кондиционеров в поездах к лету - BES.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 10.06.2026 07:00</span>
+        <span class="date">📅 26.05.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">В Stadler заявили о полной готовности вагонов к приемке КТЖ - Kursiv Media</div>
+      <div class="art-summary">+40 за бортом: в КТЖ рассказали о готовности кондиционеров в поездах к лету - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-26" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOVW9lc1JMTWpQdVFmQWhhS1M1enBVeFkybU1ndHE5MjRld1JVREtKTlJDZy0xcDJmSWFKaGlMTTd3Z29zY0NjMDVaYm5KY0hoOEN2QVBCTXZXZWpBNW1WQVROdTZKbXZDUlphNllwYlBDM2dMT2FjQnc5NlJmQ2Jaakc2RDBNenBJZGVBb2tkUmo1SmJpcnlOZmM4SjBoMEdBWUFwVzd4TdIBpgFBVV95cUxNNGlfUWZEOXA3WVdGUU53OF9HOUg3MDhZUXRQUmNkUUVGV3pjaUpUdzFJcXRMdUEtbl9lbEVpLWQ4ZkYxdlpUYWxSS19laVQzSVp1RGNJNHYwZzBfdnl3TTFURWJ3b1ZfcmljX2d3MWkzV2NOZUR2a092RTlwa2pZaVEzaUFGRFdoYXlnTVowWVhPR3p1dE45S3FHZjNNYlFpRUJNY0Z3?oc=5" target="_blank">&#34;Казахтелеком&#34; переходит к модели инфраструктурного провайдера ИИ-экономики - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 26.02.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">&#34;Казахтелеком&#34; переходит к модели инфраструктурного провайдера ИИ-экономики - BES.media</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-10" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/i-believe-it-is-high-quality-madiev-asked-about-the-internet-272174/" target="_blank">“I believe it is high-quality” - Madiev asked about the internet in Kazakhstan</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 10.07.2026 19:30</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">“I believe it is high-quality” - Madiev asked about the internet in Kazakhstan</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -226,8 +192,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-03';
-  document.getElementById('date-to').value   = '2026-07-10';
+  document.getElementById('date-from').value = '2026-02-26';
+  document.getElementById('date-to').value   = '2026-05-26';
   applyFilters();
 }
 
