@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 09.07.2026 17:45</div>
+  <div class="meta">3 источников · Обновлено: 10.07.2026 04:53</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-09">
+      <input type="date" id="date-from" value="2026-06-25">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-09">
+      <input type="date" id="date-to" value="2026-07-10">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,6 +86,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -105,28 +109,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-07-09" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxNNXpvTE5QOHA5NGNDTHo5RjNYdlJzc0JRclFnaGdRUl9PLWlzaEd6LUtndk10UXVGcUZ4T1B5ZVdOZTJSZ2lvMUw5LVFDTXdacUU2c3d1Z3U0MXpEdzRsYUpuTV82X04tSEg1cWU1QTJoM1NLUnl1OGNwbkZJbE8tWEtKRm5UVkNod0dtYV84VmpnNjZmNldGTjFMRnFSX3FwaEI5cWVuRzBVM1J5MTIwZXJsUEpmRE4wc25IaTM0QWxfZWtacV9rX3N6ZlYtWmdi?oc=5" target="_blank">Тимур Турлов привлек бывшего главу Air Astana к развитию грузовой авиации в Казахстан - NewsTracker</a></div>
+    <div class="article" data-date="2026-07-10" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://www.caravan.kz/society/v-samoletah-i-poezdah-internet-a-ostalnye-kazahstancy-bez-svjazi/" target="_blank">В самолетах и поездах – интернет, а остальные казахстанцы – без связи?</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 09.07.2026 16:22</span>
+        <span class="src">📰 Caravan.kz</span>
+        <span class="date">📅 10.07.2026 04:49</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Тимур Турлов привлек бывшего главу Air Astana к развитию грузовой авиации в Казахстан - NewsTracker</div>
+      <div class="art-summary">В самолетах и поездах – интернет, а остальные казахстанцы – без связи?</div>
     </div>
     
-    <div class="article" data-date="2026-06-09" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPUnJ5blBKMFhXR1h1NFE5a2dWNFpMTkY4eHJHT0laZGlublNua3YtZndocmdTa2k3TzRVZW5xOUdkMWt6TUVUb3FXMFVhejlFUmVwOU9lcE9mbF93WXNXa3FfeGpId05WQWllZE8xbUZMNjVERGszdHlLUUFNUE5Ka3NQS3FsUQ?oc=5" target="_blank">Air Astana увеличивает авиасообщение с крупнейшими городами Китая - DKNews.kz</a></div>
+    <div class="article" data-date="2026-07-09" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUUxwckprTmQ1Ty1jeEZadVcyV1BoUHN1aGdOUUkwSVlLaHhZdm1pQmwxQjdwRS1iVnBvbjlLWDlHbWpkc0VVME9Pd1RmY0htRURZYUxPQndqVnNUdEZsLWxucFFiNW8xTXBoblBJUEJnbXB4OUlUcUlpemJWUzBZRXk5LWp1UGwwVTZYUG5BNkpPLW9hdWI1UFdTZUxMYk9VM1NrLVYxUFpoY05CWWFCclhjUDVmOVNsMjNaTG9ZMDhGTWs?oc=5" target="_blank">Экс-глава Air Astana вошел в совет директоров компании группы Freedom Holding Corp - Muksun.fm</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 09.06.2026 07:00</span>
+        <span class="date">📅 09.07.2026 19:55</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana увеличивает авиасообщение с крупнейшими городами Китая - DKNews.kz</div>
+      <div class="art-summary">Экс-глава Air Astana вошел в совет директоров компании группы Freedom Holding Corp - Muksun.fm</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQZUI1SS1KNEtjNlpjNEowTV9mVTJVNWQ2N29XWkpIWFYwUEpPakZjdjFHSnMxbzR4VTlZV01KQUk5YVcyNzFSVWdabkVNZ3EtdDlld0xDRU9rR2NpV3ZDUjhQQTBEX2VFazN0eFJFeEw2bEFNYldzRWR6dG9NTzFBeEVqNG1mZHQ0ZnZ6S1Etd2lDNlNSZGYtSVl2VGp1bXRYRUg2VDYzb3g2dEw4QzJJQkdPVlVNNHhiS3dQekhyNzFCeHRNWU5wTzJ0T2FBX3NJWFM1RXhjbzhrV1d6elJDSC1hVGR6QdIB6wFBVV95cUxQYmNWV0t2TDFVRklRMms4SmwyNUFZUS1KYVZ4bENzNUhlb3NUVlJnektzdnFXMlRMSWNVaGNiTlJ5Q3AtaG5ld2xrcVZrX2lhYTZtejQ5SHFPTENsX3RSZ1dJWERoc1Q1WnFreW1BX2o0b0pLSmk4SmRvUXdJbnUySWlpQkZ0a2pMby1QRXU0clRWWk5yY3Fzb084alBwbWd3UHZCZUNhR0tQNXlzSGdldUVWN0EwNFI3SWJGekJUVlpDSWNRQW1NZlc0Yk9aT2JZOS1aQ3QwRmlwN0JmdHBsdW03bFRmYkt3WjZJ?oc=5" target="_blank">«Цена ошибки в авиации намного выше». Вице-президент по ИТ Air Astana Анель Ибрагимова о разумном применении ИИ - DigitalBusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.07.2026 13:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">«Цена ошибки в авиации намного выше». Вице-президент по ИТ Air Astana Анель Ибрагимова о разумном применении ИИ - DigitalBusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-25" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZzZWQ3hnVXdRU3BDZG5NdGRpZW9ucGdXQVJOSlMxWGt2Rjg2Z2NNd0xqZklCOTM5VGVzdUczRU1GMm5fRHhrYUZyOUVTdExLaFQ4WG52b3VocVo4SUY4ek9WdUY3ZFZOSWNnWmk4bzY1ek43UHhVWDhfcGx3eV9GQl9uZ3VPaTE4RTdqQzFjTWhrb29pNjJ1WjRSeFFJVG5yZDdYdVFVd3Q2TzDSAbABQVVfeXFMTmQzeGhQeHNhZ1lnc0Y3NWwzbFJyX096bmt2T3JTakZPM3hCQVEtREZ5RXA3dVVuTy1vMk9QRFEwWVVod3RTTmJPMS1oQnl4SGd5aml1c2s4eVY1TzlqN2NSWWlaV2VGMnM3ZmFxcTdMdURRVGQ4b2tLVEQ3VWU5NFptbEduN052b3FySnJ2dkx1dTVaR0V6QmpxM2l2VlViSmFfdG5STHY4b2dzSmdKQm0?oc=5" target="_blank">От 5G до ЦОДов: «Казахтелеком» усиливает цифровую инфраструктуру страны - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 25.06.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">От 5G до ЦОДов: «Казахтелеком» усиливает цифровую инфраструктуру страны - Kursiv Media</div>
     </div>
     
   </div>
@@ -190,8 +216,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-09';
-  document.getElementById('date-to').value   = '2026-07-09';
+  document.getElementById('date-from').value = '2026-06-25';
+  document.getElementById('date-to').value   = '2026-07-10';
   applyFilters();
 }
 
