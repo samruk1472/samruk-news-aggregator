@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 11.07.2026 14:23</div>
+  <div class="meta">3 источников · Обновлено: 11.07.2026 16:40</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">11</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-10">
+      <input type="date" id="date-from" value="2026-01-15">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-11">
+      <input type="date" id="date-to" value="2026-07-08">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -104,36 +106,130 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-11" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-11/lngr-aktau-fog-flight-delays/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lngr-aktau-fog-flight-delays" target="_blank">Туман нарушил работу аэропорта Актау и задержал рейсы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.07.2026 12:30</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Туман нарушил работу аэропорта Актау и задержал рейсы</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(11)</span></div>
     
-    <div class="article" data-date="2026-07-10" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNYnpmRXRqYTgydGhlSU4ycnhXaW5LRENOZEU0WFZKZjE3THNGRU5raGhCVmtGQmdsQmM3X3ZiR2NrZHZPeVZsNGVNSzl6Nkx4VmpZenZGU1hyYi1lTjNTQkdTVnNFRDJwYXdaRUxzNUJXWFZ1MnQ5NWlDaTBLcXFyOXN2QkFOV0FUd1hSU1hSRnoxeHBwMjRxMnlHNXpJdw?oc=5" target="_blank">В Ашхабаде открылся филиал дочерней компании «КазМунайГаз» - Turkmenportal.com</a></div>
+    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxORDlER3FIZ3Frb2VOMVVYVTFFbWlOWnRDLWlOVDJ1OXR3ZFVkWE92MTJjSU9CLVpnYkJRMnhsWDRBVXFTdGswUmpJUU1fU0pBcjBXcFZJTHRMLUloOG11OWNJNVJnMkVnc2w2RHpBRnItR0RHQVdmdmJhQWFyc0w2c3pUX2EtdkxjTFJXS3BXTHhhZ1hxOFVYNjlB0gGfAUFVX3lxTE9JQkkybTdtYWRrT3FMc1JGRHBrVnpvNFJ4X25qVTVtOWRhelZHTmNJN3o1UWxLN3VuTGJXOHl0MkRyM1diWndfMTIzRkQ5ZDZfdDFpRjhqNlltVmp4V3BGTkhDWlFvX1R3RnJ4STVGQWJHYjRLaXJUSTM4Vm9NM2N2S2NlX2hGYUVxb1ctR3d2cmtyb05uM3MyejAwRGRzbw?oc=5" target="_blank">Правительство может отдать «Самрук-Казына» свои 40% в ERG - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 10.07.2026 14:17</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 11.06.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">В Ашхабаде открылся филиал дочерней компании «КазМунайГаз» - Turkmenportal.com</div>
+      <div class="art-summary">Правительство может отдать «Самрук-Казына» свои 40% в ERG - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeVN5TEN5SVdTLWJWVEJNbFFaXzl3THFFVGxSMEQxY3A2ejRrZHNFRzR6bWo5STJZVWN6THhzV0VqdmRfeXJSbzU1WC1Ld0x5UGlTZ3JBU1h0ZHRYeWVFZ2RBNHhCUjhFblRDVkdYSV9JQWFIOUVOSGNFeXBSZFpGcFJMV2dPWk1F?oc=5" target="_blank">Правительство передает &#34;Самрук-Казына&#34; пакет акций ERG - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 11.06.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Правительство передает &#34;Самрук-Казына&#34; пакет акций ERG - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQRzAzbEtGR3FfSVBPZDVTRktIc09GbDQxU2xTVkh6VXVrQjZSdE4wSWhObTNaUlpSb24tVzFJRWtZQ0xRU0toQlpiNVI0emtxOXR2a1FjOHhiWE1UUWJCd2VMZUxYTHU0TGtVOGhsclpmTlYxbzY3ckFYYUU0bVZheWpvc3EzeVFJQzFwMnJnSkE1NUl0NVhjZlpacnQ2MFUtdDQyZVF6c3RHU3pKbWZleWtn0gH2AUFVX3lxTFBNN0Qwc2I1aktoVE42UnhSa19lWThlOEMwX0tzWnY3MmFscXVPTnlMQ2kzUk9QQnZKQ09wS0otcG5CU0RUU1RMQ3RwRzVsbzM4SzZRTjEtbUJtNTdwYlBQSmlBZWZWUE5ER3ljMWQ1WE1QdGxVdDMtdFVpNkJ6VE1SR1lnM1dpbUUwSVZYQVM1Nm4wNng4NUhwby1XZ1Fuam9LaWMwdk1NSU02Qk9KeTRwSXVqSWItQmo0Z1dST0Y1ejFIam9SOXVTQld2UERBRzhQRDRqNS1xSDFMS2luV0V4cEkydVE1TkprcU1kTlhoZkJhN0prQQ?oc=5" target="_blank">Талгата Алдыбергенова сняли с должности председателя правления КТЖ - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 08.07.2026 05:25</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгата Алдыбергенова сняли с должности председателя правления КТЖ - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQVGhWZWhTaDUyQVZQM1poOExRRTFZcEdDY2JpSG1VVjQ0VFIwVnd4ZkpqRVBRUTl6b0lQOG9qN01iTFlzUzZNRVMyNnRkSW1xbnd5NUpnalRKd1o3aUdDSFJDNmJ4OEZPblMxYm42S0tnaUoyTWUtMmo0eVJhM01kam1vd2xDUXQ5WU81VWJ6d2RLeG8?oc=5" target="_blank">«Самрук-Казына» может получить государственную долю ERG - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 11.06.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Самрук-Казына» может получить государственную долю ERG - Ulysmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-10" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNM1ZHZ0s1b09uX2pTbVh6MzRJU21RTEY4eWxmdFc1UVVlRktCdm9xazJEblhLSG15bnNQTzR0dmItejRZLXJkSUNGejFjbldSYkhQWVZqVzIyZ2htaHgxN0lLWWxqLWh4bW1XOEhienA2ZF9IUGJ4UFIwTXpNZlVadV9tZVRhSmpwaHAyNXlTNXZqdUxpSTdJ?oc=5" target="_blank">Почему «Самрук-Казына» не перечислял 7% прибыли фонду «Қазақстан халқына»?. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 10.06.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Почему «Самрук-Казына» не перечислял 7% прибыли фонду «Қазақстан халқына»?. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-27" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE15a0xvcFBYbEpPb200RlBxYk9BakxxaEtXUjN4X21XTXN5TWlUNUl4Q1ptekVDUkVDZGFTRXdsdG5fc1h2MnR4eUF3?oc=5" target="_blank">Ветровые станции и дноуглубление Каспия: как &#34;Самрук-Казына&#34; планирует тратить миллиарды - Ак Жайык</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 27.04.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Ветровые станции и дноуглубление Каспия: как &#34;Самрук-Казына&#34; планирует тратить миллиарды - Ак Жайык</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOeXpsTS0tQjdHNG53XzF1N0NGOThwTVBQYjh2X1JsSDkzS3RlZm1DX3VydWJxN2FuOHB1RERWNjFaenJEU2xMbmVyY3lQQlRrX1NJdzlwTmdvbnU3VWFoZ2N1QkRfcWE5eDFrbjdCOEZrSU9CbXgyMTJIRWQyWU9kWUZZaHloTGphMjRrQXAxaERTTDdYVlNmM2QtZzJKVW5SUlpMeTVzRm54X2hkTTRQblF30gG3AUFVX3lxTE5kM2U4dUtmZ0l5bEVtMnl0bHpCTEhJb3NCRHhPRW4yREZZT2pMcWNjZ29KdHdDb1Y5MEFmcWZSd3ZLSWVEZlFySk04TUUxY2czNnhrd05rN3hCa1QySmo1bF85OWt1TWt4OU9jZU41aDE4dzg2b2dMaWJaYmNQcmxTWFhkUmJ4QjBkYVdjakotRENpWXpOaUo2M1ZJRWdjeXJWMGk2YjNTN0E4MjBLcnA1NVg1MkVHVQ?oc=5" target="_blank">Бауыржан Урынбасаров назначен исполняющим обязанности главы КТЖ - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 10:30</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Бауыржан Урынбасаров назначен исполняющим обязанности главы КТЖ - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-29" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOZHpicGpTa3lyRUpyV1JwenUtQl93dGZkVFpraFBCbzlXWFJjZzdEZ3Y5ZDRPbi10eEpVejQzdV85QXhnZm82aGRSSmNSd2x1OWNRTDRNdlI1ME1NVGw5dTJnR0plejd0a1lZYW1BLTlOOXZJeWZJcTdnOHZqa2c2Ynk4SjUxVmtWRUx1emg4V1YxelI3RnZ1eDdfenhGclJC?oc=5" target="_blank">Мошенники маскируются под «Казахтелеком» и заражают телефоны вирусами - OTYRAR</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 29.01.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Мошенники маскируются под «Казахтелеком» и заражают телефоны вирусами - OTYRAR</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-13" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQVpkRGxuOFFLVzAwVFl1a3NzN2twQ2w4N2pBVmVfVk43Q21MeEQ3UTJ6Z3NWU0xNelVvUi03NlBSWGVQeTV0TzhMdUhERm4ydTY1b2ZTcEU1WTlfcENnakJaU2hpaW9RZVNmMDdLN2Joc2tXZ0dycDY3dV9IMDJDWGszbFhLOHNFY25keGI0NDdjaW9VN0U1QXh5eGwtNmQ1cjI5em1lY2o3SXdfUnlBNU1yMjdrNk84V0J6WklSNkZMX3E1TEo4X2s1ZE1wSTR5dWtRVlZn0gHbAUFVX3lxTE5hV2kxbjNGUGhVVFQwdkx0czA0alZMN0prZmZfbTB1eE9wQTVMMkFpcUlsb3lIQlV4Smp0czh5R09yMVJvNGEwTGFtSE1LbEl3VmR4OHVlb2tqVEJZVVlEZURSbHlNM19DNlJEc0lKRmhpS0RZYkZ6M1BSQjRGTjNBcmVybVdzVDI2bDBwN2xZUGRPbGI5a25DWHZtNDNLdXNiWFB6RHhHY0ZuMEpfZ3dlbWR1eW9SV3FSMXptVmRDYWY1YXNJWGFoYUY3Z2xrWC0wblpHdUFiRVNZaw?oc=5" target="_blank">Интернет в аулы и AI в школы: &#34;Казахтелеком&#34; презентовал цифровые проекты в Кызылординской области - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 13.02.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Интернет в аулы и AI в школы: &#34;Казахтелеком&#34; презентовал цифровые проекты в Кызылординской области - Новости Zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-19" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQRkcwX3RVSFlBWUZzdlltQktVdHRCQ3FhU2JxX3NOcXhENFVpYVlYRTdVLXBjeFBsdWJZbVVNWDBQdlg1d3FaTUxvZU9ES1RFMlZySWx5RzdzalE1blY0dGpGRnBDenRCMUs5U2tXR1VwYm0zRXh0M3FTWnY2SGZaSXZPbmt4V2p5RTZzVHhn?oc=5" target="_blank">«Казахтелеком» усиливает цифровую инфраструктуру Шымкента - OTYRAR</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 19.02.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» усиливает цифровую инфраструктуру Шымкента - OTYRAR</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-15" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxNdC10N29sU3hQamN1eGdQSWpLb3U4bUxIZUJCX1M4MkZBVEhQSjF1dnE5clZ4ZnJhR0pYM2xxbVFPc2YydHZNRXlUMnNidVhuQjVrMW5vc0xrUm81a0hHTzlGNkFCWUhjdDVDdWdmSzh4VzZCSFhtSlcwNXZ4Tlh5RjhwY1J1RDBJVmc?oc=5" target="_blank">«Казахтелеком» выплатил миллионы своим акционерам - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 15.01.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» выплатил миллионы своим акционерам - Ulysmedia.kz</div>
     </div>
     
   </div>
@@ -197,8 +293,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-10';
-  document.getElementById('date-to').value   = '2026-07-11';
+  document.getElementById('date-from').value = '2026-01-15';
+  document.getElementById('date-to').value   = '2026-07-08';
   applyFilters();
 }
 
