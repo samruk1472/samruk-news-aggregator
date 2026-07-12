@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 12.07.2026 04:26</div>
+  <div class="meta">3 источников · Обновлено: 12.07.2026 06:28</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">9</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">15</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">14</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-10-02">
+      <input type="date" id="date-from" value="2026-07-12">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-12">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,10 +86,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -106,140 +102,184 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNmpicThRd3dkM2phNTlsY2pzQllnN0FHTncxODhNY2UyUUNfRFlGOWtfRHRSdS1pbWdubGljNzJpcDFsZV9XMHNCekRUZU05UkFUOEJ6dnMtYkhYS215RVN3MFNISWk1c09VOUI4OFN1SnA3SG1vTGNjVXN3djZMdW1yaDgyWTlhNVlWN0JfT21zS1BDUHBVMFRPaVpodVZSSFZFbUw2UEREWnNZVzMzVzlURl9CVFY4N0dwUTM5TzlPZw?oc=5" target="_blank">Air Astana возвращает и отменяет рейсы в Дубай из-за эскалации конфликта на Ближнем Востоке - Informburo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 05:39</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana возвращает и отменяет рейсы в Дубай из-за эскалации конфликта на Ближнем Востоке - Informburo.kz</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(14)</span></div>
     
-    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxQMlJ5aGY4YzU5U0hkNC1zcVV5SURLRS1LdWNfSGRUWlN4ODM3TndoVVN5TUk1YXY4WjRuX1FyWlZtemQtQVNxWE9Qd3hoUHF6UnE5ZDBmeEh6NU95WVdQMDlnZ1lhR3NkM1dtOWU0WnVkR0JZNU9WcW9vNTYwWmdEQkJfTklYSXJmcjBCaV9WQlB5QlVuODBVR0pfaGtGd3hIUnpYU0lQeEVsN3JlR01iY09JTkxFbGpDNzlqRHVVSmtaYjVaV2hZZ0YwYU9pYmPSAdQBQVVfeXFMUFNOTkg2OWZUSXItQVd3WG5FclRBSkM0bXRGQ2NUSnpGSWNlNmZlU09wNkhzZHBqc1p3SmJsdlhQY1czVjRKZW5EQVRSRE80Z2pGcGlmS1VfbUxoRjhiZ3BaVUFKNzYyU2NEWHlsSkFfT0p3Q0RQNEowTE1XQ01HcndQaDRndVc1N1JkZGI5NUUtdE5odjdTcndQVjM0MlZHZjJ2QXdsYUZNbWZ5M2VIYnota3hON1ZBSG1VNk82azczMjhNby1OaElzUXU1UEpTc0NfSWc?oc=5" target="_blank">«Самрук-Казына» продала сыновьям Трампа крупное месторождение вольфрама - Kursiv Media</a></div>
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-12/lngr-air-astana-dubai-flight-cancellations/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lngr-air-astana-dubai-flight-cancellations" target="_blank">Air Astana сообщила об изменениях рейсов в Дубай из-за эскалации на Ближнем Востоке</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 11.06.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» продала сыновьям Трампа крупное месторождение вольфрама - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-10" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOWFlYTnlYMEoydzdadGlvWl9vNkZzcWdkVmpDU0U0S0doT1NaYUtwTVAtbkZINFdsTy1CS01FalB4aWhzMlB6S1VwU3FrXzRQM3lFZzJLNTNkeS1hRl9kQTdDcldqeTBMVExybS05cUFZUlFwZUZva2ltb2pWWW1GN0M2S3ZfRVN5SmhIb01xcURpdUNrMlBxeFJHZw?oc=5" target="_blank">Транзитный рывок или «цифровая» реальность: что стоит за планами «Самрук-Казына» по КТЖ? - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 10.02.2026 08:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Транзитный рывок или «цифровая» реальность: что стоит за планами «Самрук-Казына» по КТЖ? - DKNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-09" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxNQURnTE1sR2d1YXpyVFFHRUNlYWJPYVphdndzME9MYi1hTkpQcm5LZVptbk1fOXNJcS1iWjJHNDlYQ2x6MTdHWWxyWVpRM3N3S1pENzZjYTVYOWE5NFdZcTRuQkRWQlp1WERZZzNjRk0yMTMxeFVLOEpfQTZ0dktXNTJZWDRlWU1RaklpMk1hMEpDaHRSOGtkbmFKanlyZVBD0gGmAUFVX3lxTFBHZlBXaWx3T2Mtem94Y3NuN01BRklHcG9peGFrTHJScEJLU29QU1pBcEhrNUlWYVdBZ2YxYThtbHNrMnAwdFgwSzFaUmYwakVoamdRVC1URk93ektjdFR3NjlUczdRV3FrX21XR3FoUFB3aS16SU5XcFpfN0ZOU2xRU2NramJpUHJ4UlN4c09KWXZuTUVMUy1JU2hTZUhZcDZzVVI3cGc?oc=5" target="_blank">Как отзывы пассажиров влияют на сервис, рассказали в Air Astana - Arbat media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 09.07.2026 18:24</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 12.07.2026 06:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Как отзывы пассажиров влияют на сервис, рассказали в Air Astana - Arbat media</div>
+      <div class="art-summary">Air Astana сообщила об изменениях рейсов в Дубай из-за эскалации на Ближнем Востоке</div>
     </div>
     
     <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxOVXRITHMydHpVOUhhdDdwSXBiaGVNQWtTb000eDBOem1PbFY4RnN6RUN3OGR2UE9xeHB3N0VkWV9sR05tcHc3eFh2aW9CNThCbXpTaldoMk9IRG1ZdGZBeGMwQS1za3BfMmFzWk5zcXdDazlrU0k3bXBnb0tUeEIyUzNzd0hGYlBVMnJyU0E4UmNrV2NpX1dZMUdzYURaRVhUdTY0ZEplVWRxUzQtTHZwXzJzNGNCWi1mNmlHX3kzX3FFczNYZ0xldUhWOHl6eHFJcEt2YjNZTkdyUkFPRTVWb3JR?oc=5" target="_blank">Тимур Турлов собирает логистическую экосистему: зачем проекту Alatau Air Cargo опыт бывшего главы Air Astana - Регистр ТВ Казахстан</a></div>
+      <div class="art-title"><a href="https://egemen.kz/article/417013-tayau-shyghystaghy-zhaghdaygha-baylanysty-air-astana-nynh-dubay-baghytyndaghy-re" target="_blank">Таяу Шығыстағы жағдайға байланысты Air Astana-ның Дубай бағытындағы рейсі кері қайтарылды</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 03:13</span>
+        <span class="src">📰 Egemen.kz</span>
+        <span class="date">📅 12.07.2026 10:57</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Тимур Турлов собирает логистическую экосистему: зачем проекту Alatau Air Cargo опыт бывшего главы Air Astana - Регистр ТВ Казахстан</div>
+      <div class="art-summary">Таяу Шығыстағы жағдайға байланысты Air Astana-ның Дубай бағытындағы рейсі кері қайтарылды</div>
     </div>
     
-    <div class="article" data-date="2026-06-04" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNV1BXc2JaSi1fbTlJcHlBS05qdzk1SFduZ0xZMTItN0lWQnFZZENYdEZROGNTQjNISU9iWHdqM0VQQ2V6azJCTG9ubmM3WWFRa0F6cUdBUGxRM2FSX1VZWE1LbjVhenV1RGlMNE5GaDU3eXF2Z1JmemtabzJUUVhHWkJaellwX1ptX2NLSVFfOTJ6ZVJ3TTRYb19va3JDM2JhQm5LRTFqZWtwV3BRd01oeg?oc=5" target="_blank">Новые электровозы Alstom и маневровые тепловозы CRRC пополнили парк КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOTzhNNFBuTEI3ZkpXYm9uckZHOS0wVFZ5U3N3enhXQUFkc0pZUWktT093TkxYRk1uQlh1QTN4N2sxaXRmcWlQY3BhVzhBMWNnYWQyYzlaM0p5ZktZN09jQzZKQW5Xb2oybF9BZFB0UmdYdHE5T3hvRHdEb19QLXVWTENocVXSAYoBQVVfeXFMUFdhYlM4NDRiY2lwWHRQQVNGT2I4aFpjWG9nVXU2LV9Ub1RkdFlKRDA2djVPRkQtamhhTnNyWHdQRk5qSE9HOFNDTV9VWTNpR3BlR1RXZlJRVGZRd3NCN1ZWckh0em11RF9xOUF3R3VrSVRtUjhVWS1sMU9FT004amUwamlSUDFnTk9B?oc=5" target="_blank">Air Astana сообщила об изменениях рейсов в Дубай из-за эскалации на Ближнем Востоке - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 04.06.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 06:01</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Новые электровозы Alstom и маневровые тепловозы CRRC пополнили парк КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Air Astana сообщила об изменениях рейсов в Дубай из-за эскалации на Ближнем Востоке - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
     </div>
     
-    <div class="article" data-date="2026-03-18" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOSUoxMEpwTGNSZTB4TU9wQ0JEdkxEQ3VCb0xzYWtvSDhIOHZ6RHpMMEtpeXRneFhKVzRQZXRISU9ja1M1VGZRM2FaZkwxOEFDT2o0OWdMOWxKRGhnOUEybjh5U1R3WFVJRTRIUnNIRy12dUQ0QzZpM00tZXVIbzBJU2hpcw?oc=5" target="_blank">День национальной одежды отметили в КТЖ - Железнодорожник Казахстана - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9SV29jVVVkZzdDNEd4d2pGdjFzM0hiVG5NWlk4NllRNU1VUDl6Z0tBbnFTdVVIU25jSnVjbi1xbnJBajF4czZXTURyR2I4MVB6MWNqa0lPLWVyZzQ3dWJ6eHhSZzUtWWV1MHRUY090TUhHcVJnUmJIddIBd0FVX3lxTE90SkVyektQdFhrQ2tTclVXdzg4MjlyWEFGNklNVVB5cmZWcnBuWlBPMThleXhVOThDc084S1dOQ05vZ3lxc3o1ZjJZTHlVaTNvZHBDTTdBdlUzdWJvZThndGpqR1lwbmMwZzRULUhyek5mN0lDNkdB?oc=5" target="_blank">Air Astana изменила расписание рейсов в Дубай - BES.media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 18.03.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 05:32</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">День национальной одежды отметили в КТЖ - Железнодорожник Казахстана - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Air Astana изменила расписание рейсов в Дубай - BES.media</div>
     </div>
     
-    <div class="article" data-date="2026-06-10" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQNDFWeDJaNDVJRFpFT19lOWJnbDlTaHdlU0c4aDVCeVFNdHlmSkxLcFoxU2c0aXhlbnItM1ZwbkRmMDVnZXQyT1FJQjNaQjdFZ2dMZm1ERENMZ2tVTHBxc3V2ZUdPX3RkWjYyV2J3UUx5S09wX1hCVmVpX2hVZ01TME42ZjdlOGE0SVhORkxpNGpCVnBwU3lxWTNiOUIxb1MwN0E?oc=5" target="_blank">Церемония награждения детей работников КТЖ прошла в Астане - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMndObFhTNFRMV3h3SURiY1YwenJaOHgzNldZVUZkc2JYRk5teWNGb3dzcGlaVjVqTmw1NGUtYm00UEljYXNYN0Y1VUtKRF80ZnIxTFlrbUYwZlhFd2tqcS1UZTFoVHY1c3lEbmpvUDBxc2FCdS1Zcm1McWxLeHlpLXliSjJTZDdQa24tRTJGaTFIa2Q1d01UU1BURWNlNGs3SWhpMElPc0lwYTFsQjBZb2toSVFMYkFSY1pZ0gHAAUFVX3lxTE5nYTZKOENjcmN5RGNCVFIzN2pVQmptSE1ob1VtMkg2R2JvYTQ2TjhWOWZkdWwxY18tTkl1TUZ2aC1oblBMQjdweE9WUTZ4UnR2ZVZfY2prajFwSmxsR1J6c2h5clYtY0E1Z0tJS3RiaUdhSk9qRnNlOGV0eDFMZnV0RlphSTQ2cHkwYldlRS1sUEpDakFvbmhfV3RaRmZ4cmtnQWpzNUhBVjFpY016cWd6MnBRSm5odXc1V2NuUExEVA?oc=5" target="_blank">Эскалация на Ближнем Востоке меняет расписание Air Astana - Arbat media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 10.06.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 05:59</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Церемония награждения детей работников КТЖ прошла в Астане - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Эскалация на Ближнем Востоке меняет расписание Air Astana - Arbat media</div>
     </div>
     
-    <div class="article" data-date="2026-01-30" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOak5LcjQ5eVFFSG9KWngtQWV3S3ZRRDRvUEMxX1gwQnF3VjlYbG0ya2NPTUU1ZTNlZlRRUlpOWTlMaEVYMWp2d0tyOVBIaFFWUGEyNmlxb0ZMM3dQUC1pRVVQUlJBY2tRdTRBZWdLLS1iNmY2cWFhVmlMUk81Qm5ESmpDallJbUczWGgyY0FrWE9WM1BpRDRVRFZ2Q0pUcDhxelE?oc=5" target="_blank">КТЖ и РЖД определили приоритеты развития на 2026 год - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ3lBSy1wR1g2VDQ5WExBM3BzUlJTQUJlZ3BxZmd5NHdRSWhzMlZqRi1PWG4xSUlGc1lXMWl6eF9KT3h1M0lRbjJnZGVRYzBVWFl1VjBYSkk3emc3ZHNNbWNMQUNIVWlHS3JFMEk5THg0Zzh4RzI5THhiWDdzRmk4MEZaUXFqOFdFb1lGa1pDN1JCS1RrNV9EbmVWVWVJdFhJT1B2UA?oc=5" target="_blank">Самолет Air Astana вернулся в аэропорт столицы из-за ситуации на Ближнем Востоке - Kazakhstan Today</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 30.01.2026 08:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 06:05</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">КТЖ и РЖД определили приоритеты развития на 2026 год - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Самолет Air Astana вернулся в аэропорт столицы из-за ситуации на Ближнем Востоке - Kazakhstan Today</div>
     </div>
     
-    <div class="article" data-date="2025-10-02" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPbklZYmdTOHJxWDJHMnpsbUJjX2VVU2NqY2YyVVlXRXU3LWFZLXJmdU5XR1RmcVJzXzQ1Tjc3a08xUzU4SWtuRy1zN1ZYQlctR3d1eUFkWUFRdWIwS193YXhMUlZGNEZRSnRYcDZaSnIxelVaQWtXZlljbnJkN2JjUXJpOGxFUlk3czhjQjhycDRYUDJ0MVRtamlIeGI?oc=5" target="_blank">КТЖ и AD Ports Group обсудили перспективы сотрудничества - Железнодорожник Казахстана - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPRk1Fa0V5b3JpUE9JNEVyVk03bHBLREktcnlEblhFUjFqeENESUFoTzVlVHhRWEJUZWV1dGZvQ2RTTndkTEpLVDVrODBraEdqUzAxSi0xeWI0cTk2UzhzSGh6NVAtSEotUUlfdnFmc2xhNnhiRGhWTWNYQkk1bkNRSEZQeW5QQXllc3FpYjJ4SUdYUGZMazg2MdIBoAFBVV95cUxNdzFDMWNHMzNrRTVFdFBkSWc5cjFYTjlvVTVMTERzaEFzVGxjVXBraGo5Nld4a1BrT3RFTFQ5ZkxJNTV6ZmNZVEUtS3NUV3dIYzJhdXdxTmt3cmY1Q1lzNnd0ajUwLWlfeE1WWTVOT0h2NU5BRjhiUVJ1TE9KeXBYMENTdUJCZ1JkdkI1QWpocEtjSGNCdG93cFBnMEpzY2pB?oc=5" target="_blank">Эскалация на Ближнем Востоке: Air Astana отменяет рейсы в Дубай - Central Media 24/7</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 02.10.2025 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 06:07</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">КТЖ и AD Ports Group обсудили перспективы сотрудничества - Железнодорожник Казахстана - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Эскалация на Ближнем Востоке: Air Astana отменяет рейсы в Дубай - Central Media 24/7</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOSWl6UnJXcFdFODRGWVNTbUpmQm4xZkItc2VjUGFXQUU1SlFLaE5zSy1oQXFJanhQdkJObXdQTTlSYldhU2ZycEpZVFZCaWZtVWtsSUpvNm94Y29MUlBra0JGcVdPNndhVFNfWko2UHZ2ZUoxOW9DMDJOeGtRTEtCWko0S2xQcVM5SmtIT3ZCSFppZ1dXWTk3Qko1elMzSnRRcnczNHp30gGnAUFVX3lxTFA2ZFBzbENrRU9UUW9yaDZBbjU0VHNWbnhySl94YWcyUWJ5TkhjWk9JM1NYVHNJV0QyeU5ZMWMxWFpucDJGSURXTzVKekxkLUwzeENrS2FPN2JKX2dSUjdFcDVGZzVueW9rS291OFRTSkhKeV9COWRfcmVSdHV5Vy16YzdERnF1ZXFaZ19CelJWSjJObWxqWl90eHdqTGt2R2wxek81X0t3?oc=5" target="_blank">Air Astana изменила рейсы в Дубай из-за ситуации на Ближнем Востоке - Казинформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 06:09</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana изменила рейсы в Дубай из-за ситуации на Ближнем Востоке - Казинформ</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOQzlXZHVGUWE3eUpGcDlKSWFoZzVQWklRdnNlQ1JUc29VYXNfTGhYVHA3blFlb05QNlUtM192c3p1WGpuZjdFYUp1ZUhhTWpFamFpOVpTQkdtSGpERnZGOGFZcWxzSW5mcEN0eDJiRTFIRVRpZDE4QWE5RGtXNllPZjJDS2F5TFJlTERHMTA2WWFqM2hXRGc5Ujh6bURKSHJEQUdadnE2LVpOUkRKNFZxa3RXMEUyZw?oc=5" target="_blank">Эскалация на Ближнем Востоке: летевший в Дубай самолёт Air Astana развернули в Казахстан - Orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 05:52</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Эскалация на Ближнем Востоке: летевший в Дубай самолёт Air Astana развернули в Казахстан - Orda.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZ1J1Zjg0M3BkNUtWdnYwUklDRmNVTU9UWjdMRFY2Skc0dEVHQ0VLa0NNQnBuYncxM3dGYVdqUkNCWWM4akJtSU4tR0V4N3RXTEFWQ2I2dlRvbDJXMmNBcVFtS3RjSkpDbjE3SlFBX3NERVk4OElFX3J3MW84cDE4aUQtVks5MDZrLTY3SlM2bk9yWlVJOUxwVHFDY2RoNFYtVi1nU0gyM0VFQQ?oc=5" target="_blank">Air Astana отменила и развернула рейсы в Дубай из-за ситуации на Ближнем Востоке - Казахстанская правда</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 05:37</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana отменила и развернула рейсы в Дубай из-за ситуации на Ближнем Востоке - Казахстанская правда</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPeGt6VFlvcW1tWTBDS0F5QmgzRlBvUDBvcUxDOVF0V0JHMHRsTWhuMThIRmlZb1NhZFFSdXZ3MnNXMllsUm5IWDNNNldIT1JnS0g4OTlEVVFYazh3Y0Rpbi11MXNFMnpIMUxCMjAzSnFNZXVEMnU1cEl5dEc5ak9ZX3VQZDdpSWlxZXdRV3dEQkVtSXlVVkE?oc=5" target="_blank">Из-за эскалации на Ближнем Востоке Air Astana отменила рейс в Дубай. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 05:40</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Из-за эскалации на Ближнем Востоке Air Astana отменила рейс в Дубай. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE4tUXUwOTZhUkRPeXhzQWxJY29acnZaMzRRLVBSNlF3d0sxM1pkVmV0R1NEVEhKTDM0YWhBYnNmTWxBMkp4UmYzVG1aNDU?oc=5" target="_blank">Air Astana изменила рейсы в Дубай из-за ситуации на Ближнем Востоке - Bizmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 05:46</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana изменила рейсы в Дубай из-за ситуации на Ближнем Востоке - Bizmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMWFUcEpnZjlCbVdHMGVBYy15VDMyS3I5X0RnWUNpVFJ6VTEyTThRVEx3MGdDNkNLVHlKVkdNZ0VFSHBWNGFUQW5XSUNuYlRjd3RCVGZHRHByTXdJRlY4LTVRVzVXcnEyZHQ2cUppbGxnVldKSFhLV1NSeF8wTHRacVlXLXpXN0NEMmpYLUh2OG9QT0NfcTZmYVpqSDNQa0NLR1NUZDFqT2JCQQ?oc=5" target="_blank">Air Astana отменила рейсы в Дубай из-за ситуации на Ближнем Востоке - Qumash.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 06:11</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana отменила рейсы в Дубай из-за ситуации на Ближнем Востоке - Qumash.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSkhSVmhjVktGb1NCb3ZaZlB1aXZ5UmFRa1hURldsazNxbENWY2N3SHljTUpQLU9pWWVIN3R4TmplTTVjSkhpUTc2VnlYT01xc0NTSDZnbDBxZ3N4QnpwbjZkcGtXMm9qWmpGWW9FTjZJRFRxU3dFczNfQVVRekJwekNBRWJXRkF4QXpjNUFzQTlNRGFucnNMaUV5cWNyTlJhVkNfcTlLcGR3SjZZVXZaRlhBOTM3OUtUXzYyeXJCY0VfQQ?oc=5" target="_blank">Air Astana отменила рейс в Дубай из Алматы, самолет из Астаны вернулся в аэропорт вылета - inalmaty.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 01:10</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana отменила рейс в Дубай из Алматы, самолет из Астаны вернулся в аэропорт вылета - inalmaty.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-01-15" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPMjRqMmRmSHhIQVhCNzExaVlxZl9SMXMwSEEwdE5XbEF5TkhzSm1ETkZMdjlYTG9WM0MzWk0xLU45ZW5iNXRCeGc3aEVxREdydUpNMWdWMDM5QUZuTTRVN2xsbXlCM3BHNEw4RTNzYjBHdjhWaHJQbEVHRUdIcVh0aXVIR05CZEplZVE3RW5GdnQ4Z2dNTEwxY0lraFZsWl9sQjR6YnZpSV9xWTBEc2JPZ0haVk5pSHdqalNRZGRkWGp0bjBf0gHHAUFVX3lxTE5iblFaSFB0VHo0MDU1b3lkSjZEdEN0MVNiS3M2Yk5YazJEMTVjWnR2TTQxZ2N5bEIzSlhWOWYzRDB5UG9ENVpXU2ZUS1R6cVAxS1FSN0JWa1pLOXd1ODhqNktpdW5jbTJFVE9BX1ItRktUME91QjN5RXVSZlNXOFhaQ3RFSzYzRG5BMmV0V1o2cmNGN21YMVZFdXpzYnZCX1I5WHRPRi05eGtnZDVFZzJnZnMxWkRONHZFd0xCbm5XdHFVLWFyVG8?oc=5" target="_blank">Air Astana меняет маршруты рейсов из-за закрытия воздушного пространства Ирана - Азаттык Азия</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 15.01.2026 08:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana меняет маршруты рейсов из-за закрытия воздушного пространства Ирана - Азаттык Азия</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-23" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOOEh1dTAwVjRLRGNKZXRsYUY0YUN1eXhicEFuYVJXeU9PSWFZbXA5S1FBcnVKejZjTDVFSktBa0RCRlhBM09Wbk5DRi1aZklLanZ4R29tM3ZDZ2FPTW44T09OLXZORzdpU2xaYmsyMExHMV9QaGtPVjFRSm1IcHBUcjRjZ0l4YnBlN1lIc05Zck5waXZGY1NCQU1TT2wyR1ZYSTRuY2JOSmNxQkxGRGc?oc=5" target="_blank">КТЖ и Вьетнамская железная дорога обсуждают рост грузовых перевозок - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.04.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ и Вьетнамская железная дорога обсуждают рост грузовых перевозок - Қазақстан теміржолшысы</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -298,7 +338,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-10-02';
+  document.getElementById('date-from').value = '2026-07-12';
   document.getElementById('date-to').value   = '2026-07-12';
   applyFilters();
 }
