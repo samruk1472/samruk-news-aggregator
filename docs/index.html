@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 12.07.2026 16:43</div>
+  <div class="meta">3 источников · Обновлено: 13.07.2026 04:31</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">20</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">17</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">12</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">12</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-12">
+      <input type="date" id="date-from" value="2025-10-16">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-12">
+      <input type="date" id="date-to" value="2026-07-13">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,6 +86,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -102,244 +106,146 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQY3BEWENwcGRsRkotVFc3NTNyN2lyV1lMLUpPTTdGSVAwb3VIelpoVGtGTTRoeW9KdjdKVFpMVmpYMkdSMkFQeFJVeHpvSU01V010QnlSYjJyUXlDWFJRQS1kY3k2NHdLd0VZamR6LUp3YURSbHVwQWpVRHcxdkV2dmg5cG04Z2ZWZTlCOW9PeGVyWkt4U1pHbEl0Ny11MWRQREQ0V0xMaWhuVHdudm9sdTVwWkJWdk950gFKQVVfeXFMTmdma1dRWmZXdFRZQ3JNOVdXRnA2S1FpTC1aQXRhbmxxMGVjNk5oYi0zYUpoSm9iU0JtMTYwU25GVUYyQ01ldk4zT0E?oc=5" target="_blank">Air Astana вернула вылетевший в Дубай самолет из-за ситуации на Ближнем Востоке - Вестник Кавказа</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 15:53</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana вернула вылетевший в Дубай самолет из-за ситуации на Ближнем Востоке - Вестник Кавказа</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOSTd0eGxUM3FGaXZBbzJkYlp5TGYxQTE4YzBHSWJfYTdwVnhyQVFmbGpkaXFwMHNFTVZGWVF4QUQ2OEZONy1YcjlodGJJb3dSeFMzOG5oMUVTN285SFZkZklHUVpDaHAyRllJbDVER2FKU2kwSUxrcTVKR3Q4aFVHQk53emo1cEk5QzlFUlFKNnkxV2xVbEZCNkUxbDlYak8wU2g3SVR3?oc=5" target="_blank">Из-за конфликта на Ближнем Востоке Air Astana отменяет рейсы в Дубай - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 15:26</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Из-за конфликта на Ближнем Востоке Air Astana отменяет рейсы в Дубай - Ulysmedia.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(17)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(12)</span></div>
     
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://egemen.kz/article/417037-air-astana-dubaygha-barlyq-reysterin-toqtatty" target="_blank">Air Astana Дубайға барлық рейстерін тоқтатты</a></div>
+    <div class="article" data-date="2025-10-16" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxOLUk3dUhYNnh2a0QzVldzQjVxYXpxTFpvSEd6ZFF6LTZSRW1NdHhqc0NmUlFJenhYb1pORGVGSDNkZ3Z5cXB6VkdFSkJUWWZrcGJXVTY2bHBDY2ZTZW8yUFJKZjlDTEhZN2N0ZnUtdGswWlFVUWFDTUhvM0ZoU19oX1k4Yi1PZmRWXzJ4amRmaEE3eGNiYi00bl9hc0lpRVR3cEdDQTFuUkZadlFucGJNc0RiWWJYbFBhaldGU1hn?oc=5" target="_blank">Глава государства принял председателя правления АО «НАК «Казатомпром» Меиржана Юсупова - Ақорда</a></div>
       <div class="art-meta">
-        <span class="src">📰 Egemen.kz</span>
-        <span class="date">📅 12.07.2026 20:59</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 16.10.2025 07:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Air Astana Дубайға барлық рейстерін тоқтатты</div>
+      <div class="art-summary">Глава государства принял председателя правления АО «НАК «Казатомпром» Меиржана Юсупова - Ақорда</div>
     </div>
     
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5uSUlxTThPbEF2bFk0SnRzZEhma1J1OF9uNG9KanZXQm12OVZ0SHNiRnlBdkIwb0F5bnE0ZlhBZllwY2J6OVU4Zm1oYXVjMWNRbnFoekZYZ2ZfUHRHdlNZRm8zOWlRYkFDVUlMMzNyVjRSV0FsLUI1anh3cXBRRTg?oc=5" target="_blank">Air Astana приостанавливает авиасообщение с ОАЭ - Orda.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 15:27</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana приостанавливает авиасообщение с ОАЭ - Orda.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPNFFmcl81V0NIWG1kcnRGWk41TS1aTmR2ejhJNnE0ZFRHTEI1VmpQX0hnN18xaEEzYTh3Tm4xZFR6Q20wVE5lQjE1ZFpHUEEzdGk4SnhRbUVHNWVJNXNPWjVXWVBEdU1RRVhEejlUWWJnRE1jaGtySndaLTFpbFhYSmlKclM4OXNNWXlMT2dibm1ZUQ?oc=5" target="_blank">Перелеты в Дубай под вопросом: Air Astana расширила отмены - DKNews.kz</a></div>
+    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPcUw1WVNLYTMxRlZCT3pOQ09XYTMwRXhJWlJjMG51c2wxOFp4allsRXVyUEstdE9QZWJob1NrWlhVYks0YzI0ZW5waEVNWlk4WWlTZEdNS3dfZ3dOVFladUNIakl1Qkp3VFc2aGhXV1E3azY5N2ZhSElVUEllM01zZFRfSDdUdw?oc=5" target="_blank">Air Astana снова отменила все рейсы в Дубай - NUR.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 15:08</span>
+        <span class="date">📅 13.07.2026 02:21</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Перелеты в Дубай под вопросом: Air Astana расширила отмены - DKNews.kz</div>
+      <div class="art-summary">Air Astana снова отменила все рейсы в Дубай - NUR.KZ</div>
     </div>
     
     <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNc1hJSDNFdmhMLWcxckNya2J0ZjExcldFSEdLQUphME84cnNpWVdwYXEwdFM5OHY3OVRySTJoSXNmLWJ1ZHl2YUJsTFo1WGM5cjZKOTdIMjF5MjNySkxHUWVkOS1CYXJ1YWJZVVN0a2RZcC1xcFN5NUJCMWlpWGNBWW1Bc0tQa3RlMWFIcml5Mnd5QXBoajRKdkdJaFo?oc=5" target="_blank">Рейс Air Astana в Дубай возвращается в Астану, еще один отменен - Masa Media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOdVFWS1dhNW85UWpVUGV5RzRzS2p3VDNGeHB2ZVlHNjB5cjB0eWdDSDkzOHVfLXNraG9iRTF6ZlZzRGsyQktvS2hWNng3OEl0OVFPWG5Sd2RtRV9vTWpBZjhuRlIxNHh5VV92a2VhMzhlcURlS015cEgwQlNvZ2hBVkhXTzZEUUFZSTB5VGZYeGFUWHRQT2Y3R2ZpUmdDVzlYY3ZFUA?oc=5" target="_blank">Air Astana приостановила полеты в ОАЭ на фоне эскалации на Ближнем Востоке - КазТАГ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 11:22</span>
+        <span class="date">📅 12.07.2026 15:59</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Рейс Air Astana в Дубай возвращается в Астану, еще один отменен - Masa Media</div>
+      <div class="art-summary">Air Astana приостановила полеты в ОАЭ на фоне эскалации на Ближнем Востоке - КазТАГ</div>
     </div>
     
     <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNDNVQmFsU3NRaXY3UFpPVnRqcUlGcXBwUi1CTnByLTlzTk1xdTBsTnRtQi00Rm15OEJLQXdTaDdrOXhfUEdST1pCWm1xVERCaVBaajFnVzMzdHdYeFdUT3czQ2RlLWJROVg5TXY1aXcwcHR5eGExbjY0d1FscE9JXzJGOTBGY0ZQd3kxV1B6S3UzSG5Nc3lPNlllelU1T29yWkY0RnNQazZ0SWpWVE9RaEcxOEtoeVgyckJkZWVPVXlrQQ?oc=5" target="_blank">Air Astana приостанавливает авиасообщение с Дубаем из-за ситуации на Ближнем Востоке - Azərtac</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE90WnkxbVN1SlN3dlNERUE0UTY4U3VySWFlaVg4SnZNbEw1d3Fyd0J2RFREaHdJb3VFN2VrU0lpVnM0aVhjRmVDR1hkc3FhbnJRWGtYd1NIQW1jT0JsbDRiTmtrNHY4TlBnbS1UeUl3?oc=5" target="_blank">Air Astana приостановила полеты в ОАЭ - Caliber.Az</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 15:55</span>
+        <span class="date">📅 12.07.2026 20:02</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana приостанавливает авиасообщение с Дубаем из-за ситуации на Ближнем Востоке - Azərtac</div>
+      <div class="art-summary">Air Astana приостановила полеты в ОАЭ - Caliber.Az</div>
     </div>
     
     <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZVdOQkdqSmhDMHF4YnpUQUUxdHNFeDJ5UHQ5eE93aUloaGVQVlo3NXBBR1RaSU1LUFJkMjZrYWNHTE5pWkhFNXZQN04zSGo3ckdmeGtlcC1GOFFGdUJTaUlBYlJJNUlJeXFRQTR0TTlWam5CODZRWU5IekFMNS11d0YxY1k5a2FGbnpMVHJBZmVqRUJtVEh1emkybkhWdjVpQ2J2M2E0M0YyREdMRU5hMy1YbHhtOFBwcnhN0gHAAUFVX3lxTE9yQTdpenRkNVVnQThZM0ZTZEt4dVNWSXlYRktvSWpUdFAybm85NDFqNXRER1k1SVlnOVROdnZOY1EweDZVeTE1Z19LX1RIUl83TlhJTlhBSndOWmtoSFlNRnNTeEtyXzRiNnFEaXAtQnlvUlk5a1JRd1BkVlhmMFVSUWt4ZGFLd0o2d29PYm82Y1o3WWR0X1lVeERmVUtIOGU5QWdReUpEVVRZS1dObi1Ea3p5eXV4M0NhVnVsN0ZyWQ?oc=5" target="_blank">Air Astana приостанавливает авиасообщение с Объединенными Арабскими Эмиратами - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 15:25</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana приостанавливает авиасообщение с Объединенными Арабскими Эмиратами - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNeFluQTByRTFqZENNczNqejVweXI1QkQyRExXcFdfd1VjM3FONXZtdHY1VEVoQWpZaDVnN0lhNm1WVWZ3WHBVUGYzVjd0MkJzaUlSS2VXVmNkMk9KQlVBcG1JTG1iZW5IQlFWMThxbXFDTVF3SHFlX2FDLVNWUFktNUFJNHpmalRCSE91SDVCdktWWGQ1?oc=5" target="_blank">Из-за событий на Ближнем Востоке Air Astana изменила расписание - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 12:57</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Из-за событий на Ближнем Востоке Air Astana изменила расписание - DKNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNQTNVY1YweE1uTk5zLWNBalJVSjVmRHZ1T1J2NXA1c1BWSnoyTGduTnFSS0VCcmJKWnl0aXBvNEpuYThVV3dkSFJQWFRjUGE5bm1xbmNma0N1VDlsME5oU0loVkRHYlFYUUtYcExaU0ZhZzNQNUI2Z0QwQjRKVldKQkZXM1BfcE12MUg3OXI5Q1HSAZYBQVVfeXFMTThYeGhVQndUR0dQR1lzTG02c09XdUc3aE5aSzc2MDBQVWZQc251QkU1eU5rOEFrdTNfemtaQWJHdWtzbC1oYkFwUjgwMi11NkNoRlg3WHFOb2Q3N0pFZjlDQkFxcmFHa1Z3enU5MGhEVVJzZWhGaHVYMjVwNXB3QjZqN1AwSzlXZlp2TUhIRUh6a0M4T0Fn?oc=5" target="_blank">Air Astana изменила расписание рейсов в Дубай - 24.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 13:15</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana изменила расписание рейсов в Дубай - 24.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOSF81RFNXTS1wSVZmUHdCWHh2em1SNlNCXy1pRlhIVlVWSjNySktqNTlrSzR3NngyRkVqcnM2ZXc4cDRUWmVfVjJzcmdDaWVVeW9PZFBFNDI1NVNsRzJjN0tKRmFBNTBoSHFYb28wazYzd3VWZl9mMVRoUGgzUjRwS2padEV6TWhWZ1VtcTM2Vk9VM2t0SnJ2VlAtUEtDLVNaRzRJSnVteHdXN2JsMmZTV0Z5eDHSAboBQVVfeXFMT1BmYk5vcHNHSE1kSW1rQWJ4dlRVTzV2eElKUlBqRzhjLVh3Rk4zSnV0cVhldFlxa2VKRFNtdFoyUWxPcWxqdG9YanlsLXl6b2RnU2V0RGVoUmxneFllQTRsQWgyQVA5QnhDdHlUWFF0OGVjMExNa18xSXhHQmNCWjB0SDMyOWF1M0hSYlUwV1FheDZPcmFmVDE1MmhVQVc1cTFNX3ByQVVIWUV6ZXAyU1JOYVpiZDNtVEVR?oc=5" target="_blank">Air Astana вернула рейс Астана — Дубай из-за эскалации на Ближнем Востоке - Рамблер</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 08:23</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana вернула рейс Астана — Дубай из-за эскалации на Ближнем Востоке - Рамблер</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxNbzhOUE03bm1LLU5YZ0dERGNmTzE2SWM0dWhyVXdEX19XQkFHOU9uQ1dEb2Q1RDNhdG9URW9HSmJmVFl0ajluT0xPS2s0NFI0VUdmdlRPU214aDgtbzBGM2JjZVBkc2FleXdtOXBnNzcyZ3lXN2g2dHBKZHhpWG9qMTBicjdaUXQ3dV84UVp4SFZtWUE?oc=5" target="_blank">Air Astana отменила ближайшие рейсы в ОАЭ: 12 июля 20:15 - TengriNews</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQWnZuRXU3aGdHM3RuYjdvVUp2MWMwbTZ1dlNINWl5eFd6ZTczYlFKRDJhUmVrcGVjNjZIc2tPMDFBTVprM0NwUF9jQXh4UHUtVWFENC1UUnJpY1l0VUZDSTJMdFJSMkREUTNvTHZyeE5Kd3E3MFBKU1dqNUlZeGZpQ29SZDMyR0Qwc2gyMnp0WmR5QVFRSmhwSA?oc=5" target="_blank">Air Astana отменила ближайшие рейсы в ОАЭ - TengriNews</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
         <span class="date">📅 12.07.2026 15:15</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana отменила ближайшие рейсы в ОАЭ: 12 июля 20:15 - TengriNews</div>
+      <div class="art-summary">Air Astana отменила ближайшие рейсы в ОАЭ - TengriNews</div>
     </div>
     
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE8xREpSSHQ2MlFlUDRwUVN5LTZQc001bnNldWpvYi1XbGFwWkNEWnBfSHdTTUhaVFg1T241My1yc1JXRHFEcGwzYjVfa2gwQ3FNRmpRWFo0dHVOY25OeEF1RXJRQmhEdnFNbTJLaGtjOS3SAW9BVV95cUxPQy01a0pqZF9pSXlzeGJzWFJsaC1YbmNRXzhzakFyX2hLY2tHNUFnR2dvU2ttYV9KWExJaG42aDUtUjBzN2FhSW44QVJPdVpFRmZPSVZSRlV2dXFQek5WZmdqWU1vZ3RpelVVSGIzUGs?oc=5" target="_blank">Air Astana приостанавливает рейсы в ОАЭ - BES.media</a></div>
+    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOTThPblY5Q3B4Y0ZjeXNOSkZIOE1HdFowRXZpc0VYSkUtRjliTkk3eTFtXzhWdUtaRHdsM3ljRVNiM2kyNFBFQmFpSkVXajkwanVMS3lhUHBzV2VjYmdvYTB0QXhrS0xXVlFRRDB3azhJa2xSTnVGcTNqaDFlSG5NSXFsZmlMdmdGWlFseFBPX0dIbTh5YldLTlBn?oc=5" target="_blank">Air Astana приостановила рейсы в Дубай из Алматы и Астаны - inalmaty.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 15:22</span>
+        <span class="date">📅 13.07.2026 04:05</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana приостанавливает рейсы в ОАЭ - BES.media</div>
+      <div class="art-summary">Air Astana приостановила рейсы в Дубай из Алматы и Астаны - inalmaty.kz</div>
     </div>
     
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOZmZlZkhjZDFTRXpEc0VFcWtDSVFBMXF3dlBCMjlDTUdmekxhM3BKemNSTzJKZ0s5X3lSYTdTMGc4UGd3Mzd5QWRDY1pIdmFaWEpMWXFCYlMtV2hrTzdMZURJMVpRZUVkaWlIUVNEbWlvRDZVRm1JakNyVjV4Uy1kcHlfd2t2cVRzVDgxbFVqelpMcTY5UExrYkwyV21EcnBTdmlOTENJUVlhVTMzbnlz?oc=5" target="_blank">Air Astana сделала заявление о рейсах в Дубай из-за ситуации на Ближнем Востоке - Informburo.kz</a></div>
+    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQdWRiTmRGQ3NEWEtjRE93Wm1rS0JqQUlTUXpybVhudGpQZlk4cmdaalJwdzVIbWdEbzFnT1YwRDQ1Zk91b041WDFJVFEtelNmQnpBZUwzVlRaVmx5VU4tQzYzRTVDWHlyWHNpaVRVaFpiblZ1Q3pyOGg2NUdsR01PblprZkpCbS14TlM1WA?oc=5" target="_blank">Авиакомпания Air Astana приостанавливает авиасообщение с ОАЭ - Ratel.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 15:39</span>
+        <span class="date">📅 13.07.2026 04:15</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana сделала заявление о рейсах в Дубай из-за ситуации на Ближнем Востоке - Informburo.kz</div>
+      <div class="art-summary">Авиакомпания Air Astana приостанавливает авиасообщение с ОАЭ - Ratel.kz</div>
     </div>
     
     <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXY1NjVFbXVyUkgyTG1QY2FTcUEwZUEtQk1lY3lubnpMcGVuMDRvTXgzUVJjamwyemhsWDdKZnVTZkFaTnBZMVFLSW9MRFk5dUpVRlgxT2xEZ0hNbzJtVUFXTXlmal8yWExsb2g5UXc1VEV0Ul9qM0xHVDhJSUdDOGpMNV83R0JEbU9BSWNvck50RWF6WURyR29ZeTBWSzdvT0tF?oc=5" target="_blank">Air Astana приостанавливает полеты в Дубай: что нужно знать пассажирам - Inbusiness.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPb0M0LTFxNDk5cS1HdzBCSG9TdVEwSUJqSlUyY1B5alMxTXpVcVhFaEV0RzlyX1M4VWFQRWRTQTJQSXp2QmpTaGtuenZ4MnE2RThXNXBaazRVdzA3MnlwZTJiSkRMMS1uY1pqVlh3aWQ4WGdDckFFUUxyczQ1elBCY3lGdTVnUdIBiwFBVV95cUxObzkxYWFZNHQyZTV4SjZnd1pTTk5GWE12cGV1bmVlQVJ4MkpkemppTkp2dlZfLUJXcC04N2ZXblFlS24tX2c5cFZkQkNsZFZVZnpZeE5qUnlITUhQbi1FVDF4enRYb2hwMmlUOVl5VzZiYVZPdWpkTWpVNG5nMldJVnNXX2x5aHV0djhn?oc=5" target="_blank">Air Astana приостанавливает авиасообщение с ОАЭ - Liter.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 15:16</span>
+        <span class="date">📅 12.07.2026 16:11</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana приостанавливает полеты в Дубай: что нужно знать пассажирам - Inbusiness.kz</div>
+      <div class="art-summary">Air Astana приостанавливает авиасообщение с ОАЭ - Liter.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQeEdUV3NpWE5ONFV1NWRZVkh4cXVSZWl3cU5uRlg2TWJ0MkJjWGZPMDFxRHNuNFVnSzZsVV90SjFvS3JNM1piRklRZlUtdEJzN3pfbWZQbkM3QXV4TEdvbFgydEo5TTMxaUxrOW1UQ0ROSUp6ZlRhS19mS24xRVl6UnByX1B2QQ?oc=5" target="_blank">Air Astana приостанавливает авиасообщение с ОАЭ - Qumash.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.07.2026 02:31</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana приостанавливает авиасообщение с ОАЭ - Qumash.kz</div>
     </div>
     
     <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOeHFLdTVRQVh2aHRiOG9fTU5YVUpfcTVNMVpzZVc0bjBJMHZvQTlILXBvSmx0LUQtM3JQZ2FaZjRmXzc4a2h1dDl1WGFiX25vSVZLcFliNmxsOVdYZDFwRlQ1MHVjRVZrT3ZRemo5NXBicTZiNmlqMmNFcmlEeC1BcXQ0RS1zTFVJVVHSAYoBQVVfeXFMTnhxS3U1UUFYdmh0YjhvX01OWFVKX3E1TTFac2VXNG4wSTB2b0E5SC1wb0psdC1ELTNyUGdhWmY0Zl83OGtodXQ5dVhhYl9ub0lWS3BZYjZsbDlXWGQxcEZUNTB1Y0VWa092UXpqOTVwYnE2YjZpajJjRXJpRHgtQXF0NEUtc0xVSVVR?oc=5" target="_blank">Air Astana приостанавливает авиасообщение с ОАЭ - Казинформ</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVFd0ajZDSVhDcUFnLXBjT0RaNmh3RXB3NGxjTU5uNW1fSjk0TjIzQnMtNWtVR1FESTd4bFNhOS1vczd3TVZiZ0V0aTVKTVZ3bFc0bDNaRG5HWUtVa3lmVWY4M2dIRzU4allrdG5lakZIR2NENDNVZ0tiZlBVbS1aS2NYRDlZbGdXREdB0gGXAUFVX3lxTFAtekxRa20xdXRxSmp6X0E5NHppbjVQSk1na3BRS0dWZ3ZZdjk2d1JiMVlDdUt1MHU4WVlSQmdZVUdMVnBTRHlnLVBVRVFoc1dhZXdENzNrWGxoZ21QMEQ1a1BWM3dKcGVlcFhqUmhpLWVyWHJIcnBSOXVYOF9UNTIzN0dxclRFcGFDeGtzTW82cm9kQXdVVGs?oc=5" target="_blank">Air Astana отменяет рейсы в Дубай до середины июля - BAQ.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 14:19</span>
+        <span class="date">📅 12.07.2026 16:51</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana приостанавливает авиасообщение с ОАЭ - Казинформ</div>
+      <div class="art-summary">Air Astana отменяет рейсы в Дубай до середины июля - BAQ.KZ</div>
     </div>
     
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOYXF2MnNJNUFUaGFGX3ZjZ242RWpDYUdHcFlmZFVKVmREQnhXN1ZfN29makhxUmRmY09rMGVXQ1VhdGVaYXBBZkdoTlprOUJFX0dHeDlCRTZxTTZGWHJ2eUlEZHU5b3ZZellISktyN3o0Sy1xRnhHZmhhRDh4Sm9HTWE0V0d5aE1pdG51UTdUb18?oc=5" target="_blank">Air Astana приостановила ближайшие рейсы в ОАЭ - newtimes.kz</a></div>
+    <div class="article" data-date="2026-07-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNTkZEekNfZGhZc28wV0FqWXBRMHo1TG9tLVdKRTY3RlJxTmZfMUhUYUlVX2JubzZ6aDJTdTdyeTczWE44QnAyQnZsYXhDazRnMV90ZjFoY3VrRzBtQWY2X3R4UV9pc29STEUzNmtwUjZQR1RidWhBTFBxaHpOczA1OFlDTThUaGhYWGt5MEQ5d05iYUJCdzZDNmVvSlBGZy1xQkE?oc=5" target="_blank">Новая линия к Китаю. Строительство Бахты – Аягоз держат на контроле в КТЖ - TengriNews</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 15:30</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.07.2026 03:03</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Air Astana приостановила ближайшие рейсы в ОАЭ - newtimes.kz</div>
+      <div class="art-summary">Новая линия к Китаю. Строительство Бахты – Аягоз держат на контроле в КТЖ - TengriNews</div>
     </div>
     
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQSDluQ285SG5FNHdWaWZMSEdXT2Nmd1JYeVRpcXVuQ2NobTQ3eG83T3E2MG0zcl9xbmpiRTNYN2tKNm9ZWVVzY3NTMzdDNldSNWZaTDE4OFlSdVh4N2pldU96VzlmU19MSUdhQk90alNtTGZvNDZZYXBxcGk2UnVValRMLUN0SHB4MFBTWGZ1MA?oc=5" target="_blank">Air Astana приостановила рейсы в ОАЭ из-за эскалации в регионе. - Exclusive.kz</a></div>
+    <div class="article" data-date="2026-07-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNTUNLcHFZMldya1B0VnB0cnd3WUFrMU50ZWtoOGI3VTJ5OUlYajV1Y0EtYnU0NGVrMFpoZHJsMGdiREt3MVJYM1NOaDFOcTg5TWNFRDdBRkFGZldnUmN5YXYtaXV4Mk1pWkFlOFE2dGUwUXY3VzM1TFVTNEJYaU9vNndLblItZFk4ck5KY0lZVEdINDhIbDU2bGhBdVB0U1dBdHlIajhheVNvX3JYMlcwQk11c2FkMF8wVk1jS1lsbkFuMUZLcGVpMnNZWnMwZklyN1ZOSGszS1FOZUJPQlHSAeMBQVVfeXFMUFM3MWI1bUxrUTZsU0VQX0tXMlJOSVdtSVVfU3dKNklVcXE4WWZRZDRlalVsckRKWW9uckZfNm5GRkV2bm9RU0FNWURaMGxHdGdVaVNWNUZHcTlHZFlqbzk3YTJmbGI0cHdGWE5ScUZCdDZOZ0hORV9XOUdtQ3BjdVJUQ0x0b1ZJMWFPTjV4VDhNNGxBckRaVzAtamFWYlA0Z0R1ajdjZFpMMHZpN3VlSEVZU0NVNnFEdTk4dHJhM3d5azYtRmZHQ255c2dMeTU2Qk1kaUxOTW5DS2JacW1PQlhqRkk?oc=5" target="_blank">Руководство КТЖ поручило ликвидировать отставание в реконструкции вокзалов Семея, Аягоза и Актогая - Новости Zakon.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 15:17</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.07.2026 02:10</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Air Astana приостановила рейсы в ОАЭ из-за эскалации в регионе. - Exclusive.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPNGc2TkNzaGhYSzBWQjlZR1YxX1RNTmJ4UWsxaUdBMDlmZFJEMi1HRWpSdlJOOEpxWUdpTGNveHNOZzJINTNMUEhjblVTQk5VTUhONVJRVGIxTWQ5dkg2UXFveEY2Rk1XMWdCVXcwVXlXTkV1ZnlLZHVNb2drWTQ0ODRsVkl5MHlpckZRUkxnQQ?oc=5" target="_blank">Air Astana приостановила рейсы в Дубай - Kazakhstan Today</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 15:40</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana приостановила рейсы в Дубай - Kazakhstan Today</div>
+      <div class="art-summary">Руководство КТЖ поручило ликвидировать отставание в реконструкции вокзалов Семея, Аягоза и Актогая - Новости Zakon.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-12/tsse-air-astana-priostanavlivaet-aviasoobshhenie-s-obedinennymi-arabskimi-emiratami/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tsse-air-astana-priostanavlivaet-aviasoobshhenie-s-obedinennymi-arabskimi-emiratami" target="_blank">Air Astana приостанавливает авиасообщение с Объединенными Арабскими Эмиратами</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 12.07.2026 15:24</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana приостанавливает авиасообщение с Объединенными Арабскими Эмиратами</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -398,8 +304,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-12';
-  document.getElementById('date-to').value   = '2026-07-12';
+  document.getElementById('date-from').value = '2025-10-16';
+  document.getElementById('date-to').value   = '2026-07-13';
   applyFilters();
 }
 
