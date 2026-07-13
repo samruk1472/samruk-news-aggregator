@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 13.07.2026 06:48</div>
+  <div class="meta">4 источников · Обновлено: 13.07.2026 10:18</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-12">
+      <input type="date" id="date-from" value="2026-02-10">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-13">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,7 +87,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
@@ -106,80 +106,90 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/air-astana-cancels-upcoming-flights-to-the-uae-272184/" target="_blank">Air Astana cancels upcoming flights to the UAE</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 13.07.2026 10:04</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana cancels upcoming flights to the UAE</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-12" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxOM0c5RG1WUlQzNWI1d3AtbUdjUWQwMi0tdXZ0THJ2NU1HN3NfY0h0eXN0WGQzRVdISThaSlo2bW9NRERTdnlweWJqd1RNQ216OV9UX2J1N2VqRzFvQjYtb1Rnc3oyTzFLY1dxQkRERGF4UWlPS0t2Z0dwLU1ueVdoNDhuYzBBTndJWV94Xw?oc=5" target="_blank">Топ-менеджерам «Самрук-Казына» выплатили 7,6 млрд тенге премий - Qumash.kz</a></div>
+    <div class="article" data-date="2026-07-13" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQY05tWjdEeDdkZnVlb0FFUF9fYW12WjdQc0tVNk5hQVhnLVlEY01nTXNvYVZqTndhbE00TE1nUG1jU0w4WmtXdWJjV3FPemtkZU1qRXdLTzgwVVR3YTV2S2JQNWZXb2xoMVlOMkVSeGpNaHhaNGd4TVVOdEdlNXdVV09lSUVpYUg1VENReHZSZm9FY3U0b2wwMnZERDRwdw?oc=5" target="_blank">Полмиллиона казахстанцев смогут заниматься спортом благодаря Samruk-Kazyna Trust - TengriNews</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 12.06.2026 07:00</span>
+        <span class="date">📅 13.07.2026 08:03</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Топ-менеджерам «Самрук-Казына» выплатили 7,6 млрд тенге премий - Qumash.kz</div>
+      <div class="art-summary">Полмиллиона казахстанцев смогут заниматься спортом благодаря Samruk-Kazyna Trust - TengriNews</div>
     </div>
     
-    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNUllkUk9rZTQ3VktEdmdlUTJuX0N6cDlrMV9sQmp0QmhKcUVqX2tTSUYyRW9icUIyeUFXdFA2ai05a3Jvbk1PWUdZNnNHU0pWWWRoaHc5Q1RzY1Myc1Z6Q2NfaFE1MTUxYkRDS1Fva04zVFhIdU5IN1V1eGxWbzdkaFlERGtMaGVvWkhncVdB?oc=5" target="_blank">Air Astana приостанавливает полеты в Дубай - Kapital.kz</a></div>
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxObF9aRlBGWVdEbEFsaUN5UUNGRVM4RzVCWVd2VDFMcVZhWEtDUzJyQVBOT0pmbW5RcEtuR19wMVVYczJJWlhKTUtqalBNOUFhWDZJTWNPNnJ0RVQzNHFHVWRQTTc3MjdUa0lIdkFIbzVJZ2NxSE9LYWh3UWNiS3JPZUNsMDNwd0ZQc1NOT1gwbEpVOEdOaUN2VUV6N0tNZw?oc=5" target="_blank">Вылетевший утром из Астаны в Дубай рейс развернули в воздухе - TengriNews</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 13.07.2026 06:28</span>
+        <span class="date">📅 12.07.2026 05:35</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana приостанавливает полеты в Дубай - Kapital.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBBRV9wemUzWF8xLVN2blhUUkJ3a0dRRmdfeW9NZEdKM1VXSVFGSE5FQmRTZjdNYUhkNzJFUFBVWjlFRUtZX1hobEVFUmFXN08zOGpmaWwtaFBDSUZzMVFSNFFrVFdoY2JUSV9hcF90dHNyU3lrMEVPQUp4TQ?oc=5" target="_blank">Air Astana приостанавливает рейсы в ОАЭ - Bizmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 13.07.2026 06:30</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana приостанавливает рейсы в ОАЭ - Bizmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNU1Vtbk53end1cm5NUUdOM28wN0hqUGlhcEhOQTlja3Z1Q0pKN0NkcE0wWmNkZzVPQjBiVnZxbWtnRE85XzdoQlFZLUpDQU1QOUM2azhLZE9raWQzbXhDQUQ1cnMyV1VlN0FDRWVBYjZOUFpneW9wX1JaOHBDSXNXa25BWWZfbEJVMG1jZEZkRm1acG5TYVhMaQ?oc=5" target="_blank">Air Astana снова отменяет рейсы в Дубай из-за ситуации на Ближнем Востоке - Belles.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 13.07.2026 06:11</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana снова отменяет рейсы в Дубай из-за ситуации на Ближнем Востоке - Belles.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-13" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPV0tiRVU4dThyakkxcDBhaVRzZ1p3UlUwZHU2M0k5ZVpReEJtWFJlUjZENThoRUd3a3RXeWM2Z1J2blNHMTdXMnFlNjZhbEY1eXQwTFlhdF9FTjBSNm1WMllORW5mNmI0NGxWNlJ2eFVyRFBsTk0xNzFPV05VdHl5OUM1cnRJMzU0RTFhM3A4RGtjTURQdTU5SlhNR21NWHVCUWUzZE9mbXQxSXNLODRZc3BkVDZkT21EalFXajZVWQ?oc=5" target="_blank">Руководство КТЖ поручило ускорить реконструкцию вокзалов Семей, Аягоз и Актогай - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 13.07.2026 06:01</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Руководство КТЖ поручило ускорить реконструкцию вокзалов Семей, Аягоз и Актогай - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Вылетевший утром из Астаны в Дубай рейс развернули в воздухе - TengriNews</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-07-13" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOTnpPNkUwTnhwUkxzUHZGcXAyMUYweFVXakZKOUtUbl96eW1pYnNFOEJuVFRzaHo0Z3J5SmNnU3lnbHJfZFRqbVRsaWp1RUxxblRUbDh1a1BHS1hwU3poaVp3VkpnYVdxbXViQ211VDJpM2JtaUFwei1HOXJmdUFkb3pZelI0TEwzaXdHN3NWNHd6SGNLMzJ6dkxodnpQbU9RcWtIMHpkMXJuMlJORXlqUm14ODJFQnE0c2fSAbgBQVVfeXFMUHlPaUR1Mk1DRG81cU9LZER5cU9EOGxRX2xEblFqamQ0cmM3WTlrUmRLcjgtN2t0N1Z1TWFoZUE2YVhyUmVfdC1SNUI1Q3R4YXByQUhlZV9VWE5CTU14RkF4TzA4VDNVcDFON1FKOU95S19NYk5ZcnZEbHEzNXN5dmZXS0NabndlekVTNGdaS0lFOUlsWlIxWXA2bDM4Z0dSWmpJM18wdHhMUXdvWVZLLUpHUlVUN1NaRQ?oc=5" target="_blank">Samruk-Kazyna Trust откроет новые кабинеты инклюзии для особенных школьников Актобе и Семея - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 13.07.2026 07:47</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Samruk-Kazyna Trust откроет новые кабинеты инклюзии для особенных школьников Актобе и Семея - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOTzhNNFBuTEI3ZkpXYm9uckZHOS0wVFZ5U3N3enhXQUFkc0pZUWktT093TkxYRk1uQlh1QTN4N2sxaXRmcWlQY3BhVzhBMWNnYWQyYzlaM0p5ZktZN09jQzZKQW5Xb2oybF9BZFB0UmdYdHE5T3hvRHdEb19QLXVWTENocVXSAcQBQVVfeXFMUG1VT1dKNUZRYi1xeV90MC1RdnlOcUs0LWJEOThIN2ZyVFhoS21IMW1rZXkxa2hpQVAtSmpvbUdtVGRjd0RqejdpUk8yTUFNUXdxWE8weVB5S0JUb3I2Nk81UGw2dktIQ09QRUZBcEJSNklISUlmcnU0VlgxN0dhSWMxZ1l6TU4zX2RJQ2dQV1BjcnlZcnNRLWFnTWczUVNsUnQxTmJRem9KNzBhT21rWUgyNjYtRlp2S3dQMTA2blp0ZGxWSQ?oc=5" target="_blank">Air Astana сообщила об изменениях рейсов в Дубай из-за эскалации на Ближнем Востоке - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 07:36</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana сообщила об изменениях рейсов в Дубай из-за эскалации на Ближнем Востоке - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-10" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPVGIyWGUtM1d1ejMzUmpmMzFHVTRFMU9Yenc0OWlvSUdoU1RfQUN6b0JLdWIxX2I1NV9tNHRNdkQ4TnpBNHZ1STg0LTRTS0NLVHNGYlVKRjV0aXhmU0JocXRVeHlWWXhNUlBKZ2V6WTVLM082T0FjeVZWQzNIQlotZkk5V1Q3eW5oUGpsZEYteU13YklYOXFoOE9kQTdaaElDTjdPWnRUWFVkLXNmdFMwRjBB0gHXAUFVX3lxTE5la1dyY1ZpUXNaMktIXzdaaVJlMkxXLThNSXBHbHQ5U0JBWEJHTVlBWHBvVXJVb2trNkJiaVN1SWZROGNSODdmNjVrVEpBUmJqbWJnZHJZUmQzWlVVLUJHUE4xbURhaXVJdDVndVRMdXpQOXhjUzBuLUdEZDd1d3YyNS0tT2Z3N3dCd0hkd2ZRNllyUlp6dk1lSWN1ZTl3YXJoV0tadmhfdkF2TkZsLXlXbDA5YV9yODRueDVzTGFTcU1WaWRFQXJvMEljemM4TUNyem9kakY4?oc=5" target="_blank">«Казахтелеком» построит мощнейший ЦОД на 50 МВт в 2027 году - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 10.02.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» построит мощнейший ЦОД на 50 МВт в 2027 году - Kursiv Media</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/07/air-astana-suspends-dubai-flights-as-ajet-expands-kazakhstan-turkiye-services/" target="_blank">Air Astana Suspends Dubai Flights as AJET Expands Kazakhstan-Türkiye Services</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 13.07.2026 07:51</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana Suspends Dubai Flights as AJET Expands Kazakhstan-Türkiye Services</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -238,7 +248,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-12';
+  document.getElementById('date-from').value = '2026-02-10';
   document.getElementById('date-to').value   = '2026-07-13';
   applyFilters();
 }
