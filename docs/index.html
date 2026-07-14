@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 13.07.2026 17:47</div>
+  <div class="meta">2 источников · Обновлено: 14.07.2026 03:57</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -76,7 +76,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="date-row">
       <input type="date" id="date-from" value="2026-07-13">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-13">
+      <input type="date" id="date-to" value="2026-07-14">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,6 +86,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
     </div>
   </div>
@@ -105,17 +107,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    
+    <div class="article" data-date="2026-07-14" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE85VDJ1SDU3TWVkY1prQ0dQN092bGg3ZlZyNUZMLVlVemtQYzJNZDdWSHhxU1dfbXUwRnA3WFVWV3NZSGVWQzBwN2ZNcHZGdi1qcTladVEtUno4ZURpUWtV?oc=5" target="_blank">«КазМунайГаз» утилизировал 339 тысяч тонн исторических нефтеотходов в 2025 году - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 14.07.2026 02:46</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» утилизировал 339 тысяч тонн исторических нефтеотходов в 2025 году - Energyland.info</div>
+    </div>
     
     <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBhN1RwT2xRTXI3MHRaUlhXVk5QUnVRYUJWZ19RUFlZbHpDZjV0LXRNWmxXMkJDN0t3VVA5MlZjMWNocUNqbS0zV1VIUE5MNXlvVmJna1RkQmR3RkpmUEZnYg?oc=5" target="_blank">Air Astana вновь отменила рейсы в Дубай - ktk.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE4yNktNTjFmbFpmUjJmbHNISDNzX2gwOU1EdmYyN01pRWpjeWFnWDRzajB2M3JtbXM0SllnS0s0WElDeDh5alpzUXVyYlBmckUz0gFQQVVfeXFMTjI2S01OMWZsWmZSMmZsc0hIM3NfaDA5TUR2ZjI3TWlFamN5YWdYNHNqMHYzcm1tczRKWWdLSzRYSUN4OHlqWnNRdXJiUGZyRTM?oc=5" target="_blank">Air Astana отменила рейсы в ОАЭ на фоне эскалации в Персидском заливе - «Астана» телеарнасы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 13.07.2026 17:26</span>
+        <span class="date">📅 13.07.2026 15:02</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana вновь отменила рейсы в Дубай - ktk.kz</div>
+      <div class="art-summary">Air Astana отменила рейсы в ОАЭ на фоне эскалации в Персидском заливе - «Астана» телеарнасы</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE02RndRQkIzWTh4dW5tLTVvVlVmYnVNa2J1dnZobFZMRlNDalZpbENSUV9CVkd2YUtGQlBQTDhkb0JtZEN5MlpYSTJrc0RYaGdwREpiUDBzQm1wZw?oc=5" target="_blank">Новости - Air Astana вновь отменила рейсы в Дубай - ktk.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.07.2026 17:27</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Новости - Air Astana вновь отменила рейсы в Дубай - ktk.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVWNkMTJJd1ZtWlI5WlBJY3oxWmdXM0V5Snk0ZDRxdzBUb0hZYkM0dm90cGdKTWpZSTNaUGIyNGFrQWhSQmlMeHlDbElINmhkSlhvMWVVSWRWUzZQMldQcXdnb2J0b0xJeEZvVkd2QkhWd24yZlRBQXhjMnBKcUp4c3JlZ2ZFMElzVmlLYVdPWTd1UWxmY3EzM2IwLWNzS3RDcnJpS0xWMHVSMG1JT0M0ODAzNGk0Y2lPcVMxVXM2a1hSZw?oc=5" target="_blank">Эскалация на Ближнем Востоке: летевший в Дубай самолёт Air Astana развернули в Казахстан - paddock.pro</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.07.2026 08:13</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Эскалация на Ближнем Востоке: летевший в Дубай самолёт Air Astana развернули в Казахстан - paddock.pro</div>
     </div>
     
   </div>
@@ -180,7 +215,7 @@ function toggleS(btn) {
 
 function resetDates() {
   document.getElementById('date-from').value = '2026-07-13';
-  document.getElementById('date-to').value   = '2026-07-13';
+  document.getElementById('date-to').value   = '2026-07-14';
   applyFilters();
 }
 
