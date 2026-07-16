@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 16.07.2026 04:10</div>
+  <div class="meta">7 источников · Обновлено: 16.07.2026 06:12</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">14</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">9</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-01-24">
+      <input type="date" id="date-from" value="2026-01-23">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-15">
+      <input type="date" id="date-to" value="2026-07-16">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -113,17 +113,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-07-16" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="http://profit.kz/news/74263/Stalo-izvestno-chej-paket-akcij-Kazahtelekoma-priobrel-gosfond-Samruk-Kazina/" target="_blank">Стало известно, чей пакет акций «Казахтелекома» приобрел госфонд «Самрук-Казына»</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Profit.kz</span>
+        <span class="date">📅 16.07.2026 05:44</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Стало известно, чей пакет акций «Казахтелекома» приобрел госфонд «Самрук-Казына»</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-02" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9RZ2VvaTgyWEVDUk9oemZxQmFpUkZCTkJ5UXU1QUdMQXFlcnkwY3pubWR3ZzNlNURzbjU2UDJpM2JZOXJTZC11UUFtd1lzWGRHaEE?oc=5" target="_blank">SOCAR и &#34;КазМунайГаз&#34; обсудили транспортировку казахстанской нефти через Азербайджан - Day.Az</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 02.06.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">SOCAR и &#34;КазМунайГаз&#34; обсудили транспортировку казахстанской нефти через Азербайджан - Day.Az</div>
+    </div>
     
     <div class="article" data-date="2026-07-15" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxONmdhVW1wdkdGQzlkbkhZZk1fdzRQX0F5amwtNmEzS2RlZThCdG5wWXNCRFgybHZTSGl0VVcxcDBlVTViUzZ5VFB1NHhNS25FNjFqSkNadFJyU2J6QVJha2N4dEM4Q2RyM1RXRkFXYXB6VTNKVEFDd0F2YUdkMVJheV9nRURCRGdjWmdVcHJfWXI2Nnk2ZnNRazlEanI5ZHVNTmd1TEQwZzc?oc=5" target="_blank">Что обсудила КТЖ с крупнейшими транспортными компаниями Китая - TengriNews</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOTUlMTVRCbG5DeFU2dXFmbC1iOG9SaWtzZlBQZnpkNUgyWG4yUFk5eWx3eEJJVU5RVjNmZC1LSUlXVldwVS1rMEtjbWVMRXFIVm5tQlJlYktSYlJLN1JWTWhTQVRId1dvSzZHNGpFeTB6RXNXWFp1V1d5YVhIR1dJTEJTOWNQcm1jNjBKMUEzMUFLSXFQRnfSAZoBQVVfeXFMT2tVUEhKUWRFRjZST0hYT05UQmN5cm9rRkRsczRUTzZidWFiLXhiQjBtUWFMdER5UWdfVWh2TWw4T2lkNUQ3MHYzcUxrS09xaDFVVzdIdGN6WnFIQkk3elpSTmxBQXA5TFdJb0NJN3c5Tm5uMTFPWXdUbklWRFJiRm5ma2lNcXVvaEVSd2MtdzN5MGpPakk1dXJmQQ?oc=5" target="_blank">КТЖ просит повысить тарифы из-за многомиллиардных долгов - Finratings</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 15.07.2026 11:02</span>
+        <span class="date">📅 15.07.2026 16:30</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Что обсудила КТЖ с крупнейшими транспортными компаниями Китая - TengriNews</div>
+      <div class="art-summary">КТЖ просит повысить тарифы из-за многомиллиардных долгов - Finratings</div>
     </div>
     
   </div>
@@ -131,83 +153,105 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
     
-    <div class="article" data-date="2026-07-15" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNMkRzMFBmWFZNSzhFdlNXRFFSejh4Q3hJcmpSM2dpeUlQN3FtMFhpbURyUmVDZzNvQnFhSUNnWWEtSHRTSUxmcnNEWXBtWFY1M0xnTGJNWXZzcGNoYnRLbk1rcUpRRVpSYkdoR0QtYmZLcGs0Z0ZDVVpMR2FnTU5pMHg0NVBzTDFtQUNfYjl0WjN0UQ?oc=5" target="_blank">«Самрук-Казына» выкупил долю в «Казахтелекоме» у владельца «Казахмыса» - Orda.kz</a></div>
+    <div class="article" data-date="2026-07-16" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQdU9CeWZ0Y2laenZKY3RXcG1SY2xwUEl5UzFkWGprdWRMY09nVEpEZ3A0dTJyTHlwUEZNeE1KTmYzamJPeXlidUMyNTYtb2QxaksyS3ZaMjNaY0o3MTA2dWhTZEY2amlMSENfc052cTZmLUpkT3NxSGhYSmZ2NWVDM3haU0Z0aEhpWWdRbVBkMTFjVkx4?oc=5" target="_blank">&#34;Самрук-Энерго&#34; скрывает миллиардные траты на подрядчика своей &#34;дочки&#34; - Qumash.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 15.07.2026 13:45</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» выкупил долю в «Казахтелекоме» у владельца «Казахмыса» - Orda.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-14" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTE5zWGdVaHNVdi1ZZTA5X3FFams3WndEV1UyNnpNeDczRGdrLXIwcGV4V2ltcGhiMHpRcmxiT3BCR0hvMVVOVVZn?oc=5" target="_blank">«Ситуация не радует»: Олжас Бектенов жестко раскритиковал главу «Самрук-Энерго» - Tiek.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 14.07.2026 09:38</span>
+        <span class="date">📅 16.07.2026 04:59</span>
         
         <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">«Ситуация не радует»: Олжас Бектенов жестко раскритиковал главу «Самрук-Энерго» - Tiek.kz</div>
+      <div class="art-summary">&#34;Самрук-Энерго&#34; скрывает миллиардные траты на подрядчика своей &#34;дочки&#34; - Qumash.kz</div>
     </div>
     
-    <div class="article" data-date="2026-05-26" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1NNXItYm0zYWV2LVRUU1ZTUGdBcDZ3WEIzcjVLbU9kY0FsYnhkNUNvQ3ZDNnB5YV82akU3Z2F2TDNPaVhXWFVDUFU5OHN6UGxfM0dKNzJNNA?oc=5" target="_blank">Аналитика. КазМунайГаз строит новый газоперерабатывающий завод в Жанаозене - Energyland.info</a></div>
+    <div class="article" data-date="2026-05-04" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQbGdZelVua0tEbTNDR2JnQVZlNFAzOHB1OC1pdkpaNzJ3cFp1LTFyMjE3NElsRE02OXFkTVpRdmRVRWVXUm1XWW1qUFpyWHRCSksza2taRV9jcUlxa3hnaC12dGJqUFJNQXc0TWxDSlc3UDJVVEdkc1h0Z0l0S0hxcg?oc=5" target="_blank">Самрук-Казына разместит полугодовые облигации на $1 млрд на AIX - TradingView</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 04.05.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Самрук-Казына разместит полугодовые облигации на $1 млрд на AIX - TradingView</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-16" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1DY3h3TWFUYnU3U245Ul9sREFBLTloVklTYzhtN3BYRzFKdVpRTXdJZUhQTEVUaGM5eUN2Q0gzOEJIaHdHSFVTUFJwR29EbHpmZDlyWThGbUo2Rl9CXzZF?oc=5" target="_blank">КазМунайГаз совместно с партнерами готовит будущих инженеров для завода Силлено - Energyland.info</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 26.05.2026 07:00</span>
+        <span class="date">📅 16.07.2026 04:55</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Аналитика. КазМунайГаз строит новый газоперерабатывающий завод в Жанаозене - Energyland.info</div>
+      <div class="art-summary">КазМунайГаз совместно с партнерами готовит будущих инженеров для завода Силлено - Energyland.info</div>
     </div>
     
-    <div class="article" data-date="2026-07-15" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPelprVENLdk14RzVsZ25tYXlWZ3h2bEYydkdrQk9tS2IwS0xmbkRUUjlZcDVQY3NaczJGc3N2R3IxY2IyTFo0Z2ctWVZsdEtoanBHUXVXUHBFTjdkVjRBeVZPWnZScThuQ1c4dF9Dc2QxQjRHUEhDcFZKVURiZkQzaW5nQ1N3TlZPSmpvN0ZkVmpMdVN4d01BbUY5bTFyaDRETlJYZU1NVzdUcmJINnZ1UUNvcVZXWEwt?oc=5" target="_blank">«Покупала Air Astana, а полетела FlyArystan»: пассажирка возмутилась заменой борта - newtimes.kz</a></div>
+    <div class="article" data-date="2026-01-23" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE41VGttQnkyUDlPUGw3cUdTRVhhdmpkRk5WMVJzZ1R1cWdUb2NXczliS0FCUjdrTG5RTE1YYzJDbDdwMFkzMDhNRWVDcjV6dVRGY1pEVy1NTHpoOGNldDVHcg?oc=5" target="_blank">Казатомпром прокомментировал ситуацию с компанией Laramide Resources - Атомная энергия 2.0</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 15.07.2026 12:30</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 23.01.2026 08:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«Покупала Air Astana, а полетела FlyArystan»: пассажирка возмутилась заменой борта - newtimes.kz</div>
+      <div class="art-summary">Казатомпром прокомментировал ситуацию с компанией Laramide Resources - Атомная энергия 2.0</div>
     </div>
     
-    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5adDVIUHJNU3JvNXZUVWtqWGs4N3dnUUEwVlk5TlJfUFJfdjNnZFhRZGNBdmlnb3JSY2NmdnIyLWY3b1FoU0ZfUHR3TGN1NnBVVzZuUg?oc=5" target="_blank">КТЖ установил 70% скидки на перевозки продтоваров, в том числе пшеницы для переработчиков и пекарен - АПК-Інформ</a></div>
+    <div class="article" data-date="2026-07-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5SSW5WdzU0aEdYYmFzazBzQVZoVjFBekoxbENWVXpTdER6elNReEFZbGFid3BiaUpRSVdSektlZHotYXlTdkZvVHdTbGZFVXlyakx4bw?oc=5" target="_blank">КТЖ подписало пакет соглашений на $400 млн с китайскими партнерами в Шанхае - АПК-Інформ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.06.2026 07:00</span>
+        <span class="date">📅 16.07.2026 04:03</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ установил 70% скидки на перевозки продтоваров, в том числе пшеницы для переработчиков и пекарен - АПК-Інформ</div>
+      <div class="art-summary">КТЖ подписало пакет соглашений на $400 млн с китайскими партнерами в Шанхае - АПК-Інформ</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNLXNsbDlsTVhMRDZLaW10WHJiUUhKYTJYdjFWdDJOZ2VFNWstUVpMNjh2eDVMQ25rMW1nLU9jbk5TOG9HOUg5MldxV0NmeVZuQk04R2FOcWlCRFRJZjN2YkhJcnRqN01GUWVxY1dZZXN0blNjWFdKMDlJUjE2blFSOVpCWFFmcmtKc1llZ3kwbGpSNkpUak5DZGRTTEtHOTBwSk45cw?oc=5" target="_blank">КТЖ и китайские компании подписали пакет соглашений на $400 млн - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.07.2026 03:14</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ и китайские компании подписали пакет соглашений на $400 млн - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-15" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNY1I4LWZteXd1Z28wVlV3Q0VBMWlUZGZYTlJNTEFMOWxoeUZ2cnU5b3A3Skt5Q212bDBHMUdFUTNFWjNJWmdhWk5sX2FyLTdDSm9BbXIzWDNPaHBhQmMyNGZSTXJOT2h5b1AycUZHM1BrelJlWlVpM2pydXY5U3duUzRfSXZCN3BselluQ0tRamExV1F1dDF0M080UGFOQXJFUTdMWVBB?oc=5" target="_blank">В Шанхае КТЖ подписала пакет соглашений на $400 млн с китайскими партнерами - Kazakhstan Today</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 15.07.2026 15:46</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">В Шанхае КТЖ подписала пакет соглашений на $400 млн с китайскими партнерами - Kazakhstan Today</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-14" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOUWFSNzRzeTBMMlB5eDExSXB3S3poRURrX1ZuMkNPRm54MWZkb3A2d28xN05kaFZhRXRGeGVxY1RDdDNwbTlyQ1VUMzgwVTl3c2RKVkhRaXlUdjBPY0RfdFFxLTAybWlPVk5SU2FvUVRsaFY5cXhOa29LNm9Idlcycm1LVQ?oc=5" target="_blank">Бектенов раскритиковал КТЖ - infohub.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 14.07.2026 18:42</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Бектенов раскритиковал КТЖ - infohub.kz</div>
     </div>
     
     <div class="article" data-date="2026-07-15" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxPVVZZMDNLZ3hURmctTUthZFQ4WFhJN2tCQ0NmdG02NmZQUHdsVXZ5Nl91Z2h5OE5FM25aNVBjU3hGR2JQVGc3UGxrYVc0U1NIekxCNVJnVE11anJVSjRSMDB1Z3BYOTkzdUNnWU4yR194cmV1akY1bGc4TmQ5VjlCWU5DSTZDVjZKNkNSRXJieWZFMXZleW4xcHI1b21PRE5Zd2lVNUNmbmVKY1RYeFd4dG1aY1RhSjMwTDQtMDNPOFVaam16VnVOdnRhNmR2RVlQOXFSN1p0Tnp5TjFrejkxQnhRMmNxb2R4bHdFTW1kbGZfdw?oc=5" target="_blank">Полная монополизация связи: как государство выкупило долю Нурлана Артыкбаева и окончательно подмяло под себя «Казахтелеком - Портал РЕПОСТ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 15.07.2026 15:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Полная монополизация связи: как государство выкупило долю Нурлана Артыкбаева и окончательно подмяло под себя «Казахтелеком - Портал РЕПОСТ</div>
-    </div>
-    
-    <div class="article" data-date="2026-01-24" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNb0NwNzdYMWh5RUl6UWVpTFJPbUUtdkVyWG5KQmlsUmJlWWlXblIzTWQteGZKZDlndFFDNUtVX2JCWjVGZ3RxYnhMRjBzcWl0WGx4RU0wUElRRC1PT0YwMXBMTk91bHQ4R1MtZGxEcl9Yb0V2emdkaDVnQkRudDBuWjk4NzhwSjRCUlliQ1pR?oc=5" target="_blank">«Казахтелеком» выходит на рынок юаневых заимствований через AIX. - Exclusive.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxPOUtBdWE2RVY3U01xeS1WYk5yRUE0ZXBZZi1EdlRBVEdMS08xdURhbDhQRkZjMEdDV01ySENqbjhVbDNXcHhXUkhwYjZjM3I4MTRNclVYRWpXSTFYZUlHXy1xc0hJTWhzTkxDNVl2emVtdUJqYzhQUG5UNlNMdGFxaTRDenFLTF9hVkdQYXlBeE1BN1hRdVN3UVdTMklBMGpYNWctTWNubUxubXhwUWVhTDVhX1d4ZUdJQXItTlp1VkZfaWhVcDN0d3A4MmtDZw?oc=5" target="_blank">«Казахтелеком» меняет владельцев, юг плавится от жары, Актобе утопает в мусоре – главное за 14 июля - Ulysmedia.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 24.01.2026 08:00</span>
+        <span class="date">📅 15.07.2026 18:03</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«Казахтелеком» выходит на рынок юаневых заимствований через AIX. - Exclusive.kz</div>
+      <div class="art-summary">«Казахтелеком» меняет владельцев, юг плавится от жары, Актобе утопает в мусоре – главное за 14 июля - Ulysmedia.kz</div>
     </div>
     
   </div>
@@ -217,26 +261,26 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-07-15" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPZ2VEUzR1aTU1YXlCN1NuUkUzWVQ5Z1g2b05mSTBPejJqZkoyM1k0eHdJdkxSTS1zczRrZUxHdEZ1WHlpa0w1bTlrVUJma1VfRDBsSzhHVy1hVk9JdXBJZzA4MEpab0ZsdmFjQy1Vd2FfV0plTTNDNGtzLVdfU0pZSGdPREtIUUR6eFlZRTZDUEpiX1k?oc=5" target="_blank">Как КТЖ укрепляет сотрудничество с Китаем - TengriNews</a></div>
+    <div class="article" data-date="2026-07-16" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-16/dmnn-dengi-relsy-dengi-itogi-2025-dlya-ktzh/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=dmnn-dengi-relsy-dengi-itogi-2025-dlya-ktzh" target="_blank">Деньги – рельсы – деньги: итоги-2025 для КТЖ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 15.07.2026 13:02</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 16.07.2026 04:39</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Как КТЖ укрепляет сотрудничество с Китаем - TengriNews</div>
+      <div class="art-summary">Деньги – рельсы – деньги: итоги-2025 для КТЖ</div>
     </div>
     
-    <div class="article" data-date="2026-07-15" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOWHd4cFZmb05YMlNOZGhvVllaSUVzM2NhTE9rRVFzMWlWeTI5Q1dPMkV2TmJ1dmZ6b09BbXoxWmthWkdxX21NTTJxbklQcTlsZTNoM1BqRFpzM0YwcEtOR3FJMzF0YldmdnhFQzMxSlBHNWpmeXZJX2dxZ1lHZkhvQ09tTDJkejRlRkZ5X2t5Vy1GWW5HSUJWbDVhNlM1YXBKYUNISVZiRjhrdmVEYk0yUzByTEc5ZlZfSlE?oc=5" target="_blank">КТЖ запускает отечественную цифровую платформу для аналитики грузовых перевозок - Регистр ТВ Казахстан</a></div>
+    <div class="article" data-date="2026-07-16" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbEswZWdTTHhfR3RZRGxCZWpLOE1GRUpvS2dVcG9tWjRUajFlMnJEdGxVUE55RWgxUTY2ODM1RDZHdlJuTEw0VHktNTl1bkNZcWljbHBWX05LVFcwZk5FekxORmZMOGg5VDh5ZVlJTFRXR3FPS0xvSDR1NWt2R1BXQnk1U1liamxPNG81R2dZV1hqZXJVaThnUE5PQlg2X1d1NGZ2LVlHMks5dw?oc=5" target="_blank">Стало известно, чей пакет акций «Казахтелекома» приобрел госфонд «Самрук-Казына» - Profit.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 15.07.2026 15:42</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.07.2026 05:59</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">КТЖ запускает отечественную цифровую платформу для аналитики грузовых перевозок - Регистр ТВ Казахстан</div>
+      <div class="art-summary">Стало известно, чей пакет акций «Казахтелекома» приобрел госфонд «Самрук-Казына» - Profit.kz</div>
     </div>
     
   </div>
@@ -298,8 +342,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-01-24';
-  document.getElementById('date-to').value   = '2026-07-15';
+  document.getElementById('date-from').value = '2026-01-23';
+  document.getElementById('date-to').value   = '2026-07-16';
   applyFilters();
 }
 
