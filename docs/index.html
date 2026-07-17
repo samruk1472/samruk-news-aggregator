@@ -60,12 +60,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 17.07.2026 09:05</div>
+  <div class="meta">5 источников · Обновлено: 17.07.2026 11:20</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-11">
+      <input type="date" id="date-from" value="2026-07-03">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-17">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -89,9 +89,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -108,42 +108,58 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-17" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/english/70142-the-week-in-kazakhstan-burning-question.html" target="_blank">The Week in Kazakhstan: Burning Question</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 17.07.2026 15:18</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">The Week in Kazakhstan: Burning Question</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-07-17" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQaXZvX1pTdmhnbXN1NmowS2doREE1ci1uRkItbElldHYwQUhreFZfT2VsUTZBREljOXhiUU4zeTdvc1BwNWxOVVlJb0ZfRXN5ZXpFR1I1SXBXLUI1bWxPYi0tOG8tekg1RHQwVkg0VUhRdVhjTDdaMXJMY2M3SVpJLVk2OFNXQm1Fb0FiV2lyMU43b3d1Vl90VktYVU9LSUFiaEhiVw?oc=5" target="_blank">Чем «КазМунайГаз» оправдывает закупку услуг бизнес-джетов на 1,7 млрд тенге - Hronika.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 17.07.2026 07:06</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Чем «КазМунайГаз» оправдывает закупку услуг бизнес-джетов на 1,7 млрд тенге - Hronika.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-11" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPZ0NmNzVpajl1NUxQREdYa1pJNHpvcU5La2k1U2ZQX0F2ZFRJWUVNSUoxYlh1X01ieEtEZ3JZTU9iUlJvTy1LeXNrV0FtQ1VWNnZqbWtvbnFBMzVKUHZ0MmdoWGFFNzlWWDJPZEhJbS0wWFgyRGZ3RW1sZXhrbFFIMG1kNmNjTmNKRW56Zlh6b29oQ2ZfU3Zv?oc=5" target="_blank">В Брюсселе АО «НАК «Казатомпром» и румынская национальная компания «Nuclearelectrica S.A.» подписали Меморандум о взаимопонимании - Enbekshi QazaQ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 11.07.2026 11:21</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">В Брюсселе АО «НАК «Казатомпром» и румынская национальная компания «Nuclearelectrica S.A.» подписали Меморандум о взаимопонимании - Enbekshi QazaQ</div>
-    </div>
-    
     <div class="article" data-date="2026-07-17" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOMTRBNXJUSjdzcENlLVUzTjNTZXItS2V1UVJDNWZlajFTeWNva19iRVA1S3dXMTB0VmNLVzFzZjVaX09USEtHYXQwMjVWTmZCSUZsc0VtVThQNmRKYXdvRU1DSzloRGdWWmR0NHRld3R5LUFzVkNzQnd3MnRoZWo0WlVBV29HX3ZPSGpYSEZ5T1hjc3pqZkVWWU9nczNza1JiVllDcnpnWlVvTzJDZGxpUFRyYkVZQQ?oc=5" target="_blank">Мать с младенцем не пустили на рейс: Air Astana начала внутреннюю проверку - newtimes.kz</a></div>
+      <div class="art-title"><a href="https://astanatimes.com/2026/07/air-astana-suspends-flights-to-dubai-from-july-21/" target="_blank">Air Astana suspends flights to Dubai from July 21</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 17.07.2026 04:30</span>
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 17.07.2026 09:28</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Мать с младенцем не пустили на рейс: Air Astana начала внутреннюю проверку - newtimes.kz</div>
+      <div class="art-summary">Air Astana suspends flights to Dubai from July 21</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-17" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zUDFyWF91cndaazdkNko1NDZUVDRVdHQ3c0lvNmFEeGJnZDJvT2QwUXAtQzJsTF96bFFJVF8yUmhUamUwZjdhS0NxZGpwZzRGbTVVTzN2MkNNSm4tZDRr?oc=5" target="_blank">КазМунайГаз и Sinopec оценят ресурсный потенциал участка «Березовский» в Казахстане - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 17.07.2026 11:14</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз и Sinopec оценят ресурсный потенциал участка «Березовский» в Казахстане - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQLWc4OGMtM0g0TDNoVnZ3dnNXTE0waG5WSGFLbk05Q1F6M2tpQndiRVFZV0t2Y0kzSDFURUt2Sm1jWkNlMHdtWDhMc1dpbXJwSUtWLWN5RkJPV1dQbzUwa0hTeXlXZ215RGpsQV9pYlBSLTlQSEd1b1ctQ2JKSWV6OWtJX0l1SUNJX3EzTXJWMjRqblVLbEtlVFZOTUF1WURrU2dXRXJXZ1RBY2pLQVE?oc=5" target="_blank">КТЖ проводит республиканские акции по безопасности на железной дороге - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.07.2026 09:13</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ проводит республиканские акции по безопасности на железной дороге - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -153,15 +169,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-17" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-17/zhnb-dochka-erg-uluchshila-ekonomiku-za-schet-otkaza-ot-rossiiskogo-koksa/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-dochka-erg-uluchshila-ekonomiku-za-schet-otkaza-ot-rossiiskogo-koksa" target="_blank">Структура ERG улучшила экономику за счет отказа от российского кокса</a></div>
+    <div class="article" data-date="2026-07-03" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOSHFyazBPTmdDRE9Zb2hyZloxOHJLY3RpcXF5aUFBS2pzV1NKTmh1X2Y1TUtfNEtkZHZSdTE2b2RtdXhqVjJVa05YbG04Rl9jWUV6ZEd5TWNNa2ctV0pNUmpETThyaUlNMGhWQTk5bm5ad1dXWEpnNERaNDl4c0M2V0xybUllZm9Ha1pwUGVKbG15STVmRmtOcm1VQzUtNHRrY1E?oc=5" target="_blank">Новый глава Air Astana пообещал приносить прибыль акционерам - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 17.07.2026 07:27</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 03.07.2026 07:00</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Структура ERG улучшила экономику за счет отказа от российского кокса</div>
+      <div class="art-summary">Новый глава Air Astana пообещал приносить прибыль акционерам - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
     </div>
     
   </div>
@@ -223,7 +239,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-11';
+  document.getElementById('date-from').value = '2026-07-03';
   document.getElementById('date-to').value   = '2026-07-17';
   applyFilters();
 }
