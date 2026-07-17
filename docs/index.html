@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 17.07.2026 11:20</div>
+  <div class="meta">7 источников · Обновлено: 17.07.2026 14:45</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">13</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">10</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-03">
+      <input type="date" id="date-from" value="2026-06-15">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-17">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -88,6 +88,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -109,17 +111,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-07-17" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-17/svan-eshe-odin-tanker-byl-atakovan-u-ktk-pered-pogruzkoj-kazahstanskoj-nefti/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-eshe-odin-tanker-byl-atakovan-u-ktk-pered-pogruzkoj-kazahstanskoj-nefti" target="_blank">Еще один танкер был атакован у КТК перед погрузкой казахстанской нефти</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 17.07.2026 11:37</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Еще один танкер был атакован у КТК перед погрузкой казахстанской нефти</div>
+    </div>
     
     <div class="article" data-date="2026-07-17" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/english/70142-the-week-in-kazakhstan-burning-question.html" target="_blank">The Week in Kazakhstan: Burning Question</a></div>
+      <div class="art-title"><a href="https://egemen.kz/article/417416-astanada-bolashaq-oyyndary-2026-khalyqaralyq-fidzhital-turniri-otedi" target="_blank">Астанада «Болашақ ойындары 2026» халықаралық фиджитал турнирі өтеді</a></div>
       <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 17.07.2026 15:18</span>
+        <span class="src">📰 Egemen.kz</span>
+        <span class="date">📅 17.07.2026 16:20</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">The Week in Kazakhstan: Burning Question</div>
+      <div class="art-summary">Астанада «Болашақ ойындары 2026» халықаралық фиджитал турнирі өтеді</div>
     </div>
     
   </div>
@@ -127,39 +140,116 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(10)</span></div>
     
-    <div class="article" data-date="2026-07-17" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://astanatimes.com/2026/07/air-astana-suspends-flights-to-dubai-from-july-21/" target="_blank">Air Astana suspends flights to Dubai from July 21</a></div>
+    <div class="article" data-date="2026-07-15" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9WdHRSVXZmN2hvcEFYYl9jcEozaF90VFNEckFKdUw5MDJRTlR0WlRhYWQ3bHF5RnlOS3NjZkhXSW1LaHMzLXVMSi10c3BKZnIxamhpa1VBMnE4b2xCMHY0OG9rdGR2d2tPbFlxeUdjZUd5RHdrX1FwdQ?oc=5" target="_blank">Нурлан Артыкбаев сливает «Казахтелеком», оставив «Самрук-Казына» с носом - paddock.pro</a></div>
       <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 17.07.2026 09:28</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 15.07.2026 17:20</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Air Astana suspends flights to Dubai from July 21</div>
+      <div class="art-summary">Нурлан Артыкбаев сливает «Казахтелеком», оставив «Самрук-Казына» с носом - paddock.pro</div>
     </div>
     
-    <div class="article" data-date="2026-07-17" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zUDFyWF91cndaazdkNko1NDZUVDRVdHQ3c0lvNmFEeGJnZDJvT2QwUXAtQzJsTF96bFFJVF8yUmhUamUwZjdhS0NxZGpwZzRGbTVVTzN2MkNNSm4tZDRr?oc=5" target="_blank">КазМунайГаз и Sinopec оценят ресурсный потенциал участка «Березовский» в Казахстане - Energyland.info</a></div>
+    <div class="article" data-date="2026-06-17" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNVGpxQTZzY1FuUks3M3k3NkJWZDVMb3dCUExMTS1TaWhIUGJlcWN1cXFsLTQtbHJiZmMtZUgwY2N3S0Z2SWRvU3gwMHY2OThsNGVLMHRTZmszNExNZWlwMTViWEhpZnAybFBiQUx4bXFoME1CMGRpX0pwWERBUlBfRUlVZw?oc=5" target="_blank">Активы &#34;Самрук-Казына&#34; составили 88 млрд долларов - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 17.06.2026 23:44</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Активы &#34;Самрук-Казына&#34; составили 88 млрд долларов - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ORU8wd1k1UFdTVjBSWi1MMktnTlZ0YXFwMWM3dXRDUHF5b0FRNUpKQ2N2OE9EUkY2NUN4U2VvSUU2RW15bG9tTHZCald5NVExbV84cUZFWGZkLW9uSE5hWnA0bw?oc=5" target="_blank">КазМунайГаз внедряет цифровые двойники месторождений с использованием ИИ - Energyland.info</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 17.07.2026 11:14</span>
+        <span class="date">📅 17.06.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КазМунайГаз и Sinopec оценят ресурсный потенциал участка «Березовский» в Казахстане - Energyland.info</div>
+      <div class="art-summary">КазМунайГаз внедряет цифровые двойники месторождений с использованием ИИ - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-16" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9vZkEzcmFoMkNqemtLYUF0NFhwSXExYVlKeHN0T01iYUU0WjBoWVRVOF92TDdtOUZpMG1yZXVYd25aelY4M0JHMUhMR3ZDVlhRS0ljSUtxUQ?oc=5" target="_blank">КазМунайГаз-Аэро обеспечит заправку нового рейса Centrum Air по маршруту Ташкент – Костанай - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 16.06.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз-Аэро обеспечит заправку нового рейса Centrum Air по маршруту Ташкент – Костанай - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-15" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPVEtrNDBGem8yYWZoSjItbmN1LXdPVEpMYmZSRlNvRG8wRVBkTDhxU191QWFJQmxKSERWejEwSUR6OUhuTlB1RFhSMFhoUTF6N19KczZXMV9sM0E1QVlnQmZoN2Y1d0tRbk8ybTJGY1R6bHh3Sm5RY1RQQnViTjZJaWFMQ0dwLWFoNTVFRnU3WDhQLWI0RGQwS3l3?oc=5" target="_blank">Казатомпром: итоги за 1-й квартал 2026 года - Freedom Broker</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 15.06.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром: итоги за 1-й квартал 2026 года - Freedom Broker</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1JSy1BYjB4cDYwaUp1RGxtS05XZVNicmJ1d2lEdTdaYkliZGR6SDBtZzl6ZzVET18tT3BlamNXR09CcThERE9ISmhIeHNySEtFMW90UGs5WkZ6WWstbjV5Q05nbEtRanBzeUxFeQ?oc=5" target="_blank">Air Astana Suspends Dubai Flights - 4Vlastinfo</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.07.2026 14:16</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana Suspends Dubai Flights - 4Vlastinfo</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTE9aLThaNC1MSkU3RU9nemRGdHVNWjd3eWVaNnFDM3FnZW41N2xFSlFFMk4xR19wbkZGeW5uWlY2T0FYZw?oc=5" target="_blank">Air Astana приостанавливает рейсы в Дубай из-за ситуации в регионе - yujanka.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.07.2026 07:01</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana приостанавливает рейсы в Дубай из-за ситуации в регионе - yujanka.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxQaDRUMDFybEw1R09IMGFJdmpuWjdHWkhJNUVzVGNnaUExQ0dyRlBSVVdWQk5yMEZXeEQ3VEJCY1Y4cGZia1ViMFVYekFZSU15aDhlamJEUEUzMUsxNTRfODVsUWNNVFhQTzNZU2xNNFd4bTFOS0Y3bW53cWJsMDBPRUNaNTRxN3k2RWNjTDIwNzFvUGhrQnNrVW8wUmNHNlI1M0xVa3IxcjdWMTJXUUxNSzZ1NklFMGc3WWJKa3BFUHJHd0N0MDZHdHhrbU5Rd9IB0wFBVV95cUxPWDN1YTgwTjlHQUR6ZkFvZWY3ZTF1NzYtTkNicGoyazJ1NVYtdHdKYmxEUHQyUHd2R2pkRHh2SWhLYWpvek9UdVRFT0NLb3daNXR0eFJiel9iZTZBQWdmU0xLQl9kWWliV0k2Snd1SmJ0VTQ1OTc0dWtqanR6TTVpV2RSbUFBZnNPeFpzOER3a0xxU3RtTEVyS0pXYWs5ck1ubDJiRVZSUTlnTmp2c09NLUZxTUhqcU5EdF85bnhNUEtjNXlmYUtib3NYTmIxU2dkRVJB?oc=5" target="_blank">Пассажирка с пятимесячным ребенком не смогла вылететь из Астаны в Уральск: Air Astana проводит проверку - Liter.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.07.2026 10:55</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Пассажирка с пятимесячным ребенком не смогла вылететь из Астаны в Уральск: Air Astana проводит проверку - Liter.kz</div>
     </div>
     
     <div class="article" data-date="2026-07-17" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQLWc4OGMtM0g0TDNoVnZ3dnNXTE0waG5WSGFLbk05Q1F6M2tpQndiRVFZV0t2Y0kzSDFURUt2Sm1jWkNlMHdtWDhMc1dpbXJwSUtWLWN5RkJPV1dQbzUwa0hTeXlXZ215RGpsQV9pYlBSLTlQSEd1b1ctQ2JKSWV6OWtJX0l1SUNJX3EzTXJWMjRqblVLbEtlVFZOTUF1WURrU2dXRXJXZ1RBY2pLQVE?oc=5" target="_blank">КТЖ проводит республиканские акции по безопасности на железной дороге - Қазақстан теміржолшысы</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTFB6OG91UXRZYjN5ZUZSSG05eXRGZVJmakhHUkhxR2I0UHBCdVAxWUxTUnlWS0JCajJNMkFJLXJfUnFLaHhmSjc0?oc=5" target="_blank">КТЖ подписали с китайскими компаниями соглашения на $400 млн в сфере логистики - Портньюс</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 17.07.2026 09:13</span>
+        <span class="date">📅 17.07.2026 09:57</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ проводит республиканские акции по безопасности на железной дороге - Қазақстан теміржолшысы</div>
+      <div class="art-summary">КТЖ подписали с китайскими компаниями соглашения на $400 млн в сфере логистики - Портньюс</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQSGdEc25IQVpMUnhwN2QxenlIb0k0eVkxa0JmUXY5SXRmSEZ2ZXV2anR3MlM1b0kyNjlPaHYzREVwSkQwbFRvRDdya29sTkxJNkI4aTZZZ2toLXVNQmlNMG1WdTFxTW5hc2g3MEFYSjZLLUlwN094eno5b3BoSVVic281TjNzMm1hVE14UTFTdVfSAZYBQVVfeXFMTWFwNlYtNnNpRDk2b19DdVgwMi1xZEJ4VHJTRk85NTR6MkY1dnJfYWxrMm1GMUVwYmlxbjM4aEs3UmhLSi1OQy0yN2JpaGNOZ1FzOVFld00tLVlhaTVYR29IakxCOVlTenlkSEc2WXY3VGJxQkh4UXRjVWZINkxHa25CT09jQ2VEZUNManduZ1RiQmNMUXNB?oc=5" target="_blank">IPO КТЖ точно пройдет в Казахстане – экономист - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.06.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">IPO КТЖ точно пройдет в Казахстане – экономист - Kursiv Media</div>
     </div>
     
   </div>
@@ -169,15 +259,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-03" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOSHFyazBPTmdDRE9Zb2hyZloxOHJLY3RpcXF5aUFBS2pzV1NKTmh1X2Y1TUtfNEtkZHZSdTE2b2RtdXhqVjJVa05YbG04Rl9jWUV6ZEd5TWNNa2ctV0pNUmpETThyaUlNMGhWQTk5bm5ad1dXWEpnNERaNDl4c0M2V0xybUllZm9Ha1pwUGVKbG15STVmRmtOcm1VQzUtNHRrY1E?oc=5" target="_blank">Новый глава Air Astana пообещал приносить прибыль акционерам - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+    <div class="article" data-date="2026-07-17" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-17/zhnb-v-qazaqgaz-utochnili-shemu-finansirovaniya-gazoprovoda-s-uchastiem-kompanii-iz-katara/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-v-qazaqgaz-utochnili-shemu-finansirovaniya-gazoprovoda-s-uchastiem-kompanii-iz-katara" target="_blank">В QazaqGaz уточнили схему финансирования газопровода с участием компании из Катара</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 03.07.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 17.07.2026 12:31</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Новый глава Air Astana пообещал приносить прибыль акционерам - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+      <div class="art-summary">В QazaqGaz уточнили схему финансирования газопровода с участием компании из Катара</div>
     </div>
     
   </div>
@@ -239,7 +329,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-03';
+  document.getElementById('date-from').value = '2026-06-15';
   document.getElementById('date-to').value   = '2026-07-17';
   applyFilters();
 }
