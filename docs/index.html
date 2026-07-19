@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 19.07.2026 14:24</div>
+  <div class="meta">2 источников · Обновлено: 19.07.2026 16:42</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-25">
+      <input type="date" id="date-from" value="2026-05-01">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-19">
+      <input type="date" id="date-to" value="2026-07-19">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,6 +84,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -102,36 +104,52 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-06-19" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPMTVNZzk0WnZLWnprb09MbVNZS0RqZmlQWFlSSzNKX0NBT0puYVI3VXU2akdFVWJqRXdPRlp1bllKV1FMWTV2MUdaeGlhVXJBeER0NjRxWl9CS3ROU19ZSGtzMlUyQlpHemFWQWtaZnFJWmphSTlqTnRHRDFKdVlYRkdsM2tzaFRxdlA0dXQyRHROMDMzWU5CQ2VxX1liYkk4cHRFYjJSY3pJTm9TSVdTcVZESGJmUQ?oc=5" target="_blank">КТЖ и DBA Group обсудили внедрение цифровой системы управления терминалами - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-07-19" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-19/nvbr-v-kazahstane-osudili/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=nvbr-v-kazahstane-osudili" target="_blank">Казахстан отреагировал на удары дронов по танкерам КТК</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 19.06.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 19.07.2026 15:04</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КТЖ и DBA Group обсудили внедрение цифровой системы управления терминалами - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Казахстан отреагировал на удары дронов по танкерам КТК</div>
     </div>
     
-    <div class="article" data-date="2026-05-25" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNU3M5bXpsdURrQWtIcGY4b0FCTTA3QW1RQmhEeUZlRU83Um5zaU9peGdpMEEwcEhWOF9EM3dkckhSUWxpYi1TYTdBMVJEZUliWUlFVnhEMmVRemVrcUVUMUcxbFdDX1AzX1JRT2hyMFpnY252YnlyVFcydlhxZVBvNFhoWnMtbUlpS1FVS19Wb1djaUk1Ykp0M0V2S2dwdVB6RjNrM21oSlplQ2_SAbABQVVfeXFMTUx0bWJiMXN3M2tZRzdFZ3BTT2l3amFhSUtQS2dHVk5pVnEwbHBCOGRHcTJ6SF8ydDhmSzhUVEkzcGNWV213LVAwdnRXekJ2MjloOVhRRjNPdnlYNmhvNy1RaUQ0YWt5UUwxQkNjazFtdmFSZG5HdHh2SE9pUFY4cTZzZm9vZWtENjZmb0dUbzZiNmRFRlNHNVdaaXdBemR1TnNFREozSlBRVGlLMjViU2c?oc=5" target="_blank">Более 50 вагонов Stadler для КТЖ не могут выйти на линии из-за технических вопросов - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+    <div class="article" data-date="2026-07-19" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-19/nvbr-v-minenergo-rk-sdelali-zayavlenie-po-povodu-ataki-bespilotnikov-na-tankery/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=nvbr-v-minenergo-rk-sdelali-zayavlenie-po-povodu-ataki-bespilotnikov-na-tankery" target="_blank">В Минэнерго РК сделали заявление по поводу атаки беспилотников на танкеры</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 25.05.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 19.07.2026 14:57</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Более 50 вагонов Stadler для КТЖ не могут выйти на линии из-за технических вопросов - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+      <div class="art-summary">В Минэнерго РК сделали заявление по поводу атаки беспилотников на танкеры</div>
     </div>
     
   </div>
   
 
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-05-01" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlb2tOdHdvQkRIaDR3UG1ZaDFCRURLZVFIZnBZVDU0TlkwMGtBNWl4MTJVWk5UaW1HV3FjOFJ4V2NPYzZWSWdMYjhsMXFYeFoxem5yVg?oc=5" target="_blank">КТЖ формирует собственный морской флот: подписаны контракты на строительство шести судов - АПК-Інформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 01.05.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ формирует собственный морской флот: подписаны контракты на строительство шести судов - АПК-Інформ</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -190,8 +208,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-25';
-  document.getElementById('date-to').value   = '2026-06-19';
+  document.getElementById('date-from').value = '2026-05-01';
+  document.getElementById('date-to').value   = '2026-07-19';
   applyFilters();
 }
 
