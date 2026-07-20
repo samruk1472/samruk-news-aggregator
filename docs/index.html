@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">7 источников · Обновлено: 20.07.2026 09:53</div>
+  <div class="meta">4 источников · Обновлено: 20.07.2026 12:16</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">15</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">11</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-20">
+      <input type="date" id="date-from" value="2026-07-17">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-20">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,13 +87,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
-      
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -110,168 +106,97 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
-    
-    <div class="article" data-date="2026-07-20" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-20/svan-eshe-odin-tanker-atakovali-u-terminala-ktk-vo-vremya-pogruzki-kazahstanskoj-nefti/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-eshe-odin-tanker-atakovali-u-terminala-ktk-vo-vremya-pogruzki-kazahstanskoj-nefti" target="_blank">Еще один танкер атаковали у терминала КТК во время погрузки казахстанской нефти</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 20.07.2026 09:42</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Еще один танкер атаковали у терминала КТК во время погрузки казахстанской нефти</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-20/kaye-pravitelstvo-kazahstana-otvetilo-na-vopros-o-razdelenii-erg/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-pravitelstvo-kazahstana-otvetilo-na-vopros-o-razdelenii-erg" target="_blank">Правительство Казахстана ответило на вопрос о разделении ERG</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 20.07.2026 08:31</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Правительство Казахстана ответило на вопрос о разделении ERG</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70162-ese-odna-ataka-bespilotnika-proizosla-na-morskom-terminale-ktk.html" target="_blank">Еще одна атака беспилотника произошла на морском терминале КТК</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 20.07.2026 13:18</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Еще одна атака беспилотника произошла на морском терминале КТК</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(11)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTFBvWHdYa1pqQ2cydDRrTkRiRFdobWlieGpJc3h0c0NtZXRkaDJNSzNYZDN0cDRmRW92NjV0SGM4RnJvWnFWOW5Z?oc=5" target="_blank">В «Қазақстан темір жолы» назначен новый руководитель - Tiek.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 20.07.2026 05:35</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">В «Қазақстан темір жолы» назначен новый руководитель - Tiek.kz</div>
+    </div>
     
     <div class="article" data-date="2026-07-20" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-20/svan-samruk-kazyna-vykupila-dolyu-v-kazahtelekome-u-millionera-artykbaeva/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-samruk-kazyna-vykupila-dolyu-v-kazahtelekome-u-millionera-artykbaeva" target="_blank">«Самрук-Казына» выкупила долю в «Казахтелекоме» у миллионера Артыкбаева</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxQVDBVSmZZRTc1TDY3MXRqeVhWMU9WTEVTVW5DaTVOaFJidEpCZ0llN05mTjdOd2RIelR4Yy1LcmVRelFZV193a3luek92QUpxd29Da2dna2dUQXYtem50QnRJM2hBd1JQZnNPaW84VUlXSTJFd3ZGRmxCbGhLSU1vV2NYaXRfdUtoLU5ZV2JYLVZoci1mTkFRVlNmQ0pnZmk5NjVJRlFxYlR5RGlkaGt5UWVIV2ZOODVvNXlxaGtKR0plSDZ1WDljVkw5VzY1d9IB0wFBVV95cUxPclljcS10SzJxTGtFamhBb2FfNHp0Yy1zeVZXbExhcDY0S3U3VlBtSFZsaHIxSmYyd1R3WmlFZUhZWWJrc1ZMZ1VQSXRDYW1neGxsTkQ5UDI5dlBRQ2ZjaG95dWJCQ0hfR1RUZVc2UnFQaEdLSHlkeGp5a2djRlJRaHVzYlhpc25tUkxyZE1qUUd2elRXOEZBNDhIVnBWTFBYUzVrT1dGbGMtbzU1aUFwMFBQWjQwM2Y2cVFYTEt6MDdvUWhleVpfd290QTBrd1RnMXNZ?oc=5" target="_blank">«Казахтелеком» выступит технологическим партнером «Игр Будущего 2026» powered by Samruk-Kazyna - DigitalBusiness.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 20.07.2026 08:17</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 20.07.2026 11:22</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Самрук-Казына» выкупила долю в «Казахтелекоме» у миллионера Артыкбаева</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOTU93a3lteV9uSUdMNGdOTU1IMEpDeVJidWxHMnNmeVE2b0Zua3FfcjBOeTJYUUZpdDlMSmEtYU5WWF95RmluT2xGa3pKX0pnYmZLVk9WR1Y4VW4wNTJVM09NVFhmRnJOcTVMdmlmWVNuR2FhUE9vUmh1dG9vWS1qSHFqUEprZi0tMTA5UXdYdDN3bWdtSG1xN3hRaHFNVXBpVEFYQ0F5NXNibHVHMlHSAbMBQVVfeXFMT1BoTFZ0aXcwcjJLU054RHlzSWJ2cDFCcTFFTUYtQ0puNmkxVDhIam9wSERZTmMycEJWenVKa05OU0toNXQtRmw0N3puUWIzRUJlRWdJTk1POHYxSmhIb2tLZ0JfVS1TOGtyOUVCcWJESHhQb2poRnlaeTlGMUtMTmFrWXpyQVFxdnphbnZBUl9Ya1lpRkZLckxqQWQzbWNWWWgxZWRVNkVLUTRWZHhacU9Eclk?oc=5" target="_blank">«Самрук-Казына» выкупила долю в «Казахтелекоме» у миллионера Артыкбаева - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 20.07.2026 08:37</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» выкупила долю в «Казахтелекоме» у миллионера Артыкбаева - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE4tRlFOLWhyU3FQbFBCckQ0Z2k5ZWFmcElOZ0EtN3hDMVVkejJYUk8wN0tFWTd1U05YZ0FTMnFmMFRPbzlzelJfQ1htNmNnNko4cHgxaE9VQjVMRDlraFAzdk1NaWVGVWN0ZzdKakxhV21EYjJ0bGdPWm9vQm9nQdIBhgFBVV95cUxOLTdVa1d3RElUcTZSZEs2UUxpcVBEUDY4SnREYnBrNzJsQWpldENCeGZpUjVTU09sZ1FzNGFWZnJ3Tm0wbGRjSWpnMlNfaXVUTUI4V0paWC16cHFpNFBkdmZXbTNxbHkzdTFHZG1fWFRsTDV0bVdzOU9xeThkS1NjbGRiOC1UUQ?oc=5" target="_blank">Елжас Отыншиев возглавил КТЖ - ElDala</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 20.07.2026 05:03</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Елжас Отыншиев возглавил КТЖ - ElDala</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxPenF6M2pfQ3ZYVlpFdkdfUEZUVHlvWW5jZ2tjVmRjN1RmSm5yaXZLN2VkTmNQZzZ3MVU3eFBYVkU1UGNwZXhreWxpRHB6R2Nuc2NBZXlEVFJsSGhqV2JMMVRneDAwQ3pDSnhSd2JMM2hyUlNvb1V0NnczZ0g5TXl5emZ3?oc=5" target="_blank">В КТЖ назначили нового руководителя - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 20.07.2026 05:22</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В КТЖ назначили нового руководителя - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNEtPV0ptdE10a21Sb3lNN1pLZXpVTEY4WUx4WFpPeGVuOUE5MXpwRTVMelZ3UHR1dUJKVTNyZ051cVBpS2NVLTAyN1NZRGdXQnRMWnkzNjYtUTN0cFdRTkFvM3VsUlI1N21mRzR2TkdqQzV6dmRidi1BTFg3dzczY2ZSNDByM2NDVnhLcmhfTFJtMWhGTFlVSHNfTm9hcHQ1MWNKdEJQZUZKZ9IBqgFBVV95cUxQNEtPV0ptdE10a21Sb3lNN1pLZXpVTEY4WUx4WFpPeGVuOUE5MXpwRTVMelZ3UHR1dUJKVTNyZ051cVBpS2NVLTAyN1NZRGdXQnRMWnkzNjYtUTN0cFdRTkFvM3VsUlI1N21mRzR2TkdqQzV6dmRidi1BTFg3dzczY2ZSNDByM2NDVnhLcmhfTFJtMWhGTFlVSHNfTm9hcHQ1MWNKdEJQZUZKZw?oc=5" target="_blank">В «Қазақстан темір жолы» назначили нового председателя правления - 24.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 20.07.2026 05:09</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В «Қазақстан темір жолы» назначили нового председателя правления - 24.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOc0E4eGdaUHFGU3FVTElqampzU0REQ21Zd3ViZ2pXYUtCRjlaYjdNbmNTMzU5WHZDSHdlV2hGcWxxOF92Vkt4VVlGc3pCdkhuYTU1eHBzcjBVbi1FbWRmQzJ5LVJUMmtiSGVwQXdHeHR1VTZiVnh0Y2xMWnF1V2h0MNIBhgFBVV95cUxQVEVzbzJPS2M4R0pIRGtDa1FjVmQzSzNQMGhVTUVGWWFPYTZxWV9jVlFFbGt3aVJrRDBhZEN6TFBDZWlPVGhWbWJkSWt4RlVzYTUxS2NjaWliZnpQSkpoU1dHbXFMNkowd0VENGI5NjU2cWhqWTh6Q1dlcml5Nko2RlAtX3ZRQQ?oc=5" target="_blank">Назначен зампред правления АО &#34;НК &#34;КазМунайГаз&#34; - Liter.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.07.2026 06:57</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Назначен зампред правления АО &#34;НК &#34;КазМунайГаз&#34; - Liter.kz</div>
+      <div class="art-summary">«Казахтелеком» выступит технологическим партнером «Игр Будущего 2026» powered by Samruk-Kazyna - DigitalBusiness.kz</div>
     </div>
     
     <div class="article" data-date="2026-07-20" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR3VWbzNGeGFEY0ZjU1Ewa00tMXI4bzRMS0dyd3dGTUR4a2FsTFBaUExNZVVLUUdNSUNCSVNZbGdrVjVYNEtSRVQ3bXk2M0E5emFNRmVGQzlXTGJtdnVOSEIzWk9HZkVxblR6c2djU2ExeTI0cS1oVU5USWFEcmpXRUVuWW1vRTFNUzR2cHI2Rk9hTzQtdXI1WTI4MjB4eDJ5WEkzclJIaWVuM3c?oc=5" target="_blank">Пассажир заявил, что Air Astana повредила его инвалидную коляску - newtimes.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxONkxnY0h4RlRBdEx4bEZ6REJROXFyblRzV3Q3Zlp5S0tSUUxpYS1GOFdsc0JsUnZEQVJoWHA4bzhzWVFHZGprR3RLRms5RUQ1VF9SR0lJVldrWDFTN094T3JfdUhPWk1VdV90cTVULVFlUmcwNEhwdUVrbVJlQzdBaHc2el9lVFJGcDc3emZ0UHotVS1KMFJkVlFuTTQzaWt5TV8wdHpBeHVrLXg0NU5Oa0JCNzBuWlRYbjRyYV9FVWFKZC0zNUFqeHdFUEhqS3Fkdk5hTDBYd3JENlY3ZTFnNFhZamM5dEsyRWdIeg?oc=5" target="_blank">&#34;Никакого уважения&#34;: пассажир Air Astana заявил, что его инвалидную коляску повредили во время посадки на рейс (видео) - NUR.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 20.07.2026 08:20</span>
+        <span class="date">📅 20.07.2026 10:16</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Пассажир заявил, что Air Astana повредила его инвалидную коляску - newtimes.kz</div>
+      <div class="art-summary">&#34;Никакого уважения&#34;: пассажир Air Astana заявил, что его инвалидную коляску повредили во время посадки на рейс (видео) - NUR.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPTkI5UU43RnN3eGJfcDVyQlR6MXhzcENCeThuZTZJV1BZMHhFamhhckZRMmppQUJBSVNad0ZNcnFPbnJlYU9yWWhkbVFjVmtvem5Oejh6Z1duMkNHUE1rWDBfRWdCVXNNaVRxeGdqeEVkSEs3V3ZXYTNoeGphcXd0Sk4wa2lVRzB5VUdZN2FpMDN6OUpFZ3Z3SQ?oc=5" target="_blank">Air Astana первой в Казахстане получила экологический сертификат DHL. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 20.07.2026 09:50</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana первой в Казахстане получила экологический сертификат DHL. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQWlNxRWVNb0xqdTJ3eXE3cEtxZGNpUFY3alRCYnFEYnZUTE0wZlFtZVJlQW5MU2xmR05nOTRYR3MtU24zdFF0bU9GSmRUNVcxYnNLa0FLMm9zcVdpOFZ1WEZaWXJUSGhjRlZzQVQ4QnBueU9xZ1F3LUtHUEpzWVR1TGI1VHBGWnNWRUN2X0M5Q2dEU1J4a1NR?oc=5" target="_blank">Air Astana временно приостанавливает рейсы между Казахстаном и Дубаем - Aviamost</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.07.2026 06:06</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana временно приостанавливает рейсы между Казахстаном и Дубаем - Aviamost</div>
     </div>
     
     <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOdThrTG1fWHE1eTRLQUxiZ1BNM041VWpNR0NoUHZBV0FCVGZmeVNpQjE0QjlHQk5XTWdCRVRPUzY4dFdPUTlQMXJ5OHl3R1ZKUTgtNmZNdndybFA4UEcyVEh0MjBEWjBVRWdTV2o4RHZxZzI5c3VvQm1YQ0trNjY1OG4yUGRRZkJRbEFNQkdCVW9uaHEwNF8wRlk0Z9IBnAFBVV95cUxNZEdNMlNBR0V0YXJKYWFoeFpmbU92dXREdDlzTVYtRmJaZDBBbmhrSl9QTUc4c2lIc050TVQyb3c3TmFobS1EdGxHRmw2T2NnSGItTXV4dlFiUmF3RG9obXg5ZEQ1T0tTdkJIYURrT2Y0R3ZrM0trYWVjV1JxQ1JsNlpKYUMtejJxcC1RYmc0RlBSemF4ZkRYTmFFZDg?oc=5" target="_blank">Елжас Отыншиев возглавил нацкомпанию «Қазақстан темір жолы» - Казинформ</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOQlQ5VC1kNzVnSERreV8xTC1BN3hxR0Q0OEtodTVUVjQwRi1ZSWxZMEhpTlJOUnNVVUYwcVV1djJhS0hVbFplcDNXdENTN2hXM0hEcVQ4RXlUdjJ4M05YakxyYTZzeEpob3BlQ1lkeDFndTNheFRXX2I3cVpqWHhaRzRaQkc4aXJXOEY5dGZ3alVQV2cwdXhNS2VqeGlRQ2U4ZHNVTERSWnM1X1A0d1hnNnFaYnBxQdIBuwFBVV95cUxNaVI3bnlmNngzb3BrczhOV1NUSEV6cGEtenU4blRWTHhvZC1IQ2lLQ1Z5T3lzRi1UaEZqemJWMFBQSzRhcWkwQTFDTTdsRmJTZ29KTEp5RE5vSXF1R1NjSmRmeEYwYUFOcWFvNVhJbHl1T25icVpZOTk0NFdVaTQzTGRPNk5fZkxkQUVsOHhlM2pHeGhlTGlNRlUxNGNmWUFPVS0zMjZmS0k4a1F5U1J3MFBEemtRRHNoc0t3?oc=5" target="_blank">Швейцарские вагоны купленные КТЖ дорожают ежегодно еще до ввода в эксплуатацию - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.07.2026 09:00</span>
+        <span class="date">📅 20.07.2026 11:06</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Елжас Отыншиев возглавил нацкомпанию «Қазақстан темір жолы» - Казинформ</div>
+      <div class="art-summary">Швейцарские вагоны купленные КТЖ дорожают ежегодно еще до ввода в эксплуатацию - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
     </div>
     
     <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPbDA1QmM5WU5jYXVHazJaMi1QQ2RNUnJwLUlUMy16bGxzcFUzVjM3WXhmellYcWNjVmNlaF9HOExaeXZ1amZsTHBGS080NG1janZNMGdmd2E3dGdPLTZGWUNKaFhmeXk0bjduZWNhQkpIam53WS1ZLTR0NVlxQ2N4bEsxa3NzaTVuaFhfOFpTOEdBVnNNY3JiUDIwcEVJLWYzRWdoOVcxYks3RktvNkE?oc=5" target="_blank">Пассажиры жалуются на духоту на вокзале Нурлы жол в Астане: что ответили в КТЖ - Informburo.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNN2dmZTNEWHZMRDRHSWh1VEk5cVp1Z3FLY2daOXpOLW0xajBOVWdUQlVCZE5aaThLaVpQbG9DRXVwRFJtdlhZY3pEREYza0VfMmJrWjRYUUpFWml6SnhZanBnUzRlaTdYaVFPYjFYSklfaHo1cnktc1paamRrTERCbVhMM19VSm1wMklUT2d5bkVlYWN0Y1VWWVFYRDI0VXJ5UjFLLTFB0gGrAUFVX3lxTE42NEhQNzNCd3IwRTllWVRIaUFlLXpQZTR5M0VLZTlDbmRKMVNkWnMyUG9lWDdZcDNyczY4b3h0QktIandfOWJiNUNPTVNkdDh0Nm1US0xSaXlSUmg2czJXc2lhQ2xMbVlPYmtuZFJ1Y0d6R1c4a24zV3dyZ19peDd0UmFmX2JXUHpVdG82bnVJNndieGxlUWY4ZkRiV1dERVgyeTVVUjg0MGg5UQ?oc=5" target="_blank">В КТЖ сменился глава: компанию доверили управленцу из «Самрук-Қазына» - Arbat media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.07.2026 09:18</span>
+        <span class="date">📅 20.07.2026 04:28</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Пассажиры жалуются на духоту на вокзале Нурлы жол в Астане: что ответили в КТЖ - Informburo.kz</div>
+      <div class="art-summary">В КТЖ сменился глава: компанию доверили управленцу из «Самрук-Қазына» - Arbat media</div>
     </div>
     
     <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE9TUk55UGdEa0RKbWhvdHdxWDlSZGt1Z3EzQmVYdEFlYnE2VUphYVpxVmhyOFdlU1h5b2lsMzlZU3lpYm1COVFxYTE1YVpOWkVMb3hMenJDVW9LeVFZdFctRUJ4b1JyWVhEX2tVeDdZM0dPWlV1Rk5oZU1qTlJNUQ?oc=5" target="_blank">Елжас Отыншиев возглавил «Қазақстан темір жолы» - Shyndyk.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRnRzRlRaM3NHZnNvdXhsYWdScjNkSExaUUE4aGtJTzU3cWRzR0ZvXzN6ZWJfUVlqU1JKb1FBeGtYeUVkQzRvMW8yMG0tRmRUbTE2emRLcnV6bmtLbTk4N2dUcnJRR081eXZPalFjMExkZ04yb0tlQ2JfbEp5RWc2bk4tU0Q5dG1TaWpLalFwZU9RZTdNbldHQ0MtQy1jTXlHMEpEWmI0UXJTQQ?oc=5" target="_blank">После жалоб пассажиров в КТЖ признали сбои в работе кондиционеров на «Нұрлы жол» - Orda.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.07.2026 07:21</span>
+        <span class="date">📅 20.07.2026 10:28</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Елжас Отыншиев возглавил «Қазақстан темір жолы» - Shyndyk.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNTzRVR3VsY1Y4Unl3X2t1emJaa3ZyNEpxOF9BemwxNHZBVGQ5b2JmNFhONkRVdkM2OERVWEJuRVZ1c1ZYd3otNUhwOEhxajNYLXNkVlotNF9lU25aelBYM2RWcFBSellncmRGVGk0VC1rTjdzUlEtYXZwVXpXTTJ5cGdLSkfSAYQBQVVfeXFMTU80VUd1bGNWOFJ5d19rdXpiWmt2cjRKcThfQXpsMTR2QVRkOW9iZjRYTjZEVXZDNjhEVVhCbkVWdXNWWHd6LTVIcDhIcWozWC1zZFZaLTRfZVNuWnpQWDNkVnBQUnpZZ3JkRlRpNFQta043c1JRLWF2cFV6V00yeXBnS0pH?oc=5" target="_blank">В КТЖ назначили нового главу компании - BAQ.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.07.2026 05:39</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В КТЖ назначили нового главу компании - BAQ.KZ</div>
+      <div class="art-summary">После жалоб пассажиров в КТЖ признали сбои в работе кондиционеров на «Нұрлы жол» - Orda.kz</div>
     </div>
     
   </div>
@@ -279,17 +204,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-07-20" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/07/why-kazakhstan-matters-to-gulf-after-war/" target="_blank">Why Kazakhstan Matters to Gulf After War</a></div>
+    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-20/zhnb-stadler-obyasnil-pochemu-stoimost-vagonov-dlya-kazahstana-mozhet-menyatsya/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-stadler-obyasnil-pochemu-stoimost-vagonov-dlya-kazahstana-mozhet-menyatsya" target="_blank">Швейцарские вагоны, купленные КТЖ, дорожают ежегодно еще до ввода в эксплуатацию</a></div>
       <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 20.07.2026 07:45</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 20.07.2026 11:03</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Why Kazakhstan Matters to Gulf After War</div>
+      <div class="art-summary">Швейцарские вагоны, купленные КТЖ, дорожают ежегодно еще до ввода в эксплуатацию</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-20/devy-eshhe-odin-zhenskii-vagon-zapustili-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-eshhe-odin-zhenskii-vagon-zapustili-v-kazahstane" target="_blank">Еще один женский вагон запустили в Казахстане</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 20.07.2026 10:20</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Еще один женский вагон запустили в Казахстане</div>
     </div>
     
   </div>
@@ -351,7 +287,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-20';
+  document.getElementById('date-from').value = '2026-07-17';
   document.getElementById('date-to').value   = '2026-07-20';
   applyFilters();
 }
