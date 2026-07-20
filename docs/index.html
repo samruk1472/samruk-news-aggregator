@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 20.07.2026 12:16</div>
+  <div class="meta">3 источников · Обновлено: 20.07.2026 15:12</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-17">
+      <input type="date" id="date-from" value="2026-07-20">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-20">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,9 +87,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -106,129 +106,52 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-20" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOTnFxT1JzLXN5bHptZVAtUDZHdG5sV3NIc3cyS093c29DMUlERDBvWVhiV1dpX2VZSXA5R3NZblVLaVdtYWFTOE16TUtzX0UtTHJOT0FleG1zV0tGQnNmVi02Qm5yc3pfYnhhanNvNTFWb2RIUERBRlBhQWNXSXg2VlFxNVByQnowbDNLS1dfbWE1U0NIV0g1c3dLYXBuZ0drMGV6STg1TmN2WE8zRUE?oc=5" target="_blank">«КазМунайГаз» готов выплатить штраф по Кашагану вопреки позиции партнеров — Bloomberg - Oninvest</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 20.07.2026 14:20</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» готов выплатить штраф по Кашагану вопреки позиции партнеров — Bloomberg - Oninvest</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTFBvWHdYa1pqQ2cydDRrTkRiRFdobWlieGpJc3h0c0NtZXRkaDJNSzNYZDN0cDRmRW92NjV0SGM4RnJvWnFWOW5Z?oc=5" target="_blank">В «Қазақстан темір жолы» назначен новый руководитель - Tiek.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 20.07.2026 05:35</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В «Қазақстан темір жолы» назначен новый руководитель - Tiek.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxQVDBVSmZZRTc1TDY3MXRqeVhWMU9WTEVTVW5DaTVOaFJidEpCZ0llN05mTjdOd2RIelR4Yy1LcmVRelFZV193a3luek92QUpxd29Da2dna2dUQXYtem50QnRJM2hBd1JQZnNPaW84VUlXSTJFd3ZGRmxCbGhLSU1vV2NYaXRfdUtoLU5ZV2JYLVZoci1mTkFRVlNmQ0pnZmk5NjVJRlFxYlR5RGlkaGt5UWVIV2ZOODVvNXlxaGtKR0plSDZ1WDljVkw5VzY1d9IB0wFBVV95cUxPclljcS10SzJxTGtFamhBb2FfNHp0Yy1zeVZXbExhcDY0S3U3VlBtSFZsaHIxSmYyd1R3WmlFZUhZWWJrc1ZMZ1VQSXRDYW1neGxsTkQ5UDI5dlBRQ2ZjaG95dWJCQ0hfR1RUZVc2UnFQaEdLSHlkeGp5a2djRlJRaHVzYlhpc25tUkxyZE1qUUd2elRXOEZBNDhIVnBWTFBYUzVrT1dGbGMtbzU1aUFwMFBQWjQwM2Y2cVFYTEt6MDdvUWhleVpfd290QTBrd1RnMXNZ?oc=5" target="_blank">«Казахтелеком» выступит технологическим партнером «Игр Будущего 2026» powered by Samruk-Kazyna - DigitalBusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 20.07.2026 11:22</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» выступит технологическим партнером «Игр Будущего 2026» powered by Samruk-Kazyna - DigitalBusiness.kz</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
     <div class="article" data-date="2026-07-20" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxONkxnY0h4RlRBdEx4bEZ6REJROXFyblRzV3Q3Zlp5S0tSUUxpYS1GOFdsc0JsUnZEQVJoWHA4bzhzWVFHZGprR3RLRms5RUQ1VF9SR0lJVldrWDFTN094T3JfdUhPWk1VdV90cTVULVFlUmcwNEhwdUVrbVJlQzdBaHc2el9lVFJGcDc3emZ0UHotVS1KMFJkVlFuTTQzaWt5TV8wdHpBeHVrLXg0NU5Oa0JCNzBuWlRYbjRyYV9FVWFKZC0zNUFqeHdFUEhqS3Fkdk5hTDBYd3JENlY3ZTFnNFhZamM5dEsyRWdIeg?oc=5" target="_blank">&#34;Никакого уважения&#34;: пассажир Air Astana заявил, что его инвалидную коляску повредили во время посадки на рейс (видео) - NUR.KZ</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQdGNRZ0wwY0ZMNVhxSzFoVHRDUEVKTzd3V3VxQkFaTlREVUZ5T0d4bEdqVGxWWV9TUkM1bnB0ZU9LR2R5Q09QU0s0Y1hNTVh1TkFQRUFSTjVkblVvRTg0MTBzX3ItVnp3eEgtTE5od2VaUGxyenIwbXNDN0hXVkVWcm5QMzdBMW1ldGNGcFhzekNEVEpNdHBfRE1tTnZPZzZDUVAyQ0o1V2JKNUgwLWkxcU9BVQ?oc=5" target="_blank">Пассажир обвинил Air Astana в порче инвалидной коляски и хамстве сотрудников - TourDom</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 20.07.2026 10:16</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">&#34;Никакого уважения&#34;: пассажир Air Astana заявил, что его инвалидную коляску повредили во время посадки на рейс (видео) - NUR.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPTkI5UU43RnN3eGJfcDVyQlR6MXhzcENCeThuZTZJV1BZMHhFamhhckZRMmppQUJBSVNad0ZNcnFPbnJlYU9yWWhkbVFjVmtvem5Oejh6Z1duMkNHUE1rWDBfRWdCVXNNaVRxeGdqeEVkSEs3V3ZXYTNoeGphcXd0Sk4wa2lVRzB5VUdZN2FpMDN6OUpFZ3Z3SQ?oc=5" target="_blank">Air Astana первой в Казахстане получила экологический сертификат DHL. - Exclusive.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 20.07.2026 09:50</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana первой в Казахстане получила экологический сертификат DHL. - Exclusive.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-17" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQWlNxRWVNb0xqdTJ3eXE3cEtxZGNpUFY3alRCYnFEYnZUTE0wZlFtZVJlQW5MU2xmR05nOTRYR3MtU24zdFF0bU9GSmRUNVcxYnNLa0FLMm9zcVdpOFZ1WEZaWXJUSGhjRlZzQVQ4QnBueU9xZ1F3LUtHUEpzWVR1TGI1VHBGWnNWRUN2X0M5Q2dEU1J4a1NR?oc=5" target="_blank">Air Astana временно приостанавливает рейсы между Казахстаном и Дубаем - Aviamost</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 17.07.2026 06:06</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana временно приостанавливает рейсы между Казахстаном и Дубаем - Aviamost</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOQlQ5VC1kNzVnSERreV8xTC1BN3hxR0Q0OEtodTVUVjQwRi1ZSWxZMEhpTlJOUnNVVUYwcVV1djJhS0hVbFplcDNXdENTN2hXM0hEcVQ4RXlUdjJ4M05YakxyYTZzeEpob3BlQ1lkeDFndTNheFRXX2I3cVpqWHhaRzRaQkc4aXJXOEY5dGZ3alVQV2cwdXhNS2VqeGlRQ2U4ZHNVTERSWnM1X1A0d1hnNnFaYnBxQdIBuwFBVV95cUxNaVI3bnlmNngzb3BrczhOV1NUSEV6cGEtenU4blRWTHhvZC1IQ2lLQ1Z5T3lzRi1UaEZqemJWMFBQSzRhcWkwQTFDTTdsRmJTZ29KTEp5RE5vSXF1R1NjSmRmeEYwYUFOcWFvNVhJbHl1T25icVpZOTk0NFdVaTQzTGRPNk5fZkxkQUVsOHhlM2pHeGhlTGlNRlUxNGNmWUFPVS0zMjZmS0k4a1F5U1J3MFBEemtRRHNoc0t3?oc=5" target="_blank">Швейцарские вагоны купленные КТЖ дорожают ежегодно еще до ввода в эксплуатацию - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
         <span class="date">📅 20.07.2026 11:06</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Швейцарские вагоны купленные КТЖ дорожают ежегодно еще до ввода в эксплуатацию - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+      <div class="art-summary">Пассажир обвинил Air Astana в порче инвалидной коляски и хамстве сотрудников - TourDom</div>
     </div>
     
     <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNN2dmZTNEWHZMRDRHSWh1VEk5cVp1Z3FLY2daOXpOLW0xajBOVWdUQlVCZE5aaThLaVpQbG9DRXVwRFJtdlhZY3pEREYza0VfMmJrWjRYUUpFWml6SnhZanBnUzRlaTdYaVFPYjFYSklfaHo1cnktc1paamRrTERCbVhMM19VSm1wMklUT2d5bkVlYWN0Y1VWWVFYRDI0VXJ5UjFLLTFB0gGrAUFVX3lxTE42NEhQNzNCd3IwRTllWVRIaUFlLXpQZTR5M0VLZTlDbmRKMVNkWnMyUG9lWDdZcDNyczY4b3h0QktIandfOWJiNUNPTVNkdDh0Nm1US0xSaXlSUmg2czJXc2lhQ2xMbVlPYmtuZFJ1Y0d6R1c4a24zV3dyZ19peDd0UmFmX2JXUHpVdG82bnVJNndieGxlUWY4ZkRiV1dERVgyeTVVUjg0MGg5UQ?oc=5" target="_blank">В КТЖ сменился глава: компанию доверили управленцу из «Самрук-Қазына» - Arbat media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOeks2UnUwVTZoeFF6X3VPOU9xdFZrQUNSQVpMdFZtb0p3bl81eHVteGQxb1hERDNodnpud1prSUU4aFo1bHpCbzlRd0JDQ1RQc01GYThQSFM4bXJ5dmJqY1JkdlRhdnRHVDladG5oU1pKRVFnMXlVZEVwQUUxMVpwMDVjMl9MTDFtZkVuWEFCaVptR1dXWE5sTGlMN2I0NXZZY3ROT2F0RDFaeHpXSkl2YmRRZFZTX0k?oc=5" target="_blank">КТЖ ускоряет строительство железнодорожной линии Дарбаза – Мактаарал - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.07.2026 04:28</span>
+        <span class="date">📅 20.07.2026 08:03</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">В КТЖ сменился глава: компанию доверили управленцу из «Самрук-Қазына» - Arbat media</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRnRzRlRaM3NHZnNvdXhsYWdScjNkSExaUUE4aGtJTzU3cWRzR0ZvXzN6ZWJfUVlqU1JKb1FBeGtYeUVkQzRvMW8yMG0tRmRUbTE2emRLcnV6bmtLbTk4N2dUcnJRR081eXZPalFjMExkZ04yb0tlQ2JfbEp5RWc2bk4tU0Q5dG1TaWpLalFwZU9RZTdNbldHQ0MtQy1jTXlHMEpEWmI0UXJTQQ?oc=5" target="_blank">После жалоб пассажиров в КТЖ признали сбои в работе кондиционеров на «Нұрлы жол» - Orda.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.07.2026 10:28</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">После жалоб пассажиров в КТЖ признали сбои в работе кондиционеров на «Нұрлы жол» - Orda.kz</div>
+      <div class="art-summary">КТЖ ускоряет строительство железнодорожной линии Дарбаза – Мактаарал - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-20/zhnb-stadler-obyasnil-pochemu-stoimost-vagonov-dlya-kazahstana-mozhet-menyatsya/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-stadler-obyasnil-pochemu-stoimost-vagonov-dlya-kazahstana-mozhet-menyatsya" target="_blank">Швейцарские вагоны, купленные КТЖ, дорожают ежегодно еще до ввода в эксплуатацию</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 20.07.2026 11:03</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Швейцарские вагоны, купленные КТЖ, дорожают ежегодно еще до ввода в эксплуатацию</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-20/devy-eshhe-odin-zhenskii-vagon-zapustili-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-eshhe-odin-zhenskii-vagon-zapustili-v-kazahstane" target="_blank">Еще один женский вагон запустили в Казахстане</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 20.07.2026 10:20</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Еще один женский вагон запустили в Казахстане</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -287,7 +210,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-17';
+  document.getElementById('date-from').value = '2026-07-20';
   document.getElementById('date-to').value   = '2026-07-20';
   applyFilters();
 }
