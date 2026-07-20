@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 19.07.2026 16:42</div>
+  <div class="meta">5 источников · Обновлено: 20.07.2026 04:36</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-01">
+      <input type="date" id="date-from" value="2026-04-13">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-19">
+      <input type="date" id="date-to" value="2026-07-20">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -88,6 +88,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -104,49 +106,126 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
     
-    <div class="article" data-date="2026-07-19" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-19/nvbr-v-kazahstane-osudili/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=nvbr-v-kazahstane-osudili" target="_blank">Казахстан отреагировал на удары дронов по танкерам КТК</a></div>
+    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://egemen.kz/article/417531-elzhas-otynshiev-qtzh-basshysy-bolyp-taghayyndaldy" target="_blank">Елжас Отыншиев ҚТЖ басшысы болып тағайындалды</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 19.07.2026 15:04</span>
+        <span class="src">📰 Egemen.kz</span>
+        <span class="date">📅 20.07.2026 09:21</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Казахстан отреагировал на удары дронов по танкерам КТК</div>
+      <div class="art-summary">Елжас Отыншиев ҚТЖ басшысы болып тағайындалды</div>
     </div>
     
-    <div class="article" data-date="2026-07-19" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-19/nvbr-v-minenergo-rk-sdelali-zayavlenie-po-povodu-ataki-bespilotnikov-na-tankery/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=nvbr-v-minenergo-rk-sdelali-zayavlenie-po-povodu-ataki-bespilotnikov-na-tankery" target="_blank">В Минэнерго РК сделали заявление по поводу атаки беспилотников на танкеры</a></div>
+    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE91Rm9sNDNtQURIX3d5djVSYnpyQzB4bXR6S2o4eHNkWVZybG1zQmJmMDZEVHc5T2ZyZm5YQXdIS05hX3NrLUN4X0RITWlQSDM5dktPQmVtanVxdEhfUFNyZmIyZVFRNTBCaGc?oc=5" target="_blank">Елжас Отыншиев возглавил КТЖ - Informburo.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 19.07.2026 14:57</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 20.07.2026 04:22</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Елжас Отыншиев возглавил КТЖ - Informburo.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE9Ld0lCbzlKUi1Za3k0R3dtb3hJMjA1b3MxbTdqeE54bGNPVTYyUVd1cng2UEVTeG9FNUxWODFjMzVGN3dWeWxFa1hR?oc=5" target="_blank">Назначен новый глава «Казахстан темір жолы» - Ак Жайык</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 20.07.2026 04:20</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Назначен новый глава «Казахстан темір жолы» - Ак Жайык</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-13" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9qcnRPLVk4RGZkYUUzbm9YUXQxaUtQSXlfT21SNFlaSW1nSDhIQ1RfNWRYSzJMNmVIVnl3MDhTVHNMRnM2eGhmOHFybFpyWXlfYjdXVWtDQQ?oc=5" target="_blank">КазМунайГаз усиливает поддержку казахстанских производителей в нефтегазовой отрасли - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 13.04.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">В Минэнерго РК сделали заявление по поводу атаки беспилотников на танкеры</div>
+      <div class="art-summary">КазМунайГаз усиливает поддержку казахстанских производителей в нефтегазовой отрасли - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdzVOaGkzaE5lZ3FMM3VCZVQ4WEpUUC1TdDZ3SEdSeGlvV2k0Mk1jbkJrajJDVEI3eUFMTWRUcXJHNlhfNzI2ZkY0OHgwTTN6TU9kLXNsRlFoQmZfOF9GSXBfZXduX2ZhdE1ELUk3WDRUNFVBTEpwSmNkZDFLMjNVU1YyZzFxb3dBbzFKR29Fb0IyQzJSeUNwVk5ydTJkdTFRZ3c0TVNMSlRQLUpHTnZpel8tY3MzM21hamRxUnU4ellXaHc?oc=5" target="_blank">Сотрудница КТЖ создала волонтёрский проект «Аяла» для помощи недоношенным детям - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 20.07.2026 04:32</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Сотрудница КТЖ создала волонтёрский проект «Аяла» для помощи недоношенным детям - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOVEQ5Z09McXZXcVZPSkE0RXM1UHl2TXhfUk4tVjVJajFjMHJDYjhMTmdINWJXRkEzYnRpYldVZ0xZcWZnT0tVTklWMktkYnp6NHl4RTkxYzlzWjVQOXk3dV9tZVNkQTlZUG9FZnhxSkNWN3lZR3BLODE1MVhwck41WnFpQ1dkRGtBaUp1Y2Vob3BZMlBHYjgyUDN5QXprUnVlLTFjRldVcXJxUXVWT3AzQnh6blRvVTE0bmpzUG5qc9IBvwFBVV95cUxOVEQ5Z09McXZXcVZPSkE0RXM1UHl2TXhfUk4tVjVJajFjMHJDYjhMTmdINWJXRkEzYnRpYldVZ0xZcWZnT0tVTklWMktkYnp6NHl4RTkxYzlzWjVQOXk3dV9tZVNkQTlZUG9FZnhxSkNWN3lZR3BLODE1MVhwck41WnFpQ1dkRGtBaUp1Y2Vob3BZMlBHYjgyUDN5QXprUnVlLTFjRldVcXJxUXVWT3AzQnh6blRvVTE0bmpzUG5qcw?oc=5" target="_blank">КТЖ контролирует реализацию стратегического проекта Дарбаза – Мактаарал - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 20.07.2026 02:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ контролирует реализацию стратегического проекта Дарбаза – Мактаарал - Новости Zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUnd5Si1DcExnMWhncmR1NUVJZFp6RlZwUXIzNGFNMTlNSlhLZ0dLOGFONXBCN3Zxb0hWOEVVRURrRGIwaVdKQ1loZjZyYzlHcGJFdW02bnhQRlhJZ0N4Sk5QMVNRVE5vMWwyNkNuQW1Vc3lFUHZZdmpXaWNMUmM4RGlyeHJTOFF3alpV?oc=5" target="_blank">Елжас Отыншиев стал председателем правления КТЖ - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 20.07.2026 04:10</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Елжас Отыншиев стал председателем правления КТЖ - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE02WkZFSWg3OUxRN1RVSmg5Tmh4VEZIdHc3d21mN0c5bFFyZVV5bXBwdUlwRjNId0N6dDhsWGNKRkhoS3U2ckc5RXFVNk5PUi15N2NVOUgwOUNORm1HdzdVTzgtRzRick5KR0dtRQ?oc=5" target="_blank">У «Қазақстан темір жолы» сменился глава. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 20.07.2026 04:20</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">У «Қазақстан темір жолы» сменился глава. - Exclusive.kz</div>
     </div>
     
   </div>
   
 
   
-
-  
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-05-01" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlb2tOdHdvQkRIaDR3UG1ZaDFCRURLZVFIZnBZVDU0TlkwMGtBNWl4MTJVWk5UaW1HV3FjOFJ4V2NPYzZWSWdMYjhsMXFYeFoxem5yVg?oc=5" target="_blank">КТЖ формирует собственный морской флот: подписаны контракты на строительство шести судов - АПК-Інформ</a></div>
+    <div class="article" data-date="2026-07-20" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-20/dmnn-atomnaya-nadezhnost-itogi-2025-dlya-kazatomproma/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=dmnn-atomnaya-nadezhnost-itogi-2025-dlya-kazatomproma" target="_blank">Атомная надежность: итоги-2025 для «Казатомпрома»</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 01.05.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 20.07.2026 03:30</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">КТЖ формирует собственный морской флот: подписаны контракты на строительство шести судов - АПК-Інформ</div>
+      <div class="art-summary">Атомная надежность: итоги-2025 для «Казатомпрома»</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ZaG9rVHk4ZHc4aF9rMjh1akJEaVFCaWV5bFZ5UnlvNE5hTTZOMGREZl9xSXpPeXExSktaNjBGaEtIYmZDa1pKS2F4ZVNkdFI5LU5lNklWM05aWl9aTFhr?oc=5" target="_blank">КазМунайГаз и СNOOС обсудили стратегическое партнерство в геологоразведке - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 20.07.2026 03:59</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз и СNOOС обсудили стратегическое партнерство в геологоразведке - Energyland.info</div>
     </div>
     
   </div>
@@ -208,8 +287,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-01';
-  document.getElementById('date-to').value   = '2026-07-19';
+  document.getElementById('date-from').value = '2026-04-13';
+  document.getElementById('date-to').value   = '2026-07-20';
   applyFilters();
 }
 
