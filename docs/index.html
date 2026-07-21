@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 20.07.2026 17:16</div>
+  <div class="meta">4 источников · Обновлено: 21.07.2026 04:16</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-20">
+      <input type="date" id="date-from" value="2026-07-15">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-20">
+      <input type="date" id="date-to" value="2026-07-21">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -87,9 +87,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -107,39 +109,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-20" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOeUVVd2RYem1sOHZqQm5fd1JMREN1Z0hqSEtkNTJrTlY3YW9HQUxPN0NsSnJwRV9Vc0puMDNQc1ZMYWcxRjZUNGVNUTUtUW1MMFB3ekhJTHluS2txckRjRTFRR29QMzVCZm9wQUVRR1VKWXM2WVU5NHhxVVlKTjJ2V2lYblNCX29TakdNNGVNQk1OeU1pOEs5ZDkxcHdLZm52U0NEeE5WcHhUTC1S?oc=5" target="_blank">«КазМунайГаз» готов заплатить свою часть экологического штрафа по Кашагану - Ulysmedia.kz</a></div>
+    <div class="article" data-date="2026-07-20" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFB3QnMtZkV0cU1oOGlZNDVVeDJleFA2MmpwbmdjLXpabmc5WlNQQzdRSkVCNUtDRkVVNHIxWVlER3g2aUZQZnFvZWlUV1kxYVlSdXJZTG5jbExBZ3YxbzczV0Eya3R3Q01oNnYwZkdqajNJNFlrWlRYNDFB?oc=5" target="_blank">Права инвалидов на транспорте: скандал на рейсе Air Astana - countryscanner.ru</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.07.2026 12:45</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 20.07.2026 19:25</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» готов заплатить свою часть экологического штрафа по Кашагану - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeDc0OVBaLUlaM0dWWk1GM21mM05hWDk2eDVlYTFxU0RtOHNlNGo3cWFoRk81bk1rREtXUW91eVNmQXdnTXpMd1VLWUNFRkdSbjNJc05GZnhsaWgtdGplQUpQMmlkWnlOM2tOOHZFajRPQm54WWJsMVp1Rzh2Y0E5M0hBMVJxWGdG?oc=5" target="_blank">СМИ: «КазМунайГаз» готов выплатить свою долю штрафа по Кашагану. - Exclusive.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.07.2026 13:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">СМИ: «КазМунайГаз» готов выплатить свою долю штрафа по Кашагану. - Exclusive.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQc09HUExDMkJVYVA0aElCaC1LYjdZaDJHUHg2QnZJTUZhSUJNWTVoT1hDNUxjU3VPNVYzd3NiU2JFbkwwX1ZkNWZXdVNmQU9GSGFuZ0hfY2IwR1M1TjRTU1RQLTVUOUl6UTlUSmtCVEFQTWdScTJheTFabXdjUmFndjZrRExkYk90OVhXM2hpWFUzQ1VzSTFPTzRRMnUzaUNOSmZlRHk4Nk9sV1JCYnExZNIBvAFBVV95cUxPTnhrVVFGS2tpZU02bzUtclVaYVhLaFNwcVlyZmx1Wm1xZmZwd2JnTlZjWmFYSmIxSWJ5YnBiQWZzZ003Z1l0V2RtSGJ1YVY4ZmtxS2RKVGJfTl9waFJoMWFSM1liVFJqMTlTam9VMmpycUJXT3pkQjdGUzluVVVwbTVzS2dKVDh5ZUpUSjRoMFYtcGhFZ2FSQlNBNFNNNk5DU1ZRQTVnREFZU01Talk3aWZ5V3Z5OXd1THVzTQ?oc=5" target="_blank">СМИ: КазМунайГаз намерен выплатить свою долю экологического штрафа по Кашагану - BAQ.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.07.2026 12:56</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">СМИ: КазМунайГаз намерен выплатить свою долю экологического штрафа по Кашагану - BAQ.KZ</div>
+      <div class="art-summary">Права инвалидов на транспорте: скандал на рейсе Air Astana - countryscanner.ru</div>
     </div>
     
   </div>
@@ -147,39 +127,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-07-20" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE90b2lZRnZhT2puSVhTTDlmTC1kSW00UDI3bEN6dEE3TVdMOVFqVktBXzUxMnR0QlVPZUdrOFhZRjkzamsxaHI5bzlJUURaby16c3BYNTV3MWxOczJDUWJPNm01dDdxd0Ft?oc=5" target="_blank">Эрик Сагиев назначен заместителем председателя Правления АО НК «КазМунайГаз» - ҚазМұнайГаз</a></div>
+    <div class="article" data-date="2026-07-21" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxORlhhS2xwcjRzcHg4NG1CUmE1MFVnTFJNcDJ5UGJOYkV2bDRZdTdnS2hDbWNkclBJd1ZXcm1GTUpBY01pWTZ5WFVhV3BIQmtYOURiaVFTWmRFaDA1ZmNFd2tYTC1KOTV0b050bzM1X28walRaWUFIdDlmRWttQmpGZEI3d2NQQ0l2MUE3T1dyRXhseVFwdFJKedIBngFBVV95cUxOVFA2RWpUZHJzS1g3Tnd6U0pwaVB4aFNaeEtvZERJVmNUQjZiakhUS0ZtRVd0bGNJNGc0a1NxUkQyX180azRKTUM2YWtOUktKcElMaEY0UGV1N1RDbU1DMEotNlMzanRDbk05R2c4VkZ6cDBmSktRd2plVm9WSzZLaExiZ0JBcHBPTlM5RW0xN0Jrbk1tMk1jNGo0LWN3dw?oc=5" target="_blank">Капитальная энергетика: итоги-2025 для «Самрук-Энерго» - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.07.2026 10:58</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 21.07.2026 03:32</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Эрик Сагиев назначен заместителем председателя Правления АО НК «КазМунайГаз» - ҚазМұнайГаз</div>
+      <div class="art-summary">Капитальная энергетика: итоги-2025 для «Самрук-Энерго» - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
     </div>
     
-    <div class="article" data-date="2026-07-20" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPRUo1cExQTXhrLVNlTDE5bkhROXRKVGx2WnFDN0gwVFY4Xy0xdjRRQ0FJSmRQSU8zOU9uNmxGSFA4NUZVME5CWVhoZUh3WE1JS01UQlpQbTVKclpkaHRtSEsxTEEwQkpGVEpIMjF6U3ZWUHhCR3VpR1pFWmozTDZuR01mMTZUQzNzUXU4YWwzRGVkUXlfNEtoNkxOMDfSAZsBQVVfeXFMTzltZ1ZuSGVNXzQxa1BkZVRnY3ZrY1YycTBlTjROM3VxQzB4NzBXak1sV3hoSGlKTjA4WHY1LUpNSjE5WEs4NElzX3c4VWlncVIwLXNnTkE4SmxkM2dpZktwcXgwaVRVSE13clNRdE9PLXA0TzdwTnF6bTVkS1pPZVJ2ZWJqMklsSkpZSVhLeXVBZjVGTUdGVS1UNDA?oc=5" target="_blank">Air Astana первой в Казахстане получила сертификат DHL GoGreen Plus - SKNEWS.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 20.07.2026 14:03</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana первой в Казахстане получила сертификат DHL GoGreen Plus - SKNEWS.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1zSnFPakY2YU1wNUxoOVlJc0dRWEMzMzBTZUxBRUVoMlVIX2lMMS0zOVNRVy01THRvRmdwZ2tIN0hBYldGT19fV3JFbHpVd1NBQjNKQWZ5Qkc4UG1HQUxwSkxMaWhydkhLWldoa1pzXzk?oc=5" target="_blank">Елжас Отыншиев возглавил КТЖ - paddock.pro</a></div>
+    <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxQVHJoZHVrcGloUHVGLTU4WExmUnIwZjhjUlFEVjBuWENZN2xBRmdqY2NzSXJXOTdDd1pWSmtqX1NaX2VQOE8wdGJzZ0VXT09pY3Q2Y3haOEVQZlB2UFprVVhzX3lDUEdaZjY4MDF4ZllvUm1PM05mNmNzQUIwNDJFNHk4V0RqUEdPZnVYeXNtZHJDMld6Zmc?oc=5" target="_blank">КТЖ обновило 686 км железнодорожного пути - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.07.2026 05:28</span>
+        <span class="date">📅 21.07.2026 03:37</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Елжас Отыншиев возглавил КТЖ - paddock.pro</div>
+      <div class="art-summary">КТЖ обновило 686 км железнодорожного пути - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-15" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQQVlhWWtiQzZFUldLU2p4VFVQYW1HZmlFX3VyZC1aQWlkVGxOdUpUT3RnQWdpMFB5WlVnZGtOS28ycnhOY1QwU0w2YTZPQVNENHBFT2lnbk5EenBYUFpsM0NqWHJNOVhQWHN4V1pPTWZLdTB2TG1qWGJPRGloREE3dHFEbXI5ZzdlWWRDbUdOWElESDlyUTFFLUwtUHBlYllBYVVvYlp3?oc=5" target="_blank">КТЖ подписало пакет соглашений с китайскими партнерами в Шанхае - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 15.07.2026 12:56</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ подписало пакет соглашений с китайскими партнерами в Шанхае - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPQUM4UjNwaFhiSFU4VjJsRDZlaXRCek1jMHM0cFRuRDhkZlJQZHotV2FEWGUwUW9YMXVQcDczX0xMLUJGSzRZQmhoZ3V4bWFJMlZtX2ZIamo2MXBnRkxBUnJicUJrb3pudzZzMWZsbGd2bmtYdDhhZktud1BEZ2RackJfTUNNekItTnVnSzVxSkZUN1JMbkZEdGZiMNIBpwFBVV95cUxNMjRsWk5tX0FXeUhkTE1SMW96M2o0Ni1TNnVoNHI1RzZZRVMwaW00bEhBNEprY2JhbDZmVG1qdGRpRTFhZ1RGZlRBdnJIZkJGQmgwWVFUZWRWSUJMclM1bXBWNXBPa1Vab0NCMF94UzExU2VPUlR5Nm1ReG9ONE5sdDFfclhUbmRqMVB3X0VjZDJzTEVZZFJkVGxwbldMcDJJYVo3VmsxYw?oc=5" target="_blank">Строительство железной дороги «Дарбаза – Мактаарал» ускоряет КТЖ - BAQ.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 20.07.2026 08:39</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Строительство железной дороги «Дарбаза – Мактаарал» ускоряет КТЖ - BAQ.KZ</div>
     </div>
     
   </div>
@@ -187,17 +178,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-07-20" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNTzBwZ2FrR0N6R0dFaENNaXh6Zkw2RXVuUWRqb3RHZ0hQZUxUa2syLXdxM2VUYUVfZl9YR1JUVTctQTJvUGxSeURfX2ljSGt5WVEzWUtxNUpVejZKNDU3UGczTlhQVTMxdVdmcWdDMHhiZ3p4SVQ2U2Zaa3B6RDJqR2RkcUk0amNZVWhud3hBalI?oc=5" target="_blank">Air Astana получила международное экологическое признание - DKNews.kz</a></div>
+    <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-21/zhnb-kazahstan-postroil-zavod-mirovogo-urovnya-no-ego-produkcziyu-pokupayut-tolko-za-rubezhom/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kazahstan-postroil-zavod-mirovogo-urovnya-no-ego-produkcziyu-pokupayut-tolko-za-rubezhom" target="_blank">Казахстан построил завод мирового уровня, но его продукцию покупают только за рубежом</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 20.07.2026 16:50</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 21.07.2026 04:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Air Astana получила международное экологическое признание - DKNews.kz</div>
+      <div class="art-summary">Казахстан построил завод мирового уровня, но его продукцию покупают только за рубежом</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-21" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-21/dmnn-kapitalnaya-energetika-itogi-2025-dlya-samruk-energo/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=dmnn-kapitalnaya-energetika-itogi-2025-dlya-samruk-energo" target="_blank">Капитальная энергетика: итоги-2025 для «Самрук-Энерго»</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 21.07.2026 03:30</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Капитальная энергетика: итоги-2025 для «Самрук-Энерго»</div>
     </div>
     
   </div>
@@ -259,8 +261,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-20';
-  document.getElementById('date-to').value   = '2026-07-20';
+  document.getElementById('date-from').value = '2026-07-15';
+  document.getElementById('date-to').value   = '2026-07-21';
   applyFilters();
 }
 
