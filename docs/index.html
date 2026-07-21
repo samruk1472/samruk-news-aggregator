@@ -60,12 +60,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 21.07.2026 09:24</div>
+  <div class="meta">3 источников · Обновлено: 21.07.2026 11:46</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-01">
+      <input type="date" id="date-from" value="2026-07-18">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-21">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -104,58 +106,42 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNTk9kbjNaU2g1RDRyRlFyYURuam5fay1uU21tcmh6LUc2MkJqa2RlcHBlRlg5Tm1QUnd3WlRBZ3dpYTg3NE9BRS1kazJMZUd5OG5HcjNMTnduVVd2TC1EWlppcEFsSXhLMmxtTWE0dGJ0emkzd0x3d2lxWU8wZ000SlY2NG05dGJpUDJpYlRIcmNVcXozMndkVlpSUEY2OVQ1QVpncXlSMDFjenlISlJUNjJvVHc2d0E?oc=5" target="_blank">Зампред КТЖ представил в Австрии проекты по развитию транспортных коридоров - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 21.07.2026 03:52</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Зампред КТЖ представил в Австрии проекты по развитию транспортных коридоров - Қазақстан теміржолшысы</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxNZjA2MnhOTFhqSkU5OGY0eTVTMno5TWJQSjhOOVhRaWlqdXFWejN5NHVzRlk4WHBuYVpTcW5yOU5wOUd0LWZqcE5ScXJWVDBTeTkwVEFJbDEzODhWYWxYNjFGbnNlVmh0ejFtWndZVXZkc1VZZkgxYmRoQ0FoZHNyeEZ4R2oySFdxRjItTk42ck05WEnSAZgBQVVfeXFMUC1sdG1uMmllOXNSVlA2anNtQ3N6OWFBaU9ZUFZPWXpvb0NNdWZ0TGxOOW5ZYmRFRkVISkNNNk0zeHA2bWR5ajE3bGlzc1RlT2QtdW5xRU4wMDFYWVF5OEY3VVh0SjVMM19KTWx5U3Ywb3NEY2IxTFNlU1pQV1ZOLTVzYTNUTXNtQ1puWVA1X2ZpQW91eVhfNk4?oc=5" target="_blank">Назначен председатель правления АО &#34;НК &#34;Қазақстан темір жолы&#34; - Liter.kz</a></div>
+    <div class="article" data-date="2026-07-18" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPSFlSX3JyOGtNRW1nb2VnZmhaWTlaSWtWMi1SdUZla1NJNDZXME9nc3B3b2VFeDRNYXNHcHNYWHFlZWFMREs3cnVRT09GWGJBc0FVZG5iY2Rmb2o1Q0NEUVVmZjZHSjh2dmZzRTFZaFhsRmQyZy1HczZGWGl3c3MyaWl4NDlPRFFITE5PbDFQN1N6WHF0a21KTWhaY29FRjFHQzEzaA?oc=5" target="_blank">Миллиардное хищение в Air Astana: какое решение вынесла апелляция - Mail.KZ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 20.07.2026 05:05</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 18.07.2026 05:11</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Назначен председатель правления АО &#34;НК &#34;Қазақстан темір жолы&#34; - Liter.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-01" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE5NQkN4c3lVUDlkT2tfMGxRbnU4RTdkQjBaaGxsdENGbFJMVE4zQjFadlZFUW84UUQtY2xxclBJR3Z6c0dhZE4ySWhBYk0zSVJaMnVWenRTcGFxN1RtTmc?oc=5" target="_blank">В &#34;Самрук-Казына&#34; сократят 729 сотрудников - Bestnews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 01.04.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">В &#34;Самрук-Казына&#34; сократят 729 сотрудников - Bestnews.kz</div>
+      <div class="art-summary">Миллиардное хищение в Air Astana: какое решение вынесла апелляция - Mail.KZ</div>
     </div>
     
     <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWG1NX2hnbmZqZVVVamVOMjZUREdCT2hZYUFNejBoRDM2amVfZDduNlM5Y0E0OHdUcHgxT290ejl1bVpfa1NUTng3ZWp1dFdEMkJOQk5FdktrQy1KODhyWVZyX0RDVkhRX0FhMl9oZFNTenNXbjZ6TF9QN2tLaC1Vc1dnUHBXYU5kb3dkTmVXYUE3bFl0b09GUzNuVTFlUEc4cmVPcFdEOGZHbUZjSmxsM0lTR3RPaWRFSWpTaGJCZnJOdw?oc=5" target="_blank">ТОО «КТЖ – Грузовые перевозки» продолжает обновление локомотивного парка - Қазақстан теміржолшысы</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQNnRMTXc3eHNJRW9GYmswUlJtM2RVT2g2UTZOdGNTWmRobllaNGJZbDRwbExOc1c4M3JXRWNiaVVtdTczaWFPcDFaT0dXbktDVVZPYnZRbDBpR0x3cWdPQjdpV253aTJMSkNRM2x3V2VmMEhMNjFoc2MxYTVxcG1vYTNKaFZXZ1ZzQ3hGQmN5TmF5YTZrRjZ4OUZpajlqU08wLTBJS1pRT1VXT1ZjbFHSAbMBQVVfeXFMTlNnR2JPSmg4cDB0MENFWkJjVGZ4eHg5NlhDZTZoRzhSSFVsMXhjampPdkRwUV9VcU11bFFQRmVyNG9oOUxjWnFxQWtDN2hveFd0eXJyZ25scXdhYzlHcnlRd3BrcUpGN1QwejgyeTdNSlhhaUpfQTJDLV9iT2NqX2JPUEhTQ0RVUkQ5eldEOEJNSmItZ0UyTDh6cnJnRlRXYW1VdXZpLVNtUkJGRUxKWnVkaXc?oc=5" target="_blank">В КТЖ ответили, почему казахстанцы до сих пор не ездят в новых вагонах Stadler - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 21.07.2026 06:28</span>
+        <span class="date">📅 21.07.2026 09:07</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">ТОО «КТЖ – Грузовые перевозки» продолжает обновление локомотивного парка - Қазақстан теміржолшысы</div>
+      <div class="art-summary">В КТЖ ответили, почему казахстанцы до сих пор не ездят в новых вагонах Stadler - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQNktNWm1talkzNzgzMGk3a1NrUExUZTJEaEVPajFKbTRaMDFxSUd1NlRIVWZ0SDFkbXBVSDg5SHBnenotZW9sUmVOSXZhTU1BWS1VTFBPZXZPM2ZYczI1Ml9mLTJGMms4dG56TzRBQ1k0WW1HN2hDUXNmV0JLUTd1YzBnczZLdk9oaUdlQ0gyRnlrUQ?oc=5" target="_blank">КТЖ просит пересмотреть тарифы: решение обсудят публично - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 21.07.2026 11:32</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ просит пересмотреть тарифы: решение обсудят публично - Inbusiness.kz</div>
     </div>
     
   </div>
@@ -165,15 +151,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-21/zhnb-v-ktzh-otvetili-pochemu-vagony-stadler-do-sih-por-ne-proshli-priemku/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-v-ktzh-otvetili-pochemu-vagony-stadler-do-sih-por-ne-proshli-priemku" target="_blank">В КТЖ ответили, почему казахстанцы до сих пор не ездят в новых вагонах Stadler</a></div>
+    <div class="article" data-date="2026-07-21" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://vlast.kz/novosti/70183-tso-vysel-na-proektnuu-mosnost-posle-zaversenia-krupnejsego-etapa-rassirenia-tengiza.html" target="_blank">ТШО вышел на проектную мощность после завершения крупнейшего этапа расширения Тенгиза</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 21.07.2026 09:05</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 21.07.2026 15:28</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">В КТЖ ответили, почему казахстанцы до сих пор не ездят в новых вагонах Stadler</div>
+      <div class="art-summary">ТШО вышел на проектную мощность после завершения крупнейшего этапа расширения Тенгиза</div>
     </div>
     
   </div>
@@ -235,7 +221,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-01';
+  document.getElementById('date-from').value = '2026-07-18';
   document.getElementById('date-to').value   = '2026-07-21';
   applyFilters();
 }
