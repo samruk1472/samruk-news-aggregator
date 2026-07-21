@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 21.07.2026 15:05</div>
+  <div class="meta">2 источников · Обновлено: 21.07.2026 17:05</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-21">
+      <input type="date" id="date-from" value="2026-06-26">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-21">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,11 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -106,90 +104,36 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
-    
-    <div class="article" data-date="2026-07-21" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70188-v-sude-po-delu-bazkenovoj-rassmatrivaut-epizod-o-rasprostranenii-loznoj-informacii.html" target="_blank">В суде по делу Бажкеновой рассматривают эпизод о распространении ложной информации</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 21.07.2026 19:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">В суде по делу Бажкеновой рассматривают эпизод о распространении ложной информации</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-21" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTmIyU0hyUTNuTTZSakRwMjBQQlhqdVBrT2VEUDlnWEtjSmpxRjU5RjdvUnFfNmMwMGk3VzY4ejhQVG01Z2NZUVhlWjM2TF9EV192akh6M09hWVJMQlRicmxsVUhfdGtVNkc2T3IxcHpoVkV0OE9YYVlpam11QUZNeTRFTC1UNWdaVkt6TC1ydFpha1ZOc1VpYjlnY2ZiZUVvOUowMTBHcVlQUjJVelYxRl9ON0hNcjJudUN3NDVHcnpDVm5JcVllNVdSTGtyZGF6dE0yVw?oc=5" target="_blank">В консорциуме раскол? КазМунайГаз намерен выплатить свою долю спорного экологического штрафа - Neftegaz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 21.07.2026 14:34</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">В консорциуме раскол? КазМунайГаз намерен выплатить свою долю спорного экологического штрафа - Neftegaz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-21" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPcGJTcGZGOWNMUHlxSmIxOXFOYnQ1N1JCNFJxWUw0Skc4WG9QZGIxbnF3SkhxNEtQVlVfVFMtd1VhV3V5Snh5Q1UwMTF4RVZuMUtzak1TbjhINW8tWTZ3bl9GUjNxbmRwNTUtRldHN0FJenltTWw0WHRCT1h3SVExT29mY2F5WVJ6X01RejdzbV8zVm95TmcyUTVCZUlwTm8zcGtvNThmeDUxb1hRLU9EZ1l3?oc=5" target="_blank">&#34;КазМунайГаз&#34; намерен оплатить свою долю экологического штрафа по Кашагану в $5 млрд - Fineko/abc.az</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 21.07.2026 11:44</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; намерен оплатить свою долю экологического штрафа по Кашагану в $5 млрд - Fineko/abc.az</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-07-21" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-21/zhnb-tengizshevroil-nadeetsya-dobyt-do-40-mln-tonn-nefti-nesmotrya-na-prosadku-v-nachale-goda/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-tengizshevroil-nadeetsya-dobyt-do-40-mln-tonn-nefti-nesmotrya-na-prosadku-v-nachale-goda" target="_blank">«Тенгизшевройл» надеется добыть до 40 млн тонн нефти, несмотря на темпы ниже плана</a></div>
+    <div class="article" data-date="2026-07-21" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNQVdZQ2RFMVFmbk9TSVE3NDd1cjVmYmtqalRxNmF2WDNtbFFlaDdQYW1ZdmtQWDlmZXpXc1kxcGlGZGRETmllRmZDdFBSczRyTVpTTy1jX0ZqX0Q2bGtfSHI0cnpzU0N3Z2hMb2YycUFFamZvUFBQQ2t5MUQxSmxWVWxPVEYxT0hjTm1TTUlaNURsd9IBlgFBVV95cUxPTFZkZVBpeHlQYXc5b3ZjeVZmandaNFNQVmdDMU5OSGdOZ0VTQkdHTzBuNWdlaUp5ZjMxQUZkeE9XUHpBaUxKSVhyQ1Ztcm1FYVAwV3ctLTEyYWtKZHBIYlZVRllKY18zcW9UbkJBdU1ZandGQWdBRUZjOVhVb3E0dDhVR3ZHVFdfSGlRdkhDWWZNOThFamc?oc=5" target="_blank">Air Astana, FlyArystan и Ryanair: сравнение авиакомпаний - Finratings</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 21.07.2026 12:49</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 21.07.2026 10:58</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">«Тенгизшевройл» надеется добыть до 40 млн тонн нефти, несмотря на темпы ниже плана</div>
+      <div class="art-summary">Air Astana, FlyArystan и Ryanair: сравнение авиакомпаний - Finratings</div>
     </div>
     
-    <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQWkRhNE80ajYxQ1FHd2dEZUpXVjFfYnF1U3ZwQ3RKLXRqRkVPZm5ZejhhVndtSjF3eU5yYmxJVU8tSE1XMmxxc0I2M091cWdNSU5kcVdLSHNlWEZDZ3BfdkFZZnZhRW1qSktTZlhCdVg3ZldoSktOLV8zM3BmcGtzYkEtRDcwR3VRS1UtNS1WaGRxX1MyU2hr?oc=5" target="_blank">Железнодорожник поднял флаг КТЖ на вершине Эльбруса - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-06-26" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxNdnE1YUlvOVZGSmY4Wll3N2xhcWhuV3Bzck03XzlBcERELU13V0ZNbTd1T0Q3cVRmNExwOTBtTzFfcTM1UDYzYjhEOXU3NFotcUE3NDgxaXlpcmh1clVrMW9UcnA3SWpLS2xNQ0R5M1RlMl81c2szU2VpN3ZSTUk2UUdnek1lTXVERFV1TXFUVlNRZzBhaEttbm50V045RUVwSFVlOGY3aEk5TzdpZGI0bU9kajdkendzUEZ4MnlaNkdUcTdkNkpjbWlpc2twMmRmWlpuQjZGRU9QdHY5cDU2LUhRVWRzWXBlSDZIY3M4ZVg2RWM?oc=5" target="_blank">&#34;Казахтелеком&#34; стал главным техническим партнером международного рейтингового турнира по таеквондо Kazakhstan Open - NUR.KZ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 21.07.2026 08:33</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 26.06.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Железнодорожник поднял флаг КТЖ на вершине Эльбруса - Қазақстан теміржолшысы</div>
+      <div class="art-summary">&#34;Казахтелеком&#34; стал главным техническим партнером международного рейтингового турнира по таеквондо Kazakhstan Open - NUR.KZ</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-21" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/07/shanghai-and-technology-turn-in-kazakhstan-china-relations/" target="_blank">Shanghai and Technology Turn in Kazakhstan-China Relations</a></div>
-      <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 21.07.2026 12:48</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Shanghai and Technology Turn in Kazakhstan-China Relations</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -248,7 +192,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-21';
+  document.getElementById('date-from').value = '2026-06-26';
   document.getElementById('date-to').value   = '2026-07-21';
   applyFilters();
 }
