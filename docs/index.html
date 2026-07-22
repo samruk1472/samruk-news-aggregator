@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 22.07.2026 09:23</div>
+  <div class="meta">1 источников · Обновлено: 22.07.2026 11:46</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-20">
+      <input type="date" id="date-from" value="2026-07-22">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-22">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -104,41 +102,25 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-22" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70195-kazahstan-priostanovil-postavki-nefti-cerez-ktk-iz-za-atak-ft.html" target="_blank">Казахстан приостановил поставки нефти через КТК из-за атак – FT</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 22.07.2026 11:34</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Казахстан приостановил поставки нефти через КТК из-за атак – FT</div>
-    </div>
-    
-  </div>
+
   
 
   
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-20" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQjBrZzVWVUJ3RTNBM2c0MThiSDFRUDMtdE5UYUpuMkVhUFI3T2ZrbG1udGdzLUR3aE5xa2pDTVlfRzBtaDRaZjlKa25LRklUVE5ZNl9Ubm4xMHFvNGVFS1pwTUYwT1NDamxQanpmM01xU1o2NUxyWXNMUE9OYVFzREdOOXpNV1FLN1JvSDc2TE42eUM4U2I5SHdVUFN1YVVKMUJveUszNjFRdmYzZXZxbk5JVE5QLVpUeUVUYTY0ck5sTzA1OEJqVw?oc=5" target="_blank">«Казахтелеком» выступит технологическим партнером «Игр Будущего 2026» powered by Samruk-Kazyna - Ulysmedia.kz</a></div>
+    <div class="article" data-date="2026-07-22" data-co="Самрук-Энерго" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-22/zhnb-kompaniya-sergeya-kana-perenesla-zapusk-zavoda-v-ekibastuze-na-kotoryi-vzyala-dengi-u-brk-i-chevron/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kompaniya-sergeya-kana-perenesla-zapusk-zavoda-v-ekibastuze-na-kotoryi-vzyala-dengi-u-brk-i-chevron" target="_blank">Компания Сергея Кана отложила запуск завода, на который взяла деньги у БРК и Chevron</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 20.07.2026 10:36</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 22.07.2026 11:42</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">«Казахтелеком» выступит технологическим партнером «Игр Будущего 2026» powered by Samruk-Kazyna - Ulysmedia.kz</div>
+      <div class="art-summary">Компания Сергея Кана отложила запуск завода, на который взяла деньги у БРК и Chevron</div>
     </div>
     
   </div>
-  
-
   
 </div>
 
@@ -197,7 +179,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-20';
+  document.getElementById('date-from').value = '2026-07-22';
   document.getElementById('date-to').value   = '2026-07-22';
   applyFilters();
 }
