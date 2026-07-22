@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 22.07.2026 15:06</div>
+  <div class="meta">2 источников · Обновлено: 22.07.2026 17:05</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-22">
+      <input type="date" id="date-from" value="2026-04-01">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-22">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
     </div>
   </div>
@@ -107,20 +109,36 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-22" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-22/fvfv-nekotorym-kriptomayneram-pridetsya-otdavat-10-ot-dobychi-v-nacionalnyy-kriptorezerv/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-nekotorym-kriptomayneram-pridetsya-otdavat-10-ot-dobychi-v-nacionalnyy-kriptorezerv" target="_blank">Некоторым криптомайнерам придется отдавать 10% добычи в Национальный крипторезерв</a></div>
+    <div class="article" data-date="2026-04-01" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5mSTQ2V2dra29qWjNYS3dzVzU0a3B6cGFEVkE2T050U2UybFZtU244WkhVM2pjdXZTdVFPNF96LVpIbjRFWXFLbUFrZTlENHJtT0JUTXRNVFlFU3pGRDZPSUZfeHRRdFFLeEx0UEFPQ1BkLW92WXFmNlNXd20?oc=5" target="_blank">Казахстанская авиакомпания Air Astana запустила рейсы по маршруту Алматы-Шанхай - Синьхуа</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 22.07.2026 12:38</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 01.04.2026 07:00</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Некоторым криптомайнерам придется отдавать 10% добычи в Национальный крипторезерв</div>
+      <div class="art-summary">Казахстанская авиакомпания Air Astana запустила рейсы по маршруту Алматы-Шанхай - Синьхуа</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-22" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxOcGtqOEptVTEwWk1XZ2NpVHF0US1uT015UF8xblRib1ZFemRGQUNCV3hpMDBaTHcwbThsRVZLOGNicjF6Z2VIZzV6Y01rVEFyeXlUekRPbVlSelJLSUhnQ0M3b1doUzF5amRjY19LejRQWm44WUZKOGxCWENCellSZUNqY09VaW5VTVQ0eVM3dTZvTlc2LUpyb1EwUG93M25aYlkzUF9fWXFZTUJfeXV2cFRadUVNd2Z2LXR1SWd6U3pSREpINVpwRXBiYXgyeTNEQ1ZyOXBOdw?oc=5" target="_blank">КазМунайГаз и Eni получили первую промышленную электроэнергию на газовой электростанции в Жанаозене - Neftegaz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 22.07.2026 12:33</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз и Eni получили первую промышленную электроэнергию на газовой электростанции в Жанаозене - Neftegaz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,7 +197,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-22';
+  document.getElementById('date-from').value = '2026-04-01';
   document.getElementById('date-to').value   = '2026-07-22';
   applyFilters();
 }
