@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 21.07.2026 17:05</div>
+  <div class="meta">4 источников · Обновлено: 22.07.2026 04:17</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-26">
+      <input type="date" id="date-from" value="2026-07-01">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-21">
+      <input type="date" id="date-to" value="2026-07-22">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -104,36 +106,79 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-21" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNQVdZQ2RFMVFmbk9TSVE3NDd1cjVmYmtqalRxNmF2WDNtbFFlaDdQYW1ZdmtQWDlmZXpXc1kxcGlGZGRETmllRmZDdFBSczRyTVpTTy1jX0ZqX0Q2bGtfSHI0cnpzU0N3Z2hMb2YycUFFamZvUFBQQ2t5MUQxSmxWVWxPVEYxT0hjTm1TTUlaNURsd9IBlgFBVV95cUxPTFZkZVBpeHlQYXc5b3ZjeVZmandaNFNQVmdDMU5OSGdOZ0VTQkdHTzBuNWdlaUp5ZjMxQUZkeE9XUHpBaUxKSVhyQ1Ztcm1FYVAwV3ctLTEyYWtKZHBIYlZVRllKY18zcW9UbkJBdU1ZandGQWdBRUZjOVhVb3E0dDhVR3ZHVFdfSGlRdkhDWWZNOThFamc?oc=5" target="_blank">Air Astana, FlyArystan и Ryanair: сравнение авиакомпаний - Finratings</a></div>
+    <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNNHQtbHBIc2Z1WV9aelRFaUhrb2xwUmxzUDlhb1A2UFFMLXFXeGk0blpiMTdEeXVpS1BrUnlPRE9mRkJaVjBTbFZjM3phaGFmNzJsY2NmTUtaU2RVZUpMVU4zbnBQQm10UjJzU1A5MFpvb0VjNmpYY0M2ZFNmMkx4UTRrajNOR2NTSHFUelZhN2ZwazRSdEN4T0wtNTZsUThJc1E?oc=5" target="_blank">Пожарный поезд КТЖ принял участие в тушении пожара в Алматы - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 21.07.2026 10:58</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 21.07.2026 07:03</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Air Astana, FlyArystan и Ryanair: сравнение авиакомпаний - Finratings</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-26" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxNdnE1YUlvOVZGSmY4Wll3N2xhcWhuV3Bzck03XzlBcERELU13V0ZNbTd1T0Q3cVRmNExwOTBtTzFfcTM1UDYzYjhEOXU3NFotcUE3NDgxaXlpcmh1clVrMW9UcnA3SWpLS2xNQ0R5M1RlMl81c2szU2VpN3ZSTUk2UUdnek1lTXVERFV1TXFUVlNRZzBhaEttbm50V045RUVwSFVlOGY3aEk5TzdpZGI0bU9kajdkendzUEZ4MnlaNkdUcTdkNkpjbWlpc2twMmRmWlpuQjZGRU9QdHY5cDU2LUhRVWRzWXBlSDZIY3M4ZVg2RWM?oc=5" target="_blank">&#34;Казахтелеком&#34; стал главным техническим партнером международного рейтингового турнира по таеквондо Kazakhstan Open - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 26.06.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; стал главным техническим партнером международного рейтингового турнира по таеквондо Kazakhstan Open - NUR.KZ</div>
+      <div class="art-summary">Пожарный поезд КТЖ принял участие в тушении пожара в Алматы - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-07-22" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRnppa2Zsc3ZUa3o2TTUzdVFvcXBtcWUtdlZLLXpmMjlfckg5Qm5NeF8yRmN2bTduYm5tT1llalpraHd4V0ItR1JoclFMamk4TklWMVhqak5ybTBiUmlUN0lBSWpnd1Q3WmdrRnl2VjB0QzlaVUttcWFZS3FiUnBRV3RTM1BWbHpPcDcxbnJjcnM2Y05HNkY0bWFvT3phLWp2S2RtQmVDeHg?oc=5" target="_blank">КТЖ раскрыла &#34;серого кардинала&#34; железнодорожной отрасли Казахстана - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 22.07.2026 03:01</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ раскрыла &#34;серого кардинала&#34; железнодорожной отрасли Казахстана - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-01" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxPT1I4R2l2MnNvQjZYbllaMGItakdQVzdsNlJKRU1RQUFUb0VQaXBzM1JfejR3YVc1UUd5cF9rYm92MXYzUzg2ZnNlNDRmZm0zOEt3b2NMbTNZcnJaZHpJTHVUODVSTXJocHlhNERYQjFFMS11b21mc0dnWlhpVnlPSmJsLXpkaFJCbUhTTTg0VS15czQxUU9EOFpUS1d6R2kzUkFrR2ZXNmRzMkpfSzFtcXM4OTJFem1ZaHZ5RzdOa3hzMGVPN09kMXZKRDNkYll5bEhoRE9mc1FzaEtZU3BFTmV6QQ?oc=5" target="_blank">Руководители АО &#34;Казахтелеком&#34; провели выездную гембу на объектах телекоммуникационной инфраструктуры - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 01.07.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Руководители АО &#34;Казахтелеком&#34; провели выездную гембу на объектах телекоммуникационной инфраструктуры - NUR.KZ</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-07-21" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/internet-down-in-homes-on-astanas-left-bank-what-happened-272387/" target="_blank">Internet down in homes on Astana&#39;s left bank - what happened</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Tengrinews (EN)</span>
+        <span class="date">📅 21.07.2026 22:32</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Internet down in homes on Astana&#39;s left bank - what happened</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-22" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-22/dmnn-minus-mobilnik-plyus-kredity-itogi-2025-dlya-kazakhtelekoma/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=dmnn-minus-mobilnik-plyus-kredity-itogi-2025-dlya-kazakhtelekoma" target="_blank">Минус мобильник, плюс кредиты: итоги-2025 для «Казахтелекома»</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 22.07.2026 03:53</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Минус мобильник, плюс кредиты: итоги-2025 для «Казахтелекома»</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -192,8 +237,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-26';
-  document.getElementById('date-to').value   = '2026-07-21';
+  document.getElementById('date-from').value = '2026-07-01';
+  document.getElementById('date-to').value   = '2026-07-22';
   applyFilters();
 }
 
