@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 23.07.2026 11:49</div>
+  <div class="meta">4 источников · Обновлено: 23.07.2026 15:10</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-07">
+      <input type="date" id="date-from" value="2026-06-15">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-23">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -91,6 +91,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
     </div>
   </div>
   <div class="ctrl-group">
@@ -106,58 +108,42 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-07-23" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70210-v-sude-po-delu-bazkenovoj-doprosili-predstavitela-ktz.html" target="_blank">В суде по делу Бажкеновой допросили представителя КТЖ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 23.07.2026 14:53</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">В суде по делу Бажкеновой допросили представителя КТЖ</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-07" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPbWlfcm4zdDVfaE11MUtVbTJ1cUNQSnBxMUZ4RUVEd19LTS1nTng4NnBBdFhiTmxUNkxIZkFCSi1NU3Bwc3k2c1FfdmI3Z21sS1E2c3hMMU1pbzBhaTk4LWFtTVdCbUZtS1BwMHNOQmdmQWg2bVpnVGowUGZPU0hueTFsVVlqdW55T2hlVFcxRXdoai00U2s4YUdZMk05N3Fva0xuXzQ1MHE2VUw5VzBtMF83Y3pET3dGc282RHRlYjRqX0U4YUtaSTQtZ0tsOTg4RjFUcGxmMW9aVEE?oc=5" target="_blank">765 киберспортсменов из пяти стран: АО &#34;Казахтелеком&#34; поддержало крупнейший турнир Центральной Азии - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 07.07.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">765 киберспортсменов из пяти стран: АО &#34;Казахтелеком&#34; поддержало крупнейший турнир Центральной Азии - NUR.KZ</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-07-23" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70213-dobyca-nefti-v-kazahstane-rezko-snizilas-posle-zakrytia-terminala-ktk-reuters.html" target="_blank">Добыча нефти в Казахстане резко снизилась после закрытия терминала КТК – Reuters</a></div>
+    <div class="article" data-date="2026-06-23" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE14czhtTlRBZlJUaVJCaWVzTktNNG42X01JRGE1RG5kdndTOTNTWVcxeTRoaU0wUjVUV2NKeWcxN2ZfNEgySHN4aU9ITS1uUTh3aTVPXzdBNA?oc=5" target="_blank">«КазМунайГаз» применяет модульный метод строительства при возведении ГПЗ в Жанаозене - Energyland.info</a></div>
       <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 23.07.2026 16:26</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 23.06.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Добыча нефти в Казахстане резко снизилась после закрытия терминала КТК – Reuters</div>
+      <div class="art-summary">«КазМунайГаз» применяет модульный метод строительства при возведении ГПЗ в Жанаозене - Energyland.info</div>
     </div>
     
     <div class="article" data-date="2026-07-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOdzVxNEtCR1gxSEtibjZUVGdTNHctZEs4OHA2VGJzWHVvZzBMWHB3RlpaaEFuY2tSU3Ztc29CZGlxVUQtLVFMRVZnYURsQVhGajFybE16aTRzR19EY1RiR01CTWxFNTdCTlItTjZScjNyeUVTMjBxak43anhoVDV2bFVkUUhfeEZHX3RMR3Q2SldXU013T2ROMmUyeUE3LWdqT1VmTGItdXNreEdDLXZjZXJ6VG1sX2VDSF9VVjlod9IBxwFBVV95cUxPbU9ScV9QbWY5RVhlbWU1a1cwLTVmenY4ZjVjWHBmN3YycllnemVEd2pnaXByRUVGZWc0My1SZ3hBU0lEcGhSRW1DUUhHbnFtUmpfM2Z0aEQ5REZ4WndjWld3a3JudEZKSmJSajI4eVNkZ1RZZGlPeFg1MDJnUU9MckdvZTlMTlhEYU5vNVVuOTNkS1ZOc0hhXzlvRVgtZ1JKbGlsLXpSb2FlOXhtMEVFbjMxZzU1OThFbWNHd1BYS1BVOHpDS2NJ?oc=5" target="_blank">Почти 8 млн за пресс-тур: в КТЖ намерены взыскать расходы после публикации о «дороге-декорации» - Central Media 24/7</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPVXlEcndSTHBEdDI0eU5NWFk0Zm9hc0d4THY3WnAxSHZrUGRsM202V2lQcnF2QXB0aFBxYnJVUDRQN1NjSm5jdW1HR18tRnZ2ZUlWYXppNksyY2lYb2hXdnh1ZHJiWWs1cWpuaWhlSVZsdjRMUGVVT2hPZjkwYU9BbkJPODJPZGNsWHNneGx0Y2xpbDBzUzhsdHh1a3dDUk8tOHVnZk5sT05MRVNVblgxcXpzTGNCeWc?oc=5" target="_blank">После статьи о «дороге-декорации» КТЖ требует почти 8 млн тенге с Гульнар Бажкеновой - Ratel.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.07.2026 11:15</span>
+        <span class="date">📅 23.07.2026 12:03</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Почти 8 млн за пресс-тур: в КТЖ намерены взыскать расходы после публикации о «дороге-декорации» - Central Media 24/7</div>
+      <div class="art-summary">После статьи о «дороге-декорации» КТЖ требует почти 8 млн тенге с Гульнар Бажкеновой - Ratel.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-15" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVTJPcGE1VXVGcGV2cHNZRWtfeExwTGxpSjNKbWowYVlPTFI4MGJkSHBGOGZtZ0tPWFZCTlN4cmhURjFMalNiODBrZ18yelhWaUVNR1B6RzltRFR6ZHpfRXBodzhacHBobldvcFVLTHIxQUtnY2xvSlBlQXBLU0k3ZDdiVF9pZm1PRDV0QkhCR0xIdUo5SVJPSVJmUVkxMXFELVNkQU9JVk4?oc=5" target="_blank">“Казахтелеком“ уволит тысячи сотрудников? Что говорят в компании, Минтруда и сам Мусин: 15 июня 19:13 - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 15.06.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">“Казахтелеком“ уволит тысячи сотрудников? Что говорят в компании, Минтруда и сам Мусин: 15 июня 19:13 - TengriNews</div>
     </div>
     
   </div>
@@ -167,15 +153,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-23" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/07/kazakhstan-allocates-over-22-million-for-kazsat-3r-communications-satellite/" target="_blank">Kazakhstan Allocates Over $22 Million for KazSat-3R Communications Satellite</a></div>
+    <div class="article" data-date="2026-07-23" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-23/fvfv-stroyaschaya-zavod-dochka-samruk-azyna-zaymet-80-mln-v-yuanyah/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-stroyaschaya-zavod-dochka-samruk-azyna-zaymet-80-mln-v-yuanyah" target="_blank">Строящая завод «дочка» «Самрук-Қазыны» займет $80 млн в юанях после ухода россиян</a></div>
       <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 23.07.2026 10:32</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 23.07.2026 12:56</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Kazakhstan Allocates Over $22 Million for KazSat-3R Communications Satellite</div>
+      <div class="art-summary">Строящая завод «дочка» «Самрук-Қазыны» займет $80 млн в юанях после ухода россиян</div>
     </div>
     
   </div>
@@ -237,7 +223,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-07';
+  document.getElementById('date-from').value = '2026-06-15';
   document.getElementById('date-to').value   = '2026-07-23';
   applyFilters();
 }
