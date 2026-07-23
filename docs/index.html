@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 23.07.2026 15:10</div>
+  <div class="meta">2 источников · Обновлено: 23.07.2026 17:07</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-15">
+      <input type="date" id="date-from" value="2026-06-23">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-23">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,13 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -111,60 +107,33 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-06-23" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE14czhtTlRBZlJUaVJCaWVzTktNNG42X01JRGE1RG5kdndTOTNTWVcxeTRoaU0wUjVUV2NKeWcxN2ZfNEgySHN4aU9ITS1uUTh3aTVPXzdBNA?oc=5" target="_blank">«КазМунайГаз» применяет модульный метод строительства при возведении ГПЗ в Жанаозене - Energyland.info</a></div>
+    <div class="article" data-date="2026-06-23" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNbUZ6UUh2QUxFamtWMWZPMmVEdEhkSzRkbzhNRDdoRWlZOGV4NExjbFZVS1lIbXl4a2FkcjBnSkhRbTRHcW1rWUZZN0RoZjlvQW42VnA3VHVsX2VPSkNNbHltN1N5ejhlem8xZi1CX2JNeV82alVLRG1wTnFLSWFka1YtZVdNSzk2QlAwWnJQLU1iZ0xXRlhkR1VpWmlIR0R4UmgtOW5wUzBmckxhczNPUWRTa0VrWVcyTm90dzNIUTZrTHMyMXhtV0l30gHPAUFVX3lxTE5iMkdzcU1pV1FxeXlxdkN2UmFXN3ZMLUhEeXRuLVVsM09NNFdsbk9ZTDREZmdJYkItTFVKTGNJWjQ4a0FlWl9aUVlOR0lGVkZYd3ptNjRBYWZ1d0lCUmJVdGRRSVRFdWlXbFluM2JvN2o3TmdjYndGd1lhMWRrV3ZfTGw0THIxUjV5aWhSRmxkX3M0Uy1jbThIbWV0UE9RenlqLVhKdW5HYS05bXZEV1EwQ01TZHItS0JXNUVycWdmOUJNb3JMRzV2RVpncFBaNA?oc=5" target="_blank">Air Astana заказала 50 Airbus на $9,45 млрд. Это почти в 695 раз больше ее прибыли - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="src">📰 Google News — Air Astana</span>
         <span class="date">📅 23.06.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» применяет модульный метод строительства при возведении ГПЗ в Жанаозене - Energyland.info</div>
+      <div class="art-summary">Air Astana заказала 50 Airbus на $9,45 млрд. Это почти в 695 раз больше ее прибыли - Kursiv Media</div>
     </div>
     
     <div class="article" data-date="2026-07-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPVXlEcndSTHBEdDI0eU5NWFk0Zm9hc0d4THY3WnAxSHZrUGRsM202V2lQcnF2QXB0aFBxYnJVUDRQN1NjSm5jdW1HR18tRnZ2ZUlWYXppNksyY2lYb2hXdnh1ZHJiWWs1cWpuaWhlSVZsdjRMUGVVT2hPZjkwYU9BbkJPODJPZGNsWHNneGx0Y2xpbDBzUzhsdHh1a3dDUk8tOHVnZk5sT05MRVNVblgxcXpzTGNCeWc?oc=5" target="_blank">После статьи о «дороге-декорации» КТЖ требует почти 8 млн тенге с Гульнар Бажкеновой - Ratel.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxNcE1XbXZYMVVHSlJ0QXpDNGpfMS1ndVJyNDVFdWY1M3JlbGlORU02TEFHSEk1MGVPQkVWekc4VjZob2RWM1VjTGJjYVNYWExnalVDOWx5TkZQa3RMTWdpc09GQ1haSjdNbW1aQWxLbHFpeVk4NkRjUFN0dzFQRlpNX1prMlVLemNWTE9RT3VpQmZoOHfSAZgBQVVfeXFMUGtrTUpDc1FnWjRKWFBINVMxaFZ3RDRtZ1NjSHVaSFlFUUhLUEFiYXNENUlPajJ1eE9kMElxaWVoTlR6eFRNV29VRzA0RlFMRWZfQ0VLbzNFWm44N1FrUlVmb0ZqcUtlYXUtN05YTld4R3AxVFJzbGVCWmd4TGliMEJJR21ydjk4cEdlajY2STUzekw3YUZ4UFQ?oc=5" target="_blank">В суде по делу Бажкеновой допросили представителя КТЖ - Vlast.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.07.2026 12:03</span>
+        <span class="date">📅 23.07.2026 09:53</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">После статьи о «дороге-декорации» КТЖ требует почти 8 млн тенге с Гульнар Бажкеновой - Ratel.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-15" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVTJPcGE1VXVGcGV2cHNZRWtfeExwTGxpSjNKbWowYVlPTFI4MGJkSHBGOGZtZ0tPWFZCTlN4cmhURjFMalNiODBrZ18yelhWaUVNR1B6RzltRFR6ZHpfRXBodzhacHBobldvcFVLTHIxQUtnY2xvSlBlQXBLU0k3ZDdiVF9pZm1PRDV0QkhCR0xIdUo5SVJPSVJmUVkxMXFELVNkQU9JVk4?oc=5" target="_blank">“Казахтелеком“ уволит тысячи сотрудников? Что говорят в компании, Минтруда и сам Мусин: 15 июня 19:13 - TengriNews</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 15.06.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">“Казахтелеком“ уволит тысячи сотрудников? Что говорят в компании, Минтруда и сам Мусин: 15 июня 19:13 - TengriNews</div>
+      <div class="art-summary">В суде по делу Бажкеновой допросили представителя КТЖ - Vlast.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-23" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-23/fvfv-stroyaschaya-zavod-dochka-samruk-azyna-zaymet-80-mln-v-yuanyah/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-stroyaschaya-zavod-dochka-samruk-azyna-zaymet-80-mln-v-yuanyah" target="_blank">Строящая завод «дочка» «Самрук-Қазыны» займет $80 млн в юанях после ухода россиян</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 23.07.2026 12:56</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Строящая завод «дочка» «Самрук-Қазыны» займет $80 млн в юанях после ухода россиян</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -223,7 +192,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-15';
+  document.getElementById('date-from').value = '2026-06-23';
   document.getElementById('date-to').value   = '2026-07-23';
   applyFilters();
 }
