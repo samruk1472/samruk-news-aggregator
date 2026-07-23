@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 23.07.2026 04:16</div>
+  <div class="meta">6 источников · Обновлено: 23.07.2026 06:25</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">9</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-29">
+      <input type="date" id="date-from" value="2026-04-01">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-23">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,6 +84,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
@@ -138,7 +142,18 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    
+    <div class="article" data-date="2026-04-01" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5mSTQ2V2dra29qWjNYS3dzVzU0a3B6cGFEVkE2T050U2UybFZtU244WkhVM2pjdXZTdVFPNF96LVpIbjRFWXFLbUFrZTlENHJtT0JUTXRNVFlFU3pGRDZPSUZfeHRRdFFLeEx0UEFPQ1BkLW92WXFmNlNXd20?oc=5" target="_blank">Казахстанская авиакомпания Air Astana запустила рейсы по маршруту Алматы-Шанхай - Синьхуа</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 01.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Казахстанская авиакомпания Air Astana запустила рейсы по маршруту Алматы-Шанхай - Синьхуа</div>
+    </div>
     
     <div class="article" data-date="2026-04-29" data-co="Казатомпром" data-s="neutral">
       <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1Fa3o3MXFLcnI2RGMxSWVvQzlVS3gtMkYtT3ZjV0hEaFkyYzJlQVB3UFJoV0Q0aGZTVzNSbDlZdWNmRjBCcE10Z0dXQ2xVeW9XckF1TmtqVXlzRlYtQ3JRc3BWQ2JTcHRud0tfOGV6VkhSQ1QzZndjMw?oc=5" target="_blank">Казахстан в 1 кв увеличил добычу урана на 9% — Казатомпром - TradingView</a></div>
@@ -189,7 +204,18 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-07-22" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxOcGtqOEptVTEwWk1XZ2NpVHF0US1uT015UF8xblRib1ZFemRGQUNCV3hpMDBaTHcwbThsRVZLOGNicjF6Z2VIZzV6Y01rVEFyeXlUekRPbVlSelJLSUhnQ0M3b1doUzF5amRjY19LejRQWm44WUZKOGxCWENCellSZUNqY09VaW5VTVQ0eVM3dTZvTlc2LUpyb1EwUG93M25aYlkzUF9fWXFZTUJfeXV2cFRadUVNd2Z2LXR1SWd6U3pSREpINVpwRXBiYXgyeTNEQ1ZyOXBOdw?oc=5" target="_blank">КазМунайГаз и Eni получили первую промышленную электроэнергию на газовой электростанции в Жанаозене - Neftegaz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 22.07.2026 12:33</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз и Eni получили первую промышленную электроэнергию на газовой электростанции в Жанаозене - Neftegaz</div>
+    </div>
     
     <div class="article" data-date="2026-06-22" data-co="Казахтелеком" data-s="positive">
       <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9CSWRjdndUclcybmhQQzRHZUs3WklBMDJVdTNmay1BaXlnbkNBZ1dpVEFKT3VlellUY2E2Y0ptYkNRUG95TDVpTFVnSHBkRzE5dHhRdk1HZk9iYWQ5cmxuY2hLRUNwbV8yUzlTbFhveEo5Yl9YVnB5VEFn?oc=5" target="_blank">Казахтелеком уволит тысячи сотрудников? - Profit.kz</a></div>
@@ -261,7 +287,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-29';
+  document.getElementById('date-from').value = '2026-04-01';
   document.getElementById('date-to').value   = '2026-07-23';
   applyFilters();
 }
