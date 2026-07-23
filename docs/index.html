@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 23.07.2026 06:25</div>
+  <div class="meta">4 источников · Обновлено: 23.07.2026 09:21</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">9</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-01">
+      <input type="date" id="date-from" value="2026-04-20">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-23">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,17 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -113,28 +109,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-23" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-23/dmnn-nulevoye-dolgovoye-napryazheniye-itogi-2025-dlya-kegoc/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=dmnn-nulevoye-dolgovoye-napryazheniye-itogi-2025-dlya-kegoc" target="_blank">Нулевое долговое напряжение: итоги-2025 для KEGOC</a></div>
+    <div class="article" data-date="2026-07-23" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-23/kaye-v-rumynii-zayavili-ob-ugroze-toplivnogo-krizisa-iz-za-pereboev-s-kazahstanskoi-neftyu/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-v-rumynii-zayavili-ob-ugroze-toplivnogo-krizisa-iz-za-pereboev-s-kazahstanskoi-neftyu" target="_blank">В Румынии заявили об угрозе топливного кризиса из-за перебоев с казахстанской нефтью</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 23.07.2026 03:54</span>
+        <span class="date">📅 23.07.2026 08:43</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Нулевое долговое напряжение: итоги-2025 для KEGOC</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-22" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQekNjVVZtUllWNFVtRWF6elFDbE9Ld3FHMWI0RkptSFIyeElaX25oUndIajkzREt3VGd5MU56MGpTVTJJLXNudVNlZVRQOUdocHBvVjZWZjZuaXhnYTlMSm9KODNMdkdURmNxY0k0VWFXbEhJdnVJUWQ0THIxUzExX3lqX2tPWjNtZ1pRMVFVQkVranJXZU1nWmhJS2VMeGdtVHRXVi1HRk9acmdScnRqS0ZLUmdqejR0RzB5ZVhOQldBQS1yczd2eThmb3hRSGNaMWI1Zk9aRFBCNzJYMUJFcExyMA?oc=5" target="_blank">КТЖ создаст единую цифровую сеть LTE-R для железных дорог Казахстана и международных транспортных коридоров - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.06.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ создаст единую цифровую сеть LTE-R для железных дорог Казахстана и международных транспортных коридоров - Қазақстан теміржолшысы</div>
+      <div class="art-summary">В Румынии заявили об угрозе топливного кризиса из-за перебоев с казахстанской нефтью</div>
     </div>
     
   </div>
@@ -142,93 +127,44 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-04-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5mSTQ2V2dra29qWjNYS3dzVzU0a3B6cGFEVkE2T050U2UybFZtU244WkhVM2pjdXZTdVFPNF96LVpIbjRFWXFLbUFrZTlENHJtT0JUTXRNVFlFU3pGRDZPSUZfeHRRdFFLeEx0UEFPQ1BkLW92WXFmNlNXd20?oc=5" target="_blank">Казахстанская авиакомпания Air Astana запустила рейсы по маршруту Алматы-Шанхай - Синьхуа</a></div>
+    <div class="article" data-date="2026-07-14" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOazNTZmRyR1cyVDhCcmo5Vll2a3J0cmNSZlU2Zkx2TFY0OXhwTXVFb3FHYVZHTXFPdm5nM055dWRHeXRTLUMxdUJlVWwwcGd5RkVZWGg4RWFUeElCM3JMY3Uybjg3T1pwdkNabFNoLThGdHhBUjNlRHZXQTZNVFVKbjV3ai1mTmQyc1k5WWRueDhKSXhFLVI3MHktZmxLM3F0d2JUMTNoY3o3dUZlV1NmamRJUjJfVUZWWGFHYm03ONIB8gJBVV95cUxPNlk1OUZPVkxWVEhoSWZTRC1WQzFhQUJ4bHhPbk5IVE1aem5CQ3pXMFhRTWY3ZUNncjZhX0dvLTktU2FKbEw0cERvVXNXUXkwWXRaWW4xVmtKT2FxWUpDVXNGcmEzek9QdkpDSWtreVdqVmxiS0toQUN1SGZOSXRZX0k5bU1PalJGTXBodndsamVqZXJjT21wNG5QU1VBRWZ2a2lfRkU2cTNVY2NHdWhSYUpQcUlWR0tlS1lCUXFPOUl4SE83elc1QkxzT0cydUVmdEpNSnA5T1hpWE9uNklLU3c4NGJ3UWROYUV0NExzeFNCYk1NUXpkRWt4TzU2ZGdralU3U2VzNDNUbzZ4QzFSWV9nQXg2LUZPaEw0MTlCVVI5YXhQcDZQZUJwNWVkVFZuYXozeks3Y3hkQmNmbU5jWGZqVkNBUEdoV1pzejJXOEQzQVlaVU5hRklLNWpTbU44VG93bktvTUZibGo2ejdYYVR3?oc=5" target="_blank">Бектенов пригрозил главе «Самрук-Энерго» за задержку ТЭЦ в Алматы - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.04.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 14.07.2026 07:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Казахстанская авиакомпания Air Astana запустила рейсы по маршруту Алматы-Шанхай - Синьхуа</div>
+      <div class="art-summary">Бектенов пригрозил главе «Самрук-Энерго» за задержку ТЭЦ в Алматы - Kursiv Media</div>
     </div>
     
-    <div class="article" data-date="2026-04-29" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1Fa3o3MXFLcnI2RGMxSWVvQzlVS3gtMkYtT3ZjV0hEaFkyYzJlQVB3UFJoV0Q0aGZTVzNSbDlZdWNmRjBCcE10Z0dXQ2xVeW9XckF1TmtqVXlzRlYtQ3JRc3BWQ2JTcHRud0tfOGV6VkhSQ1QzZndjMw?oc=5" target="_blank">Казахстан в 1 кв увеличил добычу урана на 9% — Казатомпром - TradingView</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 29.04.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Казахстан в 1 кв увеличил добычу урана на 9% — Казатомпром - TradingView</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxORVlyOFAyUFRBZ1ZycmQtNTNPX1J4ejdKQW16TzlpN0hvdmYwdW50VGZTdURtS2lfbWo5UHNOcFV6QWh5elh5czFmOURNaGtIY3pLblBBem5lNkhDZE81dkkzM0V2TUxsQUxqMWJaYnhiZW1IM0ZhVG5QQUdfTVJwdWVkSS04bGRhcDB0SjZNTTRLYU1WYlVxTFNNeFZ2c24wVWNsZmZOTmYzZjhFRVh6QWFiS3NNQQ?oc=5" target="_blank">Более 157 млн тонн грузов перевезено по сети КТЖ за полгода - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-06-21" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPR2xPN1VybGJfMkJ6aVIwQnU4bmJtSkdIbTM0UDNhaHUzclZpV0psNXdsTVdqdDloSUt5eWFodzU2QWc2ck9UZFRIZk5XTmR3TGNkb012dWI0eWJlcFhXcjJOS2MtWE5QanI4MDZwalMwWU1xWS1UMkIzQ19SS2hJUVdMOU00dXdzWkdwdk45MHg5d2MyUjNBeWNxRTRGQllneXJNRG9LY01mMWJnOVptRldVN3ZJWEhy0gG-AUFVX3lxTE5oUlNWUTRTcG5pQ0VCdmhidTZ2Wlp1WjlWVk1SWXA0LS1YdThVclJvMi1ETHdHOWtaZDNOeU52WXpNOTRFb3hJeGVGaERrZUdvTWVDNkljcEd5eWZxMVpQZ204aHlvTFMwcmttLXl3eVpKOHg5TEdkMV9ITy1tSkdJZktXMGVoU3R1dXJfM3ZqdWY3TDNXYjVuUTRFUGdSVnZhWFJySXcydFpQUTlCdk1lY3dFcDJnMkpaNDNaelE?oc=5" target="_blank">Машинист поезда КТЖ остановил состав и спас пятилетнего ребенка на путях - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.07.2026 03:35</span>
+        <span class="date">📅 21.06.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Более 157 млн тонн грузов перевезено по сети КТЖ за полгода - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Машинист поезда КТЖ остановил состав и спас пятилетнего ребенка на путях - Kursiv Media</div>
     </div>
     
-    <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxPY0JYZzJlcDJyaEJHX21yUDBhX3FSaktYV1NMdXl1RWRScGhHQ1Uyc3N2OENLSmpYMldUdFpaQ1k0U0UxbDhPMGF1LXhYRjNDckJZNXJkMlJ2REVZc2p2SUtEUndmbzNETl9uYkFrdGZ1eUJBUWxza0JzZ25zOUloYmZSbnVZeHFyOHRlQ3FnWTR4MEpuVHlERDZ1NXpfQXFNaENkRUZMOTYzaXZvR0g4bWFoWW9LWnRrQ3F2QlpXWUNka3NkVXZrV0FDbGszbE5fLXV5QVFEVG5uX3JiS0Mwd01Vc2NMMDhZamhNMtIB8gFBVV95cUxPRklvTTBONXVXZ253d2pFU1JHT0RuOVZQazI3bVZKU3BvR2cwSVUzZFFOUDI1YkptVGNJenpLYzk1VFRFVTYxVjJtbUpOTmszREI0VTZodzl0SWFRYk1IN0VJdkZPWGhPNnBfZ0F0NmdRUVhPQVhQMFNsZkMxMVRBZWFrNFk3RXBvTHZsa1pyWWotSWhkdWRJcnk1bGlLQ2ttbDZQaWJTUlZfRTdMX2J5Qk14MHVzeWFJR25KMDR2ZVRSV2xwM0tRTmpCbHo2VkhiRlNmQVR5MEF4d3JLaGxRY2Z3RF9QMUZ3OHVmX2MzRWVrQQ?oc=5" target="_blank">Гарантийное письмо вместо зарплаты: медработники подрядчика КТЖ третий месяц не получают положенные выплаты - Azattyq Ruhy</a></div>
+    <div class="article" data-date="2026-04-20" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOVXNfOEF3WlVjZ3kzYXZNLTVKczRVdUQ4LThXUEl0MG14NUtVV081SmtzQW9nTmVFZElSeXIxUWE0MmxESjRwS0hJOVZyMU1mMlltNVh0cDJGaVNidlljOUt1dkxTUk16bVlxUjNFdGdGNFFEdFFQUHByYmFoLThRX3dkVGNONVhsOXZlaXBSUTJacVdFcTFOZ3lXVVNTWE93OEYtSzFCSUc3UDhydzFrNENZY2hEeXl0MGhPNDRUMNIB8wFBVV95cUxNTzVwajc4dkFVT3p4REZET0ZUMms4cENxM1Zmd0VoM3NDYmJqMS0yTFBDeWxYU2ZDWkd4VXZ4OXVtU2MzMnlJd3VGeVBtVXZaaWMzcXp4ZHI2VkZvSWRjR1QxbTktLWFrZ1Y0VHUtdE9mOEJqTS1qZGZraWItcFdrZHNGWjVIM2h2ZnppV1pIQXVOdW9KaEM3ZnBGUjhvTWJaN3BBRDg2MmNzR3RfVzhrYXJZRm1TekQ2WU1HZ2FXY2Z1dUVkYmtmWE9jWnNpdktfYlVVeE1BRVpkSU9NeW5LTXdWOEk5V0pWcFFlVl84eFVPRnc?oc=5" target="_blank">«Казахтелеком» сократит более 500 сотрудников, в том числе из-за ИИ - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 21.07.2026 11:53</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 20.04.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Гарантийное письмо вместо зарплаты: медработники подрядчика КТЖ третий месяц не получают положенные выплаты - Azattyq Ruhy</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLVhHYU5EN2wyeFp3Q3pQdnFRUER5VjMzYVl1VGRlOGZ2M3kwaFFFbnRPY1l3Ukt3YllVUkM1SnZGMU5pSHZlZlpfVFVjTEoyNXQ0dXAtWkk3NERBMFhmZWdDUHZYTmFrZFVIcDBXc2VnWWctdXJjalc3Qk14R0hxX3U3R2ZueTVKQ3BfTk8yNHhuMTZOYWhmdl9NMnFjZEczX0dfX2h5Nk9zM3FyMktDSnFOOW9LTXdTT2w0VXU3WGlyZw?oc=5" target="_blank">КМГ и КТЖ обеспечили сквозной цифровой контроль логистики нефтепродуктов в Казахстане - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.06.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КМГ и КТЖ обеспечили сквозной цифровой контроль логистики нефтепродуктов в Казахстане - Қазақстан теміржолшысы</div>
+      <div class="art-summary">«Казахтелеком» сократит более 500 сотрудников, в том числе из-за ИИ - Kursiv Media</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-07-22" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxOcGtqOEptVTEwWk1XZ2NpVHF0US1uT015UF8xblRib1ZFemRGQUNCV3hpMDBaTHcwbThsRVZLOGNicjF6Z2VIZzV6Y01rVEFyeXlUekRPbVlSelJLSUhnQ0M3b1doUzF5amRjY19LejRQWm44WUZKOGxCWENCellSZUNqY09VaW5VTVQ0eVM3dTZvTlc2LUpyb1EwUG93M25aYlkzUF9fWXFZTUJfeXV2cFRadUVNd2Z2LXR1SWd6U3pSREpINVpwRXBiYXgyeTNEQ1ZyOXBOdw?oc=5" target="_blank">КазМунайГаз и Eni получили первую промышленную электроэнергию на газовой электростанции в Жанаозене - Neftegaz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 22.07.2026 12:33</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз и Eni получили первую промышленную электроэнергию на газовой электростанции в Жанаозене - Neftegaz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-22" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9CSWRjdndUclcybmhQQzRHZUs3WklBMDJVdTNmay1BaXlnbkNBZ1dpVEFKT3VlellUY2E2Y0ptYkNRUG95TDVpTFVnSHBkRzE5dHhRdk1HZk9iYWQ5cmxuY2hLRUNwbV8yUzlTbFhveEo5Yl9YVnB5VEFn?oc=5" target="_blank">Казахтелеком уволит тысячи сотрудников? - Profit.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 22.06.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком уволит тысячи сотрудников? - Profit.kz</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -287,7 +223,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-01';
+  document.getElementById('date-from').value = '2026-04-20';
   document.getElementById('date-to').value   = '2026-07-23';
   applyFilters();
 }
