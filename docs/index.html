@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 24.07.2026 06:21</div>
+  <div class="meta">2 источников · Обновлено: 24.07.2026 09:16</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -85,9 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
     </div>
   </div>
@@ -104,38 +104,49 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-07-24" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-24/dnlt-tseny-na-bazovyye-produkty-v-kazakhstane-snizilis-vpervyye-za-god/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=dnlt-tseny-na-bazovyye-produkty-v-kazakhstane-snizilis-vpervyye-za-god" target="_blank">Цены на базовые продукты в Казахстане снизились впервые за год</a></div>
+    <div class="article" data-date="2026-07-24" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOQTQtZ2FQQ2RYNnZfQ3pPdTdIYUhfSll2b1RjVHVWalFTb2FjNjZ6cHRxZnFRbGlDOUZUalBoa0x0djlRMzgxSnBLbnVFX1cxdWh5c3IyYjBKMTN2R0ZGcFlObGgzS3I0cDlYcnZ0MC1sRDZmR09qVnNidndURXhMMUtZQjRva0lNT1JmaDdnamV4R0tsZlFwNW5KeU5xaklfMFZWTGJ0NmlpaFJtUk9LcS11aGJIZw?oc=5" target="_blank">Атырауский НПЗ в Казахстане завершил плановый ремонт -- Казмунайгаз - Русская служба The Moscow Times</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 24.07.2026 04:38</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 24.07.2026 06:17</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Цены на базовые продукты в Казахстане снизились впервые за год</div>
+      <div class="art-summary">Атырауский НПЗ в Казахстане завершил плановый ремонт -- Казмунайгаз - Русская служба The Moscow Times</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-24" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPc2VmRDlMTVh1bnR3cWY1Skw3WW5XYkEyVFVPaXAwYmJ4SjY1WnppT2d6X0lBUFlxbGhWaW1jUXZoVlQwVVE3TkVFRmI5dk8xNGk2UHBYYTZRdHdnbEJpRWVBYmllOEk2Q1V2dVNTa1RUZVFWeFo4bmNRUzBYN2lJOWc5dFRHUXAyYVN3NUFaZFIxVUVB0gGWAUFVX3lxTFBoM0huWVB4cmZ5MHhnVVVVbFluQkVEOWVYVDl6RzNSOVJpQnJKbVhJNjZuSzNzMDBJM3dRQ2lKV2Y4dzdLek94cUMwV3ZEaVhyc244aVI0UU1XaVB3VHNiem1WMUQ5dExtZGNubzdkZVBmSTkxaWh6U09NN21uZG5VcUxxZGNYY2tKdzNsd1lSbmxITUhhdw?oc=5" target="_blank">Air Astana: часть большой истории Казахстана на карте мира - Казинформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 24.07.2026 07:06</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana: часть большой истории Казахстана на карте мира - Казинформ</div>
     </div>
     
   </div>
   
 
   
-
-  
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-24" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-24/fvfv-pribyl-kazahtelekoma-pochti-udvoilas-a-vyplaty-top-menedzheram-sokratilis/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-pribyl-kazahtelekoma-pochti-udvoilas-a-vyplaty-top-menedzheram-sokratilis" target="_blank">Прибыль «Казахтелекома» почти удвоилась, а выплаты топ-менеджерам сократились</a></div>
+    <div class="article" data-date="2026-07-24" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxOclNOWnljeEFRNGFreWRsekl3SjktUDdNNUFBMDJaX0lPY1NSOGJncnlBODgydkRza1lyOUxNOXRiNm5IbGdjSkp2VnpvUE1TZWEzMlZ6N3RwM0UtRHJTYXgzdG0yT0ZWTmZmbWUtckNnU0dES3lWV01aWDhBRWhEdjNKQ1V0b0pFWnJKajdnRWlPU3RGMWMtZlJSSUE4cmdxcE5pUFpwamF4Q2lHT3hiZzladDVRbHRERXZGcVZn?oc=5" target="_blank">КазМунайГаз сообщил о досрочном запуске Атырауского НПЗ после ремонта - Lada.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 24.07.2026 05:59</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 24.07.2026 08:52</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Прибыль «Казахтелекома» почти удвоилась, а выплаты топ-менеджерам сократились</div>
+      <div class="art-summary">КазМунайГаз сообщил о досрочном запуске Атырауского НПЗ после ремонта - Lada.kz</div>
     </div>
     
   </div>
