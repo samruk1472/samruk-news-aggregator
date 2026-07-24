@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 24.07.2026 14:57</div>
+  <div class="meta">2 источников · Обновлено: 24.07.2026 17:19</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-24">
+      <input type="date" id="date-from" value="2026-07-07">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-24">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -102,25 +104,41 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-24" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/07/kazakhstan-uzbekistan-expand-strategic-partnership-through-trade-transport-and-regional-agreements/" target="_blank">Kazakhstan, Uzbekistan Expand Strategic Partnership Through Trade, Transport and Regional Agreements</a></div>
+    <div class="article" data-date="2026-07-07" data-co="Казахтелеком" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxOemVtaVVWbHhRWnB6YkZKdi1XbTRpbDVoU2ZyZ2FFbE85Q2luTHMyNlNzQ0JuSXZmcXFOZkpkY0NTS1p3aENfWUZMZlUxU1dvWXdvUG45VnZqOThiV2IyRGdWd2lvV0NsZUxCZ0FRTWQ0TURTOG1vSTNlMDRMbUFOcC1IWm1FOGdUb09rYURqU09tME1CeTJGazZvd2lLSHZmbkZ2eU5Tb2NmRFZOamlaeUJBU0VQUnF1ejZhbHpmZFdEZDRaMnc?oc=5" target="_blank">765 киберспортсменов из пяти стран: АО «Казахтелеком» поддержало крупнейший турнир Центральной Азии - Mail.KZ</a></div>
       <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 24.07.2026 13:37</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 07.07.2026 10:45</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Kazakhstan, Uzbekistan Expand Strategic Partnership Through Trade, Transport and Regional Agreements</div>
+      <div class="art-summary">765 киберспортсменов из пяти стран: АО «Казахтелеком» поддержало крупнейший турнир Центральной Азии - Mail.KZ</div>
     </div>
     
   </div>
+  
+
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-24" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxObEtVTjIwbmhPZ2RGdXhZV3VtdTFDYUZFVThDX3I2cE5rZDYzcEwxUjVMSzh6a0syMzIySndSQXVNaUh3bVRMZUVGcnRwd1o4NkZkbDkxZzVWajRSc3FkdVh3NmxLMGdQaWlsZ0pNWVlfQmwzQzhzdEswRERWaUtlNlhzc2VhVDQ4MjRhSHM3aUdOYkY0THZuLUphZjlBYmpmVlBKdGpnNG9aWGvSAaoBQVVfeXFMUGNMX3c3Um1MVThKUnAyWU96eklOMG1rY3RuUWNYajdDSXMwS2FfTjNlbFdia2dXMEc3Y3BoNlB5Vm1adlJNMFk4Y1ZMLWJQdER4WjR0SHpXcVV3bFhnT1lnNkRZblRxODhHVGpuVVBEUFNRbjJCdWNRWldUR2xveFd3QVBlVnVEQVJHRGZSakVqS3JKdGZUOVJ1dHNJX2JSVDhKNm84bS1CNFE?oc=5" target="_blank">Глава АО «Самрук-Казына» Нурлан Жакупов провел заседание Совета директоров KEGOC - SKNEWS.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 24.07.2026 13:05</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Глава АО «Самрук-Казына» Нурлан Жакупов провел заседание Совета директоров KEGOC - SKNEWS.kz</div>
+    </div>
+    
+  </div>
+  
+
   
 </div>
 
@@ -179,7 +197,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-24';
+  document.getElementById('date-from').value = '2026-07-07';
   document.getElementById('date-to').value   = '2026-07-24';
   applyFilters();
 }
