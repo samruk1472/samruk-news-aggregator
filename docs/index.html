@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 23.07.2026 17:07</div>
+  <div class="meta">7 источников · Обновлено: 24.07.2026 04:15</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-23">
+      <input type="date" id="date-from" value="2025-11-25">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-23">
+      <input type="date" id="date-to" value="2026-07-24">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -87,7 +87,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -104,36 +112,145 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2025-11-25" data-co="Казатомпром" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNcXk0MUVfSlI4LVlyZEVLNzk0cTdITXJVSTdjVldhdHJOaXhfbmdfdUdlbGRtd0l0Q25OdEl3QWxmNWN1RVQxbXVRd1A4QkFZdF83bHphSUs0X2RQUEpjclBXeEw1bWNScnk4bVF5UTlZQk5BbmRneThwUGhDSHQ5N01KSWdTSE5ueG53LThTZHA5VmhEbTVPcWk2eHE3WnF4dVZCRzR3?oc=5" target="_blank">Учительница потеряла 20 миллионов тенге, поверив рекламе “инвестиций“ в “Казатомпром“ - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 25.11.2025 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Учительница потеряла 20 миллионов тенге, поверив рекламе “инвестиций“ в “Казатомпром“ - TengriNews</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
+    
+    <div class="article" data-date="2026-07-24" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-24/dnlt-tseny-na-neft-prevysili-100-na-fone-atak-na-tankery-i-sokrascheniya-dobychi-v-kazakhstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=dnlt-tseny-na-neft-prevysili-100-na-fone-atak-na-tankery-i-sokrascheniya-dobychi-v-kazakhstane" target="_blank">Цены на нефть превысили $100 на фоне атак на танкеры и сокращения добычи в Казахстане</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 24.07.2026 03:54</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Цены на нефть превысили $100 на фоне атак на танкеры и сокращения добычи в Казахстане</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNNjR3OG96SWU0bU9WdHBnc3l0UXRMazllbnlVeU1hUTVmVGZmcFBhdFIyaVJDNGRzdWljMHFkM01IQWEyT1pSbC1URU8ycU5xa2x1M29UNXVVaklZNDR0YnFJSjlZSEJmZUpXTGtfMFBKUkJtbTZnci1Sd09tZWZsOVJHMHRRdXNLdldtMUVNX2N6dVk3OWRiSGZ5dUM4TXFsOEUwc3V3?oc=5" target="_blank">Проекты на 3,3 трлн тенге намерено завершить АО &#34;Самрук-Казына&#34; до конца года - Informburo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 17.06.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Проекты на 3,3 трлн тенге намерено завершить АО &#34;Самрук-Казына&#34; до конца года - Informburo.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-23" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5wenFrRk9yRkEwdjJGQ3NlZkVOb0pmWFpmei16bThGakx6UlhBRUo1VHBaeTRfUVo4bVhBd2pYY1h6amExSDRNX3FCQVdCam0tM04tV1BQZmJzYmpkM0tTcjh1MzQtNVBF?oc=5" target="_blank">КазМунайГаз подвел итоги деятельности комплаенс функции за первое полугодие 2026 года - ҚазМұнайГаз</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 23.07.2026 10:46</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз подвел итоги деятельности комплаенс функции за первое полугодие 2026 года - ҚазМұнайГаз</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-07" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQdlF5aGl5WkZvNWdoUDAxb09GUlMtVDhtTFBqa0tUQ0NGeFBZOG5idXNlV29Lb0g2SWNSazdXdFV2UlBmcjVZN0dFRnl4c2E3Zlh3ZlRPdjM3TEdnMmM2TUJ6M0xMMkF1TnlHVjludC1BX3o3cU9PZmlCQVRpd0NWX0lIWjF3a1R0aGR5clNR?oc=5" target="_blank">Freedom Holding Corp. и &#34;Казатомпром&#34;: казахстанские компании, которые обыгрывают рынок в 2026 году - Правда.Ру</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 07.04.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Freedom Holding Corp. и &#34;Казатомпром&#34;: казахстанские компании, которые обыгрывают рынок в 2026 году - Правда.Ру</div>
+    </div>
     
     <div class="article" data-date="2026-06-23" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNbUZ6UUh2QUxFamtWMWZPMmVEdEhkSzRkbzhNRDdoRWlZOGV4NExjbFZVS1lIbXl4a2FkcjBnSkhRbTRHcW1rWUZZN0RoZjlvQW42VnA3VHVsX2VPSkNNbHltN1N5ejhlem8xZi1CX2JNeV82alVLRG1wTnFLSWFka1YtZVdNSzk2QlAwWnJQLU1iZ0xXRlhkR1VpWmlIR0R4UmgtOW5wUzBmckxhczNPUWRTa0VrWVcyTm90dzNIUTZrTHMyMXhtV0l30gHPAUFVX3lxTE5iMkdzcU1pV1FxeXlxdkN2UmFXN3ZMLUhEeXRuLVVsM09NNFdsbk9ZTDREZmdJYkItTFVKTGNJWjQ4a0FlWl9aUVlOR0lGVkZYd3ptNjRBYWZ1d0lCUmJVdGRRSVRFdWlXbFluM2JvN2o3TmdjYndGd1lhMWRrV3ZfTGw0THIxUjV5aWhSRmxkX3M0Uy1jbThIbWV0UE9RenlqLVhKdW5HYS05bXZEV1EwQ01TZHItS0JXNUVycWdmOUJNb3JMRzV2RVpncFBaNA?oc=5" target="_blank">Air Astana заказала 50 Airbus на $9,45 млрд. Это почти в 695 раз больше ее прибыли - Kursiv Media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNLXVaM0FON1V0N2twdTRrb3dXQ2U5blQtS0pEaE16MzVrcWt2WTlDazVWaVVzNlhvRUp6RExOeFJmc0lrMTgtMmdPX3pranFBSUF6MWdjUXh0bXdzSW5UM3VtLVBnWTVJWkNLeHJEQU1WV0ZvWjVMcklTSTBQWU1xY2IwUmZ1bzBkVm51U3hHOHZ6Nk42SkE?oc=5" target="_blank">Air Astana закупит 50 самолетов Airbus на 7,1 млрд евро - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
         <span class="date">📅 23.06.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana заказала 50 Airbus на $9,45 млрд. Это почти в 695 раз больше ее прибыли - Kursiv Media</div>
+      <div class="art-summary">Air Astana закупит 50 самолетов Airbus на 7,1 млрд евро - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-18" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOQ2xneklQZU5YbDVEeVNQMTB6Y2R2Wkw1V3hpNE5MRkZPankyVERmVG5hdVA2YnBORjV5YlNqcWJoRWRjY2JwY19YZEd2eFJzUkRhaWpfcllYbXhrenFoVzJIeGYwaEYwQUxFSlVlNUQtNlp2VDc3Wk1EbGMtN2tLeGlYZks1aHd0d3NYXzNuTVJ6elY4eEMwUHRqT3Etay1GS2VhQkZB0gGkAUFVX3lxTE1md3pLRnJwOVpMTndneE9rMTg2d3NjVGRfbHQwQ09mdGZLZ01EY09NYmJGX2M3c2ZFRzhSSWdtbEpXaHExUEJxQ2x4X2IxWWhiYXk1OUc5Z19zbVNkUGdrTXljTlEydmlJcGJyXzBqZU5vUmN3bHpvckF6UWx3ZU9SelB6SFkzdnFua1dCeHBJOFA0WUd5enU1allqRG5qYXBPUlpN?oc=5" target="_blank">Экс-глава Air Astana Питер Фостер получил новую должность в Казахстане - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 18.06.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Экс-глава Air Astana Питер Фостер получил новую должность в Казахстане - BES.media</div>
     </div>
     
     <div class="article" data-date="2026-07-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxNcE1XbXZYMVVHSlJ0QXpDNGpfMS1ndVJyNDVFdWY1M3JlbGlORU02TEFHSEk1MGVPQkVWekc4VjZob2RWM1VjTGJjYVNYWExnalVDOWx5TkZQa3RMTWdpc09GQ1haSjdNbW1aQWxLbHFpeVk4NkRjUFN0dzFQRlpNX1prMlVLemNWTE9RT3VpQmZoOHfSAZgBQVVfeXFMUGtrTUpDc1FnWjRKWFBINVMxaFZ3RDRtZ1NjSHVaSFlFUUhLUEFiYXNENUlPajJ1eE9kMElxaWVoTlR6eFRNV29VRzA0RlFMRWZfQ0VLbzNFWm44N1FrUlVmb0ZqcUtlYXUtN05YTld4R3AxVFJzbGVCWmd4TGliMEJJR21ydjk4cEdlajY2STUzekw3YUZ4UFQ?oc=5" target="_blank">В суде по делу Бажкеновой допросили представителя КТЖ - Vlast.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiREFVX3lxTE5kcV9id29vcFlnS0tmUVdQVXJEUHYtbTViYjBWRmtzYWhlc1E2QXNzNVk2cDVkcWZKdlJGTXdfWm9tR2RZ?oc=5" target="_blank">В Алматы КТЖ заявила о 7,8 млн тенге из-за публикации Orda.kz - Polites News</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.07.2026 09:53</span>
+        <span class="date">📅 23.07.2026 11:17</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">В суде по делу Бажкеновой допросили представителя КТЖ - Vlast.kz</div>
+      <div class="art-summary">В Алматы КТЖ заявила о 7,8 млн тенге из-за публикации Orda.kz - Polites News</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-19" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPUk8zd1d6VkF4YWszUEhZa2gtcjZMclkta0VBejluTTB4bWpyZWU2UTRwYzQzbTZNelNURkFESFduZEpoYzhNV2FiMF9qcHRPQ0JMeDhEdFZGanJ2R2tKSGJ4OFh5MkVtcm9oQXZLeUp4UDFUcTJjdzY3ektUNDl1Yi1zbmsyOXJSQzBPdXY2MXE?oc=5" target="_blank">&#34;Казахтелеком&#34; раздал миллиарды тенге дивидендов - nationalbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 19.06.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">&#34;Казахтелеком&#34; раздал миллиарды тенге дивидендов - nationalbusiness.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-07-24" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-24/dmnn-konets-volframovoy-neopredelennosti-itogi-2025-dlya-tau-ken-samruka/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=dmnn-konets-volframovoy-neopredelennosti-itogi-2025-dlya-tau-ken-samruka" target="_blank">Конец вольфрамовой неопределенности: итоги-2025 для «Тау-Кен Самрука»</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 24.07.2026 04:09</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Конец вольфрамовой неопределенности: итоги-2025 для «Тау-Кен Самрука»</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-24" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNWVBtZWdhSUU1VlNMalRKMmphNXdvX2daZDEwODAtSmxTT1VZbWViRElXbnZGUmliaFMydnQ4Y3BfeXBXRy1kT2Mtb3hCNlBSQ05JdTI5c0JKMkQzVXdPTG5NaW10aC16R1lzVlN5cUNvQlpobDF1dWtkUnRidklLMkNTVnRtc2d6TDRNeTZRMnRnSU1KQ3ZBU01uc9IBmgFBVV95cUxOR2ozNGFPeVBPVTFpSmE1WkRWVEtHeVZkOFZYTlJvbmZMOUpIdXE4MDQ1dXgyNFR1Z1h6Wnc1ZEd1blRobVdCN0VLOTJPWENvbTZNdE5ZZHN1SGpTdDNhRHROMk1VUC1QSTg4OHJ5Q0pVQW92MzJ3dmRSYm03QXdlMUxtQW10MHZhdGwtQnBfVlBOYmYxQ01lSEZB?oc=5" target="_blank">Air Astana заключила соглашение с Airbus о поставке до 50 самолётов - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 24.06.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana заключила соглашение с Airbus о поставке до 50 самолётов - BES.media</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -192,8 +309,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-23';
-  document.getElementById('date-to').value   = '2026-07-23';
+  document.getElementById('date-from').value = '2025-11-25';
+  document.getElementById('date-to').value   = '2026-07-24';
   applyFilters();
 }
 
