@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 24.07.2026 11:41</div>
+  <div class="meta">1 источников · Обновлено: 24.07.2026 14:57</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-16">
+      <input type="date" id="date-from" value="2026-07-24">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-24">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,8 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -106,45 +104,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   
 
   
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-24" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOUDBWaXpJVmpEbHQ4eWxvMzRyUHVTLWxoYUxXYVlZS2lkMXQxTE03RzRMeENWWWhwa0xlZXhNV2xZMEZYSnlNUjQ4T19SZHpuRTRhUjBDVy1DTndDTHBBOTAtaGEwdXVSQ2hiMUVjbmxyc0g1RTYwVWlQX0tPcmdPYXk2MDg0bndmemxjSk1jcjZtdXUtNjhJOHZUVjVxZzBTQW1Xam8yQXlHVUliX2c?oc=5" target="_blank">«КазМунайГаз» подписал соглашения о разработке документации по проекту SAF в Казахстане - ИнфоТЭК</a></div>
+    <div class="article" data-date="2026-07-24" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/07/kazakhstan-uzbekistan-expand-strategic-partnership-through-trade-transport-and-regional-agreements/" target="_blank">Kazakhstan, Uzbekistan Expand Strategic Partnership Through Trade, Transport and Regional Agreements</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 24.07.2026 07:45</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» подписал соглашения о разработке документации по проекту SAF в Казахстане - ИнфоТЭК</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-24" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1RYi1nMXBTN3RfX0VHVHFveUVQS244bzROLUhKME1BUmxVM1dFN045bG5HLUY2SGttY0R4cnBSQ1p2ZDh0MHl1VnZsQ09lYUZIM1oyTkd1bkZWeE5fM0VF?oc=5" target="_blank">«КазМунайГаз» изучит перспективные участки нефтегазоносных бассейнов в Мангистауской области Казахстана - Energyland.info</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 24.07.2026 04:30</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» изучит перспективные участки нефтегазоносных бассейнов в Мангистауской области Казахстана - Energyland.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPWTlvUzdNNERkbTA4SXBvODMtYzVFOVM0akFWbTlPWTlJNUtfaWxZMzY5S2x3cmMteE04dms2UjQzbG1YNXdBbkpoNHIwalpOYUF0SFNhbm1fRngzR1JjeXpqTkhKdExtM0Q4TE5BT3hBM2VOT2d6WktiYjVOczFZNkFMRW9idm40VnZCclVIOFlkR2k5QkNnMXllb2c3cHhfTHFV?oc=5" target="_blank">Почему путешествия на поездах становятся дороже, чем на самолёте - ответ КТЖ - TengriNews</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.06.2026 07:00</span>
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 24.07.2026 13:37</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Почему путешествия на поездах становятся дороже, чем на самолёте - ответ КТЖ - TengriNews</div>
+      <div class="art-summary">Kazakhstan, Uzbekistan Expand Strategic Partnership Through Trade, Transport and Regional Agreements</div>
     </div>
     
   </div>
-  
-
   
 </div>
 
@@ -203,7 +179,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-16';
+  document.getElementById('date-from').value = '2026-07-24';
   document.getElementById('date-to').value   = '2026-07-24';
   applyFilters();
 }
