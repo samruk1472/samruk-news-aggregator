@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 25.07.2026 11:09</div>
+  <div class="meta">6 источников · Обновлено: 25.07.2026 14:38</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">12</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">10</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-17">
+      <input type="date" id="date-from" value="2025-09-22">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -105,7 +111,18 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-07-25" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://egemen.kz/article/417951-kibersporttynh-alemdik-zhuldyzdary-bolashaq-oyyndary-2026-turnirine-qatysu-ushin" target="_blank">Киберспорттың әлемдік жұлдыздары «Болашақ ойындары 2026» турниріне қатысу үшін Астанаға келуде</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Egemen.kz</span>
+        <span class="date">📅 25.07.2026 11:32</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Киберспорттың әлемдік жұлдыздары «Болашақ ойындары 2026» турниріне қатысу үшін Астанаға келуде</div>
+    </div>
     
     <div class="article" data-date="2026-07-25" data-co="КазМунайГаз" data-s="negative">
       <div class="art-title"><a href="https://vlast.kz/obsshestvo/70233-nedela-v-kazahstane-mracnye-dni-dla-kazahstanskoj-nefti.html" target="_blank">Неделя в Казахстане: Мрачные дни для казахстанской нефти</a></div>
@@ -123,7 +140,106 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(10)</span></div>
+    
+    <div class="article" data-date="2026-07-24" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPZnUteUxTdlB0bU1BT2ZUUk42dUxITEx5WG0tZnFnOXY2dmVRNkZCT2lEUWQ3bThQR2hWVXIwN2FCWXpyTmFvWFRDYThmMjBsSGxYZjlCM2VuaGdBQzdtTzhhVmtFY3NVaW5JQVBqWVlYb281eHI0X245WjI4UHhYcFVHSXVvZl9aaWdrWWk3NUw2Mmg4dmlCRC1uWkVad1hndnpHMDYyVmJJa1IxS1NhX1NqelEySi1PNkdwNW1RaDF0X2JSckE?oc=5" target="_blank">Миллиард на кону: «дочка» «Самрук-Казына» занимает деньги на завод, который оставила Россия - nationalbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 24.07.2026 05:50</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Миллиард на кону: «дочка» «Самрук-Казына» занимает деньги на завод, который оставила Россия - nationalbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-24" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPdGFBdGMzQi15RE5xbG5HbHlqUUVqZUNkZ3Uza0ZSZVdCcEwxUmZ3UXFDLVNWYzFSdWFHcm4tTW5abXl0dkFUYzl3VG1HblE5QlhCYlNQU0dBd3FVajJFZ0RaMkVoWXhoWVZOOTQ0ekR5aEk0MDJmVm90eXFETkxUWlpueURKUkhoX0JUellaeWdSY3pKT1RFb0Vn?oc=5" target="_blank">Air Astana открыла продажу билетов на дополнительные рейсы в Гуанчжоу - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 24.07.2026 17:44</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana открыла продажу билетов на дополнительные рейсы в Гуанчжоу - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-29" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxQVzkzLS1QbXdIR1E2eDJYc2VZbkpWelZreGNSUXJ3cE9RRk1TMXg2YVlIeUdkSWpBV3B0SXFsVDJGODVHWWMtRU5TaXFBTF9LT09saDB4TERDaHkwODhQS3NVUEdJWkREWXNJUWpvR1hCcjNPajVlWFBjdEE3UXFIXzEzZmw0Y0VYaUtiZG9LejVGNHM2X2tlNDRfTm41YkN3aE1MaXk5djVHeFZpdlgySkozck1ZZk1DVVRlVUZfZ0JReG1GcnfSAcsBQVVfeXFMUEtpVmkzUGJwdHo3ajZBLXdOTEpRNFpyOGdDZkhxcFQ0R3Jpa2wwcFlZWm1nSm0wa19XQzZzNy13ZHJnREU2N0pwZ0RKWjhHbUVVMjFnMEZmUHU2YkZ6REpnbjZtbXc0RTlfV01sUDNnMHV6VlR5eFpLaUl0Y01UV0ZfeEpNVWJUVTNxaUczLTI3dUVhcmpuMlJCUW5STzBLSW05Tkl3Qms5SkNlV3I3bk1DWHh1NjEzSG85RUhYM1plWkZudDg0OFY1azQ?oc=5" target="_blank">Новые рейсы, самолеты и инвесторы: Air Astana рассказала, как справляется с вызовами - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 29.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Новые рейсы, самолеты и инвесторы: Air Astana рассказала, как справляется с вызовами - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-25" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOUTRqMzhZRm1nWE04R3FuUHplVGJ1VDFubmFJY283ZlBjU2VTWmtMbEltT24tTnVta1JsdmhYRzAxSjlYTUdBYW9FbmI5RkVISnhkWDEwTGhuU1liamlzTGxaNVVxN3J2OFZVUVQ3LTc1TFlVa2U1Zy1OQ3U0SkFydG1Nam5Udw?oc=5" target="_blank">Air Astana запустит дополнительные рейсы в Гуанчжоу - airpres.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 25.07.2026 01:21</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустит дополнительные рейсы в Гуанчжоу - airpres.kz</div>
+    </div>
+    
+    <div class="article" data-date="2025-09-22" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUWJmQVFfZVhwNUlsQzR0aW1iNWE5SmQ0MHlRRm1fdmJGbXZ5SUktZEE1eEl4ZzBMeS00OU5qUTIySXR1cXNyT25ySEFjNkZMVkdsMmU2em9UMmwwSG8zczZGYmJRUllyMTA5TGJzU0pGeXdGV2RFMzlIN2NpNWlyRmVUbHNtMmNDeEJnZ0kwUmk1Z1RJYWRqdy02NUhabzlEQ0duWHR5cXktZ9IBrwFBVV95cUxPblY3ZHdULWxuTENhNGdVZzZ0bWdfY2RrNmgwN2JlbG9zVDBWbUMzR2g5NlJxUnJRZkVfenI5dkZ6Tm9paHFjeEVmSnlOM21IdUVublpBYnB2MzAxSUQwT1M5RzZoMWFkb3E3eGZ5dWpIcHJXNFZia0QxUzNDVWY4VV9mcDRIQW83Uk5XQ19haGZxbWh1emVENXhCcG1VNXhPaHVWT1lCc0lpQW1LemVR?oc=5" target="_blank">«Казахтелеком» стал коммерческим дистрибьютором Amazon Kuiper в РК - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 22.09.2025 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» стал коммерческим дистрибьютором Amazon Kuiper в РК - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-11" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOMmNzNDV6TTIzcXBzQTE3ZGVyaWN4dXNiQnJoWVA4MjRGUjlscnBVOWgwbG11MHF5X1o3SUthcU05bnREODdsTkJBbEFaejRyOUdHRmFOQjhYbTBFQmljODZxdkRFNi1xR1dEem92d0JBZmFFLXhzSmE5eHNTNEdxaWVqZnoyQWNiX0JSbGxnLVEzNnFWRGljVg?oc=5" target="_blank">Stadler опровергла проблемы с тормозами новых вагонов для КТЖ - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 11.06.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Stadler опровергла проблемы с тормозами новых вагонов для КТЖ - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-21" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxOcFdmNV9zLV8xbEl5akZHVWdHRnI5VEZHMkpkU0JBZU9XNFM3QmZxZkJhUEdyQ0RyT2JWYm4xQ2JnNEFGNTdoY2s1eThEYjZpeUV1eGEwWWtSWTk0Q0R0M0VTWFFHYnlPblRpQjM2TTFLZ1lCSl9Xd3FVV0s1RU55UXJDakZzVTJDUE96UmxpTjgtSGhVeENZcUFtY1lpaEo3VGZUU3lsakxuWHJyeHN5SzVlZ2QzSHRHVlc5UjZBSlo2cTh4LVdvYnkyU1ZRZkpPU0FGQnV0bw?oc=5" target="_blank">Антифрод колл-центр АО «Казахтелеком» помог предотвратить хищение 30 миллионов тенге у жителей Казахстана - Вечерний Алматы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 21.07.2026 13:26</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Антифрод колл-центр АО «Казахтелеком» помог предотвратить хищение 30 миллионов тенге у жителей Казахстана - Вечерний Алматы</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-01" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOdldBY0ZlcUpPa1RPdEdyenVPZHJ4OGQ3QXB1Tnk4Rmk1Q1ZYeFdnME96MXpsVHpxS0RfYjlTRnYwSDV0YVRCTHlBWGdDcklDU29XZ0Q0OHU3TENUZk1OZE00LU1ZQVRleWtTMmdGMVotdmw0RDlyZjYxNVFtQmw1RUJTM25hN3FLZk1ITGx6YlhTWEthanE3cjBJM2dxYTRjdE9nN2lmajlxX1lZVUlNOWVHU3pXa3c?oc=5" target="_blank">«Казахтелеком» завоевал две престижные международные награды на MWC Shanghai 2026 - Вечерний Алматы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 01.07.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» завоевал две престижные международные награды на MWC Shanghai 2026 - Вечерний Алматы</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-05" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQY2xMSjFhempuOFAzelBKY0MtM3ZBQzVna2VUQU1JLWdYcVBIbksxenVBWk11dkxVTWNLZzdZYTlYRW1wWDdRUE53MzlFdGJ3c252TGdlU3ZpdXVINE5ZRUFlQkxZTHZEVWNQWEhlZXpfdmxOeGx0blh0aF9zc0psYWVtcXRINktjVUNNaUZLZnVlOWRyRm5nVFd3?oc=5" target="_blank">«Казахтелеком» поддержал крупнейший турнир Центральной Азии - Вечерний Алматы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 05.07.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» поддержал крупнейший турнир Центральной Азии - Вечерний Алматы</div>
+    </div>
     
     <div class="article" data-date="2026-03-17" data-co="Казахстан Темір Жолы" data-s="neutral">
       <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFBmSGw1NXJaLXptYi1GT1hLb2E1Wk9fekxGZjh3dmFFWm9KcFpXTENZUUZMUnNEaWhtdjFpZk9ET2VHc1p4ZmJBMjBDLXAtWUpFX2VMYw?oc=5" target="_blank">КТЖ запретило отправку на Костанай порожних вагонов и контейнеров - АПК-Інформ</a></div>
@@ -197,7 +313,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-17';
+  document.getElementById('date-from').value = '2025-09-22';
   document.getElementById('date-to').value   = '2026-07-25';
   applyFilters();
 }
