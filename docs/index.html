@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 25.07.2026 08:56</div>
+  <div class="meta">2 источников · Обновлено: 25.07.2026 11:09</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-11">
+      <input type="date" id="date-from" value="2026-03-17">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,11 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -109,15 +107,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neg">
     <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-25" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://egemen.kz/article/417951-kibersporttynh-alemdik-zhuldyzdary-bolashaq-oyyndary-2026-turnirine-qatysu-ushin" target="_blank">Киберспорттың әлемдік жұлдыздары «Болашақ ойындары 2026» турниріне қатысу үшін Астанаға келуде</a></div>
+    <div class="article" data-date="2026-07-25" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/obsshestvo/70233-nedela-v-kazahstane-mracnye-dni-dla-kazahstanskoj-nefti.html" target="_blank">Неделя в Казахстане: Мрачные дни для казахстанской нефти</a></div>
       <div class="art-meta">
-        <span class="src">📰 Egemen.kz</span>
-        <span class="date">📅 25.07.2026 11:32</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 25.07.2026 14:43</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Киберспорттың әлемдік жұлдыздары «Болашақ ойындары 2026» турниріне қатысу үшін Астанаға келуде</div>
+      <div class="art-summary">Неделя в Казахстане: Мрачные дни для казахстанской нефти</div>
     </div>
     
   </div>
@@ -125,50 +123,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOMmNzNDV6TTIzcXBzQTE3ZGVyaWN4dXNiQnJoWVA4MjRGUjlscnBVOWgwbG11MHF5X1o3SUthcU05bnREODdsTkJBbEFaejRyOUdHRmFOQjhYbTBFQmljODZxdkRFNi1xR1dEem92d0JBZmFFLXhzSmE5eHNTNEdxaWVqZnoyQWNiX0JSbGxnLVEzNnFWRGljVg?oc=5" target="_blank">Stadler опровергла проблемы с тормозами новых вагонов для КТЖ - Inbusiness.kz</a></div>
+    <div class="article" data-date="2026-03-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFBmSGw1NXJaLXptYi1GT1hLb2E1Wk9fekxGZjh3dmFFWm9KcFpXTENZUUZMUnNEaWhtdjFpZk9ET2VHc1p4ZmJBMjBDLXAtWUpFX2VMYw?oc=5" target="_blank">КТЖ запретило отправку на Костанай порожних вагонов и контейнеров - АПК-Інформ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.06.2026 07:00</span>
+        <span class="date">📅 17.03.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Stadler опровергла проблемы с тормозами новых вагонов для КТЖ - Inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-21" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxOcFdmNV9zLV8xbEl5akZHVWdHRnI5VEZHMkpkU0JBZU9XNFM3QmZxZkJhUEdyQ0RyT2JWYm4xQ2JnNEFGNTdoY2s1eThEYjZpeUV1eGEwWWtSWTk0Q0R0M0VTWFFHYnlPblRpQjM2TTFLZ1lCSl9Xd3FVV0s1RU55UXJDakZzVTJDUE96UmxpTjgtSGhVeENZcUFtY1lpaEo3VGZUU3lsakxuWHJyeHN5SzVlZ2QzSHRHVlc5UjZBSlo2cTh4LVdvYnkyU1ZRZkpPU0FGQnV0bw?oc=5" target="_blank">Антифрод колл-центр АО «Казахтелеком» помог предотвратить хищение 30 миллионов тенге у жителей Казахстана - Вечерний Алматы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 21.07.2026 13:26</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Антифрод колл-центр АО «Казахтелеком» помог предотвратить хищение 30 миллионов тенге у жителей Казахстана - Вечерний Алматы</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-01" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOdldBY0ZlcUpPa1RPdEdyenVPZHJ4OGQ3QXB1Tnk4Rmk1Q1ZYeFdnME96MXpsVHpxS0RfYjlTRnYwSDV0YVRCTHlBWGdDcklDU29XZ0Q0OHU3TENUZk1OZE00LU1ZQVRleWtTMmdGMVotdmw0RDlyZjYxNVFtQmw1RUJTM25hN3FLZk1ITGx6YlhTWEthanE3cjBJM2dxYTRjdE9nN2lmajlxX1lZVUlNOWVHU3pXa3c?oc=5" target="_blank">«Казахтелеком» завоевал две престижные международные награды на MWC Shanghai 2026 - Вечерний Алматы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 01.07.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» завоевал две престижные международные награды на MWC Shanghai 2026 - Вечерний Алматы</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-05" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQY2xMSjFhempuOFAzelBKY0MtM3ZBQzVna2VUQU1JLWdYcVBIbksxenVBWk11dkxVTWNLZzdZYTlYRW1wWDdRUE53MzlFdGJ3c252TGdlU3ZpdXVINE5ZRUFlQkxZTHZEVWNQWEhlZXpfdmxOeGx0blh0aF9zc0psYWVtcXRINktjVUNNaUZLZnVlOWRyRm5nVFd3?oc=5" target="_blank">«Казахтелеком» поддержал крупнейший турнир Центральной Азии - Вечерний Алматы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 05.07.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» поддержал крупнейший турнир Центральной Азии - Вечерний Алматы</div>
+      <div class="art-summary">КТЖ запретило отправку на Костанай порожних вагонов и контейнеров - АПК-Інформ</div>
     </div>
     
   </div>
@@ -232,7 +197,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-11';
+  document.getElementById('date-from').value = '2026-03-17';
   document.getElementById('date-to').value   = '2026-07-25';
   applyFilters();
 }
