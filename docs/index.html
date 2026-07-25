@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 24.07.2026 17:19</div>
+  <div class="meta">2 источников · Обновлено: 25.07.2026 04:11</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-07">
+      <input type="date" id="date-from" value="2026-04-29">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-24">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
@@ -104,36 +104,42 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-07" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxOemVtaVVWbHhRWnB6YkZKdi1XbTRpbDVoU2ZyZ2FFbE85Q2luTHMyNlNzQ0JuSXZmcXFOZkpkY0NTS1p3aENfWUZMZlUxU1dvWXdvUG45VnZqOThiV2IyRGdWd2lvV0NsZUxCZ0FRTWQ0TURTOG1vSTNlMDRMbUFOcC1IWm1FOGdUb09rYURqU09tME1CeTJGazZvd2lLSHZmbkZ2eU5Tb2NmRFZOamlaeUJBU0VQUnF1ejZhbHpmZFdEZDRaMnc?oc=5" target="_blank">765 киберспортсменов из пяти стран: АО «Казахтелеком» поддержало крупнейший турнир Центральной Азии - Mail.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 07.07.2026 10:45</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">765 киберспортсменов из пяти стран: АО «Казахтелеком» поддержало крупнейший турнир Центральной Азии - Mail.KZ</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
     <div class="article" data-date="2026-07-24" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxObEtVTjIwbmhPZ2RGdXhZV3VtdTFDYUZFVThDX3I2cE5rZDYzcEwxUjVMSzh6a0syMzIySndSQXVNaUh3bVRMZUVGcnRwd1o4NkZkbDkxZzVWajRSc3FkdVh3NmxLMGdQaWlsZ0pNWVlfQmwzQzhzdEswRERWaUtlNlhzc2VhVDQ4MjRhSHM3aUdOYkY0THZuLUphZjlBYmpmVlBKdGpnNG9aWGvSAaoBQVVfeXFMUGNMX3c3Um1MVThKUnAyWU96eklOMG1rY3RuUWNYajdDSXMwS2FfTjNlbFdia2dXMEc3Y3BoNlB5Vm1adlJNMFk4Y1ZMLWJQdER4WjR0SHpXcVV3bFhnT1lnNkRZblRxODhHVGpuVVBEUFNRbjJCdWNRWldUR2xveFd3QVBlVnVEQVJHRGZSakVqS3JKdGZUOVJ1dHNJX2JSVDhKNm84bS1CNFE?oc=5" target="_blank">Глава АО «Самрук-Казына» Нурлан Жакупов провел заседание Совета директоров KEGOC - SKNEWS.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPZnUteUxTdlB0bU1BT2ZUUk42dUxITEx5WG0tZnFnOXY2dmVRNkZCT2lEUWQ3bThQR2hWVXIwN2FCWXpyTmFvWFRDYThmMjBsSGxYZjlCM2VuaGdBQzdtTzhhVmtFY3NVaW5JQVBqWVlYb281eHI0X245WjI4UHhYcFVHSXVvZl9aaWdrWWk3NUw2Mmg4dmlCRC1uWkVad1hndnpHMDYyVmJJa1IxS1NhX1NqelEySi1PNkdwNW1RaDF0X2JSckE?oc=5" target="_blank">Миллиард на кону: «дочка» «Самрук-Казына» занимает деньги на завод, который оставила Россия - nationalbusiness.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 24.07.2026 13:05</span>
+        <span class="date">📅 24.07.2026 05:50</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Глава АО «Самрук-Казына» Нурлан Жакупов провел заседание Совета директоров KEGOC - SKNEWS.kz</div>
+      <div class="art-summary">Миллиард на кону: «дочка» «Самрук-Казына» занимает деньги на завод, который оставила Россия - nationalbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-24" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPdGFBdGMzQi15RE5xbG5HbHlqUUVqZUNkZ3Uza0ZSZVdCcEwxUmZ3UXFDLVNWYzFSdWFHcm4tTW5abXl0dkFUYzl3VG1HblE5QlhCYlNQU0dBd3FVajJFZ0RaMkVoWXhoWVZOOTQ0ekR5aEk0MDJmVm90eXFETkxUWlpueURKUkhoX0JUellaeWdSY3pKT1RFb0Vn?oc=5" target="_blank">Air Astana открыла продажу билетов на дополнительные рейсы в Гуанчжоу - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 24.07.2026 17:44</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana открыла продажу билетов на дополнительные рейсы в Гуанчжоу - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-29" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxQVzkzLS1QbXdIR1E2eDJYc2VZbkpWelZreGNSUXJ3cE9RRk1TMXg2YVlIeUdkSWpBV3B0SXFsVDJGODVHWWMtRU5TaXFBTF9LT09saDB4TERDaHkwODhQS3NVUEdJWkREWXNJUWpvR1hCcjNPajVlWFBjdEE3UXFIXzEzZmw0Y0VYaUtiZG9LejVGNHM2X2tlNDRfTm41YkN3aE1MaXk5djVHeFZpdlgySkozck1ZZk1DVVRlVUZfZ0JReG1GcnfSAcsBQVVfeXFMUEtpVmkzUGJwdHo3ajZBLXdOTEpRNFpyOGdDZkhxcFQ0R3Jpa2wwcFlZWm1nSm0wa19XQzZzNy13ZHJnREU2N0pwZ0RKWjhHbUVVMjFnMEZmUHU2YkZ6REpnbjZtbXc0RTlfV01sUDNnMHV6VlR5eFpLaUl0Y01UV0ZfeEpNVWJUVTNxaUczLTI3dUVhcmpuMlJCUW5STzBLSW05Tkl3Qms5SkNlV3I3bk1DWHh1NjEzSG85RUhYM1plWkZudDg0OFY1azQ?oc=5" target="_blank">Новые рейсы, самолеты и инвесторы: Air Astana рассказала, как справляется с вызовами - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 29.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Новые рейсы, самолеты и инвесторы: Air Astana рассказала, как справляется с вызовами - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
     </div>
     
   </div>
@@ -197,7 +203,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-07';
+  document.getElementById('date-from').value = '2026-04-29';
   document.getElementById('date-to').value   = '2026-07-24';
   applyFilters();
 }
