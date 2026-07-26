@@ -60,7 +60,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 26.07.2026 14:38</div>
+  <div class="meta">1 источников · Обновлено: 26.07.2026 16:43</div>
 </div>
 
 <div class="stats">
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-26">
+      <input type="date" id="date-from" value="2026-06-09">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-26">
+      <input type="date" id="date-to" value="2026-06-09">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
     </div>
   </div>
@@ -107,15 +107,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-26" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQM1lXelVZOVBBMGZDaTNfMnlrYkk3bVIyYUk1MmF6VDRkejdlYmU0Z2VUOTZLb1pYZUEwUmtCc1RvZWRGRFVRRWFEQ1B4OEhzWEZfVW03N1FXblExdzVKRlZDVVZhVGIxb0NWTVJaNFdTcXQwOUdYV25kNGM3SnQ2bzdzalozUG05X1YzWjBQRkY3M0E3czhscktYM1ZvSUZLSlJ3SFI0RWlBVGRjUWNNcQ?oc=5" target="_blank">Самрук-Казына разместит однолетние облигации на $1 млрд на AIX - Русская служба The Moscow Times</a></div>
+    <div class="article" data-date="2026-06-09" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPNDlQMms0MWVlb2Z4bGdxX0hIdXJhREpPZlpSVGNPRDlvaWY2QktQSEJ6OGhQTHNZbWU3cFBEcllPMk1mSEhLS3dBODRkam1rYVEyYWZoWjByUFMyWnlaVTRkV0o4Y2tqQUVfTzEtZmsxeDRJR1ltV1NxblR3X0prUWNLbE1MYmVJVEVLNWc4RVlmaEZKaEhxY2hB?oc=5" target="_blank">КазМунайГаз: итоги за 1-й квартал 2026 года - Freedom Broker</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 26.06.2026 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 09.06.2026 07:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Самрук-Казына разместит однолетние облигации на $1 млрд на AIX - Русская служба The Moscow Times</div>
+      <div class="art-summary">КазМунайГаз: итоги за 1-й квартал 2026 года - Freedom Broker</div>
     </div>
     
   </div>
@@ -179,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-26';
-  document.getElementById('date-to').value   = '2026-06-26';
+  document.getElementById('date-from').value = '2026-06-09';
+  document.getElementById('date-to').value   = '2026-06-09';
   applyFilters();
 }
 
