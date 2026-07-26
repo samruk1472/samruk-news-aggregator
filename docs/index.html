@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 26.07.2026 06:31</div>
+  <div class="meta">1 источников · Обновлено: 26.07.2026 09:08</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-24">
+      <input type="date" id="date-from" value="2026-07-26">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-24">
+      <input type="date" id="date-to" value="2026-07-26">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -104,23 +104,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   
 
   
-
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-24" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxObkNqZW5MaUNLaV9VTWRCcXRDZ0RfZ0cwRkxlbUczczJmb3hBakhxUTFEcHoxeVpFTFp5NDFYUnBMalM5TjNoRVdCOXhla25TN3ZWREVxd3QtVUVzc1pXVDY4R0JPWVZweUpoZzBzTFFldndyelBSNkFrYWcwRmdQLTNPSG8xWjZqWlR4V1IwUWhSc2pDSXowRw?oc=5" target="_blank">«КазМунайГаз» заплатил государству дивиденды на 350 млрд тенге - Ulysmedia.kz</a></div>
+    <div class="article" data-date="2026-07-26" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQbERsMW41OF9tZlBJX05PZXFaQWhOTFpOLXVLcUx6a1hxTEpia3VXYUNIcWNXVXF1djhQY2tBQWJJNlFId0tfQUExY29GQ1l2Tm9CT1VGY3dUR1ZxU3NpMENmWHp4WnhQaUxmdlBnQlpFcHg3b3BnWUphbk5hdEF4b092NmQ?oc=5" target="_blank">Президент назначил послов, КТЖ и вузы сменили глав - airpres.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 24.06.2026 07:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 26.07.2026 05:33</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» заплатил государству дивиденды на 350 млрд тенге - Ulysmedia.kz</div>
+      <div class="art-summary">Президент назначил послов, КТЖ и вузы сменили глав - airpres.kz</div>
     </div>
     
   </div>
+  
+
   
 </div>
 
@@ -179,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-24';
-  document.getElementById('date-to').value   = '2026-06-24';
+  document.getElementById('date-from').value = '2026-07-26';
+  document.getElementById('date-to').value   = '2026-07-26';
   applyFilters();
 }
 
