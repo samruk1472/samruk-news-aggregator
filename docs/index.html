@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 27.07.2026 15:43</div>
+  <div class="meta">3 источников · Обновлено: 27.07.2026 17:27</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-27">
+      <input type="date" id="date-from" value="2026-02-10">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-27">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,6 +86,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
@@ -105,17 +107,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
     <div class="article" data-date="2026-07-27" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWTd1TTFNeExPZVRadXB5THl3UUx6ekdUSUR6SmgzMjRVTUFvU2xmd24xT244ZnM4UkZjOWo2VFBwMGV6QS1WYmVCSXB2Uk1uRFVRTEloRFpzSlFJbThkWmpNSEkweWd6VG9SUnpnd3kzbzFpUW5abDVUbmlGZjE3SmRSUHBQWlk0R1ZvanN4Q1doaTBhaUpsRjhLb2hWZmZBcEZ6Vk9aOUk3YmhUMUVvcW1xc0VXT0VuZWFR?oc=5" target="_blank">Бутадиен в долг: структура «Самрук-Казына» займёт 543,5 млн юаней на строительство завода - paddock.pro</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-27/svvo-grandy-mirovoi-dota-2-pribyli-v-astanu-na-igry-budushhego-2026/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-grandy-mirovoi-dota-2-pribyli-v-astanu-na-igry-budushhego-2026" target="_blank">Гранды мировой Dota 2 прибыли в Астану на &amp;#171;Игры Будущего-2026&amp;#187;</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 27.07.2026 13:03</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 27.07.2026 16:08</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Бутадиен в долг: структура «Самрук-Казына» займёт 543,5 млн юаней на строительство завода - paddock.pro</div>
+      <div class="art-summary">Гранды мировой Dota 2 прибыли в Астану на &amp;#171;Игры Будущего-2026&amp;#187;</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-07" data-co="Казахтелеком" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQQXBaY3NBRXdRSzVDdVk3eExVVE4wMEtLNXpmWGNRbWlCa29zQ2JmZVhHT3JHXzN3OG5tb1BKSFN5Z2VUb0NzUWpiUm1fWWZZX0pBSmE5Z0VjVGNCQ1BFcHhYb2FPeE5mbXNJay0ydEoxZjZCNEF4eTZJMWFlSVRlMm1uS0VlQUxfX182cEI4b2lvdTNLYVpwVEFrT29QQjJpck5Zb0hWTExTcXBXbEVWcGVtYnk5UQ?oc=5" target="_blank">Казахтелеком поддержал крупнейший киберспортивный турнир Центральной Азии - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 07.07.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Казахтелеком поддержал крупнейший киберспортивный турнир Центральной Азии - Kapital.kz</div>
     </div>
     
   </div>
@@ -123,17 +136,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
     <div class="article" data-date="2026-07-27" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQRnN3c3F4WnVTM0trb21OTFFrYVhnZ2hBc3RSank4Qkg0UldoYk9SVGFqY3BFOGFMNlBmNWx4Q3VjQmkxTDI2QUdvQzREdG5kZ2xoQmNKelBheUZhUUl6QUpPUkJQMnh6OWRrSFd5NE1VUFIxamFWUno5cmZ1M1NRcXZaVHFjeW83eDExUjRqaGg1M2VMU3VTeDdST3ZCRHV4Y0dBVmxXWVBzVWpEZ1HSAbIBQVVfeXFMTm9hYWphZWpyNE5WNHRPcjhwLWJVR0JEVTJORHYyQ3hpOU9qakdjWFQwVmFKSGFwVHdOWklBWnFUVGhQRE5QcXd0X0JBYms2SVVadUFfajJ6Z1VsSl9nazBmWTlSTHdETXVrdnc1SzllYkxCdzk1S0p2aXExOWcwVTc2SlBQeGZoMkhMTXpyZkVZQzY2M1dKNGVHT2huZ2UxWE5yNldGcXhPLXFJSWRYU0Q2Zw?oc=5" target="_blank">Air Astana, SCAT или FlyArystan: где дешевле перевозить домашних животных - Finratings</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOb2tkTlY0QndtYlZURTBSVWVJQXVDeVVZdkItWXBUYmF6Qjd0bENaSGdrU1d6NFdsZFhCN3BXcElYWVdjNGNVT09NOExTcEM4TnVWSWFjV3gzaE4wVDNhQnJVUnZfY1lQTGtZOEdjRHhZZzNPUFh1Smh6ZmtsclBfcUFjVEptWEtzWHo5dTFCZzFUUGQ5T1dUaHNqMExKcThTVVdRaF9R?oc=5" target="_blank">Air Astana первой в Казахстане получила сертификат DHL GoGreen Plus - Вечерний Алматы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 27.07.2026 14:43</span>
+        <span class="date">📅 27.07.2026 12:27</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana, SCAT или FlyArystan: где дешевле перевозить домашних животных - Finratings</div>
+      <div class="art-summary">Air Astana первой в Казахстане получила сертификат DHL GoGreen Plus - Вечерний Алматы</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-10" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPVGIyWGUtM1d1ejMzUmpmMzFHVTRFMU9Yenc0OWlvSUdoU1RfQUN6b0JLdWIxX2I1NV9tNHRNdkQ4TnpBNHZ1STg0LTRTS0NLVHNGYlVKRjV0aXhmU0JocXRVeHlWWXhNUlBKZ2V6WTVLM082T0FjeVZWQzNIQlotZkk5V1Q3eW5oUGpsZEYteU13YklYOXFoOE9kQTdaaElDTjdPWnRUWFVkLXNmdFMwRjBB0gG3AUFVX3lxTE1PT1FWZmxwdVI4SEZ0SXVUVFdMbXM0NUYzdnVSM1FaVGw2QVNkNFBCN1pjdkVJdkNzNGZLb1owVzFzUUppcFZiR2wtakVGdnp5eGhpZ0lMdTRvOERHY1g5TF9KN3dQSE9yS0NDOGM0NVBQdXFNMWxwUVNZbXp6VFRXd3Q3TGZENFg3VEFOMHpveDBjMVNRVzZYclZnWU5iM2pjVFhpSXBIazRSSFNYMFNCUC0yQjVjRQ?oc=5" target="_blank">«Казахтелеком» построит мощнейший ЦОД на 50 МВт в 2027 году - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 10.02.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» построит мощнейший ЦОД на 50 МВт в 2027 году - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
     </div>
     
   </div>
@@ -197,7 +221,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-27';
+  document.getElementById('date-from').value = '2026-02-10';
   document.getElementById('date-to').value   = '2026-07-27';
   applyFilters();
 }
