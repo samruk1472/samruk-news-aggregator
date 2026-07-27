@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 27.07.2026 06:57</div>
+  <div class="meta">4 источников · Обновлено: 27.07.2026 10:35</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-27">
+      <input type="date" id="date-from" value="2026-06-16">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-27">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -102,25 +108,79 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-07-27" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="http://profit.kz/news/74319/Astanada-aerotaksid-demonstraciyali-shui-tt/" target="_blank">Астанада аэротаксидің демонстрациялық ұшуы өтті</a></div>
+    <div class="article" data-date="2026-07-27" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-27/zhnb-kazahstanu-predlozhili-poluchit-narastit-doli-v-tengize-i-kashagane-za-schet-ekoshtrafa/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kazahstanu-predlozhili-poluchit-narastit-doli-v-tengize-i-kashagane-za-schet-ekoshtrafa" target="_blank">Казахстану предложили обменять многотриллионный штраф с NCOC на акции Exxon и Shell</a></div>
       <div class="art-meta">
-        <span class="src">📰 Profit.kz</span>
-        <span class="date">📅 27.07.2026 05:06</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 27.07.2026 07:05</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Астанада аэротаксидің демонстрациялық ұшуы өтті</div>
+      <div class="art-summary">Казахстану предложили обменять многотриллионный штраф с NCOC на акции Exxon и Shell</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-27" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQVlg2SWtjZkY5b1Fma0QzQzBWaWh0eFZndjA3a0dPbm9FZUhMODZIUHkzR2xlS0JkRW0zN0hvSV9QNVJOdjVlWlRVZHpJbUVMMm9oZUZkV1YyQUlkR0J3MHA0aUNuUUpscFJMN3l4cEUwdWZZbGQ3WW9YbXJBMmo2QXUxTktkSkQ3M01nQjI4a29YYVp0Vm5zNFBpTF9pQTRrOUFhVER0RlE1azZCa1E?oc=5" target="_blank">Бутадиен в долг: структура «Самрук-Казына» займёт 543,5 млн юаней на строительство завода - Orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 27.07.2026 10:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Бутадиен в долг: структура «Самрук-Казына» займёт 543,5 млн юаней на строительство завода - Orda.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxOcUVRVTY5T3NCRG9zNUxJY0gwR2R6cVpNb3NtaC12Q3A1ZWJSNE5BWUhwVlptd2RfOTF4eHFCanpVUUdvSUJMQUEyNHVyRWhMeUhaek1BSVlTbF9XMEhacFpjNF9QOFBleU9LQzBKSE5ISnlVV3FfX1d3ZUZPUU14WllxREZzaWZ1LWRZcHN6T2hqeTDSAZgBQVVfeXFMTUw4MXZ0WFhadFBKTWlPWlcwRjFwelpyTVRxNC1WdmllbFdkZmVfbGRjS3NrdE5RT3NoVHZMWF91U3otRXcwQ2xSb3FpREpkQVNFdkRSbTZEN0lIYXg0Sk5sZEozRi1sRWJrUWtjcHJybnNZQWtTMWtQMG1qUF91VGFPRXlLRlZQNi1tMEN3QlV3NGo1ZHdTem0?oc=5" target="_blank">Смогут ли казахстанцы купить долю в КТЖ и когда - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.06.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Смогут ли казахстанцы купить долю в КТЖ и когда - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-07-27" data-co="Самрук-Энерго" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-27/svan-v-kazahstane-zakonchili-menshe-poloviny-ot-zaplanirovannogo-za-384-mlrd-remonta-tec/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-v-kazahstane-zakonchili-menshe-poloviny-ot-zaplanirovannogo-za-384-mlrd-remonta-tec" target="_blank">В Казахстане отремонтируют ТЭЦ за 384 млрд</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 27.07.2026 08:44</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">В Казахстане отремонтируют ТЭЦ за 384 млрд</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-27" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://vlast.kz/novosti/70243-ktk-vozobnovil-priem-nefti-minenergo.html" target="_blank">КТК возобновил прием нефти – Минэнерго</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 27.07.2026 15:25</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КТК возобновил прием нефти – Минэнерго</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,7 +239,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-27';
+  document.getElementById('date-from').value = '2026-06-16';
   document.getElementById('date-to').value   = '2026-07-27';
   applyFilters();
 }
