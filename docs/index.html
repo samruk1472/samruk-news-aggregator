@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 28.07.2026 06:21</div>
+  <div class="meta">4 источников · Обновлено: 28.07.2026 09:32</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-02">
+      <input type="date" id="date-from" value="2025-11-11">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-28">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,7 +87,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -107,33 +111,71 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-07-28" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE16T2RSRUlmd0Fjc3BWWDR1ekoyM1BWZmpxamYxdExIUE50cEhJMXJaNE16RXhQckFTUWlzellCUWF5U3NINjNhU3RGUEVZdUxIeTl3OTY0YlFZNHRlY0x2WTRJMEhkRFRFeVlYR3lOek9vNmhIZDNieEtQZWl5dw?oc=5" target="_blank">ДОЧКА» SAMRUK-KAZYNA ONDEU ЗАЙМЕТ $1,2 МЛРД НА СТ - THE TENGE</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 28.07.2026 02:11</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">ДОЧКА» SAMRUK-KAZYNA ONDEU ЗАЙМЕТ $1,2 МЛРД НА СТ - THE TENGE</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQTG1rR2xrYlVhOVZlaF9ua2RkdnY2aVNXR18xdVAwRzU0U3A5eXZjSy1YbW5uelJ4N1NkS0xPNzFNaE52LUo4Zm13Q1oyTko1c0xTdlVBTHRRWnM4QjRVRGpfcC1XdUYyVkNUM3RwTk5rMTZBVEdPQ2RoOHB5OXB5b2U0bC13NVJPekxRVEtDTjIxWVMxTzF3TFgxTUJoYVlvMVdpOXIwSE12LVVnaExGOFhzR3FhMjNjNWU2cTlB?oc=5" target="_blank">«Казмунайгаз»: вопрос с выкупом активов «Лукойла» должны решать власти Казахстана - Финансы Mail</a></div>
+    <div class="article" data-date="2025-12-09" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxOUnc4UTRUbENoX2hrMGozNUhGUDNvS0hoak1naVlSanJTS3EtOXZoRENVT05nYlV1cVA5ay1ubVpraU9QSTdJOE43VkFUU2NUVUJYMjNaX3ExaU5GRk1mb1dHZC1PNGxlSHA2Z28xSGx3RjZhLUJCRFRLRXVEWVZTQmFoYlVzY0Zubk9lbTFYRS1HOUF0OWxRMVJwNFotYjlGRTFzODJnYzJNVnlyUFllZldma3A3SVVDeU1jTXdkT1NyYzNQUFdPOUlvcDE?oc=5" target="_blank">ВПУ-3 и не только. КТК и КазМунайГаз обсудили актуальные вопросы сотрудничества - Neftegaz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.04.2026 07:00</span>
+        <span class="date">📅 09.12.2025 10:02</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«Казмунайгаз»: вопрос с выкупом активов «Лукойла» должны решать власти Казахстана - Финансы Mail</div>
+      <div class="art-summary">ВПУ-3 и не только. КТК и КазМунайГаз обсудили актуальные вопросы сотрудничества - Neftegaz</div>
+    </div>
+    
+    <div class="article" data-date="2025-11-11" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOZV9jT1RHak9LNklueWppODNhZkpXTTFETFdwSU16MkxoZlFYcjY2YnppSVNqMnJ4T053RzktNW1laWhMLUVxQkd0eTBmNFBQaGRockNIZ3V0Mzg1cXRWSEhTcXRWZHhMR3U1NEZBbWtWMWRfbXRSbk10RVllQU81SGNSdWZaS3NJMFFXaERNTGhhd9IBlwFBVV95cUxQOUU3aWVwNVQybFFBdXBoRVk5bUpyQUd4UW4yc0xlR0VjQi1tZUVlb1RKOFctdFNhdGU4Z0sxN2FhczQ3U3hqSVRwbUVPSkxkMV9fTVZyVnpkUTQxWmRtSDFpdHRpbjhodkFzWlgzcUdCZExrbzdkR0twVzlhbzVTYU9HbjlYanh1cUVuRktOUXlhUU1rWWhV?oc=5" target="_blank">Европейский НПЗ, который хотел купить «КазМунайГаз», находится на грани закрытия - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 11.11.2025 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Европейский НПЗ, который хотел купить «КазМунайГаз», находится на грани закрытия - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-28" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMHRpWktjZFM5Q2tXQzVKeFJhTUZMTnJmazUxeDlhV3FJQ3VYNUdMb05TSy1XanY4YWEtbzh1V3VmSmZlLWFqZHctMXFDcFBveXhzdk1MSlZ3Tm4wQlVFaGhSQl9uT2xHeUVoLV9hdnFueFhkZDZyUWZLd2k1Qm4yZW5iaUE1WHdmU21TcTVkVTBZWWVMbzRsSWplSFppMkxESUhuTnBXTUlSakY0MTlNWHdTOFB1QUh3UkVXdWsxTEs1S0h3Z3Y5SHBZblFUb050Mm1sRzZ3?oc=5" target="_blank">КТЖ организовало первую отправку казахстанских удобрений в Великобританию по ТМТМ - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 28.07.2026 09:12</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ организовало первую отправку казахстанских удобрений в Великобританию по ТМТМ - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-25" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNMGtRMjV4MWp0Y3RyalQyZnBJbWU1UXpVdUdtNmVoZkJpckVncE1hcFNiUzc5cmZ1cE9sS3hxekptbzBlNExsRkJOaWxGNnV0QVBwQzJBdnpGeTFHV0ZYOHpzdjdneGhrNUU4bzZPNTEzX1p0b05rQ2ozUjdSd2VUb2FuTmdfT3Mya3oyTVFKSS13Y1RhVUZBREpVeF9PcTJudWp4SGtYNFgzMVhqX0FRZGRYdEZONllpWFp0TnY4MFdNdkJWbERENzNQYkNtUl9SS21yTkw1VWdpY0FXMkHSAeMBQVVfeXFMTi1MbF9hZHNIckd3VGxiWXIwcmZ6ZmFFU2xuZGNHRTlRY2gwN04tZGo2c0dYX0ZtNW5iQzlCQ0kzUkxwMm5COWdyVy1GNXZqcFFwdF84WU85MHM0aTNyN2prQ0xrQlJKUUhYSG1oX25FaE1ybjd5bDZEcDhtQ0VUNkdtOERsNFJnZGViWU55Yk9mWWJjZVhBdHVVa3g1MGN3ZVE0TkItYVdKSzUtV0lDdV9zU29lcXFESUFvSmpBY09heHpDb0UwZzVpcVVQSE13cWp0Y1F2bVY3bEtZVkYxbFdLQTg?oc=5" target="_blank">Руководители АО &#34;Казахтелеком&#34; провели выездную гембу на объектах телекоммуникационной инфраструктуры - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 25.07.2026 07:47</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Руководители АО &#34;Казахтелеком&#34; провели выездную гембу на объектах телекоммуникационной инфраструктуры - Новости Zakon.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-28" data-co="Самрук-Энерго" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-28/zhnb-glava-minenergo-na-fone-deficzita-vnov-poobeshhal-dobitsya-proficzita-elektroenergii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-glava-minenergo-na-fone-deficzita-vnov-poobeshhal-dobitsya-proficzita-elektroenergii" target="_blank">Казахстан вложит 6,2 трлн тенге, чтобы забыть о дефиците электричества</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 28.07.2026 06:48</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Казахстан вложит 6,2 трлн тенге, чтобы забыть о дефиците электричества</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -192,7 +234,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-02';
+  document.getElementById('date-from').value = '2025-11-11';
   document.getElementById('date-to').value   = '2026-07-28';
   applyFilters();
 }
