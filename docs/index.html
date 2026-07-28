@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 27.07.2026 17:27</div>
+  <div class="meta">3 источников · Обновлено: 28.07.2026 04:11</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-10">
+      <input type="date" id="date-from" value="2026-04-20">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-27">
+      <input type="date" id="date-to" value="2026-07-14">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -87,9 +87,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -106,58 +106,53 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-07-27" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-27/svvo-grandy-mirovoi-dota-2-pribyli-v-astanu-na-igry-budushhego-2026/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-grandy-mirovoi-dota-2-pribyli-v-astanu-na-igry-budushhego-2026" target="_blank">Гранды мировой Dota 2 прибыли в Астану на &amp;#171;Игры Будущего-2026&amp;#187;</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 27.07.2026 16:08</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Гранды мировой Dota 2 прибыли в Астану на &amp;#171;Игры Будущего-2026&amp;#187;</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-07" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQQXBaY3NBRXdRSzVDdVk3eExVVE4wMEtLNXpmWGNRbWlCa29zQ2JmZVhHT3JHXzN3OG5tb1BKSFN5Z2VUb0NzUWpiUm1fWWZZX0pBSmE5Z0VjVGNCQ1BFcHhYb2FPeE5mbXNJay0ydEoxZjZCNEF4eTZJMWFlSVRlMm1uS0VlQUxfX182cEI4b2lvdTNLYVpwVEFrT29QQjJpck5Zb0hWTExTcXBXbEVWcGVtYnk5UQ?oc=5" target="_blank">Казахтелеком поддержал крупнейший киберспортивный турнир Центральной Азии - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 07.07.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком поддержал крупнейший киберспортивный турнир Центральной Азии - Kapital.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-07-27" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOb2tkTlY0QndtYlZURTBSVWVJQXVDeVVZdkItWXBUYmF6Qjd0bENaSGdrU1d6NFdsZFhCN3BXcElYWVdjNGNVT09NOExTcEM4TnVWSWFjV3gzaE4wVDNhQnJVUnZfY1lQTGtZOEdjRHhZZzNPUFh1Smh6ZmtsclBfcUFjVEptWEtzWHo5dTFCZzFUUGQ5T1dUaHNqMExKcThTVVdRaF9R?oc=5" target="_blank">Air Astana первой в Казахстане получила сертификат DHL GoGreen Plus - Вечерний Алматы</a></div>
+    <div class="article" data-date="2026-05-22" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNRkZaT25fTGh6Nm1iVXY2NFpHY19pOGcySFRJc010OVhwUE5MWlhGQ0lnOGlNcENTWTZWWHg0Q28zQWdYRUpTVGQ3VEZCd1ZUd2xla0FMR2JJQlNFWl8yMU5kV2xILU5UTm5uYlhxZWpadDViSDlyclV6Y0YyUnhlMjRDNG03NFRNak91ZURLT2ZsTmxqZ2lBWlJhNTVWcGVUckJ5SWlFUEEwaXR0S01aTXpnbnhTLWtWaVUzQUc4NjdhN1BBdTZyQmx3?oc=5" target="_blank">КазМунайГаз внедряет предиктивную аналитику с использованием ИИ на своих нефтеперерабатывающих заводах - Orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 22.05.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз внедряет предиктивную аналитику с использованием ИИ на своих нефтеперерабатывающих заводах - Orda.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-20" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOaFN0R25aclRtTGdodEFWUHE4X0ZGQlVia0w3Ym1wczZkeW0yc3NyZFdRUnRSUFBUZkhKc0pGRHVsOVI0b1h1YkZ5cV9PU3lsb0Z1Sng0S1pOdW9LUktfTnhGa0s1R2lVQkZOUVVpV201ZmUzbUVEdk0zQ3lqcWFURDZfRXdVLVh6ZEMwYWN5VVU1VkZ0MDFvMGwxS0RKWlNnMmlWNW5tQdIBrAFBVV95cUxPR3hpTzVLM2REdFNPVnJVeklHVFA1dkE5MU9tQnFaeldYWlJDbHVUSE04NTUtRW80U2taOWVTQU9MZk14WTRkVE1tSHRkLXdaTTVnYjROeERGZkVMeDU1emdYYXR2bUdxV0J5Wl9FcW9pMmlwRG1keHlWSzg2Qm5VZjEyTDluMUNYT0M4c3dDN0t6NXYtT2V0ZzEtYldkQzBzbUFsX2pWSXVVdHFa?oc=5" target="_blank">КазМунайГаз готовит масштабную геологоразведку до 2030 года - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 20.04.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз готовит масштабную геологоразведку до 2030 года - Новости Zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-21" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxOLW1UazhHZkRvWElyQlRhS2RXMWRLamVrZ3gwaVhEeFYzTXU5UjRPaHNYMm94S05HTXRaV0w4OW1WbzVOOGJtV20tOHlfeFFIM3ZRUmpOdDFzVHdEazl4U003bEtRT3BDUENrMDBBWkRISkJnQlcyUm0yMlNQZEwyRVV1R21fcHVrbmIxRmJGVklLalRpdEt6UGJvYzFsVHZKUk5QTkxzNGMyeENGSmNNV1ZOTHBtN3lvbWxoa1dMTHVsdEhOODI0YkJVeVJodWNHQVVrdGJpbml5MDZm0gHbAUFVX3lxTE1JMU9lZU1mYnpDUHVIZXp5NFhMXzZNQVI5eXFtbzJHdzNyZzNaTE95bW9wZW5IcmY1R3ZaNC1ubHF0dDFEV1BMOG5rRUpUYmFWcFcyVlI2X1BhN0lVbXlURy1VOXJxOVh3NFQwcE9LYU90azNqbTVaRlRQRmhCQ3JSNFBBUm1rNmIyN1dINU1NRGlZalhmNWpISjdPTm0zcGczVmNDXzJwSE5tY05sOVBSNEpuTDA1bHQ2Vi1ZYTBGQmFjeHhjaTl4LTlIS0ZFelBad1pCaTVLRnNEUQ?oc=5" target="_blank">Air Astana ввела второй тренажёр для Airbus с двойной сертификацией EASA и Казахстана - Overclockers.ru</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 27.07.2026 12:27</span>
+        <span class="date">📅 21.04.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana первой в Казахстане получила сертификат DHL GoGreen Plus - Вечерний Алматы</div>
+      <div class="art-summary">Air Astana ввела второй тренажёр для Airbus с двойной сертификацией EASA и Казахстана - Overclockers.ru</div>
     </div>
     
-    <div class="article" data-date="2026-02-10" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPVGIyWGUtM1d1ejMzUmpmMzFHVTRFMU9Yenc0OWlvSUdoU1RfQUN6b0JLdWIxX2I1NV9tNHRNdkQ4TnpBNHZ1STg0LTRTS0NLVHNGYlVKRjV0aXhmU0JocXRVeHlWWXhNUlBKZ2V6WTVLM082T0FjeVZWQzNIQlotZkk5V1Q3eW5oUGpsZEYteU13YklYOXFoOE9kQTdaaElDTjdPWnRUWFVkLXNmdFMwRjBB0gG3AUFVX3lxTE1PT1FWZmxwdVI4SEZ0SXVUVFdMbXM0NUYzdnVSM1FaVGw2QVNkNFBCN1pjdkVJdkNzNGZLb1owVzFzUUppcFZiR2wtakVGdnp5eGhpZ0lMdTRvOERHY1g5TF9KN3dQSE9yS0NDOGM0NVBQdXFNMWxwUVNZbXp6VFRXd3Q3TGZENFg3VEFOMHpveDBjMVNRVzZYclZnWU5iM2pjVFhpSXBIazRSSFNYMFNCUC0yQjVjRQ?oc=5" target="_blank">«Казахтелеком» построит мощнейший ЦОД на 50 МВт в 2027 году - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+    <div class="article" data-date="2026-07-14" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZWlKWHh1QXV6S3YtR0puQVFDMDN3VVpWUU9DN3BCekM5eHFPYWw1UDhJSkpZeXhURVl5dURySUVoNlozcnFTeEIwLUNhRkxfYzFBWkJnR3VrZkswamxmZnpnajY5SXUzNnhFdmhMazhTNWdSaUJiaTVwbmJxd2UtTVVkbDdzd2FCUEE00gHLAUFVX3lxTE93Rzh0dWwxSzByMFplNTNkUjc4LU94dXdOeDBJQUQ2OExId3hsOWRMcDY2bmpDMi0xcUI2ZkZka2gwN1J1bF9ob3B6aXhNY3ozaE91enFiaE1FcHlucGpHUXhHTWFoWWxmZzl5X3JNM0ktQzU1eHJWVk1ENm11bTV2ZnREcW96UUJValJmbFpKcjd1ekhSMjVaUXA2SjhLSGhRUVdhM3ZrLWl6N2ZTdTEzYUhVVFZxNTN3ZVhDYXc5VkJvZ1lWeWI1eEZ3?oc=5" target="_blank">«Слабая работа»: Бектенов раскритиковал КТЖ - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 10.02.2026 08:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 14.07.2026 06:42</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">«Казахтелеком» построит мощнейший ЦОД на 50 МВт в 2027 году - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+      <div class="art-summary">«Слабая работа»: Бектенов раскритиковал КТЖ - Kursiv Media</div>
     </div>
     
   </div>
@@ -221,8 +216,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-10';
-  document.getElementById('date-to').value   = '2026-07-27';
+  document.getElementById('date-from').value = '2026-04-20';
+  document.getElementById('date-to').value   = '2026-07-14';
   applyFilters();
 }
 
