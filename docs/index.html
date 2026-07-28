@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 28.07.2026 04:11</div>
+  <div class="meta">2 источников · Обновлено: 28.07.2026 06:21</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-20">
+      <input type="date" id="date-from" value="2026-04-02">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-14">
+      <input type="date" id="date-to" value="2026-07-28">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,11 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -109,50 +107,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-05-22" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNRkZaT25fTGh6Nm1iVXY2NFpHY19pOGcySFRJc010OVhwUE5MWlhGQ0lnOGlNcENTWTZWWHg0Q28zQWdYRUpTVGQ3VEZCd1ZUd2xla0FMR2JJQlNFWl8yMU5kV2xILU5UTm5uYlhxZWpadDViSDlyclV6Y0YyUnhlMjRDNG03NFRNak91ZURLT2ZsTmxqZ2lBWlJhNTVWcGVUckJ5SWlFUEEwaXR0S01aTXpnbnhTLWtWaVUzQUc4NjdhN1BBdTZyQmx3?oc=5" target="_blank">КазМунайГаз внедряет предиктивную аналитику с использованием ИИ на своих нефтеперерабатывающих заводах - Orda.kz</a></div>
+    <div class="article" data-date="2026-07-28" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE16T2RSRUlmd0Fjc3BWWDR1ekoyM1BWZmpxamYxdExIUE50cEhJMXJaNE16RXhQckFTUWlzellCUWF5U3NINjNhU3RGUEVZdUxIeTl3OTY0YlFZNHRlY0x2WTRJMEhkRFRFeVlYR3lOek9vNmhIZDNieEtQZWl5dw?oc=5" target="_blank">ДОЧКА» SAMRUK-KAZYNA ONDEU ЗАЙМЕТ $1,2 МЛРД НА СТ - THE TENGE</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.07.2026 02:11</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">ДОЧКА» SAMRUK-KAZYNA ONDEU ЗАЙМЕТ $1,2 МЛРД НА СТ - THE TENGE</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQTG1rR2xrYlVhOVZlaF9ua2RkdnY2aVNXR18xdVAwRzU0U3A5eXZjSy1YbW5uelJ4N1NkS0xPNzFNaE52LUo4Zm13Q1oyTko1c0xTdlVBTHRRWnM4QjRVRGpfcC1XdUYyVkNUM3RwTk5rMTZBVEdPQ2RoOHB5OXB5b2U0bC13NVJPekxRVEtDTjIxWVMxTzF3TFgxTUJoYVlvMVdpOXIwSE12LVVnaExGOFhzR3FhMjNjNWU2cTlB?oc=5" target="_blank">«Казмунайгаз»: вопрос с выкупом активов «Лукойла» должны решать власти Казахстана - Финансы Mail</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 22.05.2026 07:00</span>
+        <span class="date">📅 02.04.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КазМунайГаз внедряет предиктивную аналитику с использованием ИИ на своих нефтеперерабатывающих заводах - Orda.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-20" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOaFN0R25aclRtTGdodEFWUHE4X0ZGQlVia0w3Ym1wczZkeW0yc3NyZFdRUnRSUFBUZkhKc0pGRHVsOVI0b1h1YkZ5cV9PU3lsb0Z1Sng0S1pOdW9LUktfTnhGa0s1R2lVQkZOUVVpV201ZmUzbUVEdk0zQ3lqcWFURDZfRXdVLVh6ZEMwYWN5VVU1VkZ0MDFvMGwxS0RKWlNnMmlWNW5tQdIBrAFBVV95cUxPR3hpTzVLM2REdFNPVnJVeklHVFA1dkE5MU9tQnFaeldYWlJDbHVUSE04NTUtRW80U2taOWVTQU9MZk14WTRkVE1tSHRkLXdaTTVnYjROeERGZkVMeDU1emdYYXR2bUdxV0J5Wl9FcW9pMmlwRG1keHlWSzg2Qm5VZjEyTDluMUNYT0M4c3dDN0t6NXYtT2V0ZzEtYldkQzBzbUFsX2pWSXVVdHFa?oc=5" target="_blank">КазМунайГаз готовит масштабную геологоразведку до 2030 года - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.04.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз готовит масштабную геологоразведку до 2030 года - Новости Zakon.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-21" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxOLW1UazhHZkRvWElyQlRhS2RXMWRLamVrZ3gwaVhEeFYzTXU5UjRPaHNYMm94S05HTXRaV0w4OW1WbzVOOGJtV20tOHlfeFFIM3ZRUmpOdDFzVHdEazl4U003bEtRT3BDUENrMDBBWkRISkJnQlcyUm0yMlNQZEwyRVV1R21fcHVrbmIxRmJGVklLalRpdEt6UGJvYzFsVHZKUk5QTkxzNGMyeENGSmNNV1ZOTHBtN3lvbWxoa1dMTHVsdEhOODI0YkJVeVJodWNHQVVrdGJpbml5MDZm0gHbAUFVX3lxTE1JMU9lZU1mYnpDUHVIZXp5NFhMXzZNQVI5eXFtbzJHdzNyZzNaTE95bW9wZW5IcmY1R3ZaNC1ubHF0dDFEV1BMOG5rRUpUYmFWcFcyVlI2X1BhN0lVbXlURy1VOXJxOVh3NFQwcE9LYU90azNqbTVaRlRQRmhCQ3JSNFBBUm1rNmIyN1dINU1NRGlZalhmNWpISjdPTm0zcGczVmNDXzJwSE5tY05sOVBSNEpuTDA1bHQ2Vi1ZYTBGQmFjeHhjaTl4LTlIS0ZFelBad1pCaTVLRnNEUQ?oc=5" target="_blank">Air Astana ввела второй тренажёр для Airbus с двойной сертификацией EASA и Казахстана - Overclockers.ru</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 21.04.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana ввела второй тренажёр для Airbus с двойной сертификацией EASA и Казахстана - Overclockers.ru</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-14" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZWlKWHh1QXV6S3YtR0puQVFDMDN3VVpWUU9DN3BCekM5eHFPYWw1UDhJSkpZeXhURVl5dURySUVoNlozcnFTeEIwLUNhRkxfYzFBWkJnR3VrZkswamxmZnpnajY5SXUzNnhFdmhMazhTNWdSaUJiaTVwbmJxd2UtTVVkbDdzd2FCUEE00gHLAUFVX3lxTE93Rzh0dWwxSzByMFplNTNkUjc4LU94dXdOeDBJQUQ2OExId3hsOWRMcDY2bmpDMi0xcUI2ZkZka2gwN1J1bF9ob3B6aXhNY3ozaE91enFiaE1FcHlucGpHUXhHTWFoWWxmZzl5X3JNM0ktQzU1eHJWVk1ENm11bTV2ZnREcW96UUJValJmbFpKcjd1ekhSMjVaUXA2SjhLSGhRUVdhM3ZrLWl6N2ZTdTEzYUhVVFZxNTN3ZVhDYXc5VkJvZ1lWeWI1eEZ3?oc=5" target="_blank">«Слабая работа»: Бектенов раскритиковал КТЖ - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 14.07.2026 06:42</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">«Слабая работа»: Бектенов раскритиковал КТЖ - Kursiv Media</div>
+      <div class="art-summary">«Казмунайгаз»: вопрос с выкупом активов «Лукойла» должны решать власти Казахстана - Финансы Mail</div>
     </div>
     
   </div>
@@ -216,8 +192,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-20';
-  document.getElementById('date-to').value   = '2026-07-14';
+  document.getElementById('date-from').value = '2026-04-02';
+  document.getElementById('date-to').value   = '2026-07-28';
   applyFilters();
 }
 
