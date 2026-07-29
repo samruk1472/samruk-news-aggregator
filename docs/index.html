@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 28.07.2026 17:16</div>
+  <div class="meta">2 источников · Обновлено: 29.07.2026 04:13</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-28">
+      <input type="date" id="date-from" value="2026-02-20">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-28">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -107,20 +109,47 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-28" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxNeTU3NDRsRUJ5aUZOS3dSZ3VVVTY2ZFN1V3Z0T3luZGlxQ2ZFVDFfWVk0dUd3c2xLaTV5U3hGTlFSckhuVmVYUGR4dWc4VnFmUlVFQ2FLbjI2ZFMzeFBjNTZxejZ2djZrRHY3OEpqZmx5SWQxVEdiWVp4Y1k5R0pzMnZNZUF3d0pjWnFpR0tOaUVDLUtpUGw0UDkzTE9NbGZocG5Hc2pidE1zUXU3eGsyS2g4Y1I0cTdUVmg4UllLYTA0WER1SkNUTnBic1I2UdIBzAFBVV95cUxOazV1YTVYQkNDSTl0LVZqV0tXS1E5SE13RTNUczlDRGRaZ0ktaERRVnVuckVCSVBDZ1lPZHFkRTJObHpwNVpwNWxBQmh2dThqOEdKU1ZLYjdiNDJoMm5CUTNVT2wyQUZRNnE0b2FMcTJ2c083SDhMUjdNem5hMUtFOGxMd0xCdktMTjJ6aVZRWlVtR1J0VW10cHhhblhnOEUzX2NGdmFBYzFJd3ZxNUZObFdsSTNvRFJYM2RwUjlnb0Y0UGhpeG85NW1iQlY?oc=5" target="_blank">Из Экибастуза в Великобританию: КТЖ открыло новый экспортный маршрут для казахстанских удобрений - SKNEWS.kz</a></div>
+    <div class="article" data-date="2026-02-20" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNRlZtemN2cXJNZEhsaFRKMDRBVUl0anVnZkpDSS1OM0JlMm90bDZOZGFKczdOck9IemZrUGtmOHhWMkFqMEZxd3dNY3JjZmZDQm4xRHJuM3FJenl6UUFqSzREN2FabmFXX2dUdWdHYkZBVnpPemVIYTlJWTJJZ3BoN0VGdGc4bGkzMUVMLUJuZkJwYVJWMWpnWWhUM1Qwb19XdlZzNnUwZU9VZWx5RkNBT191QTI4TzByWW9aSHVuTzFTeXQwRnc?oc=5" target="_blank">Казатомпром договорился о поставках урана в Индию: стоимость сделки превысила 50% активов компании - Informburo.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 28.07.2026 13:26</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 20.02.2026 08:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Из Экибастуза в Великобританию: КТЖ открыло новый экспортный маршрут для казахстанских удобрений - SKNEWS.kz</div>
+      <div class="art-summary">Казатомпром договорился о поставках урана в Индию: стоимость сделки превысила 50% активов компании - Informburo.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-07-28" data-co="Самрук-Энерго" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE5jcmNXOFpqS3FWZzQyczVSdWlCUU04MjU0VWdPUm1fVEtxaDEwUEp4eDlhLWQwVGhYdFF3bS1EVjAwNmNQcms2MG5tZTl1V08xbXFKX1c0UHVXTV9iWGc?oc=5" target="_blank">Samruk-Energy в пять раз увеличила объем оффтейк-контрактов в первом полугодии 2026 года - Trend - Новости Азербайджана. Турция, Иран, Центральна Азия</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.07.2026 21:24</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Samruk-Energy в пять раз увеличила объем оффтейк-контрактов в первом полугодии 2026 года - Trend - Новости Азербайджана. Турция, Иран, Центральна Азия</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-26" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQQzBBR2I2bklQY1dGdGt2dEM3d01lVVJOODNZNy1xOVRfTS1LdEF5cWpfdFpyb0VyMEYwSlhjUWUtZUNvQm5TZ3pDalZjOE84LU1XUlZfNERZRlk4NFNNQVVZNnhmaW1QM1lhSUtRNVNpaHNKNzJuY1JudVJrVUpvY29XZVJLSG8?oc=5" target="_blank">Казатомпром укрепляет кадровое сотрудничество с Румынией - zhaik.su</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 26.06.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром укрепляет кадровое сотрудничество с Румынией - zhaik.su</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,7 +208,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-28';
+  document.getElementById('date-from').value = '2026-02-20';
   document.getElementById('date-to').value   = '2026-07-28';
   applyFilters();
 }
