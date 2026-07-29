@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 29.07.2026 06:25</div>
+  <div class="meta">2 источников · Обновлено: 29.07.2026 09:34</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-29">
+      <input type="date" id="date-from" value="2026-06-17">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-29">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -102,25 +104,57 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-29" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOQ25pSjJRdjRCWnBscWMzeEV6ME42UGJaOUEwa0tKVnk0TEpVT2t0YVdpbDVnZjl5bDhWeE5mdHBtTnVoT1k3THhDVWtKQzk1WG9UY2U0X0pKR0lBVGQ0Qkt1dlp1TXBMTmdMNHRRblY4WDJaWkVuTkFsUkZ0UmFSVmJTUWFBb0NJd3N0bFUtSy1PbzRGbE5ybUN4R3DSAaIBQVVfeXFMTU9nQ2ZqTDRNdVJpSG56LVRnQkpOWEhZdUhaYkoxdE00NkFVOFRBVWZpYUJoeFhUbEkwNkRmN3BKQzZXaG1ibm5MaXlWUUhmX2JueHRoSlRhcEctOUdiWmktMnRZbm13TFRkRzBmWW54Y0hnMU9qOWV1WUJOYmUxYnMtRC1IYzFSZ1hlLVduZEszV25BRXZHblExVDV2TFpsaHd3?oc=5" target="_blank">&#34;КазМунайГаз&#34;: НПЗ в Румынии принес $87 млн чистой прибыли за полгода - Report.az</a></div>
+    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMFQ4RlR3QTkxd1JUWnhSM05kNE1GQVIxemhrbllUYWpVSHBiTU1sLUFMYUdDcjF0VXBoalI3OHpmQlhlZU1WWk1KVnhQUkw4aGNvWmI2VzBZcDA2Ynlaal84c2dfbTROMXlUOTRpX2pFTThKbjI0ZEg5YUM4UUFrMjdmWFhiRld0NWFwTXNKVG9xUVJkQXJlOTFHektSdnVsOGtucXpMUDTSAacBQVVfeXFMUDlpSm1Ec3hGT0EySkdYTWZZZGZFV1FZRjFrUzZBSDZQVFMyR295ZTVBQzFOQW1peWQwcUJyVWl2SHJCWXpUQ2xSLUFJUEV0bTd3T2RiMUJvMkpvbGlEU3RtQV9pQmh3TjdjZ3I0dzRKZE9nSkpwNzlINXZONC12U0w1enJ2N3BhdE9WcFlHYTR2Qzg1dnBpR3VNTWJKOGlqc1g0YTRmTkU?oc=5" target="_blank">В КТЖ не ждут потери транзита из-за новой железной дороги Китая и Кыргызстана - BES.media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 29.07.2026 05:14</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.06.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34;: НПЗ в Румынии принес $87 млн чистой прибыли за полгода - Report.az</div>
+      <div class="art-summary">В КТЖ не ждут потери транзита из-за новой железной дороги Китая и Кыргызстана - BES.media</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-29" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNYV9Xak1TdHFfeHVGS0dleEJjeU1vOWwzTkVaQ0MydllCcHNsUnY3WXZtMVNRQUM5X2J5aHM1ejZtWExQVzVLMW5VX0Y0UnBkWHhmb0RDMVY4bzJOSWQ5ejVHeU1BUzZsc1NJZFZWRHQ5Rl8ySTF4X0xWem5IZ2dyZmg0cHcybnRRQ0FrcXdtZE9ONDdsTkRFOGszMzNXdVRseGc?oc=5" target="_blank">Количество нарушений безопасности движения в КТЖ сократилось на 5% - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 29.07.2026 03:40</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Количество нарушений безопасности движения в КТЖ сократилось на 5% - Қазақстан теміржолшысы</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-29" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQSzFZMVV3dHFxSVVaN3hnS0xVT0hnamhiVnkxLThLV1pralI2Nzh3aFBnTzlTY1lKdXl6d3pCSmkxVnM2QUxQNFd5SGR3Sy0wSm83M0pkTUY5ZXpfN0lyQ1lGVnhvbUswUWQ0WlhBQmNZanQzUi1Sb20xM2JDNXdCTUY0ODUzeFdIdG9GazlpZw?oc=5" target="_blank">Что «Самрук-Казына» будет делать с чистой прибылью за 2025 год - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 29.07.2026 05:55</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Что «Самрук-Казына» будет делать с чистой прибылью за 2025 год - Forbes.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,7 +213,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-29';
+  document.getElementById('date-from').value = '2026-06-17';
   document.getElementById('date-to').value   = '2026-07-29';
   applyFilters();
 }
