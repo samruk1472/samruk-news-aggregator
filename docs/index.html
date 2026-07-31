@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 31.07.2026 04:23</div>
+  <div class="meta">4 источников · Обновлено: 31.07.2026 06:38</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-10-13">
+      <input type="date" id="date-from" value="2026-03-18">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-30">
+      <input type="date" id="date-to" value="2026-07-31">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,11 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -106,69 +106,42 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2025-10-13" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQRE5QSHlhUm9KZ0RreWRuT3dKLWRTVG92RHYtNVVKRWhuTlFqUGc2UXUxTUo5NW8tRzZ4WXYwdXlraWNBSGNXa05QZ1lzOWpiWHp5R0ktLU90TzNSdTRlNVFBZ2dMMmFnb2xvMGs5eTJfTF9yVlpkZHdTR2MzWlZjNklxM05lay01VzdTZ0poOW13dkJKM0ZuTDZLTms1cnFCTDU2QU1ONnI2Y2xpTmRtNy04WDJ1RHM?oc=5" target="_blank">КазМунайГаз бурит первую поисковую скважину на участке недр Озен Северный - Neftegaz.RU</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 13.10.2025 08:06</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз бурит первую поисковую скважину на участке недр Озен Северный - Neftegaz.RU</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-07-30" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOckd4R0VRcjIzNDFsTVZSbmxnRmNxTFUwRUM4WjlOR0RSQ2ZQSkxFaTJfZnRpVDRxeW9tWWJxbG5PWFIzQlA3ZlhIYlRWUjZabWt1ZFNaQkJTMEJpNW51NnQ5bmxPa2hTUlZzNGFJWEp5TEE2bGF5WGlfRjNSY1hhUEFrMlFyUHYxRXFXUXBoZnAwZkhhZWc?oc=5" target="_blank">Ерболат Досаев вошёл в Совет директоров фонда «Самрук-Казына» - Shyndyk.kz</a></div>
+    <div class="article" data-date="2026-03-18" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxOdlpnMXJtdEhXOTNibXRYelE2UF8yc1BmaGNNc0VnWmFjcTk1cW1jNm5SZHdyUEptQjZaN2pIdlBGUGNrT0Q2bXpnbTdEa1QtNFlXbWdFc2ZsN1BFbXhncTRHN25FY2l0T2RZYXpBSDI1enZUVHJJWlUwQnRvNzEycE50eUt2VzVlUE9RYTdJRk90NlNvbEVjYTRxODFDSG16SWg3STA5Unp5QVlyZVg5emRpVWJqMlJKX3QxaEJ3?oc=5" target="_blank">Глава государства принял председателя правления АО «НАК «Казатомпром» Меиржана Юсупова - akorda.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.07.2026 21:24</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 18.03.2026 10:35</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Ерболат Досаев вошёл в Совет директоров фонда «Самрук-Казына» - Shyndyk.kz</div>
+      <div class="art-summary">Глава государства принял председателя правления АО «НАК «Казатомпром» Меиржана Юсупова - akorda.kz</div>
     </div>
     
-    <div class="article" data-date="2026-02-17" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPT1luX184TmI5QmVYZW5RTFY4RVdSYzFzVWpVY1pScVNTOTZSUGN1RlJlWXBqOFZGQU1hdk41Z1RzUWlBemlyZU1OcHluUzZBNGFLMTVrMjFxOXhjYkl3bHpuaEFSMjlpbktzaS05RWNZZllzdDByakdzXzFHSlExcXJSU015QXUxODlRMTF1ckRVMHB4eTBBTDl4S09mbzBtY0FmLUt3Z1REYWd4?oc=5" target="_blank">Самрук-Казына: ликвидировать холдинг или сократить персонал? - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 17.02.2026 08:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Самрук-Казына: ликвидировать холдинг или сократить персонал? - Inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-13" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE0wU1pCQ0h1QnpaQ0RtcWh1UlZQSDB4eTZQM0UtcHZVczlRTkJ4WkoyM0M4Yk80X1lrREVVTV9UUzhkYVFydFk2UEhEREs3NWZRUzZHZWtVdTktYUc0YTlZ?oc=5" target="_blank">КазМунайГаз усиливает поддержку казахстанских производителей в нефтегазовой отрасли - energyland.info</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 13.04.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз усиливает поддержку казахстанских производителей в нефтегазовой отрасли - energyland.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-17" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOc0N0NC1VbzM4TnlFX0lsblFLa21lb3Y2Wm5oYjlqWVVBdHpXZVg4N0NOVkt4VVNoNklrV25QQWRadGtQaGhzSFFfdmZrenVuanh0SUdRYjFMcHp5TXh3TGs1WmEyakt2eXN5WUdRTVdzWVgyamFsSmc2b1l2WnlWUzRKLVNHcW9wTUpqTkpJUFnSAZgBQVVfeXFMT055NUdzQzZPLTlxUXVRT29FcncwdVkyOExJQ2NUeXlkdE53aDM0NWg2djZrNWpSQU9xcDdMVm0xTXVvUnNPanNHZnFNcDFiblE5alJmM3FTNy1CbDBJUUJZRjYyTDdreC1rU3BOZ2VQVG5Za3U2UVVvNWlxbXJYdE9uQ0F5QXB0VzRwUWlHYVdFMi1VMnNZdHM?oc=5" target="_blank">КТЖ отказывается приписывать &#34;чужие&#34; вагоны - ElDala</a></div>
+    <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPVXNBWk5HeVJrZlhURE9vSGhzZFNfQ3FaZ3puRnVSYjdMSmVsSlc3amhEdWo3cnZqeWpnYmQxSkt3dnpnS1Aydkw3NFprTFAxX1h2QTBRMkMtaGFVdkRVQ0RrT1E5eDJaSnBzUzBmY0VSZC16MXBNaHJwZWI4Q0lqdUxuVmVvVW1HYl9qc0dqcS1KRGhuOUV2RUVtSjJiV2REOTVjNXNCVHNteGp1aHh1WTNxYmI0NVVLYjBDT2JtS0plZHQ3VmE4?oc=5" target="_blank">Костанайская дистанция сигнализации и связи вошла в число лучших подразделений КТЖ - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 17.02.2026 08:00</span>
+        <span class="date">📅 31.07.2026 05:24</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ отказывается приписывать &#34;чужие&#34; вагоны - ElDala</div>
+      <div class="art-summary">Костанайская дистанция сигнализации и связи вошла в число лучших подразделений КТЖ - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-29" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBQZ3dLNmRUOTlIV2tHUndLM0pQbTMxS2RZdlVnY1ppVWRpWVBwNDZlT1E1YlRsckxvZ2ZLdWhmSE5KV2wyVWw2TS1JMmwyOFVDNEItVzhtS1NibGdKSE9oSHBpS0lTSHE0Z1VrVlF0TE1GSzBabVBkeDZGRXNFanc?oc=5" target="_blank">«КАЗАХТЕЛЕКОМ» НАПРАВИТ ВСЕГО ₸3,5 МЛРД НА ВЫПЛАТУ ДИВИДЕНДОВ - THE TENGE</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 29.07.2026 15:40</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«КАЗАХТЕЛЕКОМ» НАПРАВИТ ВСЕГО ₸3,5 МЛРД НА ВЫПЛАТУ ДИВИДЕНДОВ - THE TENGE</div>
     </div>
     
   </div>
@@ -178,15 +151,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-03-12" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWm9qTDZSZHQ5VzZYTEMzNGJjc1NIOGI1M3RicjVEOTJnM3BHTVNRcFNfcEh4Q05EM1h4NFBpVFIzYk9VUzBWZHdval9QbUFqQk54R1V4NTdCSmI5TFJlS253dG1BcUlBVEpaRlk0RzdvUG42WG9KdTFZWXgtMTNGd2VsR0ozTlFDVWJrTXJkWnBwcmt3SHNBLW5kN1JyOXVxdE5Rc2MteTA4cDU3el9Lc2RHU2RDb1lKUlpWY3ZPeDI5aTB4UVVVbGZfVDBMRG1sQXc?oc=5" target="_blank">RWS Wagon досрочно завершил контракт на поставку КТЖ пассажирских вагонов «45-й» серии - rollingstockworld.ru</a></div>
+    <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-31/zhnb-freedom-finance-global-narastil-dohody-v-17-raza/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-freedom-finance-global-narastil-dohody-v-17-raza" target="_blank">Freedom Finance Global нарастил доходы в 1,7 раза</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 12.03.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 31.07.2026 06:20</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">RWS Wagon досрочно завершил контракт на поставку КТЖ пассажирских вагонов «45-й» серии - rollingstockworld.ru</div>
+      <div class="art-summary">Freedom Finance Global нарастил доходы в 1,7 раза</div>
     </div>
     
   </div>
@@ -248,8 +221,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-10-13';
-  document.getElementById('date-to').value   = '2026-07-30';
+  document.getElementById('date-from').value = '2026-03-18';
+  document.getElementById('date-to').value   = '2026-07-31';
   applyFilters();
 }
 
