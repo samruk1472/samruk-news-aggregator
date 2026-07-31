@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 31.07.2026 11:59</div>
+  <div class="meta">3 источников · Обновлено: 31.07.2026 15:21</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">13</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">10</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-11-29">
+      <input type="date" id="date-from" value="2026-07-31">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-07-31">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,15 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -111,28 +107,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-30" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNc21LTFktTW4wb0F2M1hwZVhOc0FDZmRtaUdYTmwxMHJKbGxVYWRPNGlKNFI2bm4ycHBlVHVJekoyRUJGSjN0ZTI5QWVzblgtOG9YeUZnNTh5RjBMbzhhNE5ETEFORFhabHRTV2hyakdRbzVLTTdkSmxWVjJBMnpHeDAyN21pal95dnVkWUxVZUxlVzF3Q0J4TjhZU0FzZDd6UzJrWWNCU2NpOFlidWdyYVhXa3JQd0pHYUxfMGFiUWd6ODNYOWU3RHNGMlE4YTMzYkE?oc=5" target="_blank">В консорциуме раскол? КазМунайГаз намерен выплатить свою долю спорного экологического штрафа - Neftegaz.RU</a></div>
+    <div class="article" data-date="2026-07-31" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/english/70314-the-week-in-kazakhstan-double-down.html" target="_blank">The Week in Kazakhstan: Double Down</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 30.07.2026 18:16</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 31.07.2026 17:47</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">В консорциуме раскол? КазМунайГаз намерен выплатить свою долю спорного экологического штрафа - Neftegaz.RU</div>
-    </div>
-    
-    <div class="article" data-date="2025-11-29" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFByU0FKeVJvaF9oa0p6RkFzU1NWOXloMXZSOGc4M1ByUDdZd0FBR0x1bEFGVXJ1QkZXU0NKY2dZdUw5WWR2SWxkaUFzNzJ0bzDSAUtBVV95cUxOT2MzbjQ5LWNYVmdIbXBmV291S2ZQdVpwWHRvYzg1LVY4V2hIUVVkQUR2dWdGUy1FSjBNZ1dUZzVKams0Mms5aGFkWTQ?oc=5" target="_blank">Air Astana и FlyArystan объявили о возможных задержках рейсов из-за обновления ПО для Airbus - Интерфакс</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.11.2025 08:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana и FlyArystan объявили о возможных задержках рейсов из-за обновления ПО для Airbus - Интерфакс</div>
+      <div class="art-summary">The Week in Kazakhstan: Double Down</div>
     </div>
     
   </div>
@@ -140,116 +125,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(10)</span></div>
-    
-    <div class="article" data-date="2026-07-31" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://astanatimes.com/2026/07/how-trans-caspian-cable-fits-kazakhstans-evolving-connectivity-strategy/" target="_blank">How Trans-Caspian Cable Fits Kazakhstan’s Evolving Connectivity Strategy</a></div>
-      <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 31.07.2026 11:46</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">How Trans-Caspian Cable Fits Kazakhstan’s Evolving Connectivity Strategy</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-30" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOMnZwRzY2ZzhfTnMwUFBvV1k1cWwxYmFEeDI2OC1ueVBFY2wxOXZIRmFyTjJJRHRsb0pId1JLM1BfdmtwRDlGVE5MekEzWVVGa1VmbU0zbnVtekVpMDdQdTRjSTFJWTVlUGo5bHh1RFdpdUVhallVQzhuWExMeFFQVmhoaEJuVkxfNXhTaGVYZHFxOE9hYWQ2S2MxWFZrZGlKbUh0dVVHam1VWjF4TW45SEdTQQ?oc=5" target="_blank">«Самрук-Казына» — это черная дыра бюджета? Экономист предложил радикальное решение - Shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.07.2026 05:32</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» — это черная дыра бюджета? Экономист предложил радикальное решение - Shyndyk.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-30" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxOX0VuWDFtS3FhdWpMS1RudEN0Ym1wVnNkYjRFOFNPUklTdTgzRFlSbnVVR1pSOXNxWEFqQWVHVjZQcGZndzJiR0c5Zmh3OU5PSzFfbGJ1M09Jb1FhVFJFNWliaDB0ZXFaU2Q4MnZaLUZ5S19pTko5UG05ZGVGcThsdFdzZ1QtelV5ejNBUDFfOFBMU1E?oc=5" target="_blank">«КазМунайГаз» сократил добычу нефти на 12% в первом квартале - Shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 30.07.2026 06:38</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» сократил добычу нефти на 12% в первом квартале - Shyndyk.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQb0ozUm9CVld1c1BWWjdSYUdwRUxHUl9FS0F0ZXVvX294OUNDdkl1eG5oMjJjOUt4cks1amZVWkFkRTNBU2VuR3h0WVhkMkY1Rm1ONmFWVlFKTnlkekJ6UjFvTnFKajNqRHNzcUdUWERyQVczMXR6WkhMamhZRm9UbmhsSkVwN2ZqcDNidlR2dVl0M0JhdjI0eTdLd1E?oc=5" target="_blank">Air Astana закупит до 65 новых самолетов Airbus и Boeing - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.07.2026 10:21</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana закупит до 65 новых самолетов Airbus и Boeing - Kapital.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbWVEQTFhdGRjM05Ja25aRE5lWjRwb0RqYWNUMWpEaXlOYVRWN2lLZXlrWUZyeTJ2SlVhQ1d1NjhiVFBrLU9odXMwdmoxTU9NZzctb2UtdUdQTURvSklVUXJHZmRGdzhrVExWMzVzbm1NNVdOLVV1STF1MnZsTHFId1h5UHpiVC14blh5VVJ0S0o3RHpaTTJmTHRVT1dZN0Fvc3VOaGMtRVd3T0ttZERDRGtSeWV2VTVDV203dFJkYTnSAcYBQVVfeXFMTmp0bU1iaWMwR3JBRk54cjNmQVZpLThFdF9hOVVCblB5ME93cEV1cS03NXRaYUhQczRLUDVYYVNubm9Ibm1YaS1LU1VWa28xc0xIQzdoeFpKVEhsY19qMm5xaWw3eVh4ckoxWWRIWlRDR0FYNUM5ZDl3V3JCZ3JTc0FhaWVyR3dfeTVqS20zQ0tsU0Ffc1MzbnpLNEtNd2o5anRZcnB2b1kzUEo5QzZvUUlUWHUzTHlKUEFIUFZFUGRVaV83Tm1B?oc=5" target="_blank">Токаев указал главе Air Astana на критику граждан за постоянные задержки рейсов - kz.kursiv.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Токаев указал главе Air Astana на критику граждан за постоянные задержки рейсов - kz.kursiv.media</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbjZiR2VfQjh2bDlRNXhodnRQamFsdC1tTjdaWjBucTVYSU56ZU5tUzIyTEp5b3lCNnR5NzRkVE1IczZuZ0tPRkZOTjdTMGhZeHZMTnQxT0M3Q2Y0ME90MkhmaktTRmp0VmpqM0tYcmpoQk9mdFFOcmE0dVA3VWJtckQyT2liNExqMFl3LXBKbHpTT1d5QkdzSVR3Y015RU5GM1lYNGZGNWlpZw?oc=5" target="_blank">“Дочка“ КТЖ распродает премиальные авто за сотни миллионов тенге - tengrinews.kz</a></div>
+      <div class="art-title"><a href="https://egemen.kz/article/418429-temirzhol-el-ekonomikasynynh-kuretamyry" target="_blank">Теміржол – ел экономикасының күретамыры</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 31.07.2026 10:00</span>
+        <span class="src">📰 Egemen.kz</span>
+        <span class="date">📅 31.07.2026 17:02</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">“Дочка“ КТЖ распродает премиальные авто за сотни миллионов тенге - tengrinews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNLUY5S1hSMTFaTkpwQkpmcWJwOVpaZElZVjN3bV9qNFZSSDB3ZU5tT3RBS0VSbTlPdlVRbjNZdHZBX3V5SHR0NmhDUUNhMjh5d2pzc2RxZmhzd2dpelFqOTdJZWI3bnFVMGluWnVLRHY2ckZ4UkJHcnpEMXZsMTRQNXdTOTJzWTVNVURaWkRDQTdrRVlfSUpPb2szVy1SUQ?oc=5" target="_blank">Сотрудникам КТЖ дали реальные сроки за гибель четырёх человек - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 31.07.2026 06:50</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Сотрудникам КТЖ дали реальные сроки за гибель четырёх человек - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZ1NuZzRhRGRDMlRESU5zbmNjYnZDdlpYWVNyWnc5em1rNFVpOEMtelV1WjNZVnd0eFNMZ3J2WEU3cGwxdGJpM2dycjhla3ZHMENfaHNJbGFaSXJpRWpUYkNKNHBNYkZwUEZPTF9OajJtbzU0aGtBeHA5WHJqaWVfdjNJWi1WSUo0QnFIbGttaXYxS0dyUFVVVXd2T2FEMWRrZXBRcG1LY2FiUWhxM3BHUHJfMWpxV2Y3dVE1UThUMl9GU0k?oc=5" target="_blank">Дочка &#34;КТЖ&#34; выставила на продажу три автомобиля общей стоимостью более 200 млн тенге - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 31.07.2026 11:24</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Дочка &#34;КТЖ&#34; выставила на продажу три автомобиля общей стоимостью более 200 млн тенге - NUR.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-30" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBTMDlFWmhrMFoxY2RaMWkxTHRZaXQ5TmNZdXRuREJTYnNITHNOLU1icVhSQW1Wd1g5WkhyV19MTWpiem5WbEVsQnhSbG41S21YNDF5NzZ5OGRfeWtzNFIzallvMUtJbXNWdU5YUmRWcnF2ek1hc19udlNDQ3daUdIBfEFVX3lxTFB2RzJ3MzVSdGZTMWpfUGp0dEo4X0FteE1pdVJodFlSTk5reS14aUp0UHlWV2trTHp4VjRpOW5ORm1aUGRTQkQydzkybC1vd1pfRV9qdFhZU0JUY3NOQ1hSajBwcl9hQkNjaG9iQzZqNE5pXzVSdG1uSVV4S3o?oc=5" target="_blank">В КТЖ объяснили задержки поездов аномальной жарой - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 30.06.2026 15:23</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В КТЖ объяснили задержки поездов аномальной жарой - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-07" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOOENXa3dJc0hSODRiNmdiOHRhUEthc1NUN3ZDOV8temN1S3ZfTllZbjB2SjFia0hmbzhwU1hCdW5kUEZxaXlEX0lWREl6a0R5S0cyWGg1aGRjZ1BJQnFSQWxiRTVfOENDWE42ZGJyRkVKdUpKcHJ4MDZpSGNsOVc0TW1pcElUWk1wQThFMmhR?oc=5" target="_blank">В Актау завершилась XI Спартакиада АО «Казахтелеком» - Вечерний Алматы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 07.07.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">В Актау завершилась XI Спартакиада АО «Казахтелеком» - Вечерний Алматы</div>
+      <div class="art-summary">Теміржол – ел экономикасының күретамыры</div>
     </div>
     
   </div>
@@ -259,15 +145,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/07/news-digest-foreign-media-on-air-taxis-energy-security-and-middle-corridor/" target="_blank">News Digest: Foreign Media on Air Taxis, Energy Security and Middle Corridor</a></div>
+    <div class="article" data-date="2026-07-31" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-07-31/zhnb-kazahstanskuyu-platformu-dlya-fermerov-zapolonili-postavshhiki-iz-tadzhikistana/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kazahstanskuyu-platformu-dlya-fermerov-zapolonili-postavshhiki-iz-tadzhikistana" target="_blank">Казахстанскую платформу для фермеров заполонили поставщики из Таджикистана</a></div>
       <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 31.07.2026 09:49</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 31.07.2026 12:57</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">News Digest: Foreign Media on Air Taxis, Energy Security and Middle Corridor</div>
+      <div class="art-summary">Казахстанскую платформу для фермеров заполонили поставщики из Таджикистана</div>
     </div>
     
   </div>
@@ -329,7 +215,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-11-29';
+  document.getElementById('date-from').value = '2026-07-31';
   document.getElementById('date-to').value   = '2026-07-31';
   applyFilters();
 }
