@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 02.08.2026 11:15</div>
+  <div class="meta">2 источников · Обновлено: 02.08.2026 14:37</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-30">
+      <input type="date" id="date-from" value="2026-06-02">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-01">
+      <input type="date" id="date-to" value="2026-07-02">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,11 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -108,47 +106,31 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   
 
   
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-07-01" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9IaHJTN3pUSDBXTkpvaVR4elFmSDlfX2ticnowRVN4YS15cllpcm04Vzlpa1Z2UTZHNjR6NEhUcUxDN0h5ZVd6S19qNzY0cFVSZFBSMW1qVXd1ZFhLbnQ3ZE0wdmRKUFh3a3A3ZkVqOUxMYVhDcjZWTUg0aw?oc=5" target="_blank">В 2026 ГОДУ «САМРУК-КАЗЫНА» ЗАВЕРШИТ 16 ИНВЕСТПРОЕКТОВ НА ₸3,3 ТРЛН - the-tenge.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 01.07.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">В 2026 ГОДУ «САМРУК-КАЗЫНА» ЗАВЕРШИТ 16 ИНВЕСТПРОЕКТОВ НА ₸3,3 ТРЛН - the-tenge.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-04" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3WWVJbm9lbmp6Y0l0YUY5b1lISXJsMlh2QnZHTXhJeXFRWFd6VW9kdU5iY3J1M2pXV0I3SjlqWnFGdjI4bVhGODhYX0szdkdzblBhRHMxUFBwTlphYVNn?oc=5" target="_blank">Казмунайгаз и КТК обсудили ремонт и обслуживание нефтепроводной инфраструктуры в Новороссийске - energyland.info</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 04.06.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Казмунайгаз и КТК обсудили ремонт и обслуживание нефтепроводной инфраструктуры в Новороссийске - energyland.info</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-04-30" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQTGJrMUM5WEJCdzgtVFZrcHF5c3dsdGdHYWZJUDUtTFFPS0FZd2lRdzNfeFNybEc5NGVqdkNRTnZQbm1vZ2V2OWdiSUpiOVMtMWZ5NE9aV0VNVVRMVXFlTFU0SlFyTzdsSTN0YWNYcnFCVTNLWlVCcXNJUjBQVjB5MDRVZmlpdEVkUUduM1JKQnk?oc=5" target="_blank">«Казатомпром» собирается выплатить миллиардные дивиденды - Ulysmedia.kz</a></div>
+    <div class="article" data-date="2026-06-02" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxOVFM4RE54MUwxTXBiXzA5TmpSQVo0QkxwNEN0WExpQnBUeGkyaTRJZ2d4MHRzTzJWYnhkaWRBS3ZrS1BPbzFialhoa0J0bk4xUHBrZEtWNUxxNy1FdmlVUUM0bzJHbjdtR1NpTFdrQ2s2QVJsanJ2cy1YaEZ6RGNkdzBUR253TU0?oc=5" target="_blank">Какую сумму «КазМунайГаз» направит на дивиденды - Forbes.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 30.04.2026 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 02.06.2026 07:00</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«Казатомпром» собирается выплатить миллиардные дивиденды - Ulysmedia.kz</div>
+      <div class="art-summary">Какую сумму «КазМунайГаз» направит на дивиденды - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-02" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPU1ZRRlhGLVZZTm16cVUzSXZibFRDc0hQcENmSnp1X001aXFxYVZJQ1l1cGp3UWhadXV1c3I0bUdMMVV3d1R2THBBS3N6czJlR0tyXzItdkQ2MzBHUnRqZlZ1aVQ0X3VNdm5kSzZtNnNTODEwYXlhRE5JMnMwOGxmNEF3cDRFaXRJQ1RkMTFBU3Q1RkdvUTFaUmVqNHhYLUZkTktxOVFBcHRKeFYwNm5JdzQyWDR4UdIBtAFBVV95cUxOUEhlSmpLT2IyOW9VdHVTbmdnVkd5UVNSMnFsd1UzXzN1M0NyaDczS1lkSEtZN0NqcElUd3VxalRVdXY5SGFmaERENnpiaGhVdVV5SjRBWXVWeW5OelVXWGtlbFF4ZTZCc0YySkhZX2E0RUJtc2Q0YWtzaXFCZ0t1QTNQcVh1aDZIY0tYWUZQbVNGc3NkZHAtc2xsX0VMUENrbUpKOW1nSE4zaFR1bXJKa2NKQ1U?oc=5" target="_blank">Президент назвал приоритетом для Air Astana запуск прямых рейсов в США и Японию - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Президент назвал приоритетом для Air Astana запуск прямых рейсов в США и Японию - BES.media</div>
     </div>
     
   </div>
@@ -210,8 +192,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-30';
-  document.getElementById('date-to').value   = '2026-07-01';
+  document.getElementById('date-from').value = '2026-06-02';
+  document.getElementById('date-to').value   = '2026-07-02';
   applyFilters();
 }
 
