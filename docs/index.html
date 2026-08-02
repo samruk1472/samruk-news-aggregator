@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 02.08.2026 09:06</div>
+  <div class="meta">3 источников · Обновлено: 02.08.2026 11:15</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-16">
+      <input type="date" id="date-from" value="2026-04-30">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-02">
+      <input type="date" id="date-to" value="2026-07-01">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -87,7 +87,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
@@ -106,85 +106,52 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdUJOR1JKUnRoSDhCcWh3cXYyWHM0UjAxYndtMVNTMm9TSHRWV3NPWjZMTFpobmN3OTVwMEZ5ZS14OVpJdU9BLU9obk9mYzdYY2ZZLS1xc3BmblhMNTloZzBwTllZSFdsMG5nVmx1REtCY0x4RDFUUWtsY0xHTDAyRFJoLUcyUm0yR2ZQTFRBVjJPdERVYWw1akFOT3lWV0xMcjY3aEdDVlMwdw?oc=5" target="_blank">В Казахстане могут поднять тарифы на поезда? Причиной назвали долги КТЖ - shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 31.07.2026 05:59</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В Казахстане могут поднять тарифы на поезда? Причиной назвали долги КТЖ - shyndyk.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-07-30" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPcFkya0JhTUM0QUlQTkU4SG9vOEpKeWJCdWRXM2NjVG1LWTY4VzdpOEpSclg2T0JVOW84Z0RhS0lWVEk3QUR1M3RNMW5BMFJTNWdTUmR2cTk1cGY2UHlvLWRZX0padFFURmVMel94VkZuMzZhb2xxZzRBNVVGVzQycG4ycndGdmo3TkRaNW1QWEx2YWV1M254TVNvaV83a0JyMms0a0tvTmNxZGRyQVJlZjVfSFp3VW8?oc=5" target="_blank">«Самрук-Казына» — это черная дыра бюджета? Экономист предложил радикальное решение - shyndyk.kz</a></div>
+    <div class="article" data-date="2026-07-01" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9IaHJTN3pUSDBXTkpvaVR4elFmSDlfX2ticnowRVN4YS15cllpcm04Vzlpa1Z2UTZHNjR6NEhUcUxDN0h5ZVd6S19qNzY0cFVSZFBSMW1qVXd1ZFhLbnQ3ZE0wdmRKUFh3a3A3ZkVqOUxMYVhDcjZWTUg0aw?oc=5" target="_blank">В 2026 ГОДУ «САМРУК-КАЗЫНА» ЗАВЕРШИТ 16 ИНВЕСТПРОЕКТОВ НА ₸3,3 ТРЛН - the-tenge.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.07.2026 21:35</span>
+        <span class="date">📅 01.07.2026 07:00</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Самрук-Казына» — это черная дыра бюджета? Экономист предложил радикальное решение - shyndyk.kz</div>
+      <div class="art-summary">В 2026 ГОДУ «САМРУК-КАЗЫНА» ЗАВЕРШИТ 16 ИНВЕСТПРОЕКТОВ НА ₸3,3 ТРЛН - the-tenge.kz</div>
     </div>
     
-    <div class="article" data-date="2026-07-31" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQVVp3YUowMEZjRlFPc3JkNkxYdzdGT3BVNVo3M3FGdzlONjdJTXpIQklwUmJpWm5zalJZMmkzYjdIeFJob08xSWxHRkFKMFNTVTBxczlqYlM5OUFXaDh3SE9QMElLM3picFBPSDdFS01LaE1UQ1FKT2h6cGlLS3lGeWo2YUNZVlY4Zi1TYVpOcVVKQl9E?oc=5" target="_blank">Всего 650 человек хотят сократить в «Самрук-Казына» (ВИДЕО) - shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 31.07.2026 02:41</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Всего 650 человек хотят сократить в «Самрук-Казына» (ВИДЕО) - shyndyk.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-15" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE82TkczY1ZwUmJDMTBJeGZFSmZIcFdpZWNoeWVRczNiQ0U4cjhxY2JVbmVreTBpNkw0UDljWTd2Y21iVnZLLWN6bFhrUjhrNFJuQjhKY1lfU2NRQmtlVmcw?oc=5" target="_blank">«КазМунайГаз-Аэро» заправит «в крыло» самолеты Uzbekistan Airways в аэропортах Казахстана - Energyland.info</a></div>
+    <div class="article" data-date="2026-06-04" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3WWVJbm9lbmp6Y0l0YUY5b1lISXJsMlh2QnZHTXhJeXFRWFd6VW9kdU5iY3J1M2pXV0I3SjlqWnFGdjI4bVhGODhYX0szdkdzblBhRHMxUFBwTlphYVNn?oc=5" target="_blank">Казмунайгаз и КТК обсудили ремонт и обслуживание нефтепроводной инфраструктуры в Новороссийске - energyland.info</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 15.05.2026 07:00</span>
+        <span class="date">📅 04.06.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КазМунайГаз-Аэро» заправит «в крыло» самолеты Uzbekistan Airways в аэропортах Казахстана - Energyland.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-02" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPSUtCVHM3VHNHbFJsV1pCVEMwY0ZWdm1FVVE2alotZXBHbncyMFRnUWlDZ0lTbnI5TmI2QUJsa05TWDZidFJTNVdyS2dWV1N3OEc4VU5QMXUwcXZUVC1VV2JPZlJ1N1c3TFVGTnZFZE9ZUFJoVk8zX3E4b1Mzc0JxcnNEb1BzdDJaalBFYVg2YWZGdmRQZmxFWkFpTFAycVVvdHJRZGZ2QTBkcXVCZ1hiNHFrclPSAbQBQVVfeXFMT0lLQlRzN1RzR2xSbFdaQlRDMGNGVnZtRVVRNmpaLWVwR253MjBUZ1FpQ2dJU25yOU5iNkFCbGtOU1g2YnRSUzVXcktnVldTdzhHOFVOUDF1MHF2VFQtVVdiT2ZSdTdXN0xVRk52RWRPWVBSaFZPM19xOG9TM3NCcXJzRG9Qc3QyWmpQRWFYNmFmRnZkUGZsRVpBaUxQMnFVb3RyUWRmdkEwZHF1QmdYYjRxa3JT?oc=5" target="_blank">В Казахстане отмечают день железнодорожника: итоги работы КТЖ за полгода - BAQ.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 02.08.2026 06:08</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В Казахстане отмечают день железнодорожника: итоги работы КТЖ за полгода - BAQ.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5FN1RqQzNzdi1ZMXNFMWpmNVNrRVNheDlTOWxQLXVBQ1psS3dWbC1nTkFhVDh3UF93QnRTUEFNRVkzaUhBSWlNWHJ3?oc=5" target="_blank">КТЖ обвинили в простое и исключении из перевозочного процесса тысячи грузовых вагонов - АПК Новости</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.02.2026 06:13</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ обвинили в простое и исключении из перевозочного процесса тысячи грузовых вагонов - АПК Новости</div>
+      <div class="art-summary">Казмунайгаз и КТК обсудили ремонт и обслуживание нефтепроводной инфраструктуры в Новороссийске - energyland.info</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-04-30" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQTGJrMUM5WEJCdzgtVFZrcHF5c3dsdGdHYWZJUDUtTFFPS0FZd2lRdzNfeFNybEc5NGVqdkNRTnZQbm1vZ2V2OWdiSUpiOVMtMWZ5NE9aV0VNVVRMVXFlTFU0SlFyTzdsSTN0YWNYcnFCVTNLWlVCcXNJUjBQVjB5MDRVZmlpdEVkUUduM1JKQnk?oc=5" target="_blank">«Казатомпром» собирается выплатить миллиардные дивиденды - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 30.04.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» собирается выплатить миллиардные дивиденды - Ulysmedia.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -243,8 +210,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-16';
-  document.getElementById('date-to').value   = '2026-08-02';
+  document.getElementById('date-from').value = '2026-04-30';
+  document.getElementById('date-to').value   = '2026-07-01';
   applyFilters();
 }
 
