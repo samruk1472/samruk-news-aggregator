@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 02.08.2026 16:43</div>
+  <div class="meta">4 источников · Обновлено: 03.08.2026 04:33</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-13">
+      <input type="date" id="date-from" value="2026-07-03">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-03">
+      <input type="date" id="date-to" value="2026-08-03">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -90,6 +90,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -106,58 +108,42 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-05-05" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1LV3k1ZDdzaEw0bzZZdmVXaUJ3QlI1dkVVRXFZWWJjRjZmMVBtMzBNdUg2MTJDSDdIb0lkZ1pqejFSS040Tk1QMU50Tl92Q1AyVTJFY2FoVE5wZV9UeHNzcDlPcVdvc0RDcDdyN1ZMSmpoU0R0clFLQ3lQaw?oc=5" target="_blank">Чистый убыток Air Astana вырос почти втрое - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.05.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Чистый убыток Air Astana вырос почти втрое - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-08" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNY3JnY1ZqYXNpU0VIc2drelAxeGc0blJmVHVJam1wOGRTYTBhdEUxUl9ZZkV4by1jaUFyb1pJODRqNlpya3hwVGM1bE5FWlB1RDVWT0dITndDS0VzamJGSTRuYjc2c2JjYkFBVlI4YTdWeFVSNHVxOHpwNXFDQTF6ZDhHSkdOZlU2RHhqYjJjR1JiV09NaGFLb3JodG0ycDdzZ0xQS2N2T21DblVFQm5Manh30gG6AUFVX3lxTE9Jal9XWWF5OWhhUXFuYmVNdGNfb01EWVBCNzk4eFlRc0VKd2lMZWMydmhoM3BOdVppcHNYUmJQSEJGdm8zQ3EyalFlVTduQVM2dUJSUXhkVlpkenh6d1JRNUFlZFVqR1pKaERKbzkxM0RLcmJqcV9kc3Y4TG90WHFZazVtbmdnS2lCS3l0UlBVSFpiNmZUaEtlR2U1bVNRdFJRM3ZyNkF0OHItd0dWdVJvRTR4YUNuUjZMUQ?oc=5" target="_blank">КТЖ рассмотрит возможность освободить экспортёров кормовой муки от штрафов - ElDala</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.04.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ рассмотрит возможность освободить экспортёров кормовой муки от штрафов - ElDala</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-07-03" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNWHVta05pcHRLcmJzMVFHaEkwdU52S29HVzlsTFRBUWdwQk9GVjB3Z25USENDcTlfbW9qeENnT09ncmtockFTNERrVWNZSGRpS0JENTFEVEdwRmZkS2x5emV1WmNITFRXcjUtR1hXa0otU3Nza0ctZnhiY1dyV2E2bjFfM2tlZzBINlBqMHI2YkFZSmZDSmhj?oc=5" target="_blank">Сколько «КазМунайГаз» заплатит членам правления за 2025 год - Forbes.kz</a></div>
+    <div class="article" data-date="2026-08-02" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE16ZVJhcmJ5NGJKX3N2QzNOakJnc01UdjlFRjJqLWR1WVFBNUQwbDFNenYxMFl4NGZFendydFpMbnVNdnFlMjViaVZsOVJ0QjlCdUEydEdHdWJ2bXNxeFlyTjBiUQ?oc=5" target="_blank">Квантовый скачок в управлении: ИИ в Samruk-Kazyna (8 октября 2025 г.) - M O N D I A R A</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 03.07.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 02.08.2026 22:37</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Сколько «КазМунайГаз» заплатит членам правления за 2025 год - Forbes.kz</div>
+      <div class="art-summary">Квантовый скачок в управлении: ИИ в Samruk-Kazyna (8 октября 2025 г.) - M O N D I A R A</div>
     </div>
     
-    <div class="article" data-date="2026-04-30" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPTU1pYllKNG9PbWczQW4tUzhFNEptdWZncEN0VGdZZFRGSXE2R2FNczRLT0dwMUF6Tm5LSi1lYjdLaVh5MUlBakQ2YjdvV29YSmhLZUsyOGRHVFFkS1pObFVDVGtTamxtYVl1LU5iN1Zxb2pweFFNU2k5YzBVZDZUdkJ1OVVXMVMzazVtUGF2ZmZDY1dsV0VhbmhSckVqNXlJc294Vk50UGdLSHl00gGrAUFVX3lxTE1OTmJ6LXZ1RXZsalM2cW5NdUJXQ1FXeHlzZXRlOWhSc1JlSGJfakw0V2I3UEFjR3NzOFZ6ZFNRd2VzbWpYY01VaTNzZzIwa3RXOVV0d3dfQVRzOXhwdWxqb3BTSFpYNVB6cEREN3dlYjg5QXhHSnUtaGM4eTQ0Y0ZTZTYxM2dmNE5wSG1sblduRXhycHFOZTZ4Yk5LNXlUZk03dENuV0dudFNSZw?oc=5" target="_blank">Глава Air Astana объяснил, что мешает открыть прямые перелёты в США из Казахстана - BES.media</a></div>
+    <div class="article" data-date="2026-08-03" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOLVNIWlFGbnRKYy0tdFl6aV9pZGpHUXB4cnBmQi1LejhleXlSbjdwUjUybGtrS1VaV1NRQ21LX3lmUDF3bnNMazVoNXJPSlJsN2NYalQzaDgxNGlzVWZJeks2blFJM2lDZU5KZjZKZjd5eEE1NGl2OWQxSDJyazM4OGdKX25lRlIzeU10SEE3VVktUzVzalhiMmJlSDBNODQ4QTdhT1lieUlkWVdhaUl5NkVfa0VIb2dYQXc?oc=5" target="_blank">Бизнес-класс Air Astana разочаровал пассажиров после замены воздушного судна - newtimes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 30.04.2026 07:00</span>
+        <span class="date">📅 03.08.2026 04:26</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Глава Air Astana объяснил, что мешает открыть прямые перелёты в США из Казахстана - BES.media</div>
+      <div class="art-summary">Бизнес-класс Air Astana разочаровал пассажиров после замены воздушного судна - newtimes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-02" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBudm9Na29rbno4dDEzQWlUWUVpV01ycWNtVXpoeXhiWnpWR3BtSS1BdkllQkp5ZWxsdEIxeWV4YlhrTWhmc3N6UTNZVTE4Nkg0amR4OEo3c19UZw?oc=5" target="_blank">КТЖ не хватает около 3,5 тысячи специалистов - Новости Караганды</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 02.08.2026 05:32</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ не хватает около 3,5 тысячи специалистов - Новости Караганды</div>
     </div>
     
   </div>
@@ -165,17 +151,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-03-13" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQUVNqVGk3cFpyMjhYZkd3bG9WWnd0TnpZTXN1WG16ZmkxVUY4UTJFaTQ4Z2hOdENyYXcwSDUxV3pzRFFDMWJzX3hpS3lHdkhzVDM4QjVQQU52bFdwTFotRVJUcXUwQW9hd0lLOWpzdnlrSHpEc0ptYkFSUkZZRTBFbzJiczdEbE0wU0kwZFJHOVV5TE9PU3pOVmFWTV82TENEMmpvN05PdWp6RGNUdWtz0gG0AUFVX3lxTE11Q2ozd21ITllPd3pFN3NMbm5TZG9Ec1pVaUw1dVRuZlpWRFFzYnhEZi1ZVnQ1MlNNRXZkaEZaekI0WW9FZ29ITUFFbjFFYzlzQWhWYWxxRFZVazlTLVBqbUp5VmZxNi1hNVJ4c2FyTzhuN1E2Z1djd3FtV1FnTEZnX2NpU045YW9fMEROZGI4VDR0eGlZRDVtUWxSVGNKN05WMG1naFlOcl83VXI4RXFZNTczcg?oc=5" target="_blank">Прибыль Air Astana упала более чем на 70% из-за проблем с двигателями - kz.kursiv.media</a></div>
+    <div class="article" data-date="2026-08-03" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1vek5kYUN1QzJ6UUhjWnhkcnJiMjdKWVltSlJrTzdDdjE4akVqcWNTSnY4VERGTi1FdnRwbVNIaUJNMDRlM21sOUo1YkY1d2RwUHctRzd2RWMxRzRBc0U0?oc=5" target="_blank">КазМунайГаз и CITIC Group выводят стратегическое партнерство на новый уровень - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 03.08.2026 02:33</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз и CITIC Group выводят стратегическое партнерство на новый уровень - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-03" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOSHFyazBPTmdDRE9Zb2hyZloxOHJLY3RpcXF5aUFBS2pzV1NKTmh1X2Y1TUtfNEtkZHZSdTE2b2RtdXhqVjJVa05YbG04Rl9jWUV6ZEd5TWNNa2ctV0pNUmpETThyaUlNMGhWQTk5bm5ad1dXWEpnNERaNDl4c0M2V0xybUllZm9Ha1pwUGVKbG15STVmRmtOcm1VQzUtNHRrY1HSAacBQVVfeXFMTXRWN1RMY0xkVXhQbUtBLTlZLURTa1AyLXRza2FpaHVXOEdMZzdfVzhJZ1Jpb1FxanlKNHBEQ2tNTnNoVWRNVGFxSUgzN0NFeVZBVFpBb2NGN2xHMWotNzdjOTdUeDlvbDFkZmpRZmphVHdUSHlHVXhZdkxPanVmbnlOLWUxM1RHM2d2NlZHa2p2Nm9fRU1kZ1VVRFU2SERJRGJVRlhFMVk?oc=5" target="_blank">Новый глава Air Astana пообещал приносить прибыль акционерам - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 13.03.2026 07:00</span>
+        <span class="date">📅 03.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Прибыль Air Astana упала более чем на 70% из-за проблем с двигателями - kz.kursiv.media</div>
+      <div class="art-summary">Новый глава Air Astana пообещал приносить прибыль акционерам - Kursiv Media</div>
     </div>
     
   </div>
@@ -237,8 +234,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-13';
-  document.getElementById('date-to').value   = '2026-07-03';
+  document.getElementById('date-from').value = '2026-07-03';
+  document.getElementById('date-to').value   = '2026-08-03';
   applyFilters();
 }
 
