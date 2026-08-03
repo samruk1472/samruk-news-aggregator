@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 03.08.2026 06:56</div>
+  <div class="meta">5 источников · Обновлено: 03.08.2026 10:38</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-02">
+      <input type="date" id="date-from" value="2026-03-31">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-03">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,11 +87,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -108,86 +106,91 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-03" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-03/chnv-solist-ruki-vverh-sergei-zhukov-obratilsya-k-zhitelyam-kazahstanskogo-goroda/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=chnv-solist-ruki-vverh-sergei-zhukov-obratilsya-k-zhitelyam-kazahstanskogo-goroda" target="_blank">Солист «Руки вверх» Сергей Жуков обратился к жителям казахстанского города</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 03.08.2026 09:44</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Солист «Руки вверх» Сергей Жуков обратился к жителям казахстанского города</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-02-02" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxOYmVFd08wU2h1OEstZzZReVRtWVJKb1BTREo0VzR2NGlaSGhrMTdzRVdqcVl2Ykc2U3g2NkhLQnBPNGpGMzlKdVFBSDlmRHdzUUZkdVFZa3o1VjFyS0paVmJneTREUFVFZkZTd1RPamhwSWpNYkRGLTR5d3BjVzM4UTF6LVNrOVRSZFN6aWluMkwzRkZ1N0prdkl4Zno4ZW5OSDJCeWdLYlNMdG5xQ2JhbVRiSmtPSzJfREt2emZ3?oc=5" target="_blank">КазМунайГаз и Татнефть получили фонтанный приток газа на участке недр Каратон Подсолевой - Национальная Ассоциация нефтегазового сервиса</a></div>
+    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-03/zhnb-kazatomprom-sokratil-prodazhi-urana-v-pervom-polugodii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kazatomprom-sokratil-prodazhi-urana-v-pervom-polugodii" target="_blank">«Казатомпром» объяснил падение продаж урана в первом полугодии</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.02.2026 08:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 03.08.2026 08:26</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">КазМунайГаз и Татнефть получили фонтанный приток газа на участке недр Каратон Подсолевой - Национальная Ассоциация нефтегазового сервиса</div>
+      <div class="art-summary">«Казатомпром» объяснил падение продаж урана в первом полугодии</div>
     </div>
     
-    <div class="article" data-date="2026-06-03" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPTFdoV0hSWkpnRFpEMVdEQkxpUVhCQTZZNXZueXoxRGE0bmhLWlhuQms1UFloWjVYalBCTnNreXZSOGJxMHNCenhfUzFpLUMwQVBhWm9Td3E5bjl6aHYtLUh6NC1VTmRQdFFScnZtX2dVNk1RZndFRDNPNW5rV2k2VGppbzRTMFZEbmlfbjdPMlZEb2NZME4xZ3RvOU5UZ09vN250Mmt2WmdnN2FYcW9iczF30gG3AUFVX3lxTE5VekVEVm5XVThWQ1NBN3dJSWFMTUZ4LW1ZcmVwVDNremhIckJlOGFmVE5IYXBERmRKb1d1YjRoOWFJeVcweUJvUV9UVWFNTzk2aHpoMEpTbkNmbW9DbGJiY3M5VUQ1VUlla0FHYklvZEhiRkxsUmduT19iSWdrZTh1aEhhckJDU1RmbEk0dm9Jcmhncmh4a09jUXIwSm9Tay14Z2dyM3FvOVA0VXVpTTIyYW5XVXFCTQ?oc=5" target="_blank">«КазМунайГаз» получил 100%-ную долю в бывшей нефтяной компании Боранбаева - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOY1hNaGo4MkJQb1hNU1YzbTNQWGU3LUdWRVpCeHJRZkR6ekdEU0wtb3pfclBUcEtTUTN0WnMzbzEwRUdRcWUyN1o2OXlXWG5SZzV5LTdfeXRzOWxMNTdqWTU2MUdhVHl5Nkd1a29FNkxnNms4TzhrNG5VR3hwRU80VXF3N09CN2FpR3dsejhYdEtSV21JRi1pc3liZXEwbnlzTVd3dDBYWGlIWi04N29Xb0tnTW96c1k?oc=5" target="_blank">Казахстан за 6 мес 26/25гг увеличил добычу урана на 9% -- Казатомпром - ru.themoscowtimes.com</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 03.06.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 03.08.2026 06:19</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» получил 100%-ную долю в бывшей нефтяной компании Боранбаева - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+      <div class="art-summary">Казахстан за 6 мес 26/25гг увеличил добычу урана на 9% -- Казатомпром - ru.themoscowtimes.com</div>
     </div>
     
-    <div class="article" data-date="2026-06-03" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNQ2tsN2REalJpR2wzXzlObXNUa2lFd0s5c1BqTEs0MVBSOUZzXzktV3lEWEdpd3pwZUlfczJ2TGtiOWNQLUVWYmZ1S3VkbFlyTVZ1aVAwODVodnpGSG5Jb3lVT2lBaWNic2N0YWFOcGtjbDZhQ19zMUVhT1lyZFZ0TVRhaGJMdVBBeWV2eWtGUmgtN1c5RVVxN0owOA?oc=5" target="_blank">Air Astana открыла рейсы из Астаны и Алматы на Кипр - Интерфакс Россия</a></div>
+    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOaUVHV0FKdnM1RjVDcEE3VEhhX3RKUS1VRnBjSkFiRlNJdXRycnBlR3Bsb1QwYUNzeWRaY3ZQengxMXNYWmhPWEtEYklwNWJjVXZ6d2RTNXpvT2lPUFYxZldKUTRPQndCU0RmcDZpRXF2ZE0xclVDdVowblJnOGZ5bjlSS2gxU0RxMWFnZUR5cEtrdzJVdHJwbkZZaw?oc=5" target="_blank">«Казатомпром» нарастил производство урана на 9% в первом полугодии 2026 года - ИнфоТЭК</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 03.08.2026 08:40</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» нарастил производство урана на 9% в первом полугодии 2026 года - ИнфоТЭК</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-03" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOc2hYcWVUNEU5S2gwN201amZ6UUQ5cnQ5aTd6SFBLaGluTlBkZnhHc2xuS2ZGSGdFM2dnNUdqZ1ZJUGlUMWNaY2NvUXU2dkJ0WHQ1WnA3R3RZekJrdTB0Uk1BQU9tUWh5Rm1SOUFTWFZISTZya21yZDBGNFA5c2ZmbkR2OVRYa2NBVDhZUlNyYVJWR2hVWE9rR1lLU2xwZ3lFc2VJTTZJR2NnbWdWcnlTalVJcWxrazRsMm0yVm9TcFNoZ2Rka2VkSFVfcw?oc=5" target="_blank">Заплатили за &#34;лежачий бизнес&#34;, а получили обычные кресла: пассажиры пожаловались на Air Astana - NUR.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 03.06.2026 07:00</span>
+        <span class="date">📅 03.08.2026 06:56</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana открыла рейсы из Астаны и Алматы на Кипр - Интерфакс Россия</div>
+      <div class="art-summary">Заплатили за &#34;лежачий бизнес&#34;, а получили обычные кресла: пассажиры пожаловались на Air Astana - NUR.KZ</div>
     </div>
     
-    <div class="article" data-date="2026-05-08" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPVkljLUIwZEUzSnRqdkp3eVU4SlJCSTQ1ZmlxNFkySEwtZGQ2WkNOVTlCekNLTm5sN0VleU85d0x5dHJ2Z3c1bVlkdXZKRzVoSkIwZVdXZW9BRkl3dnp0aTUyVmdPWF9OdTFjaVJNbnRRVFhmWFJpZ0poZnFrXzFFTGpwdFJqV3dvR3Q3Z0REMXdXc2tZa0RFSdIBSkFVX3lxTFBvQlpOY1plMzNEMV9sOFl3cnFELVBKZHVaRjdqXy0tTmsyVDRxbE9YTWFaeVhpSmtGMXJEQTJDMUZoeWE1WklseDRR?oc=5" target="_blank">Двигатель отказал у самолета Air Astana по пути во Франкфурт - Вестник Кавказа</a></div>
+    <div class="article" data-date="2026-03-31" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE1RT09LR1pTNVFMSFpIcXgzc2k1TXNkYm8xaVpIdUxmRWxRZGNVd0lSSms4dndMOUh3RXhYOFBWZkwwY1k0MUg1QlI5RXp5NzBaZ3J0ZHVDc29JU2JkMUZkRmhZUXc0c0d6c0VqSXZENDJpSEpyU05hTVdFOG95dw?oc=5" target="_blank">Что меняет уход BAE Systems из Air Astana - inbusiness.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 08.05.2026 07:00</span>
+        <span class="date">📅 31.03.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Двигатель отказал у самолета Air Astana по пути во Франкфурт - Вестник Кавказа</div>
+      <div class="art-summary">Что меняет уход BAE Systems из Air Astana - inbusiness.kz</div>
     </div>
     
     <div class="article" data-date="2026-08-03" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPRl9xUVBnUUE3cG9yZ21YTFZiYm05RTB2MGUyTHpvb1VzNFN2Y0RTMkxpcHFBbUtVVnpwMG1DRkIyRVFkcXplX25JNU53Y2dfRUd0WGxyeE50dnlOcUpiZ1NURjlFM09USEszS0ExeVNyS3ZsLXlfdWFFYmduRUN0MGhHRWZFYUZDQnQ0VFAyYXVfYWprZmNWUUdNN3JuY0VyQzlfd3F4V05VOC1UYTJ5eTZyS0N4TFk?oc=5" target="_blank">Замглавы КТЖ проинспектировал реконструкцию вокзалов в Актюбинской области - Қазақстан теміржолшысы</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOY1J3X3dMS05seHh2VzEwZ0FyRHZqMEw4OUhVNUR2aEllZ1BUT2U1dG96dW5wSlhicjFLZlVDODl1TUw2aDY4cmY2M0x5RHVuOXB0RkJtTmFSMW1PYkZ3OW5kRGl5Z0dwUnVlNzlvcGZKTno2c2RLbWhnVkgyRTAwMm5zYWJzaDdjQVZPdzJpUUxWVl9Kdlcw?oc=5" target="_blank">В КТЖ назначили нового руководителя аппарата - TengriNews</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 03.08.2026 05:18</span>
+        <span class="date">📅 03.08.2026 07:02</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Замглавы КТЖ проинспектировал реконструкцию вокзалов в Актюбинской области - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-03" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNYVVCTHVmdkh3M1B1b1hQa2tIc3VVSS1xSUhkMldXank5d1dXUmZ0TnJBOXZibHc5MGU0V2I5QmJBazZreklaY1NrNDJGc3ZFaHIzYk8yU0I0ZWltOW5Ob1VjMmNBdnJ4T2N1X3dIaUVQdzNENERES2ZEZTVHVFRIZW5wSlRtYVk4Q3Rsb1RlRGlONG5jbVVhUGtVaGtCX3NBWFhPNjlEY29wLXdOWk95dURIVmx5cFlNdUtkaA?oc=5" target="_blank">70 вокзалов обновили за два месяца: КТЖ повысил комфорт пассажиров по всему Казахстан - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 03.08.2026 06:04</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">70 вокзалов обновили за два месяца: КТЖ повысил комфорт пассажиров по всему Казахстан - Qumash.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd25JZjdfbFlIbTlIYnlnMWE3WGE2QW9VWUtGQV92eEdRQW1Sa2ZXZmFORGZhNzdGTWxXN1o4UXBGcDloaGZYUWd4MW9FQnBTY2VWMXhWNUdrcDZDWllVbi13ZzExbjMtQXBjQzRxQXVqUlUxQklpSG5HUVFoMDBTZHg4YmYyNXM0cFAyeDVVdzQwbmkxaXM2VTBTQ1BHTUJFa1RxUHdPNWJOd2pmUFJyeUlxbG1TTjdjM3hMUnBVbDDSAcYBQVVfeXFMTkMxMnVzbjE2ZmdXZU1PaDlzR2d0QVZqcWhtZTAtVGlDbTF4N19oeTZQbVcxWmdWN2VOdkN1NHBqOWQwRzE4d1dydzVvQlFWNkp4RkdQN2JnaFhvczJsdGtQVVJPcWd1QjkzTG5WSURRR0dTdEdRRFdZYU1VNDJBV1RzVEZlNUpYMkxaMklmYU1QVmhCMkdGWGwzNkdtSU1CT1lIQm1nY1RfeEoteHNYYTF5STFkclB1b2RReWJESzBhR2RfSGtn?oc=5" target="_blank">Сила в людях: в КТЖ наградили передовиков производства к профессиональному празднику - ru.elordainfo.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 31.07.2026 15:21</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Сила в людях: в КТЖ наградили передовиков производства к профессиональному празднику - ru.elordainfo.kz</div>
+      <div class="art-summary">В КТЖ назначили нового руководителя аппарата - TengriNews</div>
     </div>
     
   </div>
@@ -197,15 +200,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-03" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-03/dlzh-bagdat-musin-rasskazal-u-kogo-bolshe-vsego-shansov-stat-milliarderami-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=dlzh-bagdat-musin-rasskazal-u-kogo-bolshe-vsego-shansov-stat-milliarderami-v-kazahstane" target="_blank">Багдат Мусин рассказал, у кого больше всего шансов стать миллиардерами в Казахстане</a></div>
+    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNcnZWbXhrQVJSZ3hkUkUxZjBUQUdNSDA2SHVuYlU1RnRVQ0NpY1FDOTdsVWFDNEZwYy1jUm5DTTlpTm85SEw2UUFkR2hpcGY1eFNsLVN3allQb3BMMDFvZ2U2ZDNoVTBwaE1hX0Z0Rm1UTUFXOEdnbWRVRl9KbE5iTHlHVQ?oc=5" target="_blank">&#34;Казатомпром&#34; сократил продажи урана при росте добычи - Qumash.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 03.08.2026 05:31</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 03.08.2026 07:05</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Багдат Мусин рассказал, у кого больше всего шансов стать миллиардерами в Казахстане</div>
+      <div class="art-summary">&#34;Казатомпром&#34; сократил продажи урана при росте добычи - Qumash.kz</div>
     </div>
     
   </div>
@@ -267,7 +270,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-02';
+  document.getElementById('date-from').value = '2026-03-31';
   document.getElementById('date-to').value   = '2026-08-03';
   applyFilters();
 }
