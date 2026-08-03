@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 03.08.2026 10:38</div>
+  <div class="meta">3 источников · Обновлено: 03.08.2026 12:56</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-31">
+      <input type="date" id="date-from" value="2026-02-13">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-03">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
@@ -109,15 +109,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neg">
     <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-03" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-03/chnv-solist-ruki-vverh-sergei-zhukov-obratilsya-k-zhitelyam-kazahstanskogo-goroda/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=chnv-solist-ruki-vverh-sergei-zhukov-obratilsya-k-zhitelyam-kazahstanskogo-goroda" target="_blank">Солист «Руки вверх» Сергей Жуков обратился к жителям казахстанского города</a></div>
+    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQTzFhRVR1cmRON3ZweEpVVUk1dkhPa2gxekxCTWFrZ2htQWV2dFA2NmdLUW9jeHlSU2NWd1dPNE41Z2hYalZuU3JjU2xCWnRBdS0xSWNkcllRMjRCcVB4ZjZ1Q2RSeDVwS0pLRldWUHprSFdGMEhyTnlvMGtvamlfWDZVSHJpUy1BcFFDV3YtaTcyMzdJSzhNUF9yTdIBoAFBVV95cUxPUTZHMnduUkRvREg3MzNJbVdWR05QRFN1UEtGY2F1NDhIbi1ESXJFay1QXzduTEFhZW1QMXk5YXBaVkllOUpGQWJsc2hJSDNXc3BWb2dDdzBxRkRRaXRKbzFKZ0oxQmRDM29lNlltWnpKR1o3VktzNW5ZVnI0SFVVa0EzUFB5XzRYNnVjSUlaRThKOFpGYnRCUHFLdUFjZnZU?oc=5" target="_blank">«Казатомпром» объяснил падение продаж урана в первом полугодии - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 03.08.2026 09:44</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 03.08.2026 08:29</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Солист «Руки вверх» Сергей Жуков обратился к жителям казахстанского города</div>
+      <div class="art-summary">«Казатомпром» объяснил падение продаж урана в первом полугодии - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
     </div>
     
   </div>
@@ -125,93 +125,55 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-03/zhnb-kazatomprom-sokratil-prodazhi-urana-v-pervom-polugodii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kazatomprom-sokratil-prodazhi-urana-v-pervom-polugodii" target="_blank">«Казатомпром» объяснил падение продаж урана в первом полугодии</a></div>
+    <div class="article" data-date="2026-02-13" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQVWN1Zm9NSVgyMzdORXhJN21jVEU0YmlfNGNvZ19zbFVSQlM1VVlvOGZjakprV0drNmJDaHlSU3NjUWdyMkZrY0dlaVdMSWd2LVhXbEZONkFRNlQzMGtOWmVITVktWC1Dc2dtVFRrNlVIcU5oTDFRdXdnMHVzaVhuX0syQnl3eXpWRFBBbnRPR2xEaldPNDVoYmF1NndDMEQ4YjVJ?oc=5" target="_blank">«КазМунайГаз» нарастил добычу нефти и конденсата в 2025 году на 10% - azertag.az</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 03.08.2026 08:26</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 13.02.2026 08:00</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«Казатомпром» объяснил падение продаж урана в первом полугодии</div>
+      <div class="art-summary">«КазМунайГаз» нарастил добычу нефти и конденсата в 2025 году на 10% - azertag.az</div>
     </div>
     
     <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOY1hNaGo4MkJQb1hNU1YzbTNQWGU3LUdWRVpCeHJRZkR6ekdEU0wtb3pfclBUcEtTUTN0WnMzbzEwRUdRcWUyN1o2OXlXWG5SZzV5LTdfeXRzOWxMNTdqWTU2MUdhVHl5Nkd1a29FNkxnNms4TzhrNG5VR3hwRU80VXF3N09CN2FpR3dsejhYdEtSV21JRi1pc3liZXEwbnlzTVd3dDBYWGlIWi04N29Xb0tnTW96c1k?oc=5" target="_blank">Казахстан за 6 мес 26/25гг увеличил добычу урана на 9% -- Казатомпром - ru.themoscowtimes.com</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 03.08.2026 06:19</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Казахстан за 6 мес 26/25гг увеличил добычу урана на 9% -- Казатомпром - ru.themoscowtimes.com</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOaUVHV0FKdnM1RjVDcEE3VEhhX3RKUS1VRnBjSkFiRlNJdXRycnBlR3Bsb1QwYUNzeWRaY3ZQengxMXNYWmhPWEtEYklwNWJjVXZ6d2RTNXpvT2lPUFYxZldKUTRPQndCU0RmcDZpRXF2ZE0xclVDdVowblJnOGZ5bjlSS2gxU0RxMWFnZUR5cEtrdzJVdHJwbkZZaw?oc=5" target="_blank">«Казатомпром» нарастил производство урана на 9% в первом полугодии 2026 года - ИнфоТЭК</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNaENaZUJtbFM5d2Q3MVhYWnpaZGVOZXVoOXk3blk5OHN2Z0hXMkh5em40NkY5NVA2aERwc21OdFExd3J0RjZYcExvS055TG9hZ3J1ZFhDVFNoS2VZSUROaXNpQ1FQakFaR2NzX2YzRmhGdzZRbW4xX2lRVHVKSm1JY2VqYnFmNXNwVHIxdmVQV1JvTWtOdEMyMS0xbER3QUhLS1FxOEhNSQ?oc=5" target="_blank">Казатомпром в 1-м полугодии 2026 г. увеличил добычу урана на 9% - Neftegaz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 03.08.2026 08:40</span>
+        <span class="date">📅 03.08.2026 11:00</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«Казатомпром» нарастил производство урана на 9% в первом полугодии 2026 года - ИнфоТЭК</div>
+      <div class="art-summary">Казатомпром в 1-м полугодии 2026 г. увеличил добычу урана на 9% - Neftegaz</div>
     </div>
     
-    <div class="article" data-date="2026-08-03" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOc2hYcWVUNEU5S2gwN201amZ6UUQ5cnQ5aTd6SFBLaGluTlBkZnhHc2xuS2ZGSGdFM2dnNUdqZ1ZJUGlUMWNaY2NvUXU2dkJ0WHQ1WnA3R3RZekJrdTB0Uk1BQU9tUWh5Rm1SOUFTWFZISTZya21yZDBGNFA5c2ZmbkR2OVRYa2NBVDhZUlNyYVJWR2hVWE9rR1lLU2xwZ3lFc2VJTTZJR2NnbWdWcnlTalVJcWxrazRsMm0yVm9TcFNoZ2Rka2VkSFVfcw?oc=5" target="_blank">Заплатили за &#34;лежачий бизнес&#34;, а получили обычные кресла: пассажиры пожаловались на Air Astana - NUR.KZ</a></div>
+    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPZDYzNm43OVNJMUxEYkpXYk9GU2xsUTFEd1ljVFI4RDJFLWxmVDBVbDAtSEh5WHR2VnFBZmNPYXZhQ0tkc0VhUUZtN1Q4LUx3aTVULXZWQ1FkazZJOGY3cEVhQ1BCX0NCSFpUOXEybnY2a3RiOHdOZWI1MlUwN2dxZQ?oc=5" target="_blank">«Казатомпром» снизил продажи урана на 13% - forbes.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 03.08.2026 06:56</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 03.08.2026 09:24</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Заплатили за &#34;лежачий бизнес&#34;, а получили обычные кресла: пассажиры пожаловались на Air Astana - NUR.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-31" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE1RT09LR1pTNVFMSFpIcXgzc2k1TXNkYm8xaVpIdUxmRWxRZGNVd0lSSms4dndMOUh3RXhYOFBWZkwwY1k0MUg1QlI5RXp5NzBaZ3J0ZHVDc29JU2JkMUZkRmhZUXc0c0d6c0VqSXZENDJpSEpyU05hTVdFOG95dw?oc=5" target="_blank">Что меняет уход BAE Systems из Air Astana - inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 31.03.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Что меняет уход BAE Systems из Air Astana - inbusiness.kz</div>
+      <div class="art-summary">«Казатомпром» снизил продажи урана на 13% - forbes.kz</div>
     </div>
     
     <div class="article" data-date="2026-08-03" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOY1J3X3dMS05seHh2VzEwZ0FyRHZqMEw4OUhVNUR2aEllZ1BUT2U1dG96dW5wSlhicjFLZlVDODl1TUw2aDY4cmY2M0x5RHVuOXB0RkJtTmFSMW1PYkZ3OW5kRGl5Z0dwUnVlNzlvcGZKTno2c2RLbWhnVkgyRTAwMm5zYWJzaDdjQVZPdzJpUUxWVl9Kdlcw?oc=5" target="_blank">В КТЖ назначили нового руководителя аппарата - TengriNews</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPd0VMN193NlZYRENpYlhCN2ZSV0xxYk5WT1R0dU4zM18wV3F2TUJ2SFBzYUdVMlgyb2o1Q2gydzd0d0tIaXRYLU5LZlNkbGdFZVZJS0drMnZGX3IxRGZZaXRremJacFVHb01FVXIzYjBwQkxJMi1TSHExdTJFdnVOSDJkWjBZQnJ3d2h3a2lVNEQ2MXJsNzZBdg?oc=5" target="_blank">Пассажиры пожаловались на духоту на вокзале Нұрлы жол - в КТЖ признали проблему - TengriNews</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 03.08.2026 07:02</span>
+        <span class="date">📅 03.08.2026 12:19</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">В КТЖ назначили нового руководителя аппарата - TengriNews</div>
+      <div class="art-summary">Пассажиры пожаловались на духоту на вокзале Нұрлы жол - в КТЖ признали проблему - TengriNews</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNcnZWbXhrQVJSZ3hkUkUxZjBUQUdNSDA2SHVuYlU1RnRVQ0NpY1FDOTdsVWFDNEZwYy1jUm5DTTlpTm85SEw2UUFkR2hpcGY1eFNsLVN3allQb3BMMDFvZ2U2ZDNoVTBwaE1hX0Z0Rm1UTUFXOEdnbWRVRl9KbE5iTHlHVQ?oc=5" target="_blank">&#34;Казатомпром&#34; сократил продажи урана при росте добычи - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 03.08.2026 07:05</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">&#34;Казатомпром&#34; сократил продажи урана при росте добычи - Qumash.kz</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -270,7 +232,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-31';
+  document.getElementById('date-from').value = '2026-02-13';
   document.getElementById('date-to').value   = '2026-08-03';
   applyFilters();
 }
