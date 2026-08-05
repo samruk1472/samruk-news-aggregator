@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 05.08.2026 06:24</div>
+  <div class="meta">2 источников · Обновлено: 05.08.2026 09:31</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-27">
+      <input type="date" id="date-from" value="2026-08-05">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-05">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -88,8 +88,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -107,17 +105,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-08-05" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-05/kaye-tengge-mozhet-grozit-devalvacziya-iz-za-krizisa-wildberries-schitaet-ekspert/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-tengge-mozhet-grozit-devalvacziya-iz-za-krizisa-wildberries-schitaet-ekspert" target="_blank">Что может произойти с теңге из-за кризиса Wildberries: неожиданный прогноз</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 05.08.2026 08:57</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Что может произойти с теңге из-за кризиса Wildberries: неожиданный прогноз</div>
+    </div>
     
     <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOE5MYmg2TUs1SWVpM0dPa1BoYloxZmEyZE05emNzLWxhdVVJcmNwdllQbTg1OXR4TDdSS2lSX2J1cGlqVV9nUklIUzdYczE5WUo5NEFWeV9feV9FclNuUkFFNjJmRmVOeWlWdHVhRlE2eTdCV0N1WlowSkQ5Yk9GQ1c5UkZnbmhpeU1XYTNLaGpPeDJqUnUtQzlkTmlLNmVmSDAzWWF2b1ROSlhQc21jeWFsUHh5WXFIR0VGanNHNUIyZ9IBxwFBVV95cUxNbzlXZTlubE8xVlBWcWF6aElTOVUxSGk0bWphTEYyZ1lnTkgwcWVlT1FTTXZTMDFVWjdZVjMtVmREbXdKdGJRVGZOc2trSEJUdDZud2t2NUlYcExUUlNOcGFZTFNnR2p1VXhFOFpQbkwyMVdfRHU3WGZwWnhzczRrUnc4b3BQclQ1RnlxQThMZDFpbmFkYWplQzhObHVncXoxVFphV3ZsOVFWV0pDM3FXZnJBM0RZeVJ1Wmh4amhSVTlWdldpWk5Z?oc=5" target="_blank">Экстренная посадка самолёта Air Astana: в Минтранспорта прокомментировали ситуацию - 24.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQTXA1S2ZmdG5uQUxIX0VyMU5jUFJiYzEyUmFmNUxLQjFWSHVucDFTNjdPb3dDMmdYcC1HOTNtTzI5dTViRDhuaEFrdWhOVDJkdFNPUFhoYkV6Z3F1R193TlNDTmpjZjlRSXFnMHZNeE52WVVZems0R3p6cjRQQnVfTGhFbGlrQzdrM0lYYXJpd0lXdXNPQnE5QXY3dnRkdw?oc=5" target="_blank">Air Astana получила чистый убыток в первой половине 2026 года - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.08.2026 01:32</span>
+        <span class="date">📅 05.08.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Экстренная посадка самолёта Air Astana: в Минтранспорта прокомментировали ситуацию - 24.kz</div>
+      <div class="art-summary">Air Astana получила чистый убыток в первой половине 2026 года - Forbes.kz</div>
     </div>
     
   </div>
@@ -125,72 +134,61 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-07-30" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOSXpaQTIxX1N4cEF1Q1JWUHZvYVdHTlJBR2gwN3pIOUVieGl0eTNUQjJ2V0hGbVNKVHUtTEltck5BVFRINURjWnJ6S1NocHU2UW5YRGhmc0R4S1RFSVpfcW05dzhxQ3JBUzdBYVg2dmtNM3BkVXlacEFrMGtMTFJfeHdGTVFaSFIycVd1bzUyWmliSFNyZUh4a3VfYzNGb0ZNQVZ4bw?oc=5" target="_blank">Как распределяют деньги в «Самрук-Казына» и чем занимаются его «дочки»? - shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.07.2026 19:10</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Как распределяют деньги в «Самрук-Казына» и чем занимаются его «дочки»? - shyndyk.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-27" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQb25vTTduN0pydDhOUFlBUkltRnMzYmUwaDhOV05TN1BBWU5hX1RReXF3NnI1dG5ka2I2M00zVlhJc3JKRkZveFN3RzhyRjVxMWNJSWpLajBPamtEcFVHbzdZOFJqY0dVQ2d6QzJiNnFEQTB2aXp4a0w2YkFPaUtkVjNYMkJfeVY1bzBZ0gGMAUFVX3lxTE9Yd2RjenRDZjhvcWgxblFGekdmU2gwQnQyWk15ZmhmckEwc2dVMVFieExmTV95RGtnVDF0Tk5fbmxjMlRBbUMtejhGMHI2ZG5DOVBJZ2N5aXF1RHQ2bnVEbFVWU0RyUHhmdkgzUHhudVFkbnY5dVNoRDdfMXMtM0g1VXV5SDZibGNsLWFL?oc=5" target="_blank">«Самрук-Казына» сократит 650 сотрудников уже в марте - Казинформ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 27.02.2026 08:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» сократит 650 сотрудников уже в марте - Казинформ</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-05" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE9WVm1vcFZFX2g0bmVCQjEyNEg0b0Y3aVpYbEV5NERqV2hhZTVkRGhKVkxyenhibnVyVHhLM2xCa05lLVkwbmNEWGlTSTBhVUdUcUNKd19veVFCb2tuRDBZ?oc=5" target="_blank">«КазМунайГаз» и ExxonMobil обсудили вопросы двустороннего сотрудничества - Energyland.info</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 05.08.2026 05:36</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» и ExxonMobil обсудили вопросы двустороннего сотрудничества - Energyland.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-05" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE82SzZkMlg1S2VRcExhQkhrMWRiS2VLY1gyY3NYQVFhMGMxS2E2cXpjMTNfdnZ2ZW1naFkyRVdpOWNSVHNjRDh5VEVUeFhFN0liTUZPNG1nT1I4V09yUlJ3?oc=5" target="_blank">«КазМунайГаз» усиливает производственную безопасность за счет внедрения цифровых решений - Energyland.info</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 05.08.2026 03:30</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» усиливает производственную безопасность за счет внедрения цифровых решений - Energyland.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-31" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1jdHBFTGgwZEFTbzlhOHM0ZngzcU5Td2xoM010SEttaHo1ZmJDVDJmS0lPU21FMXc4YkRDMDhxeU1FY2pZNHJpMnhBWEk3WVRrQmtjSjdZaGJnbnBvdElQYnJyWUg1bXVmbnQzaVFUdklQVGI1bGNWNw?oc=5" target="_blank">Казмунайгаз и CNPC планируют увеличить мощность казахстанско-китайского нефтепровода - tradingview.com</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 31.07.2026 13:14</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Казмунайгаз и CNPC планируют увеличить мощность казахстанско-китайского нефтепровода - tradingview.com</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBCNTYwLTN5UGkydlNFMXNRbjhELXNvTFJzaVpZSU5ZdEdLUFhyQXRZRnA2TWlmUmtaa0F4OGhONDZqZkNCYmZabU56aE9Sc3d1bm1fc2RXTm9YWFJXYlNXX0Q2S2lTaXM3dTFkNGJxX0lkZ0JXTHkyQmdiMzU?oc=5" target="_blank">Air Astana возобновляет рейсы в Дубай - Forbes.kz</a></div>
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNUjhlU1lnMGFQTFliZVdrVzNXdzlmNnVHd1VqdWo5MnJXbXplaTdtcGhsaVNweXJFWXFHaXZGTFNMWFpxYXI4bDVxTk04NVJURHhGSDJCY3JUU1pRUXdNSHVuZWUxNlNYZ04wWjlSRklaUkxYVFlwck1MTFYzVlEwb0RtdjF1dndLYzZJbFNpWTVTeV95a3U1bHZyN3BNeHpmTHZrMnNQa3A3dGVwWjhUdFhpQW9qRGthR2c?oc=5" target="_blank">Общая выручка казахстанской Air Astana в 1 пол 26г выросла на 16% - Русская служба The Moscow Times</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.06.2026 07:00</span>
+        <span class="date">📅 05.08.2026 06:18</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana возобновляет рейсы в Дубай - Forbes.kz</div>
+      <div class="art-summary">Общая выручка казахстанской Air Astana в 1 пол 26г выросла на 16% - Русская служба The Moscow Times</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNejVqSzVPWjdOTVBHR3FGNkNrRkQ5MzRFWk9JQTZaaHMwZXd0aWN2dGNMdXFGZnBMZ3pZMThYaG9OZUN3TEFkNkkweU1iWGlrVFRoQmo3Z2hPTGdILWJzbXZoSHR5a3VPcEMzdzFINHJWRWlJTC15TjdCNkdDNmxabUx3SGZfSmhEa3J5WHhic3VWdF9fc3NUVdIBlwFBVV95cUxOdEdqdVFNd09YYU9hdWYtd3hpXzZhZTUtN3FkUzAybkpmVjVFVHRJYk14aWdRVHZZZ29MaGZEVWthTFdITlU2SHVadWZjdUxIMmpRdHhwYk05VVNUbkJzZmxlSDhJX0lqZ2Q1TUFkdzJtZFlhcUdiQ2UydmlkOEJhZ1FxeGFpREJYOWRzY1pJaWdrMVp3MllJ?oc=5" target="_blank">Air Astana увеличила выручку на 16% и расширила международную сеть - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.08.2026 07:20</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana увеличила выручку на 16% и расширила международную сеть - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPZ2pvdnVXR2NsSmtfYTFpeFhjRmxBbElFT0l1R1RBY1VXNU1aSHU2M2t1eks1ZGZ6YkE1Tm91WG9xcGhWeXJsOTZGWGJKNS1HcTI4bkJkUDdRSHhwQU9COW5HblR5Rlh2Z0pycmx3NWIzUHM1UnIwcUM1QTdaZTE4WmE5NGxPQTBnSHZNODF3Nk5SYWxRUlVQYXB5c29ScWhCOGdWaGxWSdIBpwFBVV95cUxPZ2pvdnVXR2NsSmtfYTFpeFhjRmxBbElFT0l1R1RBY1VXNU1aSHU2M2t1eks1ZGZ6YkE1Tm91WG9xcGhWeXJsOTZGWGJKNS1HcTI4bkJkUDdRSHhwQU9COW5HblR5Rlh2Z0pycmx3NWIzUHM1UnIwcUM1QTdaZTE4WmE5NGxPQTBnSHZNODF3Nk5SYWxRUlVQYXB5c29ScWhCOGdWaGxWSQ?oc=5" target="_blank">Air Astana ушла в убыток на фоне роста расходов на топливо - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.08.2026 08:06</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana ушла в убыток на фоне роста расходов на топливо - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNN3Bxazk4STlieVByaVhJd2tid19mdTF6Q1VFbm04MVRrbWNYcnpOTFlzVGN6UGFTRVFSZll1Ni1YZUhfMkdjNXB1cHZBejRVMzJFUGRZVURwYm9RV29hNjRUeFR4MVU0V001T2tnZ2V6elRvY2ZRaUtmVWFEMFBqNTQzSE1obHlLQnZyaWZBZ1ZSRm53U0JtNGFBR05lQUdQWkFidHFheXk?oc=5" target="_blank">Меньше пассажиров — больше выручки: Air Astana сделала ставку на зарубежные рейсы - Orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.08.2026 09:20</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Меньше пассажиров — больше выручки: Air Astana сделала ставку на зарубежные рейсы - Orda.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPNERVNXZhQzJzeE94bWpCY1ExdFk2VmlyVmdodW15VXJqUGx5Z01tTGNXNmo4bktBZmxzRkNWLVo2cldEdi05bkVVOTB1MkQ0RFJyMkdDV0VueU4xbTlBX1VOZ05mVU9STElRTXdNclV1aFV0STljWi1WNm1MbHUzdjJFN1h2ZmtIOFFwaDJZSlgyOGpSWmV3elYxLTZyLU5pZ25KS3dvbEZqc1JBZ1VaeDl3?oc=5" target="_blank">Почему Air Astana зарабатывает больше, но все равно остаётся в минусе - nationalbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.08.2026 08:30</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Почему Air Astana зарабатывает больше, но все равно остаётся в минусе - nationalbusiness.kz</div>
     </div>
     
   </div>
@@ -200,15 +198,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-05" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/08/where-gaming-meets-sport-inside-astanas-phygital-games/" target="_blank">Where Gaming Meets Sport: Inside Astana’s Phygital Games</a></div>
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-05/fvfv-air-astana-ushla-v-ubytok-na-fone-rosta-rashodov-na-toplivo/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-air-astana-ushla-v-ubytok-na-fone-rosta-rashodov-na-toplivo" target="_blank">Air Astana ушла в убыток на фоне роста расходов на топливо</a></div>
       <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 05.08.2026 05:35</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 05.08.2026 08:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Where Gaming Meets Sport: Inside Astana’s Phygital Games</div>
+      <div class="art-summary">Air Astana ушла в убыток на фоне роста расходов на топливо</div>
     </div>
     
   </div>
@@ -270,7 +268,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-27';
+  document.getElementById('date-from').value = '2026-08-05';
   document.getElementById('date-to').value   = '2026-08-05';
   applyFilters();
 }
