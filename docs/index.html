@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 05.08.2026 11:59</div>
+  <div class="meta">3 источников · Обновлено: 05.08.2026 15:15</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-04">
+      <input type="date" id="date-from" value="2026-06-17">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-05">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -89,13 +89,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -112,113 +106,42 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxObjZUUjNYYUtCSm5yeEt4eVVhUnNBSld6bFdxVmVVX0FWZm55QTN0YlFJSFhYTTBMZC13TjIzNWswSW1PTXFFbmdsSGtiUFlyeWZtVUU3WERtQTBoenBNbWhSeUpYTmk3ZjdoN2dsRlFvU1ZIQzBsSHB4Q3U5VUNTcTZYU1FoUG42?oc=5" target="_blank">Как Air Astana противостоит мировым кризисам в авиации - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.08.2026 11:30</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Как Air Astana противостоит мировым кризисам в авиации - DKNews.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-08-05" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-05/185-mln-prosmotrov-za-5-dnej-kak-ustroeny-igry-budushhego-2026-gotf-2026-v-astane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=185-mln-prosmotrov-za-5-dnej-kak-ustroeny-igry-budushhego-2026-gotf-2026-v-astane" target="_blank">185 млн просмотров за 5 дней: как устроены «Игры Будущего 2026» (GOTF 2026) в Астане</a></div>
+    <div class="article" data-date="2026-08-05" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-05/kaye-zhelayushhim-zarabotat-na-fondovom-rynke-kazahstanczam-dali-dannyi-czennyi-sovet/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-zhelayushhim-zarabotat-na-fondovom-rynke-kazahstanczam-dali-dannyi-czennyi-sovet" target="_blank">Желающим заработать на фондовом рынке казахстанцам дали ценный совет</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 05.08.2026 11:13</span>
+        <span class="date">📅 05.08.2026 13:08</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">185 млн просмотров за 5 дней: как устроены «Игры Будущего 2026» (GOTF 2026) в Астане</div>
+      <div class="art-summary">Желающим заработать на фондовом рынке казахстанцам дали ценный совет</div>
     </div>
     
-    <div class="article" data-date="2026-08-05" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5TdXFLd0Rudnp4UTNJekJ1MzR3V0RvUmU1VDhpc1J0LUxOdlFZdFAtaXlvRGVqcmRISkJGVE0wTUxZSUgzQmZoWjBZY19FdGRya09RcUV0YklqYTFESVktaA?oc=5" target="_blank">«Казатомпром» и «Cameco» представили промежуточные итоги по добыче урана за первое полугодие 2026 года - Атомная энергия 2.0</a></div>
+    <div class="article" data-date="2026-06-17" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE42VVlEUzdSaWVvdGRqRE1sQjJEV2Q0SEFTMnRIMlRfSXFJYkpUZXk5LUpBWk5QMlpYb2VoTk5oQmNSX01xTkwwRldnOGh0bGMtSWRpRlgybw?oc=5" target="_blank">Аналитика. КазМунайГаз внедряет цифровые двойники месторождений с использованием ИИ - Energyland.info</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 05.08.2026 11:29</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 17.06.2026 07:00</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«Казатомпром» и «Cameco» представили промежуточные итоги по добыче урана за первое полугодие 2026 года - Атомная энергия 2.0</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPWXhETklyWmNlcjRub0Y4MEtpTTJNR3hoSUVJb1lRamt1N2VOcnRFT014RGt1ZUxTVE9tZUZxOXVmVTBxeDlCcGc0RTFZa213akRuUU80Sm52SW9zUkdFclBoQ09uSTNpVlpuTWVlYi1XekJNcU1QdVpuVm5iRmZRVXl4amVadUd0OGZxQnpma1p1OHRGTkhPbjBYWjFkVjR4R3fSAacBQVVfeXFMT2dqb3Z1V0djbEprX2ExaXhYY0ZsQWxJRU9JdUdUQWNVVzVNWkh1NjNrdXpLNWRmemJBNU5vdVhvcXBoVnlybDk2RlhiSjUtR3EyOG5CZFA3UUh4cEFPQjluR25UeUZYdmdKcnJsdzViM1BzNVJyMHFDNUE3WmUxOFphOTRsT0EwZ0h2TTgxdzZOUmFsUVJVUGFweXNvUnFoQjhnVmhsVkk?oc=5" target="_blank">Air Astana ушла в убыток на фоне роста расходов на топливо - kz.kursiv.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.08.2026 08:02</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana ушла в убыток на фоне роста расходов на топливо - kz.kursiv.media</div>
+      <div class="art-summary">Аналитика. КазМунайГаз внедряет цифровые двойники месторождений с использованием ИИ - Energyland.info</div>
     </div>
     
     <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQMTVQN3Q5MkJKTTJUQnR3WHR3V2dXNlZTVTVPc2FyWXkxeVV3NkxZMlgyaVZ3TmNud1NUY3dBSTR0c29KVTdOYjFqV29PbmJWeWFZZ1dMTG5oNjNBU2tVV0dLS1VCVVIxcW9obmtYeWs2aGpmMW5fb1l5SVd5akVzMEpXQmY2T18xV3pqOHlIVlhnMHl0azhWbkZTMA?oc=5" target="_blank">Air Astana завершила второй квартал 2026 года с убытком - Kapital.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQSm1ZZ3E1Z3BWbWhPSkxFT2I0U1lvT0x5MEoycGpudXdSbUJRSHJXaEphMW9oMTNZR3prYkJNdjAzMW1NRzhnNG50aXU2ck5hb2RYU0xEbk1JckpIaTk1RWhqYjBLOUNNLTQ0bTVxZ2tzd0toQnhMNjNXb3BzNWwtNkVoQzBWME1aMkE?oc=5" target="_blank">Air Astana оказалась убыточной в первой половине 2026 года - Qumash.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.08.2026 10:54</span>
+        <span class="date">📅 05.08.2026 07:34</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana завершила второй квартал 2026 года с убытком - Kapital.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxPN3dTOFJCLWdDcy1SOGQ2QUpMdzgzSWdndkZmNHRTWXdaNGJoaEdqY09sVHVIX3EwdUoycVl1TVVxaDN2UkhVUlllS1ZzX0pZM1NjdHl2Q1E3ZFo5OVJibWJzQlpqc3d2bk14MFo1cGppUWdwa3JZSlRVWkFabjdRWkhn?oc=5" target="_blank">В убытках оказалась за I полугодие Air Astana - Bizmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.08.2026 10:42</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">В убытках оказалась за I полугодие Air Astana - Bizmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOMGptWHM4bWtKZzNsdXVxYTJzb003Q2drUHZYaWE2OFUxUU5MTzZtTGRJQUUyRDZDeFhDeXhuVU5sSlJFRzdCcEtkRWlhb05KLWlsZk5yZHNnaDF5Ym92TjMyQnk4SGZRMUdwbkNXSmFwc1ZQWFJVR0U0ZmM3aEp1cFloZ1NIeU5KSV9DODhPZm40cnliSUwtQjIxWTU0aGJubEhOdXAzeWwyWklUNWtSTEg4MA?oc=5" target="_blank">Итоги работы в сфере регулируемых услуг за первое полугодие подвели в КТЖ - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.08.2026 05:30</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Итоги работы в сфере регулируемых услуг за первое полугодие подвели в КТЖ - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-04" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQNjRhc0xYb2dIODNBUnpjS1lGOE52VHp2el9FUUpLSmt4bFAtQ3BEVi1CYTJBRGdTbmhyNUJtTXQwM0hCRXB3MExRdXliSUpST18wUTdtQ0EzUzhYMkVrZXFlVUVIVmJOWm1iRU1EQVowVjZxZG53WGRnRWMtb1lFUTFlV0pyRDZ1TkV6S3FlaGRQMFJsVkcwRmZGdlowV2pIckQ0cGpwTlZwS2ZVRFE?oc=5" target="_blank">«Тайная комната» в КТЖ: что обнаружили за шкафом в кабинете руководителя - Shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 04.08.2026 20:07</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">«Тайная комната» в КТЖ: что обнаружили за шкафом в кабинете руководителя - Shyndyk.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-05" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQcDhtMjNiMHFHWGEzNHBQYXlxMk96dUxhREZ3d09VTFdLOUduMDVyNGpNY2NMNzZyUXVDMlJ4Wk9reFZsX3lqZlo1cTNCMVNoUVRHR2FXMG5lY1dDU1RCeC1xVDlDOHhLUmZ6YWxsMVpvMGhHOXNfbkRDdFF0RzdRUks5NWpmcmU3ZERTNmdiMEQ3YjdmbmcyaGpqU280SHhJN04w?oc=5" target="_blank">“Казахтелеком” запустил бесплатный Wi-Fi в Президентском парке Кызылорды - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 05.08.2026 10:28</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">“Казахтелеком” запустил бесплатный Wi-Fi в Президентском парке Кызылорды - Qumash.kz</div>
+      <div class="art-summary">Air Astana оказалась убыточной в первой половине 2026 года - Qumash.kz</div>
     </div>
     
   </div>
@@ -226,28 +149,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-08-05" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-05/zhnb-inzhenernaya-kompaniya-sergeya-kana-prinesla-emu-bolee-treti-milliarda-ubytka/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-inzhenernaya-kompaniya-sergeya-kana-prinesla-emu-bolee-treti-milliarda-ubytka" target="_blank">Инженерная компания Сергея Кана принесла ему более трети миллиарда убытка</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 05.08.2026 11:06</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Инженерная компания Сергея Кана принесла ему более трети миллиарда убытка</div>
-    </div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-08-05" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="http://profit.kz/news/74394/V-Kizilordinskoj-oblasti-obsudili-razvitie-cifrovoj-infrastrukturi-i-vnedrenie-II/" target="_blank">В Кызылординской области обсудили развитие цифровой инфраструктуры и внедрение ИИ</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-05/shlc-po-dnu-kaspijskogo-morya-zavershili-prokladku-kabelya-vols/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-po-dnu-kaspijskogo-morya-zavershili-prokladku-kabelya-vols" target="_blank">По дну Каспийского моря завершили прокладку кабеля ВОЛС</a></div>
       <div class="art-meta">
-        <span class="src">📰 Profit.kz</span>
-        <span class="date">📅 05.08.2026 10:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 05.08.2026 12:40</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">В Кызылординской области обсудили развитие цифровой инфраструктуры и внедрение ИИ</div>
+      <div class="art-summary">По дну Каспийского моря завершили прокладку кабеля ВОЛС</div>
     </div>
     
   </div>
@@ -309,7 +221,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-04';
+  document.getElementById('date-from').value = '2026-06-17';
   document.getElementById('date-to').value   = '2026-08-05';
   applyFilters();
 }
