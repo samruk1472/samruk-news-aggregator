@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 04.08.2026 17:30</div>
+  <div class="meta">1 источников · Обновлено: 05.08.2026 04:14</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-26">
+      <input type="date" id="date-from" value="2026-08-05">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-26">
+      <input type="date" id="date-to" value="2026-08-05">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
     </div>
   </div>
@@ -102,23 +102,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-26" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBuRTJjNF9RTmpYNnJQQTFBNGxwMklRaGV0V1RCOGlMZ2lPamFvMkRGd1dfUlQwaHRlWGtpbWRzdTVLaDIwTFZCZWlB?oc=5" target="_blank">КРЕМ снова отказал КТЖ в досрочном пересмотре тарифов МЖС - АПК Новости</a></div>
+    <div class="article" data-date="2026-08-05" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPSFRpanRBdlA4LUxkSmN1Wk1xSExsUkIyM1pnZkR3Mk5IUUZMRnJMdG5BYzlWUVpTU1diTERobWtISzRRbUhFNG1tdXZXeGR2UExTUzZqR05qYk5vaG1SLVRNMXdBS2taRDJfeFhHX3JFV2xhSnMyMGVMWE52M0hWOHlVanNpYmUwY3E0bUlndnVrQTlxNzhMMzNCNURCTkFMRTdDVkIzTWF6dVpOY0F1RWpSQ3M?oc=5" target="_blank">Конфликт интересов в Rompetrol и двойная зарплата руководства? Что ответили в «КазМунайГаз» - Orda.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 26.06.2026 04:29</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 05.08.2026 03:30</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КРЕМ снова отказал КТЖ в досрочном пересмотре тарифов МЖС - АПК Новости</div>
+      <div class="art-summary">Конфликт интересов в Rompetrol и двойная зарплата руководства? Что ответили в «КазМунайГаз» - Orda.kz</div>
     </div>
     
   </div>
+  
+
   
 
   
@@ -179,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-26';
-  document.getElementById('date-to').value   = '2026-06-26';
+  document.getElementById('date-from').value = '2026-08-05';
+  document.getElementById('date-to').value   = '2026-08-05';
   applyFilters();
 }
 
