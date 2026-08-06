@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 06.08.2026 12:02</div>
+  <div class="meta">6 источников · Обновлено: 06.08.2026 15:15</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-06">
+      <input type="date" id="date-from" value="2026-06-01">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-06">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -88,6 +88,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -104,36 +110,145 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-06" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE9IQzM5OUFxMTRBRGduSldNNWxYYXBJeWVtcmluV3BxSE12UTFOM2xGSzFFbDlzNnI0WjlFS1dnZmU0Sm4xZnVfNHln?oc=5" target="_blank">​Брат осуждённого экс-вице-министра может возглавить Атырауский НПЗ - Ак Жайык</a></div>
+    <div class="article" data-date="2026-08-06" data-co="Казахтелеком" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-06/svvo-za-dva-dnya-v-kazahstane-pogibli-dvoe-sotrudnikov-kazahtelekoma/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-za-dva-dnya-v-kazahstane-pogibli-dvoe-sotrudnikov-kazahtelekoma" target="_blank">За два дня в Казахстане погибли двое сотрудников «Казахтелекома»</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 06.08.2026 09:58</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 06.08.2026 14:16</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">​Брат осуждённого экс-вице-министра может возглавить Атырауский НПЗ - Ак Жайык</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-06" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZUd2eF93dC1CYXMxNU1OdnF3SXlfa3IxOWdlT0RqRUxIdjRSOHRkODFHRG93QkJRTlI1elpJYVVCZFluRWtQejBBUVFaZWxOS3dtQm5zS0NMbmZqQjJaWVJMMWtKamo3UHAtMWhRMnQ1TXUxejJOaHBYc1Y1di1OamJKeE9rZlNpcDBV0gGQAUFVX3lxTE5rREtPN1l6Wkh2d3JEQW5rM0lfd0JRdVoydEZObkV3WDMzVnRybVRqalljVnk1SFFPRlR3SUFNa1EzUTE0WjVxeTJqMUpUQThTaFR0SmZKeHp2SzVjUDJSUzBITk1KNURZOXRuZzNjeWFCdW1LTXVIRmEzNG9DSEdiYjlVb0VLNGxGcUZlcWdUTg?oc=5" target="_blank">Количество пассажиров Air Astana превысило четыре миллиона - Arbat media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 06.08.2026 10:27</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Количество пассажиров Air Astana превысило четыре миллиона - Arbat media</div>
+      <div class="art-summary">За два дня в Казахстане погибли двое сотрудников «Казахтелекома»</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-06/kaye-gospaket-erg-oficzialno-pereshel-samruk-qazyna/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-gospaket-erg-oficzialno-pereshel-samruk-qazyna" target="_blank">40% акций ERG официально перешли «Самрук-Казыне»</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 06.08.2026 12:04</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">40% акций ERG официально перешли «Самрук-Казыне»</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQY1NKSDNaN3ktcm1MY09yeXNTT1ZCMVBPSWNGd3pubWlHUFVnYXhiSkFwVVNodGczVUFwemFHTnRHb0NuRlFZelVkd09CYjRNMXNxeF9vSlRiSXNUZEpmV1kzNHdncW10TVFpYXc2MWgwRVNLRVhsLVhDelQ4Y21yLXMxb3RqUGYyRUtLZC1B?oc=5" target="_blank">Контрольный пакет ERG перешел к фонду «Самрук-Казына» - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 06.08.2026 11:53</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Контрольный пакет ERG перешел к фонду «Самрук-Казына» - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOVnhLcHVEWUtfOGI2dWhONnlfb3dtNVZDYkhxR1pRMFFYU0Y3QjlBRGRaUktwcC1KZHlsZ3hRZkpXa0pybVQxNF83UnFMNjl4NlpGNGhnRlkwOW1CMDdlUm1BcGRlNFJzNWdMYTZEUFhVeVJUTmZCZHR4OHVqbEhDZVNWRmtnTGhncm1yVHhuVUVKLTFnbWY5Z0F6Xy1xQQ?oc=5" target="_blank">Пакет акций ERG всё-таки перешёл в собственность «Самрук-Казына» - paddock.pro</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 06.08.2026 14:16</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Пакет акций ERG всё-таки перешёл в собственность «Самрук-Казына» - paddock.pro</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE9nMFA0SGI5SXhGcGFNdGFNMVRzWHpNRXc4SzRtR2hELXVXSXV4QlkzWWNNRlFsRFdJa0ZZNDRkcGRGSGh2b1dSWXJWUmRiY3hBcjB5ZW8wTlBJVkZTMTdydmxzTVlMbjM0eDZhbWdsQVliWVZuMlc3VGRLY0Q?oc=5" target="_blank">40% ERG перешли к «Самрук-Казына» - nationalbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 06.08.2026 13:40</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">40% ERG перешли к «Самрук-Казына» - nationalbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-06" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOUQtZ1ZSaUZFa0VGRHlPQjBqVXV6WnhxYVFLZkZ2a0tkdlVYSXdNUjB6SDdmMmx3aFEtYm1rSURKNHBUQU1YN0RQWjNKeUllZ040WE5PT1VmZzNiQ1BSamdtOVFZamF3OFQ2S2FWUS1KTkZRV0pwdW9QRHZLb21yekhXZ1ZWdkF0RFdkZzlsdlM5dk80MXZtMDEyTkNZbDFfenNlUmY5TTlodHlrX0pLa0RiNGNXVXA5anM5ZXhmVHHSAcYBQVVfeXFMTlNSQURJQjljT2VzNlNFUURSUTZINzh3emE2QnVfaDlVTklnejVmNFB4TUlKeUg1aGl6UDREMXZMVThHQkxlejZ1bVJjNHpvOXJqbzhNX0lEWnlMUUV1dVdlc3hUNEdNb3g1LUlYdkFEX21uSWpzS0h1VXVvdXdTVjAxMWo0eVAtaDVHcnlVa2RFdWxoQ2NaNy1jYmMtVUNVaV9SdkVhR1J5SjJ2NDl4SERZbE84T21NREh5VURSb1NDendkTk1R?oc=5" target="_blank">«КазМунайГаз» кратно сократит расходы на разработку Карачаганака - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 06.08.2026 12:57</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» кратно сократит расходы на разработку Карачаганака - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPU09HZjBDYmhXRDg1QlVVbkt6ODNNUENtN0xSYkJJbEJCR0lfR0VNb1hyblhiRHpzRHZCREVWbm5JZkJ3eFR1VzM5cHUwdWluVmhJaktJcjIwXzNlc2VwZjZYbGtFMXEtMXU3Y21kMnFlZVlsSE9mVWVWdm9oSUY1RHBvQy0zeFpBWFhpakdnc3ZpUmJPWGZJ0gGcAUFVX3lxTE9QX2V2TDdQZlljaERIRmgxMTRlMGlYVTB6UHc5ZWtXRVo5QWE4VnNnZVlEeVV3dXB3eFVld05LTmZ0ajBTcnhKYXU5MERsZUJ1TE9saGZHeURZNGJpSXVxZHdfaE1RYjBvRm9kUThkUmN6WURFbGJVMkE3ZkwtQUZDTE9nT1UzNHg3aldJSDVfN3p1cmdBNkFTWWhfMw?oc=5" target="_blank">Air Astana увеличила число рейсов в Китай до 51 в неделю - Arbat media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.08.2026 11:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana увеличила число рейсов в Китай до 51 в неделю - Arbat media</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNLTlqcEZiWDdBcnlNZ1d6QkpLbUJSOTY0ZFZLNk1GaWtHN1RaQkNYZnY2UFlzZi02aDJ5UlNpZ1ZaLVl4MFYybDMtYzdMNjZLUVlBaWh6WmwtUlJYRmY4ZXQ5SXk4YnN4V0loRUJSaElRbXhMT1JTNFZXektvX1FvdGZMVUxoQWppSC1SRUFIbURyN1FLclhYMG14bzBzbV9OVXc?oc=5" target="_blank">Поезда давят сайгаков: КТЖ прокомментировала шокирующее видео - Shyndyk.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 06.08.2026 02:38</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Поезда давят сайгаков: КТЖ прокомментировала шокирующее видео - Shyndyk.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5peHRPZV83YmZidU00U29UZTQwSG1BTkd0OXBvQzFVWndydjhyVWtfcVQxMDZrLXVvZndCLVZkZ21DX3Q4ajJrZWNHeHp1WkhFSzdrX1dnaDNyQW5Yd0I5ZU5pWjF1Wjc4Y0c0bGE5R3lCQUVZU1BFbHNLRjI?oc=5" target="_blank">Работник АО «Казахтелеком» погиб в Костанайской области - Наша Газета</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 06.08.2026 12:11</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Работник АО «Казахтелеком» погиб в Костанайской области - Наша Газета</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-08-06" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-06/zhnb-kazmunaigaz-kratno-sokratit-v-blizhaishie-gody-rashody-na-razrabotku-karachaganaka/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kazmunaigaz-kratno-sokratit-v-blizhaishie-gody-rashody-na-razrabotku-karachaganaka" target="_blank">«КазМунайГаз» кратно сократит расходы на разработку Карачаганака</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 06.08.2026 12:56</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» кратно сократит расходы на разработку Карачаганака</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-01" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPb3FCcHRrcS03QWxNVHVxcEhhM3NVTUQzRnBDRGdXc3lEcXczb2xpU01qcS1tbjdHRGNjWFZCM2lVU1FXcml5ekhad1hmNnBQcmU4aklReXpUQ2p4clNEMllMVGc4RndVdEdhVDExb2Q5OTEtMGhoM0ZBTWNkd3VlZE1iZ0IzR2FvZ3pLRW1PamZaNTk2VEg4ek84cVBpN3YtYVhnTnEyUkFSVFgtdGMxLTlwTkx5VUt3b2fSAb8BQVVfeXFMTnp6cG9wakRRX2VxTU5uRGI4emRQU2hxYzdpNF9iSDlKekRoVlZuQmRuN2lYQ0Q5QzdjUE9QeTFqSjNHSUtqeU9BRWk4SXlWZDRPbkNra2pPanVOVUEwZnFtSUhDcFBtU3VJbXZPQzhUSFdIVzVJZzFQd3E2YUN1NzVvLTlKcUtSbHJGOW5uLVVlQmdTQTd3UWRtQXU5eGxxRUJkUTZGeng2WVNiVnpMc2NReVRQOXRhcVNEV2JVbzA?oc=5" target="_blank">SOCAR и &#34;КазМунайГаз&#34; обсудили сотрудничество в рамках Бакинской энергетической недели - Report.az</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 01.06.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">SOCAR и &#34;КазМунайГаз&#34; обсудили сотрудничество в рамках Бакинской энергетической недели - Report.az</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -192,7 +307,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-06';
+  document.getElementById('date-from').value = '2026-06-01';
   document.getElementById('date-to').value   = '2026-08-06';
   applyFilters();
 }
