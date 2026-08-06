@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 06.08.2026 06:24</div>
+  <div class="meta">3 источников · Обновлено: 06.08.2026 09:36</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-08">
+      <input type="date" id="date-from" value="2026-07-07">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-06">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,6 +86,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -105,44 +109,49 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-06" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPLTBkazN0VUVxaV9Tb0Z2aGdGVTZIVkZrRkRsNEZXQ2tlOWt3SkRkVUlURTRyMXU4Vi1mejRFNmt4eXJJMm1YMDVxQUtaMmJqVWg4R0paMG5ONXBJOWRxVlp1LWNqei1YVGJGQi1jWmlva2JTN3hUWHMwUHRtY0E4WXlDak9GMC1qcDBJNkRZNjdiS19qbE9MMFdtZ3pHMTFJSlU4?oc=5" target="_blank">Air Astana увеличила выручку на 16% и перевезла 4,4 млн пассажиров за полгодие - zhaik.su</a></div>
+    <div class="article" data-date="2026-07-07" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQSEZ1SDBaczMwRksyVDd4MmJrZzRmdkR4djlnbHRlTm1wbU1YdDh4d1p4NE9xVVVidHJ1LVAwbDN3dWtWcmFLMHA0aTZYbkhnSzZKZ1UwNmZmZUM4bGNMOHJ5X1ljbDNIalJfX2FUSE1RRlBybUowUkVPWV9RYjFSTU5HdjFqaFJNUjkyS2N2cG9lWHNqelptUWp0X200SnF2b0HSAacBQVVfeXFMTzJhSlE0aFRDRGlYOVp1Y3psTHJQVUhpLXZXbjItM1VWTDZDcW5mb1I1eXdUQ3JNWlpKMVE4clRKTjVqdlVXUmluVVhPRUNtZzVhRzh1ME9hUWJtbjZ0Q0xhVDlINjduMFBQSmI0el9ncVBkYWQteGRVUlk4Q3FZTy1xczNBVjRDbDlzTkJxVWk0cU5QVVkxSmZnU2psaHVRc2RGZTFwUTA?oc=5" target="_blank">Как изменилась система закупок «Самрук-Казына» за два десятилетия - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 06.08.2026 04:52</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana увеличила выручку на 16% и перевезла 4,4 млн пассажиров за полгодие - zhaik.su</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-07" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTFBwLV9tOHRMVm1ramRKalRRSXQ1RlFweGhoVmJySi11U09Gci13YzN1MUFfLVE4cXNNWFNVa2gtdncwUnQ0SW5tck9ZUQ?oc=5" target="_blank">Air Astana расширяет полетную программу в Турцию: что изменилось для туристов - tourprom.ru</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
         <span class="date">📅 07.07.2026 07:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Air Astana расширяет полетную программу в Турцию: что изменилось для туристов - tourprom.ru</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-08" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQVhrNGdGTEhQazhyWkpHNTlOdzIwdTZrTUwzcUlQTzRmLTdnQ24yVE13YlIzaGN3Tk1vQ1pRZ3V4TDV6UE94VmJjOWVrcF9lek5sanZJRndtTTRtMkxUOHpoNEpNSVhTYUNBLTJwLWZEZTFWUlAyNkdtMXZXSjgzTFNwV1Yxa0M3Yk9RLVNZa2FBYXU4azR2OEtONmU4dkFlM2FJaC1GeHlKNVdyUGxYSVl2cF9ueWVYZnFZ?oc=5" target="_blank">Самолет Air Astana совершил вынужденную посадку в Актобе из-за отказа двигателя - azərtac</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 08.05.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Самолет Air Astana совершил вынужденную посадку в Актобе из-за отказа двигателя - azərtac</div>
+      <div class="art-summary">Как изменилась система закупок «Самрук-Казына» за два десятилетия - Kursiv Media</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/08/kazakhstan-completes-key-stage-of-trans-caspian-fiber-optic-cable-project/" target="_blank">Kazakhstan Completes Key Stage of Trans-Caspian Fiber Optic Cable Project</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 06.08.2026 08:14</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Kazakhstan Completes Key Stage of Trans-Caspian Fiber Optic Cable Project</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPcWhMTWV0a1dQMmJKbjQ4cWlKUEZ3OFJxbEdDZTNueEs3Ni15SGZlQjZvWUFCWWNhV2xVMXhtYVAzRXkyUnl2VkVHODdJQlp1NlhQbXVKVi1XZWR3MjVhNnFrcUFVM09HNGhCZk9OSlMwbFlkQ3k1RldmOXlBVHNXTUNrcl9VbWJvaVZEeGZHdndvUEpDbjM4eTZIMVNFWTgzUGVyN2tsUdIBrAFBVV95cUxNdTF1MDdONk9qTElCU0ZUX1RsOW96U2dxS0YxSGI1Zl9VY1B1cHkzTmUyM19uT056eU8tOGpGRFN6REt1VjdqSHU4Xy1wMWxjM1RMdGVOTG9lQ1N1MHhtMVpPZGVxRlRDX01XT3p3STdCa21ZVU5DZm1sY0N3azI0NG9MQ255cGdjR1Z2WS1iYXVjZ3pUYVU2S1A5bHRfLXFyVjlzenpyc3E0N1JE?oc=5" target="_blank">Air Astana сократила число простаивающих самолетов более чем вдвое - Arbat media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.08.2026 13:44</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana сократила число простаивающих самолетов более чем вдвое - Arbat media</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -201,7 +210,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-08';
+  document.getElementById('date-from').value = '2026-07-07';
   document.getElementById('date-to').value   = '2026-08-06';
   applyFilters();
 }
