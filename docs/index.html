@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 07.08.2026 05:29</div>
+  <div class="meta">4 источников · Обновлено: 07.08.2026 08:09</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-08">
+      <input type="date" id="date-from" value="2026-08-06">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-08">
+      <input type="date" id="date-to" value="2026-08-07">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -102,25 +110,101 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-07-08" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFB0WDBHc2tpa0VjT1RJYkZkSTVBdmx0UFZTWXhDOWc5LWdXOFJKNmNYX3RqeUlucm9uYWhXTVRBYXgxOHkyb2dzbEZ0ZC1sSE1nQnlNTk55dUljT1RXWFBPbXVSUQ?oc=5" target="_blank">КазМунайГаз увеличит производство товарного газа до 4,5 млрд кубометров в год - Energyland.info</a></div>
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-07/kaye-u-operatora-krupneishego-neftyanogo-mestorozhdeniya-kazahstana-vyyavili-narushenie/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-u-operatora-krupneishego-neftyanogo-mestorozhdeniya-kazahstana-vyyavili-narushenie" target="_blank">У оператора крупнейшего нефтяного месторождения Казахстана выявили нарушение</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 08.07.2026 03:08</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.08.2026 07:26</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КазМунайГаз увеличит производство товарного газа до 4,5 млрд кубометров в год - Energyland.info</div>
+      <div class="art-summary">У оператора крупнейшего нефтяного месторождения Казахстана выявили нарушение</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE52RWRrVW55M3psTjJDUGZsQ1EtR1RrVXJQdDB2aEx6bURjMEtyNHpWclJOV2lNZXRieTIxSWsxaDI1Mm55OXdURE53M2ZrOHpVeVpkNWlxdnRtS3hYRDVNXzdKSUwzNDR3dmxmRWp0TFJpRFRnRGR3QjNUTGxiQQ?oc=5" target="_blank">УБЫТОК «ЭЙР АСТАНА» В ПЕРВОМ ПОЛУГОДИИ ПРЕВЫСИЛ $21 МЛН - THE TENGE</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 06.08.2026 06:18</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">УБЫТОК «ЭЙР АСТАНА» В ПЕРВОМ ПОЛУГОДИИ ПРЕВЫСИЛ $21 МЛН - THE TENGE</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNOGpHTmkxWFBndXRMeXBlRHVaTW9mZXFMQ0VOYWVxb3J2aW5aTUZsOVJ5Ql9meFVLbEVmZTZNaEo3Qk9wRHpKQmo5SEVHVDQ3U3M4eU1ia3ZhWHNSblVmNFB2SWpnZU9EZFo1dWZWa0xDdEFzMi1sM2hEWmhmU2dvcEN0MlRKSFRNZldsZHR5RQ?oc=5" target="_blank">Пакет акций ERG всё-таки перешёл в собственность «Самрук-Казына» - orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 06.08.2026 12:17</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Пакет акций ERG всё-таки перешёл в собственность «Самрук-Казына» - orda.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPcGlvc1hCZ2czbHJOTHlvZUxGNU1Nakp3VW9uSG1hYVp6eUZ1YzRYM015QlZ2emdpeEhVWS1NVTgzTzdHTGlIbFQwQ3J2a0xBN1lwTDk3MFBEWkZkVUpRY1VBMnRKOGFRUGZUR3kzNmZUV2JhVmVMZkg3TS10U09UdERvVjFxLUY3c3dzR3pPcnNIcjZLcWfSAZsBQVVfeXFMUFNsQTJ6cWVvUGhZWVBFOUlETkpZSEdpRlQ3bzVGUDZKSWotOWdUaU9CLVBqcDVJNjdac21GQUo4NnJwT0M5TjFzdGxLMEk3SUpnWWloaFZnS2xOSmUyeXhtVkdNMGlGOU1BdWFtc3NYZWJnMXM2eXpUME9NX0RkQW5NT3J2a0ZsZlBHbG1pY04xNjV1XzVyUExNYXc?oc=5" target="_blank">40% акций ERG перешло в собственность фонда «Самрук-Казына» - Vlast.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 07.08.2026 02:22</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">40% акций ERG перешло в собственность фонда «Самрук-Казына» - Vlast.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQUHVwYWxHMDlpRWNJcldlR3gweDJSbmR6YVBPbjFuQXV5d1Q4QjRqdzZ2ZXE1bzJUVjNMbmlNLTdBX3pZcmE1TDR2MmZYQjAzZlBRbmNIZFNobzAtY3BvTndIang0ZmJHdjdsTXJXX2VDcmc5ZkdmeTVvR3RvYTFpVnNJdTdkQm9yRUQ3bTJEOW9yZGlEcHFrS0VWMGNQcTFRbXhSQXBQdG9tVmFQ?oc=5" target="_blank">&#34;Казахтелеком&#34; расширяет оптическую сеть в Петропавловске - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 07.08.2026 07:03</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">&#34;Казахтелеком&#34; расширяет оптическую сеть в Петропавловске - NUR.KZ</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-08-07" data-co="Самрук-Энерго" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-07/zhnb-top-menedzhery-moinaskoi-ges-poluchili-bolee-100-mln-tengge/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-top-menedzhery-moinaskoi-ges-poluchili-bolee-100-mln-tengge" target="_blank">Топ-менеджеры ГЭС в Алматинской области получили более 100 млн теңге</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.08.2026 06:41</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Топ-менеджеры ГЭС в Алматинской области получили более 100 млн теңге</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-07/kaye-exxon-gotova-vlozhit-80-mlrd-v-kashagan-no-vydvinula-kazahstanu-uslovie/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-exxon-gotova-vlozhit-80-mlrd-v-kashagan-no-vydvinula-kazahstanu-uslovie" target="_blank">Exxon готова вложить $80 млрд в Кашаган, но выдвинула Казахстану условие</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.08.2026 06:26</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Exxon готова вложить $80 млрд в Кашаган, но выдвинула Казахстану условие</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,8 +263,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-08';
-  document.getElementById('date-to').value   = '2026-07-08';
+  document.getElementById('date-from').value = '2026-08-06';
+  document.getElementById('date-to').value   = '2026-08-07';
   applyFilters();
 }
 
