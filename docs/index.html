@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">7 источников · Обновлено: 07.08.2026 03:50</div>
+  <div class="meta">1 источников · Обновлено: 07.08.2026 05:29</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">12</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">9</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-02">
+      <input type="date" id="date-from" value="2026-07-08">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-07">
+      <input type="date" id="date-to" value="2026-07-08">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,17 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -112,156 +102,25 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-08-06" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70374-gulnar-bazkenova-v-sude-zaavila-o-davlenii-na-svidetela-sandugas-dujsenovu.html" target="_blank">Гульнар Бажкенова в суде заявила о давлении на свидетеля Сандугаш Дуйсенову</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 06.08.2026 20:20</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Гульнар Бажкенова в суде заявила о давлении на свидетеля Сандугаш Дуйсенову</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-06" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQbHBSYXpTTlJLSDRXVjlNWlZzMkpZa28zUl9FVmRWaThaZ21aaGxTTTBLMDZJLXVKcUFaWXJIeVRlYk9DS2dIdUNVMFhKWGVtQ2ExRnlhRnFpUm9GVHdxa2s4cVg1MUVmSTc4bmVzZXV5ODJfMFczdmE0LWc2Smc1Ry1PTEEwQl9zdnByNUpEeGpYWDh5ZHQxTzNBOWdYN3JfMTRFWmFiQzE2SzZ3RVpGeHBfUVE1TWZyeEE?oc=5" target="_blank">Долгосрочное сервисное обслуживание повышает надежность локомотивного парка КТЖ - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 06.08.2026 15:56</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Долгосрочное сервисное обслуживание повышает надежность локомотивного парка КТЖ - Қазақстан теміржолшысы</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-07" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70378-40-akcij-erg-pereslo-v-sobstvennost-fonda-samruk-kazyna.html" target="_blank">40% акций ERG перешло в собственность фонда «Самрук-Казына»</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 07.08.2026 07:22</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">40% акций ERG перешло в собственность фонда «Самрук-Казына»</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-06" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPdGJxY0RFcW42d241U2RTbEp1eDFCeG1XQm1Idk5fczJhV0dIUnZMb2Jmb2VtbGhma1FpN0dUWndZNWI1enBFOFNKTVl1eENoQUZ1SFYwSU1qLW1NTW9wdGNwbFRqUTFrSmdTWTRXRHZUTTlucy1qRk9pd2hsSl8wUjBCejloV204bnNMZHYzQmVsVlZB?oc=5" target="_blank">Государственный пакет акций ERG передали фонду &#34;Самрук-Казына&#34; - Informburo.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 06.08.2026 17:13</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Государственный пакет акций ERG передали фонду &#34;Самрук-Казына&#34; - Informburo.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxNVzhxZTh1dFR3ZHB1N3VYZTFZRThLYmxoY3hnU3lHakprb0drN2NfejZ2Yjc2X3k5UkxMUDNBdlNiNms1VzRMb2JDVXh2bWV1MXNIcktMVWl3eW9pcndaeWlUcWFWR21yRWpBUlNBNmhJWGJ1WHhFVkVaa1p2NlFCVl9mVW5OQ0s4Nnc?oc=5" target="_blank">КазМунайГаз представил стратегию геологоразведки на международном форуме - ҚазМұнайГаз</a></div>
+    <div class="article" data-date="2026-07-08" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFB0WDBHc2tpa0VjT1RJYkZkSTVBdmx0UFZTWXhDOWc5LWdXOFJKNmNYX3RqeUlucm9uYWhXTVRBYXgxOHkyb2dzbEZ0ZC1sSE1nQnlNTk55dUljT1RXWFBPbXVSUQ?oc=5" target="_blank">КазМунайГаз увеличит производство товарного газа до 4,5 млрд кубометров в год - Energyland.info</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.04.2026 07:00</span>
+        <span class="date">📅 08.07.2026 03:08</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КазМунайГаз представил стратегию геологоразведки на международном форуме - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-02" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Wc0lZeGN6ZjBaajJRVzB3UzlQY1BGMl9VQkhIWTdKU29TdE5sNnlQZlFoWGVwNlFfeGFWV1FPR0RhLUZ4ZUNEOFIxMTFicGVzMzNSRUt1NnNXXzNJcUo0Rg?oc=5" target="_blank">«Казатомпром» представил операционные результаты деятельности за 4-й квартал 2025 года - Атомная энергия 2.0</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 02.02.2026 08:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» представил операционные результаты деятельности за 4-й квартал 2025 года - Атомная энергия 2.0</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-06" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPV3pWODBwV193S1VrY2ZaNm93dktTT0x5aTlWdk5MZVRXRi1ISXNFNzlZbG82UURqYzc0cHBpZkZNd3BqRm91bWZZTU1qdExNM0xMWG90SS1iVGp3MEtsOTF6azhiV2N3Z3pwNnItQ0tFUVp6MnNGSHVDd3NXcnhSYWZYdTNTbW9ialc4NjZuXzRlVDjSAZgBQVVfeXFMUDRId0FjLUtmVW9DaWVHQUhyN3Z3d1ZYM2xWVlM2OEN2VjBvb3ZiRTQ2dXJydTF0RFpmbjNQU3NXTkIwWjh6SzBmTW1QcFBqeUx6bnAtWkxmdlZpODBCVl9rekVTdm14WnhiMEVlaE9LMmpuUVl5N0lYZWJtcnR3eXl3ZFNpcUkxeTlpNXc4WmpscGZEbVRsQXI?oc=5" target="_blank">Air Astana стала выполнять больше рейсов без задержек - Arbat media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 06.08.2026 03:23</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana стала выполнять больше рейсов без задержек - Arbat media</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-06" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPTmNuNDZPWkVTYkFOdTNZRTJkT0dwNDdfQTFRam1BNUxRR0lNN3R5c21YWVlNZEdFZVhWdGpoZm9OX2M0cVJvRGFvZHRkTU1kWjZmemZPeW80ZjhiTjJReDVOUURQX1BXSGJ5aXdmWE0xUzJQd042Z2NpYjRYVXhwOGdOZ0YzTUtlb1ppZWZGVVlPS2c?oc=5" target="_blank">Вопросы противодействия коррупции обсудили в КТЖ - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 06.08.2026 15:56</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Вопросы противодействия коррупции обсудили в КТЖ - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-07" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNcTRPWlByTzgtdHhaaGJSMGRzOWlsZ19Sd3FrZXlDLTVNN2p6bU1TdkRtN1Exa2cwME5ldTROT2tFZEJ5YzZxNEY4MERjSTA2bjB5cEdtUjlyWjNOY3kwYjBCV211STV2ejFTOFlKaVF1c0YzTzJFSzVMVm5CLTBrcjZYdmVScE9RSmJBSXA3XzlRMGJrTi1Wa0YxMUtSSkJzOGcxQTduS29UUFFfU0V2YUNZcHo4dVkyS28xaHZjZVp2UWdJc3FwZU530gHPAUFVX3lxTE42ZFZYcGlqUDJZZU44Yl9mMDhXSjI4QnlYSzg5NF82allDcW1lUnNRTTQySE9wb1FlYnJUQ2dWRUUzSWw4MERSY2xVVE01bFoyYmZmMEFCUlVGa1p4R2M1T3lrSVN0cmZPV0JDcTM5NU5nd2d1a2toeWg3c2ozUGpRWUxkcHBadmpvOXQyRkxxVTZwT3BrOFAydGZ5U3V2QkdfMEVTSHlyRTl0eGhVM3JoOVlMcUNUeU5RNXVXdThjWHdHUzlpUko3dXZWVXhzNA?oc=5" target="_blank">Ожидающая вагоны Stadler «дочка» КТЖ получила более 25 млрд тенге убытка - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 07.07.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Ожидающая вагоны Stadler «дочка» КТЖ получила более 25 млрд тенге убытка - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-06" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPNHdxZjMwVGFqV0VFdW1WLXUtelNNVjhlSmlqSThiM21CSU5MNjF4bGo2WlV1cjFrS2JhLWJMTTdFQzdDTmlleGwxQXRwX3JzcGM2NkxGaUZ2N3d6Sm41c1dPb1RUazA0UEl2TWtmQVN5Q1l4U0dfbmN3bi1jM1I4MzE5R0x1VUNId3oycUplYjJwalYyN1BiRg?oc=5" target="_blank">«Казахтелеком» проводит расследование после гибели двух сотрудников - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 06.08.2026 13:18</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» проводит расследование после гибели двух сотрудников - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-14" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSEtlaXhoZU9Gd01MTW9sTjFJaDBIVFBXS1R5b2w2b3I2R0ZmTnp0aUxkRlJ1a2F2QUVrLVJ2WXhydVExTW5pRmJ5bWstY00zZXQxVk9Bd3o5MEJUMXBWNHVnTF9yaDVxSmtlRkpIX18xa053dUhoWEdGcDhTS2hySFhIMWR4VnY1TXlQWW1LRjBnVEdobVdFOG5uYkhTWlFJbTctWW1iUVFXVnpzRWdYMmRJdGxkbmxCTndLNGhoY0p1N19KaG95V2ZJSFdYMmdy?oc=5" target="_blank">Руководители АО «Казахтелеком» провели выездную гембу на объектах телекоммуникационной инфраструктуры - Вечерний Алматы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 14.07.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Руководители АО «Казахтелеком» провели выездную гембу на объектах телекоммуникационной инфраструктуры - Вечерний Алматы</div>
+      <div class="art-summary">КазМунайГаз увеличит производство товарного газа до 4,5 млрд кубометров в год - Energyland.info</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-08-06" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOR0VnS014WlB2bzFJaFFXZUQ1Y21iSDIxWjd1b3lvMUxoZWxWdEI1M1lEWkNpNHgxM0RubXBWbE1WVUZMTjRfQWhFRTRIbXVKSlFMY05vQjlxT1NBOXFtVnJfNHVNaXhsRDk1YnRjZHJOV0F0dUtSNTZla3ZESWstb1NIZ1NPYU4wMnRFTl82NkpxdldxOUFj0gGcAUFVX3lxTE5EbTlpb05oQ005RDE4VzNsWlVUcXY5RkV0RWEwN25pb2FyTzZPdnlmTXhVbXFlc28tX1NobHNOOTQyMEhBa1Q5T0lOQVBqNGpyYVc1TzVkS1dzZjJ5MXVYY2lWMEpQU0FfYlM4cEp3ZklKOFhGakFuOTZRanozN2tfUVEtS1pqVnczVUNzLUF5aU56dnFtb1RrZWNaQQ?oc=5" target="_blank">Air Astana увеличила выручку на фоне роста международных рейсов - Arbat media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 06.08.2026 00:37</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana увеличила выручку на фоне роста международных рейсов - Arbat media</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -320,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-02';
-  document.getElementById('date-to').value   = '2026-08-07';
+  document.getElementById('date-from').value = '2026-07-08';
+  document.getElementById('date-to').value   = '2026-07-08';
   applyFilters();
 }
 
