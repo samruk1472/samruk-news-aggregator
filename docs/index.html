@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 07.08.2026 10:51</div>
+  <div class="meta">5 источников · Обновлено: 07.08.2026 14:13</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">21</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">15</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-07">
+      <input type="date" id="date-from" value="2026-07-14">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-07">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
@@ -107,28 +109,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-08-07" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-07/zhnb-kompaniya-vzyavshaya-v-upravlenie-byvshuyu-tecz-klebanova-i-kana-poluchila-milliardnye-ubytki/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kompaniya-vzyavshaya-v-upravlenie-byvshuyu-tecz-klebanova-i-kana-poluchila-milliardnye-ubytki" target="_blank">Компания, управляющая бывшей ТЭЦ Клебанова и Кана, получила миллиардные убытки</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 07.08.2026 09:52</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Компания, управляющая бывшей ТЭЦ Клебанова и Кана, получила миллиардные убытки</div>
-    </div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
     <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-07/kaye-na-atyrauskom-npz-smenilsya-generalnyi-direktor/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-na-atyrauskom-npz-smenilsya-generalnyi-direktor" target="_blank">На Атырауском НПЗ сменился генеральный директор</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBuT2JIcFRaamQ3MmRvcENIa3l1bFZ5cXZJSnhuSjZwN2F4VmhSNDhPTUQyTmlaVVgyaGF5S0tMaXB4OFJqdUV4WXIxU2dyWjhhbnfSAUtBVV95cUxOT09qbks2MllzX1BRcjhsWUJpZzJjS2tsVlA1WXVUVEhYWGE5THVEVTZfOUFieE9vVU56RzI1M1F6ZzVPRDY4QXZnTXc?oc=5" target="_blank">&#34;КазМунайГаз&#34; пока не видит альтернативы КТК для транспортировки нефти - Интерфакс</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 07.08.2026 08:30</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 12:21</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">На Атырауском НПЗ сменился генеральный директор</div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; пока не видит альтернативы КТК для транспортировки нефти - Интерфакс</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOZXFmRTNiRkVIMzZKNGNvMktwOHFDZThWVXQ3Nm9wVUxTTFpwWDBDV2w0ZmtKaHlqdzZIZ0QzRkNoMTBVVnhsZ3hFdGZLR0ZheFJOVk1VWF9BQThiZjZPY0prZlg4YU9Ya0kyQlNjTWh3ekJpSUZYa0ZaUlN1ZElfNVFMZ1NYdndBSlpibms1bGtTLXZWaktET1930gGYAUFVX3lxTE1rczRRcTZObUQ3MU9qWmRkVUZjOU1zZ2VlUnM0bjV4ODNfZTNZNjZreFhmUmZheGpsOGlyOWFLeDFtbHhvRTBPUWtwdHZWRUdHX2M2d0JGeFRMV2FaUUtoQWMtNnd6Q2c4d0xEeWNoa1JKenZoOUdNb0FDLWlFZWlxVTRKZ2YwekxKTEhlVHEtMUhlX0JCRzlm?oc=5" target="_blank">Скандально известный Атырауский НПЗ возглавил новый генеральный директор - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 09:06</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Скандально известный Атырауский НПЗ возглавил новый генеральный директор - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPa0dyeWVqanZEWnhycF9zUjI1MHFxSThtTXZ6VkIxNVhrYzgxa1k0ZzZkZ3pfMzB6a2VEeVFUOXBNeFBSNnRVUmVDWjNzeDBveU1XSmJkTG9LSUZrX25ocEhadFRfbWVNLTk3TEI2SHdyNEREQ29vazhCS0dEY0R1MjUwdnQzbG5aTi1GZjlPbXZLbFVVdDNYNXR3?oc=5" target="_blank">Брат скандально известного чиновника возглавил Атырауский НПЗ - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 08:03</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Брат скандально известного чиновника возглавил Атырауский НПЗ - Ulysmedia.kz</div>
     </div>
     
   </div>
@@ -136,39 +149,171 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(15)</span></div>
     
     <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70386-smenilsa-generalnyj-direktor-atyrauskogo-npz.html" target="_blank">Сменился генеральный директор Атырауского НПЗ</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE10VkJYUFFOdHRHc3lpVWdiY0JfLWhJQ3JnQy1ZbXUzSzdiVWVLRmoydTJoQnZiTEd3UEpBUEVFRjhkOEp0emRydHY3UXBGX1VyRWfSAUtBVV95cUxOWDV2cmdIMnlLRE43MmRmQ0V6SVNkN2lZZG4tYnl2RXVqblUtOFZFbUxLQ2xDbUE0QnBDTGhpc0pjNmg5SGdKTlFoR1k?oc=5" target="_blank">&#34;КазМунайГаз&#34; в случае сбоев в логистике использует для хранения нефти резервуарные парки - Интерфакс</a></div>
       <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 07.08.2026 13:17</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 07.08.2026 12:35</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Сменился генеральный директор Атырауского НПЗ</div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; в случае сбоев в логистике использует для хранения нефти резервуарные парки - Интерфакс</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNN1lpTzhSLTNvZ3o3RHJzS2lKaVBsMUNxQi1WXzlubXlDeWVGMDlRcGxrNmJZbGFodGRUdGNkMS1ULUFWUVJHekhCNGV1UHNOTU5DTExJNmp4TmVYUzV5cGJfOExWSHJvSmdzV0tfdEduRlcyV1VUZU5neDA3UnB6ZDVhLUFkeXdtM2tVUjNDM3BjM0lwcVEzZw?oc=5" target="_blank">Зачем Минфин передал свою долю в ERG фонду «Самрук-Казына» - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 07.08.2026 11:07</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Зачем Минфин передал свою долю в ERG фонду «Самрук-Казына» - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQUkpYVlJNeFMyNFBMUGsyZllrWnhSOWZ5MlRYRjFOb2x5bzZmWklHNkFyS3ZaZFhrbklTYko5MVgtRUtIdUdVaWpZcm1KY2dsZEh0bjdSczBCQ1NmMmZlaXZBUEptMWxuNDNBNmJlY3FUbmQ1UWlFT3BvTVdrbk5maUtFUE1OMHdVYlp6NXAxaw?oc=5" target="_blank">40% акций ERG официально передали в фонд «Самрук-Казына» - QRNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 07.08.2026 07:57</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">40% акций ERG официально передали в фонд «Самрук-Казына» - QRNews</div>
     </div>
     
     <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOcWR3YzNoWHRRNHJiVmRUWU5wQ2xSZ1JqVkxOYkFrNDRLMVJJcm45Wi1nejRpdFZGQjZZeEU3M0ZtZzRqa0tlVldhbnZJUm51dVR1UnA4RnUtbl96WlV6bTFLS1BIN21VR1Ixa2Q5VWpaSU1SQk1OQjNEaWRIQ2FmcHRqRkdvUkhFdzh1UlZrMXROWlcxdDlhMEJzRVA?oc=5" target="_blank">Казмунайгаз сменил гендиректора Атырауского НПЗ - Русская служба The Moscow Times</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTFBkZ3Ewd1VXalFKNEJHTmVnSjRKX2hMNGlCOFJkRWl1VkZMRE1JQTc1SWYwLUZCNVdvQVczamxtUmVaWEw0MS1FNkxwX215Z9IBS0FVX3lxTFBxWUV6QWRQUWpLWHM1cWxRYUFWXzVjZjZRTlB2ZHdNLS14Z2J2eWNZYnNQRWE3VUw4WlNTdS1iWFp5Tkl0MzhLcnotUQ?oc=5" target="_blank">&#34;КазМунайГаз&#34; планирует увеличить экспорт нефти по БТД в 2026 г. на 31% - Интерфакс</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 07.08.2026 08:37</span>
+        <span class="date">📅 07.08.2026 12:22</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Казмунайгаз сменил гендиректора Атырауского НПЗ - Русская служба The Moscow Times</div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; планирует увеличить экспорт нефти по БТД в 2026 г. на 31% - Интерфакс</div>
     </div>
     
     <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNVkRBS2ViYzZkUXR5NjZjaEd1NVRCNE9pUmVNaFE3dE1qZWNHNFhFWmN3bVJPUmtVbnF1TnY2UEh3amtoYXdGLUE4VkdDYy1uX3U0NzB3RERSb2lYVS14bHMzZ2lDbnROSzROS3RfSGJQeGppalFjYnJDRGN2aGVmUERGSmQ3WTlGdGtnYlJiUzk0Wm8yeWxtUURB?oc=5" target="_blank">Ожидаемая перестановка: Атырауский НПЗ возглавил Муратжан Мусайбеков - Orda.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBOYUNmUTdockRLa01WVDRTRmRuUWFBandDOVpUZkd0YnQtSlpRaXpiVzZUQ1FiU3VSWDE3WUE1aGJnOUk?oc=5" target="_blank">Казахстанский «КазМунайГаз» нарастит экспорт нефти через Азербайджан и Турцию на 31% на фоне атак на КТК - theins.ru</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 07.08.2026 09:00</span>
+        <span class="date">📅 07.08.2026 12:42</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Ожидаемая перестановка: Атырауский НПЗ возглавил Муратжан Мусайбеков - Orda.kz</div>
+      <div class="art-summary">Казахстанский «КазМунайГаз» нарастит экспорт нефти через Азербайджан и Турцию на 31% на фоне атак на КТК - theins.ru</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOSVQ3ODJTbXpMWTZCSXgyT19ZU0ZmN3hTa3V3TnY0ZGM5U3JNY1pzdnRNY0FWYThwdi04R1NuZ1dRNkpvRVA3clhUeHp4YTROekxONEY0THh1anVPb3o0SFo1VUFlYUU5cXVLSEk0VVJQREdaSjVjVVZ0NWpia2VpRFIxTzE4LWgyRG1DZ3N4QTNwNXFtTHZUc19YbFN4UFlqNUg4WW81MDVCa2g0RFZueFlBMXlLTkE?oc=5" target="_blank">Казмунайгаз планирует увеличить экспорт нефти по БТД на 31% в 26г--ИФ - Русская служба The Moscow Times</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 12:07</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз планирует увеличить экспорт нефти по БТД на 31% в 26г--ИФ - Русская служба The Moscow Times</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNX1NyWEZuRW1wTG1IR0t4Q051Um51RXZ0WU04cHo2WGFobzBCaHJEa2lmcndOTWJoMXk4RXREVjUxQWxpdmFEeTJzbVlWRjNhQVdoZWExZHhDZlR2NVA4QUNQYm1VeUllb0EtNm1VU2k3REo3cGRNOVF4V0Z6OHNwSndNZmdGd0J4Smkyc1RWNnJvbjFmMkd1UXlYWTdYX19mUWNyUkd2RHY?oc=5" target="_blank">Казмунайгаз планирует увеличить поставки по БТД до 1,7 млн тонн | IF | 07.08.2026 - InvestFuture</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 12:53</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз планирует увеличить поставки по БТД до 1,7 млн тонн | IF | 07.08.2026 - InvestFuture</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNRllWNUdQbXQ4RG0xdWhkNURQNEhsTXNTV1hWaklmeUNXVGs5Rk9YMjJ1VWdmOVBhd0lwWnlpejZtSTE5M1hudmFyT092TFV5VDFJSVJBMzltRXVnNVFPQlBSTUZ0SFBoYXZWRDkyU1dsOVh2WXFZVklMTXV3MXh4RVpHd0dSWF9VYnRYbkFPVnYwM0tZUnNCZ2dMcHBLUmgwOWdyV1FtbGNZUjlR0gGyAUFVX3lxTE14anoxWGtpMkVJN0lnZ2xTZU1jeG9BUkVDMUc2T0VBSTJtSXVXR3Z3a051UDkwbkdFWkdZaEppOXM0S0lNUkt6MlE1NUp6LUVKNGdVM3JSTUZuYXczOENPQ0U3dFF5SVVOZWRUN1hEbjRnTDJjRXJkZjhVeGlJaHZiRDJyVDhSMTUzdFpZa2xpVlA2dEhjbTkyVV9hakh1WEhfdTNfQk9NU3pLekVySWlNZXc?oc=5" target="_blank">КазМунайГаз планирует в 2026г увеличить экспорт нефти по БТД до 1,7 млн тонн - Report.az</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 12:21</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз планирует в 2026г увеличить экспорт нефти по БТД до 1,7 млн тонн - Report.az</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-05" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE5PNlQ2TDEzakxKaHM0RWY3OGhTM2FzQWlyR0lRT1ZoTDBxU0FDU3VFaUNXcHAtd21TMGRRYjRld28wVVJXYV92YU5RMHoyWm9NaVRuNW5wV3g0cWk4QjhZU2JqUQ?oc=5" target="_blank">«КазМунайГаз» и ExxonMobil обсудили вопросы двустороннего сотрудничества - energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 05.08.2026 13:08</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» и ExxonMobil обсудили вопросы двустороннего сотрудничества - energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRUNhQU9vcXFHM09ZU2lSRzZmMXJDN1FUbmx4SHBELTFmRlVramhtdXViemtOM01KYi1HUldYZkEyN3IxN3JYRHRvQnZ6dUJwUnp1ZUZjdUJRRUY3UFFmUzlYS3dGb0h4dFVPa1llbTV5T0hTYlFQeTl1X3dUUzJ5aFR5ZGw2MHhPSkxkSnY0Tk9VMHBZTWlpaU1vVUF0ZGEwSkRJdU9VdS1nZw?oc=5" target="_blank">Казмунайгаз считает КТК безальтернативным по экономике и объемам | IF | 07.08.2026 - InvestFuture</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 12:28</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз считает КТК безальтернативным по экономике и объемам | IF | 07.08.2026 - InvestFuture</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-04" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFA4b2ZUbU4zSk1tLW5NMjQ3SVlRNW9iMnZOLUdEVzVWWXBZajhHV2tyZ1Y5SDhWa1ZXekkwSGFrdWFQWXlEUS1uNFM0YlZjTThrX0pVUWtNZw?oc=5" target="_blank">«КазМунайГаз» подключил к единой IT-платформе 27 дочерних компаний - energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 04.08.2026 19:56</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» подключил к единой IT-платформе 27 дочерних компаний - energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-04" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBRTjBJS2syempLLS1LQm9EMTNEU2VDUEFUS3BkTDMtVE1SYTJLUWUwd2V4aTZsUDZqYlVucWtta2JNbnVnbWx4aEpkLTN3bWxTOGJaRlJqRFBrUHhKMjBaOWlmNA?oc=5" target="_blank">«КазМунайГаз-Аэро» будет заправлять самолеты Centrum Air в международном аэропорту Актобе - energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 04.08.2026 04:41</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз-Аэро» будет заправлять самолеты Centrum Air в международном аэропорту Актобе - energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1LVlVyVTZYSGpYakxSVVNSeWVKZy1PSkZmTWdmRVVoendkYVF5WmIzM3NxbGNxNFRSck1hcU9ybHFidU1UcEdjRjYxV0loUlZ2NXBZT29JbUpkRS1iZzVFLVpTdFpuRUx3bUZjcmtXc2hDajNCUmE3UA?oc=5" target="_blank">&#34;КазМунайГаз&#34; отстает от плана по добыче нефти - Qumash.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 12:01</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; отстает от плана по добыче нефти - Qumash.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPYkFXLTNqa2dSYndqRlkwVEZ1cGYyci1rdmJIVGVpMV9TczRwWndxdnZ3cENQdVpvc2gxZko5elR4NTVvZElWLXRCaWt3UFNJb1FBZlI5b0lDZlJvU25ELThGLXB6MFlWOTliLWZPRDNxMnJXT2ZKVkdEenlNbmZhMWE3Xzh1b2N5c1lsMGo4eFlmdTBXNF91Z3k5RGNwSE5jeFZkek0tamx0aFRZUmRfUE9DcHlSRHfSAbwBQVVfeXFMTktIcFk0LUlNVU9aV0hSNmRzYkJYTzlYS3FHMk1qdzNIblNXcXFxYW9CZUZIbm9fa0xPbWt1WXFQZTdScEJTOHVCdWlwN3ZrWlRocFV6UlZ0VWxidlVEMzlYc0IyREhDOFpJV0c5Vk1wMVJpbEExTV9FMW1tdlZHcmU2WFVxelhZcHhXaXZUSlZtdVd6S01fOXdRWkFNckN5djdkWERHRDlablBPUHV3a1VxQnc0SFlnV00zR3c?oc=5" target="_blank">Современный сервис: в селе Саумалколь &#34;Казахтелеком&#34; открыл обновленный офис - zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 07.08.2026 11:26</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Современный сервис: в селе Саумалколь &#34;Казахтелеком&#34; открыл обновленный офис - zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-14" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxOQWFNWkRPbXRLSy1RRnpFUEV3V0JuRk1DQkZtczFlVHFjWnFmdGVrb2ZZWThKWHlGcnh4X1FZTERJNlR5NXFEaG1OVUMxcWVPWDJNcjFwYlZkQk92YXpab2diTkpmSGNBTHlnRG5jNW5TdHRWUUJCTm0zVGk2QmZGbThpMWk0eFpVNTk3T1hGYkNQRjNOYWlJU2hrYV9pWWxZal9MNHFVMnE0VUlmUzNlZklPZE45dXBZM2NLb0pLaUxKdG5ub09zQ3BVdFo3V3FBckNLcWFQY2hnWVVfMzNLb0V4NXVRbjFJ0gHuAUFVX3lxTFBpVjZfaE9OWDhLVnc3cHRRLUR3LXVaSm44STl0U0NjSVVQcjVsT1NBajY4YXFUYk9oSUdiaDBFUEd6UVE3SV9uVkV3R3Bvb1FuSy1qMUFBNG5GczFjZkR0VGplUXYxajZYaklqRkNSeno2a3NuMFBpdWxlYU5OaVl5cXZoaTE2akpsUHpVZ01zUHVyV1c4MkJsczFQcjZ5MXRZOXM1N042ZFRfUjdiLTZFVXVRYm1UdUItOVR1SlN5REx0eFBUTXRxZ292QUlVSThiMVp1OEpWOGRVM1NGTm9idXNRMDR6TkpkN2J0TEE?oc=5" target="_blank">Антифрод колл-центр АО &#34;Казахтелеком&#34; помог предотвратить хищение 30 миллионов тенге у жителей Казахстана - zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 14.07.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Антифрод колл-центр АО &#34;Казахтелеком&#34; помог предотвратить хищение 30 миллионов тенге у жителей Казахстана - zakon.kz</div>
     </div>
     
   </div>
@@ -176,28 +321,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-08-07" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://vlast.kz/english/70388-the-week-in-kazakhstan-power-surge.html" target="_blank">The Week in Kazakhstan: Power Surge</a></div>
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-07/zhnb-glava-kmg-oproverg-nalichie-planov-po-sozdaniyu-sp-s-exxonmobil/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-glava-kmg-oproverg-nalichie-planov-po-sozdaniyu-sp-s-exxonmobil" target="_blank">Глава КМГ опроверг наличие планов по созданию СП с ExxonMobil</a></div>
       <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 07.08.2026 14:45</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.08.2026 13:12</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">The Week in Kazakhstan: Power Surge</div>
+      <div class="art-summary">Глава КМГ опроверг наличие планов по созданию СП с ExxonMobil</div>
     </div>
     
-    <div class="article" data-date="2026-08-07" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOTC01dzE3MUk1M2dVU2xQcTF1SnpKaHJKRjdMYkdUbk9HZmN5M0xCVHQyMm1YYV9iU1VkSVE4S1IyNXdfTDBIdjI4ejBNc2RWZDkwbU9EV3V5ZFVxTTlMTzZQZ01VVEtlMlowUGVOU09lYXVwamsxSl90Tk11d0VuSkcxV01lcUE2RmVBVVdkNG41MWRyYzNFVlZCbDFTa3FiZV9zbHNlQlRWYXVxNUo0?oc=5" target="_blank">На ремонте вокзала Алматы-1 заметили подростков: что ответили в КТЖ - Shyndyk.kz</a></div>
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNNjFJVExjVS1GTW5hVktHQTVvSURlRk9oaXdXSTc2SlVmN1RLUkRZbHpQODZUSmI4ckF6WDJ2Vy04MERLOTFfNXQzSmpUWTVaTVRISnZZNVRiYXRld1NQbERGT0pKZDllT2ROdUhNTlJFQ2I5OHRMTGRwZmVnRUtQcVNWcHBlcTE0Z2dCZGpkMA?oc=5" target="_blank">&#34;КазМунайГаз&#34; не смог добиться роста чистой прибыли в 2025 году - Qumash.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 07.08.2026 09:46</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 11:26</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">На ремонте вокзала Алматы-1 заметили подростков: что ответили в КТЖ - Shyndyk.kz</div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; не смог добиться роста чистой прибыли в 2025 году - Qumash.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFB2UzdDdUdraVJ5NjRnc3FQeVd6V0swRFVzdlROMHZHVUJSaFZLYmFMck00TXhFTF9wOW4zdWxpOTFVNEp3ZE90bTBMRnBVakNZcHZUc3ZwRUUzdHE5WW02c3RoX2hvTmN3aDRfdTJkaGE?oc=5" target="_blank">Air Astana отчиталась о росте доходов на фоне роста затрат - Investing.com</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.08.2026 06:18</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana отчиталась о росте доходов на фоне роста затрат - Investing.com</div>
     </div>
     
   </div>
@@ -259,7 +415,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-07';
+  document.getElementById('date-from').value = '2026-07-14';
   document.getElementById('date-to').value   = '2026-08-07';
   applyFilters();
 }
