@@ -60,12 +60,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 09.08.2026 10:33</div>
+  <div class="meta">1 источников · Обновлено: 09.08.2026 13:51</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-11-29">
+      <input type="date" id="date-from" value="2026-08-07">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2025-11-29">
+      <input type="date" id="date-to" value="2026-08-07">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
     </div>
   </div>
@@ -102,20 +102,36 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE5PT2puSzYyWXNfUFFyOGxZQmlnMmNLa2xWUDVZdVRUSFhYYTlMdURVNl85QWJ4T29VTnpHMjUzUXpnNU9ENjhBdmdNd9IBS0FVX3lxTE5PT2puSzYyWXNfUFFyOGxZQmlnMmNLa2xWUDVZdVRUSFhYYTlMdURVNl85QWJ4T29VTnpHMjUzUXpnNU9ENjhBdmdNdw?oc=5" target="_blank">&#34;КазМунайГаз&#34; пока не видит альтернативы КТК для транспортировки нефти - interfax.ru</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 12:21</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; пока не видит альтернативы КТК для транспортировки нефти - interfax.ru</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2025-11-29" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNTBIWVJrcVdaSmlHd1loaVlfdHR2TDBaNm5UNW9RT2lXWk5HR3pPbGtqeWVZSEM0bjdvRzVuZjJZc1ZndjZlaUppakhYMGJlaXlhZHJtSEtrX2p6aS1HNjBVZ2NpMjA3c2NuWUIzOE15cUxiRTVObGNiYjNqdGp6a09mT3JKRG5Eak1ZZWpYUno5djFfYzd0OGNCUDZ1bUtxNWNkdWFaVFNtR2IzRk5JSnY3M2JpeXo40gG3AUFVX3lxTE05cFY3ZGNkemtLVHFGVE9POTZob2o0dUlITk45RFh3ZDUtN1NxemZXTFh3YTBmdmZJUTNTRGJRbzl2Q1RXNzlnTmFWa3BsSEZpRGN0b3lkMWY3MVFPcDRzc0dpVGVfUFlqWGo0S3RXTGRyejJEcV82R1dUWEdqM3hqY3dsTjdsNkdLS2NqaVBqWXBoRG5zWC1jLU05YkJsYUFqUTd2d0t0WmJnZ2dSMmZMZmttdWNSMA?oc=5" target="_blank">&#34;Самрук-Казына&#34; прокомментировал аудит ВАП: количество компаний в фонде сократилось вдвое - BES.media</a></div>
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE5YNXZyZ0gyeUtETjcyZGZDRXpJU2Q3aVlkbi1ieXZFdWpuVS04VkVtTEtDbENtQTRCcENMaGlzSmM2aDlIZ0pOUWhHWdIBS0FVX3lxTE5YNXZyZ0gyeUtETjcyZGZDRXpJU2Q3aVlkbi1ieXZFdWpuVS04VkVtTEtDbENtQTRCcENMaGlzSmM2aDlIZ0pOUWhHWQ?oc=5" target="_blank">&#34;КазМунайГаз&#34; в случае сбоев в логистике использует для хранения нефти резервуарные парки - interfax.ru</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 29.11.2025 08:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 12:35</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">&#34;Самрук-Казына&#34; прокомментировал аудит ВАП: количество компаний в фонде сократилось вдвое - BES.media</div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; в случае сбоев в логистике использует для хранения нефти резервуарные парки - interfax.ru</div>
     </div>
     
   </div>
@@ -179,8 +195,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-11-29';
-  document.getElementById('date-to').value   = '2025-11-29';
+  document.getElementById('date-from').value = '2026-08-07';
+  document.getElementById('date-to').value   = '2026-08-07';
   applyFilters();
 }
 
