@@ -60,12 +60,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 09.08.2026 13:51</div>
+  <div class="meta">1 источников · Обновлено: 09.08.2026 16:19</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-07">
+      <input type="date" id="date-from" value="2026-06-10">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-07">
+      <input type="date" id="date-to" value="2026-06-10">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -102,36 +102,20 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE5PT2puSzYyWXNfUFFyOGxZQmlnMmNLa2xWUDVZdVRUSFhYYTlMdURVNl85QWJ4T29VTnpHMjUzUXpnNU9ENjhBdmdNd9IBS0FVX3lxTE5PT2puSzYyWXNfUFFyOGxZQmlnMmNLa2xWUDVZdVRUSFhYYTlMdURVNl85QWJ4T29VTnpHMjUzUXpnNU9ENjhBdmdNdw?oc=5" target="_blank">&#34;КазМунайГаз&#34; пока не видит альтернативы КТК для транспортировки нефти - interfax.ru</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 07.08.2026 12:21</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; пока не видит альтернативы КТК для транспортировки нефти - interfax.ru</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE5YNXZyZ0gyeUtETjcyZGZDRXpJU2Q3aVlkbi1ieXZFdWpuVS04VkVtTEtDbENtQTRCcENMaGlzSmM2aDlIZ0pOUWhHWdIBS0FVX3lxTE5YNXZyZ0gyeUtETjcyZGZDRXpJU2Q3aVlkbi1ieXZFdWpuVS04VkVtTEtDbENtQTRCcENMaGlzSmM2aDlIZ0pOUWhHWQ?oc=5" target="_blank">&#34;КазМунайГаз&#34; в случае сбоев в логистике использует для хранения нефти резервуарные парки - interfax.ru</a></div>
+    <div class="article" data-date="2026-06-10" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPRXRIWGJkU2syZEhXdkI0VGIwZHJkN3JzSXpDd1NWQmxtN01uaW5XRGVOd2JuMDhZZzU5MGFvbTdDQ1RIdXlWcURhUG9Sam1JU1hBX2NFSUNFc2dmOEduRWdVS2RUTEpwa0pYNWF6U0hkekRJb01mZll6VkQwS25SSHRtYjE4NHlFN3BWamVDVjFDSDk0RUxoMXVQY0JOSDNBVGJCdNIBqgFBVV95cUxQWGhYQU1aWmlQRmtvOE15cl9lc3h1SUl4bGtlWHlsT0U3NGZHRnFCUFY1NUozSTNSOVI2U01wSHhtc2FtRlNZU2xzMEtTUHdTZmt2Wk5DLWwwMHBGS2tPa3V2YTlwbnZ0bUh3aGlyeG1IcDY2NjFOejM1VV9XME9Felp0WVlYSHg5bjRwLWFSTlc2aXhPRG82Z1JRNkhobXNpbkJleF9jY0tJQQ?oc=5" target="_blank">В Stadler заявили о полной готовности вагонов к приемке КТЖ - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 07.08.2026 12:35</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 10.06.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; в случае сбоев в логистике использует для хранения нефти резервуарные парки - interfax.ru</div>
+      <div class="art-summary">В Stadler заявили о полной готовности вагонов к приемке КТЖ - Kursiv Media</div>
     </div>
     
   </div>
@@ -195,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-07';
-  document.getElementById('date-to').value   = '2026-08-07';
+  document.getElementById('date-from').value = '2026-06-10';
+  document.getElementById('date-to').value   = '2026-06-10';
   applyFilters();
 }
 
