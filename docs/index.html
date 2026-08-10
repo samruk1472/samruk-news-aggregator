@@ -60,14 +60,14 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 10.08.2026 05:19</div>
+  <div class="meta">2 источников · Обновлено: 10.08.2026 08:23</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
@@ -85,7 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -102,25 +104,41 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-10" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOUVRmTkZYZzNzeWRkQlIzZmMtckhtYUlNOHRUaldZR1VmN3FHbG5RczFkZE9ZVjd2Ymd5dU1tc2Z3REFJV0JHWUozUjgzS2Z3RFN6STF5RDBKQ0tQVlVIOTFFQjBFaldYU3dZenhmNjhBSkI0d0tYN2JzRUNLWjdhZDRlSHhfUHhncUQtMDNHNkg?oc=5" target="_blank">Air Astana завершила полугодие с чистым убытком в $21,2 млн - Fineko/abc.az</a></div>
+    <div class="article" data-date="2026-08-10" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxObWkxeDlfVDRXTDZ4OXJwU0ZzQXhRbnNoRUlJRjZ5aEtraF9YalRkVWV4YW1BYUZ3cGt6RXZDalhKN2hkWWo5V0tXclhDd3UtczBhWktmNE83Y0l4R2w3SkFqT2dWOHZ3NExyVFZ0WjJnTWY4SGZvTm5sWXo2V2o1dkM2YjZnNEY4UXZzaUdaZmZQNms5Rm9ZMjBEZW8yTG13bDBJWTh0STdTOEd0a3R0NW1ZMEZMUQ?oc=5" target="_blank">В КТЖ обсудили реализацию концепции «Закон и порядок» в грузовых перевозках - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 10.08.2026 05:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 10.08.2026 05:52</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Air Astana завершила полугодие с чистым убытком в $21,2 млн - Fineko/abc.az</div>
+      <div class="art-summary">В КТЖ обсудили реализацию концепции «Закон и порядок» в грузовых перевозках - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
   
-
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-10" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/08/kazakhstan-emerges-as-firebird-ai-market-with-data-center-valley-project-in-ekibastuz/" target="_blank">Kazakhstan Emerges as Firebird AI Market With Data Center Valley Project in Ekibastuz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 10.08.2026 08:12</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Kazakhstan Emerges as Firebird AI Market With Data Center Valley Project in Ekibastuz</div>
+    </div>
+    
+  </div>
   
 </div>
 
