@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 10.08.2026 11:07</div>
+  <div class="meta">3 источников · Обновлено: 10.08.2026 14:20</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-11">
+      <input type="date" id="date-from" value="2026-08-07">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-10">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,6 +84,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -102,31 +104,91 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-08-10" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-10/svan-kompaniya-plemyannika-eks-glavy-ktzh-i-glavy-bereke-bank-prinesla-milliony-ubytka/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-kompaniya-plemyannika-eks-glavy-ktzh-i-glavy-bereke-bank-prinesla-milliony-ubytka" target="_blank">Компания племянника экс-главы КТЖ и главы Bereke Bank принесла миллионы убытка</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 10.08.2026 13:23</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Компания племянника экс-главы КТЖ и главы Bereke Bank принесла миллионы убытка</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-10" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-10/fvfv-byvshiy-top-menedzher-bazis-construction-vozglavil-direkciyu-magistralnoy-seti-ktzh/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-byvshiy-top-menedzher-bazis-construction-vozglavil-direkciyu-magistralnoy-seti-ktzh" target="_blank">Бывший топ-менеджер Bazis возглавил дирекцию магистральной сети КТЖ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 10.08.2026 11:12</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Бывший топ-менеджер Bazis возглавил дирекцию магистральной сети КТЖ</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-08-10" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxQS1RGWVlMWFJJRDcwUmpIWjEtUzN0TkN3QTlTdkllcTFTOV9PbXg0NC1kZ1hDcV9JREVydHJRSXhkc2ZsbkdLTlR6QlBscnV3OThaMzdqaWViaTBNZGowR0E1Q1lZREEzSFRTWndfY1VWbnRhWGlmZzhNTDMyTVk4UXFnZ0tkRm9jT3dCcllKbFJLbmlBU1HSAZcBQVVfeXFMUHp4MVh5ZnB2WlBEU2I3LVBfaTRyd3RuaDlZbERyOHhzQ1NtUngxb01aWXpkelB3Q0sydmpGZ2ptZUxZSk1EWnhWaDRMUENUUUVBWU1lVFdxNEJuMFpMZGEtVThrMklqb29wQ1hHcUluSDNkV0I0RUp2dkRlbV9CWnlDdUh6NkdOZ1lQbWR5ZklXXzRFcTBlOA?oc=5" target="_blank">Бауржан Уали возглавил дирекцию магистральной сети КТЖ - Казинформ</a></div>
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcU05QWZ5UHRpQTllbzlhWVVmN0xfRjRMMHAtYjI5dkpoN3ZMLW1oU1NiX2pabENEMU5FRzg4RF83OGkwUmJhNEMyN2xEY0R2eFFBMDI0M2FFcnJZNmMwNjVXdFVwcEN3bTl1ZlQyOVVLdUFKUXktWHNlQXdrSjJUc1ZQOV9GblZ5TXhsVm95NENvNU95N0pHZXpBbWpnSXV0X0VkWDRoNjdUazFtNUZ0NzEzT2JSN0tHRFJTU3p6ZWZBTFk?oc=5" target="_blank">Казмунайгаз планирует увеличить экспорт нефти по БТД на 31% в 26г--ИФ - ru.themoscowtimes.com</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 10.08.2026 08:23</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 12:58</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Бауржан Уали возглавил дирекцию магистральной сети КТЖ - Казинформ</div>
+      <div class="art-summary">Казмунайгаз планирует увеличить экспорт нефти по БТД на 31% в 26г--ИФ - ru.themoscowtimes.com</div>
     </div>
     
-    <div class="article" data-date="2026-06-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPY1ZSQ1FRamFsdnlPZm8zTkhQbG9tRTVIOFRxTGliSUI5dnJnWmxKOFVWdnBTaklhdUhyOXN6ZmVGSWtrbk5VZ29yX3lmVjFlRVZNRzJhUHF2WDZEb3FvVVlYWGR6Qk5WeUE0R1R5MmQ4QzRkeGZ1eHZtLXNTWDZrWDlpanR1YkZVRGhxX0M3WVdaQ0hMLXJGWkcyamvSAZsBQVVfeXFMTklkdnY0RlRrZlI0S2lyUUVXdTdmNF8yR3ZSZEttZE56VWVEVGI0dTNQbTB0aEc3Tm41TlhSQXBQLTBhRzh1QXEtMk5LdUNzNkNnWWFzVXZPMU1jQ3Iwb2ZKMm5mSWJmRHpIQ1AxVU4xU0F2ajRGeGF3ZnpsNGprU0JjaXJEOUdHdDBaREdFQjNzbTN2OG9ZRU1rc3c?oc=5" target="_blank">Stadler опровергла заявления о проблемах с тормозами вагонов для КТЖ - BES.media</a></div>
+    <div class="article" data-date="2026-08-10" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPTDhGT09ReDV4QkFFQ3R0WWU0bUttT3c5UW5GbFV1ci1vTDJOMHZQZGtoQ05VbU1ISXljTE9CYkhXdDAxajZ5MktnU1Nmbzd1OXNBQmR1QlE2X3l0ZE5lbjFZY1FJeWdPVWV1c2FIT3ltdTdCU2oySkNiakF3QVkzVUVob0JvSmxVLW44MWF3cmI1d1dXMGh4S3duOUpDMDBaemdqcE5n?oc=5" target="_blank">Мужская сборная КТЖ по баскетболу стала серебряным призером - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.06.2026 07:00</span>
+        <span class="date">📅 10.08.2026 12:37</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Stadler опровергла заявления о проблемах с тормозами вагонов для КТЖ - BES.media</div>
+      <div class="art-summary">Мужская сборная КТЖ по баскетболу стала серебряным призером - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-10" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOX2dBbkNkS2EwaHpISU9EdWxUdDNWNThPSVlHR3BqNHljM0tfd1lTX2VwX3hqZFI1THpXUURJTDJMdml2SGVDLVpNQWNHQ0oyRU9iWUxtVm52WkNkVFJfM180Ri1VUzdRVlRfUUZKM2R6LTE1NlhqN2dTM3lFcjhoc3hfUlRMRUpITEJyS0ZpMDFjMFJtVTJOZklPbENZbThYNEFyVmJ3MndxcGRr?oc=5" target="_blank">Женская сборная КТЖ по волейболу завоевала серебро на спартакиаде - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 10.08.2026 12:22</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Женская сборная КТЖ по волейболу завоевала серебро на спартакиаде - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-10" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQb2NKczVHRVFfc3JiSU9EYXNOTlZkVlhteFdmeS1jVmFlWkFPZEZGSW9yaVBJTnJmZWF2R1BOaVctaWZoUzgwUV96Z010SllUSFR2Y1RwckgzY1ZOSlBkWTZVQ1dCMzZfcE5EM3JCalk0XzltMGxSSnZ1a0FkcFpwYVNnVS1aeTBmZDMxMXo1cndzUQ?oc=5" target="_blank">Футзал принес сборной КТЖ бронзу на спартакиаде - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 10.08.2026 11:53</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Футзал принес сборной КТЖ бронзу на спартакиаде - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPUkVFZ2ZUZWQwWUNJblJNVWRRTS00RktzVnhGQ0NDTDNnR2FFVG95am9weW04ZVYzdGl2WEFGX0k3b2tYb1VzSkpKY0dHQWpxdlZ6MUJKMEoyNzI3QmJiMTFHb0FtNmdGNEVBb0RfbjgwMW1ya3hfbXJ4RVlDc3ZqTW1TTnM4emltc2JzLWFKbmp2eU0tdm5Yakc5NDNUNFhlZ3pBNDRoY3kyek1k?oc=5" target="_blank">Сборная КТЖ заняла второе место по арқан тарту на спартакиаде - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.08.2026 09:50</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Сборная КТЖ заняла второе место по арқан тарту на спартакиаде - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -190,7 +252,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-11';
+  document.getElementById('date-from').value = '2026-08-07';
   document.getElementById('date-to').value   = '2026-08-10';
   applyFilters();
 }
