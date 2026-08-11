@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 11.08.2026 05:01</div>
+  <div class="meta">4 источников · Обновлено: 11.08.2026 08:06</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-11">
+      <input type="date" id="date-from" value="2026-02-05">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-11">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,9 +87,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -109,15 +111,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neg">
     <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-11" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://egemen.kz/news/bolashaq-oyyndary-maresine-zhetti" target="_blank">«Болашақ ойындары» мәресіне жетті</a></div>
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNmpicThRd3dkM2phNTlsY2pzQllnN0FHTncxODhNY2UyUUNfRFlGOWtfRHRSdS1pbWdubGljNzJpcDFsZV9XMHNCekRUZU05UkFUOEJ6dnMtYkhYS215RVN3MFNISWk1c09VOUI4OFN1SnA3SG1vTGNjVXN3djZMdW1yaDgyWTlhNVlWN0JfT21zS1BDUHBVMFRPaVpodVZSSFZFbUw2UEREWnNZVzMzVzlURl9CVFY4N0dwUTM5TzlPZw?oc=5" target="_blank">Air Astana возвращает и отменяет рейсы в Дубай из-за эскалации конфликта на Ближнем Востоке - Informburo.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Egemen.kz</span>
-        <span class="date">📅 11.08.2026 04:40</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 07:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">«Болашақ ойындары» мәресіне жетті</div>
+      <div class="art-summary">Air Astana возвращает и отменяет рейсы в Дубай из-за эскалации конфликта на Ближнем Востоке - Informburo.kz</div>
     </div>
     
   </div>
@@ -125,55 +127,93 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxQMlJ5aGY4YzU5U0hkNC1zcVV5SURLRS1LdWNfSGRUWlN4ODM3TndoVVN5TUk1YXY4WjRuX1FyWlZtemQtQVNxWE9Qd3hoUHF6UnE5ZDBmeEh6NU95WVdQMDlnZ1lhR3NkM1dtOWU0WnVkR0JZNU9WcW9vNTYwWmdEQkJfTklYSXJmcjBCaV9WQlB5QlVuODBVR0pfaGtGd3hIUnpYU0lQeEVsN3JlR01iY09JTkxFbGpDNzlqRHVVSmtaYjVaV2hZZ0YwYU9pYmPSAdQBQVVfeXFMUFNOTkg2OWZUSXItQVd3WG5FclRBSkM0bXRGQ2NUSnpGSWNlNmZlU09wNkhzZHBqc1p3SmJsdlhQY1czVjRKZW5EQVRSRE80Z2pGcGlmS1VfbUxoRjhiZ3BaVUFKNzYyU2NEWHlsSkFfT0p3Q0RQNEowTE1XQ01HcndQaDRndVc1N1JkZGI5NUUtdE5odjdTcndQVjM0MlZHZjJ2QXdsYUZNbWZ5M2VIYnota3hON1ZBSG1VNk82azczMjhNby1OaElzUXU1UEpTc0NfSWc?oc=5" target="_blank">«Самрук-Казына» продала сыновьям Трампа крупное месторождение вольфрама - Kursiv Media</a></div>
+    <div class="article" data-date="2026-08-11" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-11/shlc-dochka-kazmunajgaza-nachala-zapravlyat-samolety-kyrgyzskoj-aviakompanii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-dochka-kazmunajgaza-nachala-zapravlyat-samolety-kyrgyzskoj-aviakompanii" target="_blank">Дочка «КазМунайГаза» начала заправлять самолеты кыргызской авиакомпании</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 11.06.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 11.08.2026 05:07</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«Самрук-Казына» продала сыновьям Трампа крупное месторождение вольфрама - Kursiv Media</div>
+      <div class="art-summary">Дочка «КазМунайГаза» начала заправлять самолеты кыргызской авиакомпании</div>
     </div>
     
-    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOMEN1UllaMHBpNmRFUi1qeDdwQno5T19CR2FIbThLS3hMVFJGZUtsUGpwM2tmYXpUMmZMWl9oRmo2UE1JR0RZNktJNHBQUTBYZ0hGa1lSei1QOHhfRnA4bWlpWURfQ0tacFp6TW8wbUwwUUpqRzB4Tko5Sy16aWtXUVo0Q0dseVV0QUg5ODZRYks?oc=5" target="_blank">Токаев указал CEO Air Astana на критику о задержке рейсов - Informburo.kz</a></div>
+    <div class="article" data-date="2026-08-11" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/novosti/70425-gulnar-bazkenova-ne-avilas-v-sud-na-zasedanie.html" target="_blank">Гульнар Бажкенова не явилась в суд на заседание</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 11.08.2026 11:41</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Гульнар Бажкенова не явилась в суд на заседание</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOQzlXZHVGUWE3eUpGcDlKSWFoZzVQWklRdnNlQ1JUc29VYXNfTGhYVHA3blFlb05QNlUtM192c3p1WGpuZjdFYUp1ZUhhTWpFamFpOVpTQkdtSGpERnZGOGFZcWxzSW5mcEN0eDJiRTFIRVRpZDE4QWE5RGtXNllPZjJDS2F5TFJlTERHMTA2WWFqM2hXRGc5Ujh6bURKSHJEQUdadnE2LVpOUkRKNFZxa3RXMEUyZw?oc=5" target="_blank">Эскалация на Ближнем Востоке: летевший в Дубай самолёт Air Astana развернули в Казахстан - Orda.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.07.2026 07:00</span>
+        <span class="date">📅 12.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Токаев указал CEO Air Astana на критику о задержке рейсов - Informburo.kz</div>
+      <div class="art-summary">Эскалация на Ближнем Востоке: летевший в Дубай самолёт Air Astana развернули в Казахстан - Orda.kz</div>
     </div>
     
-    <div class="article" data-date="2026-08-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxORWZzNTAwdWdVQkFQWXhLdjV3Q2V6WUhEY2g0SmhuMGsxNHhZZHVNVFlkNmVRa1c1cTlXdXNlWVkxRGEtRnAzU1BJR2JhOGY1TmlNSlk5NGRVR2VqWG5mSlc0U01FMjVEcjhtU1VkWVl1QzdTVV85WERiVDZPQ2VaQTh1X2FyT252cHNZSGhDOG1nYWszcWVha1JoZFl6M3BxanF4QUhR?oc=5" target="_blank">Сборная КТЖ стала обладателем Кубка Спартакиады «Самрук-Қазына» - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9SV29jVVVkZzdDNEd4d2pGdjFzM0hiVG5NWlk4NllRNU1VUDl6Z0tBbnFTdVVIU25jSnVjbi1xbnJBajF4czZXTURyR2I4MVB6MWNqa0lPLWVyZzQ3dWJ6eHhSZzUtWWV1MHRUY090TUhHcVJnUmJIddIBd0FVX3lxTE90SkVyektQdFhrQ2tTclVXdzg4MjlyWEFGNklNVVB5cmZWcnBuWlBPMThleXhVOThDc084S1dOQ05vZ3lxc3o1ZjJZTHlVaTNvZHBDTTdBdlUzdWJvZThndGpqR1lwbmMwZzRULUhyek5mN0lDNkdB?oc=5" target="_blank">Air Astana изменила расписание рейсов в Дубай - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana изменила расписание рейсов в Дубай - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxNY040YWhweEdNdGVwY3pWRkJpaDdlSWdzYnJpRGtoa0RCNGZmNE9lUXNBeHpqQ1d0RnM1bXdBYVFRcFB3dXlmUFRQSk9jZ19lZ3BNM1AyUHlLd2k0d01ackE2VXJvdzFaMy1oSzV6bHdlbmhHQzlES21FaDg3Sl8xczF4U1lRRDNrOXdVTUt5RWdSUGE4MU9SNm01TGdPd2JtdXJtU0FJNEdlcGIxLXFTUkJSMWpZZlU0dTZ0aGdR0gHDAUFVX3lxTE85OXNIQzFub3ZPQjdlNnpzWm9OWHAwOEJWT2F1M25qYmU3eGJsRHNXeDdHbW1rSXk3TzZaUnVOZ0RBeWt0VjBBS25LVXVKdTVPZlJ6ZTA1ZUJsd1FiaXRFYWg2Y0U3ZlQ0bDRmM3hTR1VYaDFVUllRX3F0ZTMwM3RZTVhNQW5iNF9KYm12RVktQmhNUUE1dGFYM3NaOGJSSWZzaUUwMXZJLUtPc1g2N3VzRmhOMm1qUUR2MzE0SUZOc3RFYw?oc=5" target="_blank">Как португальский спец по прибыли поможет Air Astana преодолеть финансовые вызовы - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.02.2026 08:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Как португальский спец по прибыли поможет Air Astana преодолеть финансовые вызовы - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE02NUpJWTRwZXBMUjF6QnVqS2dQMVgtbVljQ2pOQjZJVVVUQnpxclllNlpOWVJDbGRqYWVsbklKN05vOU01RDg4bmZ2ZjM2c2lUaDdkbFIwbkNsQkJSOHBMd3hfWDFXdUFkVGVQU2RSZw?oc=5" target="_blank">Глава КТЖ покинул свой пост - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.08.2026 03:43</span>
+        <span class="date">📅 08.07.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Сборная КТЖ стала обладателем Кубка Спартакиады «Самрук-Қазына» - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNems3M01WMjByeEpTVk12dXhsUU1kNjBXWU9rQ1hEeThERlZaSTdPejl5THFOVUpSSzhYV2tUdzJDSTFQajhDWDBxNXhfRTA2YTVPR0ViNXBNcDJzdTlJS0J0cmdwVWM1eUdGVExxbGNqTW01azUzRS1FWWtvdjJpLXc0T25DRFp3UE42OU1wOTdGSnJiYV9ZR2o2UFcySVhBWDdlQg?oc=5" target="_blank">Что вскрыл финансист в отчетности КТЖ за шестнадцать лет - Shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.08.2026 04:40</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Что вскрыл финансист в отчетности КТЖ за шестнадцать лет - Shyndyk.kz</div>
+      <div class="art-summary">Глава КТЖ покинул свой пост - Forbes.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-11" data-co="Самрук-Энерго" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-11/fvfv-kitayskiy-vetropark-na-yuge-kazahstana-vyshel-v-pribyl-posle-treh-let-ubytkov/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-kitayskiy-vetropark-na-yuge-kazahstana-vyshel-v-pribyl-posle-treh-let-ubytkov" target="_blank">Китайский ветропарк на юге Казахстана вышел в прибыль после трех лет убытков</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 11.08.2026 07:42</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Китайский ветропарк на юге Казахстана вышел в прибыль после трех лет убытков</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -232,7 +272,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-11';
+  document.getElementById('date-from').value = '2026-02-05';
   document.getElementById('date-to').value   = '2026-08-11';
   applyFilters();
 }
