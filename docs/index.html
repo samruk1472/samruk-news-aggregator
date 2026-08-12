@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 11.08.2026 16:44</div>
+  <div class="meta">3 источников · Обновлено: 12.08.2026 03:23</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-12">
+      <input type="date" id="date-from" value="2026-06-16">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-12">
+      <input type="date" id="date-to" value="2026-08-10">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,6 +86,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -105,28 +109,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxNbzhOUE03bm1LLU5YZ0dERGNmTzE2SWM0dWhyVXdEX19XQkFHOU9uQ1dEb2Q1RDNhdG9URW9HSmJmVFl0ajluT0xPS2s0NFI0VUdmdlRPU214aDgtbzBGM2JjZVBkc2FleXdtOXBnNzcyZ3lXN2g2dHBKZHhpWG9qMTBicjdaUXQ3dV84UVp4SFZtWUE?oc=5" target="_blank">Air Astana отменила ближайшие рейсы в ОАЭ: 12 июля 20:15 - TengriNews</a></div>
+    <div class="article" data-date="2026-08-10" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE45OXhpZF9Bc0kwUXlNeFFoZFp0QmNqaDNJa1RhcDl5Z3VGR21uNWZWMmVUNEg5LU41Q0tfa2dJLWRhY1lYSnlrazAyUUI3eG9X?oc=5" target="_blank">КазМунайГаз - BM.GE</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 10.08.2026 19:08</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Air Astana отменила ближайшие рейсы в ОАЭ: 12 июля 20:15 - TengriNews</div>
+      <div class="art-summary">КазМунайГаз - BM.GE</div>
     </div>
     
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ3lBSy1wR1g2VDQ5WExBM3BzUlJTQUJlZ3BxZmd5NHdRSWhzMlZqRi1PWG4xSUlGc1lXMWl6eF9KT3h1M0lRbjJnZGVRYzBVWFl1VjBYSkk3emc3ZHNNbWNMQUNIVWlHS3JFMEk5THg0Zzh4RzI5THhiWDdzRmk4MEZaUXFqOFdFb1lGa1pDN1JCS1RrNV9EbmVWVWVJdFhJT1B2UA?oc=5" target="_blank">Самолет Air Astana вернулся в аэропорт столицы из-за ситуации на Ближнем Востоке - Kazakhstan Today</a></div>
+    <div class="article" data-date="2026-06-29" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOU3RjbHJSaUk5UUxpWDNFX1FsejJ1VlhVbHlQRElyeEp1aXVFRi1DVUFiZU9CRXpUQXhJV250Q0E3djc0ZWpTVkQ0ZVA5OEY1RERJODVXZWVicklwWDZ1UWJla29mcmUyRV9lYTAwUzdqN21HWUx1TjJ4U3QtTWdUVnY3eW1HMFFaZDE2OUYxai1ra3pJbGdLMmtlSmtlR1VxQjZpR19sSWZ5cV9Ib2h5a0dR0gGwAUFVX3lxTE9CbEFIZUl3aEVSWTY3c3ByWHhtT3VzM1RfTXA3dFFsMXdZWTE1cTJvR0dBNHVCTy1HVFJ1Ym96ZURaNmtBWFB6YmpFTTlTYkJyU05tcVRzcFNGeWNrZnFudjdCSVpDbEVPZTJiblRiWTB2M2QtQkZGUUJmcmlieWh3TkkyTGlGV2pqalRDLXVTdm9DSi05MUdjeGxETEVkRnZLYnJsR0h0anVRUmdEVGRu?oc=5" target="_blank">Самолёт чинили на глазах у пассажиров: Air Astana задержала рейс из Антальи на весь день - BES.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 07:00</span>
+        <span class="date">📅 29.06.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Самолет Air Astana вернулся в аэропорт столицы из-за ситуации на Ближнем Востоке - Kazakhstan Today</div>
+      <div class="art-summary">Самолёт чинили на глазах у пассажиров: Air Astana задержала рейс из Антальи на весь день - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxQUmVzZ0Z4QkYyS1hLNmZoZlpXZlliSXVHSmZCaGpJN2FvcmpFeWpGSXA3R3AwVXB2eGFOdXRQVEY3MU45VjJ6SG1rdkNheUpEckxpLWladi1YdDB4WV9NYTFTVEh6QnM3eXBJTi1acTFueWxkVXp6RjJFYU5vdldsMGQxaHhOS25YYVFwdDZwaFZqUV9PMWfSAZsBQVVfeXFMT3dyV2VYT3pweWxQcWVaZlREZ0NLYjVkV0lwZ2lFZ2VVX21WS2prdk9oQm45N0hUdlBuUDFGN1BrV055WEphcFpXbWpUSkg2bmdTUHhKWEx4VFpXYXpKdVdoNW41a1lHakJzOVpUMUN2YU1yTGpkY0FlcVdpTVRYMDFGeFd0Q01Xa0pGR1FiZTV5R3cyMGd0Tk8zOUk?oc=5" target="_blank">Вагоны Stadler так и не запустили в Казахстане: ответ КТЖ - Qaz365.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.06.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Вагоны Stadler так и не запустили в Казахстане: ответ КТЖ - Qaz365.kz</div>
     </div>
     
   </div>
@@ -190,8 +205,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-12';
-  document.getElementById('date-to').value   = '2026-07-12';
+  document.getElementById('date-from').value = '2026-06-16';
+  document.getElementById('date-to').value   = '2026-08-10';
   applyFilters();
 }
 
