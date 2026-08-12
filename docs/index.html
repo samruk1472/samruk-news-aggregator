@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 12.08.2026 10:59</div>
+  <div class="meta">3 источников · Обновлено: 12.08.2026 14:20</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">9</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-11-27">
+      <input type="date" id="date-from" value="2026-06-12">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-12">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,8 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
@@ -109,17 +107,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-03-18" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxONVZieEpwenduOVJXZjdkVXJhdndmYkp1QlpRMXdSS2pqRTVfZzZ3WnlJODlGMV9ZX2F5aTlHMnFSMmJVb0N6VXc2UkZxMm1WUmFnYzZjcWE4N3NSVnRnRE03RXNnSU83T1FqNEw1R1Fabkg0bUhqS0I0QUdPSTNuZWZ2bVB6dHF1NTF0Ml9uWDM2Q3RxX0RB0gGWAUFVX3lxTE9ha2ZLNFJGY295MTNuTUtBZ3diQTJTdFVYbGdPaV9oME14UnpFcTdSWGtad2R2NXhPVy1DV3hKN1BWc0xuQ2JqeFlrMjBmSUs0dHZibUxKX25yTlBPYzZtNkRQNmF4clhmMEwtZWtQSlhpQnp3eUkydHZIeW9fbTdRYjdSXzRvSThvc1BremV1R1RzTGFGQQ?oc=5" target="_blank">КТЖ обязали изменить правила приписки вагонов после жалоб бизнеса - BES.media</a></div>
+    <div class="article" data-date="2026-08-12" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPYWI5anhrTnEwTk4taHpkMnNCMUVsU0hlTlFLTTI3aHh3U3c4OXBzLXNGU3lIUWZXQmZITjN1WXhVbHBiZTBtOFRKOVlzT3NqS3NJMmxBYy0xb2pWZG03OHUwZFVkbUQtc0d2Q2IxcTBRaC1MazF2SExNdjh2MVJMOWNtRDB3RHJrWU5RRFFZUnB4NG45S3pJQVQzR1lpSU5xWVVoRzRpWlc5QzBRNGt5d1BtWWI?oc=5" target="_blank">Всё больше активов и долгов: «Самрук-Казына» рискует превратиться в финансовый пузырь — эксперт - Orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.08.2026 06:50</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Всё больше активов и долгов: «Самрук-Казына» рискует превратиться в финансовый пузырь — эксперт - Orda.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-12" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxNQ2dxQTRfTGJraDlOTnpTXzVpU0h5QTI2cFVnd0NvVmhjTVpkYzBRaWk4LUhBWWx0TFFrMW1idjB2VjJIcWhHdzAxemJWRW9MV1JEekdGdmhJWS1ZVm9rVU5ZOWVJdDNmWmVLQ0ZoZ2JQY29KZWhKSXNfc1dJbm0yQWFLZzZFLW1UZTJZTEtYQkdTQ1BZR1NEQ2tfc1Rlc0tXaDV0U2NtNm53d1Bhdk9zNlI5RTdEVjYydTJfWFJtWQ?oc=5" target="_blank">Всё больше активов и долгов: «Самрук-Казына» рискует превратиться в финансовый пузырь — эксперт - paddock.pro</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.08.2026 11:48</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Всё больше активов и долгов: «Самрук-Казына» рискует превратиться в финансовый пузырь — эксперт - paddock.pro</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-12" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOWUxYcUo5aHdnMDVQZUFRdFVRZnhnRTYyOUZCUG1jUmNmOVM2OWNCcnBuX3l5cDdjUFJjSlRhWUszUFhnNG1WQjE2VHJDWXVsS0J3NWdiUVpFallab0RLajc1WHpEWlB4alEzMHJ5SmZrZEhFRXNyV015aDk4TThPTDE2dXRqMmVCZzRicHBvVkhCOVZXbC1lTTBWTlhhd3JtbG95MHA5VVlPWl9KNjhnOHRJbXPSAbYBQVVfeXFMTm4yRGxWTzlWVDBuOWVhNG1xN3ExQURJX0ZDendyUVhmZFF1NjFqRlp2Zk42UkQtek56LVlOdWFSSkVLeHpnLWU1eDRPRzZIZ2xYVFE1WFUxd1ZMUGdqcGJ0T2lWWHRLUWlWakdRWlJnSXJSNmpObWhTVURCYzIyeWpCVl9QcVhBZWszMnBaSFdFQnJlOG1mZ195em1nWHdVYjlDN0dtMDVVUThlMEVZWGpUcEtEaFE?oc=5" target="_blank">На уголь приходится около половины всей погрузки железнодорожного транспорта Казахстана — КТЖ - Казинформ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 18.03.2026 07:00</span>
+        <span class="date">📅 12.06.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ обязали изменить правила приписки вагонов после жалоб бизнеса - BES.media</div>
+      <div class="art-summary">На уголь приходится около половины всей погрузки железнодорожного транспорта Казахстана — КТЖ - Казинформ</div>
     </div>
     
   </div>
@@ -127,104 +147,22 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-12" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-12/svan-samruk-kazyna-mozhet-zarabotat-na-erg-posle-polucheniya-40-akcij/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-samruk-kazyna-mozhet-zarabotat-na-erg-posle-polucheniya-40-akcij" target="_blank">«Самрук-Казына» может заработать на ERG после получения 40% акций – экономист</a></div>
+    <div class="article" data-date="2026-08-12" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBfV2lQYWpJQkJEM3EtTms3ZzBVY3FNbVhkOTVqRHBhVkVUb25RNkZCUFM5Uk84OFB4ZGZIMThOTXItMnNrQThUcFJR?oc=5" target="_blank">«КазМунайГаз» запустил совместное предприятие с Хорватией: что известно - Ак Жайык</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 12.08.2026 09:53</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 12.08.2026 10:59</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«Самрук-Казына» может заработать на ERG после получения 40% акций – экономист</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOTzhNNFBuTEI3ZkpXYm9uckZHOS0wVFZ5U3N3enhXQUFkc0pZUWktT093TkxYRk1uQlh1QTN4N2sxaXRmcWlQY3BhVzhBMWNnYWQyYzlaM0p5ZktZN09jQzZKQW5Xb2oybF9BZFB0UmdYdHE5T3hvRHdEb19QLXVWTENocVXSAYoBQVVfeXFMUFdhYlM4NDRiY2lwWHRQQVNGT2I4aFpjWG9nVXU2LV9Ub1RkdFlKRDA2djVPRkQtamhhTnNyWHdQRk5qSE9HOFNDTV9VWTNpR3BlR1RXZlJRVGZRd3NCN1ZWckh0em11RF9xOUF3R3VrSVRtUjhVWS1sMU9FT004amUwamlSUDFnTk9B?oc=5" target="_blank">Air Astana сообщила об изменениях рейсов в Дубай из-за эскалации на Ближнем Востоке - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana сообщила об изменениях рейсов в Дубай из-за эскалации на Ближнем Востоке - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-12" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPN214c3hHTkRwLW1kaGVRTTFENVJyN2M4TGVlZWsyZXRaa3doUjBWQ0JQZzlhNEdxajdrRl9ycy1ZVDA0UnNRalpKdHMzWkF0VC1BNE94MHNxbTZjbzJXT2hMejZBdmREb2VmUTdKX2h6YS0zR1F5bm1qMEF1cFRjMW82dFdyeWZ0dzZWc1pYUWR6c0xJSlhOaS1oc2NFNmQw?oc=5" target="_blank">Глава КТЖ ознакомился с локомотивным и пассажирским парком - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 12.08.2026 04:06</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Глава КТЖ ознакомился с локомотивным и пассажирским парком - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2025-12-04" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNc0pvVHp4WDM5UDM4cTBYQ3lVSVk2YWdmenc4ajhCcDRHcTVweVYyWGpXZDVsWU85RFNYNDVoOVc3b3pDbkJSYnVuR0cycVZqT3RTQk1rY0tfTUZiT3IwclFpc0twSWJRVXhtZkZvUnR1Rk9OVUxVUUkwZlJzUThqVWc1OXQ4N09QOW9IOFZCQVpIckdZQkt2S2tsbEhFUjlaeDlDLUtnY1U1V1l6dDZDVDc0cw?oc=5" target="_blank">$1,6 млн – во столько КТЖ обойдется один вагон от Stadler в 2025 году - rollingstockworld.ru</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 04.12.2025 08:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">$1,6 млн – во столько КТЖ обойдется один вагон от Stadler в 2025 году - rollingstockworld.ru</div>
-    </div>
-    
-    <div class="article" data-date="2025-11-27" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTEk3V3FtSW15N1NVNU9PSHFJZFRSemVPeEpuTkg2RTk5c1hRMnpNYVBmWldwNW9kRzlFMERrQ0N0SzVCZzdneFFhQi1lNXhEUHBscHo4Qm9sOWRlbkRmbXdmVS1vWVlnTjRibndGUDVYMzB0WjhDZUJwRFV5NXZpMlZURV95RVExYUpZU2kzYUppM0x1RGJRUTF1SzdlOHJET21HWnllbzM?oc=5" target="_blank">КТЖ показала пассажирские вагоны «45-й» серии от RWS Wagon - rollingstockworld.ru</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 27.11.2025 08:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ показала пассажирские вагоны «45-й» серии от RWS Wagon - rollingstockworld.ru</div>
-    </div>
-    
-    <div class="article" data-date="2026-01-30" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOak5LcjQ5eVFFSG9KWngtQWV3S3ZRRDRvUEMxX1gwQnF3VjlYbG0ya2NPTUU1ZTNlZlRRUlpOWTlMaEVYMWp2d0tyOVBIaFFWUGEyNmlxb0ZMM3dQUC1pRVVQUlJBY2tRdTRBZWdLLS1iNmY2cWFhVmlMUk81Qm5ESmpDallJbUczWGgyY0FrWE9WM1BpRDRVRFZ2Q0pUcDhxelE?oc=5" target="_blank">КТЖ и РЖД определили приоритеты развития на 2026 год - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 30.01.2026 08:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ и РЖД определили приоритеты развития на 2026 год - Қазақстан теміржолшысы</div>
+      <div class="art-summary">«КазМунайГаз» запустил совместное предприятие с Хорватией: что известно - Ак Жайык</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-08-12" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-12/fvfv-kmg-poluchil-50-v-novoy-kompanii-po-proektu-shygys-s-horvatskim-partnerom/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-kmg-poluchil-50-v-novoy-kompanii-po-proektu-shygys-s-horvatskim-partnerom" target="_blank">Казахстан получил 50% в нефтегазовом проекте «Шыгыс» с хорватами</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 12.08.2026 10:04</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Казахстан получил 50% в нефтегазовом проекте «Шыгыс» с хорватами</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-12" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-12/kaye-dohody-rastut-pribyl-padaet-chto-proishodit-s-finansami-ekibastuzskoi-gres-1/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-dohody-rastut-pribyl-padaet-chto-proishodit-s-finansami-ekibastuzskoi-gres-1" target="_blank">Доходы растут, прибыль падает: что происходит с Экибастузской ГРЭС-1</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 12.08.2026 08:54</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Доходы растут, прибыль падает: что происходит с Экибастузской ГРЭС-1</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -283,7 +221,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-11-27';
+  document.getElementById('date-from').value = '2026-06-12';
   document.getElementById('date-to').value   = '2026-08-12';
   applyFilters();
 }
