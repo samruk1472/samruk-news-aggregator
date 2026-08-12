@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 12.08.2026 08:11</div>
+  <div class="meta">3 источников · Обновлено: 12.08.2026 10:59</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">9</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-16">
+      <input type="date" id="date-from" value="2025-11-27">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-12">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,9 +87,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -106,86 +108,91 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-03-18" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxONVZieEpwenduOVJXZjdkVXJhdndmYkp1QlpRMXdSS2pqRTVfZzZ3WnlJODlGMV9ZX2F5aTlHMnFSMmJVb0N6VXc2UkZxMm1WUmFnYzZjcWE4N3NSVnRnRE03RXNnSU83T1FqNEw1R1Fabkg0bUhqS0I0QUdPSTNuZWZ2bVB6dHF1NTF0Ml9uWDM2Q3RxX0RB0gGWAUFVX3lxTE9ha2ZLNFJGY295MTNuTUtBZ3diQTJTdFVYbGdPaV9oME14UnpFcTdSWGtad2R2NXhPVy1DV3hKN1BWc0xuQ2JqeFlrMjBmSUs0dHZibUxKX25yTlBPYzZtNkRQNmF4clhmMEwtZWtQSlhpQnp3eUkydHZIeW9fbTdRYjdSXzRvSThvc1BremV1R1RzTGFGQQ?oc=5" target="_blank">КТЖ обязали изменить правила приписки вагонов после жалоб бизнеса - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 18.03.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ обязали изменить правила приписки вагонов после жалоб бизнеса - BES.media</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    
+    <div class="article" data-date="2026-08-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-12/svan-samruk-kazyna-mozhet-zarabotat-na-erg-posle-polucheniya-40-akcij/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-samruk-kazyna-mozhet-zarabotat-na-erg-posle-polucheniya-40-akcij" target="_blank">«Самрук-Казына» может заработать на ERG после получения 40% акций – экономист</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 12.08.2026 09:53</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Самрук-Казына» может заработать на ERG после получения 40% акций – экономист</div>
+    </div>
     
     <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOdVFWS1dhNW85UWpVUGV5RzRzS2p3VDNGeHB2ZVlHNjB5cjB0eWdDSDkzOHVfLXNraG9iRTF6ZlZzRGsyQktvS2hWNng3OEl0OVFPWG5Sd2RtRV9vTWpBZjhuRlIxNHh5VV92a2VhMzhlcURlS015cEgwQlNvZ2hBVkhXTzZEUUFZSTB5VGZYeGFUWHRQT2Y3R2ZpUmdDVzlYY3ZFUA?oc=5" target="_blank">Air Astana приостановила полеты в ОАЭ на фоне эскалации на Ближнем Востоке - kaztag.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOTzhNNFBuTEI3ZkpXYm9uckZHOS0wVFZ5U3N3enhXQUFkc0pZUWktT093TkxYRk1uQlh1QTN4N2sxaXRmcWlQY3BhVzhBMWNnYWQyYzlaM0p5ZktZN09jQzZKQW5Xb2oybF9BZFB0UmdYdHE5T3hvRHdEb19QLXVWTENocVXSAYoBQVVfeXFMUFdhYlM4NDRiY2lwWHRQQVNGT2I4aFpjWG9nVXU2LV9Ub1RkdFlKRDA2djVPRkQtamhhTnNyWHdQRk5qSE9HOFNDTV9VWTNpR3BlR1RXZlJRVGZRd3NCN1ZWckh0em11RF9xOUF3R3VrSVRtUjhVWS1sMU9FT004amUwamlSUDFnTk9B?oc=5" target="_blank">Air Astana сообщила об изменениях рейсов в Дубай из-за эскалации на Ближнем Востоке - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
         <span class="date">📅 12.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana приостановила полеты в ОАЭ на фоне эскалации на Ближнем Востоке - kaztag.kz</div>
+      <div class="art-summary">Air Astana сообщила об изменениях рейсов в Дубай из-за эскалации на Ближнем Востоке - Kursiv Media</div>
     </div>
     
-    <div class="article" data-date="2026-07-03" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQMVNyc2xTNy1LX3Z2c3d4eER4a1VjWlVGYVc3RlVlUFBVRURVZXdGeUlNeVpXTm9WQWZOY2xtUGNjTmlJN3puMGFEWnFJci1zX00wYTJiN0Z2QTBkOXFvelYzbUNfQTJQaWxKWGMtWXdZVHlERUtDajFmWHptQzVKV0xFT0ZjRE9qNi0tZHRYaUhteHJybTFkOENNZVZYTGpQWHR6M1B0MHdWM2lMOWxzdkx3YUJQSzRhOGR0QQ?oc=5" target="_blank">Самолет Air Astana, летевший из Алматы в Астану не смог сесть и вернулся в аэропорт вылета - Life09</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 03.07.2026 05:58</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Самолет Air Astana, летевший из Алматы в Астану не смог сесть и вернулся в аэропорт вылета - Life09</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPcUw1WVNLYTMxRlZCT3pOQ09XYTMwRXhJWlJjMG51c2wxOFp4allsRXVyUEstdE9QZWJob1NrWlhVYks0YzI0ZW5waEVNWlk4WWlTZEdNS3dfZ3dOVFladUNIakl1Qkp3VFc2aGhXV1E3azY5N2ZhSElVUEllM01zZFRfSDdUdw?oc=5" target="_blank">Air Astana снова отменила все рейсы в Дубай - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 13.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana снова отменила все рейсы в Дубай - NUR.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPNk1UTS1CUzBUYW5pc1RLQzlCQUZLZWxXeHNWUDB3Z0w4Z0VaRHB4MmRZSGppT1hkR1g2cWlKeW9kQ2REczdlOWF1RXFzc19nd2pjS0wwaVRqTGZzZURlbXFqZDhxTk9PbnVRLW9xTmlyT2VhclhDa1g5VmxkZ0hoZWpiMWprTzNlNDhWM2JJS3ZHa2Itc3JCY09NUGRkOGRaZExXb1pQUQ?oc=5" target="_blank">Токаев указал главе Air Astana на жалобы казахстанцев из-за задержек рейсов: 01 июля 15:17 - TengriNews</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Токаев указал главе Air Astana на жалобы казахстанцев из-за задержек рейсов: 01 июля 15:17 - TengriNews</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxPeUpqdjdnZW95RkZRZW4yVDBVR3BrUTlZUDB4dHE3MWZSUEl2VUNLaWFyUmFXQlYza080TENJVWNfaVZUcmpWdm05bVZYM1N4UTFPaEhhRkVNQmlMblV0T21ZSWdITnNoWVVRZjZuOFhsN3VwbHJ1ZjZVaktpaGlqdFdUZw?oc=5" target="_blank">Токаев назвал новый приоритет Air Astana - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.07.2026 16:07</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Токаев назвал новый приоритет Air Astana - DKNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5fRzVNVjhwSEFyY2NFNldxb2R2aWdEVzVqNEtnMXp6bG1WdC11azR5YU50RUk0a3ZLV0lYSks5U3g5YzhWUXhmMnBrMmx5UThCOVpPSE51cFhSTnlhVFZtTkp3WlNUa1BwdmRnOUVPd0M5djFuVUtBdQ?oc=5" target="_blank">Назначен новый руководитель КТЖ - DKNews.kz</a></div>
+    <div class="article" data-date="2026-08-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPN214c3hHTkRwLW1kaGVRTTFENVJyN2M4TGVlZWsyZXRaa3doUjBWQ0JQZzlhNEdxajdrRl9ycy1ZVDA0UnNRalpKdHMzWkF0VC1BNE94MHNxbTZjbzJXT2hMejZBdmREb2VmUTdKX2h6YS0zR1F5bm1qMEF1cFRjMW82dFdyeWZ0dzZWc1pYUWR6c0xJSlhOaS1oc2NFNmQw?oc=5" target="_blank">Глава КТЖ ознакомился с локомотивным и пассажирским парком - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 07:00</span>
+        <span class="date">📅 12.08.2026 04:06</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Назначен новый руководитель КТЖ - DKNews.kz</div>
+      <div class="art-summary">Глава КТЖ ознакомился с локомотивным и пассажирским парком - Қазақстан теміржолшысы</div>
     </div>
     
-    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxPX1ZqN0VtQmpzcXdadEUzYnpvNWlLdklZZzhtOWN2aXgyYW81Z3dKSHlTcENyVS1QcHJlZmFTQ0J1cUNyZ2RfQkRraHBvdFpiX1c4ZEZkVnF2b3htREkwTHhFNkJ4N1VOTkRhU21GTWt6TWhVRmQ4VDdUUmlBWjM2R0Zicm85Wk4wbkZYX2lWcklNeHJKdEdPb2J5MG1QdFU?oc=5" target="_blank">На основных маршрутах поездов КТЖ до конца лета запустят интернет - Inbusiness.kz</a></div>
+    <div class="article" data-date="2025-12-04" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNc0pvVHp4WDM5UDM4cTBYQ3lVSVk2YWdmenc4ajhCcDRHcTVweVYyWGpXZDVsWU85RFNYNDVoOVc3b3pDbkJSYnVuR0cycVZqT3RTQk1rY0tfTUZiT3IwclFpc0twSWJRVXhtZkZvUnR1Rk9OVUxVUUkwZlJzUThqVWc1OXQ4N09QOW9IOFZCQVpIckdZQkt2S2tsbEhFUjlaeDlDLUtnY1U1V1l6dDZDVDc0cw?oc=5" target="_blank">$1,6 млн – во столько КТЖ обойдется один вагон от Stadler в 2025 году - rollingstockworld.ru</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.06.2026 07:00</span>
+        <span class="date">📅 04.12.2025 08:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">На основных маршрутах поездов КТЖ до конца лета запустят интернет - Inbusiness.kz</div>
+      <div class="art-summary">$1,6 млн – во столько КТЖ обойдется один вагон от Stadler в 2025 году - rollingstockworld.ru</div>
+    </div>
+    
+    <div class="article" data-date="2025-11-27" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTEk3V3FtSW15N1NVNU9PSHFJZFRSemVPeEpuTkg2RTk5c1hRMnpNYVBmWldwNW9kRzlFMERrQ0N0SzVCZzdneFFhQi1lNXhEUHBscHo4Qm9sOWRlbkRmbXdmVS1vWVlnTjRibndGUDVYMzB0WjhDZUJwRFV5NXZpMlZURV95RVExYUpZU2kzYUppM0x1RGJRUTF1SzdlOHJET21HWnllbzM?oc=5" target="_blank">КТЖ показала пассажирские вагоны «45-й» серии от RWS Wagon - rollingstockworld.ru</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 27.11.2025 08:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ показала пассажирские вагоны «45-й» серии от RWS Wagon - rollingstockworld.ru</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-30" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOak5LcjQ5eVFFSG9KWngtQWV3S3ZRRDRvUEMxX1gwQnF3VjlYbG0ya2NPTUU1ZTNlZlRRUlpOWTlMaEVYMWp2d0tyOVBIaFFWUGEyNmlxb0ZMM3dQUC1pRVVQUlJBY2tRdTRBZWdLLS1iNmY2cWFhVmlMUk81Qm5ESmpDallJbUczWGgyY0FrWE9WM1BpRDRVRFZ2Q0pUcDhxelE?oc=5" target="_blank">КТЖ и РЖД определили приоритеты развития на 2026 год - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 30.01.2026 08:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ и РЖД определили приоритеты развития на 2026 год - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -195,26 +202,26 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-12" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-12/fvfv-krupneyshiy-dobytchik-uglya-v-kazahstane-uvelichil-pribyl-pochti-v-43-raza/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-krupneyshiy-dobytchik-uglya-v-kazahstane-uvelichil-pribyl-pochti-v-43-raza" target="_blank">Крупнейший добытчик угля в Казахстане увеличил прибыль почти в 43 раза</a></div>
+    <div class="article" data-date="2026-08-12" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-12/fvfv-kmg-poluchil-50-v-novoy-kompanii-po-proektu-shygys-s-horvatskim-partnerom/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-kmg-poluchil-50-v-novoy-kompanii-po-proektu-shygys-s-horvatskim-partnerom" target="_blank">Казахстан получил 50% в нефтегазовом проекте «Шыгыс» с хорватами</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 12.08.2026 07:49</span>
+        <span class="date">📅 12.08.2026 10:04</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Крупнейший добытчик угля в Казахстане увеличил прибыль почти в 43 раза</div>
+      <div class="art-summary">Казахстан получил 50% в нефтегазовом проекте «Шыгыс» с хорватами</div>
     </div>
     
-    <div class="article" data-date="2026-08-12" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-12/svan-flyarystan-platila-britanskomu-menedzheru-po-215-mln-tege-v-mesyac/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-flyarystan-platila-britanskomu-menedzheru-po-215-mln-tege-v-mesyac" target="_blank">FlyArystan платил британскому менеджеру по 21,5 млн теңге в месяц</a></div>
+    <div class="article" data-date="2026-08-12" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-12/kaye-dohody-rastut-pribyl-padaet-chto-proishodit-s-finansami-ekibastuzskoi-gres-1/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-dohody-rastut-pribyl-padaet-chto-proishodit-s-finansami-ekibastuzskoi-gres-1" target="_blank">Доходы растут, прибыль падает: что происходит с Экибастузской ГРЭС-1</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 12.08.2026 06:01</span>
+        <span class="date">📅 12.08.2026 08:54</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">FlyArystan платил британскому менеджеру по 21,5 млн теңге в месяц</div>
+      <div class="art-summary">Доходы растут, прибыль падает: что происходит с Экибастузской ГРЭС-1</div>
     </div>
     
   </div>
@@ -276,7 +283,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-16';
+  document.getElementById('date-from').value = '2025-11-27';
   document.getElementById('date-to').value   = '2026-08-12';
   applyFilters();
 }
