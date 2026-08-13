@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 13.08.2026 14:22</div>
+  <div class="meta">5 источников · Обновлено: 13.08.2026 16:42</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-07">
+      <input type="date" id="date-from" value="2026-04-04">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-13">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -89,11 +89,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -110,107 +110,74 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-13" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-13/svan-stroyashaya-zavod-sernoj-kisloty-kompaniya-millionera-artykbaeva-prinesla-104-mln-tege-pribyli/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-stroyashaya-zavod-sernoj-kisloty-kompaniya-millionera-artykbaeva-prinesla-104-mln-tege-pribyli" target="_blank">Строящая завод серной кислоты компания миллионера Артыкбаева принесла 104 млн прибыли</a></div>
+    <div class="article" data-date="2026-08-13" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/novosti/70462-gulnar-bazkenova-v-sude-ne-priznala-vinu-v-rasprostranenii-zavedomo-loznoj-informacii.html" target="_blank">Гульнар Бажкенова в суде не признала вину в распространении заведомо ложной информации</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 13.08.2026 12:52</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Строящая завод серной кислоты компания миллионера Артыкбаева принесла 104 млн прибыли</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-13" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOODNsQ19jUk5rb1JxQ0phMElhNHBWak5Edmc4LXhldDhMXzZxWW1OTllJSmJ1ZUhIdlNPVzY3OTZTTzVtWkFSbU44dTVWY21HQ05fZUdVQWFHY2JPQXlrUDdTdTZTa0ZJSmh5Y3B2ZW5Oay1lM2pWSlpETzFtMkxBSWRrR1U2eUlONmd2YWxVZzBKakNFTEE0TnJ1YnNkUV9lRUdR0gGiAUFVX3lxTE85Q3g1SllTYmtPX0N3SkczQXBqYi02ajY4QWRidldMNDliME5UY2RwUVdJTnJDYm1zNFIyOGVuTlRkM3ZvbzVZNUlhSVhyeVpNaEFrUXhTSXpVMWU0OGxqZHJRSXlGb2xFQmhWR2RCT2V0bHRZQm5NMXY1OXYwLWJHVjhqRFFzMlNlWGNKc1pjUDRrbHJIblk2V1BqOWxCN3VMUQ?oc=5" target="_blank">&#34;КазМунайГаз&#34; запустит сеть АЗС в Словении - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 13.08.2026 10:50</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 13.08.2026 21:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; запустит сеть АЗС в Словении - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-14" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNN3VibEJBUm9hazlob19YbWxYeVNGX2owNDk2ZmhFS215ZTljVV9EdXdVWXhpQmQzTS11YXY2YU5IYWxsYjYwb0lJZ3dzamV2SGtwU1dQaG1YVWgxVzljUk1BNXNvN1k2SFF3Ui1YOTY1N05iQWdCY2JSUEljTllKbHdiSUNuRGF3VWw1VEp1X2FZUQ?oc=5" target="_blank">Отмена рейсов из Казахстана в Дубай: Air Astana сделала новое заявление - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 14.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Отмена рейсов из Казахстана в Дубай: Air Astana сделала новое заявление - NUR.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-07" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOX01tWFl5VjcwZU1xOWUtMXp4dmhOTzhERFhxX2gwZFVzV1lqN3EwX3k1UmIzeUpJcll1WXZkeXhwSjE4T0tHcjFiUXp3bnpYd2RoVVZneGRCTU9RTjZlTW9MZjhVanVzLXNsSndVemhFWS1mRDl4NzRpWFpLZVhBV0huaUx2VHdJVlYtMXNwZl83bjhzbFM3bkE2YVNXZERldDlWT1Z3eXJ6WXFUM00wbmY2VXZuOUk?oc=5" target="_blank">Самолеты Air Astana подключат к спутниковому интернету в тестовом режиме - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 07.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Самолеты Air Astana подключат к спутниковому интернету в тестовом режиме - Kapital.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiREFVX3lxTE5qLXJrMFRMVkxiNWNVd0t4Q3AwcnF1aEQyUHhwT0ZEeVVKTGhtZmNVX3VzSDFpWmJGLTJhVW9zZm9Wamta?oc=5" target="_blank">Казахтелеком назвал причину сбоя Telegram в Казахстане - polites.news</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 13.08.2026 13:17</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком назвал причину сбоя Telegram в Казахстане - polites.news</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNY29nOER0UmVRU0Z4WjFBWk5tdEVLdzNGMHZldUNudXhnZkVoeFo3RHZ6cHhQNldGVHVzMk5FNXNJTUtrQ0pieDlnQ2gzcUlXNHJLNXM4Y2I0NFBXbU9KQk1kb2lKREtMalFsX3BkMGhIdngySUV4eUNNVXltWmNEemdGc2otdU42UkVhYUVQY3YzdHJrS3A1Q2NIWTBUdnk0TUxuVGlaeC05NmtvR2x4QzdVUlJvZEtGckxwMF82amNWSUdhd29jcEdoanZPMHRVSjJMbm93?oc=5" target="_blank">Сбои в работе Telegram в Казахстане прокомментировали в АО «Казахтелеком» - Total.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 13.08.2026 08:19</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Сбои в работе Telegram в Казахстане прокомментировали в АО «Казахтелеком» - Total.kz</div>
+      <div class="art-summary">Гульнар Бажкенова в суде не признала вину в распространении заведомо ложной информации</div>
     </div>
     
   </div>
   
 
   
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-08-13" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-13/cntr-volkswagen-t4-yedva-ne-stolknulsya-s-poyezdom-vozle-astany/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=cntr-volkswagen-t4-yedva-ne-stolknulsya-s-poyezdom-vozle-astany" target="_blank">Volkswagen T4 едва не столкнулся с поездом возле Астаны</a></div>
+    <div class="article" data-date="2026-06-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxOM0c5RG1WUlQzNWI1d3AtbUdjUWQwMi0tdXZ0THJ2NU1HN3NfY0h0eXN0WGQzRVdISThaSlo2bW9NRERTdnlweWJqd1RNQ216OV9UX2J1N2VqRzFvQjYtb1Rnc3oyTzFLY1dxQkRERGF4UWlPS0t2Z0dwLU1ueVdoNDhuYzBBTndJWV94Xw?oc=5" target="_blank">Топ-менеджерам «Самрук-Казына» выплатили 7,6 млрд тенге премий - qumash.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 13.08.2026 12:02</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.06.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Volkswagen T4 едва не столкнулся с поездом возле Астаны</div>
+      <div class="art-summary">Топ-менеджерам «Самрук-Казына» выплатили 7,6 млрд тенге премий - qumash.kz</div>
     </div>
     
-    <div class="article" data-date="2026-08-13" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/08/uae-coal-deal-highlights-why-foreign-investors-are-betting-on-kazakh-coal-industry/" target="_blank">UAE Coal Deal Highlights Why Foreign Investors Are Betting on Kazakh Coal Industry</a></div>
+    <div class="article" data-date="2026-04-04" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxQU0k2Q3hwV3IyQnVwNDVhWE5fb1RFdVdOT2hJSF9sZnNXY2RsMzNmRlctYkFUb2hHUmZoblFpNUFPNEJXY1VkSjN0akJmYmRTMXJvQ1NNbHhBcFJFX090SlFhb2swNkZKeWo1MWY5aW5SVWFibVZOakZCeGVrRmZiR0JMTdIBggFBVV95cUxOZGs0V1loeWdfdElYZ1lVTEdhQzBWOUkwN09SMXhsT2ZkQnVDeklaaGFLWENBeDM5ZHRqWDI1eEJzV0hEQmo3M2FLNzhQYmhhNU1MVHZHRmVrOV9Idy1UQUFlNW1HS3lCZDkyT1pXQXFoSFhkYU5nUkNJeF8zN1h5M3B3?oc=5" target="_blank">Air Astana получила новый Airbus A321neo из Гамбурга - BES.media</a></div>
       <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 13.08.2026 12:36</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 04.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana получила новый Airbus A321neo из Гамбурга - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPZmlwZ0dPZjB4cXBGdFdMYldvUEpvT3k4UF9GZWxOZEpPRFM3SGVqU1R5RmMtMFVYQlBwQ0hkWS1OS0lrVXNxWU9FODdXekxhemJIc2JjaFd0bXkxWFZ4enpnYmZRbFRaMkNaLVU5TktCMHZ6d2gtZThCQkEzM0ZBRFRNUTJrNnc3NkNBaU4xOEgyZ0gxcG15QnlxQ0lta2dRaUo3OS0zYw?oc=5" target="_blank">Парк КТЖ пополнился 146 современными локомотивами с начала года - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.08.2026 15:58</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">UAE Coal Deal Highlights Why Foreign Investors Are Betting on Kazakh Coal Industry</div>
+      <div class="art-summary">Парк КТЖ пополнился 146 современными локомотивами с начала года - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPVEVkT1E5Vk11RTVkSWJGRURhSHlpXzRPQlhXSThOa1E2T2pHR2lCR1hIUG8tS0p2d2tiRzJZMEVDOFFjcnN6eGdVX0RpVWRkeE4zcGhZWTBkLVJMRlJZVHZyblVUaFRPTDNidkpIb1RRMlRieE44NG1DN0pRM2NYbWFhZTUtOTFrX2FtNGRMMmlCNWVNZ2N5MVNvSVl2alNDNkNPU0hB?oc=5" target="_blank">Сбой Telegram в Казахстане прокомментировали в Минцифры и «Казахтелеком» - paddock.pro</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 13.08.2026 13:03</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Сбой Telegram в Казахстане прокомментировали в Минцифры и «Казахтелеком» - paddock.pro</div>
     </div>
     
   </div>
+  
+
   
 </div>
 
@@ -269,7 +236,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-07';
+  document.getElementById('date-from').value = '2026-04-04';
   document.getElementById('date-to').value   = '2026-08-13';
   applyFilters();
 }
