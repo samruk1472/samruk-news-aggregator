@@ -60,12 +60,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 13.08.2026 05:29</div>
+  <div class="meta">4 источников · Обновлено: 13.08.2026 08:14</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-14">
+      <input type="date" id="date-from" value="2026-06-09">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-12">
+      <input type="date" id="date-to" value="2026-08-13">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -104,42 +108,69 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-08-13" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/novosti/70448-na-sklade-v-rajone-zeleznodoroznogo-vokzala-almaty-2-proizosel-pozar.html" target="_blank">На складе в районе железнодорожного вокзала «Алматы-2» произошел пожар</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 13.08.2026 10:23</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">На складе в районе железнодорожного вокзала «Алматы-2» произошел пожар</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-14" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNQXBBRmMwaDV3Z19hSGgzLW82OGdqUXF6NldCdGJxYWU2SUUxSDlHUUdaeEs4UXFoc0FsVGZGVkxLektpUklkaWpmNFcySjFQS01hSVZ2QjZmWF94S1VVTmxEaE1DUWZLTmszdkJTcTJPcGxQSFB3TTNDSjhJTjFuaTRfb3g0MGMtSFUwTtIBkgFBVV95cUxPUlVrbmtyazJZbzRjLUhaR2N0WG93T01pVE9xa2VwQ2Z5WDlraHFCOTRZb29TRW16UWFlTm92TGtYOGZVTGdZc1cxMjFqWmtHQ3JNdXI5VjRNLXpHSFozQ2pVS2VfdjYyaEFKSUVwVUJNd3k4dnJROHdnNHJIU1E0YWE1V3pIc2JZSVFqNXhrM0drQQ?oc=5" target="_blank">Вершины долга: итоги-2025 ФНБ «Самрук-Казына» - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 14.07.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Вершины долга: итоги-2025 ФНБ «Самрук-Казына» - Kursiv Media</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-07-14" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE85VDJ1SDU3TWVkY1prQ0dQN092bGg3ZlZyNUZMLVlVemtQYzJNZDdWSHhxU1dfbXUwRnA3WFVWV3NZSGVWQzBwN2ZNcHZGdi1qcTladVEtUno4ZURpUWtV?oc=5" target="_blank">«КазМунайГаз» утилизировал 339 тысяч тонн исторических нефтеотходов в 2025 году - Energyland.info</a></div>
+    <div class="article" data-date="2026-07-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQZUI1SS1KNEtjNlpjNEowTV9mVTJVNWQ2N29XWkpIWFYwUEpPakZjdjFHSnMxbzR4VTlZV01KQUk5YVcyNzFSVWdabkVNZ3EtdDlld0xDRU9rR2NpV3ZDUjhQQTBEX2VFazN0eFJFeEw2bEFNYldzRWR6dG9NTzFBeEVqNG1mZHQ0ZnZ6S1Etd2lDNlNSZGYtSVl2VGp1bXRYRUg2VDYzb3g2dEw4QzJJQkdPVlVNNHhiS3dQekhyNzFCeHRNWU5wTzJ0T2FBX3NJWFM1RXhjbzhrV1d6elJDSC1hVGR6QdIB6wFBVV95cUxQYmNWV0t2TDFVRklRMms4SmwyNUFZUS1KYVZ4bENzNUhlb3NUVlJnektzdnFXMlRMSWNVaGNiTlJ5Q3AtaG5ld2xrcVZrX2lhYTZtejQ5SHFPTENsX3RSZ1dJWERoc1Q1WnFreW1BX2o0b0pLSmk4SmRvUXdJbnUySWlpQkZ0a2pMby1QRXU0clRWWk5yY3Fzb084alBwbWd3UHZCZUNhR0tQNXlzSGdldUVWN0EwNFI3SWJGekJUVlpDSWNRQW1NZlc0Yk9aT2JZOS1aQ3QwRmlwN0JmdHBsdW03bFRmYkt3WjZJ?oc=5" target="_blank">«Цена ошибки в авиации намного выше». Вице-президент по ИТ Air Astana Анель Ибрагимова о разумном применении ИИ - DigitalBusiness.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 14.07.2026 05:33</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.07.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» утилизировал 339 тысяч тонн исторических нефтеотходов в 2025 году - Energyland.info</div>
+      <div class="art-summary">«Цена ошибки в авиации намного выше». Вице-президент по ИТ Air Astana Анель Ибрагимова о разумном применении ИИ - DigitalBusiness.kz</div>
     </div>
     
-    <div class="article" data-date="2026-08-12" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNZElQeG1sV09DRy1IaFRKaEpvLWUtaWctRVdOc1pGYUpPMGhNdlZUS056c3VlN1dkZzBYM3pPLXhPM1ZaZUJSSDlYQ2t3enI5N3hkTE5NRnVqbWZWMDBVY01VNnd0S0JhNHpxRzZLckg2UF9ydVlTWDYyR09RUWx0SnhSM1lzM3NLZFhBajBVX1VRT3dzeWJPYVQ2NA?oc=5" target="_blank">Председатель КТЖ ознакомился с техническим парком станции Астана - Вечерняя Астана</a></div>
+    <div class="article" data-date="2026-06-09" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPUnJ5blBKMFhXR1h1NFE5a2dWNFpMTkY4eHJHT0laZGlublNua3YtZndocmdTa2k3TzRVZW5xOUdkMWt6TUVUb3FXMFVhejlFUmVwOU9lcE9mbF93WXNXa3FfeGpId05WQWllZE8xbUZMNjVERGszdHlLUUFNUE5Ka3NQS3FsUQ?oc=5" target="_blank">Air Astana увеличивает авиасообщение с крупнейшими городами Китая - DKNews.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 12.08.2026 09:02</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.06.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Председатель КТЖ ознакомился с техническим парком станции Астана - Вечерняя Астана</div>
+      <div class="art-summary">Air Astana увеличивает авиасообщение с крупнейшими городами Китая - DKNews.kz</div>
     </div>
     
-    <div class="article" data-date="2026-08-03" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxQems4amxVZzNmY1RsOWlpeGRXbXZpUGVEWnZlOENobWYtN0FlQjc2d0RwZ25NeGVzLTFXaXVKVzBIOWlsQTFuUFZYbVBvckdYUTR6TUNCNDg4NnllLVVEc3pxem1iZlBUNGo2TXppUE42dTlmNER2aTZsMG82MVRORzJjRU5iemtPdHJaVjZfMXNGamdaOE9iSkR2U2s1NlJlcWRlbUs1Yi10QTdSTkdwWFNVUlRVNk1PdWpmZFNmLUczckFPYzRzVHRCYndfc09FWUZj?oc=5" target="_blank">В КТЖ ответили на слухи о будущих кадровых перестановках в руководстве нацкомпании - NUR.KZ</a></div>
+    <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQMTZqTGoycHYxeUJLZ1NFSVNuakxzOGhpMlktNEJqb3lyREU1VjVXM1NTcElReDgwZWFNZ05oV3NFSjBGeXN0c1RyOEZBbVFvTVNxZTJIVFZINWFQUVNhcDA5UjhrVlpGUEdmLVhrZ2xIb3I2UUpoSE0tWkd6cDFhVmh0UE1SNkFWbGEwVGV5UjlEUWJhMmxJX3V4aURTTnpXejdWSURwTQ?oc=5" target="_blank">“Казахтелеком“ объяснил сбой в работе Telegram в Казахстане - TengriNews</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 03.08.2026 07:00</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 13.08.2026 07:59</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">В КТЖ ответили на слухи о будущих кадровых перестановках в руководстве нацкомпании - NUR.KZ</div>
+      <div class="art-summary">“Казахтелеком“ объяснил сбой в работе Telegram в Казахстане - TengriNews</div>
     </div>
     
   </div>
@@ -203,8 +234,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-14';
-  document.getElementById('date-to').value   = '2026-08-12';
+  document.getElementById('date-from').value = '2026-06-09';
+  document.getElementById('date-to').value   = '2026-08-13';
   applyFilters();
 }
 
