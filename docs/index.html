@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 13.08.2026 11:00</div>
+  <div class="meta">5 источников · Обновлено: 13.08.2026 14:22</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">9</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-01-23">
+      <input type="date" id="date-from" value="2026-07-07">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-13">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,6 +86,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
@@ -108,124 +110,75 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/kazakhtelecom-explains-telegram-disruption-in-kazakhstan-272873/" target="_blank">Kazakhtelecom explains Telegram disruption in Kazakhstan</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 13.08.2026 13:16</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Kazakhtelecom explains Telegram disruption in Kazakhstan</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-01-23" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQUU5nUVYxR0k2OFVMLW5nZ2FlcXo2TWI5c1M5RkFjTTE5TEl3clVleEdtdUJ3eGdwY3VKakNZemZpTGVWcXd6b1Z6R0pXUVBFamxHaUZqVFV5U1UwNmNLR0lCTF85T0V5c3ZWOGpSU1lJUkJpZlNSWUVidk03STFPRnc3NENudDE4VERrUTVRd2phejk2cXFGX0tR0gGYAUFVX3lxTE9sdEFXUlkyMU1mLXBUYlg5V1ZWYkdiSDBmVm1EQ1BKMmZxcUVnRmVDTmhaQnVSbHc1MV9ZU092RTlLZWx3MjdLXzcxaXFQQjRFZkxuRDNmTFVmQmkwUWZvZ2RWRXdvRkdHdG5MelVQSENxNl9qZDZQdE5feDhCa0xBQVhmMGtmNm5MU1VEMm4zaEFiWGREUm5G?oc=5" target="_blank">Казатомпром отреагировал на ситуацию с канадским инвестором Laramide - BES.media</a></div>
+    <div class="article" data-date="2026-08-13" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-13/svan-stroyashaya-zavod-sernoj-kisloty-kompaniya-millionera-artykbaeva-prinesla-104-mln-tege-pribyli/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-stroyashaya-zavod-sernoj-kisloty-kompaniya-millionera-artykbaeva-prinesla-104-mln-tege-pribyli" target="_blank">Строящая завод серной кислоты компания миллионера Артыкбаева принесла 104 млн прибыли</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 23.01.2026 08:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 13.08.2026 12:52</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Казатомпром отреагировал на ситуацию с канадским инвестором Laramide - BES.media</div>
+      <div class="art-summary">Строящая завод серной кислоты компания миллионера Артыкбаева принесла 104 млн прибыли</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-13" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOODNsQ19jUk5rb1JxQ0phMElhNHBWak5Edmc4LXhldDhMXzZxWW1OTllJSmJ1ZUhIdlNPVzY3OTZTTzVtWkFSbU44dTVWY21HQ05fZUdVQWFHY2JPQXlrUDdTdTZTa0ZJSmh5Y3B2ZW5Oay1lM2pWSlpETzFtMkxBSWRrR1U2eUlONmd2YWxVZzBKakNFTEE0TnJ1YnNkUV9lRUdR0gGiAUFVX3lxTE85Q3g1SllTYmtPX0N3SkczQXBqYi02ajY4QWRidldMNDliME5UY2RwUVdJTnJDYm1zNFIyOGVuTlRkM3ZvbzVZNUlhSVhyeVpNaEFrUXhTSXpVMWU0OGxqZHJRSXlGb2xFQmhWR2RCT2V0bHRZQm5NMXY1OXYwLWJHVjhqRFFzMlNlWGNKc1pjUDRrbHJIblk2V1BqOWxCN3VMUQ?oc=5" target="_blank">&#34;КазМунайГаз&#34; запустит сеть АЗС в Словении - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 13.08.2026 10:50</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; запустит сеть АЗС в Словении - BES.media</div>
     </div>
     
     <div class="article" data-date="2026-07-14" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOTWJVd0h5MzdIUlpHaDhCd0gwN0RBX0JuODVHaUpQbnRHWnNGU1dtVGYzVW04MGhxTHdSaW8yMmhqNHBjUzdFVEtBWFBaYUpMSVhoRXRYOWc5cHhkbVJ2RjhSb0JjMmh0TGRlSDFPTnFiYnV6U0laaUp2ZksySWFOcnk1STVndGJuWFZSdjlhMFMxZV94T3FVenp4MkhRcTFtZzZWT29B0gGrAUFVX3lxTFB1MUZzbXY3VXd2S3k3WmVyMXNzcGVFSTFRX2w5TGFhYWRZQ1hGMDRNd08xX1oybmc5WThSdG5acDN0a0FyUW5nVkVCU1hqT0dLYjZUck51NW92dERzUHVZd3h3aFVMeUFFcEVWeFNvemlGLXBFWURpeW92bzRSajJaaTJ4dUk2V1BNaEtaczBPZVJ3dWFVanZSMUs3ZWNfYVJ2UkMzZWpMWDZHZw?oc=5" target="_blank">Air Astana возобновляет рейсы в Дубай после временной приостановки - 24.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNN3VibEJBUm9hazlob19YbWxYeVNGX2owNDk2ZmhFS215ZTljVV9EdXdVWXhpQmQzTS11YXY2YU5IYWxsYjYwb0lJZ3dzamV2SGtwU1dQaG1YVWgxVzljUk1BNXNvN1k2SFF3Ui1YOTY1N05iQWdCY2JSUEljTllKbHdiSUNuRGF3VWw1VEp1X2FZUQ?oc=5" target="_blank">Отмена рейсов из Казахстана в Дубай: Air Astana сделала новое заявление - NUR.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
         <span class="date">📅 14.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana возобновляет рейсы в Дубай после временной приостановки - 24.kz</div>
+      <div class="art-summary">Отмена рейсов из Казахстана в Дубай: Air Astana сделала новое заявление - NUR.KZ</div>
     </div>
     
-    <div class="article" data-date="2026-04-03" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOVWVVVjJRT1draFQyOGpoNnV1RkowVHZJSmxiX19hSnJhdFFjS0E2T2ptbDNkaXVQTjFzMlIxQmZFSmljWGNvVnd6WlNTRmlDRXVtWHhXb19GZUxFOGNlakR0RHlidDZubUJoMUowZEpOSjhNY1hYTmp2TC0yUmVDUVJB?oc=5" target="_blank">Почему Air Astana расширяет авиапарк - DKNews.kz</a></div>
+    <div class="article" data-date="2026-07-07" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOX01tWFl5VjcwZU1xOWUtMXp4dmhOTzhERFhxX2gwZFVzV1lqN3EwX3k1UmIzeUpJcll1WXZkeXhwSjE4T0tHcjFiUXp3bnpYd2RoVVZneGRCTU9RTjZlTW9MZjhVanVzLXNsSndVemhFWS1mRDl4NzRpWFpLZVhBV0huaUx2VHdJVlYtMXNwZl83bjhzbFM3bkE2YVNXZERldDlWT1Z3eXJ6WXFUM00wbmY2VXZuOUk?oc=5" target="_blank">Самолеты Air Astana подключат к спутниковому интернету в тестовом режиме - Kapital.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 03.04.2026 07:00</span>
+        <span class="date">📅 07.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Почему Air Astana расширяет авиапарк - DKNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-15" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQbW51eUZaRmNYQ3NBcWtVcENPWk5aU2ROVDZrcVNVaWhKUFR1OGN3UmpNTFhsdTFJWktVTFJVLW1XZG96R3FoN1hneWJKeHNjemx3Zy1RX0NzWUl1YV9TOGkza3o4bUJkdVM5R2NnbGY0VHI2bGpGRmFjRDVKVFpYMXhGdko2b013Vy1OTmlobDdTQzR1WUJ2NnpFMWM0bjI3NFM2WjR4N1NPVEhP0gGrAUFVX3lxTE1WV085d1RxTU84SklJeEpWa2xKOTR3aTRtS0R2VERBUzhoNWFkMzJWRkh1THotcm5XWTBvbTJrd2d0S0YxSDRqV2o1clVHUXFLUHpzNU5PRy1kdlJBbk1weDhiUEV2S2ZSYk5rcE5yY3FRTkQ2bV9pZ1JkZ3BqajhMVUFZMlItbk42TVdoQXIyU1UxcWJhd25Gc2hhQnZ2SDNVaDQwZlV0ampaSQ?oc=5" target="_blank">Бектенов раскритиковал работу КТЖ и потребовал ускорить строительство железных дорог - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 15.07.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Бектенов раскритиковал работу КТЖ и потребовал ускорить строительство железных дорог - BES.media</div>
+      <div class="art-summary">Самолеты Air Astana подключат к спутниковому интернету в тестовом режиме - Kapital.kz</div>
     </div>
     
     <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNNnU1azBHajZZMTFFZ3llczRHNmYya19WdGVyeDdGSVgxSWZyZDRJNVRPWkloSGpUd3kzT0IwdWctcGxOX2pjQnY5VTB3aXBsSDhqa25EZHYxWTM5UWRkdzdxNGpoTy1LVGlkNnNYSm9pQXU2TEZrc1RHaVM1SjRiVlNnd011OHpndUpRYjRkNDRieW1MZlFLcXNWdXVyMThISEcxeUp0T3hUVXVZcV9GR2xwWlF3RWozY2c?oc=5" target="_blank">Telegram &#34;рухнул&#34; по всему Казахстану: в &#34;Казахтелеком&#34; высказались о сбое - NUR.KZ</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiREFVX3lxTE5qLXJrMFRMVkxiNWNVd0t4Q3AwcnF1aEQyUHhwT0ZEeVVKTGhtZmNVX3VzSDFpWmJGLTJhVW9zZm9Wamta?oc=5" target="_blank">Казахтелеком назвал причину сбоя Telegram в Казахстане - polites.news</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 13.08.2026 08:35</span>
+        <span class="date">📅 13.08.2026 13:17</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Telegram &#34;рухнул&#34; по всему Казахстану: в &#34;Казахтелеком&#34; высказались о сбое - NUR.KZ</div>
+      <div class="art-summary">Казахтелеком назвал причину сбоя Telegram в Казахстане - polites.news</div>
     </div>
     
     <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQMGNjN2VpcmlFYkJlRFk2VjdBWWxENjU0c3RNcnluS1ppak9UZTRNNDhMRFB2eWxGMmVEblYzR3V6ZGZvekVGcy1ZZkN1VmticEVrY2tYR2F6QWxOc0tyNzltWVkzWWZwYlE4NzRKY2t0Unh2ajdOM25lbHhjNW0wbtIBf0FVX3lxTE94LWQwU0hNR2ZnNE5feG9mRFJXUFduNEg0cGNyU09pS00yUHREWUktZ0l4d3NENnpWY3AwLU1pbW9CbzczeGhDekptdjJ6TFhmd1JlNW5IQTZ3WDltQzBuQXNxVVZ3YW1ZSmpVZ3h4UVkwbVdtaWxjemx5N3pINUU?oc=5" target="_blank">&#34;Казахтелеком&#34; подтвердил проблемы с работой Telegram - BES.media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNY29nOER0UmVRU0Z4WjFBWk5tdEVLdzNGMHZldUNudXhnZkVoeFo3RHZ6cHhQNldGVHVzMk5FNXNJTUtrQ0pieDlnQ2gzcUlXNHJLNXM4Y2I0NFBXbU9KQk1kb2lKREtMalFsX3BkMGhIdngySUV4eUNNVXltWmNEemdGc2otdU42UkVhYUVQY3YzdHJrS3A1Q2NIWTBUdnk0TUxuVGlaeC05NmtvR2x4QzdVUlJvZEtGckxwMF82amNWSUdhd29jcEdoanZPMHRVSjJMbm93?oc=5" target="_blank">Сбои в работе Telegram в Казахстане прокомментировали в АО «Казахтелеком» - Total.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 13.08.2026 08:15</span>
+        <span class="date">📅 13.08.2026 08:19</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; подтвердил проблемы с работой Telegram - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNc19uVU5vNmNrTXlteGI3VEVlazJsQ0pZOHdsLXhtdzRTOGI0cnFXTDVQWVp5S0FobDBrLVQ2QVVZTDltVEgzSUFkTTh5YmxhMjdtZE9aUTR4V2FJNkZGMFdaQ2N2eWF5cVZTQ2JaMFNsb3JJV2JoRjEyOEthLXJzYm9hR1dvVUVaZ1RkQzFNZ1BqQmtPdDhkX1BR?oc=5" target="_blank">Сбой Telegram в Казахстане прокомментировали в Минцифры и «Казахтелеком» - Orda.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 13.08.2026 08:31</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Сбой Telegram в Казахстане прокомментировали в Минцифры и «Казахтелеком» - Orda.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQaThDcjJXOW5mcENvSWJCbXV2Z2djSWtUQTBLM2dMYmR6VHM0am5BNC1NS0RPd2ExOHBJbldHYkFGUnJqVExBUzBSNXFuaVdNNWJQVHd4dVJBT2VXTUI0WF9pU2E3bEo4dG4wNUExcXJyUWRhTWZITURZdFhuX0xuRFVHVmhGbmV5OTRMTWVhNjNYT3F3N3lWYlVfVy0yZw?oc=5" target="_blank">Минцифры и Казахтелеком прокомментировали сбои в работе Telegram - Bizmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 13.08.2026 09:18</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Минцифры и Казахтелеком прокомментировали сбои в работе Telegram - Bizmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxQMHlXOWNTUzN2bktMdlRhMW1VMVhFRzRsLTBDV2FDLXIydHpPR29Oand3TENwcGI0Z1laTUFYZEhWQXhIaksxWWhocHoyR2p4TzAxMlZXM3oxM0ZEVmhOejRiSm55VmMzeVVHQkJZNXZRUURLbFpVS1BsY2x0Q1F4enJuRDlub00yRGh2bmZLN3hydmFXMXFIQkl0WnVfTWPSAZ8BQVVfeXFMUDB5VzljU1Mzdm5LTHZUYTFtVTFYRUc0bC0wQ1dhQy1yMnR6T0dvTmp3d0xDcHBiNGdZWk1BWGRIVkF4SGpLMVloaHB6MkdqeE8wMTJWVzN6MTNGRFZoTno0YkpueVZjM3lVR0JCWTV2UVFES2xaVUtQbGNsdENReHpybkQ5bm9NMkRodm5mSzd4cnZhVzFxSEJJdFp1X01j?oc=5" target="_blank">Telegram «лег» в Казахстане, но «Казахтелеком» отрицает аварию - Finratings</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 13.08.2026 08:44</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Telegram «лег» в Казахстане, но «Казахтелеком» отрицает аварию - Finratings</div>
+      <div class="art-summary">Сбои в работе Telegram в Казахстане прокомментировали в АО «Казахтелеком» - Total.kz</div>
     </div>
     
   </div>
@@ -233,17 +186,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-13" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-13/fvfv-top-menedzhery-ulbinskogo-metallurgicheskogo-zavoda-v-srednem-stali-poluchat-na-28-bolshe/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-top-menedzhery-ulbinskogo-metallurgicheskogo-zavoda-v-srednem-stali-poluchat-na-28-bolshe" target="_blank">Завод «Казатомпрома» платит топ-менеджерам в среднем по 46 млн теңге</a></div>
+    <div class="article" data-date="2026-08-13" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-13/cntr-volkswagen-t4-yedva-ne-stolknulsya-s-poyezdom-vozle-astany/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=cntr-volkswagen-t4-yedva-ne-stolknulsya-s-poyezdom-vozle-astany" target="_blank">Volkswagen T4 едва не столкнулся с поездом возле Астаны</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 13.08.2026 09:28</span>
+        <span class="date">📅 13.08.2026 12:02</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Завод «Казатомпрома» платит топ-менеджерам в среднем по 46 млн теңге</div>
+      <div class="art-summary">Volkswagen T4 едва не столкнулся с поездом возле Астаны</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-13" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/08/uae-coal-deal-highlights-why-foreign-investors-are-betting-on-kazakh-coal-industry/" target="_blank">UAE Coal Deal Highlights Why Foreign Investors Are Betting on Kazakh Coal Industry</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 13.08.2026 12:36</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">UAE Coal Deal Highlights Why Foreign Investors Are Betting on Kazakh Coal Industry</div>
     </div>
     
   </div>
@@ -305,7 +269,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-01-23';
+  document.getElementById('date-from').value = '2026-07-07';
   document.getElementById('date-to').value   = '2026-08-13';
   applyFilters();
 }
