@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 14.08.2026 14:16</div>
+  <div class="meta">3 источников · Обновлено: 14.08.2026 16:38</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-14">
+      <input type="date" id="date-from" value="2026-07-01">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-14">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -104,20 +108,47 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   
 
   
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1HNUFFdlp3YUNkaThFNTZsT0dlM3pIZlY2WmRUaVhIR3diMnhSeGZDekoyLU5kX1c4c3QwNzhHNDZrV1F3Nk1Hd2hVLWJtcmlYQ2RvZUZaVlhPWDBoV3owMTZuNEFsMWRC?oc=5" target="_blank">Токаев раскритиковал Air Astana за регулярные задержки рейсов - КазТАГ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 01.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Токаев раскритиковал Air Astana за регулярные задержки рейсов - КазТАГ</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-14" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMkdvSFVnLUVHT1RDSmFEOTR5MWptcGIwcDREZ3poc0Vfa0RUd3NNV0RjdmJfT0hiT1lFV2VzX3RpYXF1Y3B2RXNBMHNFdmk4RHp5aDlXWEttQi13dVMyUU1waldCWnNUMzlSU1VkQkpuWDBKbEtMMFdGU19pSHF2VHY3bmRCQnpDWE9IaDdrV0dJUlgyVkRQWVZfYTlqMC1uREFRM1RGc2rSAa4BQVVfeXFMUDhUWlFybU0zMzRNdm5HemNtQ2pybHo2cUNoVVV2LXR1czlMNVNyWkEtWXVpRFVwYzhEck5UT2ZKUHpHNnJzVVY4cmhhNTAyYlE3dFc2X3BnOHVjYUlaSkZvaXZiS1lBRFdMSEZ6NEFYbjJiSkhQSTVJV2pNaUhkc1VoNEkySDdLcXhIaEQyaThCVDVZNE9oNDZGUGxmQVRjU0Jvb3NGSTRlY0pvVWh3?oc=5" target="_blank">Глава КТЖ ознакомился с ходом строительства вокзала Астана-1 - ru.elordainfo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 14.08.2026 04:35</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Глава КТЖ ознакомился с ходом строительства вокзала Астана-1 - ru.elordainfo.kz</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-14" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://vlast.kz/english/70479-kazakhstan-says-corruption-behind-107-billion-in-kashagan-contracts.html" target="_blank">​Kazakhstan Says Corruption Behind $10.7 Billion in Kashagan Contracts</a></div>
+    <div class="article" data-date="2026-08-14" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/08/data-center-valley-is-more-than-ai-its-kazakhstans-economic-diversification-bet/" target="_blank">Data Center Valley Is More Than AI: It’s Kazakhstan’s Economic Diversification Bet</a></div>
       <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 14.08.2026 18:10</span>
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 14.08.2026 15:07</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">​Kazakhstan Says Corruption Behind $10.7 Billion in Kashagan Contracts</div>
+      <div class="art-summary">Data Center Valley Is More Than AI: It’s Kazakhstan’s Economic Diversification Bet</div>
     </div>
     
   </div>
@@ -179,7 +210,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-14';
+  document.getElementById('date-from').value = '2026-07-01';
   document.getElementById('date-to').value   = '2026-08-14';
   applyFilters();
 }
