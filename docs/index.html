@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 14.08.2026 08:09</div>
+  <div class="meta">5 источников · Обновлено: 14.08.2026 10:59</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-12">
+      <input type="date" id="date-from" value="2026-03-18">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-14">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,11 +85,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -109,28 +113,61 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-08-14" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-14/ezif-povesilsya-na-shnurke-ot-short-muzhchinu-nashli-mertvym-v-otdelenii-policii-pavlodara/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ezif-povesilsya-na-shnurke-ot-short-muzhchinu-nashli-mertvym-v-otdelenii-policii-pavlodara" target="_blank">«Повесился на шнурке от шорт»: мужчину нашли мертвым в отделении полиции Павлодара</a></div>
+    <div class="article" data-date="2026-08-14" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9oTDhSV1Q1Z2o1dHNPNndnZzhjaW9LbUE4cEMzMGVJM2M5VEZkMGlOb0FTTmtkaVFVdzBySXN1V3J0aFpWWG42SFM4R1p2bmFzYkFRQnFB?oc=5" target="_blank">САТЖАН Салтанат назначена представителем единственного акционера АО &#34;Самрук-Казына&#34; в АО &#34;НК &#34;Қазақстан темір жолы&#34; - - prokadry.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 14.08.2026 06:06</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 14.08.2026 09:32</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Повесился на шнурке от шорт»: мужчину нашли мертвым в отделении полиции Павлодара</div>
+      <div class="art-summary">САТЖАН Салтанат назначена представителем единственного акционера АО &#34;Самрук-Казына&#34; в АО &#34;НК &#34;Қазақстан темір жолы&#34; - - prokadry.kz</div>
     </div>
     
-    <div class="article" data-date="2026-08-12" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQdG9hNmRxeGdybjEwQ1VFSURwOEh0ZzRoc0dvZHlFN0Z2U0Z2M0EzT211NlRnRVdzV01sS2xDU0xpSkNoZGZHWURUZDQtdnZad2RDaU1STGlfTHE3U3d2Nno0ZE5zSk43U0JObXdQZkR5WTlNLUpGMEdoYlRGUWdLMkRBMV9ReXFxX29USGVaZWVxOURV?oc=5" target="_blank">«КазМунайГаз» стала обладать половиной Shygys Operating - forbes.kz</a></div>
+    <div class="article" data-date="2026-07-02" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE5JQi1ScmMtVXVPQWtic0FUd1p5MHNOSlVxaW1sMkEtYUw5SUxBREpjM0hYMmhWY3FENDB1MUdqNTZnXzlmUVVUYzJtTmNobHVEVW85RVJXdw?oc=5" target="_blank">«КазМунайГаз» и Baker Hughes обсудили локализацию сервиса и производства в Казахстане - Energyland.info</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 12.08.2026 12:28</span>
+        <span class="date">📅 02.07.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» стала обладать половиной Shygys Operating - forbes.kz</div>
+      <div class="art-summary">«КазМунайГаз» и Baker Hughes обсудили локализацию сервиса и производства в Казахстане - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbWVEQTFhdGRjM05Ja25aRE5lWjRwb0RqYWNUMWpEaXlOYVRWN2lLZXlrWUZyeTJ2SlVhQ1d1NjhiVFBrLU9odXMwdmoxTU9NZzctb2UtdUdQTURvSklVUXJHZmRGdzhrVExWMzVzbm1NNVdOLVV1STF1MnZsTHFId1h5UHpiVC14blh5VVJ0S0o3RHpaTTJmTHRVT1dZN0Fvc3VOaGMtRVd3T0ttZERDRGtSeWV2VTVDV203dFJkYTk?oc=5" target="_blank">Токаев сделал замечание главе Air Astana за постоянные задержки рейсов - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 01.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Токаев сделал замечание главе Air Astana за постоянные задержки рейсов - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-14" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNOERrZEtwUzhGanhQa3lNU1BwTWJza0dncDRORlkxYVVkUHREdXF0aTVxNkgwYjhhSF9rZWNhalJLX05Va292ZWdoUkpaNDJ1dXR5QTl4c1UwQV9TZEloSG9iaG1RX1JfaXhUcFVtS0lUOUt1NVRvSUNTOU1zUDhWRVdoT2FHLTJPUFJUSVJiZHEzUTdGM3Vpc0VUS0xtNjk2Z0llRTNlNFNaOXdTd2p4Y0szSdIBsgFBVV95cUxPSFZpbkpRb1ozVlZWTHVEczJqaVhvVW5hQWV1azNHTHV2SzJsVEZmQUZfOGZWY3BkUGxoR282Nll6RjU3Ny00eTBGRERfV1JWcFVIbTliX3NzdXJHSVJ6R3dvQXRUSEZlUk1QZnQ3dWIwUlNfeGJyeVNTeXo4LTREZDQwR2E1V1pFSHVLanY1WnRtMUh2cmFvb1l0QlJrUmdQdDlocUxUdlYtZGpDQVZNbWR3?oc=5" target="_blank">КТЖ о жаре на вокзале Астаны: почему не справляются кондиционеры - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 14.08.2026 09:08</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ о жаре на вокзале Астаны: почему не справляются кондиционеры - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-18" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPOEtFV2ZjNjJvMXEzbmQ1RlVNd2FpVk1kMEROSGZYTjdRYVFMOXAtTHpiT0lqLXBXZGZjMGFWYXU4Wnp5aVZSZnhTSEpMQ2xiLVFQdFB1RXVCZDE4TlRVeGkxSldMcE8yWVVLT3NIRFhpQmU2VWZDZ0NqdlNLSUcxMTlvTDhscktpQnJpNXY0MG9xNDlOQzRMSlRFZGo0c1R2dDhwbFNwaUdwRHJIRnRvODVBZ3HSAboBQVVfeXFMTWZGaWhzNzhOV3I3YVpIbTA5RVBHSE9wZk9YbjFUazNhdk05NUlfcUN1d1Jxc203WlgyaGx2MEZzRF9SVHNDUE94d19xRWJMOTVGLUJuRHdCbVkydUV6clR2c1p5VjZPZzUtYkxwMURfeHlWZzZUQmJNRUdFVEpENUhWYXlVaW9fV3E1NWdZTUt3MldPM2hhTWZpTWFQR2JwbC1Yd2NnV3RuTkY0bmxmaDlmcngzR1E2Y1R3?oc=5" target="_blank">Поезда давят сайгаков: в КТЖ объяснили шокирующие видео в соцсетях - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 18.03.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Поезда давят сайгаков: в КТЖ объяснили шокирующие видео в соцсетях - Kursiv Media</div>
     </div>
     
   </div>
@@ -140,15 +177,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-14" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-14/fvfv-energokompaniya-pod-rukovodstvom-byvshego-prokurora-sokratila-pribyl-pochti-na-41/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-energokompaniya-pod-rukovodstvom-byvshego-prokurora-sokratila-pribyl-pochti-na-41" target="_blank">Энергокомпания под руководством бывшего прокурора потеряла миллиарды прибыли</a></div>
+    <div class="article" data-date="2026-08-14" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcThmU3pIYkltZnNCYkNoQW9RakZ5bXhlTHAyTTBYVmdndWIwZno5VVVIR2hyVGFTS3BTV0hNZWsxNTZzX1BxbW40RkstME5FU1lyVHlVX29tYllqUWN0QUtueTJJZlg1VXJNbGl1TnB2djRNZlQ4Tm5KTzB1UlZzLUtJc0ZyRy1XbDFOS0JVODk5RGFiT1NBUDhQRXpFeVZna2praS1DcXZqanlKamdWMjhGZUpiWmdiTTU2d2tlcEkzQTFSVEdlNWp4MTZ5QkhR?oc=5" target="_blank">&#34;Казахтелеком&#34; подключил еще 19 сел Южного региона к высокоскоростному интернету - NUR.KZ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 14.08.2026 08:01</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 14.08.2026 09:01</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Энергокомпания под руководством бывшего прокурора потеряла миллиарды прибыли</div>
+      <div class="art-summary">&#34;Казахтелеком&#34; подключил еще 19 сел Южного региона к высокоскоростному интернету - NUR.KZ</div>
     </div>
     
   </div>
@@ -210,7 +247,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-12';
+  document.getElementById('date-from').value = '2026-03-18';
   document.getElementById('date-to').value   = '2026-08-14';
   applyFilters();
 }
