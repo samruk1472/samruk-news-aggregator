@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 13.08.2026 16:42</div>
+  <div class="meta">3 источников · Обновлено: 14.08.2026 03:24</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-04">
+      <input type="date" id="date-from" value="2026-07-21">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-13">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,10 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -110,69 +106,42 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-08-13" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70462-gulnar-bazkenova-v-sude-ne-priznala-vinu-v-rasprostranenii-zavedomo-loznoj-informacii.html" target="_blank">Гульнар Бажкенова в суде не признала вину в распространении заведомо ложной информации</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 13.08.2026 21:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Гульнар Бажкенова в суде не признала вину в распространении заведомо ложной информации</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-06-12" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxOM0c5RG1WUlQzNWI1d3AtbUdjUWQwMi0tdXZ0THJ2NU1HN3NfY0h0eXN0WGQzRVdISThaSlo2bW9NRERTdnlweWJqd1RNQ216OV9UX2J1N2VqRzFvQjYtb1Rnc3oyTzFLY1dxQkRERGF4UWlPS0t2Z0dwLU1ueVdoNDhuYzBBTndJWV94Xw?oc=5" target="_blank">Топ-менеджерам «Самрук-Казына» выплатили 7,6 млрд тенге премий - qumash.kz</a></div>
+    <div class="article" data-date="2026-07-29" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTGtMY2RSWXBmeXFXbzZBNzBCWXE2WXUtbE1IOXp5dXFQRHBFRWctdk9JOTFpdExWQkN5UGZDeTJua2NZLVpBcS04RFhLajJoQWZyY0xqLUtvVFZHNFc1dXE2ZEhwV0ZJaFV3Wk41bTdVajVuX0FZTnJ5RlhlZ0JvdXlGaUhTVV9GVnU5UkdzazhGeU8tYmw1ZEZDbnhVRlRYYXpxbnpIYi1wODFoUWktTUpUSFFVaThR?oc=5" target="_blank">Баку зовет «Самрук-Казына» в совместные проекты - vesti.az</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 12.06.2026 07:00</span>
+        <span class="date">📅 29.07.2026 08:32</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Топ-менеджерам «Самрук-Казына» выплатили 7,6 млрд тенге премий - qumash.kz</div>
+      <div class="art-summary">Баку зовет «Самрук-Казына» в совместные проекты - vesti.az</div>
     </div>
     
-    <div class="article" data-date="2026-04-04" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxQU0k2Q3hwV3IyQnVwNDVhWE5fb1RFdVdOT2hJSF9sZnNXY2RsMzNmRlctYkFUb2hHUmZoblFpNUFPNEJXY1VkSjN0akJmYmRTMXJvQ1NNbHhBcFJFX090SlFhb2swNkZKeWo1MWY5aW5SVWFibVZOakZCeGVrRmZiR0JMTdIBggFBVV95cUxOZGs0V1loeWdfdElYZ1lVTEdhQzBWOUkwN09SMXhsT2ZkQnVDeklaaGFLWENBeDM5ZHRqWDI1eEJzV0hEQmo3M2FLNzhQYmhhNU1MVHZHRmVrOV9Idy1UQUFlNW1HS3lCZDkyT1pXQXFoSFhkYU5nUkNJeF8zN1h5M3B3?oc=5" target="_blank">Air Astana получила новый Airbus A321neo из Гамбурга - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 04.04.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana получила новый Airbus A321neo из Гамбурга - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-13" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPZmlwZ0dPZjB4cXBGdFdMYldvUEpvT3k4UF9GZWxOZEpPRFM3SGVqU1R5RmMtMFVYQlBwQ0hkWS1OS0lrVXNxWU9FODdXekxhemJIc2JjaFd0bXkxWFZ4enpnYmZRbFRaMkNaLVU5TktCMHZ6d2gtZThCQkEzM0ZBRFRNUTJrNnc3NkNBaU4xOEgyZ0gxcG15QnlxQ0lta2dRaUo3OS0zYw?oc=5" target="_blank">Парк КТЖ пополнился 146 современными локомотивами с начала года - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQNnRMTXc3eHNJRW9GYmswUlJtM2RVT2g2UTZOdGNTWmRobllaNGJZbDRwbExOc1c4M3JXRWNiaVVtdTczaWFPcDFaT0dXbktDVVZPYnZRbDBpR0x3cWdPQjdpV253aTJMSkNRM2x3V2VmMEhMNjFoc2MxYTVxcG1vYTNKaFZXZ1ZzQ3hGQmN5TmF5YTZrRjZ4OUZpajlqU08wLTBJS1pRT1VXT1ZjbFE?oc=5" target="_blank">В КТЖ ответили, почему казахстанцы до сих пор не ездят в новых вагонах Stadler - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 13.08.2026 15:58</span>
+        <span class="date">📅 21.07.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Парк КТЖ пополнился 146 современными локомотивами с начала года - Қазақстан теміржолшысы</div>
+      <div class="art-summary">В КТЖ ответили, почему казахстанцы до сих пор не ездят в новых вагонах Stadler - Kursiv Media</div>
     </div>
     
     <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPVEVkT1E5Vk11RTVkSWJGRURhSHlpXzRPQlhXSThOa1E2T2pHR2lCR1hIUG8tS0p2d2tiRzJZMEVDOFFjcnN6eGdVX0RpVWRkeE4zcGhZWTBkLVJMRlJZVHZyblVUaFRPTDNidkpIb1RRMlRieE44NG1DN0pRM2NYbWFhZTUtOTFrX2FtNGRMMmlCNWVNZ2N5MVNvSVl2alNDNkNPU0hB?oc=5" target="_blank">Сбой Telegram в Казахстане прокомментировали в Минцифры и «Казахтелеком» - paddock.pro</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxQcEFKOFhSUnVNVk00d2d3WWRPRTNNMzdLek5IM19aNzE0bjNEVkZUTHk3bU84T3NkVlpVaExSQ1dEQVBCUHd4OFhDOXdPOVl3UFpPYk93V0ZaZGc5Y0pHMDVDMThuTGdhT2FQMEFLZlZHclliMm10eUJOVHBsSFRfRldXZWFCbldScVFfd1dBUFFZUnQwcVE?oc=5" target="_blank">Казахтелеком рассказал о причинах сбоя Telegram в Казахстане: 13 августа 2026 - Politico.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 13.08.2026 13:03</span>
+        <span class="date">📅 13.08.2026 10:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Сбой Telegram в Казахстане прокомментировали в Минцифры и «Казахтелеком» - paddock.pro</div>
+      <div class="art-summary">Казахтелеком рассказал о причинах сбоя Telegram в Казахстане: 13 августа 2026 - Politico.kz</div>
     </div>
     
   </div>
@@ -236,7 +205,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-04';
+  document.getElementById('date-from').value = '2026-07-21';
   document.getElementById('date-to').value   = '2026-08-13';
   applyFilters();
 }
