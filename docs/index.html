@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 15.08.2026 10:21</div>
+  <div class="meta">2 источников · Обновлено: 15.08.2026 13:31</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-29">
+      <input type="date" id="date-from" value="2026-06-16">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-01">
+      <input type="date" id="date-to" value="2026-07-31">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,6 +86,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -102,31 +104,91 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNczB4S0lZZDZnc3JlNHdkcHQtVmhlY2RsWEUwc0ZXS2hyMmZwb2paalJGRUwyUDctUkZVeVd3QVFlZWtlVWNNUU1pbkVqYzNRb2NGQnZmYUZhX3EtU2ZtZXR1aGxSMmI5SU5WR3VvdmxzZGYwc2tCRUtVWGEycV84MjVmb01JRjBoRlNPcjNWNXgxT3pXeG5nZ3YxU1c1anF1ZWwtYVNnNHpyMzJ5?oc=5" target="_blank">КТЖ с долгом более 4 трлн тенге выплатила топ-менеджерам огромные премии - shyndyk.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 31.07.2026 13:02</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ с долгом более 4 трлн тенге выплатила топ-менеджерам огромные премии - shyndyk.kz</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPMG00c2lDaFhXTjZXc0NKOEFHY2luR19CQTYzRy1KaG9DeERZaWlrQ0tNTzJWX1oxaFMxaFJfNF9kZF9DLVM1bzhya3BETXIwWFVtRmJaNTN2ZXFMS08tOC1HNnZ2XzBpUDRNN1liMG5YdFBwdFN0Sk1qVXVMN0RCRFlONFRpdTEtQzdKWFB3ZEN1NEFMTzdCd3RjWndyekFRVHNIVW9SYi1yTFF4NjNQdnRNYw?oc=5" target="_blank">Президент принял главного исполнительного директора Air Astana Ибрахима Жанлыела - Ақорда</a></div>
+    <div class="article" data-date="2026-07-16" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE1qRlg5V2MtMUlLTE9sal8yd0pLT1k5Qm1lenpubFJWWm5wM1VteWs2Zk95S2s0N2VzdEt2RkNRWHVIOWpOSVluY1Vlc1dGZ9IBS0FVX3lxTFBmYjNVWTk5UEtyMmlsMk1jS0w0UW55TlFUWlhtdTBsWHYtRHRrc25QY1U2Y1VZZDI2bHV5VWRFOUZHQ0dVX0ZJcWFjbw?oc=5" target="_blank">Air Astana приостанавливает рейсы в Дубай из-за эскалации на Ближнем Востоке - Интерфакс</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.07.2026 10:08</span>
+        <span class="date">📅 16.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Президент принял главного исполнительного директора Air Astana Ибрахима Жанлыела - Ақорда</div>
+      <div class="art-summary">Air Astana приостанавливает рейсы в Дубай из-за эскалации на Ближнем Востоке - Интерфакс</div>
     </div>
     
-    <div class="article" data-date="2026-05-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNVnNOTzBKclRBWFNxXzhWcGxGQmJud0h5MExlNHBPUDNIY2Nzb0NKQW52Vm02MjNXZGpRV1pvZlBLUW54YWtGOWFJQVFYWXRBUHhLRTRUSmFKQ0RkdlpBMzdaeUF5MWhTUlpIYzR6MVVfQ05UVk9nWVJNRDhyRjJaWDY1Y2YzakxqYUJ5aWRCSUE0WDBuSXFReXA0TExoeVdiaGNrVFpn?oc=5" target="_blank">Air Astana выплатит акционерам дивиденд менее 10 тенге на бумагу - Kapital.kz</a></div>
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPajdjVVp2ODZnam9QUkZQN2xBR0tObFlVUGM5S2pSekp1NWFPa2dpazVPYnZWYzBBQi1NalREdzQ0SnZvNWEtUWd4UjRZN1lCMGpJSG1TT05oWDBvZnRrczk2aWFGSDZBbjhFSTZtSlV2dDJWUlpSelZyaVF0OWR2THB5QXhCY093MlFfTncyeVcxa0lSM3UyUXpMREEyNUY1Y1FaUzRqeHJnNU16a3RFTkl5eVQ2dW1yOVh0cEtvN2dSSFJSWGU0?oc=5" target="_blank">Эскалация на Ближнем Востоке: Air Astana экстренно отменяет рейсы в Дубай и возвращает самолеты - Inbusiness.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.05.2026 07:00</span>
+        <span class="date">📅 12.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana выплатит акционерам дивиденд менее 10 тенге на бумагу - Kapital.kz</div>
+      <div class="art-summary">Эскалация на Ближнем Востоке: Air Astana экстренно отменяет рейсы в Дубай и возвращает самолеты - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPdm9yODh0T29CRF8wNWxBTU9UYTFBSG93dC1yUnMzcElkanlWaThxem1YOGcxc0Y0VFd5dUdFR2RwdFJYTlhUQlM1TTlZcHRfNjBDbkJtaXQ2T1dqWWdxMWZXekVvTTA1eTl4SzFEbDFiZ2tqUVY1dXU2ZUp3aUtwcGVfbVlXV0VaYUxSTXctN2xCMVhMN1ZxNmUzc0J3SFBvdlE?oc=5" target="_blank">Самолет Air Astana три часа кружил в небе и вернулся в Алматы - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Самолет Air Astana три часа кружил в небе и вернулся в Алматы - NUR.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-30" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQVklNWWt3dGtaZXd6VzM0WWxLcDVDQUptOEtia0lkaGdvTDcxUFNTUHZnaWZlOFppMDNPdVVzaEpSRlU5Wl82azFUNjQxZHByNFhmUnpVUjdMV1FOTXlXVXlrTHJ0Y0U1NFdxWHFHMERBRlQ0X0JCN29xNk9KdjlobWtTbF_SAYoBQVVfeXFMTWp1M1d6ZGlpX0hEeVlBdUNVMUg1dUlaVnNYY0VvWE5OWGw0QzlyaEc1YVczbHpwcE5QXzYyaGxpS2xMWFlxZGUzMG5IV1J1WTJBbGxpZ3NfUWlONWk1N2Z5RFJ6NGtjRE12NTdJdXRFYmp2UkJ3cGFhMDFpVFYwbWlBang4UDVyZGln?oc=5" target="_blank">В КТЖ объяснили задержки поездов - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 30.06.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">В КТЖ объяснили задержки поездов - Новости Zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNMUVmd2ZBMkpleHZfZG9rTVdWNlpPUnl5NWxESnFPWlpVYmNlX0Y5eEhtLUMxUnhfTUJqTGhKWFZSYmFmMkIzbjA5b2UwUjVSVDlQUVNvYnhST1dSUHJYTjlxRW1UWHVCTENPTUFwQlpmVEFQQk0tT1BqM2RENkl5NjRNdVNWaF9XTmdGV1l6c2o?oc=5" target="_blank">Талгат Алдыбергенов снят с поста главы КТЖ - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Талгат Алдыбергенов снят с поста главы КТЖ - Новости Zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaWxucmhKQ1hqYVp2OWFWZ3pab2xFbnNuNVJnRXBvTnh2SkJuNG9JNUpORnducGdOajlvb0c0SGN5UlVmNmstUzVTeGttZ1d6a2VZRjNIeEhLWjdhcWVJLXh0OVBjZFdGbi0wbjhYLU5QMGNYSGJvZ0U4NVpzcU8wVS1MRTVFQWY1cGdzT2lrYndaOXNiZEVwMmVYQXJhYVQ5MHVXSF9tWm9Ra3NKSXJVUVBUcU5MWG1KdG5N0gHAAUFVX3lxTFBVZ09yTGxUMno0QnZLd2VRQlUwMnJka1l3UW1YWWJURlRDWE1oaFphcXg3VFc1djZ5emh0MjlPd3NFczBEd3R5Um9iTUdkcVlMVzFhcDhLa0RGdjZYNjBfN3p6eWpvYUY4cUptdGFJdi1VQTJTTF9KcTUyX1EzbWRxU1FjWmRQOHVMOGhUNWxDOGVSaG1MMW82NnBVdEpKTHVNR0ZKaFBQSHRpb0JxYlJTSkd2Rkl5Wkl1d2ZNbTVBLQ?oc=5" target="_blank">Глава КТЖ рассказал, почему вагоны Stadler до сих пор не возят казахстанцев - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.06.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Глава КТЖ рассказал, почему вагоны Stadler до сих пор не возят казахстанцев - Kursiv Media</div>
     </div>
     
   </div>
@@ -190,8 +252,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-29';
-  document.getElementById('date-to').value   = '2026-07-01';
+  document.getElementById('date-from').value = '2026-06-16';
+  document.getElementById('date-to').value   = '2026-07-31';
   applyFilters();
 }
 
