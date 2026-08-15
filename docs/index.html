@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 15.08.2026 07:24</div>
+  <div class="meta">1 источников · Обновлено: 15.08.2026 10:21</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-01-23">
+      <input type="date" id="date-from" value="2026-05-29">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-15">
+      <input type="date" id="date-to" value="2026-07-01">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,11 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
     </div>
   </div>
@@ -106,79 +102,36 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-08-15" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/biznes/70482-kazahstan-zaavlaet-o-korrupcii-v-kontraktah-po-kasaganu-na-summu-107-mlrd.html" target="_blank">Казахстан заявляет о коррупции в контрактах по Кашагану на сумму $10,7 млрд</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 15.08.2026 11:35</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Казахстан заявляет о коррупции в контрактах по Кашагану на сумму $10,7 млрд</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-15" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70481-obvinenie-zaprosilo-dla-bazkenovoj-vosem-let-lisenia-svobody-s-otsrockoj-nakazania.html" target="_blank">Обвинение запросило для Бажкеновой восемь лет лишения свободы с отсрочкой наказания</a></div>
+    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPMG00c2lDaFhXTjZXc0NKOEFHY2luR19CQTYzRy1KaG9DeERZaWlrQ0tNTzJWX1oxaFMxaFJfNF9kZF9DLVM1bzhya3BETXIwWFVtRmJaNTN2ZXFMS08tOC1HNnZ2XzBpUDRNN1liMG5YdFBwdFN0Sk1qVXVMN0RCRFlONFRpdTEtQzdKWFB3ZEN1NEFMTzdCd3RjWndyekFRVHNIVW9SYi1yTFF4NjNQdnRNYw?oc=5" target="_blank">Президент принял главного исполнительного директора Air Astana Ибрахима Жанлыела - Ақорда</a></div>
       <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 15.08.2026 10:35</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 01.07.2026 10:08</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Обвинение запросило для Бажкеновой восемь лет лишения свободы с отсрочкой наказания</div>
+      <div class="art-summary">Президент принял главного исполнительного директора Air Astana Ибрахима Жанлыела - Ақорда</div>
     </div>
     
-    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE11Zy05Mld3YzY2alFLVngyUEN0RG0yZ0lsbDlYRjl1NG9BSWtlcUhnQkdicHZWLUhaZ01ncm9LOTV3VEhaU3lrVW5tTGh6TFNpT1NIaUZicXJpQWxITlpuMlFNaXJpSG15NjE5SVZ3eDVjTXFSUjk5Vw?oc=5" target="_blank">Казмунайгаз сменил гендиректора Атырауского НПЗ - tradingview.com</a></div>
+    <div class="article" data-date="2026-05-29" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNVnNOTzBKclRBWFNxXzhWcGxGQmJud0h5MExlNHBPUDNIY2Nzb0NKQW52Vm02MjNXZGpRV1pvZlBLUW54YWtGOWFJQVFYWXRBUHhLRTRUSmFKQ0RkdlpBMzdaeUF5MWhTUlpIYzR6MVVfQ05UVk9nWVJNRDhyRjJaWDY1Y2YzakxqYUJ5aWRCSUE0WDBuSXFReXA0TExoeVdiaGNrVFpn?oc=5" target="_blank">Air Astana выплатит акционерам дивиденд менее 10 тенге на бумагу - Kapital.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 07.08.2026 08:37</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 29.05.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Казмунайгаз сменил гендиректора Атырауского НПЗ - tradingview.com</div>
-    </div>
-    
-    <div class="article" data-date="2026-01-23" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE41VGttQnkyUDlPUGw3cUdTRVhhdmpkRk5WMVJzZ1R1cWdUb2NXczliS0FCUjdrTG5RTE1YYzJDbDdwMFkzMDhNRWVDcjV6dVRGY1pEVy1NTHpoOGNldDVHcg?oc=5" target="_blank">Казатомпром прокомментировал ситуацию с компанией Laramide Resources - Атомная энергия 2.0</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 23.01.2026 08:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Казатомпром прокомментировал ситуацию с компанией Laramide Resources - Атомная энергия 2.0</div>
+      <div class="art-summary">Air Astana выплатит акционерам дивиденд менее 10 тенге на бумагу - Kapital.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-16" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbEswZWdTTHhfR3RZRGxCZWpLOE1GRUpvS2dVcG9tWjRUajFlMnJEdGxVUE55RWgxUTY2ODM1RDZHdlJuTEw0VHktNTl1bkNZcWljbHBWX05LVFcwZk5FekxORmZMOGg5VDh5ZVlJTFRXR3FPS0xvSDR1NWt2R1BXQnk1U1liamxPNG81R2dZV1hqZXJVaThnUE5PQlg2X1d1NGZ2LVlHMks5dw?oc=5" target="_blank">Стало известно, чей пакет акций «Казахтелекома» приобрел госфонд «Самрук-Казына» - Profit.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 16.07.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Стало известно, чей пакет акций «Казахтелекома» приобрел госфонд «Самрук-Казына» - Profit.kz</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -237,8 +190,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-01-23';
-  document.getElementById('date-to').value   = '2026-08-15';
+  document.getElementById('date-from').value = '2026-05-29';
+  document.getElementById('date-to').value   = '2026-07-01';
   applyFilters();
 }
 
