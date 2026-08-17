@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 17.08.2026 13:40</div>
+  <div class="meta">2 источников · Обновлено: 17.08.2026 16:13</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-03">
+      <input type="date" id="date-from" value="2026-07-13">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-17">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,13 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -111,72 +107,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-17" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-17/svan-kazmunajgaz-ishet-novye-zapasy-nefti-i-gaza-na-47-mlrd-tonn/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-kazmunajgaz-ishet-novye-zapasy-nefti-i-gaza-na-47-mlrd-tonn" target="_blank">«КазМунайГаз» ищет новые запасы нефти и газа на 4,7 млрд тонн</a></div>
+    <div class="article" data-date="2026-07-16" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNNjFCOHhmVHpuU0RTWnhNSjJIN0EyemVBR3lRcVBhc3FUUlJkZG9WRVlzWnQ1djRQM1N4dDVDcmM0c2x1X2tTWV9lbmhTV3pnaDBTMXJXdWx1cE1ZZnRvcWpuX2ZKV3ZNWlpidG53WEc1NDc5M1Q1dlUxMXhRM3NVaVYtTUloWHVPUFN2WFVlaEpKQQ?oc=5" target="_blank">Air Astana приостановит рейсы в Дубай до конца августа - TourDom</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 17.08.2026 08:31</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 16.07.2026 14:36</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» ищет новые запасы нефти и газа на 4,7 млрд тонн</div>
+      <div class="art-summary">Air Astana приостановит рейсы в Дубай до конца августа - TourDom</div>
     </div>
     
-    <div class="article" data-date="2026-08-17" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQMm5NMTJxRDAwZmtsVGFyc2pkWDJmd0I5Mzd3c1FvZTh4WmNKd3pkbk00cEFWekl0blVSRDgtQ1A4a2VtMll6M3hVOEZDbkFweWVoTTJYNHM4S2gySkUxUWYxOU4yQk1SU0ZEdE81UXYwblYtYlluU3MzaFVING5hd2tlc1lOUlZrbjZfdXBiaDFrdw?oc=5" target="_blank">До 2030 года «КазМунайГаз» пробурит 26 разведочных скважин - ИА Кокшетау Азия</a></div>
+    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE8xREpSSHQ2MlFlUDRwUVN5LTZQc001bnNldWpvYi1XbGFwWkNEWnBfSHdTTUhaVFg1T241My1yc1JXRHFEcGwzYjVfa2gwQ3FNRmpRWFo0dHVOY25OeEF1RXJRQmhEdnFNbTJLaGtjOS3SAW9BVV95cUxPQy01a0pqZF9pSXlzeGJzWFJsaC1YbmNRXzhzakFyX2hLY2tHNUFnR2dvU2ttYV9KWExJaG42aDUtUjBzN2FhSW44QVJPdVpFRmZPSVZSRlV2dXFQek5WZmdqWU1vZ3RpelVVSGIzUGs?oc=5" target="_blank">Air Astana приостанавливает рейсы в ОАЭ - BES.media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 17.08.2026 08:02</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.07.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">До 2030 года «КазМунайГаз» пробурит 26 разведочных скважин - ИА Кокшетау Азия</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-17" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPdVRIdDhOV1JiSEctNXk2Wk9fUUtCZElJcmxkYktjWkRBZElaNmFZdnpmbDE5Ql9NamZnTmZ6c0czUVJYeG9jVXh4ZEVIUFhwWnZyNG5TZEszVXdyWjB6bVdSWU1rNE92dUsyVU5aZlV6ZWY0WmcwQ29JZ0JxaDlGTUdDcFczZzJKaC1pLXFJM25URG9pVWREMzZ30gGaAUFVX3lxTE91VEh0OE5XUmJIRy01eTZaT19RS0JkSUlybGRiS2NaREFkSVo2YVl2emZsMTlCX01qZmdOZnpzRzNRUlh4b2NVeHhkRUhQWHBadnI0blNkSzNVd3JaMHptV1JZTWs0T3Z1SzJVTlpmVXplZjRaZzBDb0lnQnFoOUZNR0NwVzNnMkpoLWktcUkzblREb2lVZEQzNnc?oc=5" target="_blank">&#34;КазМунайГаз&#34; до 2030 года пробурит 26 разведочных скважин - report.az</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 17.08.2026 08:29</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; до 2030 года пробурит 26 разведочных скважин - report.az</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-03" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxNelVGUjlja3U2SkFYdlJZUGRqeXoyV0tNX2llTXd0QTdrMndPczhTa181eEhJWjlRT0I5d0FZY3MxdnFEZHRYcUdyXzVEdnFneTRrWUphNENTdzhvVmt1bDM5SFM1ZFUzcDdDWTk3aHE0b1c4SXV3aVJ1ZVJUUVdlbEcxNlF5NW1lajEwNUlWZ3RfaHdOcXpPTjhxV2VxRkU0YlhySWRMbExPU0NGeldHU3lNWjdmUmZsUWFSV25DcWRwZ2toSWYtQTA0ZGlSbWc?oc=5" target="_blank">КазМунайГаз на GECA-2026. Новая стратегия геологоразведки и новые партнерства - Neftegaz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 03.04.2026 06:19</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз на GECA-2026. Новая стратегия геологоразведки и новые партнерства - Neftegaz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-30" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQX2R6ZDdEMmlCNkU4NEV6NlpJSXkyWmxNTXVxNV9qc1BzTFNvM2xJX3lVaUtNbkotVFo5anZ3eTc1ZFk0TGlVV1ZWdWJiWmtuNDllNjg5cU9XS0t1VXFfVnZ3cWRISFJlaVpFNTJGNkdPaENPYmM5MGw3QkVkdzZ5cEtDSnZtZ2RHRnZhVXJzZHVnX2k3RE9CSmdoY2xLZ2pUUGVPcnI5Y0ZYd9IBrwFBVV95cUxPeF9kV2lXNTNYYjl2SGZNT19HV2x1dmFGZ1loMXpMakhYSk9wZlFmU1lGdVk0bG5zZlVkdzFSb0oydlM0UkRQT1YzWnlxNmJoaUlxTzBIWFNLaFRfcGtkVlF5ZkI1TGZIM21mMXZCbFJiLXRfQkZzeG9jN1BIeThYdnpLejZjbFJpQmJRY1RaLWdPQTNlWHpWSHlISTkyTW1jTUJmeTk4VzJDZWZUdl9r?oc=5" target="_blank">«В рамках возможностей»: глава КТЖ ответил на жалобы о неработающих кондиционерах - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 30.06.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">«В рамках возможностей»: глава КТЖ ответил на жалобы о неработающих кондиционерах - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-17" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNQ1NJcDRvQ3BuTy16YnVOM0RnM1N6TUFPUXlBSUJnN1JUY21QN05PZDJqeHdJSWVBLWZVd1AtN1F1RXVBM2RJT2o3b0YyMUVOd2M4MUo0dUpnWkF5RGZqcTdKVGo5ZmFpUEVxTTRFTENTaUJqUEN3NlZuWjVmNkJiWkZNUk1lVXJmMGR3VFQ2WGw?oc=5" target="_blank">AzerTelecom и «Казахтелеком» завершили прокладку 380-км кабеля через Каспий - Techora.ru</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 17.08.2026 11:35</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">AzerTelecom и «Казахтелеком» завершили прокладку 380-км кабеля через Каспий - Techora.ru</div>
+      <div class="art-summary">Air Astana приостанавливает рейсы в ОАЭ - BES.media</div>
     </div>
     
   </div>
@@ -186,15 +138,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-17" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-17/svan-kokshetauskaya-tec-kotoruyu-hoteli-stroit-na-rossijskie-dengi-zajmet-60-mlrd-tege/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-kokshetauskaya-tec-kotoruyu-hoteli-stroit-na-rossijskie-dengi-zajmet-60-mlrd-tege" target="_blank">Кокшетауская ТЭЦ, которую хотели строить на российские деньги, займет 60 млрд теңге</a></div>
+    <div class="article" data-date="2026-08-17" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQOWpZUkZhMkpHX3d3c1RmLTQ3OVVNR3lyX3JodVhBbnhiMElEMkpHSnBmSGwxWEhsei1LUXB1dnY2NGJnelE0NzNQR2VFYTRndUFDQkJPNzdFQTNkRGFaeUI0ekRsYnJiRnZwMFhpczZMbVBaclZ4eDhsRFlZNXh5d0l0cDlpU2hRbHp3VW9CSk5qVU5EV0lyX3R2QlBEVDRaS1VxNQ?oc=5" target="_blank">КазМунайГаз рассчитывает на прирост ресурсной базы до 4,7 млрд т - Neftegaz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 17.08.2026 08:14</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 17.08.2026 12:08</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Кокшетауская ТЭЦ, которую хотели строить на российские деньги, займет 60 млрд теңге</div>
+      <div class="art-summary">КазМунайГаз рассчитывает на прирост ресурсной базы до 4,7 млрд т - Neftegaz</div>
     </div>
     
   </div>
@@ -256,7 +208,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-03';
+  document.getElementById('date-from').value = '2026-07-13';
   document.getElementById('date-to').value   = '2026-08-17';
   applyFilters();
 }
