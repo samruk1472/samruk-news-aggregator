@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">7 источников · Обновлено: 18.08.2026 10:26</div>
+  <div class="meta">3 источников · Обновлено: 18.08.2026 13:43</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">23</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">19</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-13">
+      <input type="date" id="date-from" value="2026-08-18">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-18">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -90,8 +90,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -111,15 +109,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neg">
     <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-18/chnv-kazahstanczy-snova-ne-smogut-uletet-v-dubai/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=chnv-kazahstanczy-snova-ne-smogut-uletet-v-dubai" target="_blank">Казахстанцы снова не смогут улететь в Дубай</a></div>
+    <div class="article" data-date="2026-08-18" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/novosti/70512-advokat-gulnar-bazkenovoj-poprosila-sud-opravdat-podzasitnuu.html" target="_blank">Адвокат Гульнар Бажкеновой попросил суд оправдать подзащитную</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 18.08.2026 07:39</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 18.08.2026 17:03</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Казахстанцы снова не смогут улететь в Дубай</div>
+      <div class="art-summary">Адвокат Гульнар Бажкеновой попросил суд оправдать подзащитную</div>
     </div>
     
   </div>
@@ -127,258 +125,66 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(19)</span></div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://astanatimes.com/2026/08/air-astana-extends-dubai-flight-cancellations-through-sept-30/" target="_blank">Air Astana Extends Dubai Flight Cancellations Through Sept. 30</a></div>
-      <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 18.08.2026 07:57</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana Extends Dubai Flight Cancellations Through Sept. 30</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://www.caravan.kz/news/flyarystan-i-air-astana-prodlili-otmenu-rejsov-v-dubaj-do-konca-sentjabrja/" target="_blank">FlyArystan и Air Astana продлили отмену рейсов в Дубай до конца сентября</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Caravan.kz</span>
-        <span class="date">📅 18.08.2026 08:16</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">FlyArystan и Air Astana продлили отмену рейсов в Дубай до конца сентября</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-13" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPLXJnSXhxenk2T0dwaEl5Y0o3b05FeWMzWkc3VVkwVTNBeFVMejFjalN1Wi03UWhUaXFUYlBUR3ZKM081eExtNmVsSWIyTkNsbUFnUXhqR0hTVGFhaFZ2dUs5SFo0ZDl0VVR5eGQyVXZNVFJ2UGJ1THRJTGtCVFh4M0JSNkhKUGNCOGFkWEx2STJ2X3MzWGN2dzhGZllZZjhuNktfeVFR?oc=5" target="_blank">«Самрук-Энерго» заплатит своему владельцу всего 1% дивидендов от прибыли - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 13.04.2026 07:00</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">«Самрук-Энерго» заплатит своему владельцу всего 1% дивидендов от прибыли - Kursiv Media</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
     <div class="article" data-date="2026-08-18" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1zTmRYVVlLZ09SQjJfYmlGZzhwcE82TVpQWE5hb3BRLUl0ZkR1dEw1WTZHWW56UklmdlBjeUFtd2g3VVcxVE1va2pheHo2NndQdy1DSXhrenZmaVV6UnNEMklZRklYbTgzOEtlalFuMHZNbHlLZ3JLZg?oc=5" target="_blank">&#34;КазМунайГаз&#34; снизил добычу нефти на 4,6% - Qumash.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxONEFYUm0xdHhtbkt3RjlhV0ppUzc0NnVNSlhQWWczRGtBemJtU2MyQlRhVmh6SEozRHdNS3Fsa2RvVWI4RldESXowbi1nTDhPWUQ5RnV1TEJxWFVFeTRweFBWc2luV1psNGw0MnpudDFGeERtNldnWHg1aWF1RmJVbjhLNFhqdGR1UWFHblFQeHg2a2hYODFhRjBDQjk1TWZ1MzNzbVZjeDh4cG0wdFJhSlI4bkdiSEdESTkw?oc=5" target="_blank">Казмунайгаз снизил добычу нефти на 4,6% в январе-июне 26/25гг - Русская служба The Moscow Times</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 18.08.2026 09:36</span>
+        <span class="date">📅 18.08.2026 08:31</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; снизил добычу нефти на 4,6% - Qumash.kz</div>
+      <div class="art-summary">Казмунайгаз снизил добычу нефти на 4,6% в январе-июне 26/25гг - Русская служба The Moscow Times</div>
     </div>
     
     <div class="article" data-date="2026-08-18" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQY0hNMlFOSU9pdU1SNlhyNWRUbldtMU5MR3FQS0ZhU1dVMUtWRVNnOVJkdW9WcUlNMXhpRUpMS28wQWs5dDlGbVlydlJ0ZURNWkFlUlhoeUpXRGVpb0FtUTBaZnRocko4aE5BWmtzbllkVFdKMkJBYS1DN1hxcFJMNC1XbGNsSlYxVS1oOEpXbEtvNUF2YXJ2WjZwbDlQRGxZdzAwWjJDdXh5Nm9vVTVTOGZnTm45aFVf?oc=5" target="_blank">КТК снизил прокачку нефти на 7,4% в 1 пол. 26/25гг--Казмунайгаз - ru.themoscowtimes.com</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTE1ZQ1dWRlMtOXVLdnJzV2pFaVBQUkRWNmdrYnprd3pLOG1EWnNucllsQ0hFRjdydlJmcHVyMEZ1ck1jQQ?oc=5" target="_blank">&#34;Казмунайгаз&#34; снизила производство полипропилена на 4,3% из-за поставок с Тенгиза - Rupec</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 18.08.2026 09:19</span>
+        <span class="date">📅 18.08.2026 12:25</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КТК снизил прокачку нефти на 7,4% в 1 пол. 26/25гг--Казмунайгаз - ru.themoscowtimes.com</div>
+      <div class="art-summary">&#34;Казмунайгаз&#34; снизила производство полипропилена на 4,3% из-за поставок с Тенгиза - Rupec</div>
     </div>
     
     <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQUXFsRlFfSlFzYnVsXzI1TkloUnpzWlhRYmZMalhiT2dZUmltaUExMHZ0ZGxCdjVnU3FTZ0lKdklLbXJfX1g4cFF5aFVCZGJFT1cyVWdBdGR4TVRzSjU3WmZuMi1wLWw3cDltUnBQaGd3VHNCY013VFF0TWVwdEE2cDg2bGV1cVlrLXpKMVRGY3dtRElzd29XT185NGljZXVKanNmY2wyXzdHWXkteC0xWEJZVkpyTlhHRjBwRjRfOWFXamtsT29wMU5BLWw?oc=5" target="_blank">Казахстанские Air Astana и FlyArystan продлили отмену рейсов в Дубай до конца сентября - Интерфакс Россия</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNZGNfVndKb0l6ejVpdlYzV0pncW1FWnl5RG9wZ19xUUd6M2d0cDliWWduWk84N1F5VzZXUzNfTG53NTZfbXYtMDdfeXBhUGQ0bTZrV1RodXVWbEZTMm9ZUmhPZ05yWTh1cHk4VVdQazBxaWlFem5xZ3pCYWcxbHFCNVA0SzhZQXU1Z0ZXYzVFeHljbmpoazY1MHd5WkpOcHY0Y0HSAaYBQVVfeXFMUExxNnhSQ1loam04SGE0U0xNemJpZjBMN0xURURsTnFXd1dtbXV0cXBady1oZkkxcnJEUWliaTdCNzRvbUNlMVVTd2NaQ2Y0cThnTUZ1YlplY2ZFQXhJN056eDlOMjNyVkZXcHJ2dHduZUlCTF80WHFyOHJvU05mcE1ZQ05rckVTeFh5bWxLdzhhMFBBM1ZFZmxpbVp2RjBhQ1VURTdnUQ?oc=5" target="_blank">Рейсы Air Astana и FlyArystan в Дубай отменили до конца октября - Finratings</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 08:41</span>
+        <span class="date">📅 18.08.2026 09:11</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Казахстанские Air Astana и FlyArystan продлили отмену рейсов в Дубай до конца сентября - Интерфакс Россия</div>
+      <div class="art-summary">Рейсы Air Astana и FlyArystan в Дубай отменили до конца октября - Finratings</div>
     </div>
     
     <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1DQUs3bURyZUNfUHdDX2Z3Q1FON1lseEVQRFVIRGNNRmhmMTdvM3FVenVtdW9ZZDQ2QUc4bGQ2RDd5OVRGM20wcElSbk53YV9NZDRtRUltaE5mS0RJd3ZoT3J2eHE4clBuUlhXd1AyZHFRTURXVVYzQVp0SQ?oc=5" target="_blank">Air Astana и FlyArystan продлили отмену рейсов в Дубай до конца сентября - Правда.Ру</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNUkZvc2ZoYmcxNzRKeTR0RkE4dWZVM01sYTg4d1p3VmVwbzdPMnhPLURzbklKWEtJbGIzWHkyNlU5SUNHMVZOS1ZuVWV6VHRYZWxDc0dmMmcxaVducFY5SE4xOUJ6RmZkdVdtcjBuMEpBZkJLUDFaazUwY0xyUzlnc3d3Z1RfRkdvd3ZrVk9B?oc=5" target="_blank">Усть-Каменогорск – Air Astana продлевает отмену рейсов в Дубай - YK.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 09:30</span>
+        <span class="date">📅 18.08.2026 07:36</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana и FlyArystan продлили отмену рейсов в Дубай до конца сентября - Правда.Ру</div>
+      <div class="art-summary">Усть-Каменогорск – Air Astana продлевает отмену рейсов в Дубай - YK.KZ</div>
     </div>
     
     <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQUkYxd1BrdjBQa09wNTQ1Y3l3YXdDTmJ0US10VXJUc3lEU2I4Q25ZRUVlZnZwb2cyVGd2SzFNVVVpVXphc0owMnQ2M0JnMnpaV0ZtQ3pud2pFWHdUcWdEd0p1TEVOeW84eERCUjZLdGpwQWRndTRYVGhGZnFKdkVkblZndWk4MHJyRUHSAYgBQVVfeXFMTXpFRGNYNEZGQlZtLTRjVG01OGNHWFJGVVlHU1hHZmNMWWFLOGNNQ2NmZXpNM3RwNk1oWVpMNWlxaFMydEVfamRhTU1La2VyQ3kwV1JVMGd0OVRtZGNWcUdybVJKd0UyMDdKMTVPQXloME00QjlDc1QyN1JIMjVOQTByaHhWdHJtcg?oc=5" target="_blank">Air Astana продлила отмену рейсов в Дубай до 30 сентября - bes.media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPLThYWW1Md3p5SGdzZGh6VGpYaFFVX2tya1dkRWNxeHRpY0Q3QUxENm00bVg3ZHo5VFlxSml4RC1HQlF4NVRkSUk5aVRrSmd0S3hhQXIxV1d0YlJWWWRLTFVQVXNpSnM3ZDc0REI2ang3NE8yZ1NGak1QOGVYMTRjS1VxUFdfTWpOR1lrdnlxbHA?oc=5" target="_blank">Air Astana Extends Dubai Flight Suspension Through September - 4Vlastinfo</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 06:51</span>
+        <span class="date">📅 18.08.2026 13:23</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana продлила отмену рейсов в Дубай до 30 сентября - bes.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPWFJaLUpQX0RTLTNaaWlsWUU5UzlXcjk1VG5GbVRSM1Q1TEpjQmlaOGYxWi1LM09Ubnk4ODJPZUoxMnJkVjlvQzJ1dHFsWnJRSUxMUDZrNHhJRWJYdVFhSE4tUklPQlg3dUFWM0N1Y2c1RFZfa1ZUYUdDN2Z6Y3IwRXBxVnhkMHBLeDlza0hwN0tldw?oc=5" target="_blank">Air Astana и FlyArystan продлили отмену рейсов в Дубай - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 07:14</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana и FlyArystan продлили отмену рейсов в Дубай - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQN0w1Y1FYTTFqcEdIb2hRcmkzRGpoOVR3UFJoMFNvWUROdkFIZjJ3WF9RcmJFTzhCZkZ6WDlLcWpTbUlvTWFYSWxaa1RGaWh6NGtadUo5alI5MVhxcWp3dTM3QUhLMVk4TDBIVFZacjZHYmw5MTVFMV9SVHpVbWM0RVNjVFZkRlZXRDQtY2ZIaU5RV2pjcUNsN3o0a9IBoAFBVV95cUxPVVNXRmxJNmJ6bWpnUWZtZ3RLTGNYTnBReXh6c3AzU0FQMEoySTRZTVA1R29qTjhaaU5HRjlmNUU4TlhQTlUxb0Q2UGROemVQNXBKVG15QUNvWWNDVVM5cUFjZmk1Uy01UXlxZWdXRXpudFRsYUVBLUZVbnBoeEhEOFlzb2Z6QnItRjNEc2d2Z0d0UldXbEUzOHhCWTdGWGZD?oc=5" target="_blank">Отмена рейсов Air Astana в Дубай продлена до конца сентября - Vlast.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 06:51</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Отмена рейсов Air Astana в Дубай продлена до конца сентября - Vlast.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNTEhQYjVKd0hCX0FvR2IxQ20tS0M1R0tnT1JNQk9zNC1vaU9zdEk4TG50dTg4eWkzT05MSG85LWQ5cVpRQ2NRQ2RGdFQxV3JoZWFTbkQ3azZtWmZVcllMQm4yc2JpWk9mQ01Wa2VoWEtkWXZ5ZlJnUnk1WUpMajJqWnVzNWlhaGdGV2xoRC1R0gGOAUFVX3lxTE1MSFBiNUp3SEJfQW9HYjFDbS1LQzVHS2dPUk1CT3M0LW9pT3N0SThMbnR1ODh5aTNPTkxIbzktZDlxWlFDY1FDZEZ0VDFXcmhlYVNuRDdrNm1aZlVyWUxCbjJzYmlaT2ZDTVZrZWhYS2RZdnlmUmdSeTVZSkxqMmpadXM1aWFoZ0ZXbGhELVE?oc=5" target="_blank">Полеты Air Astana в Дубай отменены еще на месяц - Казинформ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 06:35</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Полеты Air Astana в Дубай отменены еще на месяц - Казинформ</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9jUTNsQ21ZNDUzR2ZGSHEzMmREMmFPSllaNkFXOEg0cFdBUzFOVWxSTVVuWE5PVnRXNERKOTZETWNoVUthYzJ4TXN5eW83cEs2aXR5dUFxVkk3cFMtLWVFbWQ5OVN1QTZLZGpCcmdUTnF3aVpYUzlONjln?oc=5" target="_blank">Air Astana и FlyArystan ограничили авиасообщение с Дубаем из-за обстановки в Персидском заливе - Правда.Ру</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 08:23</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana и FlyArystan ограничили авиасообщение с Дубаем из-за обстановки в Персидском заливе - Правда.Ру</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxORXNvOF83dmNvU3RmTlV2QzZXdjRRbEZPTi0yQXluLXNNMlpKamRqRU9acmsyZTBONFBpTWUtUWpXNmhjUl8yMTk4QkFITjgzWlB5Z2taalVYeHdTZHU5bGYtc3JKM3NvejJCLU1YVFAzUllGVG1CdVZONkx3ZjBkUmxNUVdQMHloaXdNU1FqNmlfTEVhaTBF?oc=5" target="_blank">Приостановка рейсов Air Astana в Дубай продлевается - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 07:38</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Приостановка рейсов Air Astana в Дубай продлевается - Kapital.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVHhhZG9pcnFNREhzZTV1Y2VTYUNxcWt6YVE2XzZ5ZTFYQmR2LVdDbmdmd01rRU4ybjVZOHdfTGhFZlNVSDJvd0ppY1ZPYjZWdmtEb1JobzFrT1R3NXBFUEloNlloMGExMmZQcDFHSndpTmQ1QWRJczhsN2hPbGlZTUZWYzZpSWl2?oc=5" target="_blank">Air Astana и FlyArystan продлили отмену рейсов в Дубай - Казахстанская правда</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 07:37</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana и FlyArystan продлили отмену рейсов в Дубай - Казахстанская правда</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOW8tRFJISlpwMjJ4dF93azFwVmZwTGV3c1VqdkpPQXBkMm5zNlRKOXFHQm8tWlR4MDE1bXdWOGg1Sk4wUE5IWTlLdjEyM2Z6TDB5TG1wTWVScjl2RmdjOEw0TDVlSDlXaGFwQ2U2aHJZdTdZd09FUHZoSFZFOFdGSF82UTNkcEtEclY0MEFKcVFyOFh2ZWxmSEpYeGlQZUNKWG81M29lTm1KWDJkczlzeFBtOFRqRy1HMFM1WjBENEh2bmJUZ0ZGVNIBzgFBVV95cUxPQmxWY2xZZERPeGphRWhiOWNOUGFrNmFnY3RVZFFwWUxoX1ZYbmw2dzZOQXhpZHBtX1ZiUUJhRXJhbWNuU0YxU1RjM2pjU3hmYWZYM0s4MGpxbnV2WWE2TVByN2lfOERxdHFLcTBnQjRqemFUQkl0SlB4RnlPZTUzQ3FqeUJkNF9XVzdNeWJFRG5TQW50ZExTQUs5bXNhVHUzU3hBSVpPODBoUE1DR0xtX291Nmg5VmdMbG1JNTRkNk1Vc2lhYS1jTnRXampDZw?oc=5" target="_blank">Перелеты в Дубай откладываются: Air Astana и FlyArystan сообщили о новых сроках - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 06:31</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Перелеты в Дубай откладываются: Air Astana и FlyArystan сообщили о новых сроках - Новости Zakon.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSUw4bU5yOWVRRHFtME1ITS10UnFxREtPZmhqdzl3bU94LU5ORXVEaXFxRlJ1b1d4YmVqaUNGVG9Ub1BhVjRaMHZzaFRpYXI2TnZfendrLXA1NExIdzNPWV95bF9FU05Ca2E2cG5uaHFkRmZsOENqLU1RNlJCdm0xSnN3SXpnNWxmNzZv?oc=5" target="_blank">Air Astana продлила отмену рейсов в Дубай до конца сентября. - Exclusive.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 07:25</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana продлила отмену рейсов в Дубай до конца сентября. - Exclusive.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOVTFnb3BIaUp0NDIwOTYtMHBYSFBtUU5KOEdsSWxRck13cDFBV1pWTkNEb0Uwa0dRRU01Nk1UTUZ4bmZXcFRUM01BRzBVclZtY0FtYWczSERXLUZwTVNwVDhiZXBITGNJOTRuX3NUWmV4QldCRUp3c0Nsdm13VUppSk1nNlVQdnZ5Zmg2UE0xREtvTlE4QU9pX0hEdkdQdG51SW0tdjU4NA?oc=5" target="_blank">Air Astana и FlyArystan снова продлили отмену рейсов в Дубай — теперь до конца сентября - Belles.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 09:26</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana и FlyArystan снова продлили отмену рейсов в Дубай — теперь до конца сентября - Belles.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxOQTgtV21lcFlyc1c0S2RoTkFGSDNELXZGbGRTU2lrUUtHRjVYeWxrc3EtOThhVjRKZ0dEekp6blV0UFpIWlZpemRoLWY5Skh1clc2dlRrc29rTDJKRTRzdFhFQk9pcTdka2lLb1l0cmVGYXNPTXBEMUxHcDBtS29ZaThNLUNUMnRqbUwwdFZaVHVoZ2Z1ZzVhTS16bzVNWUZqa2RzMXlpVzdXaWlNTjJGdWlhc2NfV2tlRXg1SW4xaTRoWEQ0N2pGYXVrTzFZUQ?oc=5" target="_blank">Более 2 тыс. водителей приняли участие в акции КТЖ «Безопасный переезд» в шести регионах страны - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 18.08.2026 08:50</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Более 2 тыс. водителей приняли участие в акции КТЖ «Безопасный переезд» в шести регионах страны - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOT2ladmV2RlNLbXJtd09Zb19RUGZuWTdFTUE2ZDYxd1l2UVRILXpqY1Z4Wk56VjlpTGNnbkFJaHFrTFNYTjRnZjJaTnZkNGt0TFlaeF85THpGWUZJb1NsOTRXaFNFWW9rbUotVHhSMWsxT3Fib1hDQUo0UU1TZ2xmejRBM2FINDhwRXBjNERtTQ?oc=5" target="_blank">В КТЖ разрешили экспорт нефтепродуктов с малых НПЗ - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 18.08.2026 08:01</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В КТЖ разрешили экспорт нефтепродуктов с малых НПЗ - Forbes.kz</div>
+      <div class="art-summary">Air Astana Extends Dubai Flight Suspension Through September - 4Vlastinfo</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
-    
-    <div class="article" data-date="2026-08-18" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-18/svan-kazmunajgaz-rezko-narastil-pribyl-na-70-blagodarya-rostu-ceny-na-neft/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-kazmunajgaz-rezko-narastil-pribyl-na-70-blagodarya-rostu-ceny-na-neft" target="_blank">«КазМунайГаз» резко нарастил прибыль на 70% благодаря росту цены на нефть</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 18.08.2026 10:08</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» резко нарастил прибыль на 70% благодаря росту цены на нефть</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-18/klyuchevoj-finansovyj-forum-evrazii-projdet-v-astane-9-10-sentyabrya/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=klyuchevoj-finansovyj-forum-evrazii-projdet-v-astane-9-10-sentyabrya" target="_blank">Ключевой финансовый форум Евразии пройдет в Астане 9–10 сентября</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 18.08.2026 07:38</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Ключевой финансовый форум Евразии пройдет в Астане 9–10 сентября</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOMy1QeUFxVktOMEdzUkRvczF4c1NId0JDZkl3VFl1eHJsNjZqeTF1TTJHWUNmQWZrbVl4Y1JLS0c0VDNDaWlMODZ4eEtYZnloWUROdXM3Si0zbDROSHpfRDAtSG1kLVNpZlpuZGZGZEpGYm1HWnBITDQ5NVI0NGNkUUx2LU11NjUyMGVIR1JFZFJJZnlZeFpQLXZtU21nNV91TWhCeFRrX2MtR09Rcjl3?oc=5" target="_blank">«КазМунайГаз» резко нарастил прибыль на 70% благодаря росту цены на нефть - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 18.08.2026 10:18</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» резко нарастил прибыль на 70% благодаря росту цены на нефть - Kursiv Media</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -437,7 +243,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-13';
+  document.getElementById('date-from').value = '2026-08-18';
   document.getElementById('date-to').value   = '2026-08-18';
   applyFilters();
 }
