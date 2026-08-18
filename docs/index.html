@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 17.08.2026 16:13</div>
+  <div class="meta">3 источников · Обновлено: 18.08.2026 02:15</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-13">
+      <input type="date" id="date-from" value="2026-07-12">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-17">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -88,6 +88,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -107,49 +109,88 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
     
-    <div class="article" data-date="2026-07-16" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNNjFCOHhmVHpuU0RTWnhNSjJIN0EyemVBR3lRcVBhc3FUUlJkZG9WRVlzWnQ1djRQM1N4dDVDcmM0c2x1X2tTWV9lbmhTV3pnaDBTMXJXdWx1cE1ZZnRvcWpuX2ZKV3ZNWlpidG53WEc1NDc5M1Q1dlUxMXhRM3NVaVYtTUloWHVPUFN2WFVlaEpKQQ?oc=5" target="_blank">Air Astana приостановит рейсы в Дубай до конца августа - TourDom</a></div>
+    <div class="article" data-date="2026-08-17" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNS2dXS2lCeDZnQWJheC10N2N1VTlNVHljOHNGTHNjamt6MHJ3UFlkZW9VYTB5enZmUTlhczQyZkkxS3Fmak5CM3NiU21temhQNWROekxqSUVqTnZYVWs2UE54bmhnU1ZZSEVvSDY0U1JkbmFmUXpGeHFsNHFsNnRUdlp3?oc=5" target="_blank">НК «КазМунайГаз» стала владельцем 50% Shygys Operating - AKM.RU</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 16.07.2026 14:36</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 17.08.2026 15:09</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Air Astana приостановит рейсы в Дубай до конца августа - TourDom</div>
+      <div class="art-summary">НК «КазМунайГаз» стала владельцем 50% Shygys Operating - AKM.RU</div>
     </div>
     
-    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE8xREpSSHQ2MlFlUDRwUVN5LTZQc001bnNldWpvYi1XbGFwWkNEWnBfSHdTTUhaVFg1T241My1yc1JXRHFEcGwzYjVfa2gwQ3FNRmpRWFo0dHVOY25OeEF1RXJRQmhEdnFNbTJLaGtjOS3SAW9BVV95cUxPQy01a0pqZF9pSXlzeGJzWFJsaC1YbmNRXzhzakFyX2hLY2tHNUFnR2dvU2ttYV9KWExJaG42aDUtUjBzN2FhSW44QVJPdVpFRmZPSVZSRlV2dXFQek5WZmdqWU1vZ3RpelVVSGIzUGs?oc=5" target="_blank">Air Astana приостанавливает рейсы в ОАЭ - BES.media</a></div>
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFA4TW1BY0hLOGlFdVc3SW16UlNZTC15bUFsc3Nmb0ltQWdSMHZKLWZXRXNkZlFzWkktV0NlSzhWSERHUHRLcmxveWtic2xvMHBLeGNVRGpUdzdaZ3RwSnBlc2VFTGF0aDY0dGtQdWp1RHl5dEpMMktZ?oc=5" target="_blank">Казмунайгаз сменил гендиректора Атырауского НПЗ - fr.tradingview.com</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 08:37</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз сменил гендиректора Атырауского НПЗ - fr.tradingview.com</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-14" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNd1N2eThMLWttNkZRLVcwYjFnVG1WWUtUbEZrVldTM0JJcW84cmdSVm5TeGdwekdTZmptMjBfdkRlcmVqQ1RVU0syR0UzYlNjMER1c1BuMGsxRDV0NlctQTY1LVhQbEI5V1pKSW9wc2FIV29MNDBqVmhPaE1Ycjc0V3ZobTJWamxpNDUzY0lNMU82NHFqR3VuRE9UQTBVZ0JCT20zV2hqUTFTZw?oc=5" target="_blank">Жарбосынова 62 — Возле заправки Казмунайгаз - Krisha</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 14.08.2026 10:45</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Жарбосынова 62 — Возле заправки Казмунайгаз - Krisha</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-14" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9KaU1DbVJPdkxDUTgtWWVaVkZReGxud2JWTlkyNnl3LVV0YkY4TTE3LWFNZGxJd2ltZnBhWnJLQWMyRkpVUkpBQmdrdjZZWG14SDFQcjQ2V3ZQeWZYY19lVUhYYWdBVV9PSTF4cjN1QdIBbkFVX3lxTFB0THczREFjaV9nOHRHeVhsenRLTWhKRlNSanpaa3ZpNGdqVEFyaVA1cTJZaWg5M2M0Yjd5aGdaeElDaTJpazkwM29hNndEZXlQY2l1YUc3TWQya2o0NUFmMFotRS1JazdPNDYzM3hR?oc=5" target="_blank">Air Astana возобновляет рейсы в Дубай - BES.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 13.07.2026 07:00</span>
+        <span class="date">📅 14.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana приостанавливает рейсы в ОАЭ - BES.media</div>
+      <div class="art-summary">Air Astana возобновляет рейсы в Дубай - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOZmZlZkhjZDFTRXpEc0VFcWtDSVFBMXF3dlBCMjlDTUdmekxhM3BKemNSTzJKZ0s5X3lSYTdTMGc4UGd3Mzd5QWRDY1pIdmFaWEpMWXFCYlMtV2hrTzdMZURJMVpRZUVkaWlIUVNEbWlvRDZVRm1JakNyVjV4Uy1kcHlfd2t2cVRzVDgxbFVqelpMcTY5UExrYkwyV21EcnBTdmlOTENJUVlhVTMzbnlz?oc=5" target="_blank">Air Astana сделала заявление о рейсах в Дубай из-за ситуации на Ближнем Востоке - Informburo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana сделала заявление о рейсах в Дубай из-за ситуации на Ближнем Востоке - Informburo.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOOEdadm1Ua08tM1RDUHZLMHhEamtNTTZZbFBmWC1yLTVoVVc0aVJ0V3dfVnZGSGtiUHJqTXkwVTNObVVnUVhnLXBWOUd4alR5cDdhckllWENlVkNpcEZsdDRJaW92WUw2NTdCSTlvQVFOZTdOc0x5eVRGVFJyTkQwUm5sYU9WNFFNLUN2WGtrNGhwWEZjSW1zYloyWWlSeFhVYWN1aERPNWtrLThYdnA3WFBXQnY2eVJm?oc=5" target="_blank">Air Astana приостанавливает авиасообщение с Дубаем из-за ситуации на Ближнем Востоке - br.az</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 19:34</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana приостанавливает авиасообщение с Дубаем из-за ситуации на Ближнем Востоке - br.az</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOQ0V3eGh6SW9TWFBScDk3cjhWNzRmbk8tSHRQU2V1ajJBOE00WlFyWEc1eVZLYkFseWpQRG84ZVk2em1yZjZVWWloUEpTeFZRcGlRVy05eThFMGVRTzRSS3I0eXJDa2ZrcmtaR2dNcmFrekZYZXM1am5ZY1kyNHdTdEVLN0NfZ0tuTTdwckZfWUtRSURDOFdhb2tYT1I?oc=5" target="_blank">КТЖ отменила запрет на вывоз нефтепродуктов с мини-НПЗ Казахстана - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.08.2026 23:54</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ отменила запрет на вывоз нефтепродуктов с мини-НПЗ Казахстана - Inbusiness.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-08-17" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQOWpZUkZhMkpHX3d3c1RmLTQ3OVVNR3lyX3JodVhBbnhiMElEMkpHSnBmSGwxWEhsei1LUXB1dnY2NGJnelE0NzNQR2VFYTRndUFDQkJPNzdFQTNkRGFaeUI0ekRsYnJiRnZwMFhpczZMbVBaclZ4eDhsRFlZNXh5d0l0cDlpU2hRbHp3VW9CSk5qVU5EV0lyX3R2QlBEVDRaS1VxNQ?oc=5" target="_blank">КазМунайГаз рассчитывает на прирост ресурсной базы до 4,7 млрд т - Neftegaz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 17.08.2026 12:08</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз рассчитывает на прирост ресурсной базы до 4,7 млрд т - Neftegaz</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -208,7 +249,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-13';
+  document.getElementById('date-from').value = '2026-07-12';
   document.getElementById('date-to').value   = '2026-08-17';
   applyFilters();
 }
