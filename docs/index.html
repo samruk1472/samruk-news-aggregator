@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 19.08.2026 13:46</div>
+  <div class="meta">3 источников · Обновлено: 19.08.2026 16:17</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-19">
+      <input type="date" id="date-from" value="2025-10-17">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-19">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,6 +86,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -105,22 +109,60 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
     <div class="article" data-date="2026-08-19" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNWEtkTzdLczJKcTNVTEpvN09NMldoQklmUjNQWERPQjBwMEVqVEQ0WmRXRGhYeWRCOThpZWRwOWpVXzZpclg2RThmREFBRHNZcEVYaVBpcDRRb24yZE9EV20wTU5zYmtnbmJUT2I1ODJubXBVU092V3Q3ZTl0WWQ0WFlzdEpMcHRSdjlIckJfdnlWWEppaTE2Ui1OVGg3RC16VnfSAaIBQVVfeXFMTVhLZE83S3MySnEzVUxKbzdPTTJXaEJJZlIzUFhET0IwcDBFalRENFpkV0RoWHlkQjk4aWVkcDlqVV82aXJYNkU4ZkRBQURzWXBFWGlQaXA0UW9uMmRPRFdtME1Oc2JrZ25iVE9iNTgybm1wVVNPdld0N2U5dFlkNFhZc3RKTHB0UnY5SHJCX3Z5VlhKaWkxNlItTlRoN0QtelZ3?oc=5" target="_blank">Полгода – отчет позитивный: экономисты о показателях «КазМунайГаз» - Ulysmedia.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNSnZ2cDNOY2lRTGxQUldFWTE5TG12X09adXFualZVRnJEYlVmbVlBdTBnZzBad0NoU1Vyd0QtV21SMjFzclN0MExJV19GdXVRbi13N1A4Z05Qb25Hdzd2MFgxdHVTYWpveGU0VXplWGdYcVdMMWhjXzNjWWJJLWhmRGhYbDlEUmc?oc=5" target="_blank">«КазМунайГаз» выкупит свои облигации на $500 млн - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 19.08.2026 12:23</span>
+        <span class="date">📅 19.08.2026 12:36</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Полгода – отчет позитивный: экономисты о показателях «КазМунайГаз» - Ulysmedia.kz</div>
+      <div class="art-summary">«КазМунайГаз» выкупит свои облигации на $500 млн - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2025-10-17" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5JNHhLVW5ZUUpWTTdsa3FiWHJFeUxDalNpd1I2VDdXR0VQdHNRSnZwYXBxSVlYM0NyelBMeGxYcWRsUUcxSVZkZ1JTc2kxcDM3aFEycEdTYV9RLWRrcXU1Q3lCRGtnTlZ1RnRBZWJEUXV1VTRKT04yZTlzb0c?oc=5" target="_blank">«Казатомпром» начал ГРР на двух новых участках в 2025 году - dprom.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 17.10.2025 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» начал ГРР на двух новых участках в 2025 году - dprom.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxQVDBVSmZZRTc1TDY3MXRqeVhWMU9WTEVTVW5DaTVOaFJidEpCZ0llN05mTjdOd2RIelR4Yy1LcmVRelFZV193a3luek92QUpxd29Da2dna2dUQXYtem50QnRJM2hBd1JQZnNPaW84VUlXSTJFd3ZGRmxCbGhLSU1vV2NYaXRfdUtoLU5ZV2JYLVZoci1mTkFRVlNmQ0pnZmk5NjVJRlFxYlR5RGlkaGt5UWVIV2ZOODVvNXlxaGtKR0plSDZ1WDljVkw5VzY1d9IB0wFBVV95cUxPclljcS10SzJxTGtFamhBb2FfNHp0Yy1zeVZXbExhcDY0S3U3VlBtSFZsaHIxSmYyd1R3WmlFZUhZWWJrc1ZMZ1VQSXRDYW1neGxsTkQ5UDI5dlBRQ2ZjaG95dWJCQ0hfR1RUZVc2UnFQaEdLSHlkeGp5a2djRlJRaHVzYlhpc25tUkxyZE1qUUd2elRXOEZBNDhIVnBWTFBYUzVrT1dGbGMtbzU1aUFwMFBQWjQwM2Y2cVFYTEt6MDdvUWhleVpfd290QTBrd1RnMXNZ?oc=5" target="_blank">«Казахтелеком» выступит технологическим партнером «Игр Будущего 2026» powered by Samruk-Kazyna - DigitalBusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 20.07.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» выступит технологическим партнером «Игр Будущего 2026» powered by Samruk-Kazyna - DigitalBusiness.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-18" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFBfSWRzZ0cydEtlTUNza1JkR3pqNVgxbVRicVdURXpHOFh6a0tLem5VOENOWlBDa0NfeGVSUlA2akFtX2NQVF91V3F3dE5vN2I3MFcycmplaE5iSDdEVy0tQ1ViY3p0QktVQUNNM2w5UXRNVWx2T2Vj?oc=5" target="_blank">Казмунайгаз в 1 пол 26г увеличил чистую прибыль на 69% - TradingView</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 18.08.2026 06:32</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз в 1 пол 26г увеличил чистую прибыль на 69% - TradingView</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,7 +221,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-19';
+  document.getElementById('date-from').value = '2025-10-17';
   document.getElementById('date-to').value   = '2026-08-19';
   applyFilters();
 }
