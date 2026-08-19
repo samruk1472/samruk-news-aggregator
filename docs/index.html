@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 19.08.2026 10:27</div>
+  <div class="meta">1 источников · Обновлено: 19.08.2026 13:46</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-18">
+      <input type="date" id="date-from" value="2026-08-19">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-19">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,8 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
@@ -104,80 +102,20 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-08-19" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-19/devy-kak-hudozhnik-muralov-ispolnil-mechtu-i-smenil-kisti-na-shturval-samoleta/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-kak-hudozhnik-muralov-ispolnil-mechtu-i-smenil-kisti-na-shturval-samoleta" target="_blank">Как художник муралов исполнил мечту и сменил кисти на штурвал самолета</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 19.08.2026 08:20</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Как художник муралов исполнил мечту и сменил кисти на штурвал самолета</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-19" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNcFNXVkMyVWR2TEl3QTcxUUV3d0ZJLXVSOXNqOGRaaW5oc3RSQXpLWGhXb2YwQ2s1THRTWEQ1cV9RV2F3T055REtvbXB0eTVFUWQyVHo5amlVdjFtUE9WMWhHOEpOQjlibnl3azhETnlibWp0bS1xeDRGd3lqSnlPdGdpS3dFRW90dnYwNnhiMmNhT3lZaWc?oc=5" target="_blank">«КазМунайГаз» выкупит свои долги на сумму до $500 млн - nationalbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 19.08.2026 10:10</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» выкупит свои долги на сумму до $500 млн - nationalbusiness.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-08-19" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPeTFHS0RzS1BuWGtzVE1fdnRqaDFhQlZWZjJSV0NOSERSN2E0OVBTbXNUUzQzSEZkSEJZbTRmcERQeUhIRmpJTEt3Z1hKdFBub0NzNnFHWllnWGE0OFE3eU5fX3g1dXd4bkx2SUJpam9GMi1sMTFNaXpIM3BxTUFoSF9yQk1WM0U5RDFyRmFNTG1HVGJ4RGpMZVI5aXpyNDloQTlTQtIBpgFBVV95cUxQbG9YOEIxMEZWRHo1RVhXYUlPdTQwZGFscE9XVDB1bGtzV1pPRW1BMGNsQUlfWDNITE5BcjV6eHNDUVZFLVZnTTdhaVBtYmJ6YXNIcTU2SWNmTXBGdkVGYkZHT0RvUkhNMXJmQk1zLUpJUWZJcU4wLTVqdWtEbWVqR0VLeVB0TzBDem9GVUVET092RW1RRWluNFdENzJrNnBKVUktbEtB?oc=5" target="_blank">Атырауский НПЗ увеличит объем переработки нефти до 6,1 млн тонн в год - inform.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNWEtkTzdLczJKcTNVTEpvN09NMldoQklmUjNQWERPQjBwMEVqVEQ0WmRXRGhYeWRCOThpZWRwOWpVXzZpclg2RThmREFBRHNZcEVYaVBpcDRRb24yZE9EV20wTU5zYmtnbmJUT2I1ODJubXBVU092V3Q3ZTl0WWQ0WFlzdEpMcHRSdjlIckJfdnlWWEppaTE2Ui1OVGg3RC16VnfSAaIBQVVfeXFMTVhLZE83S3MySnEzVUxKbzdPTTJXaEJJZlIzUFhET0IwcDBFalRENFpkV0RoWHlkQjk4aWVkcDlqVV82aXJYNkU4ZkRBQURzWXBFWGlQaXA0UW9uMmRPRFdtME1Oc2JrZ25iVE9iNTgybm1wVVNPdld0N2U5dFlkNFhZc3RKTHB0UnY5SHJCX3Z5VlhKaWkxNlItTlRoN0QtelZ3?oc=5" target="_blank">Полгода – отчет позитивный: экономисты о показателях «КазМунайГаз» - Ulysmedia.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 19.08.2026 09:24</span>
+        <span class="date">📅 19.08.2026 12:23</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Атырауский НПЗ увеличит объем переработки нефти до 6,1 млн тонн в год - inform.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-19" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxONGFSTzJKZEQ3YlhQWWdONWRxVEVJdng4YW4zQW80M0tFbDYwSlE2OXp4cF81MHJsUzlvRHhTR251U1kzMFpPcG1wdU52R2pwT2VwSlFzcUtzZ29VdzBxUHBHU01ISndrNnpXQkJjeWw2MkJ4bjVEVHh6WVp2QzdJZndZQWhwdk1DOE1yMnBlbGprYTRFVlpOanVQcHRwTENGaVNGak9yRnA1SDl6UmZyNXdhMm5udnVw?oc=5" target="_blank">Казмунайгаз объявил выкуп облигаций на $1,25 млрд с погашением в 30г - Русская служба The Moscow Times</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 19.08.2026 09:08</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Казмунайгаз объявил выкуп облигаций на $1,25 млрд с погашением в 30г - Русская служба The Moscow Times</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNUmJGaWhtOW1FMHpuZVVCVXM4UVd3M0x1b1FobU5nTnVXeTBaZEVjb3VOR0ROV2JjMjYyWTJDZGU1VEZjbkhlcVJSQllsTVY3UERja2gySHJvUFFsVUtQdkprcklFSjlwSXlTT0JqNjhQeVNhaDNzNlNEVHE0N1ZFRzItUktWbzlIY1h1a9IBjgFBVV95cUxNTEhQYjVKd0hCX0FvR2IxQ20tS0M1R0tnT1JNQk9zNC1vaU9zdEk4TG50dTg4eWkzT05MSG85LWQ5cVpRQ2NRQ2RGdFQxV3JoZWFTbkQ3azZtWmZVcllMQm4yc2JpWk9mQ01Wa2VoWEtkWXZ5ZlJnUnk1WUpMajJqWnVzNWlhaGdGV2xoRC1R?oc=5" target="_blank">Полеты Air Astana в Дубай отменены еще на месяц - inform.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 12:35</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Полеты Air Astana в Дубай отменены еще на месяц - inform.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxPOHB3REFyRlVVS2xwc2VLUWx0RVEwMXZ6ano4bUloWWo4aDNSaXp6eGxJWkF3bEdyZzBrTUZXdDF0bDU2Y0dJSWRhcUJJUXVWbjRub2N3S3BEQXJLVUs3UVFmbWQwcXYtbGU5N1ZPQVdaWWtnVWxHdWUwTjlUbWdNTnVYal9kdHUxYUdwd0M0M3ZtMzVDVkRKNFZyazhydnZITDVLOWZqbHlFdml1aUROVzVndzJiWXFkdmNmUg?oc=5" target="_blank">Махинации с авиабилетами на миллиард: приговор бывшим топ-менеджерам Air Astana оставили в силе - Orda.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Махинации с авиабилетами на миллиард: приговор бывшим топ-менеджерам Air Astana оставили в силе - Orda.kz</div>
+      <div class="art-summary">Полгода – отчет позитивный: экономисты о показателях «КазМунайГаз» - Ulysmedia.kz</div>
     </div>
     
   </div>
@@ -241,7 +179,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-18';
+  document.getElementById('date-from').value = '2026-08-19';
   document.getElementById('date-to').value   = '2026-08-19';
   applyFilters();
 }
