@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 20.08.2026 04:30</div>
+  <div class="meta">3 источников · Обновлено: 20.08.2026 07:35</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-11">
+      <input type="date" id="date-from" value="2026-08-20">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-19">
+      <input type="date" id="date-to" value="2026-08-20">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,13 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -108,80 +104,31 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-14" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNQXBBRmMwaDV3Z19hSGgzLW82OGdqUXF6NldCdGJxYWU2SUUxSDlHUUdaeEs4UXFoc0FsVGZGVkxLektpUklkaWpmNFcySjFQS01hSVZ2QjZmWF94S1VVTmxEaE1DUWZLTmszdkJTcTJPcGxQSFB3TTNDSjhJTjFuaTRfb3g0MGMtSFUwTg?oc=5" target="_blank">Вершины долга: итоги-2025 ФНБ «Самрук-Казына» - kz.kursiv.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 14.07.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Вершины долга: итоги-2025 ФНБ «Самрук-Казына» - kz.kursiv.media</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxQMlJ5aGY4YzU5U0hkNC1zcVV5SURLRS1LdWNfSGRUWlN4ODM3TndoVVN5TUk1YXY4WjRuX1FyWlZtemQtQVNxWE9Qd3hoUHF6UnE5ZDBmeEh6NU95WVdQMDlnZ1lhR3NkM1dtOWU0WnVkR0JZNU9WcW9vNTYwWmdEQkJfTklYSXJmcjBCaV9WQlB5QlVuODBVR0pfaGtGd3hIUnpYU0lQeEVsN3JlR01iY09JTkxFbGpDNzlqRHVVSmtaYjVaV2hZZ0YwYU9pYmM?oc=5" target="_blank">«Самрук-Казына» продала сыновьям Трампа крупное месторождение вольфрама - kz.kursiv.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 11.06.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» продала сыновьям Трампа крупное месторождение вольфрама - kz.kursiv.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-19" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9CamJET05zcTV6NXVlN3NkWmYtVlhVeWNXMkRGNlo5VGVQUzMxWVJ5c1BhV0FVVzZHOFRrcm96dllpQzN5bERiTDFqc25KZm9qWHhUNS1LeUltM19TVVpuU2dZb2N0YWlDcVNzcmhxTnRCR2d0MHFmcg?oc=5" target="_blank">Казмунайгаз объявил выкуп облигаций на $1,25 млрд с погашением в 30г - TradingView</a></div>
+    <div class="article" data-date="2026-08-20" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxObHk0cGxSVW5sZ296U3RYNi1aVWRub090WUJZYVVDLTFsb0VGUXgwTGxOQll5Um5pY1hpM1l4T1BFOHZDUEdnMU5WUERiQWVZRWtReFpoTVlJWmo3d3hnSzBsSGlVRWdjeVJGeWdtLVZqWHBia19mTzdha2JCRkZRYzBIa2NyRnJNSzgzMDMySXAwX2dlSElZbkxjUlFmejV4TldhXzQ2NzNDTzZ1?oc=5" target="_blank">«КазМунайГаз» готов заплатить до $500 млн держателям своих облигаций - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 19.08.2026 09:08</span>
+        <span class="date">📅 20.08.2026 07:12</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Казмунайгаз объявил выкуп облигаций на $1,25 млрд с погашением в 30г - TradingView</div>
+      <div class="art-summary">«КазМунайГаз» готов заплатить до $500 млн держателям своих облигаций - Kursiv Media</div>
     </div>
     
-    <div class="article" data-date="2026-08-17" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPVmRqMTZOOU52aFZBWXJvYVZEUjd1VmRuOWxVR0xJajJRd0FseTJ4Nk5lVXVnQXlRcFg3Y3p2NGxIUVlPUkdrRlRSYzg3blpoMGpwZnU4ZmpaeGQ2aVRxSkJwaGdJLUoxRUJsXzk3RFNpM28wZGUwVWhwb2hYVjJBZ2xxTTgxbjl3UEhPb1lwZzZlYXkxcTI4ZHZjRnNKR2g4b2RWYVd5UQ?oc=5" target="_blank">«КазМунайГаз» ищет новые запасы нефти и газа на 4,7 млрд тонн - kz.kursiv.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 17.08.2026 08:34</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» ищет новые запасы нефти и газа на 4,7 млрд тонн - kz.kursiv.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-23" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNbUZ6UUh2QUxFamtWMWZPMmVEdEhkSzRkbzhNRDdoRWlZOGV4NExjbFZVS1lIbXl4a2FkcjBnSkhRbTRHcW1rWUZZN0RoZjlvQW42VnA3VHVsX2VPSkNNbHltN1N5ejhlem8xZi1CX2JNeV82alVLRG1wTnFLSWFka1YtZVdNSzk2QlAwWnJQLU1iZ0xXRlhkR1VpWmlIR0R4UmgtOW5wUzBmckxhczNPUWRTa0VrWVcyTm90dzNIUTZrTHMyMXhtV0l3?oc=5" target="_blank">Air Astana заказала 50 Airbus на $9,45 млрд. Это почти в 695 раз больше ее прибыли - kz.kursiv.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 23.06.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana заказала 50 Airbus на $9,45 млрд. Это почти в 695 раз больше ее прибыли - kz.kursiv.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-10" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQXzFjSDNVNV9PVmJfakNsY3ZiZmpTaFpKbUJXWEpnaEc5MVhFODBvUHItVW15LTNTZmMycTctTkd2c3JfMmVEd0p6ZDlLYkFYRS1yOVZ3THQ4bnIzcWhTSEVadXB0SUZpYlhmRGctWmxHcDBlNEJRaEdhcDQ1a1VycGxVZVJVWWVqWFlOSHhXaXFoaURTcF9SNnpTWXpCWEFHek9CMWo5aFg1UHNPQzIyTWh1VmtVdmRWd1hhcjFZQV9lUQ?oc=5" target="_blank">Бывший топ-менеджер Bazis возглавил дирекцию магистральной сети КТЖ - kz.kursiv.media</a></div>
+    <div class="article" data-date="2026-08-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNSE1OWXZrMm52cFpoN1Nna3FoSHlhWk9FWWtFREJUV1NmeHgxMDdoN1BlMXRRX0NLREJPd2R6QWlmSnlSbEY5R29yNjVwdEVyM0RxQThoSld6dXZ2MGlsNlNsTWV2cF9BNzd5aU9NTklXcktEb0NDSExrSlFJbjFZd2RmZjJoYnZHWGFaaG41N24?oc=5" target="_blank">Инженерно-геодезическую практику проходят студенты ALT University в КТЖ - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 10.08.2026 07:00</span>
+        <span class="date">📅 20.08.2026 05:37</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Бывший топ-менеджер Bazis возглавил дирекцию магистральной сети КТЖ - kz.kursiv.media</div>
+      <div class="art-summary">Инженерно-геодезическую практику проходят студенты ALT University в КТЖ - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -191,15 +138,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-03" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOSHFyazBPTmdDRE9Zb2hyZloxOHJLY3RpcXF5aUFBS2pzV1NKTmh1X2Y1TUtfNEtkZHZSdTE2b2RtdXhqVjJVa05YbG04Rl9jWUV6ZEd5TWNNa2ctV0pNUmpETThyaUlNMGhWQTk5bm5ad1dXWEpnNERaNDl4c0M2V0xybUllZm9Ha1pwUGVKbG15STVmRmtOcm1VQzUtNHRrY1E?oc=5" target="_blank">Новый глава Air Astana пообещал приносить прибыль акционерам - kz.kursiv.media</a></div>
+    <div class="article" data-date="2026-08-20" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-20/kaye-kazmunaigaz-gotov-zaplatit-do-500-mln-derzhatelyam-svoih-obligaczii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-kazmunaigaz-gotov-zaplatit-do-500-mln-derzhatelyam-svoih-obligaczii" target="_blank">«КазМунайГаз» готов заплатить до $500 млн держателям своих облигаций</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 03.07.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 20.08.2026 07:10</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Новый глава Air Astana пообещал приносить прибыль акционерам - kz.kursiv.media</div>
+      <div class="art-summary">«КазМунайГаз» готов заплатить до $500 млн держателям своих облигаций</div>
     </div>
     
   </div>
@@ -261,8 +208,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-11';
-  document.getElementById('date-to').value   = '2026-08-19';
+  document.getElementById('date-from').value = '2026-08-20';
+  document.getElementById('date-to').value   = '2026-08-20';
   applyFilters();
 }
 
