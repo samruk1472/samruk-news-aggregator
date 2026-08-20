@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 20.08.2026 07:35</div>
+  <div class="meta">7 источников · Обновлено: 20.08.2026 10:28</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-20">
+      <input type="date" id="date-from" value="2026-08-07">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-20">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -107,28 +115,61 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    
+    <div class="article" data-date="2026-08-20" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUkY2SFFzWHpuU1Q3MXN0dVc1Y3hDV2NUUWUzeDNMVXRfMVlqZnppXzhDUXk4SjY1RDNzMHVFZGxQY181ZjdaUkpOODFsenBUMktKbTkwQzVVLXBrMnpaN0hQODNwTUJQY01ibnlTZTk2MF96c290MmJwNGhjQXZQd25jaFQxaVE3NlNn?oc=5" target="_blank">Самрук-Казына готовит долларовый выпуск облигаций в сентябре. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 20.08.2026 09:50</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Самрук-Казына готовит долларовый выпуск облигаций в сентябре. - Exclusive.kz</div>
+    </div>
     
     <div class="article" data-date="2026-08-20" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxObHk0cGxSVW5sZ296U3RYNi1aVWRub090WUJZYVVDLTFsb0VGUXgwTGxOQll5Um5pY1hpM1l4T1BFOHZDUEdnMU5WUERiQWVZRWtReFpoTVlJWmo3d3hnSzBsSGlVRWdjeVJGeWdtLVZqWHBia19mTzdha2JCRkZRYzBIa2NyRnJNSzgzMDMySXAwX2dlSElZbkxjUlFmejV4TldhXzQ2NzNDTzZ1?oc=5" target="_blank">«КазМунайГаз» готов заплатить до $500 млн держателям своих облигаций - Kursiv Media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOejZ5NUJmTXFBckJuSUlPSUZsajNyM0NjSUV2N1dBNVFhTUdTMzdlMWV0Q056TUZKXzNyQ1EtYnhvTVZnOTlQYmE5V3lvZDhvZmFXVkZBUk4ta2trU0VtTElya01xelRwbUd4VkJaS1JFRW5mOU5KYjF4QmUzMzNMSnJWZXJpY09fZlpfUXh2R29BeHI2T0FfTEFKY01WQ053d09jTXdrRlJJM005dHR0QUhTaDVKSGhkZ2c?oc=5" target="_blank">Казмунайгаз хочет разместить пяти- и десятилетние бумаги в юанях - Русская служба The Moscow Times</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.08.2026 07:12</span>
+        <span class="date">📅 20.08.2026 07:46</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» готов заплатить до $500 млн держателям своих облигаций - Kursiv Media</div>
+      <div class="art-summary">Казмунайгаз хочет разместить пяти- и десятилетние бумаги в юанях - Русская служба The Moscow Times</div>
     </div>
     
-    <div class="article" data-date="2026-08-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNSE1OWXZrMm52cFpoN1Nna3FoSHlhWk9FWWtFREJUV1NmeHgxMDdoN1BlMXRRX0NLREJPd2R6QWlmSnlSbEY5R29yNjVwdEVyM0RxQThoSld6dXZ2MGlsNlNsTWV2cF9BNzd5aU9NTklXcktEb0NDSExrSlFJbjFZd2RmZjJoYnZHWGFaaG41N24?oc=5" target="_blank">Инженерно-геодезическую практику проходят студенты ALT University в КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-08-20" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPOWZQQjU1emRnbWpiZ0dQZ0pvbUh1YjRNRU04cENPQXhTelp2S0s1cXBGUHBRNDFqNGF3ZGVDRWcwT0ZzVmE2a1U2alo2S0dicWplMTNzZGRLQ3k0SVI0c1JBczNPdGc4cGdtblZVS2ZoRldRNHY1ZjFWUS1XUUZ2Z0ZQS0RCdXZNYlpHN2I4N0YxYXEtbWFCQk9URGpwOVprclJDX2t3?oc=5" target="_blank">FlyArystan и Air Astana продлили отмену рейсов в Дубай до конца сентября - caravan.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 20.08.2026 08:03</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">FlyArystan и Air Astana продлили отмену рейсов в Дубай до конца сентября - caravan.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-19" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1vR01iNFp3YXFVNkRmb3hBczBJTmlWWTFyRUlfd1NTTlRUM2U4RmYxUUc5Rl80bDd3VkZYNXpFTGwtUk8xa1R4VG1xOGs2YzJZM0l1V1ZNM1NIQzczWGJtOFprTVMyWFJQU25vZm9iVmx6ZWhrZkh0TzZSdGw?oc=5" target="_blank">Замглавы КТЖ возглавил АО «Пассажирские перевозки». - Exclusive.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.08.2026 05:37</span>
+        <span class="date">📅 19.08.2026 11:15</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Инженерно-геодезическую практику проходят студенты ALT University в КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Замглавы КТЖ возглавил АО «Пассажирские перевозки». - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNNEh0Q0xBRjBzaFkzZkdtdjlCcjg2NE5mVEFvd1U5VllaNklESkFrN2szelM5WDV1WENnOTVMeTh2ZWk1WGNqeXhKQUpuSVJ0eDdkMEt1aDJEWV93TEFKS1dyeXlTamNtNXVyNEZVTG1qODdPQjNMVVF5cTM0WkF0M3Q4UGt6UEVNOF9vbGw5d09pY2x0SkNHam1VckNxUms5VEFtOGcxUQ?oc=5" target="_blank">Современный сервис: в селе Саумалколь «Казахтелеком» открыл обновленный офис - Mail.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 07.08.2026 11:26</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Современный сервис: в селе Саумалколь «Казахтелеком» открыл обновленный офис - Mail.KZ</div>
     </div>
     
   </div>
@@ -136,17 +177,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-08-20" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-20/kaye-kazmunaigaz-gotov-zaplatit-do-500-mln-derzhatelyam-svoih-obligaczii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-kazmunaigaz-gotov-zaplatit-do-500-mln-derzhatelyam-svoih-obligaczii" target="_blank">«КазМунайГаз» готов заплатить до $500 млн держателям своих облигаций</a></div>
+    <div class="article" data-date="2026-08-20" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-20/lsbs-opasnost-vyshek-5g-dlya-zdorovya-oczenili-kazahstanskie-uchenye/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lsbs-opasnost-vyshek-5g-dlya-zdorovya-oczenili-kazahstanskie-uchenye" target="_blank">Опасность вышек 5G для здоровья оценили казахстанские ученые</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 20.08.2026 07:10</span>
+        <span class="date">📅 20.08.2026 09:39</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» готов заплатить до $500 млн держателям своих облигаций</div>
+      <div class="art-summary">Опасность вышек 5G для здоровья оценили казахстанские ученые</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-20" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-20/devy-novyi-pryamoi-reis-almaty-gonkong-sostoitsya-v-yanvare-2027-goda/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-novyi-pryamoi-reis-almaty-gonkong-sostoitsya-v-yanvare-2027-goda" target="_blank">Новый прямой рейс Алматы &amp;#8212; Гонконг состоится в январе 2027 года</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 20.08.2026 07:57</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Новый прямой рейс Алматы &amp;#8212; Гонконг состоится в январе 2027 года</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-20" data-co="Самрук-Энерго" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/08/after-ending-power-shortages-kazakhstan-can-become-electricity-exporter/" target="_blank">After Ending Power Shortages Kazakhstan Can Become Electricity Exporter</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 20.08.2026 08:31</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">After Ending Power Shortages Kazakhstan Can Become Electricity Exporter</div>
     </div>
     
   </div>
@@ -208,7 +271,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-20';
+  document.getElementById('date-from').value = '2026-08-07';
   document.getElementById('date-to').value   = '2026-08-20';
   applyFilters();
 }
