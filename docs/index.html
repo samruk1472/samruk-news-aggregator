@@ -60,12 +60,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 20.08.2026 13:49</div>
+  <div class="meta">3 источников · Обновлено: 20.08.2026 16:20</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-19">
+      <input type="date" id="date-from" value="2026-06-05">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-20">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
@@ -106,42 +106,58 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-20" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPY2o1QzZLdnk4Q1FKNHFwcktrZTI3QkNhUml2eGg0b3JBU09mcHExRTEyaDZiRWJjWVhTbXZ6V3BEbGUtMElSWGtGTU5oRF9tRHNOTWc3d041NUxUVXNKTGt1NDJQYUhvTDB5eFUwTGtqcVhFalVwa1Z4TzNYbTlpRXVYbjlKZkJrMHBnWDBKVVB1NmsySm03eDdYVTRxOXFUaGVsZW1TZ2FvQi1FQnc?oc=5" target="_blank">Air Astana приостанавливает рейсы в Дубай из-за кризиса безопасности в Персидском заливе - gosrf.ru</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 20.08.2026 08:12</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana приостанавливает рейсы в Дубай из-за кризиса безопасности в Персидском заливе - gosrf.ru</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-07-19" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOZnJYb1l6eDRpS01OX3VvR2tZSFhjdTRaU0JxT3NSLW9OazVnOEtTU1BNWGMyZ0E5S29sNjVQZnpjVFVmWXdPY3JYaVpBakk5Zll6cmcyaUdMYkxHMjRveHZjNVBOQUc4U0RycFQwMzNXbFZMR0VQSlVQMHpmTThqb2ZvNGFJa2hGWmlPX3NR?oc=5" target="_blank">«КазМунайГаз» приступил к обустройству двух газоконденсатных месторождений в Актюбинской области - dprom.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 19.07.2026 05:37</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» приступил к обустройству двух газоконденсатных месторождений в Актюбинской области - dprom.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-19" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxOd0tIeGRnVHp6YzFWTFdpdFhaOVY2Z0tvS0ZaR2FUdHhhX1JFbzRsV25ROUNCSkhtYVE3Q2luRVJlS2VJSnVpZzBCOUdGR2t5aXhHNDFHWEhGWjJuN2tGV2lyY0F5bGt1NV9saGs3MkEwNWFQUVJpN2N4b0F6cVBITmxYMVdORl9TVzJrT1dHQUp1YUJhRFR1Wmh4NE8zOHl2NkctZElraVRMbWNqeXhhM21ReEZGYUxTNnZCdjRUSkVuOU90UkVoRw?oc=5" target="_blank">«Казатомпром» будет поставлять уран энергокомпаниям Швейцарии, Чехии и Японии - Ритм Евразии</a></div>
+    <div class="article" data-date="2026-08-20" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQTWxfcU45SjBoVGlHMlBLc2N4MUoxcl9HT1NfVGFIencwZmpCVHNQZGdxUlFIamQ2Ry1zajdVbl9wTkNTc2I0bzlhZXItYzN4eEFaN2hhZmN4czJWd1Q4R0p1cE9xbFRPRGJQTXlSTG1MR3J3aVh5XzcwSkhKT19lZmQ2UWt6R3QtUTRnaE9aakJycF94Z0puX0U4NXVhTUxuTzFXMWJVQ2k1TFdxYkdJ0gGuAUFVX3lxTE1zWHRRWFoyUXdaZmx6a0RMaHJwOVZ5d3otSm80bzJOZUlQZzFTU1pGcXZnZWZNaS1aTkRDQWkxTjl1Nl85a3hIS0RkSkVVV1VuaFVCTDYtQlJLVDVGczBJWC1MOEFmWnhPdWR1aEEwR19yYTd2SnV1ZlExVGx1bGs1eVpDVGpBdFEycHUxYXo5OU5sN3B2VmhTRjBBbG5QUTZNRmRvanZJTUxMNC05dw?oc=5" target="_blank">Казатомпром финансирует строительство современной больницы в Туркестанской области - SKNEWS.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 19.03.2026 07:00</span>
+        <span class="date">📅 20.08.2026 12:47</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«Казатомпром» будет поставлять уран энергокомпаниям Швейцарии, Чехии и Японии - Ритм Евразии</div>
+      <div class="art-summary">Казатомпром финансирует строительство современной больницы в Туркестанской области - SKNEWS.kz</div>
     </div>
     
-    <div class="article" data-date="2026-08-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOZjJZc0V0bmlPV2p2RTBuM2VJS19oQzFFbmlIcnotV01MN1p0UTN0TXRab2tqRk5UdnFSUHRPTmZaQW1FcWw1UUk1eHdoUGF5alBHMnBYRnozazZ4MGM4VFJfeVE4RjZEMXY2VUdxWUViZTAzOUpWZXU0ajNidjF1YUtMazI4bXNtajhVa3RZSEVjZG5ySnhTQTZMTmxROVplMnhmQmZB?oc=5" target="_blank">Новую цифровую платформу управления станциями внедряет КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-07-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQLWc4OGMtM0g0TDNoVnZ3dnNXTE0waG5WSGFLbk05Q1F6M2tpQndiRVFZV0t2Y0kzSDFURUt2Sm1jWkNlMHdtWDhMc1dpbXJwSUtWLWN5RkJPV1dQbzUwa0hTeXlXZ215RGpsQV9pYlBSLTlQSEd1b1ctQ2JKSWV6OWtJX0l1SUNJX3EzTXJWMjRqblVLbEtlVFZOTUF1WURrU2dXRXJXZ1RBY2pLQVE?oc=5" target="_blank">КТЖ проводит республиканские акции по безопасности на железной дороге - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.08.2026 11:38</span>
+        <span class="date">📅 17.07.2026 09:13</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Новую цифровую платформу управления станциями внедряет КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">КТЖ проводит республиканские акции по безопасности на железной дороге - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-05" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOUU1SZzVvWGd5NW9IMmlJOVJoQ0NlTHRJR2Z6NGE4U1pGbmVFUEYwQXhEWkVoeXdvcEw3WTIzYXVsejBxV0g3N3ZONGZDdUtYY0M0ODR4TFBCc28zT2REQ1UtSllNTXNEdXg1bmE0MWJKdXlPUlRZVTY3T01jWTd3cURfaUlaM2Y3bkVQSndlRUlHMmk5LVdOZ0ZMZEc0ZU9IVnVVMG5iTkhsRTVvenNaVHNTclfSAboBQVVfeXFMTVZEdnRLRm1Ibmhnb1d3VlFxVXVRUjN6ODVYX08wSXYzSzdxWHVsZjhkMkFRcHVXRU1aYl9QVm0ycVFsbWlpTFdpNDNPejFHd0drWjRub0xUbmNlVmpteTNBNDVHOGUweHlxcHV4cldNVk9ZWVVtb0xiRi1aN3laNVBXb21DNmZxRkFiQUh6NVFkZXVUb3plQmV5NV83M3o5djJ0bFJWelJzQUdlRmxNQ3lFUk4zZG9hTHh3?oc=5" target="_blank">Список смертей в КТЖ: компания отреагировала на слив закрытого документа - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 05.06.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Список смертей в КТЖ: компания отреагировала на слив закрытого документа - Kursiv Media</div>
     </div>
     
   </div>
@@ -205,7 +221,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-19';
+  document.getElementById('date-from').value = '2026-06-05';
   document.getElementById('date-to').value   = '2026-08-20';
   applyFilters();
 }
