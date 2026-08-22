@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 22.08.2026 02:15</div>
+  <div class="meta">3 источников · Обновлено: 22.08.2026 04:25</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-06">
+      <input type="date" id="date-from" value="2026-06-22">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-21">
+      <input type="date" id="date-to" value="2026-08-22">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,10 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -111,15 +107,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neg">
     <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQTzFhRVR1cmRON3ZweEpVVUk1dkhPa2gxekxCTWFrZ2htQWV2dFA2NmdLUW9jeHlSU2NWd1dPNE41Z2hYalZuU3JjU2xCWnRBdS0xSWNkcllRMjRCcVB4ZjZ1Q2RSeDVwS0pLRldWUHprSFdGMEhyTnlvMGtvamlfWDZVSHJpUy1BcFFDV3YtaTcyMzdJSzhNUF9yTQ?oc=5" target="_blank">«Казатомпром» объяснил падение продаж урана в первом полугодии - Kursiv Media</a></div>
+    <div class="article" data-date="2026-06-22" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQekNjVVZtUllWNFVtRWF6elFDbE9Ld3FHMWI0RkptSFIyeElaX25oUndIajkzREt3VGd5MU56MGpTVTJJLXNudVNlZVRQOUdocHBvVjZWZjZuaXhnYTlMSm9KODNMdkdURmNxY0k0VWFXbEhJdnVJUWQ0THIxUzExX3lqX2tPWjNtZ1pRMVFVQkVranJXZU1nWmhJS2VMeGdtVHRXVi1HRk9acmdScnRqS0ZLUmdqejR0RzB5ZVhOQldBQS1yczd2eThmb3hRSGNaMWI1Zk9aRFBCNzJYMUJFcExyMA?oc=5" target="_blank">КТЖ создаст единую цифровую сеть LTE-R для железных дорог Казахстана и международных транспортных коридоров - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 03.08.2026 07:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 22.06.2026 07:00</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">«Казатомпром» объяснил падение продаж урана в первом полугодии - Kursiv Media</div>
+      <div class="art-summary">КТЖ создаст единую цифровую сеть LTE-R для железных дорог Казахстана и международных транспортных коридоров - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -127,39 +123,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-13" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbHBJaUxuRGNwRVA3SzZhR0xid25BbEFON1EtY2tfeElfX1lSUVgzY3N4VnVhMEJjU2dXTUUyLVlmTXRlQWtZZkFOVG5YZFhVbFFibENOcW9LcTE0THlhT2VoX0dnYi1BOW84Q0pKVElsdjk0MEMxRnh1eE9sRHM2WlFfYXN6Q29Y0gGOAUFVX3lxTE9CeEdmZXo5OW8yak1Jb3lDZDdha0E2dl9fRFhxX24tTWlRUFJnNllKVDdmQ01ZVnljMUxjd1g5U2N4WFFpaTg0Ukd1SGJpOG0xNkh3RE5vM0RYZDAwRkVsZGw5a2dLeHlsbmxNeGl5MGNwR2ZDT0RnQzQzY0Q1TGIzRkxmQ0R1UTNUTjBxMHc?oc=5" target="_blank">Air Astana возобновит рейсы в Дубай с 15 июля - Vlast.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 13.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana возобновит рейсы в Дубай с 15 июля - Vlast.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-06" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNdXc3NHZxSE9OTWpqTWRZOHRWWjduT1ZBZU51ejliSlBYM1BYQTBoMmVyaTJsZktwRVB2SnpneEZ6dVlPZkZNQm9VSFdFMFdRT0lrcFNYWW9qMk11eG9rRmZwRVkxV1BWSlRHVEMzemRkZGc1aE8tRzA2LUhVVGh3QlN5NjBZSDJqUlZBNTJLTmRJeGFWZ0pQY3RVaERRYlZhMnI2U29kdVdwdlM0QVE?oc=5" target="_blank">КТЖ оснастило системой Trip Optimizer более 92% парка тепловозов ТЭ33А - Железнодорожник Казахстана - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-06-22" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLVhHYU5EN2wyeFp3Q3pQdnFRUER5VjMzYVl1VGRlOGZ2M3kwaFFFbnRPY1l3Ukt3YllVUkM1SnZGMU5pSHZlZlpfVFVjTEoyNXQ0dXAtWkk3NERBMFhmZWdDUHZYTmFrZFVIcDBXc2VnWWctdXJjalc3Qk14R0hxX3U3R2ZueTVKQ3BfTk8yNHhuMTZOYWhmdl9NMnFjZEczX0dfX2h5Nk9zM3FyMktDSnFOOW9LTXdTT2w0VXU3WGlyZw?oc=5" target="_blank">КМГ и КТЖ обеспечили сквозной цифровой контроль логистики нефтепродуктов в Казахстане - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 06.06.2026 07:00</span>
+        <span class="date">📅 22.06.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ оснастило системой Trip Optimizer более 92% парка тепловозов ТЭ33А - Железнодорожник Казахстана - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-01" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxPT1I4R2l2MnNvQjZYbllaMGItakdQVzdsNlJKRU1RQUFUb0VQaXBzM1JfejR3YVc1UUd5cF9rYm92MXYzUzg2ZnNlNDRmZm0zOEt3b2NMbTNZcnJaZHpJTHVUODVSTXJocHlhNERYQjFFMS11b21mc0dnWlhpVnlPSmJsLXpkaFJCbUhTTTg0VS15czQxUU9EOFpUS1d6R2kzUkFrR2ZXNmRzMkpfSzFtcXM4OTJFem1ZaHZ5RzdOa3hzMGVPN09kMXZKRDNkYll5bEhoRE9mc1FzaEtZU3BFTmV6QQ?oc=5" target="_blank">Руководители АО &#34;Казахтелеком&#34; провели выездную гембу на объектах телекоммуникационной инфраструктуры - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 01.07.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Руководители АО &#34;Казахтелеком&#34; провели выездную гембу на объектах телекоммуникационной инфраструктуры - NUR.KZ</div>
+      <div class="art-summary">КМГ и КТЖ обеспечили сквозной цифровой контроль логистики нефтепродуктов в Казахстане - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -167,17 +141,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-21" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5tenZhckFWUG90OEktSzhrN3puMnlmLXZmVXhoejU5VDNZTHlhWlY3TXY2WFRuRTNzVHQ5VWhsZ1Jhb3owWDd5blNFODEtM0paZjl0bldCRlV4bUlpbHhld2xmOHA1N0NyR2xfUUp3R2M0NzVZcUQ3Zw?oc=5" target="_blank">Казатомпром в 1 пол 26г снизил чистую прибыль на 9% - TradingView</a></div>
+    <div class="article" data-date="2026-08-22" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-22/tsse-kompanii-czentralnoi-azii-vnedryayut-ii-vdvoe-bystree-mirovogo-urovnya-euronews/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tsse-kompanii-czentralnoi-azii-vnedryayut-ii-vdvoe-bystree-mirovogo-urovnya-euronews" target="_blank">Компании Центральной Азии внедряют ИИ вдвое быстрее мирового уровня — Euronews</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 21.08.2026 06:41</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 22.08.2026 02:28</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Казатомпром в 1 пол 26г снизил чистую прибыль на 9% - TradingView</div>
+      <div class="art-summary">Компании Центральной Азии внедряют ИИ вдвое быстрее мирового уровня — Euronews</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-22" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9CSWRjdndUclcybmhQQzRHZUs3WklBMDJVdTNmay1BaXlnbkNBZ1dpVEFKT3VlellUY2E2Y0ptYkNRUG95TDVpTFVnSHBkRzE5dHhRdk1HZk9iYWQ5cmxuY2hLRUNwbV8yUzlTbFhveEo5Yl9YVnB5VEFn?oc=5" target="_blank">Казахтелеком уволит тысячи сотрудников? - Profit.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 22.06.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Казахтелеком уволит тысячи сотрудников? - Profit.kz</div>
     </div>
     
   </div>
@@ -239,8 +224,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-06';
-  document.getElementById('date-to').value   = '2026-08-21';
+  document.getElementById('date-from').value = '2026-06-22';
+  document.getElementById('date-to').value   = '2026-08-22';
   applyFilters();
 }
 
