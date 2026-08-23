@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 23.08.2026 13:33</div>
+  <div class="meta">1 источников · Обновлено: 23.08.2026 16:11</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-01">
+      <input type="date" id="date-from" value="2026-07-20">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-15">
+      <input type="date" id="date-to" value="2026-07-20">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,8 +86,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -104,87 +102,22 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-15" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxONmdhVW1wdkdGQzlkbkhZZk1fdzRQX0F5amwtNmEzS2RlZThCdG5wWXNCRFgybHZTSGl0VVcxcDBlVTViUzZ5VFB1NHhNS25FNjFqSkNadFJyU2J6QVJha2N4dEM4Q2RyM1RXRkFXYXB6VTNKVEFDd0F2YUdkMVJheV9nRURCRGdjWmdVcHJfWXI2Nnk2ZnNRazlEanI5ZHVNTmd1TEQwZzc?oc=5" target="_blank">Что обсудила КТЖ с крупнейшими транспортными компаниями Китая - TengriNews</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 15.07.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Что обсудила КТЖ с крупнейшими транспортными компаниями Китая - TengriNews</div>
-    </div>
-    
-  </div>
-  
 
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
-    
-    <div class="article" data-date="2026-04-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5mSTQ2V2dra29qWjNYS3dzVzU0a3B6cGFEVkE2T050U2UybFZtU244WkhVM2pjdXZTdVFPNF96LVpIbjRFWXFLbUFrZTlENHJtT0JUTXRNVFlFU3pGRDZPSUZfeHRRdFFLeEx0UEFPQ1BkLW92WXFmNlNXd20?oc=5" target="_blank">Казахстанская авиакомпания Air Astana запустила рейсы по маршруту Алматы-Шанхай - СИНЬХУА Новости</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.04.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Казахстанская авиакомпания Air Astana запустила рейсы по маршруту Алматы-Шанхай - СИНЬХУА Новости</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOZ1M0cExLaElsUTdFYnV3OWFlTkJfOU9OQzFmeXdKTy15bUlYV2N0aWgxSWppZHFqS2c1R2pzMU5CQlZ2aTlremNtN0dhVEFMWWlXNlh3S1B2YjhlcHVNNVNnaVdUb1dlLWlWdXRiakxHbHFpUzB6LWdwaWd3d0FmMldoYnoyWXpENk80QnBBZFo1Q1RqbTB5MjdrUdIBoAFBVV95cUxPbTE0TzUxeHlWQTBlZHN0Um9weG14by1PNWFXZF9meXZON1dQYjVEamJYQ1g4NGtDOFd0c2hxN1ZjS0xpengwdF9oUWl4T1BKc19tQXZ2bjB5ZFlKSzNPRmY5aXY3c2E0LXlkeWNOcThUYWZOU3hGRmVMbkpXbjNSWlQ2TWRjV3A4V2JyMGhRaW1JNGdmOVREZ3JYQTFvTE9R?oc=5" target="_blank">Исполняющим обязанности главы КТЖ стал Бауыржан Урынбасаров - Vlast.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.07.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Исполняющим обязанности главы КТЖ стал Бауыржан Урынбасаров - Vlast.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPWTlvUzdNNERkbTA4SXBvODMtYzVFOVM0akFWbTlPWTlJNUtfaWxZMzY5S2x3cmMteE04dms2UjQzbG1YNXdBbkpoNHIwalpOYUF0SFNhbm1fRngzR1JjeXpqTkhKdExtM0Q4TE5BT3hBM2VOT2d6WktiYjVOczFZNkFMRW9idm40VnZCclVIOFlkR2k5QkNnMXllb2c3cHhfTHFV?oc=5" target="_blank">Почему путешествия на поездах становятся дороже, чем на самолёте - ответ КТЖ - TengriNews</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.06.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Почему путешествия на поездах становятся дороже, чем на самолёте - ответ КТЖ - TengriNews</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-04" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxPU1dpcUwtNlpZNkhEbFZGTDZfTGl4Ql9FZ3piS091YkNHeDc5ZVBjSlVpQWFEZEJWbDFhQ1A2Wm1jRGlZZjJ4dHU1VkZQNjd6UkhNdG5LSFRqXy0xWDBKSDF2aHlvczlyZVp2MmVnTmpVeUtpTjRodmp4LU1QaTA3bjV6Si1MWV8tU0HSAZIBQVVfeXFMUE1GMTdIZVlER2tDSktoRHhpa2d5RnVwYnpsNFloTTRXWklOMDBzdmNScVFicllmX0ZySEFfdEtaQWQ4QXhVaE85Nm4yaVpDV2t5a3htb2NZdThSeURUckdrclYybGhVYWVicDBmZWVRemREYUJITWd5LTF1Mk80X0w5TVpwQ0R4Qm50blhmM3FRWXc?oc=5" target="_blank">КТЖ сформирует собственный морской флот - ElDala</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 04.05.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ сформирует собственный морской флот - ElDala</div>
-    </div>
-    
-  </div>
   
 
   
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-08" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPSEZqOU9VSHl0bGFFdXVDWjRkWTNHbi1PUmVLSUhIWGltLTJlNDFpc1EzLWktVUdlT2J4Sng3QWJYX3djb3JlbkZDMGNkQ2RoVXdqSEdMcjZPclRmMmNKeS1udkZwVE1HeGYwVU9qM2liRlR6d0szdWRHcUg1T05pWVhaemlfd0d5ZkF3ck5xcnNvbWpnRHBZbnp3ZTYzbE94QjRsVldMQVIzUFo3QU1YcFlkTUlDUms?oc=5" target="_blank">КТЖ продолжает внедрение интеллектуальной системы управления поездами Trip Optimizer - Profit.kz</a></div>
+    <div class="article" data-date="2026-07-20" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNTzBwZ2FrR0N6R0dFaENNaXh6Zkw2RXVuUWRqb3RHZ0hQZUxUa2syLXdxM2VUYUVfZl9YR1JUVTctQTJvUGxSeURfX2ljSGt5WVEzWUtxNUpVejZKNDU3UGczTlhQVTMxdVdmcWdDMHhiZ3p4SVQ2U2Zaa3B6RDJqR2RkcUk0amNZVWhud3hBalI?oc=5" target="_blank">Air Astana получила международное экологическое признание - DKNews.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.06.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 20.07.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">КТЖ продолжает внедрение интеллектуальной системы управления поездами Trip Optimizer - Profit.kz</div>
+      <div class="art-summary">Air Astana получила международное экологическое признание - DKNews.kz</div>
     </div>
     
   </div>
@@ -246,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-01';
-  document.getElementById('date-to').value   = '2026-07-15';
+  document.getElementById('date-from').value = '2026-07-20';
+  document.getElementById('date-to').value   = '2026-07-20';
   applyFilters();
 }
 
