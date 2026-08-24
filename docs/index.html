@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 24.08.2026 10:36</div>
+  <div class="meta">2 источников · Обновлено: 24.08.2026 13:53</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-21">
+      <input type="date" id="date-from" value="2026-08-20">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-24">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,13 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
     </div>
   </div>
@@ -108,63 +104,52 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-24" data-co="Казатомпром" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOV0xoWlRQVUJxVWtGaUNyckZrODZPUlhlNmlCUHhFODh5cHhDamNHX1EzNVh4ZkhkVWdlN2pXQnZnMkM4TjdxV1BreGFtel92T1o5N1BNcUdxZDRWSExIOElMZmdsR0RUaUx0dVMyOHZZVUJqX3g3NEhoRXFnVFhJVG9UQ1BlRHhlUW9kcFVXRWZfRTBKQWtza19fQzlxUQ?oc=5" target="_blank">«Казатомпром» планирует поставить уран российской компании Uranium One - Fineko/abc.az</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 24.08.2026 13:12</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» планирует поставить уран российской компании Uranium One - Fineko/abc.az</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-24" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-24/kaye-ubytok-byvshei-kompanii-boranbaeva-sokratilsya-bolee-chem-v-12-raz/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-ubytok-byvshei-kompanii-boranbaeva-sokratilsya-bolee-chem-v-12-raz" target="_blank">Бывшая компания Кайрата Боранбаева приносит государству убыток два года подряд</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 24.08.2026 09:20</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Бывшая компания Кайрата Боранбаева приносит государству убыток два года подряд</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNQ1gtZ3ktYlNZVml6Mk84S25RcjdQTWdocnB3aW9ZQm9Tc21Cd05TV2RXTkM4RnZyVjR3dDd1bHNodGc2cWRTTDByRl9BM1E2M2FuYWp1LWtIY240akp1ZE1HVlU3VjdldWdqd2JLa1lMeUVJQm1rQlhxZDhOLWp5elRkNTBSTXF5WEl5WmZ1QkRPbGxobEpRQkR5eVBHUFdVSFFZeA?oc=5" target="_blank">«КазМунайГаз» сдвигает ремонт Павлодарском НХЗ на 2027 год - OilCapital</a></div>
+    <div class="article" data-date="2026-08-20" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9FVklLUE5YVFVYRG8tTmY3Vzc1QzZTa1IteTRSZTlTUGkyd3VVODgzeWQ0SkJoS2NLVmxGSGNKQmkwN1pDNXhuYXdFZFVXOVJ2WFg5LUFKVHAzSDRZVWZLRkEwRURIR05fNFl6OGdURHZSS3A4ZG13Vw?oc=5" target="_blank">Казмунайгаз хочет разместить пяти- и десятилетние бумаги в юанях - TradingView</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 24.08.2026 07:45</span>
+        <span class="date">📅 20.08.2026 07:46</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» сдвигает ремонт Павлодарском НХЗ на 2027 год - OilCapital</div>
+      <div class="art-summary">Казмунайгаз хочет разместить пяти- и десятилетние бумаги в юанях - TradingView</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-21" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE45Y1BZbDFCRmxqblVMdDN4UmJHNXdJclJOX0JPQ3F3WUp3UV9oS01EMzhDTUtvMXNGcGlmSF9WUW9MMk5rME93UE5kMS1WRzJsWXhhNWZEVlNuTGZtR0h0WVNhdVdfRTk0dnotWnNPZUJjRVlUSkk4REdfUQ?oc=5" target="_blank">«Казатомпром» поставит природный уран структуре «Росатома» - Южная служба новостей</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 21.08.2026 13:29</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» поставит природный уран структуре «Росатома» - Южная служба новостей</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-08-24" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-24/kaye-inostrannye-investory-mogut-aktivnee-poiti-v-tengovye-aktivy-afk/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-inostrannye-investory-mogut-aktivnee-poiti-v-tengovye-aktivy-afk" target="_blank">Теңге может получить поддержку из-за рубежа: при чем здесь новый рейтинг Казахстана</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 24.08.2026 10:16</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Теңге может получить поддержку из-за рубежа: при чем здесь новый рейтинг Казахстана</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-21" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOaHdnb21YU0RyQkZuZjBkUS1ucWNkN19IT0I2LXpSY0dZRXNET3dDWW13NUVVSmZoRlFWZjNtcTNXbUJhQVlUY1hjcURmb3ZZVjlRUFc1ZXFCaFFmV1FadWNfRHNZbmw5VVEtVy1IMmRQdUtzMVR5MFVKSk1Ob1dHd2JEOE5SendZRnJrLU5kNA?oc=5" target="_blank">КТЖ внедряет цифровую платформу управления станциями - Profit.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 21.08.2026 07:13</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ внедряет цифровую платформу управления станциями - Profit.kz</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -223,7 +208,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-21';
+  document.getElementById('date-from').value = '2026-08-20';
   document.getElementById('date-to').value   = '2026-08-24';
   applyFilters();
 }
