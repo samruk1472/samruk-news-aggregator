@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 24.08.2026 04:37</div>
+  <div class="meta">5 источников · Обновлено: 24.08.2026 07:52</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">9</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-29">
+      <input type="date" id="date-from" value="2026-08-24">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-24">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,6 +86,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -107,44 +111,115 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
     
-    <div class="article" data-date="2026-04-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxQVzkzLS1QbXdIR1E2eDJYc2VZbkpWelZreGNSUXJ3cE9RRk1TMXg2YVlIeUdkSWpBV3B0SXFsVDJGODVHWWMtRU5TaXFBTF9LT09saDB4TERDaHkwODhQS3NVUEdJWkREWXNJUWpvR1hCcjNPajVlWFBjdEE3UXFIXzEzZmw0Y0VYaUtiZG9LejVGNHM2X2tlNDRfTm41YkN3aE1MaXk5djVHeFZpdlgySkozck1ZZk1DVVRlVUZfZ0JReG1GcnfSAcsBQVVfeXFMUEtpVmkzUGJwdHo3ajZBLXdOTEpRNFpyOGdDZkhxcFQ0R3Jpa2wwcFlZWm1nSm0wa19XQzZzNy13ZHJnREU2N0pwZ0RKWjhHbUVVMjFnMEZmUHU2YkZ6REpnbjZtbXc0RTlfV01sUDNnMHV6VlR5eFpLaUl0Y01UV0ZfeEpNVWJUVTNxaUczLTI3dUVhcmpuMlJCUW5STzBLSW05Tkl3Qms5SkNlV3I3bk1DWHh1NjEzSG85RUhYM1plWkZudDg0OFY1azQ?oc=5" target="_blank">Новые рейсы, самолеты и инвесторы: Air Astana рассказала, как справляется с вызовами - Kursiv Media</a></div>
+    <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOZUx1ajIxWEtVUnV2a3dkR1JqaG9XOEFrOGY5TGpnaEgyYU84WnQxQmNDeU01bVJaXzg0dk1vUnJ1enBXdndzeFdhTHBScVA1SUVrNjVTeXY5d1UzclVFUExHU1kxSzNCRUIteFZQTk5HeVJpQjNCdDZtSThGcmxBekVZakl2LWdYb1lEUjhhaUtsaF9JV1RUR0IwZTJHY3dqRHRtS1ljVTl4d2ptZFNsWEFn?oc=5" target="_blank">Казмунайгаз перенес плановый ремонт Павлодарского НХЗ на 2027г - Русская служба The Moscow Times</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.04.2026 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 24.08.2026 07:29</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Новые рейсы, самолеты и инвесторы: Air Astana рассказала, как справляется с вызовами - Kursiv Media</div>
+      <div class="art-summary">Казмунайгаз перенес плановый ремонт Павлодарского НХЗ на 2027г - Русская служба The Moscow Times</div>
     </div>
     
-    <div class="article" data-date="2026-07-24" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPdGFBdGMzQi15RE5xbG5HbHlqUUVqZUNkZ3Uza0ZSZVdCcEwxUmZ3UXFDLVNWYzFSdWFHcm4tTW5abXl0dkFUYzl3VG1HblE5QlhCYlNQU0dBd3FVajJFZ0RaMkVoWXhoWVZOOTQ0ekR5aEk0MDJmVm90eXFETkxUWlpueURKUkhoX0JUellaeWdSY3pKT1RFb0Vn?oc=5" target="_blank">Air Astana открыла продажу билетов на дополнительные рейсы в Гуанчжоу - DKNews.kz</a></div>
+    <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPNnJWUmxOc1NqRm9jZDdpRUtNQUlxSldrVVRtdmx4RU0wOWhaYy1QdlRXZjZBSmhfdWxMbW94cGJGNnpkdEthTUZ4RmxHV3RMTXhNajBfQlBOVU56NWswWFk3Tll6ZlA4YU1IUy15QnZNQ2RtLWR1ZXY3ZEpWclpWMDdtN2I1MFFSRFZ2Z1U3WFU1SURfb1BORmlqRl90cXZKYnNPeNIBowFBVV95cUxOQU9LVEJSc2ZhMnI2VWV2X0dFTl9VeVdZQlpYVVVjZHJ6SVlxdm5VeW02WEs0d2xBYktNZG9WUTZDRF91ZTc3Xzdmd2ZHa29kOTNpOTgzWnVZNVpKMFBXV2J4UHdKRzdWc3ZScGhyTmtsYVZzb0dvcWtpYVdGNzNHWUM0bC01ZUw3Z05GdEFmUzJsR1c2Z2trOXJrZVozNFVhSFJz?oc=5" target="_blank">КазМунайГаз отложил ремонт ПНХЗ – чтобы бензин не закончился в разгар сезона - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 24.08.2026 06:50</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз отложил ремонт ПНХЗ – чтобы бензин не закончился в разгар сезона - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNaXBoUTg4amFWZERQa0pUaFJlbzMxVVcwSWdlOHl1OG5MbkhkSFZya1dhdHVqTmd5ZFd0aU5oTmVseHEwNG9EQkMteDV0amRUcW9xVG8yUkF5UERfcUZ0dWR1MVJZWUNlVXVUOHhPYW9udzhsQUxheXJSbEhJNFBGZUVWMA?oc=5" target="_blank">«КазМунайГаз» перенес ремонт ПНХЗ на 2027 год - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 24.08.2026 05:50</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» перенес ремонт ПНХЗ на 2027 год - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWnFSNGxscVBMSU42RjZETVN1a00wcUluTExmaWg2Tk9NNk9zM25UMi1TN3ZISE9XbkVsTEMxbkVMVUQ3emF3Y3lremg1WS1ucG12TWVXaTdyTFZjam9UZXhRTlBGcGdkX0xGd00xM1J6QzUwOGlYWXRHdGd4WUlPdW5wWl8zZVpLQWxYaVExSXhULW91RGRUQWFES1I2cEVqbW9fRG4tVUNBdVZJS3NFdjdnYmNUbzFhU3M5MVdjNXLSAcABQVVfeXFMTlpxUjRsbHFQTElONkY2RE1TdWtNMHFJbkxMZmloNk5PTTZPczNuVDItUzd2SEhPV25FbExDMW5FTFVEN3phd2N5a3poNVktbnBtdk1lV2k3ckxWY2pvVGV4UU5QRnBnZF9MRndNMTNSekM1MDhpWFl0R3RneFlJT3VucFpfM2VaS0FsWGlRMUl4VC1vdURkVEFhREtSNnBFam1vX0RuLVVDQXVWSUtzRXY3Z2JjVG8xYVNzOTFXYzVy?oc=5" target="_blank">КазМунайГаз перенёс ремонт на ПНХЗ на 2027 год — чтобы не допустить дефицита топлива - BAQ.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 24.08.2026 05:25</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз перенёс ремонт на ПНХЗ на 2027 год — чтобы не допустить дефицита топлива - BAQ.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-24" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPMUtLOWx1c2hkSHBsMk5XSzRZcmdPOUx3YTB1VGFlUEJWT2UwWnAtdkNMSi1WSGoteXZJU0RIZHFQX0swQnlGX3JCNFluYVZld0d3eUptSWRLMzZXV210MkxtX0o5VXdNcVJJeEhURFVBWXd6SUhmYnNTUENGYXc0b1pUdE1wa1JGWG1JYmQyT1daTXU3X3Rlby04Qkl0QQ?oc=5" target="_blank">Как “Казатомпром“ готовит кадры для атомной отрасли - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 24.08.2026 07:03</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Как “Казатомпром“ готовит кадры для атомной отрасли - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-24" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQRjNubFdobTJtdUkwTjBIcGlzSVljQ2VoamU4ZnBIajE2YmNFUUwybTVJakxEcG5MR0FMY0Y1MDF1cHAxRjdVRXlWekV0M0kzOF9WTkU2VDlmcWU0MGVLc19YSWZQYmVXc09DNVI1bzhtTURmdVpqZkdFOXhDYVdsUmhJcU1XX3RNc0o3RnRCMDZCalJWeDY1WGw0Ti11WUN2Rm1PMjdmV0g4UjRZdk9kSU02MHQ?oc=5" target="_blank">Как молодым казахстанцам стать пилотами и авиаиженерами мирового уровня в Air Astana - Informburo.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 24.07.2026 07:00</span>
+        <span class="date">📅 24.08.2026 05:55</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana открыла продажу билетов на дополнительные рейсы в Гуанчжоу - DKNews.kz</div>
+      <div class="art-summary">Как молодым казахстанцам стать пилотами и авиаиженерами мирового уровня в Air Astana - Informburo.kz</div>
     </div>
     
     <div class="article" data-date="2026-08-24" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPWHhKOElzaUpudzRyLWt3LUhFeGtiNEw2Tm1LSG91ZjQ3a09UcUNXR2RkcjM4bUE3Rk5EeTBobjg1UDNkMmtaTk40SU85MXVyTFc2QmtmLVB4Ql9TU2hjbEwxS2xpdExxZks4YldTRlJqTVI0WUtEQ2g4cTNUcTdscjhlSWxxMkRPYmZXdGxqdVMxam1yREJubFdpTVZqMm1WdjRxUVN2aHRWXzRyb21IS29ZLWk?oc=5" target="_blank">ТОО «КТЖ – Грузовые перевозки» – «Ақмола» победило в конкурсе «Үздік теміржол ұжымы» - Қазақстан теміржолшысы</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOcVlQUjhsTTEyRVNVazhLZ29SRXc5RmoxeE9zTWVfMDhsVElZZEl3TVBQYUJhclpybk5MOGtGanBPdGFuWDVFVVJGZTdNSkwzWmlHeFh1bUVUNURtSkNtRUNJV2RwNjNtQjlwRGtmNWdaLTNDMXBYd1J6N3NLR0hlWDJpeGFfZHAyX3VnYlhFcjVmLXNE?oc=5" target="_blank">КТЖ расширяет применение Trip Optimizer и Kinetix - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 24.08.2026 04:32</span>
+        <span class="date">📅 24.08.2026 06:47</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">ТОО «КТЖ – Грузовые перевозки» – «Ақмола» победило в конкурсе «Үздік теміржол ұжымы» - Қазақстан теміржолшысы</div>
+      <div class="art-summary">КТЖ расширяет применение Trip Optimizer и Kinetix - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-24" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOcmpzNjNHd2dSalEzRWFETEpONzhPanFvS2lmR0t3a1BLMjBhbjRCNzN0OE1oVVJ6bkVjV2tjRjhEeFVyZy12dDVCdUFGWUVxbGU5Ry1vazYxd04wTllON1FpeVZ5WHQ0TE5tcGd0ejdjTXNWRDl0YTVqM0VrSm9scEJ3TE1SajU4dlBnS2ZTeFAwZw?oc=5" target="_blank">Внедрение ИИ позволил ускорить техосмотр поездов на 30% - КТЖ - Вечерняя Астана</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 24.08.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Внедрение ИИ позволил ускорить техосмотр поездов на 30% - КТЖ - Вечерняя Астана</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-24/fvfv-kazmunaygaz-perenes-planovyy-remont-pavlodarskogo-npz/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-kazmunaygaz-perenes-planovyy-remont-pavlodarskogo-npz" target="_blank">Возможный дефицит бензина отсрочил ремонт Павлодарского НПЗ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 24.08.2026 06:48</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Возможный дефицит бензина отсрочил ремонт Павлодарского НПЗ</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -203,7 +278,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-29';
+  document.getElementById('date-from').value = '2026-08-24';
   document.getElementById('date-to').value   = '2026-08-24';
   applyFilters();
 }
