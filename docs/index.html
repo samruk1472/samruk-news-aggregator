@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 24.08.2026 02:22</div>
+  <div class="meta">2 источников · Обновлено: 24.08.2026 04:37</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-21">
+      <input type="date" id="date-from" value="2026-04-29">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-21">
+      <input type="date" id="date-to" value="2026-08-24">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,6 +84,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -105,17 +107,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQYUx4Nkp4bjRaMktDMC04M3JWZ2p1QnRmbkM3TU9iaDhMclhULTdmRXl6TUI0a0FKWXZPX29lNURWVUVCOXluZlJMdXN5eXdqNmQtZk5Mc1ZSaEVjbkJhTEtfUURzSXp5VTViMnRfVXZmbVJmNXZndDU3WnlDUDJ6YTN5S0pNZTVmMDJUMnp5V0ttV2NqamhYUVNFQ1l6X1FjQ1Iw?oc=5" target="_blank">КТЖ раскрыла &#34;серого кардинала&#34; железнодорожной отрасли Казахстана - Inbusiness.kz</a></div>
+    <div class="article" data-date="2026-04-29" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxQVzkzLS1QbXdIR1E2eDJYc2VZbkpWelZreGNSUXJ3cE9RRk1TMXg2YVlIeUdkSWpBV3B0SXFsVDJGODVHWWMtRU5TaXFBTF9LT09saDB4TERDaHkwODhQS3NVUEdJWkREWXNJUWpvR1hCcjNPajVlWFBjdEE3UXFIXzEzZmw0Y0VYaUtiZG9LejVGNHM2X2tlNDRfTm41YkN3aE1MaXk5djVHeFZpdlgySkozck1ZZk1DVVRlVUZfZ0JReG1GcnfSAcsBQVVfeXFMUEtpVmkzUGJwdHo3ajZBLXdOTEpRNFpyOGdDZkhxcFQ0R3Jpa2wwcFlZWm1nSm0wa19XQzZzNy13ZHJnREU2N0pwZ0RKWjhHbUVVMjFnMEZmUHU2YkZ6REpnbjZtbXc0RTlfV01sUDNnMHV6VlR5eFpLaUl0Y01UV0ZfeEpNVWJUVTNxaUczLTI3dUVhcmpuMlJCUW5STzBLSW05Tkl3Qms5SkNlV3I3bk1DWHh1NjEzSG85RUhYM1plWkZudDg0OFY1azQ?oc=5" target="_blank">Новые рейсы, самолеты и инвесторы: Air Astana рассказала, как справляется с вызовами - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 29.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Новые рейсы, самолеты и инвесторы: Air Astana рассказала, как справляется с вызовами - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-24" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPdGFBdGMzQi15RE5xbG5HbHlqUUVqZUNkZ3Uza0ZSZVdCcEwxUmZ3UXFDLVNWYzFSdWFHcm4tTW5abXl0dkFUYzl3VG1HblE5QlhCYlNQU0dBd3FVajJFZ0RaMkVoWXhoWVZOOTQ0ekR5aEk0MDJmVm90eXFETkxUWlpueURKUkhoX0JUellaeWdSY3pKT1RFb0Vn?oc=5" target="_blank">Air Astana открыла продажу билетов на дополнительные рейсы в Гуанчжоу - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 24.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana открыла продажу билетов на дополнительные рейсы в Гуанчжоу - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-24" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPWHhKOElzaUpudzRyLWt3LUhFeGtiNEw2Tm1LSG91ZjQ3a09UcUNXR2RkcjM4bUE3Rk5EeTBobjg1UDNkMmtaTk40SU85MXVyTFc2QmtmLVB4Ql9TU2hjbEwxS2xpdExxZks4YldTRlJqTVI0WUtEQ2g4cTNUcTdscjhlSWxxMkRPYmZXdGxqdVMxam1yREJubFdpTVZqMm1WdjRxUVN2aHRWXzRyb21IS29ZLWk?oc=5" target="_blank">ТОО «КТЖ – Грузовые перевозки» – «Ақмола» победило в конкурсе «Үздік теміржол ұжымы» - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 21.07.2026 07:00</span>
+        <span class="date">📅 24.08.2026 04:32</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ раскрыла &#34;серого кардинала&#34; железнодорожной отрасли Казахстана - Inbusiness.kz</div>
+      <div class="art-summary">ТОО «КТЖ – Грузовые перевозки» – «Ақмола» победило в конкурсе «Үздік теміржол ұжымы» - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -179,8 +203,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-21';
-  document.getElementById('date-to').value   = '2026-07-21';
+  document.getElementById('date-from').value = '2026-04-29';
+  document.getElementById('date-to').value   = '2026-08-24';
   applyFilters();
 }
 
