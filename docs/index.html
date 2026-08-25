@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 24.08.2026 16:21</div>
+  <div class="meta">3 источников · Обновлено: 25.08.2026 02:18</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-02">
+      <input type="date" id="date-from" value="2026-03-02">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-02">
+      <input type="date" id="date-to" value="2026-08-24">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -105,22 +109,82 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-06-02" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1MVHJXU3BMY2E2YnNxbFhaOU5OeFRCNk1aTXhsRUhLeGRRbVIyOWpYOG1QN1RxcXYxMFh5VWVBeWgtTEE4YldTMm00LXhYZ3lURlJUWG5TbVhlLWJpRnJqN2xzMVdqd3JoeFE?oc=5" target="_blank">Результаты голосования годового Общего собрания акционеров АО НК «КазМунайГаз» - ҚазМұнайГаз</a></div>
+    <div class="article" data-date="2026-07-02" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBBR21ibXhiOXBOVmd2RGc3Y2JNNm9qN0VsMHR2QVRPcDhZR2FhSWpEcnlWaUR1cHc1QnRmOGZjWmFrYzd2YXZLX216cC1sVWV4T0RXQWwtQzFFZ0pJa0VV?oc=5" target="_blank">«КазМунайГаз» и CNPC «сверили часы» по совместным проектам - Energyland.info</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.06.2026 07:00</span>
+        <span class="date">📅 02.07.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Результаты голосования годового Общего собрания акционеров АО НК «КазМунайГаз» - ҚазМұнайГаз</div>
+      <div class="art-summary">«КазМунайГаз» и CNPC «сверили часы» по совместным проектам - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-26" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPZWQtdU9WRzI0S1hIWDktRHk1OWhlSUdkVkhWSURtWVJ1MFEyamFCUGticUhtdUdXWTQ1ei1GUjcydkVnOFVGWFp0QmpDc19BY3JKTDh0RDJETHRYakpfaEdjbW5VOWNsWXgtcEh6dGJkOGtGNWItTE1DLVZ1TzNpSlBiVXlEVENQOW92NWI1VlhRSE1GVy1YQ0JOQdIBmgFBVV95cUxPcUlZMGlmZExSdzhiWTRiYnU2X3FQQ1Z3Q09fS0xLOHZTN0xrN3lUNHBSV18xUFdCRWRzWWdJX1ZRbEFyVTlkZlBxczdOS01PS1Y4dDd2dURzN1VJNFRVbldlZC1fUV9DcFFIdDBVS1J1eS1HRFN3VWlaODlXLTZBYkZTYWdxNzdqak5lOVc1QTRHSVlYVmxxZXhR?oc=5" target="_blank">Новый рейс Air Astana на Кипр: остров, где каждый найдёт отдых по душе - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 26.06.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Новый рейс Air Astana на Кипр: остров, где каждый найдёт отдых по душе - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiREFVX3lxTFA4cVlJbl9FbkxYSGNuR2ZRdVByRG5na1dwRHZxOWdmaWU5MGtFRzhlaEJHd2Vzcmc0cUlRRWNFRGFnZjJx?oc=5" target="_blank">Air Astana отменила рейсы в Дубай после ударов США по Ирану - Polites News</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana отменила рейсы в Дубай после ударов США по Ирану - Polites News</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxPU2s1bnZ0U09RY1lDdWJtZVdaWHpjVkZtN3pTeWZkbS1rbW1pVFFvYnp2Q2JKN200M2o3YTJxRXRfcGYzbi01MURmX08yd0VMTnNmaDZRR0FFS0tYaXVaZktlZFRIUktXUVhtdFN5Zk8xTUVRSTRQOEd6QUlLVGtyWW9YcUVjeXd2UFRybmdBaG1HcFFTNHVwdlBjWmt3YS1nVjlMdVRHRWJtQ2wxSEE1bUNnNmdoQkYxWVZYQTlmaFRpSDDSAcgBQVVfeXFMT1Q3ZUJrQjNGb2ZmeHAxeXJOYWtFZFVfQi1Ra3ZXdGhmSWxUeWJaV1JPN2JLNjZWQTNENlJ3RTRKVWMzTlRoRXJERmE3WFJDQTJ2WFVBT3BTLXpDTEhOeUtWU0NYZ0Y2cUdDX1VuMF9aNEpwakZmb1E1ZGs5YjVlcEdxMlJCNVo2LTFBa3lPTmlzNjhMa09uYVZJR1Zoa0lpUG5ITzZXcHpPbEpWeGdSd2FSOW5MQjBCMWhibTE0RWFoWlpMampvbks?oc=5" target="_blank">Air Astana закрепила заказ на 25 Airbus A320neo, включая A321LR с увеличенной дальностью - ixbt.com</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.03.2026 08:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana закрепила заказ на 25 Airbus A320neo, включая A321LR с увеличенной дальностью - ixbt.com</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-24" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQS3Q0X19adzEwY0tGdE9QRzdRN2ppUzZMMk9LbFo1cXBCTmk5Y1hpdUk4R3hna1RmNklMOXBQUzlYOEJ2Z0w2dExuX2xzczRGSkVTZUU5b0VTU0NyN2NJbmk2TFNrVUdCTDJGQXdEMWdBdzBuNmd6anA5OXE1YVZXM2VVNkwySDhEMUp3bUhn?oc=5" target="_blank">КТЖ масштабирует ИИ-диагностику вагонов в Казахстане - Жаңғырған Отан.</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 24.08.2026 17:29</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ масштабирует ИИ-диагностику вагонов в Казахстане - Жаңғырған Отан.</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zMk15d0otTmZfZVRhMnVMWEZLaXdQWndCcThzSks2dmxDaFdIei1SX1c5My04eTNDdE1oYlZCeVZjcXNvSk10RlAyMWdvamhSQXJsSUJlamdOWTA1N1E?oc=5" target="_blank">«КазМунайГаз» и TotalEnergies обсудили расширение сотрудничества в энергетической сфере - Trend - Новости Азербайджана. Турция, Иран, Центральна Азия</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 24.08.2026 23:49</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» и TotalEnergies обсудили расширение сотрудничества в энергетической сфере - Trend - Новости Азербайджана. Турция, Иран, Центральна Азия</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,8 +243,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-02';
-  document.getElementById('date-to').value   = '2026-06-02';
+  document.getElementById('date-from').value = '2026-03-02';
+  document.getElementById('date-to').value   = '2026-08-24';
   applyFilters();
 }
 
