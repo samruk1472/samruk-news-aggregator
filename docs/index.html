@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 25.08.2026 10:31</div>
+  <div class="meta">7 источников · Обновлено: 25.08.2026 13:52</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-12">
+      <input type="date" id="date-from" value="2026-08-25">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -89,9 +89,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
       <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
@@ -111,28 +113,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-25" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-25/tksh-atyrauskiy-npz-prodolzhayet-rabotu-nesmotrya-na-pozhar/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tksh-atyrauskiy-npz-prodolzhayet-rabotu-nesmotrya-na-pozhar" target="_blank">Атырауский НПЗ продолжает работу, несмотря на пожар: горит нефтешлам</a></div>
+    <div class="article" data-date="2026-08-25" data-co="Самрук-Энерго" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPbXJ3MEVRMzFPcGh6Tm81MGgyZzlBb2Z6S3I1MmUxRjNFdDNmSWFjeFAwWkVUSnBXUDZhX25ZZ3RtN2xRdXlDb21PNnBFMTBLX3diZDRnM0dlelUzM3RYR011bHgyUWFTVkp2WHppUjlLZEV1M2lNM2M5dXQ5UlhHVUJfYnJHWnBGdTB1ZEtNcnI4SnpoVmQwb2gzbWVzejl2WUJnalZQZGNRUjVHYkJR?oc=5" target="_blank">Правление Экибастузской ГРЭС-2 получило премии на фоне финансового кризиса предприятия - Noks.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 25.08.2026 09:15</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 25.08.2026 13:36</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Атырауский НПЗ продолжает работу, несмотря на пожар: горит нефтешлам</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-25" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70593-kazahstan-poteral-35-mln-tonn-v-dobyce-nefti-iz-za-atak-na-ktk-minenergo.html" target="_blank">Казахстан потерял 3,5 млн тонн в добыче нефти из-за атак на КТК – Минэнерго</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 25.08.2026 14:04</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Казахстан потерял 3,5 млн тонн в добыче нефти из-за атак на КТК – Минэнерго</div>
+      <div class="art-summary">Правление Экибастузской ГРЭС-2 получило премии на фоне финансового кризиса предприятия - Noks.kz</div>
     </div>
     
   </div>
@@ -140,50 +131,83 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
-    
-    <div class="article" data-date="2026-08-25" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://egemen.kz/news/zhylytu-mausymyna-19-5-mln-tonnadan-astam-komir-zhetkizildi" target="_blank">Жылыту маусымына 19,5 млн тоннадан астам көмір жеткізілді</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Egemen.kz</span>
-        <span class="date">📅 25.08.2026 07:56</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Жылыту маусымына 19,5 млн тоннадан астам көмір жеткізілді</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
     
     <div class="article" data-date="2026-08-25" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVE8tczhHVm1FZmlteWp6S29XNkNIVXRxRkpjNENIXzRDVklYaTBKc3liTUpkcTk4YTFTSFNwTkVlQ0c4a0hDY1ZGSFFycEV4YW9RTlZHemZKVVF2UjJYVnZlT3JHSnJhdTN0TUJmX2dxeFJiOFNEdE1fb0JFLXZwdUJrQWhhcGNmTDVsdktnWTdtSk9hc2M3d1FHeklEMUxPVTVWQWhYYk16NnNwMWtoSl9VcHQ2SnRzUGVKck16VGthSlk?oc=5" target="_blank">За что топ-менеджеры убыточной ГРЭС получили выплаты в 350 млн тенге, рассказали в Самрук-Энерго - Orda.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQQkdXazhqZFdUUWw2TDZQY2dkR0YxSmYybmF3Q0hUWWtLSF9fM1BkenJtb0tKRk1RWHg1YUlfOXdLMHE2SXNSbXdRTlF3STM4aDliNHJJanpNYWNnbVFESEFaTjM2bkNBX2VyZmFNcFZKaDR0Q0wwQ2wxa25LMGF6SWtFcG1vd2NwRVFlQk05bm95YXE1WnZBSDhqS3lwUW4tTXAtUUdIZThLZk9GTFhmdQ?oc=5" target="_blank">После критики президента «Самрук-Энерго» ограничился парой сокращений - newtimes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.08.2026 08:18</span>
+        <span class="date">📅 25.08.2026 10:35</span>
         
         <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">За что топ-менеджеры убыточной ГРЭС получили выплаты в 350 млн тенге, рассказали в Самрук-Энерго - Orda.kz</div>
+      <div class="art-summary">После критики президента «Самрук-Энерго» ограничился парой сокращений - newtimes.kz</div>
     </div>
     
     <div class="article" data-date="2026-08-25" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQcGtxRmk1aUFacnB2UDFpeDEzYTRZRGdWaFctbDV5V3ljMTNJVnk5ejhQOFFXb0lPcDJYMWROa19kSkV2enJGSUo4MkdVZGNSQ3JWdE5wV3JXZlZCdHRjRndscTBUUnBOY2thMjZ0Qlk0TjhObmczS3hUUlZBaXd1SjhJa2pPd1NqaUx3UDN1eWtGd3ZfUDAxTWZwcGZxX0VzRDhTaTFLWFdYSGRZb2xmSTdGMUx0SThkTHc?oc=5" target="_blank">Правлению убыточной ГРЭС-2 в Экибастузе выдали премии: ответ &#34;Самрук-Энерго&#34; - NUR.KZ</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZzdfaldJdkpLV2pSd3RLZVJweUpxT1VnMmR2MHBLdDZLTUduS2tzMmZMNC1sdVloeUZheF8yNWdqLVMtV29lVnZmYU53SHFJOTg0N0NRb1puOVIwUUFlanNSaFd1QVE2b1NqbWk3dGFxamtocjdYVU1GdE0zNlVKeGlaTGVfLWRqd2YwUVhla1EzY25hMmV5bHdaMlNFS3VyVjZSdVJ1NUczbUFBdURDY25MUHUwcGlMUGNLT0dXb3FHSFRONWRQSEZfczNvamM3ek9wRHRn?oc=5" target="_blank">ГРЭС-2 выплатила правлению 350 миллионов тенге: в «Самрук-Энерго» объяснили решение - Total.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.08.2026 09:36</span>
+        <span class="date">📅 25.08.2026 09:41</span>
         
         <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Правлению убыточной ГРЭС-2 в Экибастузе выдали премии: ответ &#34;Самрук-Энерго&#34; - NUR.KZ</div>
+      <div class="art-summary">ГРЭС-2 выплатила правлению 350 миллионов тенге: в «Самрук-Энерго» объяснили решение - Total.kz</div>
     </div>
     
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE90WnkxbVN1SlN3dlNERUE0UTY4U3VySWFlaVg4SnZNbEw1d3Fyd0J2RFREaHdJb3VFN2VrU0lpVnM0aVhjRmVDR1hkc3FhbnJRWGtYd1NIQW1jT0JsbDRiTmtrNHY4TlBnbS1UeUl3?oc=5" target="_blank">Air Astana приостановила полеты в ОАЭ - Caliber.Az</a></div>
+    <div class="article" data-date="2026-08-25" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NcFFBRmJLRmtiTUw2YmVLODlYTlVVTUZJTVktM20zZ0dCdEFNS2haTktPb2dtZE5HWjhrMmJPamlLN1RIN0FjZDR0Y0dsb0Z1OVZEOFRQS1VqX2FVMHlOUA?oc=5" target="_blank">«Казатомпром» заявил об окончании эпохи «дешевого» урана на фоне ускорения спроса - Атомная энергия 2.0</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 25.08.2026 13:14</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» заявил об окончании эпохи «дешевого» урана на фоне ускорения спроса - Атомная энергия 2.0</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-25" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQaXZfbG14bGgzVWFNemdXeFlQUE5ENGFVSUVwcEgwb0FfMTBPbGlLLWJnaV9HX0w0Qkh5QWNFUGpYTlROUzlxWnY2bkhheTFyWVk0cEdGZExmSXI2MjIyb0tRVFBkUzYzX2VEcTZ6Z1JDNENOdXhaZHVSZTZQNXBWS1FtVFhwYlAzR2tRRWFVQ0ZUSG04aDJOd0E1UXYxTW1zRXNSMGlSRzJ6VC00b0RRZnhlYUFxNXM?oc=5" target="_blank">Air Astana стала третьей авиакомпанией в мире, подтвердившей соответствие закупок ESG-принципам - Exclusive.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 07:00</span>
+        <span class="date">📅 25.08.2026 11:15</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana приостановила полеты в ОАЭ - Caliber.Az</div>
+      <div class="art-summary">Air Astana стала третьей авиакомпанией в мире, подтвердившей соответствие закупок ESG-принципам - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-25" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPcURTbC1PR19OSWdtMXVTNDFWR0Fid0l1Q2FVdmxRZlVoaWVjYlptd3RDTjIzYkYyTTFpUHRldkVicVNOTC1nbjA2dmxuSmQtWVlEaW9xUVYtTV9IdWpKZmFnR0JpaHU0cEhQTXFSMGZmX1NXdkFHWjRQY1gxRW5RUVNXaDZRbklUYXFLQ29WdG5RQWhRaV9zdml4WnBEV0lI?oc=5" target="_blank">Цифровизация железной дороги: как КТЖ готовится к сезону перевозок зерна - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 25.08.2026 11:02</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Цифровизация железной дороги: как КТЖ готовится к сезону перевозок зерна - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-25" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxQTDBUcUJXaGc5b3pkbTZmRlF4Z0ZGQWswSDZ5RWFkQmtKNVRteGdVc2ZTZ1VxVGJzaFBaM2NJNUJlT215Z29sZ3I3SHg1NXFlalJQWGU0Z2VYTENhSzZXd0xsZFhfdFJaMzJiMVVnRTZQbHZuWGZZUE5LUkNNbWVRRm5WRmFHa09KdWN6YjFLWExIbW00VkdCOGxLSWY2clnSAZ8BQVVfeXFMUEwwVHFCV2hnOW96ZG02ZkZReGdGRkFrMEg2eUVhZEJrSjVUbXhnVXNmU2dVcVRic2hQWjNjSTVCZU9teWdvbGdyN0h4NTVxZWpSUFhlNGdlWExDYUs2V3dMbGRYX3RSWjMyYjFVZ0U2UGx2blhmWVBOS1JDTW1lUUZuVkZhR2tPSnVjemIxS1hMSG1tNFZHQjhsS0lmNnJZ?oc=5" target="_blank">«Казахтелеком» наращивает закупки у отечественных производителей - Казинформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 25.08.2026 10:31</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» наращивает закупки у отечественных производителей - Казинформ</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-25" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQMDBPbERXMm5reUxZbkt4SV9ackdHWHF5UUE3UVdkWWxaVWNBcEVSOXBXSEFLbkJHb1AtUUE5bXlSXzN0Q05OYUJRVVJVMXhYMVhjUVJELTdIV1djTzRtczJaaW5McFBCc2V5dkI4cmVfbzdZZ1lzUmJtSFl0T05SWWZ0XzNHMmthSTN2QUFtYUFpS0pWSks2M2pGY2k3bFAtaXNtU1hQRzF2Z3M4b3RydDFB?oc=5" target="_blank">«Казахтелеком» улучшит интернет для 13 тысяч абонентов в Туркестанской области - Qumash.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 25.08.2026 13:03</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» улучшит интернет для 13 тысяч абонентов в Туркестанской области - Qumash.kz</div>
     </div>
     
   </div>
@@ -191,17 +215,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-25" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-25/tksh-v-kegoc-obyasnili-vyplatu-bonusov-top-menedzheram/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tksh-v-kegoc-obyasnili-vyplatu-bonusov-top-menedzheram" target="_blank">«Премия обоснована»: в KEGOC объяснили выплату бонусов топ-менеджерам после блэкаута</a></div>
+    <div class="article" data-date="2026-08-25" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-25/rmch-eksport-nefti-sokratilsya-na-3-3/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rmch-eksport-nefti-sokratilsya-na-3-3" target="_blank">Экспорт нефти сократился на 3,3%</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 25.08.2026 07:49</span>
+        <span class="date">📅 25.08.2026 11:18</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«Премия обоснована»: в KEGOC объяснили выплату бонусов топ-менеджерам после блэкаута</div>
+      <div class="art-summary">Экспорт нефти сократился на 3,3%</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-25" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/08/why-kazakhstans-aviation-hub-ambitions-could-generate-more-than-transit-revenue/" target="_blank">Why Kazakhstan’s Aviation Hub Ambitions Could Generate More Than Transit Revenue</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 25.08.2026 12:28</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Why Kazakhstan’s Aviation Hub Ambitions Could Generate More Than Transit Revenue</div>
     </div>
     
   </div>
@@ -263,7 +298,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-12';
+  document.getElementById('date-from').value = '2026-08-25';
   document.getElementById('date-to').value   = '2026-08-25';
   applyFilters();
 }
