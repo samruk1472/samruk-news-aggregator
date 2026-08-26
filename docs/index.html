@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 26.08.2026 07:40</div>
+  <div class="meta">3 источников · Обновлено: 26.08.2026 10:34</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-25">
+      <input type="date" id="date-from" value="2026-07-14">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-26">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,13 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -108,75 +106,58 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-26" data-co="Самрук-Энерго" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-26/kaye-blekaut-v-almaty-minenergo-ne-znalo-o-riske-takogo-razvitiya-avarii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-blekaut-v-almaty-minenergo-ne-znalo-o-riske-takogo-razvitiya-avarii" target="_blank">Алматы оказался не готов к аварии в Кыргызстане: что признало Минэнерго</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 26.08.2026 10:07</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Алматы оказался не готов к аварии в Кыргызстане: что признало Минэнерго</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
     <div class="article" data-date="2026-08-26" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9iY0w3enJ5ZS1xelMtX2U5WjNjRlhiX2J5WEx5X3pXTjh0LXdVZW9nUTVSVWFCRlNSWXRINTY4T04zNkdYaVlWOGtXOWF4OEJ1NmfSAUtBVV95cUxORzNCcHpYVldRbHp1QUZvdUFqTUV6SjdsSjZmbDlEVzlnMDdCTlg1ZlVNMnlQWVJ6bDZoT2hHNVR6a2pScHN2eUhUTFE?oc=5" target="_blank">&#34;Казмунайгаз&#34; начал букбилдинг двух траншей димсам-облигаций в юанях на AIX - Интерфакс</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-26/cntr-kazmunajgaz-benzin-s-pavlodarskogo-nhz-sootvetstvuet-trebovaniyam/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=cntr-kazmunajgaz-benzin-s-pavlodarskogo-nhz-sootvetstvuet-trebovaniyam" target="_blank">«КазМунайГаз»: бензин с Павлодарского НХЗ соответствует требованиям</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 26.08.2026 06:32</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 26.08.2026 09:44</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">&#34;Казмунайгаз&#34; начал букбилдинг двух траншей димсам-облигаций в юанях на AIX - Интерфакс</div>
+      <div class="art-summary">«КазМунайГаз»: бензин с Павлодарского НХЗ соответствует требованиям</div>
     </div>
     
-    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPWXhETklyWmNlcjRub0Y4MEtpTTJNR3hoSUVJb1lRamt1N2VOcnRFT014RGt1ZUxTVE9tZUZxOXVmVTBxeDlCcGc0RTFZa213akRuUU80Sm52SW9zUkdFclBoQ09uSTNpVlpuTWVlYi1XekJNcU1QdVpuVm5iRmZRVXl4amVadUd0OGZxQnpma1p1OHRGTkhPbjBYWjFkVjR4R3c?oc=5" target="_blank">Air Astana ушла в убыток на фоне роста расходов на топливо - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+    <div class="article" data-date="2026-08-26" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWlBYYnB6YWhCWUlHQ0J2b000U21NUF9NRzZWcGhwV1V0NjVEYmNxYXJRV1lsWXdyQ1NsU1FMajdTcUk0bGZod05DeWc2SG05ZUJTaEJndXR3V0RYT2NaVDdKZU12NEZ4bE81bjRLT0hKX1l2dE9jZ0FHeU5oOWJRSUw1eDBQY2d2UkQ0NmV2QUxaWHdqY2FKLWo3cFZDRU8tZkN0M3QtQ3J4dw?oc=5" target="_blank">«КазМунайГаз»: бензин с Павлодарского НХЗ соответствует требованиям - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.08.2026 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 26.08.2026 10:07</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Air Astana ушла в убыток на фоне роста расходов на топливо - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+      <div class="art-summary">«КазМунайГаз»: бензин с Павлодарского НХЗ соответствует требованиям - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
     </div>
     
-    <div class="article" data-date="2026-07-16" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQVUsyYWdCRi1kc2tvUVF3RXZtVUNRaGxXVEd1NTF3d2FOZDNHc3E5RmswM2ctcHJzRnZvZXRUODhXWGFfNFpXVEY1LWJYQWFYX2lJU3dXR3ZOV3d4OUU0Y1lvcVFHTDBtMzNsM0h0SHZZWnZnZks0T3BzT3c1SkRoWlJGVk5kV0RTWHVuQlFOLTR5TEl2aVZaWA?oc=5" target="_blank">Air Astana вновь отменила рейсы из Казахстана в Дубай - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 16.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana вновь отменила рейсы из Казахстана в Дубай - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-26" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNbEhlM0JBNWJEckFvUC1nWHRCYVM5MG11TjYtaU9aUTV5UlUtWXJ5UVVFekhtbWJSa2t5Q1RrYVRqRDVxWEh6X1MwT3BOTEc5UC12c0RjajYxNHFIRnYxRGpSLUpkV1VGelZsLUljWE5RdlY1RGNkRFR5RVFySkNQV3gwOVhYQXNTQVBFaWFTLXFqY3dadDB6d2VlLUtsdUNRMDZ3?oc=5" target="_blank">Более 8 млн тонн зерна перевезено по сети КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-07-14" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5mQlVyYlA3aGdtRVJBa0NiRGFtUEtjUFhpZGZBeTZvMDZSX2t1eGNtUUZ4UzJkVkYxby1vN2tieHhLMUMxR0R5Z3dB?oc=5" target="_blank">КТЖ снова добивается повышения тарифов - АПК Новости</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 26.08.2026 05:36</span>
+        <span class="date">📅 14.07.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Более 8 млн тонн зерна перевезено по сети КТЖ - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-30" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQX2R6ZDdEMmlCNkU4NEV6NlpJSXkyWmxNTXVxNV9qc1BzTFNvM2xJX3lVaUtNbkotVFo5anZ3eTc1ZFk0TGlVV1ZWdWJiWmtuNDllNjg5cU9XS0t1VXFfVnZ3cWRISFJlaVpFNTJGNkdPaENPYmM5MGw3QkVkdzZ5cEtDSnZtZ2RHRnZhVXJzZHVnX2k3RE9CSmdoY2xLZ2pUUGVPcnI5Y0ZYdw?oc=5" target="_blank">«В рамках возможностей»: глава КТЖ ответил на жалобы о неработающих кондиционерах - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 30.06.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">«В рамках возможностей»: глава КТЖ ответил на жалобы о неработающих кондиционерах - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-25" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZzZWQ3hnVXdRU3BDZG5NdGRpZW9ucGdXQVJOSlMxWGt2Rjg2Z2NNd0xqZklCOTM5VGVzdUczRU1GMm5fRHhrYUZyOUVTdExLaFQ4WG52b3VocVo4SUY4ek9WdUY3ZFZOSWNnWmk4bzY1ek43UHhVWDhfcGx3eV9GQl9uZ3VPaTE4RTdqQzFjTWhrb29pNjJ1WjRSeFFJVG5yZDdYdVFVd3Q2TzA?oc=5" target="_blank">От 5G до ЦОДов: «Казахтелеком» усиливает цифровую инфраструктуру страны - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 25.06.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">От 5G до ЦОДов: «Казахтелеком» усиливает цифровую инфраструктуру страны - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+      <div class="art-summary">КТЖ снова добивается повышения тарифов - АПК Новости</div>
     </div>
     
   </div>
@@ -186,15 +167,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-26" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-26/devy-flyarystan-ustroit-dvuhdnevnuyu-rasprodazhu-aviabiletov-so-skidkoi/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-flyarystan-ustroit-dvuhdnevnuyu-rasprodazhu-aviabiletov-so-skidkoi" target="_blank">FlyArystan устроит двухдневную распродажу авиабилетов со скидкой</a></div>
+    <div class="article" data-date="2026-08-26" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-26/zhnb-stadler-investiruet-bolee-14-mlrd-tengge-v-svarku-i-pokrasku-vagonov-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-stadler-investiruet-bolee-14-mlrd-tengge-v-svarku-i-pokrasku-vagonov-v-kazahstane" target="_blank">Швейцарская Stadler вложит более 14 млрд теңге в новое производство в Казахстане</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 26.08.2026 05:40</span>
+        <span class="date">📅 26.08.2026 07:56</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">FlyArystan устроит двухдневную распродажу авиабилетов со скидкой</div>
+      <div class="art-summary">Швейцарская Stadler вложит более 14 млрд теңге в новое производство в Казахстане</div>
     </div>
     
   </div>
@@ -256,7 +237,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-25';
+  document.getElementById('date-from').value = '2026-07-14';
   document.getElementById('date-to').value   = '2026-08-26';
   applyFilters();
 }
