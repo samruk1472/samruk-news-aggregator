@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 26.08.2026 10:34</div>
+  <div class="meta">5 источников · Обновлено: 26.08.2026 13:56</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-14">
+      <input type="date" id="date-from" value="2026-07-24">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-26">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,9 +87,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -106,58 +106,31 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-08-26" data-co="Самрук-Энерго" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-26/kaye-blekaut-v-almaty-minenergo-ne-znalo-o-riske-takogo-razvitiya-avarii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-blekaut-v-almaty-minenergo-ne-znalo-o-riske-takogo-razvitiya-avarii" target="_blank">Алматы оказался не готов к аварии в Кыргызстане: что признало Минэнерго</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 26.08.2026 10:07</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Алматы оказался не готов к аварии в Кыргызстане: что признало Минэнерго</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-26" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-26/cntr-kazmunajgaz-benzin-s-pavlodarskogo-nhz-sootvetstvuet-trebovaniyam/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=cntr-kazmunajgaz-benzin-s-pavlodarskogo-nhz-sootvetstvuet-trebovaniyam" target="_blank">«КазМунайГаз»: бензин с Павлодарского НХЗ соответствует требованиям</a></div>
+    <div class="article" data-date="2026-08-26" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/novosti/70623-stadler-zapustit-v-kazahstane-proizvodstvo-aluminievyh-kuzovov-dla-zeleznodoroznogo-transporta.html" target="_blank">Stadler запустит в Казахстане производство алюминиевых кузовов для железнодорожного транспорта</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 26.08.2026 09:44</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 26.08.2026 18:20</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«КазМунайГаз»: бензин с Павлодарского НХЗ соответствует требованиям</div>
+      <div class="art-summary">Stadler запустит в Казахстане производство алюминиевых кузовов для железнодорожного транспорта</div>
     </div>
     
-    <div class="article" data-date="2026-08-26" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWlBYYnB6YWhCWUlHQ0J2b000U21NUF9NRzZWcGhwV1V0NjVEYmNxYXJRV1lsWXdyQ1NsU1FMajdTcUk0bGZod05DeWc2SG05ZUJTaEJndXR3V0RYT2NaVDdKZU12NEZ4bE81bjRLT0hKX1l2dE9jZ0FHeU5oOWJRSUw1eDBQY2d2UkQ0NmV2QUxaWHdqY2FKLWo3cFZDRU8tZkN0M3QtQ3J4dw?oc=5" target="_blank">«КазМунайГаз»: бензин с Павлодарского НХЗ соответствует требованиям - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+    <div class="article" data-date="2026-07-24" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNU1fZEpuUFpZa0hBVndIeTZkb0g3NHF3cWtlYmZzMXR4aWVKcFhDRXFuQ2JKSEFHdUhZcU52aTcxbnhFNnlpTE9odXFTMlZXYnBEMi00Q1E4cjFWWHNZejdwR3d3WE41RmRmdzY2YWJ2MFRCOV9ycXUwdW9abTdwc2pOQjVUMXVqR3hoMWx1ZmhaVUJQSllNM3NWRXZXZmdvVVVvVkNIZDdrbDQ4bk52X0Z2WTVWaFlIbzRQWVFmRTA1aDFqVWdNUUh4Z2FmLXR5M2fSAdcBQVVfeXFMTmFsOEN2eEVZYWtPNHRxUm40X256dHVUMkNWcVhZZEFpblRMdWpaSFpWaEFHbkYxRG1teHlidEVuaEhnbnR0VXZQWV9iOFlJTnY5cEloVnFFekpCN2s0Yjl1NURRcjVnWkdyd192amk0UHdTZlZEaVZteXFkckNQdG14d09WZFFXMWEyN0xhVXRRZ2tKd3dxaG5kb3NQX0lJQm5ubEpuQzJtY0VQTjRyWXMwRUNEWkRncHZUU2cxVDc0RGZwSEZTUFRZdGZZaGpwalFwd2NsLU0?oc=5" target="_blank">&#34;Казахтелеком&#34; выступит технологическим партнером &#34;Игр Будущего 2026&#34; powered by Samruk-Kazyna - Новости Zakon.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 26.08.2026 10:07</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 24.07.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«КазМунайГаз»: бензин с Павлодарского НХЗ соответствует требованиям - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-14" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5mQlVyYlA3aGdtRVJBa0NiRGFtUEtjUFhpZGZBeTZvMDZSX2t1eGNtUUZ4UzJkVkYxby1vN2tieHhLMUMxR0R5Z3dB?oc=5" target="_blank">КТЖ снова добивается повышения тарифов - АПК Новости</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 14.07.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ снова добивается повышения тарифов - АПК Новости</div>
+      <div class="art-summary">&#34;Казахтелеком&#34; выступит технологическим партнером &#34;Игр Будущего 2026&#34; powered by Samruk-Kazyna - Новости Zakon.kz</div>
     </div>
     
   </div>
@@ -165,17 +138,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-08-26" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-26/zhnb-stadler-investiruet-bolee-14-mlrd-tengge-v-svarku-i-pokrasku-vagonov-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-stadler-investiruet-bolee-14-mlrd-tengge-v-svarku-i-pokrasku-vagonov-v-kazahstane" target="_blank">Швейцарская Stadler вложит более 14 млрд теңге в новое производство в Казахстане</a></div>
+    <div class="article" data-date="2026-08-26" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-26/zhnb-kazahstanskaya-struktura-shell-prinesla-ei-za-god-bolee-350-mln-pribyli/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kazahstanskaya-struktura-shell-prinesla-ei-za-god-bolee-350-mln-pribyli" target="_blank">Казахстанская структура Shell принесла ей более $350 млн прибыли</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 26.08.2026 07:56</span>
+        <span class="date">📅 26.08.2026 10:39</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Швейцарская Stadler вложит более 14 млрд теңге в новое производство в Казахстане</div>
+      <div class="art-summary">Казахстанская структура Shell принесла ей более $350 млн прибыли</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-25" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQdnpjck56aGxqZm1oXzU4OUl1NkxQRk5DLUVGNzl6VF90OHpBaWRNLVFYS3VZVmg1VVJ4VFRQZjJfYlBFRnlMZXhoTF9DVXVyUnV5N1padDVMTU85ZjRvSkxla3owZHdPWFpYX1VhX1FtY01EWU80dHYweWVoWDBMb2N5TTExcE5LcmlhMk1BaW5fU2RKamh4Ui1IZVdDYnlzMUpLWGQ0WFg3cVJwQUlrOE5sWkY?oc=5" target="_blank">«КазМунайГаз» и TotalEnergies обсудили расширение сотрудничества в энергетической сфере - CBC TV Azerbaijan</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 25.08.2026 07:13</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» и TotalEnergies обсудили расширение сотрудничества в энергетической сфере - CBC TV Azerbaijan</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-26" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOTDgxOXBpcE0zOGJzbEtGWDNwc2JNZjk4SzNqN3RmTlJMZFItSTd6eVJpdUx4dXF1STNhMnhHVjFmdExJdmhXc2lLNzBfZE9Pd3YwTklXc2ljLUxhVVFtUTNjLXlOZEFnTGg1ekFRYk4ySERxaXJmMVpPaUpKcXRSZEV4b1FZbm43aDFtaWhhMFk0RFlTNWpZdWZCX1lKQlN2NXBNakttQThLWUN3Rl9IaGhvWkE3d9IBuwFBVV95cUxPeGh3T0haNzA1S1Radm1GN3NBU0ZFeEgtRmNoR25hSzFIcWI5dUpWU3ZyY0ZwYzEtWWZTVTA2LUdXbUtwNGlfYUVHcmFSYmllZzNuQ3dRRngzbjFRd1N6Wm1STzB3MV8wc0xZTVBHMFBERHFBb2VFVkdlbkQ2U24zcDZhbVVqMEhWc0stZkhUOVFLOUdtNXFxSlh4LUhPRkd0LVl5OEJUaUFCM0trMVpOQ1Q4a0w3UDRmdVNJ?oc=5" target="_blank">Казатомпром: итоги первого полугодия и вклад в развитие регионов - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 26.08.2026 10:45</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром: итоги первого полугодия и вклад в развитие регионов - Новости Zakon.kz</div>
     </div>
     
   </div>
@@ -237,7 +232,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-14';
+  document.getElementById('date-from').value = '2026-07-24';
   document.getElementById('date-to').value   = '2026-08-26';
   applyFilters();
 }
