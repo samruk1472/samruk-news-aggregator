@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">8 источников · Обновлено: 27.08.2026 10:57</div>
+  <div class="meta">4 источников · Обновлено: 27.08.2026 14:54</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">16</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">5</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-03">
+      <input type="date" id="date-from" value="2026-08-27">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-27">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,17 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
-      
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -112,135 +104,42 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
-    
-    <div class="article" data-date="2026-08-27" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-27/svan-telekom-kompaniya-jusan-mobile-galimzhana-esenova-pereshla-milliarderu-vyacheslavu-kimu/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-telekom-kompaniya-jusan-mobile-galimzhana-esenova-pereshla-milliarderu-vyacheslavu-kimu" target="_blank">Богатейший казахстанец Ким купил еще один бизнес у миллионера Есенова</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 27.08.2026 10:44</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Богатейший казахстанец Ким купил еще один бизнес у миллионера Есенова</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-27" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPU2FRemlodlk2YkdHQ3lTb2pfY1NfR0tWVndxYnNQRERnWkVCYzNMa1k2dC05V3dWWVAzQU5TSUo5SFFfd3Z4X0RzQThrZHJQOF9lWEYwZ04wZEhMMWw4cFVJR3dxZ3ozakVsQVhURF9tdEVsRUllWlotTUN5SzFlQklGSVdkTDRBOFBOMkZrMVQ?oc=5" target="_blank">Искусственный интеллект поможет Air Astana экономить топливо - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 27.08.2026 09:13</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Искусственный интеллект поможет Air Astana экономить топливо - DKNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-07" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQQXBaY3NBRXdRSzVDdVk3eExVVE4wMEtLNXpmWGNRbWlCa29zQ2JmZVhHT3JHXzN3OG5tb1BKSFN5Z2VUb0NzUWpiUm1fWWZZX0pBSmE5Z0VjVGNCQ1BFcHhYb2FPeE5mbXNJay0ydEoxZjZCNEF4eTZJMWFlSVRlMm1uS0VlQUxfX182cEI4b2lvdTNLYVpwVEFrT29QQjJpck5Zb0hWTExTcXBXbEVWcGVtYnk5UQ?oc=5" target="_blank">Казахтелеком поддержал крупнейший киберспортивный турнир Центральной Азии - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 07.07.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком поддержал крупнейший киберспортивный турнир Центральной Азии - Kapital.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
-    
-    <div class="article" data-date="2026-08-27" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="http://profit.kz/news/74622/Kazahtelekom-perevedet-bolee-13-tisyach-abonentov-v-Turkestanskoj-oblasti-s-medi-na-optiku/" target="_blank">«Казахтелеком» переведет более 13 тысяч абонентов в Туркестанской области с меди на оптику</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Profit.kz</span>
-        <span class="date">📅 27.08.2026 04:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» переведет более 13 тысяч абонентов в Туркестанской области с меди на оптику</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
     <div class="article" data-date="2026-08-27" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBFR1FFUEs5RWdaRk5jSV9xRjdVSU45bVo0dEdnSkkzc3BPX3lrd3pDaTRXTlhoSnljUnR1SGsta2VRbklDakdkMEduNXlDN1ljTmxYVE53?oc=5" target="_blank">12,5 трлн тенге составила выручка «Самрук-Казына» за полгода - check-point.kz</a></div>
+      <div class="art-title"><a href="https://www.caravan.kz/news/skolko-zarabotal-samruk-kazyna-za-pervye-sem-mesjacev-2026-goda/" target="_blank">Сколько заработал «Самрук-Казына» за первые семь месяцев 2026 года</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 27.08.2026 10:35</span>
+        <span class="src">📰 Caravan.kz</span>
+        <span class="date">📅 27.08.2026 12:20</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">12,5 трлн тенге составила выручка «Самрук-Казына» за полгода - check-point.kz</div>
+      <div class="art-summary">Сколько заработал «Самрук-Казына» за первые семь месяцев 2026 года</div>
     </div>
     
-    <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTFB4bHpkWXloMkxNS0Z2bkdjZlR3MFIzeGR4S3VwX2V1VkJoOG5qUmVWelZHcjNrNkxqQ0hTM0ZqTDhmT1NBV1B1aF9ZQVBrbW52U1Etdzd6d2lWRkRHYjU4eTk1X19ZN2FmZ1NQN0hid2pVTHpuSWtoNA?oc=5" target="_blank">Казмунайгаз перенес плановый ремонт Павлодарского НХЗ на 2027г - TradingView</a></div>
+    <div class="article" data-date="2026-08-27" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOS1ZnS1dBVWhYWG5nbnp0c2ZyVGFKWDVFYnB1VXhyQVUtTWsyeTFVNkhrcXN0ZGRMNjhQVDJyQ2o4Ty1sdlVUcEpzSkdXYm54bmF5NkJuU2ZLcVRiajN2Rk5IY1FMeXowckxndUhISHB2azBsMk8yUmk0SGFyYlMtMmV6T25acnpWcXJ2VWIxQlBoZDh1eWtiOTlIR1Y?oc=5" target="_blank">Сколько заработал &#34;Самрук-Казына&#34; за первые семь месяцев 2026 года - caravan.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 27.08.2026 12:21</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Сколько заработал &#34;Самрук-Казына&#34; за первые семь месяцев 2026 года - caravan.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-27" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQMTgwbmo1NkJJQVJLcmM5WXpWVUkxSnEycEx3YW1BT29PR3p2aVJVMFMzREhvX0c0XzlWMlRWV2plSjdlNmZiMmh2dG1PM250NFR3cGVwMUNwZDFBR0NDRUZwbnJuTEhaYlZyQ01ueFJQQ1BIeWJ4d25LOEZKLU9VNHZBNHNmOFFDaTFvRVpRWWdHd2F3NUE1LXFCQ0Y?oc=5" target="_blank">Почти миллиард за 15 автобусов: что закупает «дочка» КазМунайГаз в Актау - Qumash.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 24.08.2026 07:29</span>
+        <span class="date">📅 27.08.2026 13:55</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Казмунайгаз перенес плановый ремонт Павлодарского НХЗ на 2027г - TradingView</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-24" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE5HRXRvWHM3cFJPQmNMWU96eElnTTFKamhaRkxEYlFyZWFKUnQ3S1FsdVlaWnhUMnA4aWJTTTNzWWV0aDdSVE9TcnIySnNQUkNjLUJFNWt4VQ?oc=5" target="_blank">«КазМунайГаз» изучит перспективные участки нефтегазоносных бассейнов в Мангистауской области Казахстана - Energyland.info</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 24.07.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» изучит перспективные участки нефтегазоносных бассейнов в Мангистауской области Казахстана - Energyland.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-21" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxOLW1UazhHZkRvWElyQlRhS2RXMWRLamVrZ3gwaVhEeFYzTXU5UjRPaHNYMm94S05HTXRaV0w4OW1WbzVOOGJtV20tOHlfeFFIM3ZRUmpOdDFzVHdEazl4U003bEtRT3BDUENrMDBBWkRISkJnQlcyUm0yMlNQZEwyRVV1R21fcHVrbmIxRmJGVklLalRpdEt6UGJvYzFsVHZKUk5QTkxzNGMyeENGSmNNV1ZOTHBtN3lvbWxoa1dMTHVsdEhOODI0YkJVeVJodWNHQVVrdGJpbml5MDZm?oc=5" target="_blank">Air Astana ввела второй тренажёр для Airbus с двойной сертификацией EASA и Казахстана - Overclockers.ru</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 21.04.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana ввела второй тренажёр для Airbus с двойной сертификацией EASA и Казахстана - Overclockers.ru</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOQlQ5VC1kNzVnSERreV8xTC1BN3hxR0Q0OEtodTVUVjQwRi1ZSWxZMEhpTlJOUnNVVUYwcVV1djJhS0hVbFplcDNXdENTN2hXM0hEcVQ4RXlUdjJ4M05YakxyYTZzeEpob3BlQ1lkeDFndTNheFRXX2I3cVpqWHhaRzRaQkc4aXJXOEY5dGZ3alVQV2cwdXhNS2VqeGlRQ2U4ZHNVTERSWnM1X1A0d1hnNnFaYnBxQQ?oc=5" target="_blank">Швейцарские вагоны, купленные КТЖ, дорожают ежегодно еще до ввода в эксплуатацию - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.07.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Швейцарские вагоны, купленные КТЖ, дорожают ежегодно еще до ввода в эксплуатацию - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-28" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMHRpWktjZFM5Q2tXQzVKeFJhTUZMTnJmazUxeDlhV3FJQ3VYNUdMb05TSy1XanY4YWEtbzh1V3VmSmZlLWFqZHctMXFDcFBveXhzdk1MSlZ3Tm4wQlVFaGhSQl9uT2xHeUVoLV9hdnFueFhkZDZyUWZLd2k1Qm4yZW5iaUE1WHdmU21TcTVkVTBZWWVMbzRsSWplSFppMkxESUhuTnBXTUlSakY0MTlNWHdTOFB1QUh3UkVXdWsxTEs1S0h3Z3Y5SHBZblFUb050Mm1sRzZ3?oc=5" target="_blank">КТЖ организовало первую отправку казахстанских удобрений в Великобританию по ТМТМ - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 28.07.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ организовало первую отправку казахстанских удобрений в Великобританию по ТМТМ - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-03" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBVX0pWc19hS3h1T0Z5TEtlWkZxVnYxTnFyOE91THFpaVBtS2trb2Rjenk2R3RKSnVYaXd1aEhfcGlXLTZ4ZzQ2V3draGNIeTIxTE1KUnlXMUg3S2tHRnRjQlNzajVmRlRROTZYVThFb0RuOWZncnlxdHBJa2diSE3SAX5BVV95cUxQZUVyampZRlJmY01zWUszZmR1SWdiZm5nVXp3X003TDd2TlJVajFVMTlvQkZMZWcwZjZXTXh1R0tOdmhROVR3d0dJY0dLQnpkV1I1OFRJMWhmMmN2UWl1UWNEUTBzZnpEdFZpYTFicWRza3BMMW5HeDRQeDBIVWc?oc=5" target="_blank">Скидки в 25% на поезда: в КТЖ объявили акцию на апрель - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 03.04.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Скидки в 25% на поезда: в КТЖ объявили акцию на апрель - BES.media</div>
+      <div class="art-summary">Почти миллиард за 15 автобусов: что закупает «дочка» КазМунайГаз в Актау - Qumash.kz</div>
     </div>
     
   </div>
@@ -248,61 +147,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-27" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-27/zhnb-wabtec-perenesla-na-god-proizvodstvo-dizelnyh-dvigatelei-v-astane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-wabtec-perenesla-na-god-proizvodstvo-dizelnyh-dvigatelei-v-astane" target="_blank">Американская Wabtec перенесла на год производство двигателей в Астане</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 27.08.2026 10:55</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Американская Wabtec перенесла на год производство двигателей в Астане</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-27" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-27/zhnb-amerikanskii-wabtec-mozhet-eksportirovat-s-zavoda-v-astane-do-15-lokomotivov-v-blizhaishie-gody/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-amerikanskii-wabtec-mozhet-eksportirovat-s-zavoda-v-astane-do-15-lokomotivov-v-blizhaishie-gody" target="_blank">Американская Wabtec экспортирует с завода в Астане до 15 локомотивов в ближайшие годы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 27.08.2026 10:34</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Американская Wabtec экспортирует с завода в Астане до 15 локомотивов в ближайшие годы</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-27" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-27/svan-krupnejshij-proizvoditel-uglya-planiruet-narastit-ego-dobychu-bolee-chem-na-10-mln-tonn/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-krupnejshij-proizvoditel-uglya-planiruet-narastit-ego-dobychu-bolee-chem-na-10-mln-tonn" target="_blank">Угольный гигант, принадлежащий России, Казахстану и Катару, увеличит добычу</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 27.08.2026 07:44</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Угольный гигант, принадлежащий России, Казахстану и Катару, увеличит добычу</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-27" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/08/experts-political-trust-sets-stage-for-next-phase-of-kazakhstan-singapore-partnership/" target="_blank">Experts: Political Trust Sets Stage for Next Phase of Kazakhstan-Singapore Partnership</a></div>
+    <div class="article" data-date="2026-08-27" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/08/samruk-kazyna-posts-strong-financial-results-increases-support-for-domestic-producers/" target="_blank">Samruk Kazyna Posts Strong Financial Results, Increases Support for Domestic Producers</a></div>
       <div class="art-meta">
         <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 27.08.2026 09:18</span>
+        <span class="date">📅 27.08.2026 12:38</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Experts: Political Trust Sets Stage for Next Phase of Kazakhstan-Singapore Partnership</div>
+      <div class="art-summary">Samruk Kazyna Posts Strong Financial Results, Increases Support for Domestic Producers</div>
     </div>
     
-    <div class="article" data-date="2026-08-27" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNaVhBVU9SUnR0aS0xRm5XVU5FNkYwTFcyeDZqSjZxMDFaNkd3RWdvZ2QxbVFCenZyaUs0SG5UTUV5T1JCNlFzNUUxemNDWGE1cUJ1NGtDWTNQd3REVml6a1h1Q0lxOW5oMFZjaVJBeVU2d2N5cUJNQkxpX0tfWWEwdmh4RS1panNVSnY4WGVFcG1DUlRBajVpbnIxU2FnR0p3SldTck9YRmJsa0dEdW1KNGdTcEU3cUVPeWlUZA?oc=5" target="_blank">«Казахтелеком» переведет более 13 тысяч абонентов в Туркестанской области с меди на оптику - Profit.kz</a></div>
+    <div class="article" data-date="2026-08-27" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPT2pmV3RMeUczbk1zN2MwSXZxYmxHSjJocnBGd1l0NFp3LXQtVHhPVHpkdGtOYkxreTFWQUtlY0sxUllXa1M0d0ZnQVZhaG9RdmdqYnRydHY0WWZxQ0pGbkJRZXlPZUtJci1COVQ0U1lxQjg2X2NtYzFIbEo0WWlreEx3V2JEU2l6eXkxUUtXdU3SAZgBQVVfeXFMUDFldXpQOTB6MmJoWTdEbDFGeWd6Sl9ydFNldER3bFp5NzBMeDI3MnZCeE1vX3JJOE1xTk5VSk1wMlQwZDRLVkt6VFIxUlNLU25WRlBLRFlleWp0ejJ2SWNBY203Xzl3V2NxZkNta0d1cUwtdjZlbkc2NC1Wb1FCQWxqNnhLSm9WT0pTWGdGX24wX0lsSW40VGc?oc=5" target="_blank">Чистая прибыль фонда «Самрук-Казына» за семь месяцев превысила 1,2 трлн тенге - Central Media 24/7</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 27.08.2026 09:56</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 27.08.2026 10:24</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Казахтелеком» переведет более 13 тысяч абонентов в Туркестанской области с меди на оптику - Profit.kz</div>
+      <div class="art-summary">Чистая прибыль фонда «Самрук-Казына» за семь месяцев превысила 1,2 трлн тенге - Central Media 24/7</div>
     </div>
     
   </div>
@@ -364,7 +230,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-03';
+  document.getElementById('date-from').value = '2026-08-27';
   document.getElementById('date-to').value   = '2026-08-27';
   applyFilters();
 }
