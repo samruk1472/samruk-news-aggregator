@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 27.08.2026 14:54</div>
+  <div class="meta">3 источников · Обновлено: 27.08.2026 18:01</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-27">
+      <input type="date" id="date-from" value="2026-05-01">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-27">
+      <input type="date" id="date-to" value="2026-08-18">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -107,39 +109,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-27" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://www.caravan.kz/news/skolko-zarabotal-samruk-kazyna-za-pervye-sem-mesjacev-2026-goda/" target="_blank">Сколько заработал «Самрук-Казына» за первые семь месяцев 2026 года</a></div>
+    <div class="article" data-date="2026-08-18" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQRFRGb0ZGb21vOENZTUc4Yzc5QVBfd19uYWItTVhLTWNzZDJmeDdTV0ROOFdlcWRlcjQxRnZnRVJ5ZG9NLVVtdmNOekUySlVUX0ZlN0Y5WGdZWUM5dGZZdzFtS3B4R0hrSHJSck9fR2VRcTBTMTB2eDZ1OGllcHpmTHRaT3NIWk1SZ1VNVUNDNnZVeEtQeWhVbU0xTkJKMDhVa29GRnE2QQ?oc=5" target="_blank">Казатомпром в 1-м полугодии 2026 г. увеличил добычу урана на 9% - Neftegaz.RU</a></div>
       <div class="art-meta">
-        <span class="src">📰 Caravan.kz</span>
-        <span class="date">📅 27.08.2026 12:20</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 18.08.2026 18:01</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Сколько заработал «Самрук-Казына» за первые семь месяцев 2026 года</div>
+      <div class="art-summary">Казатомпром в 1-м полугодии 2026 г. увеличил добычу урана на 9% - Neftegaz.RU</div>
     </div>
     
-    <div class="article" data-date="2026-08-27" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOS1ZnS1dBVWhYWG5nbnp0c2ZyVGFKWDVFYnB1VXhyQVUtTWsyeTFVNkhrcXN0ZGRMNjhQVDJyQ2o4Ty1sdlVUcEpzSkdXYm54bmF5NkJuU2ZLcVRiajN2Rk5IY1FMeXowckxndUhISHB2azBsMk8yUmk0SGFyYlMtMmV6T25acnpWcXJ2VWIxQlBoZDh1eWtiOTlIR1Y?oc=5" target="_blank">Сколько заработал &#34;Самрук-Казына&#34; за первые семь месяцев 2026 года - caravan.kz</a></div>
+    <div class="article" data-date="2026-07-15" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxPOUtBdWE2RVY3U01xeS1WYk5yRUE0ZXBZZi1EdlRBVEdMS08xdURhbDhQRkZjMEdDV01ySENqbjhVbDNXcHhXUkhwYjZjM3I4MTRNclVYRWpXSTFYZUlHXy1xc0hJTWhzTkxDNVl2emVtdUJqYzhQUG5UNlNMdGFxaTRDenFLTF9hVkdQYXlBeE1BN1hRdVN3UVdTMklBMGpYNWctTWNubUxubXhwUWVhTDVhX1d4ZUdJQXItTlp1VkZfaWhVcDN0d3A4MmtDZ9IB0gFBVV95cUxPdHZzUEd5UUVwcGtyN0ZkekhIZmxvaERFWDh2eUNHMGlEVkh2Q2FJZkpiMkUwNHp4UDhRdVdXRG9QUTFRSER1UVlfMXFaRDB0eTJkVTdZME5uOWowOFotOGZLTlg3b3NrU1FibERQTVpxZU1sNGhRbjhOMEQ0Q3p4dkdhdGd3ZnRCNkl6NTZ1OE1fbzRzMmpMZ08tcldXZ1JJdWh6dmRDQm5adnNzMlBUSjJXZkllNHhRcVN5Z3ktQWdQOEFJRmRYT3Y0MG96ZjlVdVE?oc=5" target="_blank">«Казахтелеком» меняет владельцев, юг плавится от жары, Актобе утопает в мусоре – главное за 14 июля - Ulysmedia.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 27.08.2026 12:21</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 15.07.2026 07:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Сколько заработал &#34;Самрук-Казына&#34; за первые семь месяцев 2026 года - caravan.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-27" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQMTgwbmo1NkJJQVJLcmM5WXpWVUkxSnEycEx3YW1BT29PR3p2aVJVMFMzREhvX0c0XzlWMlRWV2plSjdlNmZiMmh2dG1PM250NFR3cGVwMUNwZDFBR0NDRUZwbnJuTEhaYlZyQ01ueFJQQ1BIeWJ4d25LOEZKLU9VNHZBNHNmOFFDaTFvRVpRWWdHd2F3NUE1LXFCQ0Y?oc=5" target="_blank">Почти миллиард за 15 автобусов: что закупает «дочка» КазМунайГаз в Актау - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 27.08.2026 13:55</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Почти миллиард за 15 автобусов: что закупает «дочка» КазМунайГаз в Актау - Qumash.kz</div>
+      <div class="art-summary">«Казахтелеком» меняет владельцев, юг плавится от жары, Актобе утопает в мусоре – главное за 14 июля - Ulysmedia.kz</div>
     </div>
     
   </div>
@@ -147,28 +138,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-27" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/08/samruk-kazyna-posts-strong-financial-results-increases-support-for-domestic-producers/" target="_blank">Samruk Kazyna Posts Strong Financial Results, Increases Support for Domestic Producers</a></div>
+    <div class="article" data-date="2026-05-01" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlb2tOdHdvQkRIaDR3UG1ZaDFCRURLZVFIZnBZVDU0TlkwMGtBNWl4MTJVWk5UaW1HV3FjOFJ4V2NPYzZWSWdMYjhsMXFYeFoxem5yVg?oc=5" target="_blank">КТЖ формирует собственный морской флот: подписаны контракты на строительство шести судов - АПК-Інформ</a></div>
       <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 27.08.2026 12:38</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 01.05.2026 07:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Samruk Kazyna Posts Strong Financial Results, Increases Support for Domestic Producers</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-27" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPT2pmV3RMeUczbk1zN2MwSXZxYmxHSjJocnBGd1l0NFp3LXQtVHhPVHpkdGtOYkxreTFWQUtlY0sxUllXa1M0d0ZnQVZhaG9RdmdqYnRydHY0WWZxQ0pGbkJRZXlPZUtJci1COVQ0U1lxQjg2X2NtYzFIbEo0WWlreEx3V2JEU2l6eXkxUUtXdU3SAZgBQVVfeXFMUDFldXpQOTB6MmJoWTdEbDFGeWd6Sl9ydFNldER3bFp5NzBMeDI3MnZCeE1vX3JJOE1xTk5VSk1wMlQwZDRLVkt6VFIxUlNLU25WRlBLRFlleWp0ejJ2SWNBY203Xzl3V2NxZkNta0d1cUwtdjZlbkc2NC1Wb1FCQWxqNnhLSm9WT0pTWGdGX24wX0lsSW40VGc?oc=5" target="_blank">Чистая прибыль фонда «Самрук-Казына» за семь месяцев превысила 1,2 трлн тенге - Central Media 24/7</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 27.08.2026 10:24</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Чистая прибыль фонда «Самрук-Казына» за семь месяцев превысила 1,2 трлн тенге - Central Media 24/7</div>
+      <div class="art-summary">КТЖ формирует собственный морской флот: подписаны контракты на строительство шести судов - АПК-Інформ</div>
     </div>
     
   </div>
@@ -230,8 +210,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-27';
-  document.getElementById('date-to').value   = '2026-08-27';
+  document.getElementById('date-from').value = '2026-05-01';
+  document.getElementById('date-to').value   = '2026-08-18';
   applyFilters();
 }
 
