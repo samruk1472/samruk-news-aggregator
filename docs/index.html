@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 28.08.2026 19:11</div>
+  <div class="meta">3 источников · Обновлено: 28.08.2026 21:06</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">9</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-10">
+      <input type="date" id="date-from" value="2026-03-18">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-27">
+      <input type="date" id="date-to" value="2026-08-28">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -87,11 +87,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
@@ -110,124 +106,53 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-04-23" data-co="Казатомпром" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1BWC11RWpxUDVYNXlYZ0hXXzRGZmFycDBXU3plRk9VNk92UnRfS0lQa1Bpc0FZLVlieExBNWdHdWM2S05PWDJRYXc3TFdueXFVRzdVY2R4QWJMdDJEMDMtakJ0bWtHb0duYUd3NnQ5Vmp2OVoxTUhsaUZoOA?oc=5" target="_blank">&#34;Казатомпром&#34; начнет искать уран в Монголии - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 23.04.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">&#34;Казатомпром&#34; начнет искать уран в Монголии - Inbusiness.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-02-10" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxOaGhCVG5iZ3ZWdkNtd2lYdnJWTXZEMDlMX3JOcGJXLTJRSDNoMlFHSnBXU1RtcTBxUGRTdno4cHZkU0VseHl0b2VzX01hLVkzU2ZjX1o5cE9DZWZsMWdlbVRHdDJKNXlMdFdZLVN1Slo5NzRHSkRSVXB1dE1DRWEydXRYOTVUQjJPUmd6azgzNWdOZnJzQVRfTTN2cGdweGt5TGx2ekhHalhnQ1N5MEZZNnZXeFNIRXpXZDczbVBvb204RWZIMjE3amhHSzJvSnZPUWfSAdcBQVVfeXFMTVduVzRKQmR5TGJhbkFDekpqUElvbGdUMUo0SnFQeXVQNlFzMGdyTVp1eXVTbURQbEFkRW1XVTNlZUg4SEZJZ3J6bjUtOFlqUjV3OUNodk84R0liekFGTmEtMTBqTThCbkt6enpZU2pMZ3JlRlItM0wyZV9Vbm9zNEV1SHkxM0VBZl9PV3ZDdHdFRjgtOGdrYVBVWjdZYjhXVHBHQVdVMzV4TnZObkx2ZG5EelV2SUZJVGpIazNLdlBUay1SZU1aM2FkU0dRa0ZHSlpiTzNJQWs?oc=5" target="_blank">Токаев потребовал навести порядок в «Самрук-Казына» и избавиться от «бездельников» - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+    <div class="article" data-date="2026-07-24" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxObEtVTjIwbmhPZ2RGdXhZV3VtdTFDYUZFVThDX3I2cE5rZDYzcEwxUjVMSzh6a0syMzIySndSQXVNaUh3bVRMZUVGcnRwd1o4NkZkbDkxZzVWajRSc3FkdVh3NmxLMGdQaWlsZ0pNWVlfQmwzQzhzdEswRERWaUtlNlhzc2VhVDQ4MjRhSHM3aUdOYkY0THZuLUphZjlBYmpmVlBKdGpnNG9aWGvSAaoBQVVfeXFMUGNMX3c3Um1MVThKUnAyWU96eklOMG1rY3RuUWNYajdDSXMwS2FfTjNlbFdia2dXMEc3Y3BoNlB5Vm1adlJNMFk4Y1ZMLWJQdER4WjR0SHpXcVV3bFhnT1lnNkRZblRxODhHVGpuVVBEUFNRbjJCdWNRWldUR2xveFd3QVBlVnVEQVJHRGZSakVqS3JKdGZUOVJ1dHNJX2JSVDhKNm84bS1CNFE?oc=5" target="_blank">Глава АО «Самрук-Казына» Нурлан Жакупов провел заседание Совета директоров KEGOC - SKNEWS.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 10.02.2026 08:00</span>
+        <span class="date">📅 24.07.2026 07:00</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Токаев потребовал навести порядок в «Самрук-Казына» и избавиться от «бездельников» - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+      <div class="art-summary">Глава АО «Самрук-Казына» Нурлан Жакупов провел заседание Совета директоров KEGOC - SKNEWS.kz</div>
     </div>
     
-    <div class="article" data-date="2026-07-27" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPM09uNGdPaGlQLW1sbW51bU5yTG9udm5JakF5QTZLLWlRZUJqQ3JrRTBEN3FRaXRJclZMNEpzVGk3SkxfMkxDak0yOU5hVUs0ZHZVUXZxSjVTUjBOOVVQOFk5UFJFeUhCR0MySUhnZ1hZamYyMm1zMDhzU2EyTFI5RUlnU0tHZldYRldqM203ODUyOHBFeU4yNkhRTDV1SlRIRmVyc0hPT1JTLWfSAa8BQVVfeXFMTU81Um1fV2FZTGo5ZDhPWlpIOElmV0lENVh6VUdGY1ZWb1hYSThEQmI0RTZpNkkxakl0V1JhRkRxd3Rnd2EyUThwV2hwZ3dfcWpfcUN5dWlhalkyazJXcWNialdhOElfUWRYMWdpNzRXTEtYMU91UjBLRHVLRWRpdGZib1RYbTZWQjdBNUY2blBYdU9zdVNFLWY0bTZWR3NqWWtnMGZiUjE2TUV2VW5DVQ?oc=5" target="_blank">Китай вместо России: «Самрук-Казына» займёт 1,2 млрд долларов на новый завод - Ulysmedia.kz</a></div>
+    <div class="article" data-date="2026-05-05" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQU05wZmlITXplSnByclc5Q1haY1lGZkZrdXNpdVZvaEpJZDJMdjVTVkRnWkkxVmhfYXg0ZE92SEVxVUg1eFg5NVY5bGFURlhyMnNmSWhOQ3NGci1FcklxVGpqVkVZZUpZbUltUkswNXdEbVpLa1VWQVhoLVhuTDliYzRKamM0Q3gyamVZZVNIR201TW9VeDU4cDlLNkNVdUVTVGVId0RwTTg1bTcxYkczcThmLTBjdw?oc=5" target="_blank">Сокращения в &#34;Самрук-Казына&#34;: кто в KEGOC и &#34;Самрук-Энерго&#34; лишился своих мест - NUR.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 27.07.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Китай вместо России: «Самрук-Казына» займёт 1,2 млрд долларов на новый завод - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-22" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9iQkJYSGZlRV83ck9TNFduRFoxbTM5ZW5QUGpWR014Qkl2TnZ5X2hJZHNta3BpSkRGMFZESTdkTGIyWlRfNXNpN2o1U2NVcUtSbnRFRUc3R21icjVSS0QwcmMxcXhSMUE?oc=5" target="_blank">КазМунайГаз, KBR и KazFoodProducts договорились о сотрудничестве в сфере производства SAF - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 22.04.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз, KBR и KazFoodProducts договорились о сотрудничестве в сфере производства SAF - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-01" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNNjAzRzF6MHFyb0VfZ1dBUEVKUUJGcGpRYUpHNXpfVVZ0dGVTdmM1SjhEWnlmcWlwTThyRF9DR2xUWHJZNG1LNTJJbGs4UzQ1Q00wZDZEanhtdkVpdG84WU1nVm0ya3NZell4WDVyWlVEUm1Dc3UzRzhYZDJwUl9fLUFUYjlndw?oc=5" target="_blank">«Казатомпром» увеличил добычу урана и снизил продажи в 2026 году - dprom.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 01.05.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» увеличил добычу урана и снизил продажи в 2026 году - dprom.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-05" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOWDdiajVIeTRwbHBQcVllTVIyNklab01uSDVidVBLS3hfa0gycnNScFFRN3hqMjJGdk80bVFnYnFMVGlka1FkbXIzZVM1Szh4VF8yYXlGOXctRC0zcnlOSWlPRXNDbExtTk1EaG9HWEpMbnRxNGNMaXZVZDhzZDAyS3ktT1FOckstVWlYM0dXNEVWSXV3VEwwUUV2OA?oc=5" target="_blank">Почему «Казатомпром» снова становится стратегическим активом - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
         <span class="date">📅 05.05.2026 07:00</span>
         
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Почему «Казатомпром» снова становится стратегическим активом - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-21" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPbUlpQkdISmZZdFYzdE8wNzc4VkJkSGlFOWxCOENRcVN5NWhtM29kR0lYMnFFb2pvV0t3N0c2dzRpMDRoQlBqb2owZXBpLURmd1MzNVNZMUpRa1ZzWFY1MlVZQkRRcTJGTTM4bjNMa0xfbldDWlBhX1VFN1FoVllzN1RKa1RadVlEdWs1SEdnekNNczl6QWMyT9IBlwFBVV95cUxPSk9ObTRTS21EbnpGellRVXJPREstNklOVkUzSm9pOGkzMmhuQmxGeW1YNUpJb0RXZ3daTHV3dGgyVmNuUmdZYUZHdDBOQUNjRk45RTFEeGIwTUVVZlFfZGVrSlRhZXoxOFRqQVFRc3AwMmswUEtRMWRWYXJRamcxV19rcW1yNzhwY3llZ3VCQnlCUWEtTXdV?oc=5" target="_blank">&#34;Казатомпром&#34; потратил на закупки более полутриллиона тенге в 2025 году - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 21.04.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">&#34;Казатомпром&#34; потратил на закупки более полутриллиона тенге в 2025 году - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-01" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPV3VDU05nVklXb3pNTDI1eXVuck10RFpSdE42djZFU3BCNDNPZjNuUXA2Zlh4a0E0WWtUTDhlNHRBeWx4VHFVaTFPVkJFYjFiX1hhTDg3M2xPejJQdmIxLUtGVFZMRkxoM0p2S1pxTkRZUEtIRmNDUUhxR0taaXFfRHd1VEdMQ1hHT0pMLWxXX1NRaUF2dm1yRk1INmhTd0tH?oc=5" target="_blank">«Казатомпром» сохранил лидерство по дивидендам среди компаний «Самрук-Казына» - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 01.04.2026 07:00</span>
-        
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Казатомпром» сохранил лидерство по дивидендам среди компаний «Самрук-Казына» - Forbes.kz</div>
+      <div class="art-summary">Сокращения в &#34;Самрук-Казына&#34;: кто в KEGOC и &#34;Самрук-Энерго&#34; лишился своих мест - NUR.KZ</div>
     </div>
     
-    <div class="article" data-date="2026-05-08" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPUDdENHhuX2piM1NaSHV6LXdiOEItSVVPWmQ2SHFOR2lWRnVCQkZnUjFQcWZuaHVVQ0lIbmJOdWZrcmVYbmdBaXlkOVBWOUFySW0wMHhKRTFPal9DcUpCWXcxS0lVY2ZubzBfb2ZiZENSVUwzcWlNR28xOFZXVjA1eW83Wmx0X2Y4enNIa0hhV2lhY1RCSXl4WnNZMkR6UGIyU2hqOHREMnRYdlRLQV85TnNMcHhpdndWRnfSAb8BQVVfeXFMTVFNalVRYVB3NkVFUl9xUHAwUVp5alZGZWNqUnFDaFhPZU1JRGtkUV9QVUVDV3JybDduMVpNdnlfYVRFbzVydDhsYS1ldnRJbms0YUdFQnI1eFdPd3RLekdiS0VnbENhUkJ5cXZQX2QydkhTcDFDVFRncEFVMGpoQWNoRnMtaHczeUU3SjNOeVRhdlVoWnd3MWw5aWpRUzNqZGE4WjhORFFZVGhGYjBIVVI1dzRfYUROU2lvUnI4S28?oc=5" target="_blank">«Отказал двигатель во время полета»: появились подробности о самолете Air Astana - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+    <div class="article" data-date="2026-08-28" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQVmh3bWYxa0ZlbW5haFpuYkR0TjA0VU1mUFdMLUN4MFk3SEc5aVcyc2JNU0JNbzR4Wl84d2hKdzVoRmpzcWpYYnYzbmoxcWJQVHMwZTBhTm5zaTh3ajQ5Y1NnQW9pUVBfZ3BweEpiODdMTU5RSVA5QWZtaUNadDFJaEJVdnZnMHNiV3dKLWpHdDlMSzZyMGxDel9XN2pXejA5WHNYc2hwSTR5WFl2YzRuR0VBRnZzTENfUnc?oc=5" target="_blank">Дети спят на полу: казахстанцы застряли в аэропорту Дананга из-за задержки рейса Air Astana - Orda.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 08.05.2026 07:00</span>
+        <span class="date">📅 28.08.2026 19:30</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">«Отказал двигатель во время полета»: появились подробности о самолете Air Astana - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+      <div class="art-summary">Дети спят на полу: казахстанцы застряли в аэропорту Дананга из-за задержки рейса Air Astana - Orda.kz</div>
     </div>
     
-    <div class="article" data-date="2026-05-21" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPNEVPOGZycmo2bFNyU0otMDRYMFZiR0RLMER6U0lSVXNscXJmSVhQYmFGQXBYcEw2V2psX2dUV3ItdWNpTXM3VEczVGxvempGLVZNM0trSk1DNjdXWFRLX3kzTV9OZVpRbGlNU2JjQk1rVV93WlNfd1VRbWh2Z1RJYkN0MXRtR0NmR0Y1Uk1XYUF2RFE?oc=5" target="_blank">Казахтелеком «неимоверно» сократит офисных работников – Мусин - Bizmedia.kz</a></div>
+    <div class="article" data-date="2026-08-28" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOEwtTzR3STctSHl4R3psU2lkSVNSMEJLNl8zX0w3dmd0a1huaHdpREJUMDl4SkxrNkF2em9xTko0VkdyWDVNaWo4OG1GSzRFM21MUUpYakk0SnQxUXN5U3ViNVhSZUV3OVBzdEVhbkpKWkFDSjFrQmhJZG13MGQ0WVhEWE9ZZnVZRF8zUjNTMDhaeUFVWlZfOFVVaHlrb0FpbWdIQXJwcl81d9IBrwFBVV95cUxPNDdYWG5IR1F2N2FvSVhoSFZXS3pXNE54dHJnMkl2VlN6eXN1SDk1amF5d2hURHZDdmN2T2w4WUM5dERDUHNYRGlXOUxlaDVJaTZPU0NGdnJxNDZERVpoWHJWc1N4cktGVGlNN2JPbURZaC1mUHBSNUNMWWRLYm1fOFNyV3FLbmoxeDR6T3JmWDl4TUdlekdoNmx4M2VDOFNDZFd5V19CZWpPWC01VTZr?oc=5" target="_blank">Отель не дали, из аэропорта не выпускают: рейс Air Astana задержали во Вьетнаме - Liter.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 21.05.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 28.08.2026 17:47</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Казахтелеком «неимоверно» сократит офисных работников – Мусин - Bizmedia.kz</div>
+      <div class="art-summary">Отель не дали, из аэропорта не выпускают: рейс Air Astana задержали во Вьетнаме - Liter.kz</div>
     </div>
     
   </div>
@@ -237,15 +162,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-05-12" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQZnhiZkV2OWU1MW1pT0NPaFRUcDVtcV91S1ZuZlpUenlQZkdOLXVEdzNSNzVabkhEd1E2VDVZelNnOWdMbkRjNG41ZE5MOVAtbTVVT0RXT1BnOHdOY0lZTEJldE9DZjdaNWtvV0QxV1BzR2E1Y1ZLdERVejFDNVNwTmFmVGE?oc=5" target="_blank">ЧИСТАЯ ПРИБЫЛЬ «КАЗАХТЕЛЕКОМ» В 2025 ГОДУ СОСТАВИЛА ОКОЛО ₸147 МЛРД - THE TENGE</a></div>
+    <div class="article" data-date="2026-03-18" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPQmRwM0NiNlBCU3pLc1RSOTZUSXIzTENTdTB1TWRLVGxRM3dYVVUybG0ySFowRVRCaUVHT2JSTktjWmdMNkl5RWdPRWhnVmxGUUlSZWhPWHZ3OFhhaGIyZ2pQbUl0OWRIOEdiVVN2N0dXeDNWZ2R5TlljTFFRWVFqajZHcTk5V0tsRF9USWVFS055ejIzRGNzQVJOQnJQcUoyOTBQWFAyMGhrWGNDMXc?oc=5" target="_blank">«Казатомпром» работает над контрактом по поставке концентрата урана в Индию - Forbes.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 12.05.2026 14:01</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 18.03.2026 07:00</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">ЧИСТАЯ ПРИБЫЛЬ «КАЗАХТЕЛЕКОМ» В 2025 ГОДУ СОСТАВИЛА ОКОЛО ₸147 МЛРД - THE TENGE</div>
+      <div class="art-summary">«Казатомпром» работает над контрактом по поставке концентрата урана в Индию - Forbes.kz</div>
     </div>
     
   </div>
@@ -307,8 +232,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-10';
-  document.getElementById('date-to').value   = '2026-07-27';
+  document.getElementById('date-from').value = '2026-03-18';
+  document.getElementById('date-to').value   = '2026-08-28';
   applyFilters();
 }
 
