@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 29.08.2026 10:38</div>
+  <div class="meta">3 источников · Обновлено: 29.08.2026 12:55</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-18">
+      <input type="date" id="date-from" value="2026-04-27">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-08-29">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -88,6 +88,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -107,50 +109,72 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-03-18" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaG94bVg5T1NsR0VOSWZoVjhXTWg2VHNzRnZ3b3FkSkxuU3FPRl9yN0xtNUNQbmFZMHVmZThaZXdSTHFTdU1qNEZHbzhtbWt5eUpqQ2F6OGpsTVlmU0VOOVQzTTY5UWxlTDYtNzloT3lrY2JybXhpU1Vobl9UQ2RZQkFMSVAzcnZVRVE0WHlfWjFyT09KS1d2UXFYS2lqUUVSYXEtbU9aSlBrdw?oc=5" target="_blank">“Казатомпром“ увеличил производство урана: Токаеву представили отчёт - TengriNews</a></div>
+    <div class="article" data-date="2026-04-27" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9DUjBPemdTZkpBX3ZGOWl2OFU1RWFQc0xKemtNX3ZZTThWZzlwWER1dVFZTEozd3l4MkNrTzlvb3RrT3NXX0R0MDM5aWg3UWVlNXlxc1ljVGdPODdNaG5QWDJvV09mNm51THFJNTVJa21IdVp0TWt4OHF3?oc=5" target="_blank">КАК «САМРУК-КАЗЫНА» РЕАЛИЗУЕТ ПРОЕКТЫ НА 38,6 ТРИЛЛИОНОВ ТЕНГЕ - THE TENGE</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 27.04.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">КАК «САМРУК-КАЗЫНА» РЕАЛИЗУЕТ ПРОЕКТЫ НА 38,6 ТРИЛЛИОНОВ ТЕНГЕ - THE TENGE</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-29" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNUTB3Uk5LdjFLSjYwZlpFYTZqekVxclU5a1BJSDNqU2tuNzdxOHFNTTVVNEJ5RlVfUDFwVG5GVl9QUHpiWjdudjVoMC1EMDlHbTYxUGt1RDEwaXlqTmU2c2daenpDX0tmMnpGZHVieGhobXQ4Z2xFTWd6WExFN0lMdURmdmMwcEw2TnlDU196djZLakZtMFhMc0NOTXducXU5cl9xTTd3?oc=5" target="_blank">«Казатомпром» инвестирует в подготовку специалистов для урановой отрасли - Mail.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 18.03.2026 07:00</span>
+        <span class="date">📅 29.08.2026 11:38</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">“Казатомпром“ увеличил производство урана: Токаеву представили отчёт - TengriNews</div>
+      <div class="art-summary">«Казатомпром» инвестирует в подготовку специалистов для урановой отрасли - Mail.KZ</div>
     </div>
     
-    <div class="article" data-date="2026-05-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNUHhfSy1ZU3ZNQmhsam44eXJJanB4S01PeXRsQnJoa0tDRlZ5dGw0OWpyZHpFa2VzRjRUOG14R0FsMk1XcVNNTlRUcmJiM1l1Ujd2T2ZTamFTaFN2OFcwbktxTjRTaUNUT21ucV9PYjMtcmtZUUlZMnFMclVaYmx4M0QzUktpVGdzekNGNURaU0pFNEhHU0w4SnFpdmVoQ2JxNmo4czVsNlpIMTVLT1lwOHJvTzV5TW1RS09EOHUxYXRpRHZyYWFMU01n?oc=5" target="_blank">Сотрудникам центрального аппарата КТЖ продемонстрировали современные технологии модернизации пути - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-08-29" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPNTVEcmhHdEJaRU5NRGdSYlhvYVdQS3d3V291VVQ4S3ZzSUZGQXQ1d25LSTRxdGpoanNVNnAyd0FKN0otMGtiazdTWEprbWh5cHUyZk5MRnpXS201aVhZdVR1SnB5MmJqUGx2Z25vUTM2MHpSLXBNT1Z2MnRDVkxoM2cwNG1Ua0dyNGlvQzViQlRBd9IBkwFBVV95cUxNeWxRZW9CWTc5Q0swWll6VEdFX1lUZkZPV2ZZLXpHMjFiX2o4TjVBZW5iMEJkMzlzYmNxOEMxQ3dsMXZRdHgyVnBrTi1la2lGLUdGUEY0bHBLSGFCTVU1V0FNdnRpZW1HTEswWHhsZUUzTkNoUFdCcWRYdUEySmN5bzc3VHZ1LXBIRFhFVm0zMVcxamc?oc=5" target="_blank">Казатомпром открыл учебный кабинет для студентов КБТУ - Казинформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 29.08.2026 12:46</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром открыл учебный кабинет для студентов КБТУ - Казинформ</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-29" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPRHJMRmNLT0N2MWdGUXhDeFlMNzIyVnE4VkZ5dmVUOWpJZTJJQ1NlMG1pa1hPV2w5aFR6dnR2Q0ttdXFFNUtoLXg0bF9BUzhXR0g2V2NGaUx1S0tjcGFCWXJfQ0haQ0xSTVVqdDR1QnZpSFVVZ1hjbkdTMmZfSGE4c19ISzk2cTZPVDFrWTNpZmp0LXBtT1JqLWlCOERRTnp2ZFpTaUp4ZGxzVUF4U1JrNkdhRkVCQdIBuwFBVV95cUxQQTdJMWJHYUp5Nkd0OFdWSGVIeEZ1N2Y1RzBFTGxST2ZGN0RncVZ5aURJTzQ4bUZwSGF5VXNQZlV0RUJndlJtcVI3Y29IRWVsYWNGRUFxQ2xGR0ZveEctUVFPRDZ2ZzBVSndhc1F4X3NXNlFTQURONW8wRy1oVFJscXJCOERYZUJUS095cWtTNzFWd2VnUnVHR183NXNnSU9wcmpIcmdxT0Y3S1ZkQkVXZUR5c2xqMHNBejlj?oc=5" target="_blank">&#34;Казатомпром&#34; инвестирует в подготовку специалистов для урановой отрасли - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 29.08.2026 11:38</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">&#34;Казатомпром&#34; инвестирует в подготовку специалистов для урановой отрасли - Новости Zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-29" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQSHFXNEtQVlhKMHNyM3dRb3RTdFFraHZ3aUl2VWwzN1ZuaGZINUdxWDBCaE9Gbm1zWTlhZGY2ZXhDcGpzcU43b3FSSEw0YjZBbGJjdFF3THZwTlhjT281OUpMNE1maGdCZjYwME1lalpFejZBTDR2SVN5dFFnOURXa2JXUi1TbzNWY2VwVmY0bTc4Q1Q0NjhGNGVpbUxTU2RfT2ZYbWk5a21OYmZXTUJF?oc=5" target="_blank">КТЖ и Huawei договорились о цифровизации железных дорог Казахстана - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.05.2026 07:00</span>
+        <span class="date">📅 29.08.2026 10:20</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Сотрудникам центрального аппарата КТЖ продемонстрировали современные технологии модернизации пути - Қазақстан теміржолшысы</div>
+      <div class="art-summary">КТЖ и Huawei договорились о цифровизации железных дорог Казахстана - Kursiv Media</div>
     </div>
     
-    <div class="article" data-date="2026-05-27" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQdHVzb21mdEZvdDBOeUVCalZJTnBhU0JKRHVoakhIUTE0S05hWVlQRks4STQxT182aENWMk94alplTk80MzdRVU9jdl9NamlfRGVNVmRUeHl2T3ZjT052V3Q3cHlMSDJSaHJYWF92YW0tMUZvWXIwSV9RbWE2YVB5LVNXWDBDbjVlQXAxRzhreklRSTFfSVhmaQ?oc=5" target="_blank">КТЖ ведет масштабную модернизацию магистральной сети - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-08-29" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNV01BSl9IYWtfazl4enVJLXJ5Vk9Bc2JEdWtuaGdBX045NFlDR3hlRTJOUmJXcmdrWjRrcjVYSEJ6eGx2ajVXVVdMV3REREJHZG10Z3RrMzZTQXRYTjNiMmF0QnVuWk9GMzU3V3Z2XzU3M01VZmhUc1BxUGxYdjVHd1JtVWvSAYoBQVVfeXFMT0kwNklwRElMeFRKc0hybGlRazR4UlJsUkVEY0RoanRpdGc2bzR4dUlBREdWbUl5c0RQNHN2VjREM2plbVFyS1VvMW1YN2lyQ1NKU2VhZVUwcm9xMV91U2NlLXdBcnNMMmhuWDROVlFTX01OU0hDZERSYVpaSUZ5SnVPZnJJQjZXd2FR?oc=5" target="_blank">Huawei поможет КТЖ следить за движением поездов - Liter.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 27.05.2026 07:00</span>
+        <span class="date">📅 29.08.2026 12:18</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ ведет масштабную модернизацию магистральной сети - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-28" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUVZyNTNKMjJMUHNRMl94Z2lycm5NTWMwN25VVWF3TDJUX0ozcWNJcV9Lb0ZqaUVBajdPYS1NejJwLV9hX0hHTWFXQVFzMnJrMlp0NnhpY2dKcmF1ajJiUkhnRjZ5R0pLdkxFcUJpRUQxd2FwRTh2ZWZIeE1MN0I1MXBEckF5ajN1?oc=5" target="_blank">Всемирный день охраны труда отметили в КТЖ - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 28.04.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Всемирный день охраны труда отметили в КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Huawei поможет КТЖ следить за движением поездов - Liter.kz</div>
     </div>
     
   </div>
@@ -158,28 +182,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-29" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-08-29/svvo-ktzh-i-huawei-dogovorilis-o-czifrovizaczii-zheleznyh-dorog-kazahstana/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-ktzh-i-huawei-dogovorilis-o-czifrovizaczii-zheleznyh-dorog-kazahstana" target="_blank">КТЖ и Huawei договорились о цифровизации железных дорог Казахстана</a></div>
+    <div class="article" data-date="2026-05-28" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNd3B2S2xDT0hQcFZtbGpfMFFvdWkyRHpKUjMwOUQ2UDlvUmp4a0s5LTEzbWJ4T2NCcU5fQnZFTTZYWnRVRkZyYUlBYk9yRlJpZlE4bXktbTVUQjdtYndFZ1ByRFJWd2R2Vk1IeXczZVNGMmVuMXFJdjdSVTQta25iWUlrVQ?oc=5" target="_blank">Казатомпром утвердил дивиденды: когда начнутся выплаты - lsm.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 29.08.2026 10:19</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 28.05.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">КТЖ и Huawei договорились о цифровизации железных дорог Казахстана</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-18" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPRGdvMGp6UkxGR25TR0dFdUlWOXFwMFlueV9icmhyRDNmU0QxV0ZjcTA0Zl90b0JOQjRxbldUc0pya091NU5LelFFM0p4QUhUNUU0UVhwSFV3cFlUbGxnOVlySmhVMUc1dDRSZmhvS1JSQTR2c19rZE40QUFDQTdFeA?oc=5" target="_blank">КТЖ и ТЖД развивают сотрудничество - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 18.02.2026 08:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ и ТЖД развивают сотрудничество - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Казатомпром утвердил дивиденды: когда начнутся выплаты - lsm.kz</div>
     </div>
     
   </div>
@@ -241,7 +254,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-18';
+  document.getElementById('date-from').value = '2026-04-27';
   document.getElementById('date-to').value   = '2026-08-29';
   applyFilters();
 }
