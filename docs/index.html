@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 29.08.2026 17:01</div>
+  <div class="meta">2 источников · Обновлено: 29.08.2026 18:57</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-06">
+      <input type="date" id="date-from" value="2026-02-09">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-29">
+      <input type="date" id="date-to" value="2026-06-30">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,13 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -108,58 +104,31 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-20" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOTnFxT1JzLXN5bHptZVAtUDZHdG5sV3NIc3cyS093c29DMUlERDBvWVhiV1dpX2VZSXA5R3NZblVLaVdtYWFTOE16TUtzX0UtTHJOT0FleG1zV0tGQnNmVi02Qm5yc3pfYnhhanNvNTFWb2RIUERBRlBhQWNXSXg2VlFxNVByQnowbDNLS1dfbWE1U0NIV0g1c3dLYXBuZ0drMGV6STg1TmN2WE8zRUE?oc=5" target="_blank">«КазМунайГаз» готов выплатить штраф по Кашагану вопреки позиции партнеров — Bloomberg - Oninvest</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.07.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» готов выплатить штраф по Кашагану вопреки позиции партнеров — Bloomberg - Oninvest</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNWFFlYXRLU0FQQ2lPeWFkS3M5T2xVWEQtWXR0eEJBaFlwMVZlWXZfMzFiSVpHc2Zaay1mVVJFb2JFbUZqVjhJTmRrSGhVTThwSHJWb3NBSWM1S3RZVE1fd1YzUGR3UTRobUI0T1FtUVdoQ2VoX3hObnI3R0Jhd1pRRkhoWVg1TEN2NWJGRFowdWoxTGJSUEVYT3dSbDJ3TnhZbEFV?oc=5" target="_blank">Air Astana продлила отмену рейсов в Дубай до конца сентября - NewTimes.kz</a></div>
+    <div class="article" data-date="2026-06-30" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBGUVQtTm93WGdLNThRSzR0a0lMSEU5UHhJc29JaGdmUlpScVhzZjBCT2FHT2VSSEk5RzB6ZUZ4cmZHd1RNZjVFRkNR?oc=5" target="_blank">Суперкомпьютер, новые ТЭЦ и ИИ: на что &#34;Самрук-Казына&#34; потратит триллионы тенге - Ак Жайык</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 30.06.2026 07:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Air Astana продлила отмену рейсов в Дубай до конца сентября - NewTimes.kz</div>
+      <div class="art-summary">Суперкомпьютер, новые ТЭЦ и ИИ: на что &#34;Самрук-Казына&#34; потратит триллионы тенге - Ак Жайык</div>
     </div>
     
-    <div class="article" data-date="2026-08-29" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQVFhNVldDOEdsZnUxMGl4akszVTlncFM2b3d2ZEFQdFkzajhPY2JReWM4TXJnalZMMFNZVkhkWHFrVHE3d1U5WngwUTd5RU4wbHdZN3ZaTlVHT2JRQVEzeW9VdkhvVTd5dUZPUU5YUndvekIyUWRpR0paUXkzdTNJQTQtemU5SE5FSV9GSmtUOUJ5TWVsMmZtR0c3SVk2UUhpM19tWTNWYU5NWmdG0gGrAUFVX3lxTFBaaXZiNFg2YnpSNjBSMmJSamtrSExfMm9oa0I2OXdfNEVqM25tX0FpWGRwWklKbjd2RTd0a21JTWZ5a19odnl1aW5EUEk0NG9MSHZoanBmVnJ2b1BvMU02TldKbHhlY240RlhHamQ0emFEUnN5YVFWWjh6TkpWM1VEbWR6S1YyaURHczU1QndtOGVzYnlxRUp2cV90NE4tSkI5TjNPRmhia1hDcw?oc=5" target="_blank">КТЖ и Huawei создадут цифровую систему управления железными дорогами Казахстана - BES.media</a></div>
+    <div class="article" data-date="2026-02-09" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQVTJQMjZIYW8yRTVybzVFNUpWcG42SmNhRXg1NEhwVEtDZ2VWaE8xbG5DNUktZjhaa051cjBMUmlaY0ZSUHdJRFg2QmE0eFN1LTdTbXdsdFl0UldtLXN1Zzl3ckRtLWRYMXFhZmFTVWFjMUpaRW1CcTdoRHl6blR1bUlxeDF1NGMxcjNNZFBxY2NvNFBNVzRKSTBJWWJYUzR5TlpZRTlWTzJZZWE5RnNpZTJsbFE?oc=5" target="_blank">КТЖ и Eesti Raudtee обсудили перспективы развития логистических маршрутов - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 29.08.2026 16:01</span>
+        <span class="date">📅 09.02.2026 08:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ и Huawei создадут цифровую систему управления железными дорогами Казахстана - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-06" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxObXVKcmZxeW13RUlDbzczMWV6R0t5TkVaQjZ0alB6UUEtVnl5LThPbDdYcWM4dnJmb21MUnd3c3NtNi1WZXBCME45U1ZyNlcySGJIb1ZLOFhPazFCcnRKRmZKNFhDV29SYlNHeG00cUFnRmtSYUtrS2xvUFpFQWUzcUxxU0ZXaHFUb2xyLWtnWjlBbXZCUnhQRXY1ZFY0cDVwWjFaS1lCLUw0cFFacDRzbnZPaXlGXzFROWczem1uUlFPQdIBxwFBVV95cUxQOWdNdmdySXZhYWxPQjg0Ym96V1Jzc0Z4ck9ycmo3V29adExUUlRNMkJTc3VlbHQyRUFjQl91Mkk2TXJWbUllQlNTYjUyd3MxeF9VbElfaHhHYTNfb3R4WmYteDVZYWRpc3BzaU9xUWR2SkozYmxxYkx6bC1VWlNheHkxNDBXemZ2bFVGX0JRRkZlTjJ0a0IwRkM5YUEzWlZTcHc1enhDWnFEOHRpYzNTTzNHMDdNcVRodTkxWF9EMWVFLU1HQVVN?oc=5" target="_blank">«Казахтелеком» получил второй платеж за продажу Tele2/Altel в десятки миллионов - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 06.05.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» получил второй платеж за продажу Tele2/Altel в десятки миллионов - Kursiv Media</div>
+      <div class="art-summary">КТЖ и Eesti Raudtee обсудили перспективы развития логистических маршрутов - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -223,8 +192,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-06';
-  document.getElementById('date-to').value   = '2026-08-29';
+  document.getElementById('date-from').value = '2026-02-09';
+  document.getElementById('date-to').value   = '2026-06-30';
   applyFilters();
 }
 
