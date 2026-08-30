@@ -60,7 +60,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 30.08.2026 14:41</div>
+  <div class="meta">1 источников · Обновлено: 30.08.2026 17:14</div>
 </div>
 
 <div class="stats">
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-25">
+      <input type="date" id="date-from" value="2026-02-02">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-05-25">
+      <input type="date" id="date-to" value="2026-02-02">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
     </div>
   </div>
@@ -107,15 +107,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-05-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNNDcyeEFRdGNURUlUUTByeUhqQTNlSzUtRVJSd0xfUEQzWGZJbU9QVHdpcS04bmwwUUNCcnB0N1g3U194NVY0Q1pyYjdyUmVYUEJ6eVNmaTI1R0dZbVNlS3ZSUHRGcktLZGVaazV1OUtHWHJzbzVtMDdzWElXMllrSGVEbVNyczd5SHA4Sll2QlBVeGpkWkRTemtqdUZfTVZoWGFGVVNJUENyVDU2WC1qUXp5RjVjWHM?oc=5" target="_blank">В Алматы прошла международная конференция, организованная АО &#34;НАК &#34;Казатомпром&#34; - NUR.KZ</a></div>
+    <div class="article" data-date="2026-02-02" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNX0MwVExBLWxQLUh5R25NTHZ2WjI4Z0ljU19jaDhJcEEyZllzSEVvUE5Vay15T1lkR1JhRE1SdHN4ZlRwQzU0NC0yd1VRRFl0TUdfeEJSai1ZRm5QMnowQkpWUmtvbkZMYmc3QzhkSldiVzdNM3p0Zkl5VGVmQm95T1FiNFZvN3c2N0RubUozQ3VVd29laWVoUVBiSEw5LTIxeGI1NWo0azd0dVk1QzM2Y3VKOGdMbjhOYnZXVEZLeG5XdE4xVnh1Zg?oc=5" target="_blank">КазМунайГаз и Татнефть получили фонтанный приток газа на участке недр Каратон Подсолевой - Neftegaz.RU</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.05.2026 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 02.02.2026 15:02</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">В Алматы прошла международная конференция, организованная АО &#34;НАК &#34;Казатомпром&#34; - NUR.KZ</div>
+      <div class="art-summary">КазМунайГаз и Татнефть получили фонтанный приток газа на участке недр Каратон Подсолевой - Neftegaz.RU</div>
     </div>
     
   </div>
@@ -179,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-25';
-  document.getElementById('date-to').value   = '2026-05-25';
+  document.getElementById('date-from').value = '2026-02-02';
+  document.getElementById('date-to').value   = '2026-02-02';
   applyFilters();
 }
 
