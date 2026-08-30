@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 29.08.2026 18:57</div>
+  <div class="meta">3 источников · Обновлено: 30.08.2026 06:18</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">15</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">11</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">4</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-09">
+      <input type="date" id="date-from" value="2025-11-17">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-06-30">
+      <input type="date" id="date-to" value="2026-08-29">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -107,33 +109,181 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(11)</span></div>
     
-    <div class="article" data-date="2026-06-30" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBGUVQtTm93WGdLNThRSzR0a0lMSEU5UHhJc29JaGdmUlpScVhzZjBCT2FHT2VSSEk5RzB6ZUZ4cmZHd1RNZjVFRkNR?oc=5" target="_blank">Суперкомпьютер, новые ТЭЦ и ИИ: на что &#34;Самрук-Казына&#34; потратит триллионы тенге - Ак Жайык</a></div>
+    <div class="article" data-date="2026-08-29" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxObXQzd292NU1sQ1dtd1dyLWhqN01OMHNRRUFKdTRBUk9LRkxhNWZVUHc3aFRTZjFjeUwtdjFmRFI4djVaaHhfOGMtN2hMR0hvcERvZ3ZEMzFrT2tNWEMyS1VDcnBaTE9HMXpGZnBOVTA0ajZEWFR6R0ZvX0kwcU9DV1JWQ2V5WXNfSnpmM3hwNXN2VlFtUU55VmlfNA?oc=5" target="_blank">КазМунайГаз привлёк 3,5 млрд юаней: куда пойдут деньги - DKNews.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.06.2026 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 29.08.2026 18:54</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Суперкомпьютер, новые ТЭЦ и ИИ: на что &#34;Самрук-Казына&#34; потратит триллионы тенге - Ак Жайык</div>
+      <div class="art-summary">КазМунайГаз привлёк 3,5 млрд юаней: куда пойдут деньги - DKNews.kz</div>
     </div>
     
-    <div class="article" data-date="2026-02-09" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQVTJQMjZIYW8yRTVybzVFNUpWcG42SmNhRXg1NEhwVEtDZ2VWaE8xbG5DNUktZjhaa051cjBMUmlaY0ZSUHdJRFg2QmE0eFN1LTdTbXdsdFl0UldtLXN1Zzl3ckRtLWRYMXFhZmFTVWFjMUpaRW1CcTdoRHl6blR1bUlxeDF1NGMxcjNNZFBxY2NvNFBNVzRKSTBJWWJYUzR5TlpZRTlWTzJZZWE5RnNpZTJsbFE?oc=5" target="_blank">КТЖ и Eesti Raudtee обсудили перспективы развития логистических маршрутов - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2025-12-30" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1iVXVHd3RIOWVvTTQzc3FRR1lELTJ3SmYzUl93NDQzV0pRZFFsODhPcGNPYUYwdUYyWnNSaUZpMGlESms3X0Z2VXBpNTNVa09VOHhqanFMVkU2OWlqOHVrcg?oc=5" target="_blank">Казатомпром информирует о внесении изменений в Кодекс «О недрах и недропользовании - Атомная энергия 2.0</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 30.12.2025 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром информирует о внесении изменений в Кодекс «О недрах и недропользовании - Атомная энергия 2.0</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-04" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5nYWhvZVE0NnlzSmhlOFRyNmlfOWtKelZWeW4tWUVXX0tmVjNocGxyRjE0S1dBejNhcmNlMHpCZmgtbVhDRDd6ekNRT1FRLVdOS202b191REFJUHkzRFdKMw?oc=5" target="_blank">Казатомпром получит полный контроль над урановым месторождением Акдала - Атомная энергия 2.0</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 04.02.2026 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром получит полный контроль над урановым месторождением Акдала - Атомная энергия 2.0</div>
+    </div>
+    
+    <div class="article" data-date="2025-12-24" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9manF6aGxJV1BiRk9kcFprOW5nQm1QeUV2QUhmalFGSHVxeEFlYVVTOXFqb2xYN3U1VHctYjRma0lpdWtvX3NYbnZ5MzhnTTJ4SGdXc3NxTXNSdFNwakRLYw?oc=5" target="_blank">«Казатомпром» будет поставлять уран для трех АЭС японской генерирующей компании «Kansai Electric» - Атомная энергия 2.0</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 24.12.2025 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» будет поставлять уран для трех АЭС японской генерирующей компании «Kansai Electric» - Атомная энергия 2.0</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-20" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxON0QwWVdMYXNWZ3MyOVY4TUQwOEQ5WWFESjBNcW42ZDBNbTktWG9WYWtVM0hJZUppTVBxNVFIWHNmMzJuaFZwMk4yUTVxenV2U2JNMVZ5OUpQMGJYTlF5UDdjdm5rTWhUbGZtM2xVb2gyTU45MTJPUURRbGI0Y2MtN256bFJJaHQ1MTBvdEFiQzlSaG5xaGJaYVRtdzdXdXRESTR1dHdwZUotR3RpbE1oNmxB?oc=5" target="_blank">Казатомпром планирует крупную поставку уранового концентрата в Индию - Neftegaz.RU</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 20.02.2026 12:01</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром планирует крупную поставку уранового концентрата в Индию - Neftegaz.RU</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-22" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxPYURtOXExY21ycE5NS2Jpei1sR1NGbThlQ2ZETzA5VGU3SGlEWWM5WUFlTVBCZC1SelpfZGdITGI5REUwWXlDckFpc195dDVEZ3RrLWU4aklaUmE2VEhfNXVBM0s3X01FUjVHdTdTRVRMQmZrQjc4NjF2Y1ppTnU4YU1OeTFyZzJNd0pqRTgycGVoSlJ5SHZSblpYYVBickU3WUpYVF9sTHItZHVNZDlVRmpya3V3eVdNbHJRUXlLWkJtVW_SAcgBQVVfeXFMTlhJSWRXd3VuaV9TNE1wRDdpWUhWQ2tUQVExYXhtTTIwQ0g0c2U4NEU5UFg2b2lpU0pnMjRuSktPZVVRUk1hekF2TGd1dy1CM0FjM1YyRzVOWkVTeWd6OWktdlkyMFZkSlRVdG00YnpwdHJnUzFHbG90UkVTUHVxcnBObU5MdHZzOE5vM185N1VlNjgzQS1BUkV1YmdMbU80X0FWaWJiNzRMWEcxN09OcVN6Z0w5ZHVHWjNXeVNfazlUdms5UHF2N0g?oc=5" target="_blank">Иностранная компания покидает Казахстан: «Казатомпром» отрицает свою вину - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 22.01.2026 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Иностранная компания покидает Казахстан: «Казатомпром» отрицает свою вину - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-02" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFByNXd5ZFJPblFReWZVZVdvQ1BTVGdjaWhuQ2UzdGxOWGdOMVhXNVZWYm9xSW5iSzJ5VDJZTzlBRjU3YzFySUZxZ1hKVEdEbFFjS2gxN2pwMlhQRkNidjhyMjBTWEhOdks5a0xpcl9fZ0RPX3BpX2E5d3VRV3g?oc=5" target="_blank">Сколько «Казатомпром» произвел урана в 2025 году - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 02.02.2026 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Сколько «Казатомпром» произвел урана в 2025 году - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-22" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOTZtcUIxY0dOMUFtS2QyVm91bmk3d0oxRFdvVUFTMjA1TTBHVFJOeEZ2NGUtc21hWC00WnZWak05RWVIQVVGZmplSko5WFVCb1hseVlVUDY3R1NmUkZlajFHeGRid091ZnRaZ3N2d19DUWdaXzdwdFB6WlJHSTMyRG52ZUxQUFcwSHlRM0UwTzQybGY3SGZsWDVRaktBekVucEZjVHlKcTA?oc=5" target="_blank">«Приоритетное право на добычу урана»: «Казатомпром» — об уходе Laramide из РК - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 22.01.2026 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Приоритетное право на добычу урана»: «Казатомпром» — об уходе Laramide из РК - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-29" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9xYzhDazNpZXdtZE84OFVJcUtIc0JlR2g2dV9IYlBZZFVPQ3N0ODRJZ2tIZnliMG5RSVY3TWJMTWlmUWFMSlBNRUVKTDZGWGhfcE9wMTlueUVCR3NZWUJDY2F5MktfYmpkNmhnbm5HM3hXbnh2OUVybQ?oc=5" target="_blank">КТЖ и Huawei объединяют усилия для цифровизации железных дорог Казахстана - infohub.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 09.02.2026 08:00</span>
+        <span class="date">📅 29.08.2026 12:35</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ и Eesti Raudtee обсудили перспективы развития логистических маршрутов - Қазақстан теміржолшысы</div>
+      <div class="art-summary">КТЖ и Huawei объединяют усилия для цифровизации железных дорог Казахстана - infohub.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOc0N0NC1VbzM4TnlFX0lsblFLa21lb3Y2Wm5oYjlqWVVBdHpXZVg4N0NOVkt4VVNoNklrV25QQWRadGtQaGhzSFFfdmZrenVuanh0SUdRYjFMcHp5TXh3TGs1WmEyakt2eXN5WUdRTVdzWVgyamFsSmc2b1l2WnlWUzRKLVNHcW9wTUpqTkpJUFnSAZgBQVVfeXFMT055NUdzQzZPLTlxUXVRT29FcncwdVkyOExJQ2NUeXlkdE53aDM0NWg2djZrNWpSQU9xcDdMVm0xTXVvUnNPanNHZnFNcDFiblE5alJmM3FTNy1CbDBJUUJZRjYyTDdreC1rU3BOZ2VQVG5Za3U2UVVvNWlxbXJYdE9uQ0F5QXB0VzRwUWlHYVdFMi1VMnNZdHM?oc=5" target="_blank">КТЖ отказывается приписывать &#34;чужие&#34; вагоны - ElDala.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.02.2026 08:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ отказывается приписывать &#34;чужие&#34; вагоны - ElDala.kz</div>
+    </div>
+    
+    <div class="article" data-date="2025-11-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYm9DS013SUJ0VFBlblRpTXlXalJteGgtaGxib3RtWGoyX2dPUzFSOHNlU29hczM3a1hKYnpJWF95Zk12bDlRUEhJNEpXN00zNFlYNEpjUUtmMEVjQnpkMG85WmdzcmR1RnZmTTZSQ1FvdUZtbVJiSXFZUzRuME5XSzZONGhxVFplTS0xeGdyWUZzVTVjRUdYd1pWVTZOaXl0V3I3UVk5cmFVNWZRYjY0aUVDdDJQdVJ0VS1MMXhwM1paQlRoOE45YnpQaGZ1NjhzSEJid2JR?oc=5" target="_blank">Новости закупок пассажирского подвижного состава: КТЖ, ScotRail, Сан-Паулу, MAV, Vasttrafik, УЗ - rollingstockworld.ru</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.11.2025 08:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Новости закупок пассажирского подвижного состава: КТЖ, ScotRail, Сан-Паулу, MAV, Vasttrafik, УЗ - rollingstockworld.ru</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    
+    <div class="article" data-date="2026-08-28" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPTTBnNU1GRGtkZHNyVTJEZm5feDZNUG9IMnZGSkFPNTRtRXQzby1UTWxKM1I4TkFRcGpab3JTZjVtbkFTcVRfVmhkcFlEcFVKV2JLcW9JN2luTDhhYm1iTmJhVGhOenlPSF9lTEJna1BqV0xWbHlpYl9Fb1ZCd0YzamxZbXpmQWlZa2R0c3RqUlpKcWNUSnc?oc=5" target="_blank">Казатомпром показал мощный рост на LSE - Freedom Broker</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 28.08.2026 10:14</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром показал мощный рост на LSE - Freedom Broker</div>
+    </div>
+    
+    <div class="article" data-date="2025-11-29" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaV9mZHBIaHYwZFhvWTFBOWxjQ2ItS0hqdGlWZE9ZR2YtNVFPSFp4Q0dYaUhxVlhkY2VGMnVxZVN5WmRFNElvS0pFMDlidm1vRUwyYWFFdDVnejFvWk5UN1gwU2tzWFNqNnljckh6ZGtSNmVaYVlwVHBINENyV0JnSmlpX1VZSHJvMzVkdkl4QW9neG1CZFVJcDR6OWt1Q0wxcTNmSFFBNkpwd9IBqAFBVV95cUxOSEhKSUVCRFFXdENsWnpqMWlEWWhuNGNEWm5xVTdkeFI5Mk5LVjF5cW1UeXJnMm1DdFJfY01lYzNnbTRPaTJ2X0pWNm50VExveUxHRm5UOEF0YThsUXBteGhwZUM5eGpNdkNVQjh6SGFUbkdYNnd1VEhGODNzVU9NclFLSXQwaXZPSzhwajNIOFc2YXJEZ204V3MyOE1fNEtOUkU3V2xkRmM?oc=5" target="_blank">Казатомпром готовится к росту мирового спроса на уран и увеличивает инвестиции в геологоразведку - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 29.11.2025 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром готовится к росту мирового спроса на уран и увеличивает инвестиции в геологоразведку - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2025-11-28" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPaHYwUUdBUzFvNjg5QXk2b0h1eUdhUl8xbHpLall5WEZmWnluNXNycDY1T29DZ2xKUC1TNllIZXhWeXhtQkl2cW52Zm84QWp3SHRKYkh3a1A2X2VCNnZSSGU1clplSVBzaEhQejZsWGY2MzNRS0M4aWVaM25mMExyQ1VOV0JHOWhEV3ZmWkVvMNIBlAFBVV95cUxORVZHcV95NnZJeDVOcjkxRDZ6WGJQTEZRV1g5cUlvd1lXRHo4TG40ZHB1WmJFQlY0VUt3cFRVREJYaGY3RVlxVFJNbTBLTlcwN1dpTXZHMmZqb1VIQTlRa2JUc0dheG5HRFdLcE5Dc3VXT211UVVsOHJNcG93RUotb0ZkT3AzUlJSUGcwZVFPbVBXajhw?oc=5" target="_blank">«Казатомпром» готовится к росту спроса на уран - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 28.11.2025 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» готовится к росту спроса на уран - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-12" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWm9qTDZSZHQ5VzZYTEMzNGJjc1NIOGI1M3RicjVEOTJnM3BHTVNRcFNfcEh4Q05EM1h4NFBpVFIzYk9VUzBWZHdval9QbUFqQk54R1V4NTdCSmI5TFJlS253dG1BcUlBVEpaRlk0RzdvUG42WG9KdTFZWXgtMTNGd2VsR0ozTlFDVWJrTXJkWnBwcmt3SHNBLW5kN1JyOXVxdE5Rc2MteTA4cDU3el9Lc2RHU2RDb1lKUlpWY3ZPeDI5aTB4UVVVbGZfVDBMRG1sQXc?oc=5" target="_blank">RWS Wagon досрочно завершил контракт на поставку КТЖ пассажирских вагонов «45-й» серии - rollingstockworld.ru</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.03.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">RWS Wagon досрочно завершил контракт на поставку КТЖ пассажирских вагонов «45-й» серии - rollingstockworld.ru</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -192,8 +342,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-09';
-  document.getElementById('date-to').value   = '2026-06-30';
+  document.getElementById('date-from').value = '2025-11-17';
+  document.getElementById('date-to').value   = '2026-08-29';
   applyFilters();
 }
 
