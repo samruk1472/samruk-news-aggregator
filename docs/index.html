@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 01.09.2026 18:56</div>
+  <div class="meta">7 источников · Обновлено: 02.09.2026 05:30</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">16</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">13</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-08">
+      <input type="date" id="date-from" value="2026-02-10">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-04-08">
+      <input type="date" id="date-to" value="2026-09-02">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -103,24 +111,199 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-04-08" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNY3JnY1ZqYXNpU0VIc2drelAxeGc0blJmVHVJam1wOGRTYTBhdEUxUl9ZZkV4by1jaUFyb1pJODRqNlpya3hwVGM1bE5FWlB1RDVWT0dITndDS0VzamJGSTRuYjc2c2JjYkFBVlI4YTdWeFVSNHVxOHpwNXFDQTF6ZDhHSkdOZlU2RHhqYjJjR1JiV09NaGFLb3JodG0ycDdzZ0xQS2N2T21DblVFQm5Manh30gG6AUFVX3lxTE9Jal9XWWF5OWhhUXFuYmVNdGNfb01EWVBCNzk4eFlRc0VKd2lMZWMydmhoM3BOdVppcHNYUmJQSEJGdm8zQ3EyalFlVTduQVM2dUJSUXhkVlpkenh6d1JRNUFlZFVqR1pKaERKbzkxM0RLcmJqcV9kc3Y4TG90WHFZazVtbmdnS2lCS3l0UlBVSFpiNmZUaEtlR2U1bVNRdFJRM3ZyNkF0OHItd0dWdVJvRTR4YUNuUjZMUQ?oc=5" target="_blank">КТЖ рассмотрит возможность освободить экспортёров кормовой муки от штрафов - ElDala</a></div>
+    <div class="article" data-date="2026-09-02" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-02/lsbs-unikalnyi-neirohirurgicheskii-robot-stoimostyu-433-mln-tengge-poyavitsya-v-vko/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lsbs-unikalnyi-neirohirurgicheskii-robot-stoimostyu-433-mln-tengge-poyavitsya-v-vko" target="_blank">Уникальный нейрохирургический робот стоимостью 433 млн теңге появится в ВКО</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.04.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 02.09.2026 04:54</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">КТЖ рассмотрит возможность освободить экспортёров кормовой муки от штрафов - ElDala</div>
+      <div class="art-summary">Уникальный нейрохирургический робот стоимостью 433 млн теңге появится в ВКО</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-07" data-co="Казахтелеком" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUjgyTnhGT3hoVmFSVHFjeHFKaE5nUmJ2OG9XUC1NMkptM3JIRjdacjlvdHpKcno3YTNVb0NIX0k0Nmd2Sl92VkQzNjdDMUlNcTM5dlRNMkZ1dG9qNzc3UFF0NHJwVlRab2JCM1Z3LTFZQnJhVGFTQVRVZW9Yb0ZBOFB5M21LMkR2TUU2QThFVDBBcXY5dUZvNmo1SjYyaVhHOFptcTZELW0tWk5tVm9ycVQtVlkyWUJpc3dKMHRudHJzbF92WWpaV0hqaDhQcDZ1eWFPSFk1TlTSAd4BQVVfeXFMUENSb3ZOV3BsVTF4N0dFMWhxZnRkaFZWX09RVW9WR1hQY0tXYlNqeWlEUHg4Wm1RWENjUDVWTWd1NHdvQkVKSVQwbzY0UkhvMDdzaGNHdEtrejlIbUxKWThjTktHclg5NHpCcGV0T0NaZkFOV01YNGZuaHJnX1ZDSVZGSWFZdnIwLWwyOEJoOFhZNnN5eG5VdWx5SC1PVDR2QkVuSjdDbENvNlNFR3RMWFBTdE1HREk1dTBWUDdFaEJHZGx1XzVhWUtuSWJhQkNFUWpUVGo3N010dlVWM1p3?oc=5" target="_blank">765 киберспортсменов из пяти стран: АО &#34;Казахтелеком&#34; поддержало крупнейший турнир Центральной Азии - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 07.07.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">765 киберспортсменов из пяти стран: АО &#34;Казахтелеком&#34; поддержало крупнейший турнир Центральной Азии - Новости Zakon.kz</div>
     </div>
     
   </div>
   
 
   
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(13)</span></div>
+    
+    <div class="article" data-date="2026-09-01" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://egemen.kz/news/qtzh-zhana-astyq-mausymyn-milliondyq-mezhemen-bastady" target="_blank">ҚТЖ жаңа астық маусымын миллиондық межемен бастады</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Egemen.kz</span>
+        <span class="date">📅 01.09.2026 20:33</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">ҚТЖ жаңа астық маусымын миллиондық межемен бастады</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-31" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOR3ZiS3c0aTBqV2tPdVJrcnRsalRpX0lpdzhMSWZ2dmVfcGJvWVE3cXJicVR6c1VHcjJGdnR0ZmxtcVEtYWxlRTNVY1h3ZFlxOG1YQkVJeGx1WEhQZEhCQkt6WGVYZFZQLTJ1Uk1rNXBQWksyUFFRUktNZTZXNk15LXl3a0ZsMlJNYXc?oc=5" target="_blank">Как «Самрук-Казына» и «Байтерек» финансируют «дочек» через биржу - 7kun.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 31.08.2026 13:18</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Как «Самрук-Казына» и «Байтерек» финансируют «дочек» через биржу - 7kun.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-04" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYXU1MWVScUs4V0FOeWt4UW9XODZHejFvS0lLTFpBQkc1V29udy10cTlBUVJpVDVUNnkxTHZRYkw4Z1ZQc3pYbGk4bzdvVFR2amljSTJZM2JWZE1VZWF2bk9FcU9QNXZQOV9IZGM4a2EyM0NhUVRZZGNCeF8wMWl4aGdGZ2xWNkRBdTh2ekVUZ2R1U3M4Rk1ndm5xTU9MNUpaRzdlSGphcDdqZTdIejhhM043RmttRm1zcXFn0gHAAUFVX3lxTE12MmY0aUlNVWNpVWFJX2ViX0JvTGc4cnlRd3NnSEpjbU5OWUFjWEZYRDJieUNzX1lwVktJd01adjZxT0Q1c1RLOUdWRWlFbWxxbWhWaUhSbndBczZZYk1TTzRkVGV3YUxPVDNEd0cwN2F3cmRRa0VSbUc0bjRKTnhVdTgtWEhVWGlBT2hKOE11eGhqUTQwQndTbUloU1pFMEtqc000UGhqdGVOQ3Z6VjRPS2t0N1hLOUxZU040NmQ0Rw?oc=5" target="_blank">«Самрук-Казына» стал владеть 91% акций «Казахтелекома» - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 04.05.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Самрук-Казына» стал владеть 91% акций «Казахтелекома» - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-19" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE52czh5NklDQWR6RW4zUzJ1YVJHTkt6Qi05TjB3Vm1jbjFLNEZYVUh4S1ljbUtSN0tfOVhuNVJGYmxVZU9Sdm9oWnQ4UVpib2NMZ0hqRldmODk2ZUY1bnZ1Vldxc2R0SDFUeVYwUUdvZmVITTFjUVVJ?oc=5" target="_blank">Казмунайгаз объявил выкуп облигаций на $1,25 млрд с погашением в 30г - fr.tradingview.com</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 19.08.2026 09:08</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз объявил выкуп облигаций на $1,25 млрд с погашением в 30г - fr.tradingview.com</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-10" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxOMWhWaHM4QlRnN3Z5QmRRdDBDa3N6MlRGZ05JOW9WQ1U5RUtMVjBFb2tXLU92aGNfNjJqelFSYU0tbDVpekdJZ2hTWGFCaldmMVFacXNWY0lMRFBJd2x0UlVVbXRFMzJVZFRzb2stYl80VGVZQ3FFUXpzOXg4YUFNY3R6X1RPcHBNT0tRdDBnUmJyamRHdW4yUmR2OUtlSXdWT0p5TlRoMmRxRzBvWDA1YkhvbmVQb19JaVhKS1diVGVpdDFCUGtBQ29nNDA3T1N0ZWc?oc=5" target="_blank">КазМунайГаз усиливает поддержку отечественных производителей в нефтегазовой отрасли - ҚазМұнайГаз</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 10.04.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз усиливает поддержку отечественных производителей в нефтегазовой отрасли - ҚазМұнайГаз</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-31" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOTUtyUGhscDZwclBSV3NsZXZiTzdQbkRCalhOLUdrX0xkYWtWNVFvQkNjWUtxRUdLOHpCMVgteGc3RTRYbktVWk1ISXFoRFlXdjBvTGZ5UGJ6WE43N1huVC1qZm95VEduZkZSS0lqRHVndFBoM3FJNElqUWhXblk1cGtNSTktVkUtd1ZqNzBPcmFaTWRRVW9QbEg2QnVvLTZHdHMw?oc=5" target="_blank">Смена «экипажа»: что ждет Air Astana после ухода с поста СЕО Питера Фостера - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 31.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Смена «экипажа»: что ждет Air Astana после ухода с поста СЕО Питера Фостера - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNb25lRUdoaUpNNzZRSnFBVFdWeVVlZnotWlhBVnJhcFVUNU0xcm9pVWtLUlBDY3JWRFJpYTlaaVZKM1BFbzctalVEY1dSOXA1SGxnYkNRVE1hSjJaUkY4VjR1WVhiS19FZjBCWmtoQTI0dUpBTldab3gzbS1Jdld5bzczRWZKQ2RjRmpVc2JNNGxwaDlVcE9OWkpxdWJJTi02NlhmQmt1MHpIYkZWTXhJSVRn0gG3AUFVX3lxTE16c2prN3paZm0xLXR1U2VwNTJNeDExdGVOZ2hZOVpWM1BERm4wdlQ1YW1zdGNYYkQzWi1RWnN2YUNSODVwZ0JLYUc1X3NqUkVNelluN0hPQ01QS0ZJRFJZYzlmSENRZWpURG1mOGI5WnJZUFlVdUZoMXlPbEhuMXhIdHE1Ym5pUk5vclBRSE5pNGU3cGxuOUlBd2tyX3RJdlY5YXVEYnB3TlNtWTZEdXlfazI4M3RVMA?oc=5" target="_blank">Air Astana заказала 25 самолетов Airbus с опционом еще на 25 - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.03.2026 08:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana заказала 25 самолетов Airbus с опционом еще на 25 - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-01" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxORXRfZ3ZGMHY5cnVGcGZCS0tFaEpIYnpaVVk4ZGk2N29fLVVSSnNBYnZoeXMtX011bkpLMk4tWVpQejdGd1VNUnVVSFJMQzdYWHVQR3lFc0FIVGpGRk1EU1hCMFhaSFg5UUdxQTVmVzByakNxUC04S2ZfV1BkVE1RSmpMcDFVRWvSAYYBQVVfeXFMTzcxNHBFZU1vOEN2SkVQNWFNcUJ4aHc4c3VGWFZETnZsZEViaTR3ZFhjc2ZSMUN4Z2hHbHYzcXRmSHl4aXgzZWluWDI3XzZVQVQzbW1ud0RLbEltUEx5dDRKMG9rSlNGTXhrN01BVjU2NjNSRGp3MjVMci1VSWNnYXZfaEpZMXc?oc=5" target="_blank">У главы Air Astana Питера Фостера – последний рабочий день - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 01.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">У главы Air Astana Питера Фостера – последний рабочий день - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPb0tkdUZiVUF5cGFBclIyV09vOHg1aVJBYzRubmRZWjRyWGZKQkZCVTN2N243MmhobDlrLW5SZFRFMU11eXZnRUUwTnNTRW04NkdxSkZub2ZmYThid044TUUyTVVoN1o0UEVwZHdweDl0WXBGT2tDVWFIOGk0SFEza3J6bnZhQ3k3UlRJa2NJclVYYmhCZ1E?oc=5" target="_blank">Air Astana планирует вывезти казахстанцев из Саудовской Аравии - Masa Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.03.2026 08:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana планирует вывезти казахстанцев из Саудовской Аравии - Masa Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-19" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNSDVsWTFFUDZuajRITl9pZ2tNNllFMDJqdEtsb21zWmhiMlE3dUJQeHVxNENmbENJa3FtMkRrTTliZVM0RXcyX0VGLXRHWUZ4WlJoeDNzMWhmVTN4ZktaVTNmandGWV9jUXFJTkszeG1TUzBvWDFSck9BSFRIb2pHVDA4UHhVd0lCaU5lS1dTay1rU2V50gGTAUFVX3lxTE5QTG84N0VfZ0M4TjNUVVIySkN6UHZoTDUtTFNYOGlHaE9CX0NuV2haaUt6bDRIT1p5TW5JaXUwczdZVFV6djVHNzh6Zml2dDZPWUw4RjVyOUlqSXdqTVpFbi1DcjBKRUFTQkVaM0pVNXIyalNEM3FsMWpIWHB4M3VBRWtFOE42aW94d1l6VkJ2aDkxZw?oc=5" target="_blank">Air Astana завершила заказ до 15 самолётов Boeing 787 Dreamliner - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 19.02.2026 08:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana завершила заказ до 15 самолётов Boeing 787 Dreamliner - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNUZEWHJ0LThIbjBoZjlDT080aWRtamEzY1hrZXJHZ05CY2ZXNkZhdmdlbWdLZi12eVV1NXo1dHR2UU01YWd4Wm5NU2NudXk2WHhTbzN4Y0h4TDhtTnJWX0x6Z1BFbEVpb19aSGJuMlNsNWJpTzRXMWpOMF9pd2FjT2tFeUJ6dS1T0gGKAUFVX3lxTE54cUt1NVFBWHZodGI4b19NTlhVSl9xNU0xWnNlVzRuMEkwdm9BOUgtcG9KbHQtRC0zclBnYVpmNGZfNzhraHV0OXVYYWJfbm9JVktwWWI2bGw5V1hkMXBGVDUwdWNFVmtPdlF6ajk1cGJxNmI2aWoyY0VyaUR4LUFxdDRFLXNMVUlVUQ?oc=5" target="_blank">Air Astana приостанавливает авиасообщение с ОАЭ - Казинформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana приостанавливает авиасообщение с ОАЭ - Казинформ</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-20" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOeUpFakVKMHNPaEFtdTF3OEdzaDZNTDBwT19FM1FKOUI0V0x5cVpSVVR4RmFZaHpzelJCX3FDcVlVRU9QUVlQRWQ1UjFrM3FuVDFka01RSnRWWTlENWNtby1mSElMTlBIR2JmenlUU1BmajBVSTNoR0N6OFhoUFhGTFE2RVRQME9ydUk5ZTJmbllCSjkxMlFBdmw1ZjFncEFQ0gGiAUFVX3lxTE1iaEN2cGFISDI2RjEyaVZ4TjdCZ1NsUS1BbHFUUTVmVFFGX0NHODRDakdZT1JEcGJCQk9fWHNQUExuOGZOUVNIR0JDV0hCWjg3YTZHOXBSWGQ5RzJZT19sLXNQTFFQVDEzdVJjV3MxMzIzY1UxMkdSdXpuRV9aVHE5MUJyRW1ZOWNTTmpBc1g4TW56Sjc1NWsyNVVFdzlidW5nZw?oc=5" target="_blank">Только 6% мошеннических звонков перехватывает Казахтелеком - Казинформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 20.04.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Только 6% мошеннических звонков перехватывает Казахтелеком - Казинформ</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-10" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPVGIyWGUtM1d1ejMzUmpmMzFHVTRFMU9Yenc0OWlvSUdoU1RfQUN6b0JLdWIxX2I1NV9tNHRNdkQ4TnpBNHZ1STg0LTRTS0NLVHNGYlVKRjV0aXhmU0JocXRVeHlWWXhNUlBKZ2V6WTVLM082T0FjeVZWQzNIQlotZkk5V1Q3eW5oUGpsZEYteU13YklYOXFoOE9kQTdaaElDTjdPWnRUWFVkLXNmdFMwRjBB0gG3AUFVX3lxTE1PT1FWZmxwdVI4SEZ0SXVUVFdMbXM0NUYzdnVSM1FaVGw2QVNkNFBCN1pjdkVJdkNzNGZLb1owVzFzUUppcFZiR2wtakVGdnp5eGhpZ0lMdTRvOERHY1g5TF9KN3dQSE9yS0NDOGM0NVBQdXFNMWxwUVNZbXp6VFRXd3Q3TGZENFg3VEFOMHpveDBjMVNRVzZYclZnWU5iM2pjVFhpSXBIazRSSFNYMFNCUC0yQjVjRQ?oc=5" target="_blank">«Казахтелеком» построит мощнейший ЦОД на 50 МВт в 2027 году - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 10.02.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» построит мощнейший ЦОД на 50 МВт в 2027 году - Kursiv Media</div>
+    </div>
+    
+  </div>
+  
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-01" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWk8tRDZkNjh5UmQ5UEdUdnZoQ2pnUjVJWFloRmZraU5qNGVWcXdJcVI3N1d4dDZhS250YzZ0QlJFWUNRXzBJcWN6dnA1bjJvT2k3TnZZMUVPVV9oeW94UlIwRzlPSEFPcFJtc2NLU2RtNDJFY18yWWROR3VLQ2I5RmRsbWp3MTIxUWFj?oc=5" target="_blank">КТЖ и Citi обсудили развитие сотрудничества - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 01.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ и Citi обсудили развитие сотрудничества - Қазақстан теміржолшысы</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,8 +362,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-08';
-  document.getElementById('date-to').value   = '2026-04-08';
+  document.getElementById('date-from').value = '2026-02-10';
+  document.getElementById('date-to').value   = '2026-09-02';
   applyFilters();
 }
 
