@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">7 источников · Обновлено: 02.09.2026 11:54</div>
+  <div class="meta">4 источников · Обновлено: 02.09.2026 14:06</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-11-29">
+      <input type="date" id="date-from" value="2026-01-08">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-02">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -89,13 +89,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -112,145 +106,80 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2025-11-29" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFByU0FKeVJvaF9oa0p6RkFzU1NWOXloMXZSOGc4M1ByUDdZd0FBR0x1bEFGVXJ1QkZXU0NKY2dZdUw5WWR2SWxkaUFzNzJ0bzDSAUtBVV95cUxOT2MzbjQ5LWNYVmdIbXBmV291S2ZQdVpwWHRvYzg1LVY4V2hIUVVkQUR2dWdGUy1FSjBNZ1dUZzVKams0Mms5aGFkWTQ?oc=5" target="_blank">Air Astana и FlyArystan объявили о возможных задержках рейсов из-за обновления ПО для Airbus - Интерфакс</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.11.2025 08:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana и FlyArystan объявили о возможных задержках рейсов из-за обновления ПО для Airbus - Интерфакс</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-09-02" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-02/fvfv-kazahstanskim-kompaniyam-mogut-dat-nalogovye-lgoty-za-vyhod-na-birzhu/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-kazahstanskim-kompaniyam-mogut-dat-nalogovye-lgoty-za-vyhod-na-birzhu" target="_blank">Казахстанским компаниям могут дать налоговые льготы за выход на IPO</a></div>
+    <div class="article" data-date="2026-09-02" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-02/lngr-kazakhstan-megaprojects/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lngr-kazakhstan-megaprojects" target="_blank">От АЭС до ЦОДов: какие мегапроекты на $124 млрд готовит Казахстан</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 02.09.2026 09:36</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Казахстанским компаниям могут дать налоговые льготы за выход на IPO</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-07" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQYVluemtKWnZ1TGdoM3pGZTZtYnctVU04cVhOc1hhXzRRbHVqWDEySmwzSVc0WTZMS19VNEhEUGIyeGlYU3lmWFpVa1BXVUE4UmRJNmhtdGVJRVRNZzYtUXp3d2xJV3k3TXJITW5Ya1RRdlJUdFRMcU9mN1l0cWNXcHk1cFlOakZHSFVuT3pZOUVUSnVmQnpKLVN2eDJyV3lxMlNYdl8xempZZ2g3dGwzZdIBtAFBVV95cUxQSnJ3NDE0QVJZeWZHLS1SVlRTdGJlZld5N255dmxKNi11QWpEeVY1THJNb3FTbVpPQlJfUzg0ZFVhcnBIRHVXR2lUMkFvZktlWnVyWVZxSlNUbXFNdTd3MXVvelVUOWxtN29za3JCRDR1VE9fT0pQWTZ5Ti1yZTVjN05JNklESlNZaENTNl9ON2Q0WVpJMVNMOUtCckFuYXYwQ2h5d2FHcTdWRXdLSnhNMzJabE4?oc=5" target="_blank">Новые горизонты: общественный совет «Самрук-Казына» оценил планы «КазМунайГаза» - ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 07.08.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Новые горизонты: общественный совет «Самрук-Казына» оценил планы «КазМунайГаза» - ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-25" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNZzdNZU5YSzBiZnhhNG9zSmlkVDk2MU5IYnpzazJfUnhEa0NMajRqaWl6Qm45SkRuTXpwOFZQTnQ5N0Y3cllYWkhxOWVxVWM2NVVjeU1BWXpMLTh1bWFoa01ZWFhsYXUtMzd6cHlfN2hBQ0NPYTdhb0pYNGRnQzBSMHl6OE5JWGFaQlpqR1dRbWZwd9IBlwFBVV95cUxNRkhsMlNFSGhtVFo1UDZKNVhHUUZUajQ1RFB6akxaSFozeXBwb1V6ODlhTHVkdzlpc1RuSTFQazZwaHlMU1laaEE4TUg3VHFPWEkwd3VpV3lYQVFJbGVOOXM4M0t6TDlxUDdUOGRFeFYwOUluTTlfSDFYUWdmSUZkQWV0akJWU2N5UERrTkg5eFNaMTh6OFhF?oc=5" target="_blank">«КазМунайГаз» отремонтирует свои заводы в Румынии - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 25.02.2026 08:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» отремонтирует свои заводы в Румынии - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-29" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOQ25pSjJRdjRCWnBscWMzeEV6ME42UGJaOUEwa0tKVnk0TEpVT2t0YVdpbDVnZjl5bDhWeE5mdHBtTnVoT1k3THhDVWtKQzk1WG9UY2U0X0pKR0lBVGQ0Qkt1dlp1TXBMTmdMNHRRblY4WDJaWkVuTkFsUkZ0UmFSVmJTUWFBb0NJd3N0bFUtSy1PbzRGbE5ybUN4R3DSAaIBQVVfeXFMTU9nQ2ZqTDRNdVJpSG56LVRnQkpOWEhZdUhaYkoxdE00NkFVOFRBVWZpYUJoeFhUbEkwNkRmN3BKQzZXaG1ibm5MaXlWUUhmX2JueHRoSlRhcEctOUdiWmktMnRZbm13TFRkRzBmWW54Y0hnMU9qOWV1WUJOYmUxYnMtRC1IYzFSZ1hlLVduZEszV25BRXZHblExVDV2TFpsaHd3?oc=5" target="_blank">&#34;КазМунайГаз&#34;: НПЗ в Румынии принес $87 млн чистой прибыли за полгода - Report.az</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 29.07.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34;: НПЗ в Румынии принес $87 млн чистой прибыли за полгода - Report.az</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-03" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNWHVta05pcHRLcmJzMVFHaEkwdU52S29HVzlsTFRBUWdwQk9GVjB3Z25USENDcTlfbW9qeENnT09ncmtockFTNERrVWNZSGRpS0JENTFEVEdwRmZkS2x5emV1WmNITFRXcjUtR1hXa0otU3Nza0ctZnhiY1dyV2E2bjFfM2tlZzBINlBqMHI2YkFZSmZDSmhj?oc=5" target="_blank">Сколько «КазМунайГаз» заплатит членам правления за 2025 год - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 03.07.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Сколько «КазМунайГаз» заплатит членам правления за 2025 год - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOaUVHV0FKdnM1RjVDcEE3VEhhX3RKUS1VRnBjSkFiRlNJdXRycnBlR3Bsb1QwYUNzeWRaY3ZQengxMXNYWmhPWEtEYklwNWJjVXZ6d2RTNXpvT2lPUFYxZldKUTRPQndCU0RmcDZpRXF2ZE0xclVDdVowblJnOGZ5bjlSS2gxU0RxMWFnZUR5cEtrdzJVdHJwbkZZaw?oc=5" target="_blank">«Казатомпром» нарастил производство урана на 9% в первом полугодии 2026 года - ИнфоТЭК</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 03.08.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» нарастил производство урана на 9% в первом полугодии 2026 года - ИнфоТЭК</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-03" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPRl9xUVBnUUE3cG9yZ21YTFZiYm05RTB2MGUyTHpvb1VzNFN2Y0RTMkxpcHFBbUtVVnpwMG1DRkIyRVFkcXplX25JNU53Y2dfRUd0WGxyeE50dnlOcUpiZ1NURjlFM09USEszS0ExeVNyS3ZsLXlfdWFFYmduRUN0MGhHRWZFYUZDQnQ0VFAyYXVfYWprZmNWUUdNN3JuY0VyQzlfd3F4V05VOC1UYTJ5eTZyS0N4TFk?oc=5" target="_blank">Замглавы КТЖ проинспектировал реконструкцию вокзалов в Актюбинской области - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 03.08.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Замглавы КТЖ проинспектировал реконструкцию вокзалов в Актюбинской области - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-15" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxPVVZZMDNLZ3hURmctTUthZFQ4WFhJN2tCQ0NmdG02NmZQUHdsVXZ5Nl91Z2h5OE5FM25aNVBjU3hGR2JQVGc3UGxrYVc0U1NIekxCNVJnVE11anJVSjRSMDB1Z3BYOTkzdUNnWU4yR194cmV1akY1bGc4TmQ5VjlCWU5DSTZDVjZKNkNSRXJieWZFMXZleW4xcHI1b21PRE5Zd2lVNUNmbmVKY1RYeFd4dG1aY1RhSjMwTDQtMDNPOFVaam16VnVOdnRhNmR2RVlQOXFSN1p0Tnp5TjFrejkxQnhRMmNxb2R4bHdFTW1kbGZfdw?oc=5" target="_blank">Полная монополизация связи: как государство выкупило долю Нурлана Артыкбаева и окончательно подмяло под себя «Казахтелеком - Портал РЕПОСТ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 15.07.2026 07:00</span>
+        <span class="date">📅 02.09.2026 13:39</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Полная монополизация связи: как государство выкупило долю Нурлана Артыкбаева и окончательно подмяло под себя «Казахтелеком - Портал РЕПОСТ</div>
+      <div class="art-summary">От АЭС до ЦОДов: какие мегапроекты на $124 млрд готовит Казахстан</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-13" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQVWN1Zm9NSVgyMzdORXhJN21jVEU0YmlfNGNvZ19zbFVSQlM1VVlvOGZjakprV0drNmJDaHlSU3NjUWdyMkZrY0dlaVdMSWd2LVhXbEZONkFRNlQzMGtOWmVITVktWC1Dc2dtVFRrNlVIcU5oTDFRdXdnMHVzaVhuX0syQnl3eXpWRFBBbnRPR2xEaldPNDVoYmF1NndDMEQ4YjVJ?oc=5" target="_blank">«КазМунайГаз» нарастил добычу нефти и конденсата в 2025 году на 10% - Azərtac</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 13.02.2026 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» нарастил добычу нефти и конденсата в 2025 году на 10% - Azərtac</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNWTBNOUd2aGRRZzNXOTZFUU5tano0RTNEWU0wRnlSNC1hWEdLM2lQQjBEcXdZR1VpcXpvRjhzeGNSclFIVGdiRjg3SUJmWDhRUTlaUFpmNXkyWXl0ajBmcGJTMUlFcVFUUkpMM1I1dG1YZkQzejBVOFRYdENDUkUtazFzbGlYVzdKYWFidw?oc=5" target="_blank">SCAT заработала в 5,6 раза больше Air Astana по итогам 2025 года - tribune.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.09.2026 11:56</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">SCAT заработала в 5,6 раза больше Air Astana по итогам 2025 года - tribune.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQWXVUZE5xMWJNSXRrNDFPUHQ3T0h2ZmRsWVJ6amo4NVMxUHNUdllTTVh5dXNWRDlCUjAxT05oWFdRaHhPbjJTNG1jQUJGSXdVY3VDb3NBTDBqd1d6UlBvRjN3QllyQWlBSk9KRGNORS1wM0VmbEdQa18xNHBxVzNfR3lvUDkzSmpUcjBhSWhYTmdZV1ZDQldJQWV4S29odw?oc=5" target="_blank">Экс-главу Air Astana в авиакомпании Турлова сменил экс-глава Qazaq Air. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.09.2026 09:50</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Экс-главу Air Astana в авиакомпании Турлова сменил экс-глава Qazaq Air. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPNHdxZjMwVGFqV0VFdW1WLXUtelNNVjhlSmlqSThiM21CSU5MNjF4bGo2WlV1cjFrS2JhLWJMTTdFQzdDTmlleGwxQXRwX3JzcGM2NkxGaUZ2N3d6Sm41c1dPb1RUazA0UEl2TWtmQVN5Q1l4U0dfbmN3bi1jM1I4MzE5R0x1VUNId3oycUplYjJwalYyN1BiRtIBnAFBVV95cUxNRlpwbDhtRDVYTjRtU0c5cHdhektnWFI2XzRaT1Z2X3FLVW9vdHJ3VXVtWGVUX09YRjR6c0pFMlZCeE01MXM3d3V5WDBkak1WbjZ3RUpRWG1lRncwbmNwTTMybVIwRTNnRWlkb1RLcXdra2RkVU91aGNOd1V0WnhwNUU4dWhWY2pKSkNPR1haSjVlLXZVSVhkLTZ4bmM?oc=5" target="_blank">«Казахтелеком» проводит расследование после гибели двух сотрудников - ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 06.08.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» проводит расследование после гибели двух сотрудников - ulysmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-08" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNUVFHR2dwMzhzRTViNVRQSnBNTjdpM1gxNHZzQmpFc3VNcVdjd1ZYdEMtdlRON2FnRGZCblRzbFJkMWxfZXBaZUEtOVlSZ0JoaEFEc3VqVEZZcnMyZEpfcXVhbmZyYnZwUUNaeS11N1lKRG9KS2NVRUo2ckstVmVaUVFCdDVzQ0dvTzBOWVE2SUFiYmFzWk5nSXZJbGFWODDSAaQBQVVfeXFMT0MzbmxUVzhrZ1NNVzA0d0FNYWtoQUpCTDZrVGxTUWZKLURUR0pMMGppeTZsQWo1ZS1qLVJIb2FVT1c5bFBhZEF3NFowcURrR05tZGFaMDFyX3BGOS1VMUU1MGRHVHZDU0JCUjU2NUpmWE9tZ2pNWDc4MWtMSUQzampfRE02Y3FyMF9FTUw4Qk0xTGpEWGJEQzFaS3k0d013ZzNNcHQ?oc=5" target="_blank">«Казахтелеком» объяснил, почему январские счета казахстанцев окажутся выше - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 08.01.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» объяснил, почему январские счета казахстанцев окажутся выше - Kursiv Media</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-09-02" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-02/zhnb-eshhe-ne-postroennaya-kokshetauskaya-tecz-vyshla-v-pribyl-za-schet-finansovyh-dohodov/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-eshhe-ne-postroennaya-kokshetauskaya-tecz-vyshla-v-pribyl-za-schet-finansovyh-dohodov" target="_blank">Китайцы уже зарабатывают миллиарды на Кокшетауской ТЭЦ, которую хотела строить РФ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 02.09.2026 11:51</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Китайцы уже зарабатывают миллиарды на Кокшетауской ТЭЦ, которую хотела строить РФ</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-25" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOVTQxMUMyXzZ4QWpaZDJqNkd3enVySmFCSmhXWi1mRXlkTzY1UUpRV1dDVy1TVHVwdFRaYjlQZkRRSkhZM3o4d25xVDF4ZlNFUlpoVlQ5dkR3X2llZjJuWjlha0ZDd1kwZTJBUXFXejllWUw0aTkyanBBMjhVUjhpZVNYTXVqZVY3S3E0LUJoLXpoSVBIRUlNU004dUxFSWJQTi1ubXhfeWxKZXhvY1R1R2JwRkYtNktmMlE?oc=5" target="_blank">«КазМунайГаз» и TotalEnergies обсудили расширение сотрудничества в энергетической сфере - cbctv.az</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 25.08.2026 07:13</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» и TotalEnergies обсудили расширение сотрудничества в энергетической сфере - cbctv.az</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -309,7 +238,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-11-29';
+  document.getElementById('date-from').value = '2026-01-08';
   document.getElementById('date-to').value   = '2026-09-02';
   applyFilters();
 }
