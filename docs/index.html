@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 04.09.2026 05:36</div>
+  <div class="meta">4 источников · Обновлено: 04.09.2026 08:22</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">12</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">10</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-02">
+      <input type="date" id="date-from" value="2026-03-03">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-04">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -89,11 +89,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -110,119 +108,80 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-05" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPSFRpanRBdlA4LUxkSmN1Wk1xSExsUkIyM1pnZkR3Mk5IUUZMRnJMdG5BYzlWUVpTU1diTERobWtISzRRbUhFNG1tdXZXeGR2UExTUzZqR05qYk5vaG1SLVRNMXdBS2taRDJfeFhHX3JFV2xhSnMyMGVMWE52M0hWOHlVanNpYmUwY3E0bUlndnVrQTlxNzhMMzNCNURCTkFMRTdDVkIzTWF6dVpOY0F1RWpSQ3M?oc=5" target="_blank">Конфликт интересов в Rompetrol и двойная зарплата руководства? Что ответили в «КазМунайГаз» - orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 05.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Конфликт интересов в Rompetrol и двойная зарплата руководства? Что ответили в «КазМунайГаз» - orda.kz</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(10)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQVGhWZWhTaDUyQVZQM1poOExRRTFZcEdDY2JpSG1VVjQ0VFIwVnd4ZkpqRVBRUTl6b0lQOG9qN01iTFlzUzZNRVMyNnRkSW1xbnd5NUpnalRKd1o3aUdDSFJDNmJ4OEZPblMxYm42S0tnaUoyTWUtMmo0eVJhM01kam1vd2xDUXQ5WU81VWJ6d2RLeG_SAZcBQVVfeXFMUHk4Ny1NUGYtanFIY2FnLXVXTzF1aU1lekVkUkFTUVNOSEpUSHp2ZGZUZnhoTWxWMkNsNzBwdzdMZl9XNXBHeHV5SFc0eFNqS1lod0xGanZCWGdkU2ZnWEh6QVFpN21wWW95NmpJcGRvSnZ5enRNdjlvSFlXR3owc0QxYzM0Vnd6eGs0azNNQnJwcTdWODNGRQ?oc=5" target="_blank">«Самрук-Казына» может получить государственную долю ERG - ulysmedia.kz</a></div>
+    <div class="article" data-date="2026-09-04" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-04/ezif-ktzh-planiruet-zapretit-muzhchinam-i-zhenschinam-ezdit-v-odnom-kupe/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ezif-ktzh-planiruet-zapretit-muzhchinam-i-zhenschinam-ezdit-v-odnom-kupe" target="_blank">КТЖ планирует запретить мужчинам и женщинам ездить в одном купе</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 11.06.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 04.09.2026 07:45</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">«Самрук-Казына» может получить государственную долю ERG - ulysmedia.kz</div>
+      <div class="art-summary">КТЖ планирует запретить мужчинам и женщинам ездить в одном купе</div>
     </div>
     
-    <div class="article" data-date="2026-05-13" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNMU1RZVVmUkZJVUcyUlBNVm5ld2RuQVgwT2Z1TzR4eDIwaFA5ejdiWHRWT0cyRGtMeV9YUEtVS2RnbWZiT0QwMEhRNTlGM0xRUW5WZTFQZkU1aXdwLWpiNFdzTDBHYU8yb0VtSy1tYjQzamplV2lPQXc4V25ucUE2UFR5cGlwUG1tZkpQMGFEM29Mc0hwTGc0all3QlQ?oc=5" target="_blank">МВФ нашёл скрытый бюджет Казахстана в фондах «Самрук-Казына» и «Байтерек» - orda.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 13.05.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">МВФ нашёл скрытый бюджет Казахстана в фондах «Самрук-Казына» и «Байтерек» - orda.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-04" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQRlA4cGtlUWEzbV92TV9iZlVCLTd0Q05XbVNmbGhEVkZXY1A0dF81MjNvek9XSEUwSWRteDBvQkpabnRURkJZOXkxdmd3LXBTeFV3dnVWb2d6Tlp3RWF6RW5yM3hGYjlMUjZaNFFXZVFOYmZiVHl1ZnN0UzRZdlMyQ05B?oc=5" target="_blank">КазМунайГаз привлек китайских инвесторов для оплаты разведки на проекте Жылыой - pravda.ru</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 04.09.2026 00:36</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз привлек китайских инвесторов для оплаты разведки на проекте Жылыой - pravda.ru</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-03" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPTFdoV0hSWkpnRFpEMVdEQkxpUVhCQTZZNXZueXoxRGE0bmhLWlhuQms1UFloWjVYalBCTnNreXZSOGJxMHNCenhfUzFpLUMwQVBhWm9Td3E5bjl6aHYtLUh6NC1VTmRQdFFScnZtX2dVNk1RZndFRDNPNW5rV2k2VGppbzRTMFZEbmlfbjdPMlZEb2NZME4xZ3RvOU5UZ09vN250Mmt2WmdnN2FYcW9iczF30gG3AUFVX3lxTE5VekVEVm5XVThWQ1NBN3dJSWFMTUZ4LW1ZcmVwVDNremhIckJlOGFmVE5IYXBERmRKb1d1YjRoOWFJeVcweUJvUV9UVWFNTzk2aHpoMEpTbkNmbW9DbGJiY3M5VUQ1VUlla0FHYklvZEhiRkxsUmduT19iSWdrZTh1aEhhckJDU1RmbEk0dm9Jcmhncmh4a09jUXIwSm9Tay14Z2dyM3FvOVA0VXVpTTIyYW5XVXFCTQ?oc=5" target="_blank">«КазМунайГаз» получил 100%-ную долю в бывшей нефтяной компании Боранбаева - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 03.06.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» получил 100%-ную долю в бывшей нефтяной компании Боранбаева - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-31" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE5VaVVJdlVadFNnOWt2aS1aOFB4WVlSOUw4LURQNmVCUWNCLVd4dTU4OGVzblNvMUpIZmIyeENHSTdyYkYxSG5yVmhXSDJCSUlvalhKSExQNUs3c1BQYzd3cVBQS1R5UWt1VVlaQlNBUVlJaU5rSzA0eXBHSUtOUQ?oc=5" target="_blank">«КАЗАТОМПРОМ» КОМПЕНСИРОВАЛ СНИЖЕНИЕ ПРОДАЖ ПОВЫШЕНИЕМ ЦЕН - The Tenge</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 31.08.2026 21:22</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«КАЗАТОМПРОМ» КОМПЕНСИРОВАЛ СНИЖЕНИЕ ПРОДАЖ ПОВЫШЕНИЕМ ЦЕН - The Tenge</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-31" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQYUFDZWlsTElWWGZMNzNiY0xPOWNoRTNUYVg2RHRRRGcxbnV4aXZfaGJUZFh3RE9iMkVLeTA3c0hFSlpmcldEQURGRUtNQWN6ekZGNzRpb0VSRFFRY3BsYWlwbzRKQ29kcTc3a2M1dENDdWhUM3pLOXR0U1ZpS1RpUkhkUUNqUi1HVXFJRkhqYWJyU2p10gGYAUFVX3lxTFBtZmpLcXVjYktSQV9UQktLa2NQOFFXTDlxZFVIbXRob09RMnZ6ODBrMFJUUnZscUVpb1hkUlNKd1Nka2g3blFIeTI3a25YQUt0LXZKU0Rva1ZWaHZ1dDA0Mjh0cnFNcTZ1SzUxX2dxcGpjaGNfWEstZHRBbENQeDJRZ29sU3ViVU5uSVVBZHJGeHN3T0xnVDY5?oc=5" target="_blank">Топ-менеджеры Air Astana получили сотни миллионов тенге - ulysmedia.kz</a></div>
+    <div class="article" data-date="2026-03-03" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTFB5M1ZNbkVYSTVYZmZiTzNkVWxmeU9LV3hqdDZxY05YT3d6UW1GOU1MOTVUVTRvekowQ0ZCNERURjdXVVFzcWNiVko0MFI5Z9IBS0FVX3lxTE1CY3pKUXZTZ19NUVBKelhBYzdsMnpVTThoQVptcXBCYnltQ0NFRjJlM0hKb2ZEMzdoTTJnYmVidmR2LXJCUVg3ZGZZdw?oc=5" target="_blank">Air Astana и Flydubai начинают вывозить граждан Казахстана из ОАЭ и Саудовской Аравии - interfax.ru</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 31.08.2026 11:18</span>
+        <span class="date">📅 03.03.2026 08:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Топ-менеджеры Air Astana получили сотни миллионов тенге - ulysmedia.kz</div>
+      <div class="art-summary">Air Astana и Flydubai начинают вывозить граждан Казахстана из ОАЭ и Саудовской Аравии - interfax.ru</div>
     </div>
     
     <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9RQ3htSGNqaTNyYWw0UllnZkpYM0w5aGVSQllDODFBQ0tLVU9OWDRMblYxZmJIX19teVhaVEpOS0hvYTFWelNKNWdUbXVuelNrcm1PQnJMWk96SDdHSXcybzBmaVdqeG45RHhOOEZUWQ?oc=5" target="_blank">Air Astana возобновит рейсы в Дубай - Masa Media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBCNTYwLTN5UGkydlNFMXNRbjhELXNvTFJzaVpZSU5ZdEdLUFhyQXRZRnA2TWlmUmtaa0F4OGhONDZqZkNCYmZabU56aE9Sc3d1bm1fc2RXTm9YWFJXYlNXX0Q2S2lTaXM3dTFkNGJxX0lkZ0JXTHkyQmdiMzU?oc=5" target="_blank">Air Astana возобновляет рейсы в Дубай - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
         <span class="date">📅 05.06.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana возобновит рейсы в Дубай - Masa Media</div>
+      <div class="art-summary">Air Astana возобновляет рейсы в Дубай - Forbes.kz</div>
     </div>
     
-    <div class="article" data-date="2026-08-26" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPZ3FYOF80TmFQNnFBNjNpd3FHcC1pU2FDTUtJV0tnWERzbHFZZ2NfakxwSHlySkRfZmh4UHB0S2l6cjlEakdhT29XYTREQXNEUC03NnA4dGFURENWOE5LQW03UEN3QW1pazJxM0FNeEJzME5ZVnpXbEY0aTV5NEM1Ui1rTV82MFF1NDkxODVkN1pfcklUZ3Vpbi1tYUx1aVhVTXhWeTVMeDZhODhrdW1qRnIwOWVfSkNDS090dXlNeXpaNld2WnVJ?oc=5" target="_blank">«Казахтелеком» расширяет применение дронов для мониторинга городских и региональных объектов - ozgeris.info</a></div>
+    <div class="article" data-date="2026-03-19" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNbkEwSklGZ3dMVTFhbm5Fcksxa3RfTkpQdmF1WVd5YXFyUll2U2xicWk2SDF0UlpXc2FFQXAyaGI2SHRRMWFqQzk1VE4xOHVVbktPWkx2Q2ZzczNWRXlEbllUQTBOVFFGUjEzb1pSMHBxY0VvNVBMNkEyZDF2aHhUOWlIb9IBggFBVV95cUxQdW01V1pjYXlJV1Z1TzlHREJlYXBQOW1CUzZtZHB4WjlXb0EyVERxZDI3NnRmODBFX0d1ZGFmV3JEalMxaEZfVHRnOEpFeERic2l6TWFnQ3BOWmZ1WFpDOVoydnpYRHgxeUEtTnRkMm1mRjFJcG1iWFp0TU92OHI0OWpR?oc=5" target="_blank">BAE Systems выходит из состава акционеров Air Astana - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 19.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">BAE Systems выходит из состава акционеров Air Astana - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-04" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgNBVV95cUxPSnFoVnlXRTJXNkktZ3RFdXVrYnhRb3A0SGZTaWQycnp0MzdQOGlnaEVhM2RydGUwbUQzVks5dFFlOU5aUWpmNG0wT1VscmtPVV9uZE1vMUstTXBvYWtUcmtjVXNKWjRtcU5HRXlVbl9LZUVaNmZ1X1FaU0x4TTlabmdzT1prdDlYelZpbVFDZzR4M2xTeW9taThqaUZmRl9rZU5Ed3lOR1RrVktoNU9VcG80RUctTGtpY1lqbjdzZTZrWk5FSmoyaHF4b280MWhORVg1bnZNcEc3U0NCVW9vaDdsUmRYdmlSTW9Wbzl0d05WX25iUktudHdsU19fYlZSem83OGNEWDlwd0tzN1lCQWM3ZHRvVkEtS2RWYUI0REM3ODd0SVNIalBPWkk3cS1YdmtZbTdpdWNUNXlSX0s3d0Q1enh2S1hMd2tyT1BIS3VJN3BkN0g2cURDMVFoc2U4cVJITWZvczdYV3lqLVdPdW9LN05yUzQ0SU44YnNDbng0RUhZbExfdWlZVF9Rdw?oc=5" target="_blank">Тарифный круг: на что тратит деньги «Казахтелеком» - czhr.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 26.08.2026 07:00</span>
+        <span class="date">📅 04.08.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«Казахтелеком» расширяет применение дронов для мониторинга городских и региональных объектов - ozgeris.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-26" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNdUxqWTlEMXpYLUJ3WkN6MHR6X1I2elB5MVJnUmx4eEstOWx5cXlGZl9ENDJOTVpUVjhkLUdkY2o3Q250WjZnczdfM0wwbE1EWmJ4aTJLRGxUdlJMS0c5UDFrZ0Vwa2k2eEFhSWNfdnZCalBXYlF6LTJuNk8wdDlCR21GZl9RODd1R0dBcUJoX0NlTlJrd3NsMUxkckJocUFhZDlRSjNEY3B2YXVkVWMya25EVC05bjJBa1pWYkFKWElkUVFzU1V2dlVR?oc=5" target="_blank">АО «Казахтелеком» переведет более 13 тысяч абонентов в Туркестанской области с меди на оптику - ozgeris.info</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 26.08.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">АО «Казахтелеком» переведет более 13 тысяч абонентов в Туркестанской области с меди на оптику - ozgeris.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-02" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPODRyaFFOOHh0bkNDSmhpZXRMUVhXTFhjX1dxVEpvLU5SNW0xZUJMZk8yOUR3VlRhU1BvQ3JDb2xqdG5BZy1vUl9vaEVzNlZjZnNPU1RrNmMwNDI1bzVTOXhRM3E5UnFBSlB1NVFJVTEtWnIzelV2akxnZlBRSWNlcmV4cHJLZzNBamNkaXN4WFd3OVg2d1dTOWJB?oc=5" target="_blank">От связи к вычислениям: «Казахтелеком» объявил новую стратегию развития - tribune.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 02.03.2026 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">От связи к вычислениям: «Казахтелеком» объявил новую стратегию развития - tribune.kz</div>
+      <div class="art-summary">Тарифный круг: на что тратит деньги «Казахтелеком» - czhr.kz</div>
     </div>
     
   </div>
@@ -230,28 +189,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-05-29" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaDdFUW1QMy01ejBwdWR6SnZOSkV3LUlqM1JtNmMyTk1JclBXM3NDNm84SUJ5aVduZ3c3LTNVT0tRQXdiY3lTMGFqbkd3RlVWMEJRZmxyTFBVSGRPVkFlTk8tQllVWWRSWklNeVhXTGZUc2dUTEdVZUs0dTVCTG9UMXVJWXJHaHotM0k0?oc=5" target="_blank">«КазМунайГаз» почти вдвое нарастил чистую прибыль - forbes.kz</a></div>
+    <div class="article" data-date="2026-05-14" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPMWIyRVBYeDFCa2hpTWtjZnplelFOcnB1RGxrTnZKT0Q4WW00anY3MGo2SWVKTk10UVdDN2JRVWtRb2F1SGtSWDByUFU2RlNwVEhPSHNZSmVKODN2bG9TdXFhU2U0MmY0NHVDZ3pMUnZFdlpIVHVpYzktOWc1RnoxZEppWWMyUFZvQ2JrTXNWcnBTT0pVaDRBZXp3SEU3UQ?oc=5" target="_blank">КазМунайГаз планирует направить на дивиденды 350 млрд тенге - Kapital.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 29.05.2026 07:00</span>
+        <span class="date">📅 14.05.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» почти вдвое нарастил чистую прибыль - forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-02" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxOVFM4RE54MUwxTXBiXzA5TmpSQVo0QkxwNEN0WExpQnBUeGkyaTRJZ2d4MHRzTzJWYnhkaWRBS3ZrS1BPbzFialhoa0J0bk4xUHBrZEtWNUxxNy1FdmlVUUM0bzJHbjdtR1NpTFdrQ2s2QVJsanJ2cy1YaEZ6RGNkdzBUR253TU0?oc=5" target="_blank">Какую сумму «КазМунайГаз» направит на дивиденды - forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.06.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Какую сумму «КазМунайГаз» направит на дивиденды - forbes.kz</div>
+      <div class="art-summary">КазМунайГаз планирует направить на дивиденды 350 млрд тенге - Kapital.kz</div>
     </div>
     
   </div>
@@ -313,7 +261,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-02';
+  document.getElementById('date-from').value = '2026-03-03';
   document.getElementById('date-to').value   = '2026-09-04';
   applyFilters();
 }
