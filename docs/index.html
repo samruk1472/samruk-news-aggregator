@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 04.09.2026 14:01</div>
+  <div class="meta">4 источников · Обновлено: 04.09.2026 16:47</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">10</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-09-04">
+      <input type="date" id="date-from" value="2026-06-02">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-04">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,6 +84,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
@@ -107,38 +109,121 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(10)</span></div>
     
-    <div class="article" data-date="2026-09-04" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-04/svvo-ktzh-svyazala-yaponiyu-i-kazahstan-novym-gruzovym-marshrutom/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-ktzh-svyazala-yaponiyu-i-kazahstan-novym-gruzovym-marshrutom" target="_blank">Дочка КТЖ связала Японию и Казахстан новым грузовым маршрутом</a></div>
+    <div class="article" data-date="2026-06-02" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxObmxQZ3Y3Mzd1dHFxUTBab1QyTTN6Z0dMWXZTdnQzbnNtMmJXN28yYlJWbUdfSlNaVnNpdEtXQ1hTNkxYbkVQVExMSHNicWR5cU5vblNQeFpSTnN5YUhLc3RfVm5aY0lGNG9ZUmZtUnVRSm9kVFd0QmhLVTlBaFpCTTFsbGlQSmYzQmlXRmFHUXp6N25LRWxSWFNBN2V6ZWFhT3hYaHBoWXo?oc=5" target="_blank">«Самрук-Қазына» и компании из Гонконга обменялись документами по IPO КТЖ - Forbes.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 04.09.2026 13:33</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 02.06.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Дочка КТЖ связала Японию и Казахстан новым грузовым маршрутом</div>
+      <div class="art-summary">«Самрук-Қазына» и компании из Гонконга обменялись документами по IPO КТЖ - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-04" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPMjNRdkROSUxSck9vS1pST05mVGEzTjFmNkdhWElYT29aWU5qMW1fLXlGeEwzbVJXeTNIVjktTWZ1VFRGc1ltUmhRaE9rSjdlSG90ZE5ueUlsbW4zWmIxOXpXUlZ6bzFueFRHWU9QRXZDRVMtNF9FSGtra2pWdlg3YjI5a1hoSFFPWC1ITXpibHBNV1JEN0NwMkVZd1FqVk55Y29FM1E2LXAtRkRFdllr?oc=5" target="_blank">Казмунайгаз разместил пяти- и десятилетние бумаги в юанях - Русская служба The Moscow Times</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 04.09.2026 13:22</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз разместил пяти- и десятилетние бумаги в юанях - Русская служба The Moscow Times</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-16" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFAyRE1jZlZIVHhhT3lDbXRqYlNJejduMFU5SktWdF96RGF1YlQ1TENhZVZwMDR0SDV2NnNlakxNUUFGdEVIOTBkcDdsM2QxeFdOMEptc3ZqTEJ0SXIxWFJN?oc=5" target="_blank">КазМунайГаз-Аэро обеспечит заправку нового рейса Centrum Air по маршруту Ташкент – Костанай - Energyland.info</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 16.06.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз-Аэро обеспечит заправку нового рейса Centrum Air по маршруту Ташкент – Костанай - Energyland.info</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPQ1VJR05tS2o0Q3otZlNmZW9ya1o2WXYzenlKQUlLYnlhNjMxRXdGam1lY0hBTjRxNm45bmVJc2J5MnNiOGM2Z0RTV1RzemU2cHN0akN1Z0Z3bExrMUpoWGtuc3l3MEVtN2hZOVIzZW5WMkp3NGtTc1VxUWRKdTFZeG9Nb3ZCN1J4VHZsWGlnOTVUMHJDdjRIUmNlRzJqOHJJRGVhYzlyZVp5NXRMLXRoM21EUTPSAcABQVVfeXFMTlpxUjRsbHFQTElONkY2RE1TdWtNMHFJbkxMZmloNk5PTTZPczNuVDItUzd2SEhPV25FbExDMW5FTFVEN3phd2N5a3poNVktbnBtdk1lV2k3ckxWY2pvVGV4UU5QRnBnZF9MRndNMTNSekM1MDhpWFl0R3RneFlJT3VucFpfM2VaS0FsWGlRMUl4VC1vdURkVEFhREtSNnBFam1vX0RuLVVDQXVWSUtzRXY3Z2JjVG8xYVNzOTFXYzVy?oc=5" target="_blank">КазМунайГаз перенёс ремонт на ПНХЗ на 2027 год — чтобы не допустить дефицита топлива - rus.baq.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 24.08.2026 05:25</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз перенёс ремонт на ПНХЗ на 2027 год — чтобы не допустить дефицита топлива - rus.baq.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-28" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRmFZei1BbjZOdVg3a3lEZFlQNWVZR0VyTFdPRHUyMmxTWWw1Wnh6VTdmTm9BaW91c241RFprS0lvajFmcWxld0xGVFpYRmNWT0ZnbXNBQmE1aWtTQ1psejZaaFVBNUF1U29aMGo0TWlmUmkyQ0p3WmgzRExTczJ5SV9xM0dhbVpHdDNJ0gGXAUFVX3lxTFAyUlpsdGNyZjN4Z0dfVzRkQ2xJU1VRZ1U0V2hObi15R21jSzVkOWRMcklPWkRyYkpOVEY5cEI2WEZXN3V3eEszcWZ1M2RibUFRZGhZaVRjdnQ4TmNwVkNWQ3dPNVhxdmRvcUNhTkp1RXBKM3Y0clV3bm9KcERobVFPWXhVR2xPcU5CNXVPZ3ZrV3l6VnIxSXM?oc=5" target="_blank">КазМунайГаз привлек 3,5 млрд юаней на китайском рынке - rus.baq.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 28.08.2026 14:02</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз привлек 3,5 млрд юаней на китайском рынке - rus.baq.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNejVqSzVPWjdOTVBHR3FGNkNrRkQ5MzRFWk9JQTZaaHMwZXd0aWN2dGNMdXFGZnBMZ3pZMThYaG9OZUN3TEFkNkkweU1iWGlrVFRoQmo3Z2hPTGdILWJzbXZoSHR5a3VPcEMzdzFINHJWRWlJTC15TjdCNkdDNmxabUx3SGZfSmhEa3J5WHhic3VWdF9fc3NUVdIBlwFBVV95cUxOdEdqdVFNd09YYU9hdWYtd3hpXzZhZTUtN3FkUzAybkpmVjVFVHRJYk14aWdRVHZZZ29MaGZEVWthTFdITlU2SHVadWZjdUxIMmpRdHhwYk05VVNUbkJzZmxlSDhJX0lqZ2Q1TUFkdzJtZFlhcUdiQ2UydmlkOEJhZ1FxeGFpREJYOWRzY1pJaWdrMVp3MllJ?oc=5" target="_blank">Air Astana увеличила выручку на 16% и расширила международную сеть - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 06.08.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana увеличила выручку на 16% и расширила международную сеть - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-04" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbmxXSzJxUjRKNlBiY0pvODBCbTI3azhJUWxxTnlLOWxhWkNhQ0dNZWFiakxwWDF1NHc0M0lDM1duUU1YTjZPNHh6LURzbU5BZEllejZuR0Z2QWhicS13SDFXQWZuWTZhOUhZX2ZaZ3pNZ3FNYUhJXzNsUlJiRGJEWFlEU2ZXVGJWUnZFbngtamJ6cG9vQko3NjlNUXhnOVdsZ1QtNFh6NmQySURGUEN2V1VyRWlhVGdTOXVGTjVLRFlWQjd0VjBtMnNlUUw4QXZuSDhycGpQMzNhN0wyUE1sbGR1aw?oc=5" target="_blank">КТЖ Express организовало мультимодальную перевозку химической продукции из Японии в Казахстан - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 04.09.2026 13:02</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ Express организовало мультимодальную перевозку химической продукции из Японии в Казахстан - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-04" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQS28tOVJmRmZEQnV0a3VocUJCZkJTLUY1a3BhZUk4dVlwZlhLUW5JWHFQQXN1anhLbWFFcjFER2thZEthS2R6a1A0TjNtRXdpemRPVGZFZG1WNW45YUtDX0Zyei0yMk04ejR4ZU03WEl1SUFSamlxUGplN000Z01oRzg4a0hWRkVGSXpvOElTakJidERuWjJHd2hray1aMC1IaENoaE53?oc=5" target="_blank">«Дочка» КТЖ впервые доставила химическую продукцию из Японии в Казахстан - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 04.09.2026 15:36</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">«Дочка» КТЖ впервые доставила химическую продукцию из Японии в Казахстан - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-04" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNT2RleXNsd3FEeWd2aTdjVktZaUhLendlZVBjRzh6emRlU0R2Rkt6YWlOSGFweHRCcDJoMzRfa21nUlNQU1c5ZjFsbG9qQTdvSXJNUUZjQkg4b011UWdmcGdEODU0eUZzN2lwYUIwemM0STRUczZNTWQ3cVRBRDZuZVJDRXJsRDU3cWhpSjI3dFVQeGRFREFuWGk3ei1DR0NiYXZ3?oc=5" target="_blank">Новый маршрут из Японии в Казахстан запустила КТЖ - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 04.09.2026 13:37</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Новый маршрут из Японии в Казахстан запустила КТЖ - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-04" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5XbngtQld0cWJEVHpJVHh1MmRzRGJ1dEZvVlJrZVZPci1CRHB3dU5Tc0lqNk1GWm9pdExGQktoRF9CQlRHNmlveDBR?oc=5" target="_blank">Шесть тысяч километров морем и по железной дороге: КТЖ открыла маршрут из Японии - Ак Жайык</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 04.09.2026 14:14</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Шесть тысяч километров морем и по железной дороге: КТЖ открыла маршрут из Японии - Ак Жайык</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-09-04" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://vlast.kz/english/70767-the-week-in-kazakhstan-happy-together.html" target="_blank">The Week in Kazakhstan: Happy Together</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 04.09.2026 17:20</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">The Week in Kazakhstan: Happy Together</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -197,7 +282,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-09-04';
+  document.getElementById('date-from').value = '2026-06-02';
   document.getElementById('date-to').value   = '2026-09-04';
   applyFilters();
 }
