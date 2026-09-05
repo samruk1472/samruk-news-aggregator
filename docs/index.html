@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 05.09.2026 15:50</div>
+  <div class="meta">3 источников · Обновлено: 05.09.2026 17:45</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-06">
+      <input type="date" id="date-from" value="2026-04-09">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-05">
+      <input type="date" id="date-to" value="2026-08-31">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,11 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
-      
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -106,36 +106,31 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-09-05" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/obsshestvo/70773-nedela-v-kazahstane-scastlivy-vmeste.html" target="_blank">Неделя в Казахстане: Счастливы вместе</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 05.09.2026 14:24</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Неделя в Казахстане: Счастливы вместе</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-06" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQY1NKSDNaN3ktcm1MY09yeXNTT1ZCMVBPSWNGd3pubWlHUFVnYXhiSkFwVVNodGczVUFwemFHTnRHb0NuRlFZelVkd09CYjRNMXNxeF9vSlRiSXNUZEpmV1kzNHdncW10TVFpYXc2MWgwRVNLRVhsLVhDelQ4Y21yLXMxb3RqUGYyRUtLZC1B?oc=5" target="_blank">Контрольный пакет ERG перешел к фонду «Самрук-Казына» - Forbes.kz</a></div>
+    <div class="article" data-date="2026-08-31" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNYVp1Nl81M05zc0Z4cWNPVldJa2NiOWUtdUkzY2thWFV6ajlsZTI4cmZiVDBheVVELXU1MlNmcHg4ZG16dUxaa2RDLWowSXBKV2dMRjdLOGo0NVFxZDNCOEpKVWlnVTB5NXBfeEFxM1BmZVB5REtNYkJxSURnMjhsaEtLdExieUNnZjdyQkd3WGh5TTlGSGJiU2RoRVQ?oc=5" target="_blank">Казатомпром: итоги за 1-е полугодие 2026 года от аналитиков Freedom - Freedom Broker</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 31.08.2026 07:30</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром: итоги за 1-е полугодие 2026 года от аналитиков Freedom - Freedom Broker</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5peHRPZV83YmZidU00U29UZTQwSG1BTkd0OXBvQzFVWndydjhyVWtfcVQxMDZrLXVvZndCLVZkZ21DX3Q4ajJrZWNHeHp1WkhFSzdrX1dnaDNyQW5Yd0I5ZU5pWjF1Wjc4Y0c0bGE5R3lCQUVZU1BFbHNLRjI?oc=5" target="_blank">Работник АО «Казахтелеком» погиб в Костанайской области - Наша Газета</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
         <span class="date">📅 06.08.2026 07:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Контрольный пакет ERG перешел к фонду «Самрук-Казына» - Forbes.kz</div>
+      <div class="art-summary">Работник АО «Казахтелеком» погиб в Костанайской области - Наша Газета</div>
     </div>
     
   </div>
@@ -145,15 +140,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-09-05" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70776-kompania-ogaa-i-dzumanbaeva-postroit-elektrostanciu-v-kurcatove.html" target="_blank">Компания Огая и Джуманбаева построит электростанцию в Курчатове</a></div>
+    <div class="article" data-date="2026-04-09" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOQVdsVm1Mc3A5dEx6WmNvc3ViRjlORmpoaWxhYUpiMTMtczBzRG4ySDMxNmU3Ul9vaDZIR0V1UVZVRUlaa21Wa1NJdzR2Z2FWUUlkYkFGTVJ0UGZmWlFJX3M1OFI3SzZBVTI3eDBEUzBYNUhXUElvbDlib21EMkxUMUdwZDJWQllrUU9JcFFuYW0tbmsybDhZYmUybjNZV2ZQQ0ZLYnNZY2p1NUxzZXFiRXFfRGkzSGFRSnJJUw?oc=5" target="_blank">Самрук-Казына разместил Panda bonds на 3 млрд юаней с доходностью 2,18% - Русская служба The Moscow Times</a></div>
       <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 05.09.2026 16:44</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 09.04.2026 07:00</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Компания Огая и Джуманбаева построит электростанцию в Курчатове</div>
+      <div class="art-summary">Самрук-Казына разместил Panda bonds на 3 млрд юаней с доходностью 2,18% - Русская служба The Moscow Times</div>
     </div>
     
   </div>
@@ -215,8 +210,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-06';
-  document.getElementById('date-to').value   = '2026-09-05';
+  document.getElementById('date-from').value = '2026-04-09';
+  document.getElementById('date-to').value   = '2026-08-31';
   applyFilters();
 }
 
