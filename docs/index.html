@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 05.09.2026 17:45</div>
+  <div class="meta">4 источников · Обновлено: 06.09.2026 05:36</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-09">
+      <input type="date" id="date-from" value="2026-02-25">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-31">
+      <input type="date" id="date-to" value="2026-08-07">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,11 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -109,49 +111,88 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
     
-    <div class="article" data-date="2026-08-31" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNYVp1Nl81M05zc0Z4cWNPVldJa2NiOWUtdUkzY2thWFV6ajlsZTI4cmZiVDBheVVELXU1MlNmcHg4ZG16dUxaa2RDLWowSXBKV2dMRjdLOGo0NVFxZDNCOEpKVWlnVTB5NXBfeEFxM1BmZVB5REtNYkJxSURnMjhsaEtLdExieUNnZjdyQkd3WGh5TTlGSGJiU2RoRVQ?oc=5" target="_blank">Казатомпром: итоги за 1-е полугодие 2026 года от аналитиков Freedom - Freedom Broker</a></div>
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPQ0RlNndzcDhoc3NWS1BYcU9TSGpHSERoZnlGOHZIaTBlVnhPdXNMZDVNNXJtU1hWYW9HWHVzYnlIT200NWNyTVRyUldMd0FUTV9JSlJkel9kQ1VJbWY3VzZiQ01ZRXRadzNkWE5ZRWIyREItS2M3RHJlOWI5a2pBM0VNOElqV29xVkNueFY5WWowWjlRQ0RlUNIBnAFBVV95cUxNMGxHUUJpSDhfaGI2VkdZQ3E4UndCZFM1ckNkLVBlbmFXZjNLMWJMa2plcjJBSXlveVEwOGN0SFJIWUx6Wk9WNUVFNzdsSkh0V2ZDb0tzNWtranZLRENKSEFZUmk2NVNBeTY0TTV0aFh3SGs1TlYzQ1dlWGVyb1N4eXFqVDlxR2M4WmlzcW9DVldBeFlpQkdKRlZ2WDA?oc=5" target="_blank">«КазМунайГаз» опроверг информацию об ультиматуме по Кашагану - ulysmedia.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 31.08.2026 07:30</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 07:00</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Казатомпром: итоги за 1-е полугодие 2026 года от аналитиков Freedom - Freedom Broker</div>
+      <div class="art-summary">«КазМунайГаз» опроверг информацию об ультиматуме по Кашагану - ulysmedia.kz</div>
     </div>
     
-    <div class="article" data-date="2026-08-06" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5peHRPZV83YmZidU00U29UZTQwSG1BTkd0OXBvQzFVWndydjhyVWtfcVQxMDZrLXVvZndCLVZkZ21DX3Q4ajJrZWNHeHp1WkhFSzdrX1dnaDNyQW5Yd0I5ZU5pWjF1Wjc4Y0c0bGE5R3lCQUVZU1BFbHNLRjI?oc=5" target="_blank">Работник АО «Казахтелеком» погиб в Костанайской области - Наша Газета</a></div>
+    <div class="article" data-date="2026-07-31" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQVVtV0NNZ2ljWk5qdkVHUkIzQk1sMkFMUWgzN3M5R3ZBYTJqMndnRTFSUzR2a0hYTEgyNGxGZXJfTjBjMG0xNXFvOEVhVi05dEFTbWtyVEtKd0lQUE40VU15Rms3T3NNNWxSLUU1VE15MEQ4UXBqMFk2VXo1UjZMVGJMdEhFV1FQTkdzb2tuZi1FaExGc0s2bXp4d01nX3Q1d0tDZ3JURkgwQWlReWVYNXBvSzBlS2Y0VFZCVE5YcC0xRHdfakcwaFZINjh6MG1oc2c?oc=5" target="_blank">Казмунайгаз и CNPC планируют увеличить мощность казахстанско-китайского нефтепровода - Русская служба The Moscow Times</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 31.07.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз и CNPC планируют увеличить мощность казахстанско-китайского нефтепровода - Русская служба The Moscow Times</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-31" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1XQ2JPQndKMmZsZWdlY3ZtWGYyaEF6V252VHB2ZWk1bjEzLU9LdGtrT25LbnhubEw4QWFpNEk3Q2w3NHlXbURsM0V1dlFmbktqS1dvR1lSd0ZzUlVIWkk0RGpSb0tGQV91MVNR?oc=5" target="_blank">КазМунайГаз и CNPC обсудили углубление сотрудничества по ключевым нефтегазовым проектам - ҚазМұнайГаз</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 31.07.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз и CNPC обсудили углубление сотрудничества по ключевым нефтегазовым проектам - ҚазМұнайГаз</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-10" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOMjhZNm10ZXJhWnd1QmU4TWpuVTFMaV9EVExiLXBmNWRSeW02eXJxa2JoYUJISm5hN0hCSjUtY1JFaFdnb2kyMm5zOVhJTWlvR0lsVVdYeU5NczRsY1dPeEtrQkUyd29yVGN2b1ktSEJyUXJ1UXlUbVMzb1A1MFpZRFpOOEl5WGg3MjA1TThiS3lvRXFuWG1jcEVRZ2k0bXMzUEMwWjNPWUVUX1NnSW1OVk1RQVA?oc=5" target="_blank">Air Astana приступила к выполнению прямых рейсов в Шанхай - Mainslot88</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 10.04.2026 13:17</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana приступила к выполнению прямых рейсов в Шанхай - Mainslot88</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-07" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNcTRPWlByTzgtdHhaaGJSMGRzOWlsZ19Sd3FrZXlDLTVNN2p6bU1TdkRtN1Exa2cwME5ldTROT2tFZEJ5YzZxNEY4MERjSTA2bjB5cEdtUjlyWjNOY3kwYjBCV211STV2ejFTOFlKaVF1c0YzTzJFSzVMVm5CLTBrcjZYdmVScE9RSmJBSXA3XzlRMGJrTi1Wa0YxMUtSSkJzOGcxQTduS29UUFFfU0V2YUNZcHo4dVkyS28xaHZjZVp2UWdJc3FwZU530gHPAUFVX3lxTE42ZFZYcGlqUDJZZU44Yl9mMDhXSjI4QnlYSzg5NF82allDcW1lUnNRTTQySE9wb1FlYnJUQ2dWRUUzSWw4MERSY2xVVE01bFoyYmZmMEFCUlVGa1p4R2M1T3lrSVN0cmZPV0JDcTM5NU5nd2d1a2toeWg3c2ozUGpRWUxkcHBadmpvOXQyRkxxVTZwT3BrOFAydGZ5U3V2QkdfMEVTSHlyRTl0eGhVM3JoOVlMcUNUeU5RNXVXdThjWHdHUzlpUko3dXZWVXhzNA?oc=5" target="_blank">Ожидающая вагоны Stadler «дочка» КТЖ получила более 25 млрд тенге убытка - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 07.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Ожидающая вагоны Stadler «дочка» КТЖ получила более 25 млрд тенге убытка - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-02" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxNRl9MOUp5SndKck9tZzd3UlA4OEZtNkNIWDh1NmtHd1ZBUGRRVzZHc0hTVnJnWkx0YjN3ZTVWbzdWZWlHZkc4VVhXUjdNX3FGREhESGFlbTZXcTY1VzMtY004d1VkRkRkckNnVkF3NTFxakU3SnAtdTNlV2c1Rk1EMU45ZVVNeFhieVR4NGg3VmJNbVdrdXBBdks2Q2Jyc2JEZUpSUDRhRG0yYnhLRFZYdlJfVkpDUzdiRVFxNnRB?oc=5" target="_blank">Безопасность движения и производственные показатели обсудили на совещании в КТЖ - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 02.03.2026 08:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Безопасность движения и производственные показатели обсудили на совещании в КТЖ - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-25" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwJBVV95cUxPd2RGOWJ6cTRDOEJWWThwUmNrZm91NHlBaGNjNzBHdURHY05aQkI5a1VHX3BBZlRBck1WRGpGcDhsSlRBTFJ3b05tYmR2aFdJdlpwaWd4bmtLcER0VmNmYXRtQ2dKVEplZlVWSGFaV3l6bnFNTlp0ODB2blJCQXZ0V3NiWnZHWGpjZDFuT05oRmpyY19kVVljT2hjS3R3VEtqbmJ0S2JmdXJhbWRiZEt5b2dBNmM4bTE0WFAxUmQ2Q2FobjMxVllUSHNJMGROcE4zeHo0QXM1cnpjeXpLSGxCenZLbm5uYnFuSEdKeTIyVy12YnY1ZUh1RG5TdVduNFNlM2NzZmNTSDlVZm8?oc=5" target="_blank">&#34;Казахтелеком&#34; объявляет о переходе к новой стратегической модели: от оператора связи - к инфраструктурному провайдеру ИИ-экономики - NUR.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 06.08.2026 07:00</span>
+        <span class="date">📅 25.02.2026 08:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Работник АО «Казахтелеком» погиб в Костанайской области - Наша Газета</div>
+      <div class="art-summary">&#34;Казахтелеком&#34; объявляет о переходе к новой стратегической модели: от оператора связи - к инфраструктурному провайдеру ИИ-экономики - NUR.KZ</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-04-09" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOQVdsVm1Mc3A5dEx6WmNvc3ViRjlORmpoaWxhYUpiMTMtczBzRG4ySDMxNmU3Ul9vaDZIR0V1UVZVRUlaa21Wa1NJdzR2Z2FWUUlkYkFGTVJ0UGZmWlFJX3M1OFI3SzZBVTI3eDBEUzBYNUhXUElvbDlib21EMkxUMUdwZDJWQllrUU9JcFFuYW0tbmsybDhZYmUybjNZV2ZQQ0ZLYnNZY2p1NUxzZXFiRXFfRGkzSGFRSnJJUw?oc=5" target="_blank">Самрук-Казына разместил Panda bonds на 3 млрд юаней с доходностью 2,18% - Русская служба The Moscow Times</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 09.04.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Самрук-Казына разместил Panda bonds на 3 млрд юаней с доходностью 2,18% - Русская служба The Moscow Times</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -210,8 +251,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-09';
-  document.getElementById('date-to').value   = '2026-08-31';
+  document.getElementById('date-from').value = '2026-02-25';
+  document.getElementById('date-to').value   = '2026-08-07';
   applyFilters();
 }
 
