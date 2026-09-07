@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 07.09.2026 05:46</div>
+  <div class="meta">4 источников · Обновлено: 07.09.2026 08:49</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-27">
+      <input type="date" id="date-from" value="2026-06-28">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-07">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,6 +84,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -107,17 +109,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    
+    <div class="article" data-date="2026-09-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-07/zhnb-svyazannaya-s-vagitom-alekperovym-kazahstanskaya-kompaniya-otchitalas-o-milliardnyh-ubytkah/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-svyazannaya-s-vagitom-alekperovym-kazahstanskaya-kompaniya-otchitalas-o-milliardnyh-ubytkah" target="_blank">Один из богатейших россиян не нашел нефть на участке Аль-Фараби в Казахстане</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.09.2026 08:43</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Один из богатейших россиян не нашел нефть на участке Аль-Фараби в Казахстане</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQNXdOdVpBRHBpWElUeC1kSW9XMVEzTjZtWjhHYk9Vbk9vN0tuOVVOb2ZSTHA5Y1ZTVEt2WlZjcEJYRlVjVGpCakpxdVVndkNZRTdnWldRX2lmWUJtM2hJTHdaMGxra0YtVENrcFVsVVNzVURYNzFrTDBtZnJrdzhNNHNZei1JR0w2V1JXaE1wMl9Ra01kZnlv?oc=5" target="_blank">«КазМунайГаз» зовет CNOOC в каспийский проект вместо ЛУКОЙЛа - Vesti.az</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.09.2026 08:37</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» зовет CNOOC в каспийский проект вместо ЛУКОЙЛа - Vesti.az</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-08" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQUVJ3X2txV1ItbDJiQ24xRm5iMTNwSnhkLVBPNEVETi1kWjBMejdER0hwbHB2c0YyWHcxVWZ6TU0zM2VqdzloMlhyZUJvQWR2clhzeFZCLXYxcXIwck1ud1c3OVRub19DWDYxQW43V3I5Yk1ZNUNfZ1FWMUM5alpBOXJPVlRMQkx0QnFiYUgyN3pEWUMzYzdQTDYteFRyNkpYODZHMnhoZ0NYUGZHRmNz0gGuAUFVX3lxTE9CLWM2UkQ4VXZ5bjFVNWl3aklSNEFIa2NLeTVhSG9xYWNXYnZuSXZaZEZhelNPdnozVVR5YTg2M2hsTGRsQjNsRzljRzl5OE1sU2loQVNTR0NoMzliQ1N4bWhINkxFSW5MX0o0bWR2akN2cFA3YkFSaEx3RDV4TkVJYVhMUWJpUzBQaklYS3VQdmw4cUNSYXRRdFlIWktja0ZWLTNXcklLbGlEUHhBQQ?oc=5" target="_blank">&#34;КазМунайГаз&#34; пробурит 26 разведочных скважин в рамках новой программы геологоразведки - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 08.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; пробурит 26 разведочных скважин в рамках новой программы геологоразведки - BES.media</div>
+    </div>
     
     <div class="article" data-date="2026-09-07" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNZHNSN1o1Q2pDdVhxeXhYOXhFWUdUcm1fYVZnRXo0RlEwM0FPanVYR2t1R0dTTWlSSnVNVEl0SHZielI4Nm1xNGx6bXllR0VaZGVrbWlzemFaQXI5cnczQmtDMEszczd3TWNGOF9aSFpaX09KYVNxOTkzZUZlMUduYXpNVlNIOWQ4Vm9HdV9USlJDMmJ1VlNrTmQtVi1mZ18zbl9HcjJR?oc=5" target="_blank">Более 30 сотрудников КТЖ вступили в книжный клуб BookStation - Қазақстан теміржолшысы</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQUmpudE1lZ05XZUswRXhpZmpWSTJmUm84bU1CdHg3d3lGMEphY3lwdWFjd1RKRlh3dEJrcFctUjNyTFUzS093cWJDNHhxbl8teElMaWVtUHdNbE9mZGdwbFJuREZYbWtOR24zUGhXTC1aTXpjUXQ4LXRWakNRRlVMemtNN2R3ekxrWEctOEF5bHJIWmZKbDRFUTBoSl9sS05BTzN3?oc=5" target="_blank">Перевозки зерна нового урожая обсудили в КТЖ - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 07.09.2026 03:41</span>
+        <span class="date">📅 07.09.2026 06:16</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Более 30 сотрудников КТЖ вступили в книжный клуб BookStation - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Перевозки зерна нового урожая обсудили в КТЖ - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -127,15 +162,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-27" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTFBBWEp4YnZ2YlUxSXlZMjBzVC1IRVVSTlF1MVVkUVRuMUd5Rkw3VUdHaEt1LW9CUVlvNlZraUgwSXlxaVd4X1pTLWJqdGE?oc=5" target="_blank">Казахтелеком заключил 19 офтейк-контрактов в 2025 году — Тазабек CA - Tazabek.KG</a></div>
+    <div class="article" data-date="2026-06-28" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQT29DR2JmanFZemlKcS1Dc0hlSm1fbGhmcWI3M0x6c1VfcTlWMHJaNzA1WklDbFQzTUY0Y19CY0o3a1hDblpQTW5jY0RubGt5SVZqVVliTGZ0QmxoU2dMRjltVDZ4eEswYzQ3ZzM1VHJSVWJmcmctam1JaWZmUXh2VHhDUjRyeGw0QUI1TDBBS1NpUENnMEpNbEpQZW9LeHd2cERWWURsWQ?oc=5" target="_blank">&#34;Казахтелеком&#34; запускает новые услуги на базе SDP-платформы - Kazakhstan Today</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 27.08.2026 07:00</span>
+        <span class="date">📅 28.06.2026 09:24</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Казахтелеком заключил 19 офтейк-контрактов в 2025 году — Тазабек CA - Tazabek.KG</div>
+      <div class="art-summary">&#34;Казахтелеком&#34; запускает новые услуги на базе SDP-платформы - Kazakhstan Today</div>
     </div>
     
   </div>
@@ -197,7 +232,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-27';
+  document.getElementById('date-from').value = '2026-06-28';
   document.getElementById('date-to').value   = '2026-09-07';
   applyFilters();
 }
