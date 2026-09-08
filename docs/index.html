@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 08.09.2026 11:55</div>
+  <div class="meta">3 источников · Обновлено: 08.09.2026 14:09</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">16</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">12</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">4</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2020-06-27">
+      <input type="date" id="date-from" value="2026-08-05">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-08">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,15 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
-      
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -110,141 +104,47 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxObjZUUjNYYUtCSm5yeEt4eVVhUnNBSld6bFdxVmVVX0FWZm55QTN0YlFJSFhYTTBMZC13TjIzNWswSW1PTXFFbmdsSGtiUFlyeWZtVUU3WERtQTBoenBNbWhSeUpYTmk3ZjdoN2dsRlFvU1ZIQzBsSHB4Q3U5VUNTcTZYU1FoUG42?oc=5" target="_blank">Как Air Astana противостоит мировым кризисам в авиации - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.08.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Как Air Astana противостоит мировым кризисам в авиации - DKNews.kz</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(12)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-07-13" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE50c3IxZzM1SXp6bGJicEliWEJmMjBXd2sxWldLS1JQWXdEYnB3Z0FJaC16LUNTLWhWbXlaMWdSYWJxWkwwSWRmRGdHYnhXYUZsQnk0VGl3WTBxbGJMRXpjZGI2czVLTFlxQjBKTTQ4QVNQVTA5?oc=5" target="_blank">«САМРУК-КАЗЫНА» ВЫПУСТИЛ ОБЛИГАЦИИ НА 3 МЛРД ЮАНЕЙ - The Tenge</a></div>
+    <div class="article" data-date="2026-09-08" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNckdyYTZRTmwtT0lNTlcyazdMQ2M0cDFEa0k0dVB1UGt0M19fd0o0OVpmT0JCZi1uWlo4LXdaRXU2X2dIUW55SVZoLURZTWdfcEVLM01PVUpuX0JxVnFSSjhFRHFKbUwtZnpkVjhDMTVoZEJaYThpQ3dtelExZFJ5czFRc0Uwa2NBM0l6VlhqYTFrSUplTTRZSndhM0NfcF9uVHc?oc=5" target="_blank">Новый CEO Air Astana Ибрахим Жанлыел получил орден «Кұрмет» - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 13.07.2026 15:24</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 08.09.2026 11:41</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">«САМРУК-КАЗЫНА» ВЫПУСТИЛ ОБЛИГАЦИИ НА 3 МЛРД ЮАНЕЙ - The Tenge</div>
+      <div class="art-summary">Новый CEO Air Astana Ибрахим Жанлыел получил орден «Кұрмет» - Kursiv Media</div>
     </div>
     
-    <div class="article" data-date="2026-08-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQTTYyUnVDN2Z0dzZNc2FfR3JMWU40dFFoQnVCUGF3d0NTTjM2Zm1UQTlGRTM1WExoRDYyeEJua2pTdktLM29oQnZMenAwTFBkbF9nTnplbE4xUTRqLXlJWUc1UlhSRF9JRkluY3NlUGx6S2k0MmJ5a2dEREluc00zZW1iZlM2bS1vdXA3UlZ3?oc=5" target="_blank">Добыча урана в Казахстане столкнулась с новой проблемой - inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.08.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Добыча урана в Казахстане столкнулась с новой проблемой - inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5mN2N3eGNRSl9LcHl6ZkhUemFJRjZpbURmc3FDOVcxdUhRTmtNTG45MkxJRFVOei1KUV9zdWZESlhoUk1LdHlNNnZR?oc=5" target="_blank">Транзит через Каспий и Черное море: КТЖ договаривается о новых мощностях в Грузии - Ак Жайык</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.09.2026 10:20</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Транзит через Каспий и Черное море: КТЖ договаривается о новых мощностях в Грузии - Ак Жайык</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-07" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNnRCT1p5Vk9tSUh3WjAzWnRIWmVjSGdRcTg2WW1SaXFmb3JXaXgzNzR1cUhGaW5Ba3IxV0prcld1dnFJOEc3NGk3X3hSNnJHUjFONW9yRm53clBieDllZkJzVHNZQ1FFVTAwM291UnJ0UGFlZDRXd2pwTGppb1JoMHJvRTRXNDRRTURKRlBxVkNuTXpYSzBMbENKRVVqN19xU2pGOHFtaHjSAbABQVVfeXFMT3JOVnpmMEJjMjZlSHBneHlhZ1VGUTV5eE96dnJ6M2JXLXJEX0IzdkdadEJDMjRHcFRaRl9zcV9ManNaMzd4aHdXeUg0aThob1M1VXcyRzVpUjVUOVM5OF83LXZOY1o0Zlo5SEgwLWEtQWd6eG1hZWpkUFhVUVI2eFljWHRPMDlNZ2hNMldNX2w4US04V2d0NWJjSk5DemRLdkhaMmpJMTdrclhFWHBUTWM?oc=5" target="_blank">Рекомендации в преддверии нового сезона перевозок зерна дали в КТЖ - ElDala</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 07.09.2026 09:45</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Рекомендации в преддверии нового сезона перевозок зерна дали в КТЖ - ElDala</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxQZ2M4YjUwT3Bnd1B5V0RUQUxHVXl1Zk9Va2xwejZLbWk2ZWJBUVlSanUzSTlGbXBRUDdSUTR5cEswclM2VlZ1bmhNQTVmSTE5M1Njc09FSVZkUHdkcWlyRUxxaVZvMlVzMmp5d0xZNWdqS1NDNUtaOTBXTVhRdDBXRzNqOENzcjRidzdHN0FDMWZnWDU0QWJSc3lob0ZvRUE?oc=5" target="_blank">Масштабное внедрение: как &#34;КТЖ&#34; обеспечивает поезда спутниковым интернетом - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.09.2026 08:31</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Масштабное внедрение: как &#34;КТЖ&#34; обеспечивает поезда спутниковым интернетом - Qumash.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-08" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQNTNpZzJEQUVMeEdsNURGLUFGXzFvUkNHNlNKQUdZSTRoZEhlZlRqRVg5Zl9HcVpEQVBQNW90WGdFajhfRnZHUEdNZEd5TUk1dUQwVVZaUHd4LW55ZFAyZzhBazI5ZlplV3VPVzl4STZWSE94OFExMEswMWhqOTZ4SDRBZHJKUm9KQ1VJbjFpaWZwQldiQjVUUE1CU2NVMUNxTm95bjJTY3RDRlZVQ3ptdQ?oc=5" target="_blank">Starlink появился уже в 59 поездах КТЖ — к концу сентября интернет будет на 50 маршрутах - Belles.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.09.2026 10:30</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Starlink появился уже в 59 поездах КТЖ — к концу сентября интернет будет на 50 маршрутах - Belles.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-12-26" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPSEJ3OW1ERTVPWWdEZWRaazhkazBQMktITklzWjlDeHFuQk1YQWFfV0N2OGRackRVQ19ZMUstTDMtWldkajNGMEtUZ3YyclgzVFFxTW4zbkFDa3FwRkNFYjRkYlB5ZlJVVGF1VUl5eEd2RXF3UktIMXNrZURZSVhoNg?oc=5" target="_blank">АО «Казахтелеком» технические работы - GOV.KZ</a></div>
+    <div class="article" data-date="2026-09-08" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQY3RHSk8xU2RLckxMd0dOdFc4a3B4cjRjTU45TGt2TWE3S0pjZmxvT3ZHVHVRUmRXdU9FYTRGQVByYVVmRGtyVVByUnNJT2xteHBWTlNtQkMxT29BWmRIc2wyaWs3eF9OMlVINjRmY0tqWnI1eEFWYXFpckxLWUlzbUpZbk9Nb2tHbUQ4TGJ4bWUyVjlUY29xOGNHdWrSAZ4BQVVfeXFMTXN2SkgyMjZhT1B6Y0tCSl9wVE4tRTlpVFE5bHh0RGhWWFh1cmxVaTFPbDNpWU5INkVxZVpXWERCREIzams2bDVJSHZJS1l0MXpUVVkxWGFHZGh3ZldsejZFYWhHZDF4eE5Wd2tobXJkMXJHbWtsV1RBNjN4bVZfZ2E1M284TDhnRHJsQk5FTVNDbzlNTy1OQkZnMDFocXc?oc=5" target="_blank">От HR до ИИ: как «Казахтелеком» меняет подход к людям и технологиям - Казинформ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 26.12.2025 09:20</span>
+        <span class="date">📅 08.09.2026 13:28</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">АО «Казахтелеком» технические работы - GOV.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2025-11-20" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPQjkyeXBYRXFwWXpBeklhNWg1MUtVMUdTUUxqNDBWVDV6M2lkOUMwanBiZUJfSWlGRzluY1k3bEV0YThIZEdELXFJZE1CNDZhSlB1THo2SmJ6UU1yOHI4UmIwejc2WXZSR21VWVVHNWQzX0hsckxuREZpaHNBQ2s5N2k2NHZjREU?oc=5" target="_blank">Причины сбоев ККМ прокомментировал ОФД АО «Казахтелеком» - Uchet.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 20.11.2025 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Причины сбоев ККМ прокомментировал ОФД АО «Казахтелеком» - Uchet.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-11-13" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOVWt3cVE1aEdFQU5OcUR2Mm1XQjV3enY5R0FaQ3dxX1lmTDhPeFl2cVc1QVd2bjAxNTFuTFpOVlRFMDdVZmQwU05lT2V3Qm92V1NsZ3NKaWVCdk9mdWd1Mk5ZQk5fWEZPMXlqOGRIMDR6Y0U2cEdfY2lvMnc4TkRId0g4d3JzalMzUU5IZFJYSUpoWDV6NzRrbE1CMTZRWXpCVGcwaFpnYXNtc3VPaWhfemg5NUY?oc=5" target="_blank">«Топ-менеджеры получают по 10 окладов»: «Казахтелеком» ответил на жалобу работников в Актау - Orda.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 13.11.2025 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Топ-менеджеры получают по 10 окладов»: «Казахтелеком» ответил на жалобу работников в Актау - Orda.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-10-01" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQaTNiN1dWaWt1UWtqNnhYaTVXV3VYa0V0TmhidG1wNUZwWWVMb1B5cDN1VjJickdJUFN0M2FMc2xVQXp2dTFndWNUNktHS2NWUUg1Q1NBZDRaTGNwcm9HNG5iWFNrNGlIV2FEZnUxS05oeXRHUGZhR2lyRzFHajJkWGdhQzF3NC1tUWliRDRlYw?oc=5" target="_blank">Технические работы на ОФД &#34;Казахтелеком&#34; 1 октября 2025 года - Uchet.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 01.10.2025 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Технические работы на ОФД &#34;Казахтелеком&#34; 1 октября 2025 года - Uchet.kz</div>
-    </div>
-    
-    <div class="article" data-date="2023-09-08" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNX3JOWWNadkp2TVU1X2cxcllFbk55NzlUQWdDMHRBaHFtVFpkbzVFZThCT2h5eEEwa01ma1UxeWZQVC1HTFlpNmFqSkF4aW9hU1hTa2FhRVVZWDJvU0VKa0MzQkgwUmZCSDA4bFdvRTRWa0VZQUlFRXdZY242R2ZlZUNsRlVGSFBFNXBSNmViMmdyTEc2QWhXX3hCS29JdVJUd2dmWVM2OGE5cnoxWml6bmN6QWY3UUNrb2Vr?oc=5" target="_blank">Глава государства принял председателя правления АО «Казахтелеком» Куанышбека Есекеева - Ақорда</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 08.09.2023 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Глава государства принял председателя правления АО «Казахтелеком» Куанышбека Есекеева - Ақорда</div>
-    </div>
-    
-    <div class="article" data-date="2020-06-27" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQaVUwODAyWTB6eUVDcFRHNlBoUlpzVTlWTngwblRsUHNvRjROcEh0enR2UmUzSFowMTVhcVZXTHdDZVZoY0RpSmM1YVZzVEZNR0JzaFNYOHlKVGdSQVlkY1dzTkMwREpWZzJpNkdKU0lIU2VSd2dWcVRvOUVnRHFJX2thZ0VZbmZXbnhrLXg0UF9ISDZLN0ZLZDFfUnVNWlRkQzJDS1lWZzdORThMUXYyN01CUHNvSlFLRHNzdw?oc=5" target="_blank">Посещение центра обработки данных АО «Казахтелеком» - Ақорда</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 27.06.2020 08:20</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Посещение центра обработки данных АО «Казахтелеком» - Ақорда</div>
+      <div class="art-summary">От HR до ИИ: как «Казахтелеком» меняет подход к людям и технологиям - Казинформ</div>
     </div>
     
   </div>
@@ -252,50 +152,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-09-08" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-08/zhnb-svyazannaya-s-kitaem-kompaniya-predstavila-plany-po-zapusku-gazovoi-elektrostanczii-na-yuge-kazahstana/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-svyazannaya-s-kitaem-kompaniya-predstavila-plany-po-zapusku-gazovoi-elektrostanczii-na-yuge-kazahstana" target="_blank">Китайцы могут запустить газовую электростанцию на юге Казахстана в 2027 году</a></div>
+    <div class="article" data-date="2026-09-08" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/09/kazakhstan-expands-air-links-to-southeast-asia-with-new-singapore-route/" target="_blank">Kazakhstan Expands Air Links to Southeast Asia with New Singapore Route</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 08.09.2026 11:51</span>
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 08.09.2026 12:57</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Китайцы могут запустить газовую электростанцию на юге Казахстана в 2027 году</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-08" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-08/fvfv-novyy-ceo-air-astana-ibrahim-zhanlyel-poluchil-orden-kurmet/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-novyy-ceo-air-astana-ibrahim-zhanlyel-poluchil-orden-kurmet" target="_blank">Новый CEO Air Astana Ибрахим Жанлыел получил орден «Құрмет»</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 08.09.2026 11:40</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Новый CEO Air Astana Ибрахим Жанлыел получил орден «Құрмет»</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-08" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOTkRMSWtKSzdrRzU2bW5QeEN5RjBxQ1lEZ3Qtbk1XNzJQZHBINm9PS2lWN2dZMHVfSTFqWkp3aWxRQnozSTI1bmdNZUwtR01LUm9rV1lFVVhsbVVTRS1QZUZ6a3pPdGVaYmtKXzhFMWI1M1dSR2c3eGVmUkg1T29rS0tONmJwMEZiN09pM2lVZTFHdnlFbzNEQnZiclh3dmRUX0xvUC1xN0VkSFllc1doSWVWVDBzNG8zN0E?oc=5" target="_blank">КТЖ и партнеры из Грузии обсудили развитие ТМТМ и логистической инфраструктуры - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.09.2026 11:03</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ и партнеры из Грузии обсудили развитие ТМТМ и логистической инфраструктуры - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2025-04-11" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxNYlFuTTlkQUk1XzZUV1hvNXpoMklBclZEQW80NGQ5c3lKVnozTUxDSTZOb2hFQUpwS2VuZmZwMUQ0am05cWVXMWhpb1B3QU9iYkpMRXFSRElJamFkcDJCTkYybUhBWGJqeVRsNjM1VWJCc1lOb2NuQUM1Qmtia29mckpLMmp6V0JFVklZYTViU2o4WUZkUHJVbVBBbk45YWI5UUdEemhQd3d1UTFDV3p2T0Z5QzBEeWJ5Mng3UlVDR1g3YmNRMGZPUUdLYW9JbmhZblV5Y3hRdmhkWWN5?oc=5" target="_blank">На штабе по экономическому росту рассмотрены крупные инвестпроекты KEGOC, Казахтелекома и Самрук-Энерго - Қазақстан Республикасы Премьер-Министрі</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 11.04.2025 07:00</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">На штабе по экономическому росту рассмотрены крупные инвестпроекты KEGOC, Казахтелекома и Самрук-Энерго - Қазақстан Республикасы Премьер-Министрі</div>
+      <div class="art-summary">Kazakhstan Expands Air Links to Southeast Asia with New Singapore Route</div>
     </div>
     
   </div>
@@ -357,7 +224,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2020-06-27';
+  document.getElementById('date-from').value = '2026-08-05';
   document.getElementById('date-to').value   = '2026-09-08';
   applyFilters();
 }
