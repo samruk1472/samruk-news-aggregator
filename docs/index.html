@@ -60,12 +60,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 07.09.2026 19:27</div>
+  <div class="meta">3 источников · Обновлено: 08.09.2026 05:40</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-10-28">
+      <input type="date" id="date-from" value="2026-04-02">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-04-02">
+      <input type="date" id="date-to" value="2026-09-08">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,6 +86,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -102,20 +106,47 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-09-08" data-co="Самрук-Энерго" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-08/drgz-kak-v-kazakhstane-pytayutsya-sozdat-industriyu-data-tsentrov-pochti-s-nulya/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=drgz-kak-v-kazakhstane-pytayutsya-sozdat-industriyu-data-tsentrov-pochti-s-nulya" target="_blank">Как в Казахстане пытаются создать индустрию дата-центров почти с нуля</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 08.09.2026 03:33</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Как в Казахстане пытаются создать индустрию дата-центров почти с нуля</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-08" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQcHh4VXdIVmZRZGo4N2hvQTI3bl82NW41em43bldoT0pKUjNLUmZ2RmpuamJyeUZhbWR3Zy1NTzFHN2FkWnp5clMtSmJjSFA1WlZaeF95V3M3NHZzZHkyMzQzUEhFT2pZM2FfWnF3V0hZTjlTWkpEVmd6QkZNcUtWb1VDWm9LM0g1NHJBdi1sX0N4TzdINWd1b3g1SktkQXpmdm9LZGtBRQ?oc=5" target="_blank">КТЖ оказало помощь в ликвидации пожара в Кызылординской области - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.09.2026 03:52</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ оказало помощь в ликвидации пожара в Кызылординской области - Қазақстан теміржолшысы</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2025-10-28" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE8xNWFvcWkzVDI2VnctVHlZNnFGYWJoMzdYOGpObjNOVHZfOXlPN1lCUVFwYVdVMXh6aUJlYmQ1azI4U3dzaUpjZDJlSTFBa3ZFMUHSAUtBVV95cUxORnl2b3RiY1U4VHhoVTY3WjJfUHBfMUx5VHBqX0d4bWx5M2Q3Q3RhVHdhakxUNWRJa2dSUlItbHJVVWVKdGRXSEhqMWM?oc=5" target="_blank">Судьбу долей &#34;ЛУКОЙЛа&#34; в проектах в Казахстане будет решать &#34;КазМунайГаз&#34; - Интерфакс</a></div>
+    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxOUVpVQnR6cENvZFRyUm9lS3l0dm50OUdPazBteXMtbUpaanVPWkYydWF6QkhiUHdjaTBfUFU2VkFrRXBIQXlJX2FGOFV3MWFiZ2hpYS13QUt4MnpuSEk4dnhZUVZCWHJtVzNlWDlqTFJDNDFDSmJlRVI3dWIteHdJVlNOcVNLdXg4ajlJeEJYYWp0YUZMc3RubGdJbFdFeHVQX0pPeUxWQzliWmJsRjR2bVNXbzE2VUw3bVpIRjNNanE1Njk2WGJ2S1RrSjliN0dGcjRvX3ZET2Z3WVlmTi1DbGtnUkpPcGJzRnl6aWJ5TQ?oc=5" target="_blank">Казмунайгаз и хорватская Geoenergija Razvoj будут совместно разрабатывать нефтегазовое месторождение Шыгыс - ru.themoscowtimes.com</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 28.10.2025 07:00</span>
+        <span class="date">📅 02.04.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Судьбу долей &#34;ЛУКОЙЛа&#34; в проектах в Казахстане будет решать &#34;КазМунайГаз&#34; - Интерфакс</div>
+      <div class="art-summary">Казмунайгаз и хорватская Geoenergija Razvoj будут совместно разрабатывать нефтегазовое месторождение Шыгыс - ru.themoscowtimes.com</div>
     </div>
     
   </div>
@@ -125,15 +156,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOZ0NBR1VfY1JyUWhOcFphSFpKcHJKTkFqN0FRN0tuSGpmNmg3UmpOekowTDgyMVhMOVRUMDNKVnJhWlRTNFVnRVVia2RfbE5sRHkwWmx1ZmFtbnBtdDdFQzFJcmFNdW50UjVWRzhXSEhzWTZGU21sRUhOYk1PVzJEUjAtZVNpcDVmZ2lrZ3RKRElOa1doaU80?oc=5" target="_blank">КазМунайГаз укрепляет стратегическое партнерство с Национальной геологической службой в сфере цифровизации геологических данных - ҚазМұнайГаз</a></div>
+    <div class="article" data-date="2026-04-07" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaGVwZjRxZEEwUi1uTGJCNUlHaWRhd2h0OVNEQkQ2eDVaalFzR1hPMGZwYjVCNWlIR2NpZWtzd3MtMnNLX0FxQkdLYklCdldTNTd5MDIwMElYZ1Jfc1Z2U1FRYjhyWDhKX1VrQXVYc0xKaGRYMlBXd09KMkUyc1l6VTJtRDNoWUZWRW9rTnBpNmhZVnNydW9RZUs2ZGlvOXJ0Yzd3aDJYNy0?oc=5" target="_blank">О стабильном росте грузоперевозок сообщили в КТЖ - Железнодорожник Казахстана - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.04.2026 07:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 07.04.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КазМунайГаз укрепляет стратегическое партнерство с Национальной геологической службой в сфере цифровизации геологических данных - ҚазМұнайГаз</div>
+      <div class="art-summary">О стабильном росте грузоперевозок сообщили в КТЖ - Железнодорожник Казахстана - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -195,8 +226,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-10-28';
-  document.getElementById('date-to').value   = '2026-04-02';
+  document.getElementById('date-from').value = '2026-04-02';
+  document.getElementById('date-to').value   = '2026-09-08';
   applyFilters();
 }
 
