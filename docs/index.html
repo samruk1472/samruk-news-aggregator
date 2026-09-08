@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 08.09.2026 14:09</div>
+  <div class="meta">1 источников · Обновлено: 08.09.2026 17:07</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-05">
+      <input type="date" id="date-from" value="2026-08-07">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-08">
+      <input type="date" id="date-to" value="2026-08-07">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,8 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
@@ -104,68 +102,25 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxObjZUUjNYYUtCSm5yeEt4eVVhUnNBSld6bFdxVmVVX0FWZm55QTN0YlFJSFhYTTBMZC13TjIzNWswSW1PTXFFbmdsSGtiUFlyeWZtVUU3WERtQTBoenBNbWhSeUpYTmk3ZjdoN2dsRlFvU1ZIQzBsSHB4Q3U5VUNTcTZYU1FoUG42?oc=5" target="_blank">Как Air Astana противостоит мировым кризисам в авиации - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.08.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Как Air Astana противостоит мировым кризисам в авиации - DKNews.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-09-08" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNckdyYTZRTmwtT0lNTlcyazdMQ2M0cDFEa0k0dVB1UGt0M19fd0o0OVpmT0JCZi1uWlo4LXdaRXU2X2dIUW55SVZoLURZTWdfcEVLM01PVUpuX0JxVnFSSjhFRHFKbUwtZnpkVjhDMTVoZEJaYThpQ3dtelExZFJ5czFRc0Uwa2NBM0l6VlhqYTFrSUplTTRZSndhM0NfcF9uVHc?oc=5" target="_blank">Новый CEO Air Astana Ибрахим Жанлыел получил орден «Кұрмет» - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 08.09.2026 11:41</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Новый CEO Air Astana Ибрахим Жанлыел получил орден «Кұрмет» - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-08" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQY3RHSk8xU2RLckxMd0dOdFc4a3B4cjRjTU45TGt2TWE3S0pjZmxvT3ZHVHVRUmRXdU9FYTRGQVByYVVmRGtyVVByUnNJT2xteHBWTlNtQkMxT29BWmRIc2wyaWs3eF9OMlVINjRmY0tqWnI1eEFWYXFpckxLWUlzbUpZbk9Nb2tHbUQ4TGJ4bWUyVjlUY29xOGNHdWrSAZ4BQVVfeXFMTXN2SkgyMjZhT1B6Y0tCSl9wVE4tRTlpVFE5bHh0RGhWWFh1cmxVaTFPbDNpWU5INkVxZVpXWERCREIzams2bDVJSHZJS1l0MXpUVVkxWGFHZGh3ZldsejZFYWhHZDF4eE5Wd2tobXJkMXJHbWtsV1RBNjN4bVZfZ2E1M284TDhnRHJsQk5FTVNDbzlNTy1OQkZnMDFocXc?oc=5" target="_blank">От HR до ИИ: как «Казахтелеком» меняет подход к людям и технологиям - Казинформ</a></div>
+    <div class="article" data-date="2026-08-07" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQUHVwYWxHMDlpRWNJcldlR3gweDJSbmR6YVBPbjFuQXV5d1Q4QjRqdzZ2ZXE1bzJUVjNMbmlNLTdBX3pZcmE1TDR2MmZYQjAzZlBRbmNIZFNobzAtY3BvTndIang0ZmJHdjdsTXJXX2VDcmc5ZkdmeTVvR3RvYTFpVnNJdTdkQm9yRUQ3bTJEOW9yZGlEcHFrS0VWMGNQcTFRbXhSQXBQdG9tVmFQ?oc=5" target="_blank">&#34;Казахтелеком&#34; расширяет оптическую сеть в Петропавловске - NUR.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 08.09.2026 13:28</span>
+        <span class="date">📅 07.08.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">От HR до ИИ: как «Казахтелеком» меняет подход к людям и технологиям - Казинформ</div>
+      <div class="art-summary">&#34;Казахтелеком&#34; расширяет оптическую сеть в Петропавловске - NUR.KZ</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-09-08" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/09/kazakhstan-expands-air-links-to-southeast-asia-with-new-singapore-route/" target="_blank">Kazakhstan Expands Air Links to Southeast Asia with New Singapore Route</a></div>
-      <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 08.09.2026 12:57</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Kazakhstan Expands Air Links to Southeast Asia with New Singapore Route</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -224,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-05';
-  document.getElementById('date-to').value   = '2026-09-08';
+  document.getElementById('date-from').value = '2026-08-07';
+  document.getElementById('date-to').value   = '2026-08-07';
   applyFilters();
 }
 
