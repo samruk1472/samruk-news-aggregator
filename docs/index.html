@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 08.09.2026 05:40</div>
+  <div class="meta">5 источников · Обновлено: 08.09.2026 08:29</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">9</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-02">
+      <input type="date" id="date-from" value="2026-08-05">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-08">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,11 +85,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -107,28 +111,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-09-08" data-co="Самрук-Энерго" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-08/drgz-kak-v-kazakhstane-pytayutsya-sozdat-industriyu-data-tsentrov-pochti-s-nulya/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=drgz-kak-v-kazakhstane-pytayutsya-sozdat-industriyu-data-tsentrov-pochti-s-nulya" target="_blank">Как в Казахстане пытаются создать индустрию дата-центров почти с нуля</a></div>
+    <div class="article" data-date="2026-09-08" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-08/fvfv-kazahstansko-kitayskiy-gazoprovod-do-shymkenta-provalilsya-po-pribyli/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-kazahstansko-kitayskiy-gazoprovod-do-shymkenta-provalilsya-po-pribyli" target="_blank">Казахстанско-китайский газопровод до Шымкента провалился по прибыли</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 08.09.2026 03:33</span>
+        <span class="date">📅 08.09.2026 07:06</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Как в Казахстане пытаются создать индустрию дата-центров почти с нуля</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-08" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQcHh4VXdIVmZRZGo4N2hvQTI3bl82NW41em43bldoT0pKUjNLUmZ2RmpuamJyeUZhbWR3Zy1NTzFHN2FkWnp5clMtSmJjSFA1WlZaeF95V3M3NHZzZHkyMzQzUEhFT2pZM2FfWnF3V0hZTjlTWkpEVmd6QkZNcUtWb1VDWm9LM0g1NHJBdi1sX0N4TzdINWd1b3g1SktkQXpmdm9LZGtBRQ?oc=5" target="_blank">КТЖ оказало помощь в ликвидации пожара в Кызылординской области - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.09.2026 03:52</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ оказало помощь в ликвидации пожара в Кызылординской области - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Казахстанско-китайский газопровод до Шымкента провалился по прибыли</div>
     </div>
     
   </div>
@@ -136,17 +129,61 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxOUVpVQnR6cENvZFRyUm9lS3l0dm50OUdPazBteXMtbUpaanVPWkYydWF6QkhiUHdjaTBfUFU2VkFrRXBIQXlJX2FGOFV3MWFiZ2hpYS13QUt4MnpuSEk4dnhZUVZCWHJtVzNlWDlqTFJDNDFDSmJlRVI3dWIteHdJVlNOcVNLdXg4ajlJeEJYYWp0YUZMc3RubGdJbFdFeHVQX0pPeUxWQzliWmJsRjR2bVNXbzE2VUw3bVpIRjNNanE1Njk2WGJ2S1RrSjliN0dGcjRvX3ZET2Z3WVlmTi1DbGtnUkpPcGJzRnl6aWJ5TQ?oc=5" target="_blank">Казмунайгаз и хорватская Geoenergija Razvoj будут совместно разрабатывать нефтегазовое месторождение Шыгыс - ru.themoscowtimes.com</a></div>
+    <div class="article" data-date="2026-09-08" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/novosti/70792-komitet-grazdanskoj-aviacii-ne-otvetil-o-planah-otmenit-polety-v-rossiu-na-fone-preduprezdenij-zelenskogo.html" target="_blank">Комитет гражданской авиации не ответил о планах отменить полеты в Россию на фоне предупреждений Зеленского</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.04.2026 07:00</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 08.09.2026 12:44</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Казмунайгаз и хорватская Geoenergija Razvoj будут совместно разрабатывать нефтегазовое месторождение Шыгыс - ru.themoscowtimes.com</div>
+      <div class="art-summary">Комитет гражданской авиации не ответил о планах отменить полеты в Россию на фоне предупреждений Зеленского</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-08" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOb2dTMFZ1TzRUQmNyU0E1emJQSi1MN2pyR0RVV2x1Y0E5cUJEc0cwSENrOEpULWROSk50SVZIU2ptbWJ0WnB1Uzhuc25GSThWZlVmWmdZQ3AxQzRlQUFwT2tLZHgxRFY2cUhhNmRwbGVVTnhNQ29La01fS3pGSk1xaWp5MlY0djRqTENXdjdHYU5lQzg50gGTAUFVX3lxTE0ybE9GQ2JreWNDczZ3UkdMa05STURIakc3U2tFZmYzYW9QMnRaUXh4T2RHd1BkWXgtR0U5Qk5oRTQ5RVNteEIxaklBNm1VMHZoY0tWQURuRWZ0Zk9LWVRUaGdsZjRTejF4R2ZESGFJNFc1TTE5MkpmQXAtRGR6cVJTeHdta20yYlBLRmlsT3I2akpsVQ?oc=5" target="_blank">&#34;Самрук-Казына&#34; продлила полномочия главы &#34;Казпочты&#34; до 30 ноября - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 08.09.2026 07:03</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">&#34;Самрук-Казына&#34; продлила полномочия главы &#34;Казпочты&#34; до 30 ноября - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNUjhlU1lnMGFQTFliZVdrVzNXdzlmNnVHd1VqdWo5MnJXbXplaTdtcGhsaVNweXJFWXFHaXZGTFNMWFpxYXI4bDVxTk04NVJURHhGSDJCY3JUU1pRUXdNSHVuZWUxNlNYZ04wWjlSRklaUkxYVFlwck1MTFYzVlEwb0RtdjF1dndLYzZJbFNpWTVTeV95a3U1bHZyN3BNeHpmTHZrMnNQa3A3dGVwWjhUdFhpQW9qRGthR2c?oc=5" target="_blank">Общая выручка казахстанской Air Astana в 1 пол 26г выросла на 16% - Русская служба The Moscow Times</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.08.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Общая выручка казахстанской Air Astana в 1 пол 26г выросла на 16% - Русская служба The Moscow Times</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxONmpvck83RGhyWDNodkhtVFdtRXVWeFVVOTh3Y0tuQVRMTm40VHEyTnJ2UTNPcHU2a1doNFZUTVhla2Y3NkNOX3duanh0WERwOXFDMHRTZ0Q0Mk01TkhjWGEtUnpSNXRKSUJmUkNuYU9QeHdHend0Ty1yaUZ0TEZuVXhfcnBUd1hMSTJfell6QjI1LVI0eS0xSWNvN2JwekxjWWRaSkR3Vk96RmRpX2dNLXJkdzBZVkRxYVBnLQ?oc=5" target="_blank">Руководство КТЖ встретилось с представителями SIPG и NIZE Intelligent Technology - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.09.2026 02:52</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Руководство КТЖ встретилось с представителями SIPG и NIZE Intelligent Technology - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVXpkWTRXd0lXclB6VjZkbDFBY3ZzUmF1eFlISmZIOS1SUVJ6YTNmemZpNWZjbWRQMlRLbDc1UnZwcGdpSXpDNTR3QXBVWjJVY0trV05yS1cwb3Y5UE5WeXdIbzVtczN6a1BNN2xlZ0dtUXUxSVZVQllTNUQyNUFLNXhUM2R4OFF1cDdCWFVPbVpDZ0VPZ3VyOFlVRTBmZUx1d0RUV3lqYTNmR1A5UWR6dUtYWXhqbVFrTU13NEhTRXc?oc=5" target="_blank">В поездах КТЖ продолжается масштабное внедрение спутникового интернета - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.09.2026 06:58</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">В поездах КТЖ продолжается масштабное внедрение спутникового интернета - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -154,17 +191,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-04-07" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaGVwZjRxZEEwUi1uTGJCNUlHaWRhd2h0OVNEQkQ2eDVaalFzR1hPMGZwYjVCNWlIR2NpZWtzd3MtMnNLX0FxQkdLYklCdldTNTd5MDIwMElYZ1Jfc1Z2U1FRYjhyWDhKX1VrQXVYc0xKaGRYMlBXd09KMkUyc1l6VTJtRDNoWUZWRW9rTnBpNmhZVnNydW9RZUs2ZGlvOXJ0Yzd3aDJYNy0?oc=5" target="_blank">О стабильном росте грузоперевозок сообщили в КТЖ - Железнодорожник Казахстана - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-09-08" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-08/devy-v-kakih-poezdah-kazahstana-uzhe-rabotaet-internet-starlink/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-v-kakih-poezdah-kazahstana-uzhe-rabotaet-internet-starlink" target="_blank">В каких поездах Казахстана уже работает интернет Starlink</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 07.04.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 08.09.2026 07:34</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">О стабильном росте грузоперевозок сообщили в КТЖ - Железнодорожник Казахстана - Қазақстан теміржолшысы</div>
+      <div class="art-summary">В каких поездах Казахстана уже работает интернет Starlink</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-08" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-08/zhnb-timur-turlov-rasskazal-o-svoem-videnii-rosta-doli-akczii-kazmunaigaza-v-svobodnom-obrashhenii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-timur-turlov-rasskazal-o-svoem-videnii-rosta-doli-akczii-kazmunaigaza-v-svobodnom-obrashhenii" target="_blank">Тимур Турлов рассказал, можно ли увеличить free-float «КазМунайГаза» до $10 млрд</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 08.09.2026 07:07</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Тимур Турлов рассказал, можно ли увеличить free-float «КазМунайГаза» до $10 млрд</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-08" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-08/assm-xiaomi-pokazala-novuyu-neobychnuyu-raskladushku-18-fold/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=assm-xiaomi-pokazala-novuyu-neobychnuyu-raskladushku-18-fold" target="_blank">Xiaomi показала новую необычную раскладушку 18 Fold</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 08.09.2026 06:25</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Xiaomi показала новую необычную раскладушку 18 Fold</div>
     </div>
     
   </div>
@@ -226,7 +285,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-02';
+  document.getElementById('date-from').value = '2026-08-05';
   document.getElementById('date-to').value   = '2026-09-08';
   applyFilters();
 }
