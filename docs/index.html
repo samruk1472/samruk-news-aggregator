@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 10.09.2026 11:59</div>
+  <div class="meta">3 источников · Обновлено: 10.09.2026 14:04</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">13</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">9</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-12">
+      <input type="date" id="date-from" value="2026-06-17">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-10">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -91,8 +91,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
-      
     </div>
   </div>
   <div class="ctrl-group">
@@ -108,167 +106,47 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNMEdqaGptMzk1c21SYmdsbWFEX3VXQ3NLa1dRMkNPNFp4ZzZnMXdCTThSU0hZbjBMazhXaXpocW5OWkphNzAyemx5Vmlla3RDbW9MYU9xOWhhNVpUaEt0dFNfLTY4VDJmbmg4aVloRlR6U2YyM2dmUkhITHdwRDlBa1FZSEhsTTNucWpOcHJaMnBVdTljQ0ZONWFiNjHSAaIBQVVfeXFMTndJUHdhNUdYT21QekNuTjhnRVZPOWx0V3VzSjVEUkdhT1ZPY1BVN3hQSHNzdXNMOUp1UTA2WEdIV1dTeXNxdW5ETWNMaURoeWdDRUNtdklwdEFFZmlwLVJ4WlotTlQ5VzQ0eDhyZ3pMSF9pTnVfc3hmUjUtb3EwVWRVSVpiWjZ5b1hoaHdpS3R4eHoyMjlrZGxHaXBCa09lVjBR?oc=5" target="_blank">Air Astana развернула самолет по пути в Дубай из-за эскалации конфликта - NEWS.ru</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana развернула самолет по пути в Дубай из-за эскалации конфликта - NEWS.ru</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70825-v-kazahstane-dla-bezopasnosti-medrabotnikov-vnedrautsa-smart-videozetony.html" target="_blank">В Казахстане для безопасности медработников внедряются смарт-видеожетоны</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 10.09.2026 14:14</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">В Казахстане для безопасности медработников внедряются смарт-видеожетоны</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYmprQWk1WkhQdDBOS1JKaEdCZGVnQ2M0endFb2lMLU1TN2RfTXpjT0JEa1VBN19XUm5GZkxlcXlmVEpud1A4VmY0V2JUWjJTUVVaVGx6VUhrOWVTOGhqQXhQb2RSblNEV3RrUkZSdHFpWVk1T1BNMEp4cWhVUXRraThqVFFpVEpVT0ZMZ2xtaGxsN2NYVllhOXJFSnVFU1VHMzFiLTZONU1XVm5QVHdONzB3YW1EUVlqczlEUFhvQkxqQQ?oc=5" target="_blank">Глава «Самрук-Казыны» заявил, что КТЖ может увеличить транзит в два—четыре раза - InvestFuture</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 10.09.2026 08:50</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Глава «Самрук-Казыны» заявил, что КТЖ может увеличить транзит в два—четыре раза - InvestFuture</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOdndrb3lzUlJmOXk4cEtvVnNkTDJzQmd6YlBWU29CWXBod214Z284WmlfRGFEQWlKS2wwMl9lT3FZNWFjMWM2dEwtam9qWUxldl94ak11VGNyYlA3b1RZNmtzZko0QlFRZzJ0S1R6Y0RncV9rWm80YnlSSmpPS2oxSWJaN05xTVhuRmdqekJKY2lxQ0t5dUxwdmtJUXdpckEwZzlkVEpvcXJYeEdiM1VIVQ?oc=5" target="_blank">Глава «Самрук-Казына» обсудил IPO КТЖ с руководством Гонконгской биржи - National Business</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 10.09.2026 10:36</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Глава «Самрук-Казына» обсудил IPO КТЖ с руководством Гонконгской биржи - National Business</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPVTVzMlRXU2JEUGJvWS1PUXVXVGRXUy15b0tNY01tMDlpc2tnT0FPaGRidWo1OE40enc4VXJGajNmOGl0RmZMUnp6TVZfendhc1ZVMUdWanhTRXhBT2UydVozZlc3cVhVaWVWQkNfOXRWWUYwZjlkSktqVTJhU0oxLTZudWpheVZWVnFrSGxwQXBFdFZ0WnlWWnRyS1JYbG9ZZUVEUXJVaXVsblRGSVkw?oc=5" target="_blank">КТЖ сохраняет планы по выходу на IPO до конца 2026 года - Самрук-Казына - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 10.09.2026 08:42</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">КТЖ сохраняет планы по выходу на IPO до конца 2026 года - Самрук-Казына - Kapital.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-09" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxORE5LZjhFYXFNV3M2VENHRkdUWWpEOFVUUWh0V0pwVkRzbGtzLXpCOF9za1RxZFpUVEJ2UlJFWjlWYi1qRHN3WEQ2dWVrOWJFQVAxXzc5RnhHRl9sNThPcWR5RzdfYUpaQUwxbnByWFhXdnJmNm9JWFlYWGdfR21LaFVXZ0QzdlJkdzAw0gGQAUFVX3lxTE1mOS1pTjdZdm50dV8zZExsOWdxN0xXbWd5X2czT01saHczdGctS3BFcHdYSjR4czctRGFDUUhZLXRqalVGSk5fU0ZTTEFlaGx0dS1iZlRVZzhZbG52RVktbmY1MC1NbzlyV3JzaFFBNnNpTDhjSG0zTC04ajVwUnY2VGlMT3hsZzRUOUlxQzJNUQ?oc=5" target="_blank">Токаев поставил ряд задач перед главой “Самрук-Казына” - Liter.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 09.09.2026 11:43</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Токаев поставил ряд задач перед главой “Самрук-Казына” - Liter.kz</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
     <div class="article" data-date="2026-09-10" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPYlNReERxV0lGbHR0MnBFQURUTVJSdk1jV090VVVadnVOTE40Z1B5Yzl2NUVJekt3Q0Q0YmZielJoRW1ueDktMURlNWdsQ2NLRTUzeEJvSXdPYXByRnQ5MkxMTDA5emp0bkdkZXM3VnlFQzZmck4wVkx1ZFBKdXM2RkV4WUxhWWcxcHR0TVZZZVByU2w1WndiVlJ5RGtSQXhDSFBEUnh2ZGlIUVlPRzR4amwtN29DYlF3M2E1M1NR?oc=5" target="_blank">Глава Air Astana назвал срок получения Boeing 787 Dreamliner для рейса в США - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQTFM0QzV6VjFLd3RKQkhURllxeWwyQ3JFd1JtXzFkd0s4LXFOSFVfUVNDQm5uLUY0NW9nYjdKSFFVd01DS2ZxbEVQR19PdGhDcF9tamtwTF9NVGVuWlBnODlySHpKcFdNbElWMEZ5UjQ2WnpkY1RZLUJrTEZCMHZlaQ?oc=5" target="_blank">Air Astana ждет новые Dreamliner в декабре - Bizmedia.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 10.09.2026 11:37</span>
+        <span class="date">📅 10.09.2026 14:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Глава Air Astana назвал срок получения Boeing 787 Dreamliner для рейса в США - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+      <div class="art-summary">Air Astana ждет новые Dreamliner в декабре - Bizmedia.kz</div>
     </div>
     
-    <div class="article" data-date="2026-09-10" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOcXFiVTlueUNYTENhLXUyT1E0V1RjNzFNZjRFaFVYUHJ0WGJqREJlaFg4eEs5TC1pM0JqZDBzNHNVWGROUkxQY0JHalZZT3hKdXgzYmRJZWlPck5YVVRQTjBVZUtRaFZISUl6NU9EWGR2VzhfUkpkLXdvRUZuWmlZOEoySkFtSjBkNnc?oc=5" target="_blank">Казахстанцы раскритиковали питание в самолетах Air Astana - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 10.09.2026 10:35</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Казахстанцы раскритиковали питание в самолетах Air Astana - Qumash.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNd0JFUzZfVWNnMEFYRElmNDlXR0prS1dDVkx6YVE3SF9IbWo5VWN1MFpvSjlOb2hrWjhwMVkyZzZWQjRkNGNhRmFxcnpUR3pCVGlLUUo0MHNpZUthYndMdzlsVUpyYlFFQ2pyZ2NFU1pWVk9VZkpOTXRFMW5hUGU4TmxCWjdwSVZXNVFRYjVqNFNlTXFqN19SSWZwU01lSmNOZ05CMng0MUFMRlJpZEsyag?oc=5" target="_blank">КТЖ готовит железнодорожную инфраструктуру к работе в зимних условиях - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-06-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQSGdEc25IQVpMUnhwN2QxenlIb0k0eVkxa0JmUXY5SXRmSEZ2ZXV2anR3MlM1b0kyNjlPaHYzREVwSkQwbFRvRDdya29sTkxJNkI4aTZZZ2toLXVNQmlNMG1WdTFxTW5hc2g3MEFYSjZLLUlwN094eno5b3BoSVVic281TjNzMm1hVE14UTFTdVc?oc=5" target="_blank">IPO КТЖ точно пройдет в Казахстане – экономист - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 10.09.2026 09:05</span>
+        <span class="date">📅 17.06.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ готовит железнодорожную инфраструктуру к работе в зимних условиях - Қазақстан теміржолшысы</div>
+      <div class="art-summary">IPO КТЖ точно пройдет в Казахстане – экономист - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
     </div>
     
     <div class="article" data-date="2026-09-10" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUl9nUUlxUjcxZDVnU1F2UUJXaHR4Nnl1UWR4Q3ZxVElIRGtpS1RFUGw4enhWX1k3UnJMMU9hOHpkRmtaX0VMMzRzOHlTRVNWc3lrbWJiVEx0ZXJ3Z2dNQXZPVF9TWXdnbjdoOGNDM25sazZ6Vlp3c29kckFzNmNnMjhuM1FSZGZrbHVEWnRuTFN0UGNYVWFPOHJyRmFJYy1WZHJoR195dmNqOU3SAbABQVVfeXFMTXd5QVp6Y3BlWUVZWFFBamtFb0hfSFY2Y2dPeWVqX0laOVhIMkljZnRzWXBVZzV6dWVPUVdDR3BCT2Y3RjdBclN6V3B2MHpnNi0yal91a3BBRDFqaEpjcFFrLUlpSlA1MU1tRGwwNDBVNk9tcllzc0pLdUVqcmxPV3hwQUdIalZyY0ZRRmNtcUU4Zy0tekQyYzFBQTFNaGExV1ZoX3h0c2ZVOWdLMkdIUWk?oc=5" target="_blank">&#34;Казахтелеком&#34; полностью перевел отдаленное село в СКО на оптику - zakon.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNd3lBWnpjcGVZRVlYUUFqa0VvSF9IVjZjZ095ZWpfSVo5WEgySWNmdHNZcFVnNXp1ZU9RV0NHcEJPZjdGN0FyU3pXcHYwemc2LTJqX3VrcEFEMWpoSmNwUWstSWlKUDUxTW1EbDA0MFU2T21yWXNzSkt1RWpybE9XeHBBR0hqVnJjRlFGY21xRThnLS16RDJjMUFBMU1oYTFXVmhfeHRzZlU5Z0syR0hRadIBsAFBVV95cUxNd3lBWnpjcGVZRVlYUUFqa0VvSF9IVjZjZ095ZWpfSVo5WEgySWNmdHNZcFVnNXp1ZU9RV0NHcEJPZjdGN0FyU3pXcHYwemc2LTJqX3VrcEFEMWpoSmNwUWstSWlKUDUxTW1EbDA0MFU2T21yWXNzSkt1RWpybE9XeHBBR0hqVnJjRlFGY21xRThnLS16RDJjMUFBMU1oYTFXVmhfeHRzZlU5Z0syR0hRaQ?oc=5" target="_blank">&#34;Казахтелеком&#34; полностью перевел отдаленное село в СКО на оптику - Новости Zakon.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
         <span class="date">📅 10.09.2026 06:53</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; полностью перевел отдаленное село в СКО на оптику - zakon.kz</div>
+      <div class="art-summary">&#34;Казахтелеком&#34; полностью перевел отдаленное село в СКО на оптику - Новости Zakon.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-10/zhnb-glava-air-astana-utochnil-sroki-polucheniya-samoletov-dlya-pryamogo-reisa-v-ssha/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-glava-air-astana-utochnil-sroki-polucheniya-samoletov-dlya-pryamogo-reisa-v-ssha" target="_blank">Глава Air Astana назвал срок получения Boeing 787 Dreamliner для рейса в США</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 10.09.2026 11:36</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Глава Air Astana назвал срок получения Boeing 787 Dreamliner для рейса в США</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-10/afd-2026-obedinyaet-uglerodnyj-rynok-tokenizacziyu-kreativnye-industrii-i-ii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=afd-2026-obedinyaet-uglerodnyj-rynok-tokenizacziyu-kreativnye-industrii-i-ii" target="_blank">AFD 2026 объединяет углеродный рынок, токенизацию, креативные индустрии и ИИ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 10.09.2026 10:31</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">AFD 2026 объединяет углеродный рынок, токенизацию, креативные индустрии и ИИ</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-10/zhnb-elena-bahmutova-konstatirovala-rezkoe-sokrashhenie-pokazatelei-fondovogo-rynka-kazahstana/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-elena-bahmutova-konstatirovala-rezkoe-sokrashhenie-pokazatelei-fondovogo-rynka-kazahstana" target="_blank">Елена Бахмутова назвала реформу ЕНПФ шансом повысить ликвидность фондового рынка</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 10.09.2026 09:32</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Елена Бахмутова назвала реформу ЕНПФ шансом повысить ликвидность фондового рынка</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -327,7 +205,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-12';
+  document.getElementById('date-from').value = '2026-06-17';
   document.getElementById('date-to').value   = '2026-09-10';
   applyFilters();
 }
