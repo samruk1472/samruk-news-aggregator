@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 10.09.2026 18:46</div>
+  <div class="meta">6 источников · Обновлено: 11.09.2026 05:40</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">9</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-21">
+      <input type="date" id="date-from" value="2026-05-08">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-10">
+      <input type="date" id="date-to" value="2026-09-11">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -107,55 +111,115 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
     
-    <div class="article" data-date="2026-09-10" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxObkNZT05ibU56WjhiMkVsdFBVQVRXTUhiSkhoOEhpbkdFZ1dQcE0yUTBQaDZ2NDhkVWxFTFlIclE4WkpyMVR2ZDc5N2RDTmtwczJiLWZZYkFvaVlINDBOVUJScTlZcjNTOVNxOWJ5V3p1Nkp5UnVfWVdVOUFiSEFhYlVPdm5vYlhmSVdLRlBwZ3Vfak5CZlA4RmxtVkZLQngxQW1FQzNhSVcxdw?oc=5" target="_blank">В ближайшие годы фонд «Самрук-Казына» реализует 38 проектов на 21 трлн тенге - Silk Way TV Channel</a></div>
+    <div class="article" data-date="2026-09-11" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/novosti/70831-eks-zamakima-zanaozena-glava-bolnicy-i-direktor-obsestvennogo-fonda-podozrevautsa-v-hisenii-sponsorskih-deneg-ozenmunajgaz.html" target="_blank">Экс-замакима Жанаозена, глава больницы и директор общественного фонда подозреваются в хищении спонсорских денег «ОзенМунайГаз»</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 10.09.2026 13:23</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 11.09.2026 10:28</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">В ближайшие годы фонд «Самрук-Казына» реализует 38 проектов на 21 трлн тенге - Silk Way TV Channel</div>
+      <div class="art-summary">Экс-замакима Жанаозена, глава больницы и директор общественного фонда подозреваются в хищении спонсорских денег «ОзенМунайГаз»</div>
     </div>
     
-    <div class="article" data-date="2026-09-09" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOVlZ2bGhlQXpZWDNYNXJwYjh2ajR0WHhFUVdveHNkSWIyWWh6VGY2YUJ0eTJvTUFPX0didmpNc1JaaGUwSUp0N3Q4emFvLTNuS1d2R2pDbV8yUVRacjFhRzBFenFNZDNWdFhVOXU0TjVFZ1YwWUhoSnlzbUZNdGtjRXFmOUROUzU2akFzUUNuLU9DdFlmMnNCUEtUWHVhN2FqcVHSAaIBQVVfeXFMTlZWdmxoZUF6WVgzWDVycGI4dmo0dFh4RVFXb3hzZEliMlloelRmNmFCdHkyb01BT19HYnZqTXNSWmhlMElKdDd0OHphby0zbktXdkdqQ21fMlFUWnIxYUcwRXpxTWQzVnRYVTl1NE41RWdWMFlIaEp5c21GTXRrY0VxZjlETlM1NmpBc1FDbi1PQ3RZZjJzQlBLVFh1YTdhanFR?oc=5" target="_blank">«Казахтелеком» полностью перевел отдаленное село в СКО на оптику - Qaz365.kz</a></div>
+    <div class="article" data-date="2026-09-11" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPd1JoSVYybldpcEZpMGlJMktQaldQOTR4X3lyeGNhaUkycDJRSkg4TWlSU1JETGtYb0J0bXV2cGJodUE3ams5V2dGNGliOHdoenI0TWV0dFVRWFVfV1RRbjNITm04bXV1eEN5QURKQmJjLXkyRHR6TVUzenlMWjFrRzBZNDFETHFBMlZ1Tk5lX2l1REJIMVprUEhUUVh5TGh2UVVWd1RfNkIwNEY1?oc=5" target="_blank">«КазМунайГаз» обманули на сотни миллионов под видом помощи больнице - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 09.09.2026 12:30</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 11.09.2026 05:11</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«Казахтелеком» полностью перевел отдаленное село в СКО на оптику - Qaz365.kz</div>
+      <div class="art-summary">«КазМунайГаз» обманули на сотни миллионов под видом помощи больнице - Kursiv Media</div>
     </div>
     
-    <div class="article" data-date="2026-09-09" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9nMFlQTmpqaF9ZOG9ZNzh2WGx1UG5FQU1mdlB5UHJWNlRRMDZJUmhpcGE3QkZDTF9SM2JDbHZ0LTROSF93RXNlVm1ncGJrZ1FiRXZPWk43ZVJSQXdGQ19LQ2xJcTFYdw?oc=5" target="_blank">«Казахтелеком» подключает новые дома в Актау к оптическому интернету - infohub.kz</a></div>
+    <div class="article" data-date="2026-09-11" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOdWdjdW0yc2JTblcwSlQyOERIdVdfOURzdVZsRGljMzN5azQ2ZkxWR1RRUUVPdEFUN3luVjM4ZUgwa2M1TmFfOU40bER1LVVsQnVhTjE0S05NRE9tRjZjaHB0cWFXaURFWnhSVncwVDdVVkthSGZObDFfalFuMEdmc2d4Z3MxSWJJZkJwNHI5TUs4YkRhWGc0MA?oc=5" target="_blank">Миллиард в автобусы: как &#34;дочка&#34; КазМунайГаз оправдывает огромные траты - Qumash.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 09.09.2026 09:54</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 11.09.2026 04:23</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«Казахтелеком» подключает новые дома в Актау к оптическому интернету - infohub.kz</div>
+      <div class="art-summary">Миллиард в автобусы: как &#34;дочка&#34; КазМунайГаз оправдывает огромные траты - Qumash.kz</div>
     </div>
     
-    <div class="article" data-date="2026-07-21" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQVpkRGxuOFFLVzAwVFl1a3NzN2twQ2w4N2pBVmVfVk43Q21MeEQ3UTJ6Z3NWU0xNelVvUi03NlBSWGVQeTV0TzhMdUhERm4ydTY1b2ZTcEU1WTlfcENnakJaU2hpaW9RZVNmMDdLN2Joc2tXZ0dycDY3dV9IMDJDWGszbFhLOHNFY25keGI0NDdjaW9VN0U1QXh5eGwtNmQ1cjI5em1lY2o3SXdfUnlBNU1yMjdrNk84V0J6WklSNkZMX3E1TEo4X2s1ZE1wSTR5dWtRVlZn0gHbAUFVX3lxTE5hV2kxbjNGUGhVVFQwdkx0czA0alZMN0prZmZfbTB1eE9wQTVMMkFpcUlsb3lIQlV4Smp0czh5R09yMVJvNGEwTGFtSE1LbEl3VmR4OHVlb2tqVEJZVVlEZURSbHlNM19DNlJEc0lKRmhpS0RZYkZ6M1BSQjRGTjNBcmVybVdzVDI2bDBwN2xZUGRPbGI5a25DWHZtNDNLdXNiWFB6RHhHY0ZuMEpfZ3dlbWR1eW9SV3FSMXptVmRDYWY1YXNJWGFoYUY3Z2xrWC0wblpHdUFiRVNZaw?oc=5" target="_blank">Интернет в аулы и AI в школы: &#34;Казахтелеком&#34; презентовал цифровые проекты в Кызылординской области - Новости Zakon.kz</a></div>
+    <div class="article" data-date="2026-09-11" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOTWthNHpTREV6NHZNdGhIYlcwQ1lvYzdpelpJOFprM0Q5V2N6T0g3UDNtMDFTZDhfdnhiY0NJajhFQUlQbENPMjdIQmxhSmVqejZOSmRsZmRyVWV4NHo0U1djT2RJUlplWXFNNmp2a2pTYzZLMC04YTVkWE9MMnF3WnpENVBsNmUxSEl5Y2U5X3R4U2h3NnVabVRkNEQ0Mzg?oc=5" target="_blank">«Казатомпром» стал лидером по выплатам топ-менеджерам нацкомпаний Казахстана - zhaik.su</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 21.07.2026 07:00</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 11.09.2026 03:33</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Интернет в аулы и AI в школы: &#34;Казахтелеком&#34; презентовал цифровые проекты в Кызылординской области - Новости Zakon.kz</div>
+      <div class="art-summary">«Казатомпром» стал лидером по выплатам топ-менеджерам нацкомпаний Казахстана - zhaik.su</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPZDYzNm43OVNJMUxEYkpXYk9GU2xsUTFEd1ljVFI4RDJFLWxmVDBVbDAtSEh5WHR2VnFBZmNPYXZhQ0tkc0VhUUZtN1Q4LUx3aTVULXZWQ1FkazZJOGY3cEVhQ1BCX0NCSFpUOXEybnY2a3RiOHdOZWI1MlUwN2dxZQ?oc=5" target="_blank">«Казатомпром» снизил продажи урана на 13% - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 03.08.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» снизил продажи урана на 13% - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-08" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQVhrNGdGTEhQazhyWkpHNTlOdzIwdTZrTUwzcUlQTzRmLTdnQ24yVE13YlIzaGN3Tk1vQ1pRZ3V4TDV6UE94VmJjOWVrcF9lek5sanZJRndtTTRtMkxUOHpoNEpNSVhTYUNBLTJwLWZEZTFWUlAyNkdtMXZXSjgzTFNwV1Yxa0M3Yk9RLVNZa2FBYXU4azR2OEtONmU4dkFlM2FJaC1GeHlKNVdyUGxYSVl2cF9ueWVYZnFZ?oc=5" target="_blank">Самолет Air Astana совершил вынужденную посадку в Актобе из-за отказа двигателя - Azərtac</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 08.05.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Самолет Air Astana совершил вынужденную посадку в Актобе из-за отказа двигателя - Azərtac</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-11" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOWEZfVGJ6bTJjUVpGQVMySlk1NUhpNW1KT21fLU5Cc3JWMmxlWmlFOHRicUpaa0hhdTNqV096cXRCbEJIN2p2dFZuc194MFlHVW1ZQ05EUk1rOExKMlpaWmpMZm5Va2lobXF0S0FGblVHdGtVVHlUVmVpdGNYUjdXNWVaSjVaU2xvNjVVOXA5OGhBSmdoaVE?oc=5" target="_blank">КТЖ изменит тариф на передачу электрической энергии - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 11.09.2026 04:57</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ изменит тариф на передачу электрической энергии - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-10" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBVVFlNNmgxSDNDUkxialZaVGl6M3hHMEQydFFRSlJTbXlGZTJGeVBzTGtienhSYUF4em43XzdGSW40dzU4eDNNalVn?oc=5" target="_blank">Парк КТЖ пополнился 159 локомотивами - Ак Жайык</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 10.09.2026 04:59</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Парк КТЖ пополнился 159 локомотивами - Ак Жайык</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-09-11" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-11/shlc-kazmunajgaz-obmanuli-na-sotni-millionov-pod-vidom-pomoshhi-bolnicze/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-kazmunajgaz-obmanuli-na-sotni-millionov-pod-vidom-pomoshhi-bolnicze" target="_blank">«КазМунайГаз» обманули на сотни миллионов под видом помощи больнице</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 11.09.2026 05:08</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» обманули на сотни миллионов под видом помощи больнице</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -214,8 +278,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-21';
-  document.getElementById('date-to').value   = '2026-09-10';
+  document.getElementById('date-from').value = '2026-05-08';
+  document.getElementById('date-to').value   = '2026-09-11';
   applyFilters();
 }
 
