@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 11.09.2026 14:04</div>
+  <div class="meta">3 источников · Обновлено: 11.09.2026 16:57</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">4</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-30">
+      <input type="date" id="date-from" value="2026-07-31">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-11">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,10 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -108,96 +104,52 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-08-12" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPYWI5anhrTnEwTk4taHpkMnNCMUVsU0hlTlFLTTI3aHh3U3c4OXBzLXNGU3lIUWZXQmZITjN1WXhVbHBiZTBtOFRKOVlzT3NqS3NJMmxBYy0xb2pWZG03OHUwZFVkbUQtc0d2Q2IxcTBRaC1MazF2SExNdjh2MVJMOWNtRDB3RHJrWU5RRFFZUnB4NG45S3pJQVQzR1lpSU5xWVVoRzRpWlc5QzBRNGt5d1BtWWI?oc=5" target="_blank">Всё больше активов и долгов: «Самрук-Казына» рискует превратиться в финансовый пузырь — эксперт - orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.08.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Всё больше активов и долгов: «Самрук-Казына» рискует превратиться в финансовый пузырь — эксперт - orda.kz</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
-    
-    <div class="article" data-date="2026-09-11" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOMjY4cW5HX2hQUzJlay1zSzk0QjB2VDQyaHVPY3ljWUdLaTlBX2lTUW91TGpKS2NJbXZYN0tJb2xnM29Eb1o2UmttWjhYZVpfNkprU2pYSTM5cXlLa292akNjT0Zna2w1UnpSTjFZbmI4SkFlbFpaejYxMC1SazllV0N6VjIzR085YU9yUUxKMjZjNEFWZlZXTUxGbDBXdWR0Z21DU0NvQnd0V01VWnc?oc=5" target="_blank">Сколько миллиардов ФНБ «Самрук-Казына» сливает в прокладку «Samruk Business Academy» - Hronika.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 11.09.2026 13:02</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Сколько миллиардов ФНБ «Самрук-Казына» сливает в прокладку «Samruk Business Academy» - Hronika.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-11" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOZjBsbU5jaTdya21paFIxMWQ2ZnJQaW5RZk0xRHR1Z0RabjJOZC1wY2pHYzdfS0tOR2ljSGo1cTBONDJ5cHoyRFplVXRGWFhob2RxLUl5eEZDai1lYlNvTmotX2NLYldhNXRzTDVTcTRGY2JXb0lnSXZ1MkFpTjhPd2RNSzhMaFh2NW5GVTFTdjNmcDlQakk1bVNzNk10U214anFLWmlqSW4tMVl3Qy1GbXZmUE3SAbMBQVVfeXFMTWdnMzBUMXBCYkE5R1gybFpaUk8wS1JqWS1Fam1mWkJzd1FRUlZTQ0haX2ZKRG05VUpZYy16Sll5bmJzS090ckxwdHRwOElHcjhkZTRFTUhiNkhwdDhSUjRHc24zYmt2aUctbHFJbWFlX2J0MUlWVWVOTHBsR3d2TTNBZ2pycWw3d2Rfclh6SUI5cVk5NnNPV3ptMjJlemlEUFhDMi1VNWdNWS1SS3lEMEJVa1E?oc=5" target="_blank">Air Astana вложит миллиарды долларов в новый флот и готовится к полётам через Атлантику - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 11.09.2026 12:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana вложит миллиарды долларов в новый флот и готовится к полётам через Атлантику - BES.media</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
     <div class="article" data-date="2026-09-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPc2YwRzFGbTVYaVI2R1BFUFlFTGNldEY5bFpVam93NTk3cms0T1B4YS1DaDBZV004Q0wzVU0yM2h6R0JZUGlFWVUwOFIyQ0pnXzlLbElrMkY4Vko2bHZXV2t2NGpZVmJxR3Qwd0d6ck5HM2gtVFF5dUh0Vnhta3drMUZPT0s4QdIBkgFBVV95cUxNcGY0U2RIblZ6TS1taTQtV0tVYTB1d3c4STJlbGYwNTd3dGpUb05XeGxpX0pPOVZFZWRlSFl4Q0ZEbTBxQkVLZGJ3UXlkRVFHdVg4Y3prY0ZsV2dHa1V5NThsV183REdEYVdmQjdrSm9Xa05fQ3BubmdBZjVnM3FNRUpjTnY0VW1XTHNzWkxmenlGUQ?oc=5" target="_blank">Подготовку КТЖ к IPO обсудили в Минтрансе с ЕБРР - BAQ.KZ</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-11/lngr-astana-landscaping/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lngr-astana-landscaping" target="_blank">Более миллиона деревьев, кустарников и цветов высадят в Астане</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.09.2026 12:34</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 11.09.2026 14:23</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Подготовку КТЖ к IPO обсудили в Минтрансе с ЕБРР - BAQ.KZ</div>
+      <div class="art-summary">Более миллиона деревьев, кустарников и цветов высадят в Астане</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd25JZjdfbFlIbTlIYnlnMWE3WGE2QW9VWUtGQV92eEdRQW1Sa2ZXZmFORGZhNzdGTWxXN1o4UXBGcDloaGZYUWd4MW9FQnBTY2VWMXhWNUdrcDZDWllVbi13ZzExbjMtQXBjQzRxQXVqUlUxQklpSG5HUVFoMDBTZHg4YmYyNXM0cFAyeDVVdzQwbmkxaXM2VTBTQ1BHTUJFa1RxUHdPNWJOd2pmUFJyeUlxbG1TTjdjM3hMUnBVbDDSAcYBQVVfeXFMTkMxMnVzbjE2ZmdXZU1PaDlzR2d0QVZqcWhtZTAtVGlDbTF4N19oeTZQbVcxWmdWN2VOdkN1NHBqOWQwRzE4d1dydzVvQlFWNkp4RkdQN2JnaFhvczJsdGtQVVJPcWd1QjkzTG5WSURRR0dTdEdRRFdZYU1VNDJBV1RzVEZlNUpYMkxaMklmYU1QVmhCMkdGWGwzNkdtSU1CT1lIQm1nY1RfeEoteHNYYTF5STFkclB1b2RReWJESzBhR2RfSGtn?oc=5" target="_blank">Сила в людях: в КТЖ наградили передовиков производства к профессиональному празднику - ru.elordainfo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 31.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Сила в людях: в КТЖ наградили передовиков производства к профессиональному празднику - ru.elordainfo.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
-    
-    <div class="article" data-date="2026-09-11" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/it-has-become-known-when-the-construction-of-skytrain-will-273539/" target="_blank">It has become known when the construction of SkyTrain will begin in Almaty</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 11.09.2026 18:53</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">It has become known when the construction of SkyTrain will begin in Almaty</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-11" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-11/holding-samruk-kazyna-narastil-pribyl-v-pervom-polugodii-na-18/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=holding-samruk-kazyna-narastil-pribyl-v-pervom-polugodii-na-18" target="_blank">Холдинг «Самрук-Казына» нарастил прибыль в первом полугодии на 18%</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.09.2026 12:11</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Холдинг «Самрук-Казына» нарастил прибыль в первом полугодии на 18%</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-11" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOem9PNXZWV0MwNjlYT081V3BicXpDVXNNc2cybGtPQ1M3Q0hQMnRHMkQtbF9ra0MwYWhZVzRNcDRZRVdKQVFCaWg3cVliTGVQdXJCN3NtN2xTQTBKc1YxcnlTSGpKejNXQzYxQ0txZllScFZvYVNYNXFSaF9ETV9XWXRRTjljMTc0NU56ellYZ0lpRG1COWl3UjBFMnZfRjg?oc=5" target="_blank">Холдинг «Самрук-Казына» нарастил прибыль в первом полугодии на 18% - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 11.09.2026 12:12</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Холдинг «Самрук-Казына» нарастил прибыль в первом полугодии на 18% - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-30" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQTGJrMUM5WEJCdzgtVFZrcHF5c3dsdGdHYWZJUDUtTFFPS0FZd2lRdzNfeFNybEc5NGVqdkNRTnZQbm1vZ2V2OWdiSUpiOVMtMWZ5NE9aV0VNVVRMVXFlTFU0SlFyTzdsSTN0YWNYcnFCVTNLWlVCcXNJUjBQVjB5MDRVZmlpdEVkUUduM1JKQnnSAZQBQVVfeXFMTzBKRkRXQlREaVp6aXFGSmpXVUVNWGd1SkozZzdwT0xZNi12ZFBSWmxmRHVCeUhkVzhfaXVMcS1JSU92enVsbkFWdnFoZE8tMW9NQWItQS1RSkw5UUVRR3hyWGVzajBGY000RElSZnhUSXZVVDlEOUNqNGxVMnRsUFNHa2lFQnpxbjFMT1FRZEtsTWJ2aA?oc=5" target="_blank">«Казатомпром» собирается выплатить миллиардные дивиденды - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 30.04.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» собирается выплатить миллиардные дивиденды - Ulysmedia.kz</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -256,7 +208,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-30';
+  document.getElementById('date-from').value = '2026-07-31';
   document.getElementById('date-to').value   = '2026-09-11';
   applyFilters();
 }
