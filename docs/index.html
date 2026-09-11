@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 11.09.2026 05:40</div>
+  <div class="meta">6 источников · Обновлено: 11.09.2026 08:28</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">9</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-08">
+      <input type="date" id="date-from" value="2026-06-17">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-11">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -93,6 +93,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
     </div>
   </div>
   <div class="ctrl-group">
@@ -108,97 +112,80 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-09-11" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-11/lsbs-robot-hirurg-za-433-mln-tenge-nachal-spasat-paczientov-v-vostochnom-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lsbs-robot-hirurg-za-433-mln-tenge-nachal-spasat-paczientov-v-vostochnom-kazahstane" target="_blank">Робот-хирург за 433 млн тенге начал спасать пациентов в Восточном Казахстане</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 11.09.2026 06:24</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Робот-хирург за 433 млн тенге начал спасать пациентов в Восточном Казахстане</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
     <div class="article" data-date="2026-09-11" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70831-eks-zamakima-zanaozena-glava-bolnicy-i-direktor-obsestvennogo-fonda-podozrevautsa-v-hisenii-sponsorskih-deneg-ozenmunajgaz.html" target="_blank">Экс-замакима Жанаозена, глава больницы и директор общественного фонда подозреваются в хищении спонсорских денег «ОзенМунайГаз»</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-11/kaye-do-113-mln-tengge-na-cheloveka-skolko-poluchayut-top-menedzhery-naczkompanii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-do-113-mln-tengge-na-cheloveka-skolko-poluchayut-top-menedzhery-naczkompanii" target="_blank">До 113 млн теңге на человека: сколько получают топ-менеджеры нацкомпаний</a></div>
       <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 11.09.2026 10:28</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 11.09.2026 07:01</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Экс-замакима Жанаозена, глава больницы и директор общественного фонда подозреваются в хищении спонсорских денег «ОзенМунайГаз»</div>
+      <div class="art-summary">До 113 млн теңге на человека: сколько получают топ-менеджеры нацкомпаний</div>
     </div>
     
-    <div class="article" data-date="2026-09-11" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPd1JoSVYybldpcEZpMGlJMktQaldQOTR4X3lyeGNhaUkycDJRSkg4TWlSU1JETGtYb0J0bXV2cGJodUE3ams5V2dGNGliOHdoenI0TWV0dFVRWFVfV1RRbjNITm04bXV1eEN5QURKQmJjLXkyRHR6TVUzenlMWjFrRzBZNDFETHFBMlZ1Tk5lX2l1REJIMVprUEhUUVh5TGh2UVVWd1RfNkIwNEY1?oc=5" target="_blank">«КазМунайГаз» обманули на сотни миллионов под видом помощи больнице - Kursiv Media</a></div>
+    <div class="article" data-date="2026-06-17" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE42VVlEUzdSaWVvdGRqRE1sQjJEV2Q0SEFTMnRIMlRfSXFJYkpUZXk5LUpBWk5QMlpYb2VoTk5oQmNSX01xTkwwRldnOGh0bGMtSWRpRlgybw?oc=5" target="_blank">Аналитика. КазМунайГаз внедряет цифровые двойники месторождений с использованием ИИ - Energyland.info</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 11.09.2026 05:11</span>
+        <span class="date">📅 17.06.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» обманули на сотни миллионов под видом помощи больнице - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-11" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOdWdjdW0yc2JTblcwSlQyOERIdVdfOURzdVZsRGljMzN5azQ2ZkxWR1RRUUVPdEFUN3luVjM4ZUgwa2M1TmFfOU40bER1LVVsQnVhTjE0S05NRE9tRjZjaHB0cWFXaURFWnhSVncwVDdVVkthSGZObDFfalFuMEdmc2d4Z3MxSWJJZkJwNHI5TUs4YkRhWGc0MA?oc=5" target="_blank">Миллиард в автобусы: как &#34;дочка&#34; КазМунайГаз оправдывает огромные траты - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 11.09.2026 04:23</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Миллиард в автобусы: как &#34;дочка&#34; КазМунайГаз оправдывает огромные траты - Qumash.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-11" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOTWthNHpTREV6NHZNdGhIYlcwQ1lvYzdpelpJOFprM0Q5V2N6T0g3UDNtMDFTZDhfdnhiY0NJajhFQUlQbENPMjdIQmxhSmVqejZOSmRsZmRyVWV4NHo0U1djT2RJUlplWXFNNmp2a2pTYzZLMC04YTVkWE9MMnF3WnpENVBsNmUxSEl5Y2U5X3R4U2h3NnVabVRkNEQ0Mzg?oc=5" target="_blank">«Казатомпром» стал лидером по выплатам топ-менеджерам нацкомпаний Казахстана - zhaik.su</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 11.09.2026 03:33</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» стал лидером по выплатам топ-менеджерам нацкомпаний Казахстана - zhaik.su</div>
+      <div class="art-summary">Аналитика. КазМунайГаз внедряет цифровые двойники месторождений с использованием ИИ - Energyland.info</div>
     </div>
     
     <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPZDYzNm43OVNJMUxEYkpXYk9GU2xsUTFEd1ljVFI4RDJFLWxmVDBVbDAtSEh5WHR2VnFBZmNPYXZhQ0tkc0VhUUZtN1Q4LUx3aTVULXZWQ1FkazZJOGY3cEVhQ1BCX0NCSFpUOXEybnY2a3RiOHdOZWI1MlUwN2dxZQ?oc=5" target="_blank">«Казатомпром» снизил продажи урана на 13% - Forbes.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNaWRyR3R6UzVuUDE3di1xazhlemlVUmxBNXRCWUxCZUJPbjBjVEctUkJqd2VKdzI4RnBNbVZQcDZ0TFJ5aml6SUl3SHNLVDlUX1ZWS0JoVWJxVVdaU205SkZPMzlpU2JWQjktYXJpVUx2ckhBN0d1T2NpZmI3M2pGSmg1NmZHUnVVNC1mM281bw?oc=5" target="_blank">Почему «Казатомпром» увеличил производство и снизил продажи - Oninvest</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
         <span class="date">📅 03.08.2026 07:00</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«Казатомпром» снизил продажи урана на 13% - Forbes.kz</div>
+      <div class="art-summary">Почему «Казатомпром» увеличил производство и снизил продажи - Oninvest</div>
     </div>
     
-    <div class="article" data-date="2026-05-08" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQVhrNGdGTEhQazhyWkpHNTlOdzIwdTZrTUwzcUlQTzRmLTdnQ24yVE13YlIzaGN3Tk1vQ1pRZ3V4TDV6UE94VmJjOWVrcF9lek5sanZJRndtTTRtMkxUOHpoNEpNSVhTYUNBLTJwLWZEZTFWUlAyNkdtMXZXSjgzTFNwV1Yxa0M3Yk9RLVNZa2FBYXU4azR2OEtONmU4dkFlM2FJaC1GeHlKNVdyUGxYSVl2cF9ueWVYZnFZ?oc=5" target="_blank">Самолет Air Astana совершил вынужденную посадку в Актобе из-за отказа двигателя - Azərtac</a></div>
+    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxPeUpqdjdnZW95RkZRZW4yVDBVR3BrUTlZUDB4dHE3MWZSUEl2VUNLaWFyUmFXQlYza080TENJVWNfaVZUcmpWdm05bVZYM1N4UTFPaEhhRkVNQmlMblV0T21ZSWdITnNoWVVRZjZuOFhsN3VwbHJ1ZjZVaktpaGlqdFdUZw?oc=5" target="_blank">Токаев назвал новый приоритет Air Astana - dknews.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 08.05.2026 07:00</span>
+        <span class="date">📅 01.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Самолет Air Astana совершил вынужденную посадку в Актобе из-за отказа двигателя - Azərtac</div>
+      <div class="art-summary">Токаев назвал новый приоритет Air Astana - dknews.kz</div>
     </div>
     
     <div class="article" data-date="2026-09-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOWEZfVGJ6bTJjUVpGQVMySlk1NUhpNW1KT21fLU5Cc3JWMmxlWmlFOHRicUpaa0hhdTNqV096cXRCbEJIN2p2dFZuc194MFlHVW1ZQ05EUk1rOExKMlpaWmpMZm5Va2lobXF0S0FGblVHdGtVVHlUVmVpdGNYUjdXNWVaSjVaU2xvNjVVOXA5OGhBSmdoaVE?oc=5" target="_blank">КТЖ изменит тариф на передачу электрической энергии - Қазақстан теміржолшысы</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOX2JfMTJlR2FWQl8zNnNOU0tzNmZDR0hBbHdsTlVHS0ZMNWtPczFkczRITno0TEdEcWNIZTQxZGYyMTUxWjQ3d2RnSy1ndi1HTDk0aGthUlZFYjQ2NGRsRnNUYkd6aFpoMGcwemFaemRPQXhBRkhDQldRSjZOMTZib094VVZ5QQ?oc=5" target="_blank">Заседание Совета ветеранов прошло в КТЖ - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.09.2026 04:57</span>
+        <span class="date">📅 11.09.2026 07:28</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ изменит тариф на передачу электрической энергии - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBVVFlNNmgxSDNDUkxialZaVGl6M3hHMEQydFFRSlJTbXlGZTJGeVBzTGtienhSYUF4em43XzdGSW40dzU4eDNNalVn?oc=5" target="_blank">Парк КТЖ пополнился 159 локомотивами - Ак Жайык</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 10.09.2026 04:59</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Парк КТЖ пополнился 159 локомотивами - Ак Жайык</div>
+      <div class="art-summary">Заседание Совета ветеранов прошло в КТЖ - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -208,15 +195,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-09-11" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-11/shlc-kazmunajgaz-obmanuli-na-sotni-millionov-pod-vidom-pomoshhi-bolnicze/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-kazmunajgaz-obmanuli-na-sotni-millionov-pod-vidom-pomoshhi-bolnicze" target="_blank">«КазМунайГаз» обманули на сотни миллионов под видом помощи больнице</a></div>
+    <div class="article" data-date="2026-09-09" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPa2hJdDNFMFpZc3RhYXRRNE1UcUtnMlVEZ1FObmluZ0VVMGNBaUt3TWZBMzRGdFd2bFJSalJXWDdRRXVjSllMUC1mZlplVnJOTGZSN3ZSb05xNTN5UWpmSlprQXp4Ui1KU29HOHI2cEpxSnYwN2g3eGxJU05nVTJrT3NIdjlCSGs4RUtpLUxleVZwVVFjSzlKVFA2WQ?oc=5" target="_blank">Казахтелеком: итоги 2-го квартала 2026 года от аналитиков Freedom Инвестиции - Freedom Broker</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.09.2026 05:08</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 09.09.2026 05:44</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» обманули на сотни миллионов под видом помощи больнице</div>
+      <div class="art-summary">Казахтелеком: итоги 2-го квартала 2026 года от аналитиков Freedom Инвестиции - Freedom Broker</div>
     </div>
     
   </div>
@@ -278,7 +265,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-08';
+  document.getElementById('date-from').value = '2026-06-17';
   document.getElementById('date-to').value   = '2026-09-11';
   applyFilters();
 }
