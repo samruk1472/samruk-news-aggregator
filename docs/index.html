@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 14.09.2026 05:53</div>
+  <div class="meta">4 источников · Обновлено: 14.09.2026 09:29</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-18">
+      <input type="date" id="date-from" value="2026-07-03">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-12">
+      <input type="date" id="date-to" value="2026-09-14">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -88,6 +88,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -105,28 +109,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-05-20" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxPRnJ6TEs1N0JnU0t5S3FId1FwcjVKOElmdm5KdXhGR2I1UTRzeXFGU1NfLVhFbzU2UnZMemNtbHNlWkRySl9DblJUUFgtbjZReUUxMEFxWlRVNGNrellaaHhKLXMzOVhQWWVXV3RCem9kTi1XdGRYd0JyeVJtZVY3MXRUNWNlejNJNWpFQU55ZDRxQWxYZTBnTFhnV1RSaGVnWW5nemM0YzZDQ050UmNBRWxKbTBlWFpFM2Nyag?oc=5" target="_blank">Дайджест NBK: труба в обход России, отложенное IPO КТЖ и штраф для &#34;Каражыры&#34; - National Business</a></div>
+    <div class="article" data-date="2026-09-14" data-co="Казахтелеком" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-14/svan-kcell-i-tele2-sudyatsya-drug-s-drugom-iz-za-shtrafov-na-milliardy-tege/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-kcell-i-tele2-sudyatsya-drug-s-drugom-iz-za-shtrafov-na-milliardy-tege" target="_blank">Kcell и Tele2 судятся друг с другом из-за штрафов на миллиарды теңге</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 20.05.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 14.09.2026 09:14</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Дайджест NBK: труба в обход России, отложенное IPO КТЖ и штраф для &#34;Каражыры&#34; - National Business</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-18" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxONVZieEpwenduOVJXZjdkVXJhdndmYkp1QlpRMXdSS2pqRTVfZzZ3WnlJODlGMV9ZX2F5aTlHMnFSMmJVb0N6VXc2UkZxMm1WUmFnYzZjcWE4N3NSVnRnRE03RXNnSU83T1FqNEw1R1Fabkg0bUhqS0I0QUdPSTNuZWZ2bVB6dHF1NTF0Ml9uWDM2Q3RxX0RB0gGWAUFVX3lxTE9ha2ZLNFJGY295MTNuTUtBZ3diQTJTdFVYbGdPaV9oME14UnpFcTdSWGtad2R2NXhPVy1DV3hKN1BWc0xuQ2JqeFlrMjBmSUs0dHZibUxKX25yTlBPYzZtNkRQNmF4clhmMEwtZWtQSlhpQnp3eUkydHZIeW9fbTdRYjdSXzRvSThvc1BremV1R1RzTGFGQQ?oc=5" target="_blank">КТЖ обязали изменить правила приписки вагонов после жалоб бизнеса - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 18.03.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ обязали изменить правила приписки вагонов после жалоб бизнеса - BES.media</div>
+      <div class="art-summary">Kcell и Tele2 судятся друг с другом из-за штрафов на миллиарды теңге</div>
     </div>
     
   </div>
@@ -134,33 +127,60 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-07-09" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSVYyanlsM09yWmFzbTRMYlNqTGgybnlQR05WVzd1eGMzOUJ3SmZQbW9uMkVUNlk3TmpEMUpOM0NvOXhNRko2M3l5OGhQWWEzTXFjSDFOSEtvaFJjQldYY1BLQTZWbzJ2WW1NOTNFbDN2LTBRX190TFJZOXFTN1JBNTVOYU9yMDhxUGtZTXdURFhWbVJyTzUwd0ctQlZUdFRTU2JGTEZyeklYeWxSWTFpWXgxd01VdWZRbkdPX0ZwbUU?oc=5" target="_blank">У миноритариев появились вопросы к руководству Air Astana - Kursiv Media</a></div>
+    <div class="article" data-date="2026-09-01" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOcEtiOW5WRzZaNVg1SWdqclZsOVJuU1RWNTRsTjZNMzdjU3dPcXBKeUV2WGZ0STFueTZiYnIxMWZmRHdYdTQ2Z3JGM19FU0VkREtHbS1XTm1mMTBMVzY3cG9WdEx0aEFiYUhORDNHRlJzV1dRYTFqbWxVZ3dmZ0pQeU40Yw?oc=5" target="_blank">SCAT заработал в 5,6 раза больше Air Astana - inbusiness.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 09.07.2026 07:00</span>
+        <span class="date">📅 01.09.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">У миноритариев появились вопросы к руководству Air Astana - Kursiv Media</div>
+      <div class="art-summary">SCAT заработал в 5,6 раза больше Air Astana - inbusiness.kz</div>
     </div>
     
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOSWl6UnJXcFdFODRGWVNTbUpmQm4xZkItc2VjUGFXQUU1SlFLaE5zSy1oQXFJanhQdkJObXdQTTlSYldhU2ZycEpZVFZCaWZtVWtsSUpvNm94Y29MUlBra0JGcVdPNndhVFNfWko2UHZ2ZUoxOW9DMDJOeGtRTEtCWko0S2xQcVM5SmtIT3ZCSFppZ1dXWTk3Qko1elMzSnRRcnczNHp30gGnAUFVX3lxTFA2ZFBzbENrRU9UUW9yaDZBbjU0VHNWbnhySl94YWcyUWJ5TkhjWk9JM1NYVHNJV0QyeU5ZMWMxWFpucDJGSURXTzVKekxkLUwzeENrS2FPN2JKX2dSUjdFcDVGZzVueW9rS291OFRTSkhKeV9COWRfcmVSdHV5Vy16YzdERnF1ZXFaZ19CelJWSjJObWxqWl90eHdqTGt2R2wxek81X0t3?oc=5" target="_blank">Air Astana изменила рейсы в Дубай из-за ситуации на Ближнем Востоке - Казинформ</a></div>
+    <div class="article" data-date="2026-09-14" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9QaHlMbjk2SmFlOElxOVd5Wmk5bXcyQlZjY0x4aGdwRTR6c2dzMmlwRWxSdHRsX0dpanRfUnp1LWtCVnFaNl9aQ1BVQkxOT2pkVlNBaHdhUEFzcHMwbTVURk9zVEdnaDBGTUY1RTV3LVFJTEZTZmtGSUVNdw?oc=5" target="_blank">КТЖ повышает тарифы на услуги МЖС - Регистр ТВ Казахстан</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 07:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 14.09.2026 07:42</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Air Astana изменила рейсы в Дубай из-за ситуации на Ближнем Востоке - Казинформ</div>
+      <div class="art-summary">КТЖ повышает тарифы на услуги МЖС - Регистр ТВ Казахстан</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-03" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQZXNwaHBNRXgwaU5KcGxwbnpTSF9tX1BlNmtWUWNFRDFXYXYtQmtoVEU4Nlc3ZlhKWnNUUHA5ZUU4S3dFZU56Z1V3Y1FIZGhqLWNUNm9tSkQ3dUJiWXYtOUhJa0JuNkxIblMtdlhXaE14WlMtdW5kNXR3TUV0LWdpTFo0YkRMTzdPaXhyQi1sRXBkSUViSWtsZEpjM1RsU3pxM2FQVnlldw?oc=5" target="_blank">Что должен знать каждый пассажир: КТЖ объяснил обязанности проводника - Almaty.tv</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 03.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Что должен знать каждый пассажир: КТЖ объяснил обязанности проводника - Almaty.tv</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-07-16" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbEswZWdTTHhfR3RZRGxCZWpLOE1GRUpvS2dVcG9tWjRUajFlMnJEdGxVUE55RWgxUTY2ODM1RDZHdlJuTEw0VHktNTl1bkNZcWljbHBWX05LVFcwZk5FekxORmZMOGg5VDh5ZVlJTFRXR3FPS0xvSDR1NWt2R1BXQnk1U1liamxPNG81R2dZV1hqZXJVaThnUE5PQlg2X1d1NGZ2LVlHMks5dw?oc=5" target="_blank">Стало известно, чей пакет акций «Казахтелекома» приобрел госфонд «Самрук-Казына» - Profit.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 16.07.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Стало известно, чей пакет акций «Казахтелекома» приобрел госфонд «Самрук-Казына» - Profit.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -219,8 +239,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-18';
-  document.getElementById('date-to').value   = '2026-07-12';
+  document.getElementById('date-from').value = '2026-07-03';
+  document.getElementById('date-to').value   = '2026-09-14';
   applyFilters();
 }
 
