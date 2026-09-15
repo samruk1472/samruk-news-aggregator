@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 14.09.2026 19:59</div>
+  <div class="meta">5 источников · Обновлено: 15.09.2026 05:55</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-12">
+      <input type="date" id="date-from" value="2026-01-23">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-11">
+      <input type="date" id="date-to" value="2026-09-15">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,6 +86,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -106,63 +108,85 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-06-12" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOWUxYcUo5aHdnMDVQZUFRdFVRZnhnRTYyOUZCUG1jUmNmOVM2OWNCcnBuX3l5cDdjUFJjSlRhWUszUFhnNG1WQjE2VHJDWXVsS0J3NWdiUVpFallab0RLajc1WHpEWlB4alEzMHJ5SmZrZEhFRXNyV015aDk4TThPTDE2dXRqMmVCZzRicHBvVkhCOVZXbC1lTTBWTlhhd3JtbG95MHA5VVlPWl9KNjhnOHRJbXPSAbYBQVVfeXFMTm4yRGxWTzlWVDBuOWVhNG1xN3ExQURJX0ZDendyUVhmZFF1NjFqRlp2Zk42UkQtek56LVlOdWFSSkVLeHpnLWU1eDRPRzZIZ2xYVFE1WFUxd1ZMUGdqcGJ0T2lWWHRLUWlWakdRWlJnSXJSNmpObWhTVURCYzIyeWpCVl9QcVhBZWszMnBaSFdFQnJlOG1mZ195em1nWHdVYjlDN0dtMDVVUThlMEVZWGpUcEtEaFE?oc=5" target="_blank">На уголь приходится около половины всей погрузки железнодорожного транспорта Казахстана — КТЖ - Казинформ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 12.06.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">На уголь приходится около половины всей погрузки железнодорожного транспорта Казахстана — КТЖ - Казинформ</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-09-11" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQQ3FXTXQ2Q3duckFZcUpfSmE3OVpjZDluM1dobWZmZjF6SEQ2Q19uSVNCcnBoeEUyRHJTRTF6ZUNLSXNIZmVWTEVHcmRNenY0MlYzdU1HTDk4TWc0cm5vRkVHRGVmWWF5QTNyWFFSY1Z5ZENyTFNrVmo2Nnh5VndkaA?oc=5" target="_blank">КазМунайГаз обманули на 223 млн тенге под видом помощи больнице в Жанаозене - infohub.kz</a></div>
+    <div class="article" data-date="2026-09-15" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxORnRMZkhhTVlxZVNjMGFFcmlrTnJJbVpUVGNYME5idnNPQzRic1VUUHI3WEljM0JsaWtKbGRTSGd4eXFuVjFQWElRSm5WdmFtWmtGaDN5WDVVUThoR01keXlpdzBkT2l1blBRVEhrdnV1VzE2OGtNUnk3Q3ZsWV8zN0ctSjBzRGZkTnVmdEN5QmtRUQ?oc=5" target="_blank">«Казахтелеком» лишился полного контроля над оператором «Долины ЦОД». - Exclusive.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 11.09.2026 08:06</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз обманули на 223 млн тенге под видом помощи больнице в Жанаозене - infohub.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-17" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNMHBJYTZjNGc1Vmh2MXZ0TWZBQ3VsYXBvaHFGYlVtZ1pkak0wY0l2ZDRTaE9abVNvS2hwd3BZMUF5VmhJci1xTjRMbWVXUkw2VmxtYU5oazNZN0p5Nm81WkJtanA1NTdMd1lSdXpfbHUyUGJqZC1RT0ZJTTZmWWtQRVpPSS1KYlpScjRWbThiVkVvQQ?oc=5" target="_blank">«КазМунайГаз» закупил услуги частных джетов за 1,7 млрд тенге - Hronika.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 17.07.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» закупил услуги частных джетов за 1,7 млрд тенге - Hronika.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-09" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPZXpwbGFSR29uY29RbnBRcmZYY1EtZXN3MThqcURDZkJSdkNPcEdZTkhzM0o5SjQ1MGpMYzhkbm9jaDgzYmZFQTFNOXVhUjgtV2NSZ0pRT201dW42TEcwdXlKMFhwZE5DZXFnMWlHNkdlNWlwbHFBa2VUemVUQlBLMWZVSl9fQjhmYTQ3cFh2OHRrS0hhY2c?oc=5" target="_blank">Новые дома в Актау получают доступ к интернету от «Казахтелеком» - 365Info.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 09.09.2026 12:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 15.09.2026 04:20</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Новые дома в Актау получают доступ к интернету от «Казахтелеком» - 365Info.kz</div>
+      <div class="art-summary">«Казахтелеком» лишился полного контроля над оператором «Долины ЦОД». - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-14" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNYkR0emtNNklNNDAzdmV0cm55OUhJUk5wTFNLdWptUE1BZ1d4cU1VbnZ5VHFJal82NmNsQzBLUmNqSjM5alE3UXd3dFkwc2Q2VURlLUJWZjNwTVdwZ1BBY1VPc1IwMjhaRnhHQnBPUXNLOUNjamx6Y0hJSmdtek1iQzctYkdLekN4b1JpV3BNZW9laTd2Qm5RWVV30gGYAUFVX3lxTE5MVHpiSmZwTGNQdTZlX0RpNkZDTm1SUkZoOUpxcXVuU2JlOHlOVU4wS2NXNTIwTXAxendvalpOVnBQZzhRWTFrbkJaTGUzQmlkQ2FQREJCc001S2JuS2ZSdkR3Yi1qb3ZKeVpjOTR0bk5jcGFzY3FIOV9hN09NVWJMVHJsWGczWFJyV1BOTnRtWGxhQm8zOWF1?oc=5" target="_blank">&#34;Казахтелеком&#34; продал половину компании, которая строит &#34;Долину ЦОД&#34; - bes.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 14.09.2026 13:33</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">&#34;Казахтелеком&#34; продал половину компании, которая строит &#34;Долину ЦОД&#34; - bes.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-23" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE41VGttQnkyUDlPUGw3cUdTRVhhdmpkRk5WMVJzZ1R1cWdUb2NXczliS0FCUjdrTG5RTE1YYzJDbDdwMFkzMDhNRWVDcjV6dVRGY1pEVy1NTHpoOGNldDVHcg?oc=5" target="_blank">Казатомпром прокомментировал ситуацию с компанией Laramide Resources - Атомная энергия 2.0</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 23.01.2026 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром прокомментировал ситуацию с компанией Laramide Resources - Атомная энергия 2.0</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-15" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQTmVCN2FzRzkwYktuemdZYndkRmZoaVExYndBdmZEbThQY0xMeDBaRWtYMFE3MkhlOWRpODVoMTVJOXROdngtUlFYTGkzc0lzZ2d3VmxHbWprZzlnaVVsb1lDQTF6UXhaMXdQcnJjcExfUUI0VXJkeHBHUlhZUllqNUhFS3ZOSmlTcW1YTlVzUVNNSGhNZy1UT0hTVXFseDJROFhrVkgxcHFhRi1rb1VQVEpxZ3JGaVpkTklGMDhR?oc=5" target="_blank">КТЖ продолжает вести работу по улучшению санитарно-бытовых условий работников - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 15.09.2026 04:18</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ продолжает вести работу по улучшению санитарно-бытовых условий работников - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-09-15" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/09/kazakhstan-seeks-digital-leverage-in-ai-race/" target="_blank">Kazakhstan Seeks Digital Leverage in AI Race</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 15.09.2026 05:28</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Kazakhstan Seeks Digital Leverage in AI Race</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-15" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE9DTzJJVUpiaXdFcGZfNE83UTgwVWFhMXVnVjdla1BuRDZRYzVjcEE4dmJ4WG9ZUlNVTklyVV9tOEY3SndkU2NsYXNn?oc=5" target="_blank">КазМунайГаз и Samsung E&amp;A обсудили расширение нефтеперерабатывающих заводов Казахстана - Ак Жайык</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 15.09.2026 04:26</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз и Samsung E&amp;A обсудили расширение нефтеперерабатывающих заводов Казахстана - Ак Жайык</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -221,8 +245,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-12';
-  document.getElementById('date-to').value   = '2026-09-11';
+  document.getElementById('date-from').value = '2026-01-23';
+  document.getElementById('date-to').value   = '2026-09-15';
   applyFilters();
 }
 
