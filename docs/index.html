@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 15.09.2026 14:38</div>
+  <div class="meta">4 источников · Обновлено: 15.09.2026 17:32</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-12">
+      <input type="date" id="date-from" value="2026-06-17">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-15">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -106,74 +108,85 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-09-15" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-15/svvo-kitaiskaya-zijin-mining-zainteresovalas-mestorozhdeniem-shalqiya-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-kitaiskaya-zijin-mining-zainteresovalas-mestorozhdeniem-shalqiya-v-kazahstane" target="_blank">Китайская Zijin Mining заинтересовалась месторождением «Шалқия» в Казахстане</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 15.09.2026 16:18</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Китайская Zijin Mining заинтересовалась месторождением «Шалқия» в Казахстане</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-15" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-15/svvo-pozharnyi-poezd-i-dchs-shest-chasov-tushili-kamysh-u-zheleznoi-dorogi-v-karagande/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-pozharnyi-poezd-i-dchs-shest-chasov-tushili-kamysh-u-zheleznoi-dorogi-v-karagande" target="_blank">Пожарный поезд и ДЧС шесть часов тушили камыш у железной дороги в Караганде</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 15.09.2026 14:40</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Пожарный поезд и ДЧС шесть часов тушили камыш у железной дороги в Караганде</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-09-15" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQUE5YaUFVZHZGOTl3aU5jUExuUUlxTzc5OWpVcUxCUVJHd0hwU0dqMlZjbC05Y004bDh0d29ad2d5dHltX1ZNbnZtR3dWQVhyd0tZR1ppYVB6a0lvU09VWVlFdVFKTTl1bERjU1NqM2ctdTFxa05EdlhOVVRrYVVOT210M3J6LXhnS0VlZkJuaUJGeC1pbjJuQzhJZzRZeTd2WjIxUldEcVNRZXZDZXc?oc=5" target="_blank">«Самрук-Казына» подписал соглашения с корейскими компаниями на $11 млрд - Forbes.kz</a></div>
+    <div class="article" data-date="2026-06-17" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNVGpxQTZzY1FuUks3M3k3NkJWZDVMb3dCUExMTS1TaWhIUGJlcWN1cXFsLTQtbHJiZmMtZUgwY2N3S0Z2SWRvU3gwMHY2OThsNGVLMHRTZmszNExNZWlwMTViWEhpZnAybFBiQUx4bXFoME1CMGRpX0pwWERBUlBfRUlVZw?oc=5" target="_blank">Активы &#34;Самрук-Казына&#34; составили 88 млрд долларов - Inbusiness.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 15.09.2026 12:25</span>
+        <span class="date">📅 17.06.2026 07:00</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Самрук-Казына» подписал соглашения с корейскими компаниями на $11 млрд - Forbes.kz</div>
+      <div class="art-summary">Активы &#34;Самрук-Казына&#34; составили 88 млрд долларов - Inbusiness.kz</div>
     </div>
     
-    <div class="article" data-date="2026-09-15" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQR205bkkwbmNqcVNZQ1RJbExodVFFamN5QTlaM1Y1UWVuQUthZ1ptTUFGV0R5WVFPN3BlOGZTRzRXelc0LWpTUXI4cWxwaUtYYzkzM0p5aHprSEotbUZja0lOdngwalIwTGFzaUxHY0FmVldMTkpsaWhIWTItRFBLLUxmOThkMENtTk5ueGtkbS1IVndXRTlvYk5QbGtkeTJjNU1zaQ?oc=5" target="_blank">Интернет в самолетах Air Astana планируют запустить уже в октябре - Kazakhstan Today</a></div>
+    <div class="article" data-date="2026-09-15" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE12OG1hTXR3YUFiekcwdS03NWctU2lIZ250MzhENW9ySFM5M1JPb2xUMjFvbU5kMGRBVUpEaXp0ZzB0SFNxQ0ZPTlc4Y3BNZw?oc=5" target="_blank">«КазМунайГаз-Аэро» планирует построить базу хранения авиатоплива — Тазабек CA - tazabek.kg</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 15.09.2026 13:51</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 15.09.2026 09:19</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Интернет в самолетах Air Astana планируют запустить уже в октябре - Kazakhstan Today</div>
+      <div class="art-summary">«КазМунайГаз-Аэро» планирует построить базу хранения авиатоплива — Тазабек CA - tazabek.kg</div>
     </div>
     
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNDNVQmFsU3NRaXY3UFpPVnRqcUlGcXBwUi1CTnByLTlzTk1xdTBsTnRtQi00Rm15OEJLQXdTaDdrOXhfUEdST1pCWm1xVERCaVBaajFnVzMzdHdYeFdUT3czQ2RlLWJROVg5TXY1aXcwcHR5eGExbjY0d1FscE9JXzJGOTBGY0ZQd3kxV1B6S3UzSG5Nc3lPNlllelU1T29yWkY0RnNQazZ0SWpWVE9RaEcxOEtoeVgyckJkZWVPVXlrQQ?oc=5" target="_blank">Air Astana приостанавливает авиасообщение с Дубаем из-за ситуации на Ближнем Востоке - Azərtac</a></div>
+    <div class="article" data-date="2026-07-16" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VR0s1c1NURmhyU1ZNSHZpaVRkb0F5N2xEOTB2U1RncmJIVUVKbFJxeWZaNTAyZUwwdUJDMzBNRXYtcVZtalFTazNnS2dtYjlqcHZ4SERRQQ?oc=5" target="_blank">КазМунайГаз совместно с партнерами готовит будущих инженеров для завода Силлено - Energyland.info</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 16.07.2026 07:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Air Astana приостанавливает авиасообщение с Дубаем из-за ситуации на Ближнем Востоке - Azərtac</div>
+      <div class="art-summary">КазМунайГаз совместно с партнерами готовит будущих инженеров для завода Силлено - Energyland.info</div>
     </div>
     
-    <div class="article" data-date="2026-09-15" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOVnJXVnNQSFg5RkR6VFNSSmxKa1luaXNhYnFXWVRsYloxRVU4WFNmZ2xETjRHaXNzdTlrTTJkbFVZbGdEdXd1alVwNjNXdHI4Z0tqbDNvU2drRmJDbnZYd29YYzdFdjNIblBSaEE1cGljYTF4NGlWWHgtTHYyczlDWFNGRVQ1V2JRWkE?oc=5" target="_blank">В КТЖ определили лучших экспертов-экологов - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-09-15" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYWFLN0RHU292eEpYNUo5NlJ2bjc0cEEwSEYzOTczankycV94SWJnYW5jVFgxcG1wOWR4TEhRUUtnbTlJQ2h2TnlHVDVBNmoxcEE0QXozeG1LcDF3S3Z5ZlVLUGFCTTZOSWZjSkREY1FMQWE2b1F4VGd5ZkFBZ2t6R2R1OFBfQWl3LTNGdGNScGJlYnlGb3pobkcxNjNNS0tDejY0RTVuVnpHS1hXTzdNOEFDc2pTVFFCWjdB0gG_AUFVX3lxTE96dXJWeTEzT1AwWUJYWXNnM3BkaVdrMjZnU2JyS3F1X0J0azBTQ19uZ1hwY2hMekx4NHppek9wd2hMd3pTSzJLcW9KQUZ2bk5wV3g0TEpFTU81YlZpblFhc1hHVUF1N2p1ZU5DWThHRm1vbVRVV0dpa21oSjIwc2JEWGJtaFJranp6TjVyT1V3Y0JBRDJqU1ltaVU2emNHWFdXdHIwc05vREw1UXhVclpyeDZEcmtGVGhKR2JTUXVR?oc=5" target="_blank">«Казатомпром»: Пока Запад думает, Восток готов купить урана больше, чем у нас есть - eadaily.com</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 15.09.2026 12:44</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 15.09.2026 08:23</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">В КТЖ определили лучших экспертов-экологов - Қазақстан теміржолшысы</div>
+      <div class="art-summary">«Казатомпром»: Пока Запад думает, Восток готов купить урана больше, чем у нас есть - eadaily.com</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-09-15" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-15/zhnb-yuzhnaya-koreya-nachnet-burenie-na-mestorozhdenie-litiya-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-yuzhnaya-koreya-nachnet-burenie-na-mestorozhdenie-litiya-v-kazahstane" target="_blank">Корейцы начнут бурить литиевое месторождение в Казахстане, оцененное в $15 млрд</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 15.09.2026 13:04</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Корейцы начнут бурить литиевое месторождение в Казахстане, оцененное в $15 млрд</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -232,7 +245,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-12';
+  document.getElementById('date-from').value = '2026-06-17';
   document.getElementById('date-to').value   = '2026-09-15';
   applyFilters();
 }
