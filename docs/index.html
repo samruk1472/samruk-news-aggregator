@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 15.09.2026 17:32</div>
+  <div class="meta">3 источников · Обновлено: 15.09.2026 19:20</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-17">
+      <input type="date" id="date-from" value="2026-06-15">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-15">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,8 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
@@ -108,80 +106,64 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-09-15" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-15/svvo-kitaiskaya-zijin-mining-zainteresovalas-mestorozhdeniem-shalqiya-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-kitaiskaya-zijin-mining-zainteresovalas-mestorozhdeniem-shalqiya-v-kazahstane" target="_blank">Китайская Zijin Mining заинтересовалась месторождением «Шалқия» в Казахстане</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 15.09.2026 16:18</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Китайская Zijin Mining заинтересовалась месторождением «Шалқия» в Казахстане</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-15" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-15/svvo-pozharnyi-poezd-i-dchs-shest-chasov-tushili-kamysh-u-zheleznoi-dorogi-v-karagande/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-pozharnyi-poezd-i-dchs-shest-chasov-tushili-kamysh-u-zheleznoi-dorogi-v-karagande" target="_blank">Пожарный поезд и ДЧС шесть часов тушили камыш у железной дороги в Караганде</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 15.09.2026 14:40</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Пожарный поезд и ДЧС шесть часов тушили камыш у железной дороги в Караганде</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-06-17" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNVGpxQTZzY1FuUks3M3k3NkJWZDVMb3dCUExMTS1TaWhIUGJlcWN1cXFsLTQtbHJiZmMtZUgwY2N3S0Z2SWRvU3gwMHY2OThsNGVLMHRTZmszNExNZWlwMTViWEhpZnAybFBiQUx4bXFoME1CMGRpX0pwWERBUlBfRUlVZw?oc=5" target="_blank">Активы &#34;Самрук-Казына&#34; составили 88 млрд долларов - Inbusiness.kz</a></div>
+    <div class="article" data-date="2026-07-20" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOTU93a3lteV9uSUdMNGdOTU1IMEpDeVJidWxHMnNmeVE2b0Zua3FfcjBOeTJYUUZpdDlMSmEtYU5WWF95RmluT2xGa3pKX0pnYmZLVk9WR1Y4VW4wNTJVM09NVFhmRnJOcTVMdmlmWVNuR2FhUE9vUmh1dG9vWS1qSHFqUEprZi0tMTA5UXdYdDN3bWdtSG1xN3hRaHFNVXBpVEFYQ0F5NXNibHVHMlE?oc=5" target="_blank">«Самрук-Казына» выкупила долю в «Казахтелекоме» у миллионера Артыкбаева - kz.kursiv.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 17.06.2026 07:00</span>
+        <span class="date">📅 20.07.2026 07:00</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Активы &#34;Самрук-Казына&#34; составили 88 млрд долларов - Inbusiness.kz</div>
+      <div class="art-summary">«Самрук-Казына» выкупила долю в «Казахтелекоме» у миллионера Артыкбаева - kz.kursiv.media</div>
     </div>
     
-    <div class="article" data-date="2026-09-15" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE12OG1hTXR3YUFiekcwdS03NWctU2lIZ250MzhENW9ySFM5M1JPb2xUMjFvbU5kMGRBVUpEaXp0ZzB0SFNxQ0ZPTlc4Y3BNZw?oc=5" target="_blank">«КазМунайГаз-Аэро» планирует построить базу хранения авиатоплива — Тазабек CA - tazabek.kg</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 15.09.2026 09:19</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз-Аэро» планирует построить базу хранения авиатоплива — Тазабек CA - tazabek.kg</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-16" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VR0s1c1NURmhyU1ZNSHZpaVRkb0F5N2xEOTB2U1RncmJIVUVKbFJxeWZaNTAyZUwwdUJDMzBNRXYtcVZtalFTazNnS2dtYjlqcHZ4SERRQQ?oc=5" target="_blank">КазМунайГаз совместно с партнерами готовит будущих инженеров для завода Силлено - Energyland.info</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 16.07.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз совместно с партнерами готовит будущих инженеров для завода Силлено - Energyland.info</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-15" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYWFLN0RHU292eEpYNUo5NlJ2bjc0cEEwSEYzOTczankycV94SWJnYW5jVFgxcG1wOWR4TEhRUUtnbTlJQ2h2TnlHVDVBNmoxcEE0QXozeG1LcDF3S3Z5ZlVLUGFCTTZOSWZjSkREY1FMQWE2b1F4VGd5ZkFBZ2t6R2R1OFBfQWl3LTNGdGNScGJlYnlGb3pobkcxNjNNS0tDejY0RTVuVnpHS1hXTzdNOEFDc2pTVFFCWjdB0gG_AUFVX3lxTE96dXJWeTEzT1AwWUJYWXNnM3BkaVdrMjZnU2JyS3F1X0J0azBTQ19uZ1hwY2hMekx4NHppek9wd2hMd3pTSzJLcW9KQUZ2bk5wV3g0TEpFTU81YlZpblFhc1hHVUF1N2p1ZU5DWThHRm1vbVRVV0dpa21oSjIwc2JEWGJtaFJranp6TjVyT1V3Y0JBRDJqU1ltaVU2emNHWFdXdHIwc05vREw1UXhVclpyeDZEcmtGVGhKR2JTUXVR?oc=5" target="_blank">«Казатомпром»: Пока Запад думает, Восток готов купить урана больше, чем у нас есть - eadaily.com</a></div>
+    <div class="article" data-date="2026-06-15" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPVEtrNDBGem8yYWZoSjItbmN1LXdPVEpMYmZSRlNvRG8wRVBkTDhxU191QWFJQmxKSERWejEwSUR6OUhuTlB1RFhSMFhoUTF6N19KczZXMV9sM0E1QVlnQmZoN2Y1d0tRbk8ybTJGY1R6bHh3Sm5RY1RQQnViTjZJaWFMQ0dwLWFoNTVFRnU3WDhQLWI0RGQwS3l3?oc=5" target="_blank">Казатомпром: итоги за 1-й квартал 2026 года - Freedom Broker</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 15.09.2026 08:23</span>
+        <span class="date">📅 15.06.2026 07:00</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«Казатомпром»: Пока Запад думает, Восток готов купить урана больше, чем у нас есть - eadaily.com</div>
+      <div class="art-summary">Казатомпром: итоги за 1-й квартал 2026 года - Freedom Broker</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-15" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxOQnRodVdNcFJ4bzVzNlFsRVBxNDNjYTdkQUxIQUEtT0RGcE5hcDVoV0lybnhmNzNRczZKQkNlcmtWN09KWU5NNmx4czFIYURhRWtIT1Yya1poMEU3c1JFT0x0ckhVQzRFR2RfeVc2Y2t3NXgzSjJ4MWw1ZUJkNURidkxtVV9qbWowX2ZpLTU0dl8wcEtFVV9sLU45Rlo3QW1ENEpFblVsczVJSFJiTC1MQUhRMDdMM2hWZDhYQ2JNUVVzNEwtb1E?oc=5" target="_blank">Корпоративная олимпиада среди специалистов по безопасности и охране труда прошла в КТЖ - rail-news.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 15.09.2026 12:28</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Корпоративная олимпиада среди специалистов по безопасности и охране труда прошла в КТЖ - rail-news.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-14" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZWlKWHh1QXV6S3YtR0puQVFDMDN3VVpWUU9DN3BCekM5eHFPYWw1UDhJSkpZeXhURVl5dURySUVoNlozcnFTeEIwLUNhRkxfYzFBWkJnR3VrZkswamxmZnpnajY5SXUzNnhFdmhMazhTNWdSaUJiaTVwbmJxd2UtTVVkbDdzd2FCUEE00gGQAUFVX3lxTE1Yc2M3eEs2MWhUUU1wVmpPZTY2Q3V4WUlYbjViVkctekdpQmQyRjk5RmZkR09uWURiVV9wa1YyX1ZCVnNWTmREclBhMDVnc21XeVUwblNXUU5tTmlKMTV5WDQtWEJGMEkteFRUdnA0UGhyRTZtQThhLWVzaUw4WDVZT291ZEpiLUZxT0J0azhuZw?oc=5" target="_blank">«Слабая работа»: Бектенов раскритиковал КТЖ - kz.kursiv.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 14.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">«Слабая работа»: Бектенов раскритиковал КТЖ - kz.kursiv.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNLUY5S1hSMTFaTkpwQkpmcWJwOVpaZElZVjN3bV9qNFZSSDB3ZU5tT3RBS0VSbTlPdlVRbjNZdHZBX3V5SHR0NmhDUUNhMjh5d2pzc2RxZmhzd2dpelFqOTdJZWI3bnFVMGluWnVLRHY2ckZ4UkJHcnpEMXZsMTRQNXdTOTJzWTVNVURaWkRDQTdrRVlfSUpPb2szVy1SUdIBogFBVV95cUxQalZ4UDNTVWU5RUV5ZV92RFZyaExhUE9Ec3JFQnVpaEN5ZkxnZ2hhaWtIc3BCWnp5YWx3SnRaT3JZbVNZUUZXeTFXeDZ6WGlEamx6TEczdmxIRjNpdU9VZUYtZW14QURReUwyQmNNR2RHNFRQWi1oZkJDdmFQc1hLcjhEWGxZdFJIYUs3SWVqSWNBcDNzdjc3MnRiYl91MXQ3TVE?oc=5" target="_blank">Сотрудникам КТЖ дали реальные сроки за гибель четырёх человек - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 31.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Сотрудникам КТЖ дали реальные сроки за гибель четырёх человек - Ulysmedia.kz</div>
     </div>
     
   </div>
@@ -245,7 +227,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-17';
+  document.getElementById('date-from').value = '2026-06-15';
   document.getElementById('date-to').value   = '2026-09-15';
   applyFilters();
 }
