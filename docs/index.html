@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 16.09.2026 14:37</div>
+  <div class="meta">4 источников · Обновлено: 16.09.2026 17:32</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-03">
+      <input type="date" id="date-from" value="2025-12-26">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-16">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,8 +86,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -110,113 +108,42 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-09-16" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-16/svvo-v-minekologii-nazvali-vinovnikov-gryaznogo-vozduha-v-atyrau/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-v-minekologii-nazvali-vinovnikov-gryaznogo-vozduha-v-atyrau" target="_blank">В Минэкологии назвали виновников грязного воздуха в Атырау</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 16.09.2026 13:59</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">В Минэкологии назвали виновников грязного воздуха в Атырау</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-09-16" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ1F3S3RlWTctOF9WcUJvODFNSG5ZNVhNWXV0VVU2RE1fMDlmYVJVbUR1QTNxbmVwTXRJNWtaZGltUGlFUmpseVMxVnhYb04wUDY5RjAwMUNCTlRmV1F6b0dVOUJHMXlMRnRVUTFRQ29rZkhUU0ViR1dQS2VBUGZCOUNJM3ZadmVXNmJXSEoyTS0wMXlOcXhFSVN4MmJ1ZnhBR2oxZQ?oc=5" target="_blank">«Самрук-Казына» получил более $1,6 млрд от «Тенгизшевройла» и КТК - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 16.09.2026 13:33</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» получил более $1,6 млрд от «Тенгизшевройла» и КТК - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-16" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxPRlptZ2xxSDVuRUZqcUE4QnhsNWlKYUdRVFY1TGxvWG5MLUtZMEN5endvUldzcHp5TEJSc1EwYWxvUWtzRUVyclFZLWVfLXRZek5KZnNIelJKMklZT21nM0V2YnlPVU5GWUk5b0oyNlZPV3Nya1lVTzdhQWNOODdLNkp1d9IBhwFBVV95cUxQN25uUUFFOWxla0tOYzZxRGFLQ3lTUGROMTdOSGRSOWFCQS1JY3h5Wnl4REg4SGZOVVVJVW9vRUR5TTk0b1RoTG5vNDJfRHlMVzQ2bmtjMGdzZ1ZBdTMzM3Q0M3Nsb2k2N0lqeWUwcUhkN2hsSk44eGkzcWEzU2djRTl5djhXYm8?oc=5" target="_blank">«Самрук-Казына» раскрыл стоимость сделки по ERG - ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 16.09.2026 13:25</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» раскрыл стоимость сделки по ERG - ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-16" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBaR1JsQmpBS2Q0MVBSd1AwazBCVWNGYWpYOW4wa18ya2tEUTFxSTB5OXVNMEZIR2JCRGNTVl80MVBCUGY1X2tMSXZn?oc=5" target="_blank">Россиянка заявила о пропаже денег после рейса Air Astana во Вьетнам - Ак Жайык</a></div>
+    <div class="article" data-date="2026-07-16" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNNjFCOHhmVHpuU0RTWnhNSjJIN0EyemVBR3lRcVBhc3FUUlJkZG9WRVlzWnQ1djRQM1N4dDVDcmM0c2x1X2tTWV9lbmhTV3pnaDBTMXJXdWx1cE1ZZnRvcWpuX2ZKV3ZNWlpidG53WEc1NDc5M1Q1dlUxMXhRM3NVaVYtTUloWHVPUFN2WFVlaEpKQQ?oc=5" target="_blank">Air Astana приостановит рейсы в Дубай до конца августа - tourdom.ru</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 16.09.2026 13:53</span>
+        <span class="date">📅 16.07.2026 14:36</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Россиянка заявила о пропаже денег после рейса Air Astana во Вьетнам - Ак Жайык</div>
+      <div class="art-summary">Air Astana приостановит рейсы в Дубай до конца августа - tourdom.ru</div>
     </div>
     
-    <div class="article" data-date="2026-09-16" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQXy01Y2Q4MVh6UXV1QWhpRl82b2NaSnVZN2V1Q0FCTnZ2aXVvS1ZzSmpyRElEeGdTNmVmLV9rck1qNGZkcGdmRlRUel9pRHpzalBJNmJHYnY1UXIycjBvZjItNmlTWHpnQmdOYThyaksyRU5MMHhVVlFIcERfTU4ycUE3a1IyWnVoYUxjVnBrYmVxNlpFTllF0gGfAUFVX3lxTE5ZWS1xNmYxRXhReE1MZmk4ZmlqNnAyTTJXUzFSSUJOUmhLU3BQSmQ0TEJNT3Rlb3FPcmVMcHJ2SEVqMVc0NXU4WERGcmRwc1BiVG1sRlF4ZmYwY0JCN1NaNzhXT0Y5OFRWdVVwOERpUVYtQnVFWkhHeEMwdmtUN09TbFo5d3FtQjBWVjd4NkVGNEhNQzlYcGFacTlvRlkzQQ?oc=5" target="_blank">Пока спали: у пассажиров Air Astana пропали сбережения - Central Media 24/7</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 16.09.2026 11:08</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Пока спали: у пассажиров Air Astana пропали сбережения - Central Media 24/7</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-09" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBvcGloUWtoeUNTQ1pXTlgzQ1hKY3VoeDVaOS1IOVBMODY1OHI3TndqVEZ0ZEgzMUJCVng1b3NrOVNxay1vLUdEZjJ5UDlodGlWclNyY1lxN0xPUXlPbGFsUS1QWFZXU2x2U1VfOGZ4WQ?oc=5" target="_blank">50 новых локомотивов получил КТЖ - Informburo.kz</a></div>
+    <div class="article" data-date="2025-12-26" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxORXRXSVNUMTFDOUJTYUUyQ1ViUjQ4TzlneF9CZ3J3ZGM5MEp4SmlLSDZNMWNpZUFWSkgzRnBGMzlEdy13Rko4M2szQ2d3X3l4N3Nab3hxbC1CX1NWYjNHS3hLM1RwbVljenZJcjhwbDNOenFfNS1XZFZwTjJYeXZmZG1sMW1IVnM4MGdWRHV6Z2Y5LTZpaU9XUTlNOXlXVXRHSU0yRQ?oc=5" target="_blank">Видео с брифинга главы КТЖ: в компании объяснили, что произошло - TengriNews</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 09.07.2026 07:00</span>
+        <span class="date">📅 26.12.2025 08:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">50 новых локомотивов получил КТЖ - Informburo.kz</div>
+      <div class="art-summary">Видео с брифинга главы КТЖ: в компании объяснили, что произошло - TengriNews</div>
     </div>
     
     <div class="article" data-date="2026-09-16" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNZGpReWs3S0Y5SGtZTDdsWVZBNWdoUnlNaTJIUXlINXlVZDdBOFZrMGNnMWFCXzR3bTVwOWs5bEhzczR2Y2hza3RRX2FfelZ2T1dZRW53ZXc4T2VTckE2Um1RcWdjS0I1bWRKaFh3NWtCNng5MzJwSUhKdENRSTZBdG9VUzh3cUVpMngyYVBGbnI5RTlEOHY3Yjd3Umt4UHdBam1ha0ZwZ3dzbGczby1Ldm5MWUxYRVYxN0E?oc=5" target="_blank">&#34;Казахтелеком&#34; поможет контролировать условия хранения и перевозки вакцин по всей стране - Inbusiness.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5wcXJCTllRaXNhZE9Fem1LZHFhU1VpSkRyZklMZkk1bFVQRVBvTFNHak51aVlFbTQzWk5yWkdaaEd2eVB0dEc0QlZCNkhmRm05OWxSeWpER0pxb2l6eWpfX3M3XzU5RGY1NVptN2hEanhfeFJXUmRkd9IBeEFVX3lxTE5wcXJCTllRaXNhZE9Fem1LZHFhU1VpSkRyZklMZkk1bFVQRVBvTFNHak51aVlFbTQzWk5yWkdaaEd2eVB0dEc0QlZCNkhmRm05OWxSeWpER0pxb2l6eWpfX3M3XzU5RGY1NVptN2hEanhfeFJXUmRkdw?oc=5" target="_blank">Как &#34;Казахтелеком&#34; строит новый бизнес вокруг AI - BES.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 16.09.2026 12:43</span>
+        <span class="date">📅 16.09.2026 13:45</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; поможет контролировать условия хранения и перевозки вакцин по всей стране - Inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-16" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE1YREpNOXlXdV84eWZpTkxGM29may1rYlV2ZklLbWNJRWgtUmVWdkFNbXo0b2NlSXZWWjE2ajlqa04tT0xxbnRWd2p3dEluTmFuLUZtNVJSaWZ5WW5fdjVqYjNoY2hISnd0b2VaZGtwS3hoQ0tvdGFUSzFB0gF4QVVfeXFMTnBxckJOWVFpc2FkT0V6bUtkcWFTVWlKRHJmSUxmSTVsVVBFUG9MU0dqTnVpWUVtNDNaTnJaR1poR3Z5UHR0RzRCVkI2SGZGbTk5bFJ5akRHSnFvaXp5al9fczdfNTlEZjU1Wm03aERqeF94UldSZGR3?oc=5" target="_blank">Как &#34;Казахтелеком&#34; строит новый бизнес вокруг AI - bes.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 16.09.2026 13:48</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Как &#34;Казахтелеком&#34; строит новый бизнес вокруг AI - bes.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQSmJkYUtQVGxWNllRbDNsa0NWcTV1LW5GcFRBRmhwejd1dXVRSWtOZzV6ME42dTE1Wm4wQXB3SW5YLXE4dUt1d1ZaNnI5WkJFVjBFUjBHRnVhTHdTUGYxQzJpSkF4Mlh4YzM5alFvQ2lPV1hqVWZzN1VPckFobkhseDFQUWJEcWpTNTFfdzFyVVNqOHllZ2hfZVdvVkfSAaABQVVfeXFMTXhpNnZLVmtGQnY2bnJOMmVtV0NIQ0piUE5wcGh6dFBlNnJpOTlQWnM5RmU1a2hNUWI3NkgxTk1FQkJjeW9KNmJsRVdJRzRMcF9hakJPMDNua2lrbVlua2I4OTFMUXlEMUN4RnZDTUhZNV9YQnExQlNsQ3FDUHladFlxaGl5aTYyWFNKM0Y5cE5Dc2FDRTJfMFZKdkFONkJEeg?oc=5" target="_blank">«Казахтелеком» полностью перевел отдаленное село в СКО на оптику - ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 10.09.2026 07:56</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» полностью перевел отдаленное село в СКО на оптику - ulysmedia.kz</div>
+      <div class="art-summary">Как &#34;Казахтелеком&#34; строит новый бизнес вокруг AI - BES.media</div>
     </div>
     
   </div>
@@ -224,28 +151,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-09-16" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-16/svan-samruk-kazyna-poluchil-bolee-19-mlrd-ot-tengizshevrojla-i-ktk/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-samruk-kazyna-poluchil-bolee-19-mlrd-ot-tengizshevrojla-i-ktk" target="_blank">«Самрук-Казына» получила более $1,6 млрд от «Тенгизшевройла» и КТК</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQajhmZ0R3bHJsRjN6OGo4YXJzVTY2VVE1ZkNPYmI3VHhSdFl4QUdLYXg1UXFHNWxLN2JoS054a0R5eVZ6TXlhTzdFXzUxTFVfQS0yS1ZRbi1NVlJJR3pVenVKR2dTMzR2WHo5UFFRS1pPcTFXSHE1Yng2Z3ByMU9jWA?oc=5" target="_blank">Какую прибыль получил «Самрук-Казына» в 2026 году - Forbes.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 16.09.2026 13:29</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.09.2026 15:49</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Самрук-Казына» получила более $1,6 млрд от «Тенгизшевройла» и КТК</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-03" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNcUItQ1A4WUMwQ3lRd3lUYUgxM0JiMzU0d3B4YmxqRl9SQk5EbXdVRlRjUHp3UDB6MVlVVkd5cVpBUkM5UUJ1ODk2RXQyUTdpMkRrR3d4S3lfMjZ5S0NvakR3SXd3S3RhR0VGTDZfRXRDMVlxRGdfMjZMM1hySGVPemVmUUhUNmo0SzZMRy1fRlhPMHRiV0pGSzhVdkJERkFhWVZNaUo3LTdsWWlvMFBhaw?oc=5" target="_blank">КТЖ и РЖД обсудили бесшовный цифровой транзит и рост объёмов перевозок - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 03.04.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ и РЖД обсудили бесшовный цифровой транзит и рост объёмов перевозок - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Какую прибыль получил «Самрук-Казына» в 2026 году - Forbes.kz</div>
     </div>
     
   </div>
@@ -307,7 +223,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-03';
+  document.getElementById('date-from').value = '2025-12-26';
   document.getElementById('date-to').value   = '2026-09-16';
   applyFilters();
 }
