@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 16.09.2026 19:09</div>
+  <div class="meta">5 источников · Обновлено: 17.09.2026 05:51</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-09-16">
+      <input type="date" id="date-from" value="2026-04-24">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-16">
+      <input type="date" id="date-to" value="2026-09-17">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,6 +86,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -102,25 +106,112 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-09-16" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNRHdvNmFqLXN1aHJwUnNHVVZKSnRsYmFLLUozZDRZVDFUd0hvX0h2NEVERnVtOFl3ZjVsM1lBc3JLaEpNM29GUlFDQlM0M0pZTXpVQkJrWElPQk5jUDZ2bzBXRWM3czRVT0REVHR4YXYtWnB2ejEwMVY3MUFScXhLY0lxZzg0Qy15bHVSOWhIMnhYTU9iRHY5bjJiU0bSAaIBQVVfeXFMUGRpSnJudVNGcE5TV1k5ODVPOExuNXAxYWFqZVI4WFItVENOQXJvQTRrYkM3OXowQ284ZEhfNEVBMlBJQThjaFpRVHVYMTNBVmJTTVVNdTRiUWZrdVhtMHBHMGF3ME51MEM0VXREUGdaS2ZaZ2lLM3RXTWtYekJVdkRDSnNkNDNiX1l3c1hTNENWcmVfVERNbHVnWmpKV0ZoUmNR?oc=5" target="_blank">Air Astana возобновит авиасообщение с Дубаем с 1 октября - ru.elordainfo.kz</a></div>
+    <div class="article" data-date="2026-04-24" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQM3lDRmo0aTBfdC1PaTdJbEQ1NU9rMVkyVi1Mb09nTmJXMjhMZEcxdWk2MkdHTlZnQVN5dXRtM0xyeUo2ZXF3aGdmWkNjMmRTbllmR0RfcTdIRWZwYV80dHdBR1p3akhhRlFFcG95VjJkNGhpWDNlazVZSGgxaGk2dnp1cFM4R0FsYlVFOWxrdWpaZHgxQ3pUeHc5dUgySmZvdV83OGhvQkNxWFFC0gGyAUFVX3lxTE9yTTJETW02a2YxVzlQOC1STnpnRThKbW4zbHBsSWxtQmtUS3JscDJFdl9iTUJQMDQ0YmR4ZDg0TEFXSGFYVDFsZWhROFBoeGtQbjJXVU1iTnN1VjV4Ulhuel8tcUdrQkhFRmt3VnZDWkl4SVZoeHM0T1BNVl95cloteGp1bU03LXF1bXM2c19BU2Y5MkQzQi1YR2dzeFdGZzJmNXRTbjVfUDVuRjQ1THJ2Qmc?oc=5" target="_blank">В Казахстане могут резко поднять тарифы на поезда из-за долгов КТЖ - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 16.09.2026 18:48</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 24.04.2026 07:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Air Astana возобновит авиасообщение с Дубаем с 1 октября - ru.elordainfo.kz</div>
+      <div class="art-summary">В Казахстане могут резко поднять тарифы на поезда из-за долгов КТЖ - Kursiv Media</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    
+    <div class="article" data-date="2026-09-17" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE9uMGkwQ2RsdFVRSlFVQXNxWFo5a25tQTVMTDhJdFlUYmVDTEctTjF3MGptclZrQTVERmdpUkgyTTVyLXBJRkpJMg?oc=5" target="_blank">ТШО и КТК обеспечили основную часть дивидендов «Самрук-Казына» в 2026 году - CaspianLife</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 17.09.2026 05:02</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">ТШО и КТК обеспечили основную часть дивидендов «Самрук-Казына» в 2026 году - CaspianLife</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQZnNYM1Y5dmpNTWhBUmRxOW5tdlM4WnZfQUdiUy11V0R2RWY4N3M2Ri1EOXpmRlFaa0tobm9QanM4MVl0UU53UFo3MmlTeWV5ZmNERThvZzhUN3k0dklJRnF2b3JQMDVLdzhjNTltUDY2RlNtYnVaUS1zcU5MeFhfTEx4YTlJc3BtTFhtazRXU2NFdmhIcl9ETEV3dEExVDNsUWgtd2hNVWpaU202UGx3cWJpcVZVZ9IBugFBVV95cUxOb0JrcUFwbnhtVFE2eE1pM1VVd00yanJJOVJjOEJHVWZLUGdmYkF1aUVoaTVndHRMZFFaTEZMM1BFSG1MNmFjM2JpNGhlQUVGVTMwQmpWMnpkSE1sTV9DbFRjeEZ2MUF3T01SSzNETEpWd3JmVGxXQkloSjJMMi1BdUJjT1o2LW5GZEcwdmgzWjJUVGpOQ29YT1ZxVkpLMWRoRkNVcWZnTXRNYml0bjFOTUhXUTdpaThsQ0E?oc=5" target="_blank">«Приехали и сразу бомжи»: пассажиров Air Astana обокрали прямо на борту самолёта - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.09.2026 04:35</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">«Приехали и сразу бомжи»: пассажиров Air Astana обокрали прямо на борту самолёта - Ulysmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQaUhQbnBYbzZWN2VnNmo1R0JMclA2d2QyVDhRME0ySTNwNU9hS2xPNTZFUmZCZ1BhTmZmSGI1ZWxjVG5fendfcWZWLTl5REZQWFdCNTJibjByb29CQ2lPNHdHMVZIUzFmZjJYWjdlTzFnQk9SbHg3Y2owbEVWTjVTb3YzR3ZIaWJSU1NBQjU1X1VOQ0J4VHR1bk5CNm5mVTgyajVOVFJHMUhMbWxrVzdrWEVhYWFPTFg4Snc?oc=5" target="_blank">КТЖ организовало летний отдых для 175 детей павлодарских железнодорожников - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.09.2026 04:01</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ организовало летний отдых для 175 детей павлодарских железнодорожников - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE4wY0pVSzRLMS1aNC01QzZuSl9ZOXBKZlg1dTZnZm1DSkFhUW01MUptR2tRbDlBTDdlZVE5Y2lINVJSVUlBOVVfOFBOcXhOQVdLRHliTVAyTGY3aHBqVkE?oc=5" target="_blank">По сети КТЖ перевезено свыше 212,7 млн тонн грузов за восемь месяцев 2026 года - Trend - Новости Азербайджана. Турция, Иран, Центральна Азия</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.09.2026 20:30</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">По сети КТЖ перевезено свыше 212,7 млн тонн грузов за восемь месяцев 2026 года - Trend - Новости Азербайджана. Турция, Иран, Центральна Азия</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPc1NpZkNTZkh2WFhLbWVCcVFmUDNveTlQdjhvQ3kwUDhLNm52TUJpei1zZno0QTBxVVJLcWNOUmNJU1Fpd1g4NmJsdFo1WHV0ZDdOeFNNS2ZFTVJ3bjA1VjZCVjNFZ1lPNnBZdGdwYXo5cWl4a2c1VndIZ0NFc29KZHJYSWowMm9jXzNXekZISDhUUjVUVHBTd2QyX3Z1V3BGQ3V4OUw0dkVmU1ZucFd6aE5OZzdJTU9ZSjgxeFd4Wkg?oc=5" target="_blank">Волонтёры КТЖ оказали помощь в проведении инклюзивного велопробега в Караганде - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.09.2026 04:26</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Волонтёры КТЖ оказали помощь в проведении инклюзивного велопробега в Караганде - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-15" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNMkRzMFBmWFZNSzhFdlNXRFFSejh4Q3hJcmpSM2dpeUlQN3FtMFhpbURyUmVDZzNvQnFhSUNnWWEtSHRTSUxmcnNEWXBtWFY1M0xnTGJNWXZzcGNoYnRLbk1rcUpRRVpSYkdoR0QtYmZLcGs0Z0ZDVVpMR2FnTU5pMHg0NVBzTDFtQUNfYjl0WjN0UQ?oc=5" target="_blank">«Самрук-Казына» выкупил долю в «Казахтелекоме» у владельца «Казахмыса» - Orda.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 15.07.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Самрук-Казына» выкупил долю в «Казахтелекоме» у владельца «Казахмыса» - Orda.kz</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-09-16" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-16/zhnb-alstom-postavit-v-ukrainu-sobrannye-v-kazahstane-komplekty-dlya-elektrovozov/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-alstom-postavit-v-ukrainu-sobrannye-v-kazahstane-komplekty-dlya-elektrovozov" target="_blank">Alstom поставит в Украину собранные в Казахстане комплекты для электровозов</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 16.09.2026 11:18</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Alstom поставит в Украину собранные в Казахстане комплекты для электровозов</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,8 +270,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-09-16';
-  document.getElementById('date-to').value   = '2026-09-16';
+  document.getElementById('date-from').value = '2026-04-24';
+  document.getElementById('date-to').value   = '2026-09-17';
   applyFilters();
 }
 
