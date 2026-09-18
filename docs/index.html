@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 17.09.2026 19:21</div>
+  <div class="meta">2 источников · Обновлено: 18.09.2026 05:36</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-09-17">
+      <input type="date" id="date-from" value="2026-09-16">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-17">
+      <input type="date" id="date-to" value="2026-09-18">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,6 +84,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
@@ -105,17 +107,61 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    
+    <div class="article" data-date="2026-09-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNWnRpam1UaXdQUmhrY19tamUyeExUWmZnSzNLODF5QWdGMVhURzJ3TXRUQlY0QWotZl9oMnNRYU16RlY1cXJqUzBPVmZPTkhnV1h5aVVqZWNteVZuN0NGV3hTM2ZfbUV6b3pDaUxrWmRQTERSMDFNOHRlbUNGNDhXYVdlUW1pV2x1MWVySXpn?oc=5" target="_blank">КТЖ повысит тарифы на железнодорожную сеть до 24% - Finratings.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.09.2026 18:02</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ повысит тарифы на железнодорожную сеть до 24% - Finratings.kz</div>
+    </div>
     
     <div class="article" data-date="2026-09-17" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE16eU9uR2ZYbWFYRk94Wmt4SmlZQU00V0NfTUxDbmYxbGwtWndQbVo0M2RLRXo1YkFkcDFaUFpvbFNnWnM3Yy1VemZn?oc=5" target="_blank">«Казахтелеком» хочет занять несколько миллиардов долларов на Долину ЦОДов - Ак Жайык</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaU5qYVo3S1Vza21SaHVEZXZlNU5BamJ5Z2x4a0tLV3dDU0Z3aHBDRTR2c0plM1E2NHppVkE5Vm5RSEtpR2wxMFI5YVFzUHZacTdlOTBCUlhrUFo1TGRWSXY5SmdOVnlDLUNCUTJOTHJwNTFDRkFqXzI5M3JRNXNSX09vaktHaUFMYXNB?oc=5" target="_blank">&#34;Казахтелеком&#34; ведет переговоры с финансовыми институтами США и Китая по проекту ЦОД - Правда.Ру</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 17.09.2026 17:36</span>
+        <span class="date">📅 17.09.2026 19:15</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«Казахтелеком» хочет занять несколько миллиардов долларов на Долину ЦОДов - Ак Жайык</div>
+      <div class="art-summary">&#34;Казахтелеком&#34; ведет переговоры с финансовыми институтами США и Китая по проекту ЦОД - Правда.Ру</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-17" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5QczZjZ2hmYXgyZ1E4OWQxaU9DOGNPMk15OXppMDMzNmtxT05NSkFGSGtoeEVqVFRZT1pNMFhiTVdlUlJJdnRoOXhQaXNtdDNjZjJKWWdSeTBrTEVmNVR4czdlU1VyeDc2QmR0TXFuN1dZMGVsWl9sZw?oc=5" target="_blank">Казахтелеком хочет занять несколько миллиардов долларов на Долину ЦОДов - TradingView</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 17.09.2026 10:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Казахтелеком хочет занять несколько миллиардов долларов на Долину ЦОДов - TradingView</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-18" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOakxPMWI4azZYSkhHSExOZ3J3WllfWTBsLWxFLTY2NEstZVQwNFpwMkNuX3VsYUdUNkRnNVI0ZnJKTzV3bVpuYUN0eGZrT1RXNGFlN2NWQlBLaXJQZTVObGx3a2JOdGI1N2NsaV95VU50QldmRVM1QUcxYlZZMkpPWlhSVTVHbXhwWDlfdFJUV0h5UjRtNkRpV3hubTdrLTZCUlRTWVVoUVNEWTdIajg2MWNseXh6N1hDVnFVaG1rZ2ZuTGNvT1FERlRoUQ?oc=5" target="_blank">Дайджест NBK: бюджет под огнём, «Казахтелеком» ищет миллиарды, новая компания Рахимбаева - National Business</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 18.09.2026 03:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Дайджест NBK: бюджет под огнём, «Казахтелеком» ищет миллиарды, новая компания Рахимбаева - National Business</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-16" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxQT1lCMTFvM21wUWZ0QkI4aHVlenZwb1FfRExlWnBHb2hVUEotSE9TbE82cmZSd2REWnUzX2dyLWRUbkZhRko4YlZfc0l2ZWFYNWZsYnZEa0pNYTY0dl8yUjlic0x4dkpBQ2VPOHBhdG9yRjduaU5pamFOdnNoNzNaTDRqTFdfRkxRNEppcGpPYWFmNTNlN1ZaMFhtLVlNVVh0VVR5ckxxN3JjaVBJN2dCZHVFZ0tfTnU1c25URWRpaw?oc=5" target="_blank">&#34;Казахтелеком&#34; поможет контролировать условия хранения и перевозки вакцин по всей стране - inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 16.09.2026 15:40</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">&#34;Казахтелеком&#34; поможет контролировать условия хранения и перевозки вакцин по всей стране - inbusiness.kz</div>
     </div>
     
   </div>
@@ -179,8 +225,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-09-17';
-  document.getElementById('date-to').value   = '2026-09-17';
+  document.getElementById('date-from').value = '2026-09-16';
+  document.getElementById('date-to').value   = '2026-09-18';
   applyFilters();
 }
 
