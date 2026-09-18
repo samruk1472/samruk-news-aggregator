@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 18.09.2026 05:36</div>
+  <div class="meta">4 источников · Обновлено: 18.09.2026 08:39</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-09-16">
+      <input type="date" id="date-from" value="2026-06-16">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-18">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,6 +84,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -107,66 +109,93 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-09-17" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNWnRpam1UaXdQUmhrY19tamUyeExUWmZnSzNLODF5QWdGMVhURzJ3TXRUQlY0QWotZl9oMnNRYU16RlY1cXJqUzBPVmZPTkhnV1h5aVVqZWNteVZuN0NGV3hTM2ZfbUV6b3pDaUxrWmRQTERSMDFNOHRlbUNGNDhXYVdlUW1pV2x1MWVySXpn?oc=5" target="_blank">КТЖ повысит тарифы на железнодорожную сеть до 24% - Finratings.kz</a></div>
+    <div class="article" data-date="2026-09-18" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="http://profit.kz/news/74872/Kazahtelekom-hochet-zanyat-milliardi-dollarov-dlya-Dolini-COD-s-NVIDIA/" target="_blank">«Казахтелеком» хочет занять миллиарды долларов для «Долины ЦОД» с NVIDIA</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Profit.kz</span>
+        <span class="date">📅 18.09.2026 06:10</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» хочет занять миллиарды долларов для «Долины ЦОД» с NVIDIA</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-18" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9qLXYxZlprMnExZE5zS1JKWDJqTmRqOUo4ZGxmTFlmTlcxTjM4R2hhUElQRWN1ejZhaTUteDNXdEtBS1c3UkFoRkpjN2NIekdmTUpEMnRn?oc=5" target="_blank">Россиянка заявила о пропаже 3400 долларов (1,5 млн тенге) после перелета рейсами Air Astana по маршруту Тбилиси - Алматы - Дананг По ее словам, деньги лежали в конверте в ручной клади, которая всю дорогу была с пассажирами. Пропажу - instagram.com</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 18.09.2026 07:06</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Россиянка заявила о пропаже 3400 долларов (1,5 млн тенге) после перелета рейсами Air Astana по маршруту Тбилиси - Алматы - Дананг По ее словам, деньги лежали в конверте в ручной клади, которая всю дор</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOOEdadm1Ua08tM1RDUHZLMHhEamtNTTZZbFBmWC1yLTVoVVc0aVJ0V3dfVnZGSGtiUHJqTXkwVTNObVVnUVhnLXBWOUd4alR5cDdhckllWENlVkNpcEZsdDRJaW92WUw2NTdCSTlvQVFOZTdOc0x5eVRGVFJyTkQwUm5sYU9WNFFNLUN2WGtrNGhwWEZjSW1zYloyWWlSeFhVYWN1aERPNWtrLThYdnA3WFBXQnY2eVJm?oc=5" target="_blank">Air Astana приостанавливает авиасообщение с Дубаем из-за ситуации на Ближнем Востоке - br.az</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana приостанавливает авиасообщение с Дубаем из-за ситуации на Ближнем Востоке - br.az</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE8xREpSSHQ2MlFlUDRwUVN5LTZQc001bnNldWpvYi1XbGFwWkNEWnBfSHdTTUhaVFg1T241My1yc1JXRHFEcGwzYjVfa2gwQ3FNRmpRWFo0dHVOY25OeEF1RXJRQmhEdnFNbTJLaGtjOS3SAW9BVV95cUxPQy01a0pqZF9pSXlzeGJzWFJsaC1YbmNRXzhzakFyX2hLY2tHNUFnR2dvU2ttYV9KWExJaG42aDUtUjBzN2FhSW44QVJPdVpFRmZPSVZSRlV2dXFQek5WZmdqWU1vZ3RpelVVSGIzUGs?oc=5" target="_blank">Air Astana приостанавливает рейсы в ОАЭ - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana приостанавливает рейсы в ОАЭ - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-18" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPQ0hreUVSY29yejJQRm90X1pQN2FPMDVlMnpSUkxRUGZvLUotTE1GcVFWSnFVRTlwTDlHRGNfZTU2cVp5ODlHREVPd0M0SHR5NG5BeHNjRk1OSHJPMGFHM3NnckdObk1fZ25mWm9oZWZNVzV6QkJRbGwtVm5mcF92TVFtRmk1ekVEODBDYzQzemRHNzV2dXZPc0h2TG5kSWJGdUlRZU9YRHFuMDhLSDVFNQ?oc=5" target="_blank">КТЖ продолжает реализацию масштабной программы по обновлению вокзалов - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 17.09.2026 18:02</span>
+        <span class="date">📅 18.09.2026 07:32</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ повысит тарифы на железнодорожную сеть до 24% - Finratings.kz</div>
+      <div class="art-summary">КТЖ продолжает реализацию масштабной программы по обновлению вокзалов - Қазақстан теміржолшысы</div>
     </div>
     
-    <div class="article" data-date="2026-09-17" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaU5qYVo3S1Vza21SaHVEZXZlNU5BamJ5Z2x4a0tLV3dDU0Z3aHBDRTR2c0plM1E2NHppVkE5Vm5RSEtpR2wxMFI5YVFzUHZacTdlOTBCUlhrUFo1TGRWSXY5SmdOVnlDLUNCUTJOTHJwNTFDRkFqXzI5M3JRNXNSX09vaktHaUFMYXNB?oc=5" target="_blank">&#34;Казахтелеком&#34; ведет переговоры с финансовыми институтами США и Китая по проекту ЦОД - Правда.Ру</a></div>
+    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOYTZCNVFPUmVTczZqUGFkQnRxUWdudS1HR1Y0RVJPN0lXNHdwY2IxYUhjRTFxSzM4ZHlYeVBLcUxRcm9pMFVMdmY0UWFHMXRYdER3eVJabDVJX2xqYkJ1X3JPYmRfdzdKaEdwM25BM2JMQm9TeGVkcHpITUZwaGd3ZHhEdlJBUFNVcXZ0WGRGcFZ1YXB4LU92NUcwUXBqZy11XzNF0gGoAUFVX3lxTFBIZXg1TEt0R1BLVVBBMDV4U2VZaFM0SjJ3ZFhNU2Nael9iczR1aTN5Vk1Wd3JSQUlpdUNIZHZBZ2N3NTVhXzFfaEh0d3RtZHJ1cXAyQmJJOXJfX1dEb19wbzUtRUE5blVTM3pKb1hOaktQWXBlNTdHckI3TG9Lamo5TEFmUmdURDNIMExUb1QyRUtXSlc5cEVrLVJVcTFLSnN4ejJXTlNtbA?oc=5" target="_blank">Как будет проходить IPO КТЖ, рассказали в компании - Новости Zakon.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 17.09.2026 19:15</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.06.2026 07:00</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; ведет переговоры с финансовыми институтами США и Китая по проекту ЦОД - Правда.Ру</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-17" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5QczZjZ2hmYXgyZ1E4OWQxaU9DOGNPMk15OXppMDMzNmtxT05NSkFGSGtoeEVqVFRZT1pNMFhiTVdlUlJJdnRoOXhQaXNtdDNjZjJKWWdSeTBrTEVmNVR4czdlU1VyeDc2QmR0TXFuN1dZMGVsWl9sZw?oc=5" target="_blank">Казахтелеком хочет занять несколько миллиардов долларов на Долину ЦОДов - TradingView</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 17.09.2026 10:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком хочет занять несколько миллиардов долларов на Долину ЦОДов - TradingView</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-18" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOakxPMWI4azZYSkhHSExOZ3J3WllfWTBsLWxFLTY2NEstZVQwNFpwMkNuX3VsYUdUNkRnNVI0ZnJKTzV3bVpuYUN0eGZrT1RXNGFlN2NWQlBLaXJQZTVObGx3a2JOdGI1N2NsaV95VU50QldmRVM1QUcxYlZZMkpPWlhSVTVHbXhwWDlfdFJUV0h5UjRtNkRpV3hubTdrLTZCUlRTWVVoUVNEWTdIajg2MWNseXh6N1hDVnFVaG1rZ2ZuTGNvT1FERlRoUQ?oc=5" target="_blank">Дайджест NBK: бюджет под огнём, «Казахтелеком» ищет миллиарды, новая компания Рахимбаева - National Business</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 18.09.2026 03:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Дайджест NBK: бюджет под огнём, «Казахтелеком» ищет миллиарды, новая компания Рахимбаева - National Business</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-16" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxQT1lCMTFvM21wUWZ0QkI4aHVlenZwb1FfRExlWnBHb2hVUEotSE9TbE82cmZSd2REWnUzX2dyLWRUbkZhRko4YlZfc0l2ZWFYNWZsYnZEa0pNYTY0dl8yUjlic0x4dkpBQ2VPOHBhdG9yRjduaU5pamFOdnNoNzNaTDRqTFdfRkxRNEppcGpPYWFmNTNlN1ZaMFhtLVlNVVh0VVR5ckxxN3JjaVBJN2dCZHVFZ0tfTnU1c25URWRpaw?oc=5" target="_blank">&#34;Казахтелеком&#34; поможет контролировать условия хранения и перевозки вакцин по всей стране - inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 16.09.2026 15:40</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; поможет контролировать условия хранения и перевозки вакцин по всей стране - inbusiness.kz</div>
+      <div class="art-summary">Как будет проходить IPO КТЖ, рассказали в компании - Новости Zakon.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-09-18" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPQm9TWExJS2M2R0UtX21vQUpncjA5UW9YaU1KV2U2MndkeWxNdV9Eb0tNSXI3RHlnVV82SHdnMzB1RVU3bTlDWHVZWWJPX1dXT2hYQ3BVYURHdVRUbF93aHFHNDNLcTNvckVlcnh1U1htMUwzdnc2Z05UVUpDY1ltVExZTTd5M2dIVC1sdDVGd3M5M1lFZmp6aEU0RUVWSWxiSmc?oc=5" target="_blank">«Казахтелеком» хочет занять миллиарды долларов для «Долины ЦОД» с NVIDIA - Profit.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 18.09.2026 06:15</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» хочет занять миллиарды долларов для «Долины ЦОД» с NVIDIA - Profit.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -225,7 +254,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-09-16';
+  document.getElementById('date-from').value = '2026-06-16';
   document.getElementById('date-to').value   = '2026-09-18';
   applyFilters();
 }
