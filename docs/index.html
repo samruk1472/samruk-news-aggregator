@@ -60,12 +60,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 19.09.2026 18:15</div>
+  <div class="meta">3 источников · Обновлено: 20.09.2026 05:49</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-05">
+      <input type="date" id="date-from" value="2026-03-06">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-20">
+      <input type="date" id="date-to" value="2026-09-19">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -104,31 +106,58 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-03-06" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQTVBRaFBEU0ZYRmhHMmE2VDBNdVo2a194UUZ2YmV1Qy1uaF80ZDN4UG9sRFYyNFJ3aUJidVpuZldlNG1ORzl1OV8wS0puTlhXRjRyeDFrb0E2NDZ3OXpaZG1Md0Y3aThNSG9MaG92aHR1dl9ZLWxKN0lrQ09mQTRKZkhYUmw3eDRYT3g2aXV1bVBsX2xGN0FTLV9BSXhGYzlVblE?oc=5" target="_blank">&#34;Самрук-Казына&#34; заходит в Африку для разработки полезных ископаемых - National Business</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 06.03.2026 08:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">&#34;Самрук-Казына&#34; заходит в Африку для разработки полезных ископаемых - National Business</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-19" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiREFVX3lxTE1fbkotdUVzeUZWc2d1X0hVdVFEVnBzUVRMVlpmQWdBd3NaMnNpSTdEdElheG5CNFJZLWotRTNsS0dvT3M30gFKQVVfeXFMT1U5Sm9YRUJ0Z293YTVuX19RLWVEQUI1dDhpMUdOODF3M0w4QWozOEQyM29MaVRTOVE5NExQemhDaEtMUGRzZjlWQ3c?oc=5" target="_blank">«Казмунайгаз» приостанавливает проект с «Лукойлом» по поиску нефти на Каспии - BFM.ru</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 19.09.2026 22:48</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«Казмунайгаз» приостанавливает проект с «Лукойлом» по поиску нефти на Каспии - BFM.ru</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-20" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQTWxfcU45SjBoVGlHMlBLc2N4MUoxcl9HT1NfVGFIencwZmpCVHNQZGdxUlFIamQ2Ry1zajdVbl9wTkNTc2I0bzlhZXItYzN4eEFaN2hhZmN4czJWd1Q4R0p1cE9xbFRPRGJQTXlSTG1MR3J3aVh5XzcwSkhKT19lZmQ2UWt6R3QtUTRnaE9aakJycF94Z0puX0U4NXVhTUxuTzFXMWJVQ2k1TFdxYkdJ0gGuAUFVX3lxTE1zWHRRWFoyUXdaZmx6a0RMaHJwOVZ5d3otSm80bzJOZUlQZzFTU1pGcXZnZWZNaS1aTkRDQWkxTjl1Nl85a3hIS0RkSkVVV1VuaFVCTDYtQlJLVDVGczBJWC1MOEFmWnhPdWR1aEEwR19yYTd2SnV1ZlExVGx1bGs1eVpDVGpBdFEycHUxYXo5OU5sN3B2VmhTRjBBbG5QUTZNRmRvanZJTUxMNC05dw?oc=5" target="_blank">Казатомпром финансирует строительство современной больницы в Туркестанской области - SKNEWS.kz</a></div>
+    <div class="article" data-date="2026-09-15" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOU1JpbG9SVEV4ZU9RQWE5RUVJM0QtRVpOTGFJTTUyVC10aG5VMW9QaWlQcGEzbjhEbWVwZlRoZHZtX1JWMG01NUN5V2l2Z3RMOGlxdFJuTHRGM0lYeHlhSGZPb0xLTkZpZnhOMFAydXNhTklyUnZzWkY2bjU3VDIwckpjNGsya2FZSUJFeVFEeFZIMGFqZGVpN3BRRkNLT3R4T2twdlJreGE?oc=5" target="_blank">«Самрук-Казына» подписал соглашения с корейскими компаниями на $11 млрд - forbes.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 20.08.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 15.09.2026 12:25</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Казатомпром финансирует строительство современной больницы в Туркестанской области - SKNEWS.kz</div>
+      <div class="art-summary">«Самрук-Казына» подписал соглашения с корейскими компаниями на $11 млрд - forbes.kz</div>
     </div>
     
-    <div class="article" data-date="2026-06-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOUU1SZzVvWGd5NW9IMmlJOVJoQ0NlTHRJR2Z6NGE4U1pGbmVFUEYwQXhEWkVoeXdvcEw3WTIzYXVsejBxV0g3N3ZONGZDdUtYY0M0ODR4TFBCc28zT2REQ1UtSllNTXNEdXg1bmE0MWJKdXlPUlRZVTY3T01jWTd3cURfaUlaM2Y3bkVQSndlRUlHMmk5LVdOZ0ZMZEc0ZU9IVnVVMG5iTkhsRTVvenNaVHNTclfSAboBQVVfeXFMTVZEdnRLRm1Ibmhnb1d3VlFxVXVRUjN6ODVYX08wSXYzSzdxWHVsZjhkMkFRcHVXRU1aYl9QVm0ycVFsbWlpTFdpNDNPejFHd0drWjRub0xUbmNlVmpteTNBNDVHOGUweHlxcHV4cldNVk9ZWVVtb0xiRi1aN3laNVBXb21DNmZxRkFiQUh6NVFkZXVUb3plQmV5NV83M3o5djJ0bFJWelJzQUdlRmxNQ3lFUk4zZG9hTHh3?oc=5" target="_blank">Список смертей в КТЖ: компания отреагировала на слив закрытого документа - Kursiv Media</a></div>
+    <div class="article" data-date="2026-07-18" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYW5VcS1tcVREd2ROQ0NTUENWSl9PNXo0TTBrdHdzS1Z0azNFSjVOTlRvQzBqSDR6NnZIZnl1ODh0YkF1TnEyUFNmWUtHa3BrVUlwaktJRHhpX3J1X1VPYnRCZ2tyWlJsSUFMcTAwMEFGdGw4R3pqelVWUnczX3NWQV9VX181OVpWMVVoaHpib0xmQVdfdWJHZTFHVnhqZGtNN3E5V2dHQzQ?oc=5" target="_blank">Миллиардное хищение в Air Astana: апелляция оставила приговор в силе - forbes.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.06.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 18.07.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Список смертей в КТЖ: компания отреагировала на слив закрытого документа - Kursiv Media</div>
+      <div class="art-summary">Миллиардное хищение в Air Astana: апелляция оставила приговор в силе - forbes.kz</div>
     </div>
     
   </div>
@@ -192,8 +221,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-05';
-  document.getElementById('date-to').value   = '2026-08-20';
+  document.getElementById('date-from').value = '2026-03-06';
+  document.getElementById('date-to').value   = '2026-09-19';
   applyFilters();
 }
 
