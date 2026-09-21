@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 21.09.2026 16:12</div>
+  <div class="meta">1 источников · Обновлено: 21.09.2026 18:32</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-15">
+      <input type="date" id="date-from" value="2026-09-21">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-21">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,10 +86,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -106,79 +102,25 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-09-21" data-co="Казатомпром" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70934-kazatomprom-polucil-pravo-na-razvedku-urana-na-ucastke-v-kyzylordinskoj-oblasti.html" target="_blank">«Казатомпром» получил право на разведку урана на участке в Кызылординской области</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 21.09.2026 15:01</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» получил право на разведку урана на участке в Кызылординской области</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-09-21" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPNm5xV3BTZjg3aFpqTm9qRjZSOG5kT2FmNHRERS1sT3A3SUprNjd5TkxEaXlIZG1jSV9wTWYyWDZmSDVWTU4zNkZOWkJPcHZQQV9ua1ppTFhic29POHpoYzlFaWw0bzZzV0xFaUxiM2tURG90Zlh0aFkwTWJPbkRncEY2XzFsRWxXcTJaUlpsVFUtWndaS2ljdTJXUWoyS2hGN1g0MnpINl9NVk1IYU16UncxQlNVQdIBuwFBVV95cUxPdUhpbFdUUlh3ZVRvbVJTMlFVbXNockV1SGpqOEVPdXU4N0FSWVp0bTlCYlNHdWY0TjlYZHp3YnloTkdtempIRVJEMWpXMFRDWlBMOEZYT1NoNlh3d00yUGpUWENHd2xwT0ZPSTg2TzI2dE1GMnNKZlVab1R2WjlSakdpUTROQ2QxemZuUk9MX2xNSTRCS3lwOWgtZkZMV1BjNGpvSHBLeWJfb1ZweExqUXpna1NkcEVEaDVJ?oc=5" target="_blank">«Казатомпром» получил право на разведку урана на участке в Кызылординской области - Vlast.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQbVNOZUpGb1QwMjA1Q3l3SUR3ckI5NHk3Q1N1aUFLWDVPaWdsQktUcHc3Vm5JZDRPMnpNbXYtYS1QdWhUNTg5Q2xHLVdpTk5kdGtoRWhPR2ZRZ2FvY3JLRlhZdXEzcGVkNnR5dXdCdWoyd05NSjVDRm9Wc2E5cVVIRkdoblNOTHBGR0dRbzdTVy1BX1BQbzVGZUln?oc=5" target="_blank">&#34;Казатомпром&#34; сохранит темпы добычи урана несмотря на запрет России на вывоз серной кислоты - Правда.Ру</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 21.09.2026 10:01</span>
+        <span class="date">📅 21.09.2026 16:31</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«Казатомпром» получил право на разведку урана на участке в Кызылординской области - Vlast.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxPaWxkUllfQmxQTXAyb1ZKTno3RGZpeTI3NFhHYzRnaTdJYUxscVctbEhWOVNUb0NBRXRsbkRXYnZPbVdPNzVBZndHdTdMMWU4V0JiMXFZT0x6SDFZVnczQ0xPeWZRWllJb043cGNRWklFMjlKOFp5VTVJWGhxZ1A0Z3hkSHYyQUhDMWVYRENTaHhaa2cxREhFS2J0VWxvdm_SAacBQVVfeXFMTlNvbzViU21ZMTd1UmF1MTVmOGRfZlY4UWlLWnJHTWdNZjVYdC1FQ0NKelpJNWI2cDg3NmFyeHdDak91TGlHRFBaR3VfNjlnakhNd2NUU3l3cno5RGlrUVVpNkNaMjkxd1l1VXV3OWpMVGtWamJKODExUDRFSEsyV05MdzBRMTNKZEMxbl9RSC1vdG9PNG9rNFlTeW80QUhXQmpnZXpCeTg?oc=5" target="_blank">КТЖ планирует увеличить транзитные перевозки в три раза - ElDala</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.06.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ планирует увеличить транзитные перевозки в три раза - ElDala</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-15" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVTJPcGE1VXVGcGV2cHNZRWtfeExwTGxpSjNKbWowYVlPTFI4MGJkSHBGOGZtZ0tPWFZCTlN4cmhURjFMalNiODBrZ18yelhWaUVNR1B6RzltRFR6ZHpfRXBodzhacHBobldvcFVLTHIxQUtnY2xvSlBlQXBLU0k3ZDdiVF9pZm1PRDV0QkhCR0xIdUo5SVJPSVJmUVkxMXFELVNkQU9JVk4?oc=5" target="_blank">“Казахтелеком“ уволит тысячи сотрудников? Что говорят в компании, Минтруда и сам Мусин: 15 июня 19:13 - TengriNews</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 15.06.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">“Казахтелеком“ уволит тысячи сотрудников? Что говорят в компании, Минтруда и сам Мусин: 15 июня 19:13 - TengriNews</div>
+      <div class="art-summary">&#34;Казатомпром&#34; сохранит темпы добычи урана несмотря на запрет России на вывоз серной кислоты - Правда.Ру</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-08-22" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPQVhBUTk1ZkpvRkVlbWgyZGR0MVU2ZWpJRDZFbkVtRlNZWW5OeW8yRV9mZF9xUVBkQ20xZmJ1Tks3LWJaMFFnYnRhVkRiZFhJQXQxRlNOQ1ZqM3hPYkZSWkwzd29TRVV1NjktUlRhM2Zqb3pCWXZKMExMaG1kUjVuNHlQa3F6eFlkZ2c5Y3dEUDNDQzVNZU5oMHQ5cVAxd9IBnAFBVV95cUxOdFBmcnIzbzhSRG13dVpacV9meXRITkxkNHNxZjVUNU5JY0xEV0ZEbFQ2RlZ5bFc4ZGFGX0JCTTA4emdtZ2tuNjFWT3pQelJQVkU3X29GZ3cycHhRY1BtcFdrb3YteVJPTXRuV1hXYXNNb1BRRGZLNHFuSWRZU2dxMC0tak5URFRDY0tHMmNKcWdYbndsNE0wODBMbmY?oc=5" target="_blank">&#34;Казатомпром&#34; готовит крупные контракты на поставку урана в Китай и Россию - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 22.08.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">&#34;Казатомпром&#34; готовит крупные контракты на поставку урана в Китай и Россию - BES.media</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -237,7 +179,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-15';
+  document.getElementById('date-from').value = '2026-09-21';
   document.getElementById('date-to').value   = '2026-09-21';
   applyFilters();
 }
