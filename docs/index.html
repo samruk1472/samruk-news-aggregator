@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 21.09.2026 18:32</div>
+  <div class="meta">3 источников · Обновлено: 21.09.2026 20:10</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -85,7 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -105,17 +109,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
     <div class="article" data-date="2026-09-21" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQbVNOZUpGb1QwMjA1Q3l3SUR3ckI5NHk3Q1N1aUFLWDVPaWdsQktUcHc3Vm5JZDRPMnpNbXYtYS1QdWhUNTg5Q2xHLVdpTk5kdGtoRWhPR2ZRZ2FvY3JLRlhZdXEzcGVkNnR5dXdCdWoyd05NSjVDRm9Wc2E5cVVIRkdoblNOTHBGR0dRbzdTVy1BX1BQbzVGZUln?oc=5" target="_blank">&#34;Казатомпром&#34; сохранит темпы добычи урана несмотря на запрет России на вывоз серной кислоты - Правда.Ру</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQTmRaV3pQaHNTSkZ6aklXT1JkWThOU19xMWlJaG5oWWtPb2Ywb3o5N0ltTmkxemdXY3NpSkpzZEIyaEJVekZDVHMydldVQUFSVnhxdUluNE1Lc3dhYm5Bank3QndOU2FEVWxab3l6YUlsUWZlUzVLZ3h3Z0tDakVkY2hCdHlTOXBaeGFVaGJEM0ZkUU9TRmhSLVQ3N05mbEtDN1VzUDVpZw?oc=5" target="_blank">&#34;Казатомпром&#34; получил право на разведку нового участка с ресурсами около 10 тысяч тонн урана - Kazakhstan Today</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 21.09.2026 16:31</span>
+        <span class="date">📅 21.09.2026 12:45</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">&#34;Казатомпром&#34; сохранит темпы добычи урана несмотря на запрет России на вывоз серной кислоты - Правда.Ру</div>
+      <div class="art-summary">&#34;Казатомпром&#34; получил право на разведку нового участка с ресурсами около 10 тысяч тонн урана - Kazakhstan Today</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-21" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPTU5nNXhIeEZyWWJPdy1RMm9KQ1ZJeE9tS1VjTGp4dXBISnR1TkRYTVJ0Z3JCeW5qcUdfeFh2cUpCSUh5Z0RIMlVlNUR4QU9nSllKQnEzQWVvNGhEUWJqcGMwY3daQW1taWY3VDJuNndvOEtQRnNYYTdoZU04RWdsQUFTUzgtakpzMXBGXzJ1TFhPWXRjRGNtXy1DRdIBowFBVV95cUxQNjJfVzE0RkxHYzJfSFMyVzF2VGxRdEN3VVRGRzZoVE5saGJLckZRN0FBNlN0UlZacWRRLWhVNXZud3daeHhtSE1vNFlHMlU4NTRMd2taY1loaU43UGowNjVieDJhZHk3ZFctdld2RlBLVTl6NmppLWxJdUVkc2stNDBaLWJ3ZnlIY0Y0aVRuN0lyc05XWFBRdTM0bTNZbl9fdW9j?oc=5" target="_blank">Air Astana вошла в список лучших авиакомпаний мира - Weproject.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 21.09.2026 11:42</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana вошла в список лучших авиакомпаний мира - Weproject.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-21" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFA1aXdDMUFITFFxdUZzNkVOaGYwZTZGa1dOcEhhSEx0Uk40eWVpNFhRR0JfdzlKY1d2cnlzWk9fa196UUhiMzVURm4wbHlWWlRJTlJySHJzYUd2OHUzdHc?oc=5" target="_blank">Зерновой штаб КТЖ обсудил в Костанае и Кокшетау вывоз нового урожая - Trend - Новости Азербайджана. Турция, Иран, Центральна Азия</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 21.09.2026 19:11</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Зерновой штаб КТЖ обсудил в Костанае и Кокшетау вывоз нового урожая - Trend - Новости Азербайджана. Турция, Иран, Центральна Азия</div>
     </div>
     
   </div>
