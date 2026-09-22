@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 22.09.2026 08:56</div>
+  <div class="meta">4 источников · Обновлено: 22.09.2026 12:16</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">4</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-09-22">
+      <input type="date" id="date-from" value="2026-05-29">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-22">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,13 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -109,50 +109,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-09-22" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-22/fvfv-upravlyayuschaya-salonom-krasoty-i-byvshaya-glava-astana-lrt-voshla-v-rukovodstvo-ktzh/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-upravlyayuschaya-salonom-krasoty-i-byvshaya-glava-astana-lrt-voshla-v-rukovodstvo-ktzh" target="_blank">Бывшая глава Astana LRT вошла в руководство КТЖ</a></div>
+    <div class="article" data-date="2026-09-19" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQWGNRNDVXSlBIenhkUEJZQnZNUlg3QVFWRUN1anoxT1pHVDktMVlOdURCWVZPSDEtVVI5dEp3UDRzeVJ3eE5TbUFXMGRQZk1hZzN0Tkl1OS03YzRnWG1uRWNFSE9fRTBvcHBiODhNVXJieVhLRE9uX3k1UVFIUFFNclJDbjR6amh3cHR2UGhJVTFMbTQ1b3RkNGxwWFRMN3hqXzVlOHhkR2tWaEFwNWZKWklfQWtMd9IBuwFBVV95cUxQamlnRnRlSTNQTXBFQ0xoX2hVVUhSemFmTnN1ZnoxUWsxcnRDRkhkRVNMVXM2eXdnTmRwOGFXU1FEZklNRktWUDVWbzJOcFBPR1M0Unhvb3pNLWJ4b1lZS2JYTnU0bHRlbmJtVEM2LTByOUZwWHVWaWdZQ2xsUVRHUGhGbnlZeXgxY2ZMSHVBTXRIcDdLd2g4ZTBVYWZhbzBLMDN5SXZmZkQ0aHRLbGZWRjJFLUxOaGs2MVNV?oc=5" target="_blank">«Казмунайгаз» приостанавливает проект с «Лукойлом» по поиску нефти на Каспии - Рамблер</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 22.09.2026 07:54</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 19.09.2026 22:48</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Бывшая глава Astana LRT вошла в руководство КТЖ</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-22" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-22/shlc-opublikovan-ukaz-prezidenta-126-kazahstanczev-voshli-v-sostav-qazaqstan-halyq-kengesi/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-opublikovan-ukaz-prezidenta-126-kazahstanczev-voshli-v-sostav-qazaqstan-halyq-kengesi" target="_blank">126 казахстанцев вошли в состав Қазақстан Халық Кеңесі — опубликован указ Токаева</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 22.09.2026 07:27</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">126 казахстанцев вошли в состав Қазақстан Халық Кеңесі — опубликован указ Токаева</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-22" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70950-novye-vagony-stadler-zapustat-v-kazahstane-k-nacalu-noabra-obesaut-v-mintransporta.html" target="_blank">Новые вагоны Stadler запустят в Казахстане к началу ноября, обещают в Минтранспорта</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 22.09.2026 13:11</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Новые вагоны Stadler запустят в Казахстане к началу ноября, обещают в Минтранспорта</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-22" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/70949-utverzden-sostav-narodnogo-soveta-kazahstana.html" target="_blank">Утвержден состав народного совета Казахстана</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 22.09.2026 12:47</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Утвержден состав народного совета Казахстана</div>
+      <div class="art-summary">«Казмунайгаз» приостанавливает проект с «Лукойлом» по поиску нефти на Каспии - Рамблер</div>
     </div>
     
   </div>
@@ -160,72 +127,61 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-09-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-22/zhnb-vagony-stadler-nachnut-vozit-kazahstanczev-v-oktyabre-noyabre/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-vagony-stadler-nachnut-vozit-kazahstanczev-v-oktyabre-noyabre" target="_blank">Вагоны Stadler начнут возить казахстанцев в октябре-ноябре</a></div>
+    <div class="article" data-date="2026-09-22" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/novosti/70955-naznacen-vice-ministr-energetiki-kazahstana.html" target="_blank">Назначен вице-министр энергетики Казахстана</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 22.09.2026 07:38</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 22.09.2026 16:57</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Вагоны Stadler начнут возить казахстанцев в октябре-ноябре</div>
+      <div class="art-summary">Назначен вице-министр энергетики Казахстана</div>
     </div>
     
-    <div class="article" data-date="2026-09-22" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPRnIzYjN6YWVVb3o0c2VnS2tpZ0NLc2k3TGxOVXVIYm9uVjU0Q0V4ZTh2ZGk4X0JDRWJzd0NrejZXVWtVQ3VfQ2RwdTJQS21UMTBWLUZON1VOVnR0SElmRDJvQUxqZjU5dlJCY0RUYzl1akcybFJ4WS12Z1N3ZUJUdXR1SllkdmdwM0hlNzlnQnpDSVVsYm5hd050bVNESF9ZM3pj?oc=5" target="_blank">Air Astana вложит 8 млрд теңге и один самолет во FlyArystan - Kursiv Media</a></div>
+    <div class="article" data-date="2026-07-24" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOQTQtZ2FQQ2RYNnZfQ3pPdTdIYUhfSll2b1RjVHVWalFTb2FjNjZ6cHRxZnFRbGlDOUZUalBoa0x0djlRMzgxSnBLbnVFX1cxdWh5c3IyYjBKMTN2R0ZGcFlObGgzS3I0cDlYcnZ0MC1sRDZmR09qVnNidndURXhMMUtZQjRva0lNT1JmaDdnamV4R0tsZlFwNW5KeU5xaklfMFZWTGJ0NmlpaFJtUk9LcS11aGJIZw?oc=5" target="_blank">Атырауский НПЗ в Казахстане завершил плановый ремонт -- Казмунайгаз - Русская служба The Moscow Times</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 22.09.2026 06:43</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 24.07.2026 07:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Air Astana вложит 8 млрд теңге и один самолет во FlyArystan - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-22" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNYWFTRGZwVEd4NnowbGJNbVdnLU0wUEFEOUFmLUhOQ0NYck9HWW9lSmFfVlVGVjBVbDdBWGhJU3RsM3llYnU3Q0dGZzRCMU1CRlFPUVpucUc0XzFxZFU3WWtlSTcybFhWTWdWSzYyUEo2aVFicHBTYWV6SnRjRlBPNmxJaXBuVmJuRktnRFY5bw?oc=5" target="_blank">Air Astana подключили к продвижению туризма в пяти регионах. - Exclusive.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 22.09.2026 06:35</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana подключили к продвижению туризма в пяти регионах. - Exclusive.kz</div>
+      <div class="art-summary">Атырауский НПЗ в Казахстане завершил плановый ремонт -- Казмунайгаз - Русская служба The Moscow Times</div>
     </div>
     
     <div class="article" data-date="2026-09-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOTE1GRjJxNjFObnpmUk1uODJreFlxTGpwbXh0cjNaa0U5OWFHRmNVLXNtUXZWTk5sTTJEMmgweng2WWxtOGFTSzdHQlNuUUUxa1FjM01aWURvZjJUMWh2NUEtbURyRGYzcmFNYThmMnJ6a1l1YnF3Z0N2ZklYSmFRNGF2SFgzMUI5RVUweWpsTUlvWW9lSXEw?oc=5" target="_blank">КТЖ хочет занять до $2 млрд сразу на трёх биржах - National Business</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNWnd3TEROZkdyWWVmMWtlUWxHTWFJN3J0RlkwaXAxcG9hLWZLOFQwN1ZwcjB0c1lfYmtUaHh4MEZ4Z2ktUFpNeVdUTUtYVEEycjd6LTF6c1JFMHVVTEgwRWRscnFpNEI1YlNpOHpiemxLc0hjQS10WVNvM25DWTBJaHdTYVM0TXFheXN2TWw5aXgtQ3hkSG1MWndKRWhCSnpmaHdNdnFSRDVETTVUcGNVLVdYM2kzUjJDTnZpTkVvZmU1dUNQLXpheFVIY0c?oc=5" target="_blank">КТЖ не смогла заложить расходы на новые вокзалы в тариф - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.09.2026 08:45</span>
+        <span class="date">📅 22.09.2026 09:48</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ хочет занять до $2 млрд сразу на трёх биржах - National Business</div>
+      <div class="art-summary">КТЖ не смогла заложить расходы на новые вокзалы в тариф - Kursiv Media</div>
     </div>
     
     <div class="article" data-date="2026-09-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxPdV9mMzF0TGo1RWJ0azMxT2pyMU4tWHVtM3ZOZnhwSllNY0NtcWsxSUxMdjNKalEyYkNSbXBYVVdmSnBPUk53bVdNTzExTGVJSnVmLXZvd0I2OFhIR2ZfZ1hPRk4yazJ3ckM2Tkt3YkJSc3hBSk9HUzVESXFqNUxkU3ZIczI5M2xVckVTZjZKYXBNRUlHX3FDaG11dGpWeGNvZGxURDFfcTdxakR1eUxhWTFPeVlQcmZEdGo2SnJQTHliaGtValo3ejhjTzV5SmtJVGlF?oc=5" target="_blank">Новые вагоны Stadler КТЖ начнут курсировать уже этой осенью - Newtimes.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9xbnphLTR6Tm44TUkzR0pjdHVjb3FTSUc4NTBZSjUxUFdmbHcwZ1lOSlhxd1lDbHpSdXdFV1U0VXVMQTdFQWtyakJfWTNvenY4RXRxejl2U3JPM2hSVlBjWW16MDhuSVB6MTJ2RXhWYWd4TzU1TnYxMjg0SXNIRFXSAX5BVV95cUxPYnh3TUVTU0hHUlVaclVDQnEzQ1pVUHFoRmMtZjFrbFJOQUV6R0toUl8xM2Vsa2JuVloyS2k5V09fVWd0VVNDd0NlVEVyWkJLWjNYOUFpQlh1OTg0eExMUmR5U2ZzTXl2WktsLUVKTzU4Q0ZjaWptY1NDQ0pyd0E?oc=5" target="_blank">Бывшую главу LRT назначили IT директором в КТЖ - BES.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.09.2026 07:37</span>
+        <span class="date">📅 22.09.2026 10:17</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Новые вагоны Stadler КТЖ начнут курсировать уже этой осенью - Newtimes.kz</div>
+      <div class="art-summary">Бывшую главу LRT назначили IT директором в КТЖ - BES.media</div>
     </div>
     
-    <div class="article" data-date="2026-09-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNaGphYlNIR0lqRXliSTVuVmJTV3FJTG94QnAyV05yZVFTZTY3b1dpMU9ac0MwSUlLZE04eXY2WUhzdXU0WkdZd0V5Zm9PTlZOMmtJT0h1a1llNGxVaGxod3JHbGx1Z3F2aUZvWXFCSTFPcVFaRDZGMVI1UnVkR25jRGppTXNrLURDNGpBNjFLS3RsTF9HNER1VjNYYzFwMUtUekR6X19sMGY3ekdEdGlmLUM2TUdEUmFKbmpmb2VlcGE0VmhGa1E?oc=5" target="_blank">Бывшая глава Astana LRT вошла в руководство КТЖ - Kursiv Media</a></div>
+    <div class="article" data-date="2026-05-29" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQYi1yMWF6N2tsSUswMWpMY1BUbUJ2SFJhNnc5dkNxNXkzbGdRZHE1a0ZzUkFtYnhZX2tITU9Mbm84U2k2N2l1cHUzMExqWnVTTTZ3TVBsSWFDSmV5Y3FQNE00MUdfZFp6VDc0OWtLbVpoLWVrWFk1TVV6SHlCYUdUdWZYRUVURGFWSWRQY2txYkpWbXg2UExtT1Rvck5CM2pEWHVwemhtODJIeWowRnkyRzNxXy1FSnhZME9MdmRDc00wbFFDWXdSUXN3d0M?oc=5" target="_blank">С начала лета начнут курсировать три дополнительных пригородных поезда КТЖ - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.09.2026 07:58</span>
+        <span class="date">📅 29.05.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Бывшая глава Astana LRT вошла в руководство КТЖ - Kursiv Media</div>
+      <div class="art-summary">С начала лета начнут курсировать три дополнительных пригородных поезда КТЖ - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -235,15 +191,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-09-22" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-22/fvfv-air-astana-vlozhit-8-mlrd-te-ge-i-odin-samolet-vo-flyarystan/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-air-astana-vlozhit-8-mlrd-te-ge-i-odin-samolet-vo-flyarystan" target="_blank">Air Astana вложит 8 млрд теңге и один самолет во FlyArystan</a></div>
+    <div class="article" data-date="2026-09-22" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-22/zhnb-ktzh-ne-udalos-vklyuchit-v-rost-tarifov-mnogomilliardnye-rashody-na-modernizacziyu-vokzalov/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-ktzh-ne-udalos-vklyuchit-v-rost-tarifov-mnogomilliardnye-rashody-na-modernizacziyu-vokzalov" target="_blank">КТЖ не смогла заложить расходы на новые вокзалы в тариф</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 22.09.2026 06:41</span>
+        <span class="date">📅 22.09.2026 09:46</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Air Astana вложит 8 млрд теңге и один самолет во FlyArystan</div>
+      <div class="art-summary">КТЖ не смогла заложить расходы на новые вокзалы в тариф</div>
     </div>
     
   </div>
@@ -305,7 +261,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-09-22';
+  document.getElementById('date-from').value = '2026-05-29';
   document.getElementById('date-to').value   = '2026-09-22';
   applyFilters();
 }
