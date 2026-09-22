@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 22.09.2026 14:21</div>
+  <div class="meta">2 источников · Обновлено: 22.09.2026 17:33</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-16">
+      <input type="date" id="date-from" value="2026-09-15">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-22">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -88,10 +88,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -108,98 +104,33 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-09-22" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-22/fvfv-ktzh-rasschityvaet-privlech-do-5-mlrd-v-hode-ipo-pri-ocenke-kompanii-v-30-mlrd/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-ktzh-rasschityvaet-privlech-do-5-mlrd-v-hode-ipo-pri-ocenke-kompanii-v-30-mlrd" target="_blank">КТЖ рассчитывает привлечь до $5 млрд в ходе IPO при оценке компании в $30 млрд</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 22.09.2026 12:52</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">КТЖ рассчитывает привлечь до $5 млрд в ходе IPO при оценке компании в $30 млрд</div>
-    </div>
-    
-  </div>
-  
 
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
-    
-    <div class="article" data-date="2026-09-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeWIydG1JVG11RFN6QnY0Q2NqWGxQZklldzV1SzB2U1pZNjFtWHo2eEpOWTNBenk0c1paS0NiMWJwZ1FZRi10SDdxS0F0LUVMd1VFRHIxYWhVYW5UQkowUFRzQXhZRXkwa0ZuZGc3Q0x0Q2xXQWlRbENTTWdNYU5iS0x5aDI2TUJEcjN2QTVOZ0NLRmZQbUJuZ04yWnlmSEczVWlITzFrMGR4RDJubGZUN1dtTWh1eXN3QTI0?oc=5" target="_blank">КТЖ рассчитывает привлечь до $5 млрд в ходе IPO при оценке компании в $30 млрд - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.09.2026 12:54</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ рассчитывает привлечь до $5 млрд в ходе IPO при оценке компании в $30 млрд - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE1mWnR3WllCd245RkhFNGktcGZJeXZrS19vSjBPbFdUUnc3NXEzVEViQzhDVlVfdEZZNjVfUFVuM1dxcU5mTG5zOWpYSS02QQ?oc=5" target="_blank">Перевозки зерна по сети КТЖ выросли на 13% — Тазабек CA - tazabek.kg</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.09.2026 10:02</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Перевозки зерна по сети КТЖ выросли на 13% — Тазабек CA - tazabek.kg</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPTkNjM2pGYlYySnBhNmEyTjc5OHBNTXNXQl91Z3c2Z2dFVm9mM1NaNDNlUkJ1U1FVUDdFRTVndjNXb09TOVVzQnRFX29lNzJkcVhZaDRhM0s5Q1NJNm9WVnRNQVJsUmVOTHR4Skp6cjYxcFh6RTB4b0lZTkRHT25OMTJ6QldyX3IwYXdiYjRCemhOYTBNN1Y5Zm1LR3RWTzBCemc?oc=5" target="_blank">Новые вагоны Stadler КТЖ начнут курсировать уже этой осенью - newtimes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.09.2026 07:37</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Новые вагоны Stadler КТЖ начнут курсировать уже этой осенью - newtimes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPWTlvUzdNNERkbTA4SXBvODMtYzVFOVM0akFWbTlPWTlJNUtfaWxZMzY5S2x3cmMteE04dms2UjQzbG1YNXdBbkpoNHIwalpOYUF0SFNhbm1fRngzR1JjeXpqTkhKdExtM0Q4TE5BT3hBM2VOT2d6WktiYjVOczFZNkFMRW9idm40VnZCclVIOFlkR2k5QkNnMXllb2c3cHhfTHFV?oc=5" target="_blank">Почему путешествия на поездах становятся дороже, чем на самолёте - ответ КТЖ - TengriNews</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.06.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Почему путешествия на поездах становятся дороже, чем на самолёте - ответ КТЖ - TengriNews</div>
-    </div>
-    
-  </div>
   
 
   
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-09-22" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/former-ministers-and-olympic-champions-what-is-known-about-273748/" target="_blank">Former ministers and Olympic champions: what is known about the composition of the Qazaqstan Halyk Kenesi</a></div>
+    <div class="article" data-date="2026-09-15" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwZBVV95cUxNOUVWa3R5YnY0V0JxQ09sanRvVFBUbmJNWjFFQjhhVm9COTZNekxOYkF5VW9hSEFNWnJLS0Y0Tkk0RXZBaktVVnBHWFFXOGNjYzJRT0RmaW1GeFlnOExDNHdQXy1YbzNZLVh0N1YzQUpmdDNmVlhaZlc1cGFuMmplT29wTXRCUTlfdHFZdmdodm55WG5LZHBqOUxwS1VlZlJvVEw3Zy15M2pZb0JCNGI0am40Qm9POWhJNHZrNkxNSkxlTjZ4dk85Y3NEQVZoMGlWc2h3dVByYTRzVXZGeExibF9wQmV5R1ZKT2hQZk1CQnhNMFdXTy1rY1FvRVljeTYwYUEzM0QxNnlJdUdFZVBCLU9Mek9XV2NBRU03SGNBM205d05VVTJwRXdRX0ZRZ01yME01T2xhS2xjR3R3d1JtTlNycy1CVEJlSWp2TnlEX2pxWHAxU19PT3lCWVdFMHdwNkIwbkJVb2RyNjdiVG5uLWx0dnJUYWlCVGdCcGFxeEwyVFpkNnRYZ0F1YWlhc1RSUEJFc085NUxfXy1MYVQ0RzVHN2JTalpzSDctTFJKRGRRWk1LOHM5R25obXN6VkFQamtUR0kybllBVG5kUFYzRFkzY0FPRUs5dlhMRGh6SkRZeGZXYXVGRVNtaGY5Y0lnU3RCSlNkbTlnbEtza08ybnhISWtGUnNVUGU0emZwbE01bUY4dFdXWXpJRU52aGlQU3pmMlFQLVM4Zzg2SzRIeXNlTWQ5VXB4UERhYnhvUUtMNTRTT3BYcnRnYVZQMVpzdl9nT2VjcjJ6NVlqQ3ZHbGVsWFBDT1NjeC1xMjhVN19PVTlkZlQwTHd6Zm1tMDVKVTdTR3pFQS1GVWlMT2Y2TTRFbl9ZcHNnRkZaNlVBbWZzV0tOM0VVTmMyNGtnbVJRZFNfMlY3UnJNNjJwTUpLc202UFkzMm9Tc0JZcEFrdUZmZ3hfdThJRDRfLS1WVTlwZ2JRcjhlbXlMWkdmOG12T0pvV3pHajcxOEdfNWg4dllzbUF0NTZF?oc=5" target="_blank">КазМунайГаз и Samsung E&amp;A обсудили расширение нефтеперерабатывающих заводов Казахстана - azh.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 22.09.2026 18:44</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Former ministers and Olympic champions: what is known about the composition of the Qazaqstan Halyk Kenesi</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-22" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-22/svan-kitajcy-poluchat-eshe-neskolko-millionov-dollarov-ot-neftyanyh-mestorozhdenij-kazahstana/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-kitajcy-poluchat-eshe-neskolko-millionov-dollarov-ot-neftyanyh-mestorozhdenij-kazahstana" target="_blank">Китайцы получат миллионы долларов от нефтяных месторождений Казахстана</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 22.09.2026 13:30</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 15.09.2026 06:22</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Китайцы получат миллионы долларов от нефтяных месторождений Казахстана</div>
+      <div class="art-summary">КазМунайГаз и Samsung E&amp;A обсудили расширение нефтеперерабатывающих заводов Казахстана - azh.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-22" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE4yWWdQZXVFa0l6el9ENkMzZlpIRXRmOVdNRE1McTdzWHRsWmhqMUVaRDlZaUpONmN1a0Fxem1pWjNYZEZETkVHX1lpZ1FKaDdGT3gxQzFmbjJ3MmtiMXZreVNfSURMU3FlSUhMV1dzSTVOdHlfSTNIdkNYOA?oc=5" target="_blank">КТЖ отложила запуск вагонов Stadler до ноября. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 22.09.2026 10:15</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ отложила запуск вагонов Stadler до ноября. - Exclusive.kz</div>
     </div>
     
   </div>
@@ -261,7 +192,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-16';
+  document.getElementById('date-from').value = '2026-09-15';
   document.getElementById('date-to').value   = '2026-09-22';
   applyFilters();
 }
