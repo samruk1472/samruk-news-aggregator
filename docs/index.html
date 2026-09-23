@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 23.09.2026 08:59</div>
+  <div class="meta">3 источников · Обновлено: 23.09.2026 12:29</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-02">
+      <input type="date" id="date-from" value="2026-08-24">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-23">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,9 +87,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -109,50 +109,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOZUx1ajIxWEtVUnV2a3dkR1JqaG9XOEFrOGY5TGpnaEgyYU84WnQxQmNDeU01bVJaXzg0dk1vUnJ1enBXdndzeFdhTHBScVA1SUVrNjVTeXY5d1UzclVFUExHU1kxSzNCRUIteFZQTk5HeVJpQjNCdDZtSThGcmxBekVZakl2LWdYb1lEUjhhaUtsaF9JV1RUR0IwZTJHY3dqRHRtS1ljVTl4d2ptZFNsWEFn?oc=5" target="_blank">Казмунайгаз перенес плановый ремонт Павлодарского НХЗ на 2027г - Русская служба The Moscow Times</a></div>
+    <div class="article" data-date="2026-09-23" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://www.caravan.kz/news/u-otechestvennyh-it-kompanij-pojavitsja-prioritet-pri-zakupkah-dochek-samruk-kazyna/" target="_blank">У отечественных IT-компаний появится приоритет при закупках дочек «Самрук-Казына»</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 24.08.2026 07:00</span>
+        <span class="src">📰 Caravan.kz</span>
+        <span class="date">📅 23.09.2026 12:04</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Казмунайгаз перенес плановый ремонт Павлодарского НХЗ на 2027г - Русская служба The Moscow Times</div>
+      <div class="art-summary">У отечественных IT-компаний появится приоритет при закупках дочек «Самрук-Казына»</div>
     </div>
     
     <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPNnJWUmxOc1NqRm9jZDdpRUtNQUlxSldrVVRtdmx4RU0wOWhaYy1QdlRXZjZBSmhfdWxMbW94cGJGNnpkdEthTUZ4RmxHV3RMTXhNajBfQlBOVU56NWswWFk3Tll6ZlA4YU1IUy15QnZNQ2RtLWR1ZXY3ZEpWclpWMDdtN2I1MFFSRFZ2Z1U3WFU1SURfb1BORmlqRl90cXZKYnNPeNIBowFBVV95cUxOQU9LVEJSc2ZhMnI2VWV2X0dFTl9VeVdZQlpYVVVjZHJ6SVlxdm5VeW02WEs0d2xBYktNZG9WUTZDRF91ZTc3Xzdmd2ZHa29kOTNpOTgzWnVZNVpKMFBXV2J4UHdKRzdWc3ZScGhyTmtsYVZzb0dvcWtpYVdGNzNHWUM0bC01ZUw3Z05GdEFmUzJsR1c2Z2trOXJrZVozNFVhSFJz?oc=5" target="_blank">КазМунайГаз отложил ремонт ПНХЗ – чтобы бензин не закончился в разгар сезона - BES.media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNQ1gtZ3ktYlNZVml6Mk84S25RcjdQTWdocnB3aW9ZQm9Tc21Cd05TV2RXTkM4RnZyVjR3dDd1bHNodGc2cWRTTDByRl9BM1E2M2FuYWp1LWtIY240akp1ZE1HVlU3VjdldWdqd2JLa1lMeUVJQm1rQlhxZDhOLWp5elRkNTBSTXF5WEl5WmZ1QkRPbGxobEpRQkR5eVBHUFdVSFFZeA?oc=5" target="_blank">«КазМунайГаз» сдвигает ремонт Павлодарском НХЗ на 2027 год - Нефть и капитал</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
         <span class="date">📅 24.08.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КазМунайГаз отложил ремонт ПНХЗ – чтобы бензин не закончился в разгар сезона - BES.media</div>
+      <div class="art-summary">«КазМунайГаз» сдвигает ремонт Павлодарском НХЗ на 2027 год - Нефть и капитал</div>
     </div>
     
-    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQTG1rR2xrYlVhOVZlaF9ua2RkdnY2aVNXR18xdVAwRzU0U3A5eXZjSy1YbW5uelJ4N1NkS0xPNzFNaE52LUo4Zm13Q1oyTko1c0xTdlVBTHRRWnM4QjRVRGpfcC1XdUYyVkNUM3RwTk5rMTZBVEdPQ2RoOHB5OXB5b2U0bC13NVJPekxRVEtDTjIxWVMxTzF3TFgxTUJoYVlvMVdpOXIwSE12LVVnaExGOFhzR3FhMjNjNWU2cTlB?oc=5" target="_blank">«Казмунайгаз»: вопрос с выкупом активов «Лукойла» должны решать власти Казахстана - Финансы Mail</a></div>
+    <div class="article" data-date="2026-09-23" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdzJXS1VZMVRlbzVJRGFab19Xd3I4WnZZUlVpaWktU3JEbFR2WGtmZmQxYjdxZzBaWVl1MUZIaGlUazlIdm10RjZhWENERGhyUmE1bTl3ejBEdHFVdjV4bnR0NndDaVFiUFZwY3NZOGRfSzJzMWl2b0h4VmhMMjVSSk1UQVYyZ2VfX0pLNm9WWEh3TnpReGp6QjhIM09FTVd4T0NMU3g1M3lBUdIBtgFBVV95cUxQSEFhenIxMm1ubmRmYjlhLUFGc2puRzlKU2dzOFVKeUQyS0h6WEQ3TTFJYk9kcUNQTi1GdzdkWlRMLUNZSEloLXl0eGU3VklrMUwxQ3IwYUI3Q2hsYTRTaVRDZGxyOHJYb3BXQkhnNktpX3ZLZlY5dlJTeVhBUHJPdGZmR3VKWGdQN0JIX09WVXZGX1d4VDdCcDhFaHd6cHFXUUhrX3E4bkhhTGtfRUVFY3BmQ2lmQQ?oc=5" target="_blank">КТЖ разъяснило информацию о повышении тарифа на услуги магистральной сети - BAQ.KZ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.04.2026 07:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 23.09.2026 12:13</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">«Казмунайгаз»: вопрос с выкупом активов «Лукойла» должны решать власти Казахстана - Финансы Mail</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-24" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPMUtLOWx1c2hkSHBsMk5XSzRZcmdPOUx3YTB1VGFlUEJWT2UwWnAtdkNMSi1WSGoteXZJU0RIZHFQX0swQnlGX3JCNFluYVZld0d3eUptSWRLMzZXV210MkxtX0o5VXdNcVJJeEhURFVBWXd6SUhmYnNTUENGYXc0b1pUdE1wa1JGWG1JYmQyT1daTXU3X3Rlby04Qkl0QQ?oc=5" target="_blank">Как “Казатомпром“ готовит кадры для атомной отрасли - TengriNews</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 24.08.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Как “Казатомпром“ готовит кадры для атомной отрасли - TengriNews</div>
+      <div class="art-summary">КТЖ разъяснило информацию о повышении тарифа на услуги магистральной сети - BAQ.KZ</div>
     </div>
     
   </div>
@@ -163,14 +152,14 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-09-23" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-23/zhzh-britanskiye-kompanii-gotovyat-novii-proekty-v-kz/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhzh-britanskiye-kompanii-gotovyat-novii-proekty-v-kz" target="_blank">Британские компании готовят новые проекты в Казахстане – от ресторанов до ИИ</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE03OFhnUTdpYjdmNU5nQXlTUzlnWE5ibi1fWXI3U0dtekhCWnNBT05NNGxGRU1aWjRDZjg2YVpkVzRvODh0a1FBVU93?oc=5" target="_blank">Рост тарифов на услуги МЖС прокомментировали в КТЖ - АПК Новости</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 23.09.2026 07:03</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 23.09.2026 12:15</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Британские компании готовят новые проекты в Казахстане – от ресторанов до ИИ</div>
+      <div class="art-summary">Рост тарифов на услуги МЖС прокомментировали в КТЖ - АПК Новости</div>
     </div>
     
   </div>
@@ -232,7 +221,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-02';
+  document.getElementById('date-from').value = '2026-08-24';
   document.getElementById('date-to').value   = '2026-09-23';
   applyFilters();
 }
