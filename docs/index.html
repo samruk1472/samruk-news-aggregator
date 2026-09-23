@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 23.09.2026 12:29</div>
+  <div class="meta">4 источников · Обновлено: 23.09.2026 14:42</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-24">
+      <input type="date" id="date-from" value="2026-08-20">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-23">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,6 +84,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
@@ -109,39 +111,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
     <div class="article" data-date="2026-09-23" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://www.caravan.kz/news/u-otechestvennyh-it-kompanij-pojavitsja-prioritet-pri-zakupkah-dochek-samruk-kazyna/" target="_blank">У отечественных IT-компаний появится приоритет при закупках дочек «Самрук-Казына»</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQTnB6clpxbmZranVwNWxVeEN4TUFtSzNNbVZON2tEdWlneWJYYjhpUEFYYXlHN0t4TG5uNnNMRFJpUTNGSXdTR2dUZHZxQ2xONlNINkZsaGNvblZ5eFJfXzJiU3VEN3M5MmFUbnBVSk5Va3NWZnMxS01ueHBpc29rZDNRZnhGaklEc28yUWlSeUZkdWNOLU9PV1h3ZnM4cXROdW5PWXJ1bE1EYjg3WElVRmxn?oc=5" target="_blank">У отечественных IT-компаний появится приоритет при закупках дочек &#34;Самрук-Казына&#34; - caravan.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Caravan.kz</span>
-        <span class="date">📅 23.09.2026 12:04</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 23.09.2026 12:07</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">У отечественных IT-компаний появится приоритет при закупках дочек «Самрук-Казына»</div>
+      <div class="art-summary">У отечественных IT-компаний появится приоритет при закупках дочек &#34;Самрук-Казына&#34; - caravan.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-23" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1Ca0sxdWh1bkY4R1JpbklzZU50NXdjQk9HaXJydkhBNDY2Z0hJMDlzdmJKcWdOVmFjVkFQb2NuVXBRSU5MZ3VJbDhvc3ZWX21LSE01dXNvTkd4LUxPS0J0bU9XY1VKaFZrU1VldTRwMElZdTI0M0FUbHB3T1bSAXtBVV95cUxOYlBzaHJ0cFpGQ0ZKRTFPSm91b0xQQmtvRkt2ai1nM3lfWXVsOF93YTRwUTJMb2tSV2liV3NJNmw4b2NYZ1hVci1vVGI1VVV1LWFfT19ERFBTeEVDTFR3VGliREE2WmZLSVA0OXItLUItclp2eWdwMGdVRUk?oc=5" target="_blank">КазМунайГаз расширяет присутствие в Европе - SKNEWS.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 23.09.2026 12:24</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз расширяет присутствие в Европе - SKNEWS.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-20" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9FVklLUE5YVFVYRG8tTmY3Vzc1QzZTa1IteTRSZTlTUGkyd3VVODgzeWQ0SkJoS2NLVmxGSGNKQmkwN1pDNXhuYXdFZFVXOVJ2WFg5LUFKVHAzSDRZVWZLRkEwRURIR05fNFl6OGdURHZSS3A4ZG13Vw?oc=5" target="_blank">Казмунайгаз хочет разместить пяти- и десятилетние бумаги в юанях - tradingview.com</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 20.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз хочет разместить пяти- и десятилетние бумаги в юанях - tradingview.com</div>
     </div>
     
     <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNQ1gtZ3ktYlNZVml6Mk84S25RcjdQTWdocnB3aW9ZQm9Tc21Cd05TV2RXTkM4RnZyVjR3dDd1bHNodGc2cWRTTDByRl9BM1E2M2FuYWp1LWtIY240akp1ZE1HVlU3VjdldWdqd2JLa1lMeUVJQm1rQlhxZDhOLWp5elRkNTBSTXF5WEl5WmZ1QkRPbGxobEpRQkR5eVBHUFdVSFFZeA?oc=5" target="_blank">«КазМунайГаз» сдвигает ремонт Павлодарском НХЗ на 2027 год - Нефть и капитал</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNaXBoUTg4amFWZERQa0pUaFJlbzMxVVcwSWdlOHl1OG5MbkhkSFZya1dhdHVqTmd5ZFd0aU5oTmVseHEwNG9EQkMteDV0amRUcW9xVG8yUkF5UERfcUZ0dWR1MVJZWUNlVXVUOHhPYW9udzhsQUxheXJSbEhJNFBGZUVWMA?oc=5" target="_blank">«КазМунайГаз» перенес ремонт ПНХЗ на 2027 год - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
         <span class="date">📅 24.08.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» сдвигает ремонт Павлодарском НХЗ на 2027 год - Нефть и капитал</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdzJXS1VZMVRlbzVJRGFab19Xd3I4WnZZUlVpaWktU3JEbFR2WGtmZmQxYjdxZzBaWVl1MUZIaGlUazlIdm10RjZhWENERGhyUmE1bTl3ejBEdHFVdjV4bnR0NndDaVFiUFZwY3NZOGRfSzJzMWl2b0h4VmhMMjVSSk1UQVYyZ2VfX0pLNm9WWEh3TnpReGp6QjhIM09FTVd4T0NMU3g1M3lBUdIBtgFBVV95cUxQSEFhenIxMm1ubmRmYjlhLUFGc2puRzlKU2dzOFVKeUQyS0h6WEQ3TTFJYk9kcUNQTi1GdzdkWlRMLUNZSEloLXl0eGU3VklrMUwxQ3IwYUI3Q2hsYTRTaVRDZGxyOHJYb3BXQkhnNktpX3ZLZlY5dlJTeVhBUHJPdGZmR3VKWGdQN0JIX09WVXZGX1d4VDdCcDhFaHd6cHFXUUhrX3E4bkhhTGtfRUVFY3BmQ2lmQQ?oc=5" target="_blank">КТЖ разъяснило информацию о повышении тарифа на услуги магистральной сети - BAQ.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.09.2026 12:13</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ разъяснило информацию о повышении тарифа на услуги магистральной сети - BAQ.KZ</div>
+      <div class="art-summary">«КазМунайГаз» перенес ремонт ПНХЗ на 2027 год - Forbes.kz</div>
     </div>
     
   </div>
@@ -149,17 +162,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-09-23" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-23/chnv-neiroset-delaet-individualnye-duhi-v-muzee-zapahov-v-guanchzhou/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=chnv-neiroset-delaet-individualnye-duhi-v-muzee-zapahov-v-guanchzhou" target="_blank">Нейросеть делает индивидуальные духи в музее запахов в Гуанчжоу</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 23.09.2026 13:03</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Нейросеть делает индивидуальные духи в музее запахов в Гуанчжоу</div>
+    </div>
     
     <div class="article" data-date="2026-09-23" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE03OFhnUTdpYjdmNU5nQXlTUzlnWE5ibi1fWXI3U0dtekhCWnNBT05NNGxGRU1aWjRDZjg2YVpkVzRvODh0a1FBVU93?oc=5" target="_blank">Рост тарифов на услуги МЖС прокомментировали в КТЖ - АПК Новости</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPX1dIcDVwS3JaT2xTcXZpQVljMk9PNVI3eElZMHZDNkJYY1h0cEVNMjByY3FXQ0NEWThReGRDYmVpZmUzaERPZHBKQnFZTmxpVFAxWDNFSzRuQ1pxYW5LSEJaSkFGcVBCMjJJRUVRWFdvc3J4X19UTlFXYWszMWtEVEd3VjRmNjkyRkx5ckVUUDMtUGFWR2tVQlBDM19FUVpaTGNudFcyWUNNQmtNMEZkb19n0gGzAUFVX3lxTE9YcGhYVGd1a1VTZGcwR21fdWdLRDZLWi1kaEpKcm5RUUJKZTg5QmZyTDZ0Y1ZnQVFVVkZzck5WWHVMQWx6dXN2ZERyVzQ2UFhkZ2hRZFo4QzgwVG9zNUlOcWFVanZ0LUJ6Q25lR3lPdUxSYWhBeDF4RGZuMVB3LXR3ajVNaXRreHJLMXlxY0xTWXNNMGlHT194X3B2aUU1QzAxMmpCM3ZNb3pNVlFReFkxbUVF?oc=5" target="_blank">Повышение тарифов КТЖ: в Казахстане распространяется фейковая информация - Казинформ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.09.2026 12:15</span>
+        <span class="date">📅 23.09.2026 12:39</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Рост тарифов на услуги МЖС прокомментировали в КТЖ - АПК Новости</div>
+      <div class="art-summary">Повышение тарифов КТЖ: в Казахстане распространяется фейковая информация - Казинформ</div>
     </div>
     
   </div>
@@ -221,7 +245,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-24';
+  document.getElementById('date-from').value = '2026-08-20';
   document.getElementById('date-to').value   = '2026-09-23';
   applyFilters();
 }
