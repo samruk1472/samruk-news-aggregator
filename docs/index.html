@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 23.09.2026 17:45</div>
+  <div class="meta">1 источников · Обновлено: 23.09.2026 19:17</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-25">
+      <input type="date" id="date-from" value="2026-09-21">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-23">
+      <input type="date" id="date-to" value="2026-09-21">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,11 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
     </div>
   </div>
@@ -106,47 +102,20 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-04-25" data-co="Казатомпром" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE1VcW4yU0VEQVM0T0swMXlFYXRfSU11Y2llMXRnWUtxRm9Fa0RMZ00xWnA5RHUxcHYxbmo4bm82ZTl1UUJxYnRwaDZ3aVlnWFpNNmpkdzBuZlVGS0s3UW9SY2NFUTh3d0ppcjB3dGk1ZUJSTHNydHh4YWJB?oc=5" target="_blank">«Казатомпром» запустит поиски урана в Монголии - dprom.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.04.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» запустит поиски урана в Монголии - dprom.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-02" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1MVHJXU3BMY2E2YnNxbFhaOU5OeFRCNk1aTXhsRUhLeGRRbVIyOWpYOG1QN1RxcXYxMFh5VWVBeWgtTEE4YldTMm00LXhYZ3lURlJUWG5TbVhlLWJpRnJqN2xzMVdqd3JoeFE?oc=5" target="_blank">Результаты голосования годового Общего собрания акционеров АО НК «КазМунайГаз» - ҚазМұнайГаз» ҰК АҚ</a></div>
+    <div class="article" data-date="2026-09-21" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOMGNtSGI3T195cjFJWUkyTkdhMDRkSlozeV9RV2FBVnNQMWVYYmdsTDYxMEMyd0lscDBuX1RWWjRjVGlqc3Q5NkRlUzl5YmJQVVJ5OXhydjRHSVNOSXg3Wjl3X2JDdkF3MDBhRi1qMFJsOFJHVVBLMnh1U2E0LXZWTzM1c2hzQUpSMHdDN0xtaUQtOE4xa3QtZnRCSUhuT3F3LW5NU04weHdwSzB3Y1NqUVRLOHY?oc=5" target="_blank">Air Astana заняла 35-е место в рейтинге лучших авиакомпаний мира Skytrax 2026 - tatlerasia.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.06.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 21.09.2026 11:50</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Результаты голосования годового Общего собрания акционеров АО НК «КазМунайГаз» - ҚазМұнайГаз» ҰК АҚ</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE5LSU01MUVTTV9GS2hrYnhvYl9LZVV3OVFNWE1xNFBHdUhnSFhKamZQZUF1QVdfell2SXlGV01mM29NRm5ObFRBS2JBbkJVUk1iZ1d4NGxWa0RSN0NFV1E?oc=5" target="_blank">Взлет цен на билеты на поезда объяснили в АО &#34;НК &#34;КТЖ&#34; - Устинка</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.09.2026 14:57</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Взлет цен на билеты на поезда объяснили в АО &#34;НК &#34;КТЖ&#34; - Устинка</div>
+      <div class="art-summary">Air Astana заняла 35-е место в рейтинге лучших авиакомпаний мира Skytrax 2026 - tatlerasia.kz</div>
     </div>
     
   </div>
@@ -210,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-25';
-  document.getElementById('date-to').value   = '2026-09-23';
+  document.getElementById('date-from').value = '2026-09-21';
+  document.getElementById('date-to').value   = '2026-09-21';
   applyFilters();
 }
 
