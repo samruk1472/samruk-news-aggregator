@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 24.09.2026 14:38</div>
+  <div class="meta">3 источников · Обновлено: 24.09.2026 17:47</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">4</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-09-22">
+      <input type="date" id="date-from" value="2026-08-04">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-24">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,13 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -108,112 +106,47 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
-    
-    <div class="article" data-date="2026-09-24" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-24/kaye-baiterek-i-samruk-kazyna-napravyat-27-mlrd-v-ekonomiku-kazahstana/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-baiterek-i-samruk-kazyna-napravyat-27-mlrd-v-ekonomiku-kazahstana" target="_blank">«Байтерек» и «Самрук-Казына» направят $27 млрд в экономику Казахстана</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 24.09.2026 13:19</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Байтерек» и «Самрук-Казына» направят $27 млрд в экономику Казахстана</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-24" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-24/fvfv-astana-1-na-finalnom-etape-rekonstrukcii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-astana-1-na-finalnom-etape-rekonstrukcii" target="_blank">Вокзал Астана-1 на финальном этапе реконструкции</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 24.09.2026 12:49</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Вокзал Астана-1 на финальном этапе реконструкции</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-22" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPX2xGbVh1blRLLVk5UURuSk1iLS10QV9qbjRZTWJmOW8tc044ek1XT2xqcXJENmd0bkFtSGY0SFJWRlJyTllKMDljTnRmTUlwdHBHeUo4dzQ5R3gwdUdKSTRWS2l2T3NWd2wyck1YUEpDTWRZR2tQWjZFUnh2MzcwWnpUS2E1TV9KV29qSnR2ZUd2Q3ZfbGhVMlpnUW11dTFJX1FwVmhscFp1Rm9JMjc4dnc4RkxEQdIBuwFBVV95cUxPSE5qYWstckJxU2tEU3JIeTl3RlFnNm5oNkNBaGVZeXQwdm9FYk1ieUFLNzM4dEJ3LTlmMHBGOXh2VkpFLWpPNW82d0hoT3psY2FsTEhuUDhiSlRvZGVzaTRyUUdpdXdZbEVjOS1qTUdxLThuMmNmelJiU1BJNUZPSmFLd2VwM0NRa3BMc1lzdXFYUUhWNzdZVFdVd1BKN1V1c3BtU05zMTBHUVlnWW5tdVJJeV9EaUpxUnMw?oc=5" target="_blank">«КазМунайГаз» сократил долларовый долг на $500 млн, но инвесторы хотели продать больше - Arbat media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 22.09.2026 06:18</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» сократил долларовый долг на $500 млн, но инвесторы хотели продать больше - Arbat media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-24" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMTA2ZFVHQWkxMFlWVUw4TzFvNVlfeF9yYWd2MTZZMUVlRVlXalIxWTFwdGNDNnJocGd1VkJPc2twMTNkQzlrT1d5SERkRkI5Y2dwaWhKZTFpU3o0U1poTFc4a2tlV0ZWOVJRM2xPWjVKeFJqaXFmVl9BdHBOSXJvTjR0YVFDQkZ2c29iQkJLc1lkamJsR09OT0EwRlJrOVRreEwzMXlyckc0UdIBqAFBVV95cUxQU0F2VXM2WHB5YnkyTGZUTDZZRUFDd0xKMHpYWHRtRUVIRHFBN1hjbmFuaVA1TFp0aU14em0tMUVNV0JlaDcwRXY2RUp1X0c5eW9LT0lhQ1JUT3BnS3BzSU9IR3NDVktLampwU01XZlhRYkZTNXFPRkRwR3Q4b202YTJIcUM3NjJ3elp5YmRhMWhjNUEzdXBmVVVyM2lRMGp2dHFILTJnY1Y?oc=5" target="_blank">Женщина за штурвалом - не исключение: что меняет Air Astana вместе с UN Women - bes.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 24.09.2026 12:32</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Женщина за штурвалом - не исключение: что меняет Air Astana вместе с UN Women - bes.media</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-09-24" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQN2xkQkFTMFZKbmtDREg1MUF6N0FQS0FrU3h1MV9UQ09GS00xdmhGNHg5cWlxOXRaUzRoU19hOWtpWHZYbnlnT2JyY3JSTV8yelV1RkkyRUVmMHJyRHpDUGNEWUlpRkwySXdWOWdXSF9CR1RSbVEwSHB0bnRFck1DTzNn?oc=5" target="_blank">Госхолдинги Байтерек и Самрук-Казына направят 27,3 млрд тенге на поддержку экономики Казахстана - Правда.Ру</a></div>
+    <div class="article" data-date="2026-09-24" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-24/svvo-kazahstan-uvelichil-eksport-kosmicheskih-tehnologii-do-70-mln/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-kazahstan-uvelichil-eksport-kosmicheskih-tehnologii-do-70-mln" target="_blank">Казахстан заработал на экспорте IT-услуг более $1,1 млрд</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 24.09.2026 14:27</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 24.09.2026 15:05</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Госхолдинги Байтерек и Самрук-Казына направят 27,3 млрд тенге на поддержку экономики Казахстана - Правда.Ру</div>
+      <div class="art-summary">Казахстан заработал на экспорте IT-услуг более $1,1 млрд</div>
     </div>
     
-    <div class="article" data-date="2026-09-24" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNS0xWRDFaN1VkTkg4TFNvMExsSi1OQlIxWHo4TlVLSUJOa1VueFk3Nzh3V3J1aWt5Tl9Va0ZsMzQzbWdUVGFDd1ZKOFJEcVI3UXRGMHhxRktKUUZoY1ZLeEpsUXhpdVg1MmduelR3MnlsRlU0Y1hUVDZJVDZvX2I2WnFLT3ZxbHRrUko3Rmc2Si01blhaRVFhbXlGckhZOFc1aGxhQkNZRC1ZZw?oc=5" target="_blank">«Байтерек» и «Самрук-Казына» направят $27 млрд в экономику Казахстана - Kursiv Media</a></div>
+    <div class="article" data-date="2026-08-04" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBRTjBJS2syempLLS1LQm9EMTNEU2VDUEFUS3BkTDMtVE1SYTJLUWUwd2V4aTZsUDZqYlVucWtta2JNbnVnbWx4aEpkLTN3bWxTOGJaRlJqRFBrUHhKMjBaOWlmNA?oc=5" target="_blank">«КазМунайГаз-Аэро» будет заправлять самолеты Centrum Air в международном аэропорту Актобе - Energyland.info</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 24.09.2026 13:24</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 04.08.2026 02:30</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«Байтерек» и «Самрук-Казына» направят $27 млрд в экономику Казахстана - Kursiv Media</div>
+      <div class="art-summary">«КазМунайГаз-Аэро» будет заправлять самолеты Centrum Air в международном аэропорту Актобе - Energyland.info</div>
     </div>
     
-    <div class="article" data-date="2026-09-24" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOcTJBQ1NVaG9RUHQ1UHpWVW84VFN3V19BZDNjLWdhWWtScUhGMWY3T1dMd3NXWVpVVnE0aGplNG84ZUtnc0hlcnV5OGRhT1dHcVgtM1FDa25mZXU5ZUljWXMxRzBoMlo5UXZtR3NnaFExck9RcE83U2ZMQUo3cTR5OHlrVnZzYVJPX2UzUGIyWnlnSzFj?oc=5" target="_blank">Более 45 млрд тенге пытается взыскать с Самрук-Казына ТЭК-Казахстан. - Exclusive.kz</a></div>
+    <div class="article" data-date="2026-09-24" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxPQlEzLWs3Q2FveDJyamgtMm5ScDhaRFZLdkN1N2VHaEhIcEw4aUFfUzlZbWtUX1B3a1EwTHhHSlUtQXBfUmtUTVFvSHF1dlhYZlZ3bUVHQ1c0VG1XMDFVQ2Q4UUNldE1lX21FS09wbGtJc1pMeW5SWHVBUkVmazRYRG5Ba9IBgwFBVV95cUxPQlEzLWs3Q2FveDJyamgtMm5ScDhaRFZLdkN1N2VHaEhIcEw4aUFfUzlZbWtUX1B3a1EwTHhHSlUtQXBfUmtUTVFvSHF1dlhYZlZ3bUVHQ1c0VG1XMDFVQ2Q4UUNldE1lX21FS09wbGtJc1pMeW5SWHVBUkVmazRYRG5Baw?oc=5" target="_blank">КТЖ: Казахстанская чечевица отправлена в Индию - sknews.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 24.09.2026 12:26</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 24.09.2026 07:24</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Более 45 млрд тенге пытается взыскать с Самрук-Казына ТЭК-Казахстан. - Exclusive.kz</div>
+      <div class="art-summary">КТЖ: Казахстанская чечевица отправлена в Индию - sknews.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-09-24" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-24/kaye-ekspert-usomnilsya-v-stroitelstve-chetvertogo-npz-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-ekspert-usomnilsya-v-stroitelstve-chetvertogo-npz-v-kazahstane" target="_blank">Четвертый НПЗ может не окупиться Казахстану даже за 20 лет – эксперт</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 24.09.2026 12:42</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Четвертый НПЗ может не окупиться Казахстану даже за 20 лет – эксперт</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -272,7 +205,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-09-22';
+  document.getElementById('date-from').value = '2026-08-04';
   document.getElementById('date-to').value   = '2026-09-24';
   applyFilters();
 }
