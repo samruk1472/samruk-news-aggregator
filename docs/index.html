@@ -60,14 +60,14 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 24.09.2026 08:55</div>
+  <div class="meta">1 источников · Обновлено: 24.09.2026 12:28</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
@@ -76,7 +76,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="date-row">
       <input type="date" id="date-from" value="2026-08-25">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-24">
+      <input type="date" id="date-to" value="2026-08-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,10 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
@@ -109,49 +105,22 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-08-25" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQR1k0UXIzMGFMSTJjeVcwckFIUmQxeUZ1ak1Oek9XNWtKVGZjTUVNdXBvRW5jUnYzajh6WEJGdlcycjRUQWpjMFgtaVROOGZaaGtqTXBlbEpoaER2RUp3VzFuaDNhOE52M0pOMkdxWkZuZUxaOGdvV0JVTjJEaVB4Vm9rdUdTNkc2M255Q1NWMnBXclN0OV9ZYWRtRGktdXZvaTNPelhneDdHdnBMbjhOcFdDVVhQNUJLaDdVMzJPWE0?oc=5" target="_blank">В убыточной Экибастузской ГРЭС-2 заняли денег у «Самрука» и выплатили семерым топам 350 млн тенге - Orda.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVE8tczhHVm1FZmlteWp6S29XNkNIVXRxRkpjNENIXzRDVklYaTBKc3liTUpkcTk4YTFTSFNwTkVlQ0c4a0hDY1ZGSFFycEV4YW9RTlZHemZKVVF2UjJYVnZlT3JHSnJhdTN0TUJmX2dxeFJiOFNEdE1fb0JFLXZwdUJrQWhhcGNmTDVsdktnWTdtSk9hc2M3d1FHeklEMUxPVTVWQWhYYk16NnNwMWtoSl9VcHQ2SnRzUGVKck16VGthSlk?oc=5" target="_blank">За что топ-менеджеры убыточной ГРЭС получили выплаты в 350 млн тенге, рассказали в Самрук-Энерго - Orda.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
         <span class="date">📅 25.08.2026 07:00</span>
         
         <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">В убыточной Экибастузской ГРЭС-2 заняли денег у «Самрука» и выплатили семерым топам 350 млн тенге - Orda.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-24" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNdlVNTGJSWk1ESmlsVXd5RVktTUNJeXptaVhUSlViWEhvV3F2NjFTQ01ZWDdCMWM1eEN4QjhmQlpvREU5S1VqaGZaVVFOc2FSTG05LTFHQWc5cHdWQ0J5aWFJM3Q2RXFTRGprMHMyYkk2OGFSYmRmOGQ0czE1LVJTRV9rZ23SAYMBQVVfeXFMT0JRMy1rN0Nhb3gycmpoLTJuUnA4WkRWS3ZDdTdlR2hISHBMOGlBX1M5WW1rVF9Qd2tRMEx4R0pVLUFwX1JrVE1Rb0hxdXZYWGZWd21FR0NXNFRtVzAxVUNkOFFDZXRNZV9tRUtPcGxrSXNaTHluUlh1QVJFZms0WERuQWs?oc=5" target="_blank">КТЖ: Казахстанская чечевица отправлена в Индию - SKNEWS.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 24.09.2026 07:25</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ: Казахстанская чечевица отправлена в Индию - SKNEWS.kz</div>
+      <div class="art-summary">За что топ-менеджеры убыточной ГРЭС получили выплаты в 350 млн тенге, рассказали в Самрук-Энерго - Orda.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-09-24" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPa2Y2UWtOYjh6RUZGMTRKUjN6enhaOVRBQ0t4ZTdaU2ZOWjQ4SEM4VXk2c2J5UnZvdFBaNTZMY05wdnlLUU9JUkFLdDRYd2w5V0VFR20yTjZZQlFtQTBvRE9YYVhtaU1ER2FOVHdkRUI0STBpeDZRT0JNbklLNGFiYWZDaU15cDJVMnpLWXNHWXF4UEVJRnNFcm1zSEF2R1I3R0xSNV9yTDRBTFFKM0otM2RyanZVNWtHS3dxMlFVakpBOXplRU4yd19ZQm1pLWlfSHc?oc=5" target="_blank">Звук равенства: UN Women и Air Astana берут курс на расширение прав и возможностей женщин в авиации - Bizmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 24.09.2026 06:45</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Звук равенства: UN Women и Air Astana берут курс на расширение прав и возможностей женщин в авиации - Bizmedia.kz</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -211,7 +180,7 @@ function toggleS(btn) {
 
 function resetDates() {
   document.getElementById('date-from').value = '2026-08-25';
-  document.getElementById('date-to').value   = '2026-09-24';
+  document.getElementById('date-to').value   = '2026-08-25';
   applyFilters();
 }
 
