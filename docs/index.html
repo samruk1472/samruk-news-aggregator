@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 24.09.2026 19:34</div>
+  <div class="meta">2 источников · Обновлено: 25.09.2026 05:56</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-09-15">
+      <input type="date" id="date-from" value="2026-08-06">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-15">
+      <input type="date" id="date-to" value="2026-09-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,6 +86,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -102,20 +104,58 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-09-15" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQeWFHb19zakh4UWZNY09Bb3lIbGdIME1NeDJNNGVFNDJFYXNzZFA1WTdsWjNjZDd4dlVJb2ZfVzNtS0ZmSVNHdmRiRkFObUpWWjg3d1ByR1NBdWdMVjdGX0YwY3JVUHBWX0d0Q3p5b19QRml1NEl4aGd0YzVoYnNPT3hfVEZuVHJKRXI5VDZZTHItS1lhTzlPbWc0aDJreW02SHA4YWFYeFBsRGtIYi1FMWlyamNxUQ?oc=5" target="_blank">&#34;Могут проезжать в поездах бесплатно&#34;: в КТЖ обратились к казахстанцам с разъяснениями - NUR.KZ</a></div>
+    <div class="article" data-date="2026-09-25" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVHk2Vk9hMExfS1o3Wko4RHJFbW9LZVlMVWVCRjFQOW1MUVRnQklaVTlseDlFY0s5eGtPRWhrdjFiZHg0aW0zUTNUQmxsLXY0aUo3bklJVUZWaUl3cXJHMEVCTjJmRjI4TjVxaHROTmV1Tmp2REdyX1pDM25TRGVWRlFFTm1PV1FCMjZiOWNiSjU5VFB1NVZ2Y1F3R0ptUVlhTExzUmtuUVhLV1BwTWR5dUJ3QzN4azN5OGFLYVZzUndkbW8?oc=5" target="_blank">Делегация КТЖ приняла участие в Глобальном форуме по устойчивому транспорту в Пекине - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 15.09.2026 07:00</span>
+        <span class="date">📅 25.09.2026 03:32</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">&#34;Могут проезжать в поездах бесплатно&#34;: в КТЖ обратились к казахстанцам с разъяснениями - NUR.KZ</div>
+      <div class="art-summary">Делегация КТЖ приняла участие в Глобальном форуме по устойчивому транспорту в Пекине - Қазақстан теміржолшысы</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPTmNuNDZPWkVTYkFOdTNZRTJkT0dwNDdfQTFRam1BNUxRR0lNN3R5c21YWVlNZEdFZVhWdGpoZm9OX2M0cVJvRGFvZHRkTU1kWjZmemZPeW80ZjhiTjJReDVOUURQX1BXSGJ5aXdmWE0xUzJQd042Z2NpYjRYVXhwOGdOZ0YzTUtlb1ppZWZGVVlPS2c?oc=5" target="_blank">Вопросы противодействия коррупции обсудили в КТЖ - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 06.08.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Вопросы противодействия коррупции обсудили в КТЖ - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNYnVDNDZCZ0tQUTdyRFVMRVVUbk9WVmVybkZpcU5oaV9fTFhJM1VKdHMxSU1WSDJZYVdKTnV5SXgtaXRSWHBmcnJPNDh1c3lCUWI1NVVkR01fbnBMT3FlWmVEYXBKWmpEMHMxMXhZV2tnNTJRUG03RVJ3SW45ZUJkTTY4WnZ6Y0Q1em1teXZwTm1Wb3VpdmpDUzQ1c0FQOXpqdjJrOQ?oc=5" target="_blank">&#34;Казахтелеком&#34; ответил на жалобы алматинцев на перебои с интернетом - Kazakhstan Today</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 07.08.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">&#34;Казахтелеком&#34; ответил на жалобы алматинцев на перебои с интернетом - Kazakhstan Today</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-25" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxNal9uTmJjSVpEaWdsLTljRF8xMTZTVlJSM3k0MUsxVGstUlVuMDZlM2RJVGp1WHdxRTlfWHV5UzViRkg1eE9GM2hyLUpBUTFjNXZiSHZ5ZVJXeXBjQ05pQ1czVnEtTTQxOXh2azR0WlZuYkVicGkyTTZGZTBVdmdSTzlMeDhONlNlYV9LNVNEdzVkZjBreTVOMjUxMmFJZ3ZhZTFQaE9scVB6a245RkRjZzFGQnkyRDdEX0gtRGo4N0ZXUC1oRk1hSEVGY1lsQnNVY2w2T3d1NA?oc=5" target="_blank">75 дронов в семи регионах: &#34;Казахтелеком&#34; развивает единую инфраструктуру дронов в Казахстане - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 25.08.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">75 дронов в семи регионах: &#34;Казахтелеком&#34; развивает единую инфраструктуру дронов в Казахстане - NUR.KZ</div>
     </div>
     
   </div>
@@ -179,8 +219,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-09-15';
-  document.getElementById('date-to').value   = '2026-09-15';
+  document.getElementById('date-from').value = '2026-08-06';
+  document.getElementById('date-to').value   = '2026-09-25';
   applyFilters();
 }
 
