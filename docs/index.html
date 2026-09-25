@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 25.09.2026 12:29</div>
+  <div class="meta">6 источников · Обновлено: 25.09.2026 15:00</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">4</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-14">
+      <input type="date" id="date-from" value="2026-08-26">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,11 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
       <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
@@ -108,64 +110,58 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-09-25" data-co="Казатомпром" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-25/zhnb-malye-modulnye-yadernye-reaktory-mogut-nachat-proizvodit-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-malye-modulnye-yadernye-reaktory-mogut-nachat-proizvodit-v-kazahstane" target="_blank">Малые модульные ядерные реакторы могут начать производить в Казахстане</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 25.09.2026 13:06</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Малые модульные ядерные реакторы могут начать производить в Казахстане</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-25" data-co="Казатомпром" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/english/71004-the-week-in-kazakhstan-physical-graffiti.html" target="_blank">The Week in Kazakhstan: Physical Graffiti</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 25.09.2026 18:47</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">The Week in Kazakhstan: Physical Graffiti</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
-    
-    <div class="article" data-date="2026-09-25" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-25/chnv-eksperty-ssha-priznali-aviaperelety-po-kazahstanu-v-czelom-bezopasnymi/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=chnv-eksperty-ssha-priznali-aviaperelety-po-kazahstanu-v-czelom-bezopasnymi" target="_blank">Эксперты из США признали авиаперелеты по Казахстану в целом безопасными</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 25.09.2026 12:28</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Эксперты из США признали авиаперелеты по Казахстану в целом безопасными</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
     <div class="article" data-date="2026-09-25" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQN0IxWkgyZDhyTTNBbzQ4TzFwcUZwam9ZVkEteS1Ra0pJNHdyaEpmNFZ6UmpLZE9mNF9DNzhNcDZFdmtLWU5JWUpsSDNScjZFME9PdXIzR1c1bHFsc3h0OUF4Z3RwY3BPY1B1LVlyaHlWeV9KblhPS2VHLXFjWTFQb2VYU0MyNER4TUlmag?oc=5" target="_blank">«КазМунайГаз» выкупил свои еврооблигации на $500 млн - Forbes.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPRUxRcDctUXJaNm80dWxJY21hNDFhUm1YVkUzdTQ1MmdxRkhWREozMzY0cld3UG5ycXNkUUNXQ0hKa0RuNThBVTJXTWtNd2hDbWc1aDY2OHd5Y05vWkoxclN0cHdBbmNxdGFubnRVVjRlV2VvRHdGbnhzcENNdVhoQldnRzU5WjNzRTl2RGE0R0doVlJSTUc00gGWAUFVX3lxTE5TeURoZXB5V0EtVzZ4b2RsNEFPbWlYSGctam1RV3Z5enNibkoxMk1FQXNVbFQxTEttYWhQQVFHUVBnMHlhOS1FMnU5V3NyTzVlX1d5SzYzb0F2dk1yT3U4Mmw2V3ZtVEpDd3pqYzJQbWZ6Q3UxVjNaaGMxS1drVjhhNTk1a3cyNUNzWERZbFVPNkptWHFpZw?oc=5" target="_blank">На фоне ударов по КТК &#34;КазМунайГаз&#34; резко увеличил расходы на перевозку нефти - BES.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 25.09.2026 08:03</span>
+        <span class="date">📅 25.09.2026 13:30</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» выкупил свои еврооблигации на $500 млн - Forbes.kz</div>
+      <div class="art-summary">На фоне ударов по КТК &#34;КазМунайГаз&#34; резко увеличил расходы на перевозку нефти - BES.media</div>
     </div>
     
-    <div class="article" data-date="2026-08-26" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWlBYYnB6YWhCWUlHQ0J2b000U21NUF9NRzZWcGhwV1V0NjVEYmNxYXJRV1lsWXdyQ1NsU1FMajdTcUk0bGZod05DeWc2SG05ZUJTaEJndXR3V0RYT2NaVDdKZU12NEZ4bE81bjRLT0hKX1l2dE9jZ0FHeU5oOWJRSUw1eDBQY2d2UkQ0NmV2QUxaWHdqY2FKLWo3cFZDRU8tZkN0M3QtQ3J4dw?oc=5" target="_blank">«КазМунайГаз»: бензин с Павлодарского НХЗ соответствует требованиям - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 26.08.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз»: бензин с Павлодарского НХЗ соответствует требованиям - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-25" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxNZ2ZXNUJrWEdBdkMzMUdPakp1dFRVUXZDZW5TeGZWQV9MbGkwUWpzUlZ2WkYyUVd5aDl3YUkwSTBWbGotbU8zYVhzdWdDbFNkSUNoZGpNd0xqQzNGN3pMdHpVSkRPVi1BREpyaFJkbEtxZUFiYmZIUERnakhGbHlfY2FkUTI4VWNxU191ZjBOZ1FGUDhZQnRyZGJYTElUMGVldWs4V2gwRzVDVURYNUZDMWFJWHZpRG4zajBiaEJ4T01CYVZRMm5qcWswN1lza1VEMV9lLXpPQXhkNy15NlFHa2EtRVd3dVlkeXlzdUg4QmhXVDFI?oc=5" target="_blank">Air Astana предоставит бесплатные билеты родственникам погибших и выживших военнослужащих в Мангистау - Lada.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 25.09.2026 09:14</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana предоставит бесплатные билеты родственникам погибших и выживших военнослужащих в Мангистау - Lada.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-14" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5mQlVyYlA3aGdtRVJBa0NiRGFtUEtjUFhpZGZBeTZvMDZSX2t1eGNtUUZ4UzJkVkYxby1vN2tieHhLMUMxR0R5Z3dB?oc=5" target="_blank">КТЖ снова добивается повышения тарифов - АПК Новости</a></div>
+    <div class="article" data-date="2026-09-19" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxQU1pKUHNLMGtUaEloOVZnN0I1dF9CNS1wXzltOE5DYXF5Sjctd3FobW1Ra1hkbWc1em83VTNmTnFSSnpRcUtfUDVibTJrbFJuLWFNb2E0U0NMendXV2hWbFIwZmFEaWtfRG9zSElwei1pTFl1UU5kNE9JUUpJMF9Ecmd2bw?oc=5" target="_blank">Скидки до 30%. Распродажу билетов запустили в КТЖ - Informburo.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 14.07.2026 11:48</span>
+        <span class="date">📅 19.09.2026 06:37</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ снова добивается повышения тарифов - АПК Новости</div>
+      <div class="art-summary">Скидки до 30%. Распродажу билетов запустили в КТЖ - Informburo.kz</div>
     </div>
     
   </div>
@@ -173,28 +169,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
     <div class="article" data-date="2026-09-25" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-25/zhnb-kitai-postroit-neskolko-moshhnyh-vetrovyh-elektrostanczii-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kitai-postroit-neskolko-moshhnyh-vetrovyh-elektrostanczii-v-kazahstane" target="_blank">Китай построит несколько мощных ветровых электростанций в Казахстане</a></div>
+      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/new-auto-complex-and-factories-kazakhstan-signed-10-273838/" target="_blank">New auto complex and factories: Kazakhstan signed 10 agreements with China</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 25.09.2026 10:46</span>
+        <span class="src">📰 Tengrinews (EN)</span>
+        <span class="date">📅 25.09.2026 18:41</span>
         
         <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Китай построит несколько мощных ветровых электростанций в Казахстане</div>
+      <div class="art-summary">New auto complex and factories: Kazakhstan signed 10 agreements with China</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-25" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/tokayev-spoke-at-the-kazakhstan-china-forum-273843/" target="_blank">Tokayev spoke at the “Kazakhstan – China” forum</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Tengrinews (EN)</span>
+        <span class="date">📅 25.09.2026 17:59</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Tokayev spoke at the “Kazakhstan – China” forum</div>
     </div>
     
     <div class="article" data-date="2026-09-25" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/09/tokayev-calls-for-new-investment-model-as-kazakhstan-china-deepen-economic-partnership/" target="_blank">Tokayev Calls for New Investment Model as Kazakhstan, China Deepen Economic Partnership</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-25/svvo-kazahstan-i-kitai-podpisali-50-kommercheskih-dokumentov-na-82-mlrd/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-kazahstan-i-kitai-podpisali-50-kommercheskih-dokumentov-na-82-mlrd" target="_blank">Казахстан и Китай подписали 50 коммерческих документов на $8,2 млрд</a></div>
       <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 25.09.2026 09:44</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 25.09.2026 13:51</span>
         
         <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Tokayev Calls for New Investment Model as Kazakhstan, China Deepen Economic Partnership</div>
+      <div class="art-summary">Казахстан и Китай подписали 50 коммерческих документов на $8,2 млрд</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-26" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOTDgxOXBpcE0zOGJzbEtGWDNwc2JNZjk4SzNqN3RmTlJMZFItSTd6eVJpdUx4dXF1STNhMnhHVjFmdExJdmhXc2lLNzBfZE9Pd3YwTklXc2ljLUxhVVFtUTNjLXlOZEFnTGg1ekFRYk4ySERxaXJmMVpPaUpKcXRSZEV4b1FZbm43aDFtaWhhMFk0RFlTNWpZdWZCX1lKQlN2NXBNakttQThLWUN3Rl9IaGhvWkE3d9IBuwFBVV95cUxPeGh3T0haNzA1S1Radm1GN3NBU0ZFeEgtRmNoR25hSzFIcWI5dUpWU3ZyY0ZwYzEtWWZTVTA2LUdXbUtwNGlfYUVHcmFSYmllZzNuQ3dRRngzbjFRd1N6Wm1STzB3MV8wc0xZTVBHMFBERHFBb2VFVkdlbkQ2U24zcDZhbVVqMEhWc0stZkhUOVFLOUdtNXFxSlh4LUhPRkd0LVl5OEJUaUFCM0trMVpOQ1Q4a0w3UDRmdVNJ?oc=5" target="_blank">Казатомпром: итоги первого полугодия и вклад в развитие регионов - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 26.08.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром: итоги первого полугодия и вклад в развитие регионов - Новости Zakon.kz</div>
     </div>
     
   </div>
@@ -256,7 +274,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-14';
+  document.getElementById('date-from').value = '2026-08-26';
   document.getElementById('date-to').value   = '2026-09-25';
   applyFilters();
 }
