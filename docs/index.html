@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 25.09.2026 05:56</div>
+  <div class="meta">7 источников · Обновлено: 25.09.2026 09:16</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">15</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">11</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-06">
+      <input type="date" id="date-from" value="2026-06-01">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -107,15 +115,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neg">
     <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-09-25" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVHk2Vk9hMExfS1o3Wko4RHJFbW9LZVlMVWVCRjFQOW1MUVRnQklaVTlseDlFY0s5eGtPRWhrdjFiZHg0aW0zUTNUQmxsLXY0aUo3bklJVUZWaUl3cXJHMEVCTjJmRjI4TjVxaHROTmV1Tmp2REdyX1pDM25TRGVWRlFFTm1PV1FCMjZiOWNiSjU5VFB1NVZ2Y1F3R0ptUVlhTExzUmtuUVhLV1BwTWR5dUJ3QzN4azN5OGFLYVZzUndkbW8?oc=5" target="_blank">Делегация КТЖ приняла участие в Глобальном форуме по устойчивому транспорту в Пекине - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-09-25" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-25/shlc-aviaperevozchiki-besplatno-perevezut-rodnyh-pogibshih-na-kaspii-voennyh/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-aviaperevozchiki-besplatno-perevezut-rodnyh-pogibshih-na-kaspii-voennyh" target="_blank">Авиаперевозчики бесплатно перевезут родных погибших на Каспии военных</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 25.09.2026 03:32</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 25.09.2026 08:06</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Делегация КТЖ приняла участие в Глобальном форуме по устойчивому транспорту в Пекине - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Авиаперевозчики бесплатно перевезут родных погибших на Каспии военных</div>
     </div>
     
   </div>
@@ -123,44 +131,170 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(11)</span></div>
     
-    <div class="article" data-date="2026-08-06" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPTmNuNDZPWkVTYkFOdTNZRTJkT0dwNDdfQTFRam1BNUxRR0lNN3R5c21YWVlNZEdFZVhWdGpoZm9OX2M0cVJvRGFvZHRkTU1kWjZmemZPeW80ZjhiTjJReDVOUURQX1BXSGJ5aXdmWE0xUzJQd042Z2NpYjRYVXhwOGdOZ0YzTUtlb1ppZWZGVVlPS2c?oc=5" target="_blank">Вопросы противодействия коррупции обсудили в КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-09-25" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-25/svan-kazahstan-i-kitaj-sozdadut-sovmestnyj-fond-dlya-privlecheniya-investicij/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-kazahstan-i-kitaj-sozdadut-sovmestnyj-fond-dlya-privlecheniya-investicij" target="_blank">Казахстан и Китай создадут совместный фонд для привлечения инвестиций</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 25.09.2026 09:02</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Казахстан и Китай создадут совместный фонд для привлечения инвестиций</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-26" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9iY0w3enJ5ZS1xelMtX2U5WjNjRlhiX2J5WEx5X3pXTjh0LXdVZW9nUTVSVWFCRlNSWXRINTY4T04zNkdYaVlWOGtXOWF4OEJ1NmfSAUtBVV95cUxORzNCcHpYVldRbHp1QUZvdUFqTUV6SjdsSjZmbDlEVzlnMDdCTlg1ZlVNMnlQWVJ6bDZoT2hHNVR6a2pScHN2eUhUTFE?oc=5" target="_blank">&#34;Казмунайгаз&#34; начал букбилдинг двух траншей димсам-облигаций в юанях на AIX - Интерфакс</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 26.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">&#34;Казмунайгаз&#34; начал букбилдинг двух траншей димсам-облигаций в юанях на AIX - Интерфакс</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-01" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOVTloLTNVcU16TlZac3lyY0ozcTRUSFE4alZzYU5pcjBYbEJCMlo0Y0ZTTWxqMHBmY2JwbkNxUFp3ZmcxcWJ0MmRNNjJpLTl6NzhDNERBV0U0QUhfbEJjZS1KUTBMb0Y0V1owdTBGSDJWQ283RkF2UFlQSlZvUHQ4Y2NwVVh1aUJWN1haa2pxdi1rSndGQmZsMTZTa0NTdw?oc=5" target="_blank">«КазМунайГаз» нарастил прибыль на 94%, несмотря на падение добычи - kz.kursiv.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 01.06.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» нарастил прибыль на 94%, несмотря на падение добычи - kz.kursiv.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-25" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5YWUhZTGFYT3pBZXBwdXZKTkxjVFpBd3pXN2E3ZVh0SEh2dGMybW1wTkpKSVJFa3p4TGxaUGE4M2JDQVJZYlpNZWpUWDZwN3UzMkRmYkZZS0hQZVVwZ1BqMklsb0FqdEd6TEgxMlFQZFN5SHdkZGxJNw?oc=5" target="_blank">«Казатомпром» усиливает геологоразведку урана и разбирается с поставками серной кислоты из РФ - dprom.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 25.09.2026 09:06</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» усиливает геологоразведку урана и разбирается с поставками серной кислоты из РФ - dprom.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-25" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNXNBaVFqdW9kbDBtbDlndkp0VHVpU3c4NE9lNzU5bzNiNk9lc2JJWHBlMWJfRDFLS2lSS2lKMlpuU3hQLUpxTFNtcS1SeXBRZlRveXNhSndLYU9lZTNCYnpLYy1LTjVnSzNJZTFpYXM3cjlsS0RPaWlDbVVPXzVqUGxGdXpzUXJOd1d4TmV0QkplMEZ2NEszN1FVdjl0dEVIVGhiRWpXMDFjXzQwOUxCY0JuNHY2Qi1WT1hKLTRFY1nSAcYBQVVfeXFMUDFFcllKVnNkTlpvMkpCNTU3aWlKODJWX3ZzcWZBSzBzVUV6MDlvbnU2Z3VMZzRqVGJXdFVvSzhFX3o5RDZwZlpUU2J2N2RnZEVzRXZORl96dVBIdWZrUnNqQk8zMzhMRlB3Q1h4SUgwMkl1MG9ETkhLUG9ielpMWXB4V05IQTlXaDNpYjFOQ3lEc3BncWV2UGVlb0wyc2hmWnA5Zld4ejlmMmJHNF91UUVwc0VXbjFLVzJIOFZ5RHc2VnZkWjV3?oc=5" target="_blank">Бесплатные перелёты для близких военнослужащих: Air Astana объявила о поддержке - 24.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 25.09.2026 08:23</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Бесплатные перелёты для близких военнослужащих: Air Astana объявила о поддержке - 24.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPWXhETklyWmNlcjRub0Y4MEtpTTJNR3hoSUVJb1lRamt1N2VOcnRFT014RGt1ZUxTVE9tZUZxOXVmVTBxeDlCcGc0RTFZa213akRuUU80Sm52SW9zUkdFclBoQ09uSTNpVlpuTWVlYi1XekJNcU1QdVpuVm5iRmZRVXl4amVadUd0OGZxQnpma1p1OHRGTkhPbjBYWjFkVjR4R3c?oc=5" target="_blank">Air Astana ушла в убыток на фоне роста расходов на топливо - kz.kursiv.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.08.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana ушла в убыток на фоне роста расходов на топливо - kz.kursiv.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-16" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQVUsyYWdCRi1kc2tvUVF3RXZtVUNRaGxXVEd1NTF3d2FOZDNHc3E5RmswM2ctcHJzRnZvZXRUODhXWGFfNFpXVEY1LWJYQWFYX2lJU3dXR3ZOV3d4OUU0Y1lvcVFHTDBtMzNsM0h0SHZZWnZnZks0T3BzT3c1SkRoWlJGVk5kV0RTWHVuQlFOLTR5TEl2aVZaWA?oc=5" target="_blank">Air Astana вновь отменила рейсы из Казахстана в Дубай - kz.kursiv.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 16.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana вновь отменила рейсы из Казахстана в Дубай - kz.kursiv.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTFB6OG91UXRZYjN5ZUZSSG05eXRGZVJmakhHUkhxR2I0UHBCdVAxWUxTUnlWS0JCajJNMkFJLXJfUnFLaHhmSjc0?oc=5" target="_blank">КТЖ подписали с китайскими компаниями соглашения на $400 млн в сфере логистики - Portnews</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 06.08.2026 07:00</span>
+        <span class="date">📅 17.07.2026 09:57</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Вопросы противодействия коррупции обсудили в КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">КТЖ подписали с китайскими компаниями соглашения на $400 млн в сфере логистики - Portnews</div>
     </div>
     
-    <div class="article" data-date="2026-08-07" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNYnVDNDZCZ0tQUTdyRFVMRVVUbk9WVmVybkZpcU5oaV9fTFhJM1VKdHMxSU1WSDJZYVdKTnV5SXgtaXRSWHBmcnJPNDh1c3lCUWI1NVVkR01fbnBMT3FlWmVEYXBKWmpEMHMxMXhZV2tnNTJRUG03RVJ3SW45ZUJkTTY4WnZ6Y0Q1em1teXZwTm1Wb3VpdmpDUzQ1c0FQOXpqdjJrOQ?oc=5" target="_blank">&#34;Казахтелеком&#34; ответил на жалобы алматинцев на перебои с интернетом - Kazakhstan Today</a></div>
+    <div class="article" data-date="2026-07-19" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5EaFNEazZzRUNiZTdMYWpDeDB0WkFJelRJMGcxRENmUFktc2xGdmY5MjU1cDl3ZzByeDNBSjV2Vkt6b3pfUDFkU25sZE1vcnhuWEM1cVdCeUFPM244eXJIZFNTOVROOTVtZmNTedIBckFVX3lxTFAyUm9wcmRZZFpObUtwMF85VmlVZjZnZ3RPUWhOcUF4V2ZVZ000SU8ySHlKc3pCcnZORDJwZTJXVzY5cmpJRmdQdk1hQzBndEpmMG43OXdCaEFxS2hOQkZiTklYeWtnWGtxcmdPc2FoeV96QQ?oc=5" target="_blank">Назначен новый глава КТЖ - Vlast.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 19.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Назначен новый глава КТЖ - Vlast.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-30" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQX2R6ZDdEMmlCNkU4NEV6NlpJSXkyWmxNTXVxNV9qc1BzTFNvM2xJX3lVaUtNbkotVFo5anZ3eTc1ZFk0TGlVV1ZWdWJiWmtuNDllNjg5cU9XS0t1VXFfVnZ3cWRISFJlaVpFNTJGNkdPaENPYmM5MGw3QkVkdzZ5cEtDSnZtZ2RHRnZhVXJzZHVnX2k3RE9CSmdoY2xLZ2pUUGVPcnI5Y0ZYdw?oc=5" target="_blank">«В рамках возможностей»: глава КТЖ ответил на жалобы о неработающих кондиционерах - kz.kursiv.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 30.06.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">«В рамках возможностей»: глава КТЖ ответил на жалобы о неработающих кондиционерах - kz.kursiv.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-25" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZzZWQ3hnVXdRU3BDZG5NdGRpZW9ucGdXQVJOSlMxWGt2Rjg2Z2NNd0xqZklCOTM5VGVzdUczRU1GMm5fRHhrYUZyOUVTdExLaFQ4WG52b3VocVo4SUY4ek9WdUY3ZFZOSWNnWmk4bzY1ek43UHhVWDhfcGx3eV9GQl9uZ3VPaTE4RTdqQzFjTWhrb29pNjJ1WjRSeFFJVG5yZDdYdVFVd3Q2TzA?oc=5" target="_blank">От 5G до ЦОДов: «Казахтелеком» усиливает цифровую инфраструктуру страны - kz.kursiv.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 07.08.2026 07:00</span>
+        <span class="date">📅 25.06.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; ответил на жалобы алматинцев на перебои с интернетом - Kazakhstan Today</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-25" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxNal9uTmJjSVpEaWdsLTljRF8xMTZTVlJSM3k0MUsxVGstUlVuMDZlM2RJVGp1WHdxRTlfWHV5UzViRkg1eE9GM2hyLUpBUTFjNXZiSHZ5ZVJXeXBjQ05pQ1czVnEtTTQxOXh2azR0WlZuYkVicGkyTTZGZTBVdmdSTzlMeDhONlNlYV9LNVNEdzVkZjBreTVOMjUxMmFJZ3ZhZTFQaE9scVB6a245RkRjZzFGQnkyRDdEX0gtRGo4N0ZXUC1oRk1hSEVGY1lsQnNVY2w2T3d1NA?oc=5" target="_blank">75 дронов в семи регионах: &#34;Казахтелеком&#34; развивает единую инфраструктуру дронов в Казахстане - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 25.08.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">75 дронов в семи регионах: &#34;Казахтелеком&#34; развивает единую инфраструктуру дронов в Казахстане - NUR.KZ</div>
+      <div class="art-summary">От 5G до ЦОДов: «Казахтелеком» усиливает цифровую инфраструктуру страны - kz.kursiv.media</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-09-25" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/09/india-kazakhstan-seek-to-turn-strategic-partnership-into-deeper-trade-and-investment-ties/" target="_blank">India, Kazakhstan Seek to Turn Strategic Partnership Into Deeper Trade and Investment Ties</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 25.09.2026 07:21</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">India, Kazakhstan Seek to Turn Strategic Partnership Into Deeper Trade and Investment Ties</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-25" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQNzNSOExCQ1ltV0JFNWQxbzJSRXVkQzhOQWpRTWt2dUR0WjVTTUdwZDRVY1pQWEVQSWRYUDZMaUtRdDhOVXF2d1hMbGxlZXV4VC10dDRYTlFMbk8tendFVV9TSlNDTV9ldTR5MUpuWWU2SUZnal96eWJEZDhxOFpsMzZLX2pFS21UOWpDTmgteklNQQ?oc=5" target="_blank">Чистая прибыль КазМунайГаз выросла на 69% за I полугодие - bizmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 25.09.2026 07:15</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Чистая прибыль КазМунайГаз выросла на 69% за I полугодие - bizmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNTzBwZ2FrR0N6R0dFaENNaXh6Zkw2RXVuUWRqb3RHZ0hQZUxUa2syLXdxM2VUYUVfZl9YR1JUVTctQTJvUGxSeURfX2ljSGt5WVEzWUtxNUpVejZKNDU3UGczTlhQVTMxdVdmcWdDMHhiZ3p4SVQ2U2Zaa3B6RDJqR2RkcUk0amNZVWhud3hBalI?oc=5" target="_blank">Air Astana получила международное экологическое признание - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 20.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana получила международное экологическое признание - DKNews.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -219,7 +353,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-06';
+  document.getElementById('date-from').value = '2026-06-01';
   document.getElementById('date-to').value   = '2026-09-25';
   applyFilters();
 }
