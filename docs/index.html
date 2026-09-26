@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 26.09.2026 08:58</div>
+  <div class="meta">4 источников · Обновлено: 26.09.2026 12:00</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-09-26">
+      <input type="date" id="date-from" value="2026-07-07">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-26">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -104,31 +108,91 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-09-26" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPUTlXRmMwRk9lZHhySl9tdzl6N3VzWTY0NHBRN3I4MGQ3SlgzUGFxaW1BdVhRaWt0NkVwZzFrUUl5NWcweUdZSllQdTZJT3JYaFBFckJWM2h4cV9UZHBFVkVmLXQ3MGhnN3Q3aEtWNV9sLXFFZ2lodWNzbmhLajcxVkRtamRQUkxkRjNYbm9GZ0RQY1dNTkJyaWxNSGtvOXRnbGp3VmU4QVoyeklaYkh4elp1Z2pWM0tZZ2xzVzhPaHkwSWJCNlpB0gHTAUFVX3lxTE1ybHJvNFF3ZVFmZjJJUlBfN2g3Q3VXSmstMXJvX2pENVNKeHZxRGphaWFvcHpWMkEtVnZmRzljRmJVQlVWcmRPWHdxMnpPSXRNTHVWOC1sR3pkMzJ0djZnbFJUa3hvckhXd2g4ODAyLVZVSkV3WlNSN1BsaUpSTjZteEtlMW1uZDlKUFpUb1FxVGhwTndpbk12azR3bklZQ1VNSjhtTnJVbkUxRHk5cmM4bzhHNTlkTHNyN1ZZbjk4OTAtdWdIWWxubDVGNGtVTWZXNlE?oc=5" target="_blank">КТЖ представила перспективы развития Транскаспийского маршрута на инвестиционном форуме в Баку - BAQ.KZ</a></div>
+    <div class="article" data-date="2026-08-27" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPU2FRemlodlk2YkdHQ3lTb2pfY1NfR0tWVndxYnNQRERnWkVCYzNMa1k2dC05V3dWWVAzQU5TSUo5SFFfd3Z4X0RzQThrZHJQOF9lWEYwZ04wZEhMMWw4cFVJR3dxZ3ozakVsQVhURF9tdEVsRUllWlotTUN5SzFlQklGSVdkTDRBOFBOMkZrMVQ?oc=5" target="_blank">Искусственный интеллект поможет Air Astana экономить топливо - DKNews.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 26.09.2026 06:12</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 27.08.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">КТЖ представила перспективы развития Транскаспийского маршрута на инвестиционном форуме в Баку - BAQ.KZ</div>
+      <div class="art-summary">Искусственный интеллект поможет Air Astana экономить топливо - DKNews.kz</div>
     </div>
     
-    <div class="article" data-date="2026-09-26" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxNSU9XRjhXbWVSekhIRW5Cc0VoZ2NDeWxFNjQwXzJ4OWZDRU1kYjFMUWtoaXA1c0EzVnZ6UE9ZR1FSOGlOa3lwaF9WQU1uNmx3cVhJVEYtMHl5ZWN5Ull0Mkl0TURYSDFrcjBJLXJBclJSbzFralh5M1lXR0treU00Sjhqb2FsVlM0cWRUcVE2UlNXbVpJYm02NUxZQ09idlVxZGpQckZ0V0dVeVp5anZacDBZSDFvQnNQa0RHcm5vZFdpUDQ3VTBSektpSS1NSE05ckFCNUhSTlNRNEp6cUxFZVc0enh4c3M?oc=5" target="_blank">«Казахтелеком» готов платить?»: как Tele2 и Altel поссорились с Kcell и при чем тут Катар - Total.kz</a></div>
+    <div class="article" data-date="2026-07-07" data-co="Казахтелеком" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQQXBaY3NBRXdRSzVDdVk3eExVVE4wMEtLNXpmWGNRbWlCa29zQ2JmZVhHT3JHXzN3OG5tb1BKSFN5Z2VUb0NzUWpiUm1fWWZZX0pBSmE5Z0VjVGNCQ1BFcHhYb2FPeE5mbXNJay0ydEoxZjZCNEF4eTZJMWFlSVRlMm1uS0VlQUxfX182cEI4b2lvdTNLYVpwVEFrT29QQjJpck5Zb0hWTExTcXBXbEVWcGVtYnk5UQ?oc=5" target="_blank">Казахтелеком поддержал крупнейший киберспортивный турнир Центральной Азии - Kapital.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 26.09.2026 07:35</span>
+        <span class="date">📅 07.07.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«Казахтелеком» готов платить?»: как Tele2 и Altel поссорились с Kcell и при чем тут Катар - Total.kz</div>
+      <div class="art-summary">Казахтелеком поддержал крупнейший киберспортивный турнир Центральной Азии - Kapital.kz</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    
+    <div class="article" data-date="2026-09-26" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-26/zhnb-v-zhezkazgane-rekonstruirovali-postroennyj-v-1941-godu-vokzal/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-v-zhezkazgane-rekonstruirovali-postroennyj-v-1941-godu-vokzal" target="_blank">В Жезказгане реконструировали построенный в 1941 году вокзал</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 26.09.2026 11:41</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">В Жезказгане реконструировали построенный в 1941 году вокзал</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-14" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE50NDRlYmtESURrTzBMcmlfemEySm54UWs5bmhkRUxKY3ZwVFFCWm9qS3lveG5LaEttNklKTGRCQjZwaUZoMHhtaVN3?oc=5" target="_blank">Тарифы КТЖ вырастут с 21 сентября - apk-news.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 14.09.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Тарифы КТЖ вырастут с 21 сентября - apk-news.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOQlQ5VC1kNzVnSERreV8xTC1BN3hxR0Q0OEtodTVUVjQwRi1ZSWxZMEhpTlJOUnNVVUYwcVV1djJhS0hVbFplcDNXdENTN2hXM0hEcVQ4RXlUdjJ4M05YakxyYTZzeEpob3BlQ1lkeDFndTNheFRXX2I3cVpqWHhaRzRaQkc4aXJXOEY5dGZ3alVQV2cwdXhNS2VqeGlRQ2U4ZHNVTERSWnM1X1A0d1hnNnFaYnBxQQ?oc=5" target="_blank">Швейцарские вагоны, купленные КТЖ, дорожают ежегодно еще до ввода в эксплуатацию - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 20.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Швейцарские вагоны, купленные КТЖ, дорожают ежегодно еще до ввода в эксплуатацию - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-28" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMHRpWktjZFM5Q2tXQzVKeFJhTUZMTnJmazUxeDlhV3FJQ3VYNUdMb05TSy1XanY4YWEtbzh1V3VmSmZlLWFqZHctMXFDcFBveXhzdk1MSlZ3Tm4wQlVFaGhSQl9uT2xHeUVoLV9hdnFueFhkZDZyUWZLd2k1Qm4yZW5iaUE1WHdmU21TcTVkVTBZWWVMbzRsSWplSFppMkxESUhuTnBXTUlSakY0MTlNWHdTOFB1QUh3UkVXdWsxTEs1S0h3Z3Y5SHBZblFUb050Mm1sRzZ3?oc=5" target="_blank">КТЖ организовало первую отправку казахстанских удобрений в Великобританию по ТМТМ - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 28.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ организовало первую отправку казахстанских удобрений в Великобританию по ТМТМ - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-31" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQeXlDbFpsYjBxbVpWMUpPV0hSRjBMektjdnZ1WDVRWUZfWENQOHV3UmQ1Q3FCRmxSN0pWU2dYaHphRVRhRzQzQURBQlNvMUxtTW5hMGd6LVZIU3NPb20yYThzRWFPcm1WV2o3V3VuUDRVeDViN1BWeFQ0azNQb3Z6ZWNWb1p2QUUwSVJ4NXFGTQ?oc=5" target="_blank">Сколько заработали члены правления КТЖ за 2025 год - forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 31.08.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Сколько заработали члены правления КТЖ за 2025 год - forbes.kz</div>
     </div>
     
   </div>
@@ -192,7 +256,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-09-26';
+  document.getElementById('date-from').value = '2026-07-07';
   document.getElementById('date-to').value   = '2026-09-26';
   applyFilters();
 }
