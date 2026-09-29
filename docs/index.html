@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 29.09.2026 18:29</div>
+  <div class="meta">2 источников · Обновлено: 29.09.2026 20:18</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-18">
+      <input type="date" id="date-from" value="2026-07-31">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-29">
+      <input type="date" id="date-to" value="2026-09-18">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -87,9 +87,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -106,68 +104,47 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-07-20" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOTnFxT1JzLXN5bHptZVAtUDZHdG5sV3NIc3cyS093c29DMUlERDBvWVhiV1dpX2VZSXA5R3NZblVLaVdtYWFTOE16TUtzX0UtTHJOT0FleG1zV0tGQnNmVi02Qm5yc3pfYnhhanNvNTFWb2RIUERBRlBhQWNXSXg2VlFxNVByQnowbDNLS1dfbWE1U0NIV0g1c3dLYXBuZ0drMGV6STg1TmN2WE8zRUE?oc=5" target="_blank">«КазМунайГаз» готов выплатить штраф по Кашагану вопреки позиции партнеров — Bloomberg - Oninvest</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.07.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» готов выплатить штраф по Кашагану вопреки позиции партнеров — Bloomberg - Oninvest</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-09-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/tragedy-on-the-caspian-who-is-helping-the-families-of-the-273910/" target="_blank">Tragedy on the Caspian: Who is helping the families of the deceased servicemen and how</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 29.09.2026 21:41</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Tragedy on the Caspian: Who is helping the families of the deceased servicemen and how</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWW5jdERWR2hkOTE5RXJzaFhiREo5a0dSUW00YkdZM3p1QmVLdmM5TmZKQXRLRG5CX3VabjdPS29VQ0Q5WG1nMFBCZ2FSb1VkSWdsNGtjMllXV2lHOUFrSzZfMmZod0YwX1owWFozYjBQdGYzN1FNck9ySk1iZ3dicWcwanFIa3pONGtsT3g3MFM3M1MzbnpIeXZTVDZ2enFfOUswUlUxb3M1UEw2MDQxcWZEZUptckVvTU9z0gG7AUFVX3lxTE9ZbmN0RFZHaGQ5MTlFcnNoWGJESjlrR1JRbTRiR1kzenVCZUt2YzlOZkpBdEtEbkJfdVpuN09Lb1VDRDlYbWcwUEJnYVJvVWRJZ2w0a2MyWVdXaUc5QWtLNl8yZmh3RjBfWjBYWjNiMFB0ZjM3UU1yT3JKTWJnd2JxZzBqcUhrek40a2xPeDcwUzczUzNuekh5dlNUNnZ6cV85SzBSVTFvczVQTDYwNDFxZkRlSm1yRW9NT3M?oc=5" target="_blank">Air Astana в декабре запустит рейсы из Алматы на малазийский архипелаг Лангкави - Vlast.kz</a></div>
+    <div class="article" data-date="2026-07-31" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPNFNpUEwwcEdmeEh5Z3dNZE5jNzAwMERxTktZcHItTDBEZGJ5UlN5VUlwbU1xZktXN2puSm9BU0dnZ0hBay1yVElYNkR2RGtZRkh0RURhc0FlNzlFZnZxUlRkYWZ4Z3Z3WlVXQlFzNFNTS1VXenlMUG9tQld0am1IVXlobTRkWVgxd05WckRwaVFLWjJxVkRiMEp0NEdrcXNiYzFjNm9JM0QyMTJKSU9GZHFSbko1dGhrMUxuX0p3?oc=5" target="_blank">Air Astana продлит до 3 октября выполнение прямых рейсов из Астаны на Кипр - Интерфакс Россия</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.09.2026 12:06</span>
+        <span class="date">📅 31.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana в декабре запустит рейсы из Алматы на малазийский архипелаг Лангкави - Vlast.kz</div>
+      <div class="art-summary">Air Astana продлит до 3 октября выполнение прямых рейсов из Астаны на Кипр - Интерфакс Россия</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-18" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPVVE5Zlh3eGZjT0wzbjNOem1sZ1NTb2hhNHhFbkp1TzI2cEdNSEhWSVVBMEVSUHBGeGpQWlUtSk01YTFXblE5LXJIY1ZGLVZOUGtyQXR1ZEpuallkaE0zMDJBR1dnSTFwcUVFZzlTZk4yX1Y5WHF0VnRQLW12NHVCS0ZrcS1ieXRKUEx4cWlma2xzUUx3cGpMNFlCeEpzbEV6N0tCNGxhSkI3NGQ3b21rUDQwVTNzVGvSAbwBQVVfeXFMTzRmTUdOa3lwcW1CSC01a0YxQ0dhX0g2U3dQc3dHNVo3OVh6VXFiNDBfSHlmU0ZnWml3MkthTUJuSUdDempVM2tCQWxMRVk5ZWd4MWJuT2taaTdiUHhJbU50Z1Q4Z2xkR0hmMmNUNzg4QnhtaTZDZndQTGx4azhxU25TWVI4QjRIVVZDUk1oWXRGaERhdlJNVVFWbm9mbng4RTVuMURfa3Y3RVM2QXdDOU40Vlk2aFVaZHFPVkw?oc=5" target="_blank">Группа Air Astana завоевала ряд престижных наград на Skytrax 2026 года - zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 18.09.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Группа Air Astana завоевала ряд престижных наград на Skytrax 2026 года - zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNVThHekZ4eHk2dFBiaXRlU1RYYXBZLU1PcE5ERUV5QTd2QXpIUjhib2M3UkIwX3E2ZEhtV1AxRVJZQVB2YkI4aHJZRlVtX09EcU14VzVWZmVqYnp6X1RVd0doaW5GZXZ0MmtBY1NKRWI2RjlZYzFkZksyS0E2QmVQVWtQSTMtQTdXa050cUZyU1RpcEQzSDNpcWt0clJpc0Z3RUY5QzB5QmY3VlpSaHc?oc=5" target="_blank">Передовиков производства наградили к профессиональному празднику в КТЖ - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 31.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Передовиков производства наградили к профессиональному празднику в КТЖ - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-03-18" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPQmRwM0NiNlBCU3pLc1RSOTZUSXIzTENTdTB1TWRLVGxRM3dYVVUybG0ySFowRVRCaUVHT2JSTktjWmdMNkl5RWdPRWhnVmxGUUlSZWhPWHZ3OFhhaGIyZ2pQbUl0OWRIOEdiVVN2N0dXeDNWZ2R5TlljTFFRWVFqajZHcTk5V0tsRF9USWVFS055ejIzRGNzQVJOQnJQcUoyOTBQWFAyMGhrWGNDMXc?oc=5" target="_blank">«Казатомпром» работает над контрактом по поставке концентрата урана в Индию - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 18.03.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» работает над контрактом по поставке концентрата урана в Индию - Forbes.kz</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -226,8 +203,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-18';
-  document.getElementById('date-to').value   = '2026-09-29';
+  document.getElementById('date-from').value = '2026-07-31';
+  document.getElementById('date-to').value   = '2026-09-18';
   applyFilters();
 }
 
