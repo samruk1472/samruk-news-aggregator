@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">7 источников · Обновлено: 29.09.2026 13:39</div>
+  <div class="meta">4 источников · Обновлено: 29.09.2026 16:20</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">14</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">5</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-11">
+      <input type="date" id="date-from" value="2026-02-25">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-29">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,11 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
@@ -108,178 +108,69 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-09-29" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQMTZ6OFRfcjE3Rjl5YXJaSVc4aDNmRGVhaEJiZXpEYjA3RXlFaThudVB2aVhXcFpSaEU4U0U5QUhXRy1ETnA1UzhmQml4LTN2V083TXQ2V0RkV1FtZjZXajR5Qlh5SVNqcFNkdG9kTDJqQVc3Znd0eFhLRGRCYkhHRTUxQ2xkd184b2NBdjkzRkhSdEdZbFJQczJnZG02dUhjWEE0Zy1FX2VzQ3c2amxNWGczelBuUQ?oc=5" target="_blank">КТЖ на KazHackStan 2026: искусственный интеллект на службе кибербезопасности - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 29.09.2026 12:05</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ на KazHackStan 2026: искусственный интеллект на службе кибербезопасности - Қазақстан теміржолшысы</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-09-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://vlast.kz/novosti/71043-air-astana-v-dekabre-zapustit-rejsy-iz-almaty-na-malazijskij-arhipelag-langkavi.html" target="_blank">Air Astana в декабре запустит рейсы из Алматы на малазийский архипелаг Лангкави</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 29.09.2026 17:06</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana в декабре запустит рейсы из Алматы на малазийский архипелаг Лангкави</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxORDlER3FIZ3Frb2VOMVVYVTFFbWlOWnRDLWlOVDJ1OXR3ZFVkWE92MTJjSU9CLVpnYkJRMnhsWDRBVXFTdGswUmpJUU1fU0pBcjBXcFZJTHRMLUloOG11OWNJNVJnMkVnc2w2RHpBRnItR0RHQVdmdmJhQWFyc0w2c3pUX2EtdkxjTFJXS3BXTHhhZ1hxOFVYNjlB?oc=5" target="_blank">Правительство может отдать «Самрук-Казына» свои 40% в ERG - Kursiv Media</a></div>
+    <div class="article" data-date="2026-06-01" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQUURnVG85YnVJWUtxZ3VNYjZ5NU43b0lhaFhCRkk4ZlZDVmNvaXlYOWNscjRKY0MxNjZWbVBydUVYdm5fbC1UZWU0ek9rRUtkYVdZa25WNll6SmtVT0p2MWM0cXo3b2tOdnFDZl9lMFk2bG5TX0VPZTJlVWZFRS14WnFfNzRQdlk?oc=5" target="_blank">«Самрук-Казына» займет миллиарды долларов - kz.kursiv.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 11.06.2026 07:00</span>
+        <span class="date">📅 01.06.2026 07:00</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Правительство может отдать «Самрук-Казына» свои 40% в ERG - Kursiv Media</div>
+      <div class="art-summary">«Самрук-Казына» займет миллиарды долларов - kz.kursiv.media</div>
     </div>
     
-    <div class="article" data-date="2026-07-27" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE16T2RSRUlmd0Fjc3BWWDR1ekoyM1BWZmpxamYxdExIUE50cEhJMXJaNE16RXhQckFTUWlzellCUWF5U3NINjNhU3RGUEVZdUxIeTl3OTY0YlFZNHRlY0x2WTRJMEhkRFRFeVlYR3lOek9vNmhIZDNieEtQZWl5dw?oc=5" target="_blank">«ДОЧКА» SAMRUK-KAZYNA ONDEU ЗАЙМЕТ $1,2 МЛРД НА СТРОИТЕЛЬСТВО ЗАВОДА В АТЫРАУСКОЙ ОБЛАСТИ - The Tenge</a></div>
+    <div class="article" data-date="2026-06-03" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPTFdoV0hSWkpnRFpEMVdEQkxpUVhCQTZZNXZueXoxRGE0bmhLWlhuQms1UFloWjVYalBCTnNreXZSOGJxMHNCenhfUzFpLUMwQVBhWm9Td3E5bjl6aHYtLUh6NC1VTmRQdFFScnZtX2dVNk1RZndFRDNPNW5rV2k2VGppbzRTMFZEbmlfbjdPMlZEb2NZME4xZ3RvOU5UZ09vN250Mmt2WmdnN2FYcW9iczF3?oc=5" target="_blank">«КазМунайГаз» получил 100%-ную долю в бывшей нефтяной компании Боранбаева - kz.kursiv.media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 27.07.2026 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 03.06.2026 07:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«ДОЧКА» SAMRUK-KAZYNA ONDEU ЗАЙМЕТ $1,2 МЛРД НА СТРОИТЕЛЬСТВО ЗАВОДА В АТЫРАУСКОЙ ОБЛАСТИ - The Tenge</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-27" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMnUwYUY1VzAwX05Qbl9taDJSNEFlZGtlZldqT3F3NmFnSHhWaHNpcUFjdFExcG40bnBDQWYtTHJpN01fZGhKV1hxRmpoal80a3FQaEthRmVUVkZ1eUFON1ByVi00ellKQmV2ek5pSjZaZHRZd1BWSWVEcWk3dnVtSkhmQkNGRlJ5NzNPLURULTFkdlhkQWN4V01hWHdrMFp2aFNmQTZvUEZ5dm5CUVhEc1k0LWtaQnN1bFZv?oc=5" target="_blank">«Самрук-Казына» займёт у себя 1,2 млрд долларов на завод, который бросила Россия - National Business</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 27.07.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» займёт у себя 1,2 млрд долларов на завод, который бросила Россия - National Business</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQTDdtLUJDNURsYmQtaE4tU01XSkt1dDBPRkhzVE1IQ0dlU0VwRjNOUmpVWXBKbk1BSFVVQk9yWkRFWjVwU3lISk40MGlrR0kxZHlGZW05eWUxdDVETGdFR1hqajRpWmRYejZqSGZSWG9HQVRIZTlPOThqQnkzYjZxNzlTTUs3anFvR1ByWlhvTThJdXEyWUtnX0JkbE5Fdw?oc=5" target="_blank">Air Astana запустит сезонные рейсы из Алматы на Лангкави - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.09.2026 12:22</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana запустит сезонные рейсы из Алматы на Лангкави - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOUVFOdkxLREtHU1VDUGRVb2t3QWFGUXBuNzFqQ1lDeXNPOVR4ZUVBbVdwQnRhbkU4bkRxa0dPcnhmWjhUWlZDeDQxMnVMaW9sNjZ1bUxPS1ZldTJMa0hxX0NKZ1F0VlNKd3QxaHp2V2tXME1BTHVjRlVYbVFNZVd4VV9nZWdQc1JuYU92Z2w1aFVHWGFlNjZtLWxlSVppMTZ1STRKX3UxR0s4a1g0Vmc?oc=5" target="_blank">В Малайзию без пересадок: Air Astana запустит сезонные рейсы из Алматы - NewTimes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.09.2026 12:20</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">В Малайзию без пересадок: Air Astana запустит сезонные рейсы из Алматы - NewTimes.kz</div>
+      <div class="art-summary">«КазМунайГаз» получил 100%-ную долю в бывшей нефтяной компании Боранбаева - kz.kursiv.media</div>
     </div>
     
     <div class="article" data-date="2026-09-29" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxPdGhKN1ZjLVo1ZzRnSldCTmFYT1lTVGhXQndYcHRyMDl6Zi14ODZqNHdySzlkUmZ4Z3I4TjdWUVJTcWM3aW5Sdl9yLTZxN3lxeDdKOEs3S1BmQ2FSV0VTbXdHSkE3SmVHcE1reno2ZFFOdXk1MEE5bkhibEFCeHRKbnk1TQ?oc=5" target="_blank">КТЖ взяла на особый контроль вывоз зерна - Регистр ТВ Казахстан</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxNTTd2YkxBdW9vVUZ4YmNacVV4dDhBRkFUdlJwRVp4bEdNODdGS2l6WGxDc3E1RXFDc0hwcjJaRFZIN3BIVTE0WFFqdDJnTmJJUEREb09WbS1vZFdkUW9odVdyc0Y2QXY3YnFFdWNhNWtyOGw4emZjc0E5OFRIM0hDSGVoZmZxMk5GM2wzZ3lxT2UwSV9IVklJekJEWHZJSDBj?oc=5" target="_blank">Подготовка к IPO: КТЖ намерен запустить дробление своих акций - kapital.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 29.09.2026 12:14</span>
+        <span class="date">📅 29.09.2026 14:56</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ взяла на особый контроль вывоз зерна - Регистр ТВ Казахстан</div>
+      <div class="art-summary">Подготовка к IPO: КТЖ намерен запустить дробление своих акций - kapital.kz</div>
     </div>
     
-    <div class="article" data-date="2026-06-30" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBTMDlFWmhrMFoxY2RaMWkxTHRZaXQ5TmNZdXRuREJTYnNITHNOLU1icVhSQW1Wd1g5WkhyV19MTWpiem5WbEVsQnhSbG41S21YNDF5NzZ5OGRfeWtzNFIzallvMUtJbXNWdU5YUmRWcnF2ek1hc19udlNDQ3daUdIBfEFVX3lxTFB2RzJ3MzVSdGZTMWpfUGp0dEo4X0FteE1pdVJodFlSTk5reS14aUp0UHlWV2trTHp4VjRpOW5ORm1aUGRTQkQydzkybC1vd1pfRV9qdFhZU0JUY3NOQ1hSajBwcl9hQkNjaG9iQzZqNE5pXzVSdG1uSVV4S3o?oc=5" target="_blank">В КТЖ объяснили задержки поездов аномальной жарой - BES.media</a></div>
+    <div class="article" data-date="2026-07-07" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNcTRPWlByTzgtdHhaaGJSMGRzOWlsZ19Sd3FrZXlDLTVNN2p6bU1TdkRtN1Exa2cwME5ldTROT2tFZEJ5YzZxNEY4MERjSTA2bjB5cEdtUjlyWjNOY3kwYjBCV211STV2ejFTOFlKaVF1c0YzTzJFSzVMVm5CLTBrcjZYdmVScE9RSmJBSXA3XzlRMGJrTi1Wa0YxMUtSSkJzOGcxQTduS29UUFFfU0V2YUNZcHo4dVkyS28xaHZjZVp2UWdJc3FwZU53?oc=5" target="_blank">Ожидающая вагоны Stadler «дочка» КТЖ получила более 25 млрд тенге убытка - kz.kursiv.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 30.06.2026 07:00</span>
+        <span class="date">📅 07.07.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">В КТЖ объяснили задержки поездов аномальной жарой - BES.media</div>
+      <div class="art-summary">Ожидающая вагоны Stadler «дочка» КТЖ получила более 25 млрд тенге убытка - kz.kursiv.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-25" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPVkdxVjFuT1M5ZTAwSzNRWi1SZWR4eVluSmxJQ1A3Ym1NWFlaR2ljTC0wYTZJQWU2a1p1engyUVhZTlZVZnNFNE9uSEtZSkpnZDRrZ2cweXl2UkpqbWZVcE5lUlhzNWZiYVE2ejMwMFFxc0tnUXVIaHV4OGpxMFhZMWJyMDRDRFVZd0ZYS09SRk5CQnJCWmI5MmVRaW5iZC1yY2lJa0NGc09nRVNnWmpJ?oc=5" target="_blank">«Казахтелеком» превращается из оператора связи в провайдера ИИ-экономики - kz.kursiv.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 25.02.2026 08:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» превращается из оператора связи в провайдера ИИ-экономики - kz.kursiv.media</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
-    
-    <div class="article" data-date="2026-09-29" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-29/aina-air-astana-zapustit-sezonnye-reisy-iz-almaty-na-langkavi/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=aina-air-astana-zapustit-sezonnye-reisy-iz-almaty-na-langkavi" target="_blank">Air Astana запустит сезонные рейсы из Алматы на Лангкави</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 29.09.2026 12:21</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana запустит сезонные рейсы из Алматы на Лангкави</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-29" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-29/zhki-nemeckie-poezda-v-kazahstane-tokaev-provel-peregovory-s-gigantom-deutsche-bahn/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhki-nemeckie-poezda-v-kazahstane-tokaev-provel-peregovory-s-gigantom-deutsche-bahn" target="_blank">&amp;#171;Немецкие поезда в Казахстане&amp;#187;: Токаев провел переговоры с гигантом Deutsche Bahn</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 29.09.2026 12:04</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">&amp;#171;Немецкие поезда в Казахстане&amp;#187;: Токаев провел переговоры с гигантом Deutsche Bahn</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-29" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-09-29/zhki-nemeckiy-logisticheskiy-gigant-prisoedinitsya-k-proektam-kazahstana-v-aktau/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhki-nemeckiy-logisticheskiy-gigant-prisoedinitsya-k-proektam-kazahstana-v-aktau" target="_blank">Немецкий логистический гигант присоединится к проектам Казахстана в Актау</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 29.09.2026 10:30</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Немецкий логистический гигант присоединится к проектам Казахстана в Актау</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-29" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/09/transport-manufacturing-and-recycling-in-focus-as-tokayev-meets-german-companies/" target="_blank">Transport, Manufacturing and Recycling in Focus as Tokayev Meets German Companies</a></div>
-      <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 29.09.2026 13:30</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Transport, Manufacturing and Recycling in Focus as Tokayev Meets German Companies</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-20" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ZaG9rVHk4ZHc4aF9rMjh1akJEaVFCaWV5bFZ5UnlvNE5hTTZOMGREZl9xSXpPeXExSktaNjBGaEtIYmZDa1pKS2F4ZVNkdFI5LU5lNklWM05aWl9aTFhr?oc=5" target="_blank">КазМунайГаз и СNOOС обсудили стратегическое партнерство в геологоразведке - energyland.info</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.07.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз и СNOOС обсудили стратегическое партнерство в геологоразведке - energyland.info</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -338,7 +229,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-11';
+  document.getElementById('date-from').value = '2026-02-25';
   document.getElementById('date-to').value   = '2026-09-29';
   applyFilters();
 }
