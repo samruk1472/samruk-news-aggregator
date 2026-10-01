@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 01.10.2026 06:56</div>
+  <div class="meta">6 источников · Обновлено: 01.10.2026 10:38</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-31">
+      <input type="date" id="date-from" value="2026-05-25">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-01">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -105,28 +111,72 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-10-01" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQSDBHQUNISXd3Yk92QTlaTVFTSnlSVkh4ODJzaGRGUkRnMFZIM1FSdFNKeVpVWkFfeUhQOTBPV0s2eU82XzNFMWhYTDdlbmlMXzZpOEVObThNcW40TkNaZWc3YTNQM0gzN1ZSNnJ1eXN5NHRDQ1M3NTJ3SXoxWURLY0s0ZW5FRFVUbWctT2FDLTB1bkZrak5zVE04UVlKSVF1MmVV?oc=5" target="_blank">Студентов железнодорожного колледжа обучили вайбкодингу в КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-10-01" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNemVDcnlxeWlSaF95Z0tNSEJNVGVnbHdjZGdDSmFxX3Rvek5NYXhubUpEUVJBZFlmLTFTeXljVEVfM2Zua0hkVkpUVFdET3ljbVQzNEkwS1pDNHQwczczRmlPOTd4ck9qQVFlWmpvcm5jcHM0cFQwd0JZWnZLUFQ4SnRtaHBlbVJyUVhSVV9pWXg2RTJ5a1JsX2lQNTFJQTBvc0xWTHVZV1prWnlLSUdheXd5dDhkMjjSAbYBQVVfeXFMTUlBRjZENjNfdWRXR0RRejQyM1ZOOXQ0MHFEQXNHdURpSW9CRXpXanNVNGNDMEt6dWNmQUN5aElqSU5YVjBHc0phTXFLTXV1eTVndTZtbndXLVluRWQwaWwxdHlySWlMbzJDY3Z3VjdSajRDUWp4WVctdWc2NDB5dVJFVnhfMTBKN3pvTkJobnoxZG5oRXJ3U3JDV0dBTjlBZVExWHF6bm1xNUJackdfRHpNMnNndlE?oc=5" target="_blank">&#34;КазМунайГаз&#34; выкупил &#34;внучку&#34; за 6,28 млрд долларов и стал напрямую владеть долей в Кашагане - BES.media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 01.10.2026 04:27</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 01.10.2026 07:34</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Студентов железнодорожного колледжа обучили вайбкодингу в КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; выкупил &#34;внучку&#34; за 6,28 млрд долларов и стал напрямую владеть долей в Кашагане - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-07" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQSEZ1SDBaczMwRksyVDd4MmJrZzRmdkR4djlnbHRlTm1wbU1YdDh4d1p4NE9xVVVidHJ1LVAwbDN3dWtWcmFLMHA0aTZYbkhnSzZKZ1UwNmZmZUM4bGNMOHJ5X1ljbDNIalJfX2FUSE1RRlBybUowUkVPWV9RYjFSTU5HdjFqaFJNUjkyS2N2cG9lWHNqelptUWp0X200SnF2b0E?oc=5" target="_blank">Как изменилась система закупок «Самрук-Казына» за два десятилетия - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 07.07.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Как изменилась система закупок «Самрук-Казына» за два десятилетия - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-02" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNU0had0J1SGFIQVU3Q2lPQjVsWHBpU3M2RDBUWXZ6eE9pekVNd3o3ZFlUSWZ4VUdEajhtTUxHX1Uwa3hNQms0ZzBtRE1OdXBva2hLNVNuT1dhVGpFNFRUWHlxYWVJU1ctcy1CNllENzlXRWZNOGxmcGFTSUZyQTEyQlRDYjdILU5vOHRLSTg3cnlieTkxdnNhRmxlV0dVaUZQNlJ6aVBGZm00MDg3bkQ3a0ZjbTRPdW8?oc=5" target="_blank">Казмунайгаз по итогам 25г выплатит 350 млрд тенге в виде дивидендов - Русская служба The Moscow Times</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 02.06.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз по итогам 25г выплатит 350 млрд тенге в виде дивидендов - Русская служба The Moscow Times</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYldzN0RmVEMxUHdmdEdLVU9ickFfVWtVUDZDMlBjWS1rcTNzYXNEQnVBc2Jvby04dHZfOGFvY3JfMS1aOVhvT1BQampab1p0S1lXQ3dDVXUxVlVRQndwZzRINWR5Z3Roc3l2cjBMdjBFLVlZTVkyNU9jYzlXdFdMMlZHSW9Ha09H?oc=5" target="_blank">Россияне смогут летать на Кипр через Казахстан с прямыми рейсами Air Astana - TourDom.ru</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.06.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Россияне смогут летать на Кипр через Казахстан с прямыми рейсами Air Astana - TourDom.ru</div>
     </div>
     
     <div class="article" data-date="2026-10-01" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQM0toZktsV1BqTTRlOERDS0RRdWVMODBjV0VqU0NGYWctdURRQkZYZDdzVC00SXFNdU9rOHZKa1R6eGpoR1ljVkp6YXhGQXQ2andiZjFaTXJ4Z2VHZW5GcDFVSjZ1dE1OZHNzTUNMSUFCWG1DSi1nb2s3S3V5ZHpvWU9vSWhDbGo5VVlWTmhERXVxSDZ5d0RhTnpvenhVYktnV3B4VTZPb0VoaVgwZVZUdW90V2IybmtmSkh6R016SXc?oc=5" target="_blank">Цифровые решения для КТЖ представят 43 команды на студенческом хакатоне в Алматы - Қазақстан теміржолшысы</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPRW10dlZ6Q2tXRGI2OGlyUUtJZi05YUd4ZjhuQkYxRG1KdXNmRUdISmlQZXRmUW5NUE84Z3V3TmtnZVBNLWZpUkVqTS03OXJWRTZzdmFSZkNRYWREMXpRSjk2VlhKeGhyYkc0V0NHZGp4V2FHdkQ4SlBTNVlHZk9FdGJ4WlJrQ0JoeGJpa3B3?oc=5" target="_blank">КТЖ запустили акцию со скидками на билеты - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 01.10.2026 04:57</span>
+        <span class="date">📅 01.10.2026 08:44</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Цифровые решения для КТЖ представят 43 команды на студенческом хакатоне в Алматы - Қазақстан теміржолшысы</div>
+      <div class="art-summary">КТЖ запустили акцию со скидками на билеты - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-25" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYzh6VUtJN0laU05YLUdMcDc2S3h5V3lGdHZTQmdiSjZfVDdaWnJxcEZIR3k2cXlWTTF0b21DN0dJUkZ3XzQ2R1lENUEybjY4aFBnM3JJRWlaWG54WWF4WU9yeF9VQ0ZOak4wcUFSRGtHc3BGX1pLQzNITU9Hcjd3eEExM1hUNTM3TzBwU3c5VHBXR1RvSmlhTUVDbXpBUEdjWDB6UWRlT1dEd9IBsgFBVV95cUxOWE1IN3htdW96SlllbEhVVjhIemtscWNjcjhLanZmbk0xWlYyRm40eDdRWmFQVTZNVmVTMVRkM3drSWw2b2ktWlJjR1l3OXhOY1lCRXlhQ3JlTXU1VHlOSm9meUVocWtrZWJiQ0VGcElkQ2VHZi1oNFNCMFFsQl95Wm8tRDVkZ3lfUTlTc0Q4c2hCbVpTeFNUY2I5blNPUXA5SzZTVFdPUmNLbkRPS0Rud0p3?oc=5" target="_blank">КТЖ планирует повысить на 24% тарифы на грузоперевозки с 1 июня - eldala.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 25.05.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ планирует повысить на 24% тарифы на грузоперевозки с 1 июня - eldala.kz</div>
     </div>
     
   </div>
@@ -137,25 +187,25 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
     <div class="article" data-date="2026-10-01" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/10/kazakhstan-and-denmark-entering-more-dynamic-stage-of-partnership-ambassador-says/" target="_blank">Kazakhstan and Denmark Entering More Dynamic Stage of Partnership, Ambassador Says</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-01/aina-ktzh-zapustili-akcziyu-so-skidkami-na-bilety/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=aina-ktzh-zapustili-akcziyu-so-skidkami-na-bilety" target="_blank">КТЖ запустили акцию со скидками на билеты</a></div>
       <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 01.10.2026 05:19</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 01.10.2026 08:42</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Kazakhstan and Denmark Entering More Dynamic Stage of Partnership, Ambassador Says</div>
+      <div class="art-summary">КТЖ запустили акцию со скидками на билеты</div>
     </div>
     
-    <div class="article" data-date="2026-08-31" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQQk9iTUV0WDJIVVhsLXdkOEE1S3FCRE1zSWRsTFItX2hWSjluWV9tb3lpSE5UQUU1WXhrZXl2ZGRYb21WRHcxWTJ6RU41VVJVMU1BUzJlYXJKRE40R1BfU0tISF9uTzV6cmJQUl9fcHo4cGNGLTA1ODNwYVVaRVJZRFZtajZuQ1BNdkR3c2psYk9kd19HMmxZ?oc=5" target="_blank">КТЖ перевезла рекордные 1,1 млн тонн зерна за август - Kapital.kz</a></div>
+    <div class="article" data-date="2026-10-01" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/10/kazakhstan-to-launch-direct-flights-from-almaty-to-langkawi-astana-to-bangkok/" target="_blank">Kazakhstan to Launch Direct Flights From Almaty to Langkawi, Astana to Bangkok</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 31.08.2026 07:00</span>
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 01.10.2026 08:05</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">КТЖ перевезла рекордные 1,1 млн тонн зерна за август - Kapital.kz</div>
+      <div class="art-summary">Kazakhstan to Launch Direct Flights From Almaty to Langkawi, Astana to Bangkok</div>
     </div>
     
   </div>
@@ -217,7 +267,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-31';
+  document.getElementById('date-from').value = '2026-05-25';
   document.getElementById('date-to').value   = '2026-10-01';
   applyFilters();
 }
