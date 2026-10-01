@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 01.10.2026 18:43</div>
+  <div class="meta">1 источников · Обновлено: 01.10.2026 20:37</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-20">
+      <input type="date" id="date-from" value="2026-10-01">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-31">
+      <input type="date" id="date-to" value="2026-10-01">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,13 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -111,50 +105,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-02-27" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTE9pNkZucnVrN19HaWVSMnByeEt4WU5QREhQcTlmOEszSXhlZVpIVGZ6cUhVOWdYVEhoTHVVdUV1WDVhRzlNU2xv?oc=5" target="_blank">Морские перевозки нефти компанией «КазМунайГаз» снизились в 2025 году на 18,7% — до 10,7 млн тонн - Portnews</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 27.02.2026 08:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Морские перевозки нефти компанией «КазМунайГаз» снизились в 2025 году на 18,7% — до 10,7 млн тонн - Portnews</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-20" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBjZVE4b1dpbGNuaWlSNFEyQWl2RXVBMjBRMkJ1WFU3Qno4YU9LeWtOMnh6UGZqNzZRT3RfTjBDWlZreXdZR3B0dEZ4cmkteVNoWHBDT0FHNGhENVhteVl2NEJCalJVdUhOWlJxOS1TQ2p5eXRMQXdtUERybUk?oc=5" target="_blank">«КАЗАТОМПРОМ» БУДЕТ ПОСТАВЛЯТЬ УРАН В ИНДИЮ - The Tenge</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 20.02.2026 08:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«КАЗАТОМПРОМ» БУДЕТ ПОСТАВЛЯТЬ УРАН В ИНДИЮ - The Tenge</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-31" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNdW9aNkx5QXpVWU81UURGdmZlTWl5cW8xU28yN19OUXVTVGpFQ0VEY1NZN2VoOHV1VVFYM1ZyOXZ3dkRzVVd1QkJPTlRrODF6LUhwOHYwdG1NczZFcHNXOHFXVXp5NzlsNVVkOThtbnFXOVptUFV6N1pPRUFjd3k5RXNRU3dqYnNidlNJUmlOX0RWQmRObi1fd9IBlwFBVV95cUxONXNBb2pIRklSWTNtUjJyODZtdko1UXFPT3RNREl3ZUFIcW9WUzlXZ3VES1JQR3NSLWgydi1xdXJWazFiNl92S0ZiY2ppTFNmZ1FFVld4TVBVeUtOUXozN2FCaUlGUkVKbDJrZW5KT2tFRC03MVo4OXY3NVFzY1dDdXZ0YzdtRUdCVFFrekpQOTBzTFVGMkRR?oc=5" target="_blank">КТЖ и Huawei усиливают цифровизацию железных дорог Казахстана - SKnews.kz</a></div>
+    <div class="article" data-date="2026-10-01" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPMmJCS2FYSkY0T1Y1SWlTRnB3Q0pBejZxb3ZXYm5xaFBqUEctc3Z1cTF4SDc1RzFHQmZUSGpOTUd5YUNzcEIzXzRhVnZiSzNScnBPOENuV1ZjQ1lJLXhZRG9pb2hUbU42MTNGa1BIdGR0VDVUODlvWFM5RVJsYzM1UFpJNmVFMWxxcHYtdWV5ak1COTk5RWU1TGJwc0ZZV1ZNbktfRmZjOWtmYVQ5bFZHaA?oc=5" target="_blank">Систему «Smart Диагностика» от КТЖ презентовали на AI &amp; Digital Bridge 2026 - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 31.08.2026 07:00</span>
+        <span class="date">📅 01.10.2026 12:47</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ и Huawei усиливают цифровизацию железных дорог Казахстана - SKnews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-25" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOTFkzbXJIVjZXbEhMZldfZkVHUGEzM0c2QmdNLUZfbXpaTENsLXlmZ05KREJ4cHFxMDVMSWNPcVZuMkNFaDVrdzZscEFzYmFGYlhnMXJSVFdJZm95cVFPOHpreU1vWkJLOEpkdUFVb3ZSMGR6LTh3dEZfYXlYOVpsU1NHc3RJa3ZZMjFvNS0xOWVBWFFSci1ROTgzTU9EQdIBnwFBVV95cUxQTDBUcUJXaGc5b3pkbTZmRlF4Z0ZGQWswSDZ5RWFkQmtKNVRteGdVc2ZTZ1VxVGJzaFBaM2NJNUJlT215Z29sZ3I3SHg1NXFlalJQWGU0Z2VYTENhSzZXd0xsZFhfdFJaMzJiMVVnRTZQbHZuWGZZUE5LUkNNbWVRRm5WRmFHa09KdWN6YjFLWExIbW00VkdCOGxLSWY2clk?oc=5" target="_blank">«Казахтелеком» наращивает закупки у отечественных производителей - Казинформ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 25.08.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» наращивает закупки у отечественных производителей - Казинформ</div>
+      <div class="art-summary">Систему «Smart Диагностика» от КТЖ презентовали на AI &amp; Digital Bridge 2026 - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -218,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-20';
-  document.getElementById('date-to').value   = '2026-08-31';
+  document.getElementById('date-from').value = '2026-10-01';
+  document.getElementById('date-to').value   = '2026-10-01';
   applyFilters();
 }
 
