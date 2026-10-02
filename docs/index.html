@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 02.10.2026 10:13</div>
+  <div class="meta">7 источников · Обновлено: 02.10.2026 13:26</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">15</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">9</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-02">
+      <input type="date" id="date-from" value="2026-08-03">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-02">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -89,7 +89,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -106,42 +110,80 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-02-02" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxOYmVFd08wU2h1OEstZzZReVRtWVJKb1BTREo0VzR2NGlaSGhrMTdzRVdqcVl2Ykc2U3g2NkhLQnBPNGpGMzlKdVFBSDlmRHdzUUZkdVFZa3o1VjFyS0paVmJneTREUFVFZkZTd1RPamhwSWpNYkRGLTR5d3BjVzM4UTF6LVNrOVRSZFN6aWluMkwzRkZ1N0prdkl4Zno4ZW5OSDJCeWdLYlNMdG5xQ2JhbVRiSmtPSzJfREt2emZ3?oc=5" target="_blank">КазМунайГаз и Татнефть получили фонтанный приток газа на участке недр Каратон Подсолевой - Национальная Ассоциация нефтегазового сервиса</a></div>
+    <div class="article" data-date="2026-10-02" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/english/71088-the-week-in-kazakhstan-nothing-for-money.html" target="_blank">The Week in Kazakhstan: Nothing for Money</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.02.2026 08:00</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 02.10.2026 16:52</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КазМунайГаз и Татнефть получили фонтанный приток газа на участке недр Каратон Подсолевой - Национальная Ассоциация нефтегазового сервиса</div>
+      <div class="art-summary">The Week in Kazakhstan: Nothing for Money</div>
     </div>
     
-    <div class="article" data-date="2026-06-03" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNQ2tsN2REalJpR2wzXzlObXNUa2lFd0s5c1BqTEs0MVBSOUZzXzktV3lEWEdpd3pwZUlfczJ2TGtiOWNQLUVWYmZ1S3VkbFlyTVZ1aVAwODVodnpGSG5Jb3lVT2lBaWNic2N0YWFOcGtjbDZhQ19zMUVhT1lyZFZ0TVRhaGJMdVBBeWV2eWtGUmgtN1c5RVVxN0owOA?oc=5" target="_blank">Air Astana открыла рейсы из Астаны и Алматы на Кипр - Интерфакс Россия</a></div>
+  </div>
+  
+
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    
+    <div class="article" data-date="2026-08-17" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPYXFReTlJZlpDM2tPdi0zRkZtTkQwbFAycU94WkpINDBaOXpHWEQyQWRrV3ljVzJYaWdWRHE3VWpLaFNiLUg0b2ozdFdIdFhVSWI0UVJoUDVWQktFRC0ta3JOeVhteTJPWFpHQTc5c3VkQVo3QkM0RjJUMXA3QnhNOEMyQ2pjZ3lxdGVsZW4zWFZ0T21CVDBwSQ?oc=5" target="_blank">Казмунайгаз пробурит 26 скважин в 2026–2030 годах - InvestFuture</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 17.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз пробурит 26 скважин в 2026–2030 годах - InvestFuture</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOaUVHV0FKdnM1RjVDcEE3VEhhX3RKUS1VRnBjSkFiRlNJdXRycnBlR3Bsb1QwYUNzeWRaY3ZQengxMXNYWmhPWEtEYklwNWJjVXZ6d2RTNXpvT2lPUFYxZldKUTRPQndCU0RmcDZpRXF2ZE0xclVDdVowblJnOGZ5bjlSS2gxU0RxMWFnZUR5cEtrdzJVdHJwbkZZaw?oc=5" target="_blank">«Казатомпром» нарастил производство урана на 9% в первом полугодии 2026 года - ИнфоТЭК</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 03.08.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» нарастил производство урана на 9% в первом полугодии 2026 года - ИнфоТЭК</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxON2JMYnAwMU9xWE50ZXdpQnVTNl9sTkhXZVkxU0dqUVJyWEdIUXFXZTEwaW4zQTIxNHpfNHAzSDF6eldvQzQ3VVdUdjcwYXJPeHFmWVdpUHdnTUUwMXBZRWh3RHdpd2NJdFRkSUw4bjdWQk9hX3EtbTctR2pFeTQ1UWdyUHU5ZDA0a3R5a1luZzJNTzdGRklJcFZIWEHSAaIBQVVfeXFMT1dsZUU2Qmlzd01lUkdwSmN3bExBdWZRWkl1VE44SGZNdmFxYjRwUmJqc2NRdXU1VWc5SHpPWWxBRDNZZzJMeUtnOFlucHVTQkpnUkowcEdCbFJpdm5QcW9CQ0dJZWVVeTJhYWw3dWRsVWRpOEFwMGFVQ25pS21GQkYyRXEwQ1B4UmdtUUEzV21QNjVUSGMzMjBEdXdiS1VibF9B?oc=5" target="_blank">Air Astana откроет прямые рейсы между Алматы и Токио - 24.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 03.06.2026 07:00</span>
+        <span class="date">📅 02.10.2026 11:28</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana открыла рейсы из Астаны и Алматы на Кипр - Интерфакс Россия</div>
+      <div class="art-summary">Air Astana откроет прямые рейсы между Алматы и Токио - 24.kz</div>
     </div>
     
-    <div class="article" data-date="2026-10-01" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE15UGdTWHR2OEVBNXpITVFLMlBwOE10WXJ6WDMteTFJTTFJOTNRTzZNcTNKY1l0amRsb09jNXJBQk1zUEhmODVHUVcySndwR2ox0gFWQVVfeXFMTzZucElmZ2ViZFl1ai03dmdSNUxWZE5lWXRtN2diaGhJRnRYS2J6NDk2Q25kcDZTdnBTMy0xbnlsY0wyX0x6ZnlXUXF0SkFveWxHVXZTOVE?oc=5" target="_blank">КТЖ вводит скидку 10% на ж/д билеты по всем маршрутам - ortcom.kz</a></div>
+    <div class="article" data-date="2026-10-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPeGprWGNQNmdiZDR5OV94aUVpbnRvbV9OQ3FQLXJpMFBmYm5TSTI1aVEwZnktbHB3dWZwYUJOYTBhVzFaZGJlY3h1ZWJZM2FNTmtNaG9pZE5STHFTV1Zsb2NJM0hXTGZvMGhIRW5KamFxZ3RaTWxsazhQLXJtX3BtM3QzYmNNYmNIMHA5alVvT0NzN1RRSk9XNVRR?oc=5" target="_blank">Air Astana открывает прямые рейсы из Алматы в Токио с 30 ноября - SteppeNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.10.2026 11:22</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana открывает прямые рейсы из Алматы в Токио с 30 ноября - SteppeNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-03" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPRl9xUVBnUUE3cG9yZ21YTFZiYm05RTB2MGUyTHpvb1VzNFN2Y0RTMkxpcHFBbUtVVnpwMG1DRkIyRVFkcXplX25JNU53Y2dfRUd0WGxyeE50dnlOcUpiZ1NURjlFM09USEszS0ExeVNyS3ZsLXlfdWFFYmduRUN0MGhHRWZFYUZDQnQ0VFAyYXVfYWprZmNWUUdNN3JuY0VyQzlfd3F4V05VOC1UYTJ5eTZyS0N4TFk?oc=5" target="_blank">Замглавы КТЖ проинспектировал реконструкцию вокзалов в Актюбинской области - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 01.10.2026 11:24</span>
+        <span class="date">📅 03.08.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ вводит скидку 10% на ж/д билеты по всем маршрутам - ortcom.kz</div>
+      <div class="art-summary">Замглавы КТЖ проинспектировал реконструкцию вокзалов в Актюбинской области - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -149,28 +191,105 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
     
-    <div class="article" data-date="2026-10-02" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaDdFWmxwcnRvQ2c2RE9KYjZWZ1JmNXhuUWVHQ2F6clVVVHBpSXE0MmdLTVFBVWNhOEhPNVJOY050S0lwMHhmcWpfQmVCX0dFZy1wUmNySDlBTHloTTNGcU5lRVBTWjZrN1JCeWxmYmJjYklielc5cHN0YnpPTXhtWk1xRlJOODlZc1owbmVDZGU5R1QwZE5QdUM3NlM0b0c1N09nc1NhalJMcTjSAasBQVVfeXFMTWg3RVpscHJ0b0NnNkRPSmI2VmdSZjV4blFlR0NhenJVVVRwaUlxNDJnS01RQVVjYThITzVSTmNOdEtJcDB4ZnFqX0JlQl9HRWctcFJjckg5QUx5aE0zRnFOZUVQU1o2azdSQnlsZmJiY2JJYnpXOXBzdGJ6T014bVpNcUZSTjg5WXNaMG5lQ2RlOUdUMGROUHVDNzZTNG9HNTdPZ3NTYWpSTHE4?oc=5" target="_blank">КТЖ установил исторический рекорд по погрузке зерна за сентябрь - 24.kz</a></div>
+    <div class="article" data-date="2026-10-02" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://en.tengrinews.kz/news_overview/the-president-urged-to-change-the-approach-to-ai-273988/" target="_blank">The President urged to change the approach to AI implementation at Kazakhstan&#39;s enterprises</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 02.10.2026 04:35</span>
+        <span class="src">📰 Tengrinews (EN)</span>
+        <span class="date">📅 02.10.2026 17:38</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">КТЖ установил исторический рекорд по погрузке зерна за сентябрь - 24.kz</div>
+      <div class="art-summary">The President urged to change the approach to AI implementation at Kazakhstan&#39;s enterprises</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-02" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://vlast.kz/novosti/71087-air-astana-v-noabre-zapuskaet-pramye-rejsy-v-tokio.html" target="_blank">Air Astana в ноябре запускает прямые рейсы в Токио</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 02.10.2026 16:30</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana в ноябре запускает прямые рейсы в Токио</div>
     </div>
     
     <div class="article" data-date="2026-10-02" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPZUJRd2o0dnFYUWVWU2pnN1BkZnJLRFFQMHJjazlBWjY0bl9GMHRwdmZEcVRXQlJSdFR4Q044S1I4dmJEalBwQkNrQkN3ZHdqRlRTNXpUUHlwbi1NcmVkckptMmJ2dEZtNnJxc3JQcERaNjZ0U0ZZLWdKa3pHSUFNN2VJenZ5ZTctblFHRFdzeGdvZw?oc=5" target="_blank">Рекорд по отгрузке зерна установила КТЖ в сентябре - Регистр ТВ Казахстан</a></div>
+      <div class="art-title"><a href="https://astanatimes.com/2026/10/kazakhstan-denmark-set-course-for-deeper-economic-and-connectivity-cooperation/" target="_blank">Kazakhstan, Denmark Set Course for Deeper Economic and Connectivity Cooperation</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 02.10.2026 08:56</span>
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 02.10.2026 12:12</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Рекорд по отгрузке зерна установила КТЖ в сентябре - Регистр ТВ Казахстан</div>
+      <div class="art-summary">Kazakhstan, Denmark Set Course for Deeper Economic and Connectivity Cooperation</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-02" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPTGZIZ2ZxS2NGc2hGM1lpTkZmV3JqaWg1MXJaRXB2THVtSFhKSEpkYTBvaG9IWWg5RmRyV1ZhLXh3UG55MEc3aksxNDBJQmJCSF85MzdTSWd2LXhBcXktb0RidThmTVVQbDZ2YW02WmwtSDMtczJ0YU5IcGdhQjNWeDVDazZnSzd5ZmJZalhlYmt1S05BOTc4Y1lDeDNSUTJOSXfSAaIBQVVfeXFMT0xmSGdmcUtjRnNoRjNZaU5GZldyamloNTFyWkVwdkx1bUhYSkhKZGEwb2hvSFloOUZkcldWYS14d1BueTBHN2pLMTQwSUJiQkhfOTM3U0lndi14QXF5LW9EYnU4Zk1VUGw2dmFtNlpsLUgzLXMydGFOSHBnYUIzVng1Q2s2Z0s3eWZiWWpYZWJrdUtOQTk3OGNZQ3gzUlEyTkl3?oc=5" target="_blank">Из Алматы в Токио без пересадок: Air Astana запускает прямые рейсы в Японию - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.10.2026 11:12</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Из Алматы в Токио без пересадок: Air Astana запускает прямые рейсы в Японию - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-02" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOQkRGS3JqQ08zVzdvb0JsMThtVFJoTFpIN2dKdWR2WWJDSDZTM1JHN1dlMWFSR20wSXY4NEJTU2tqRm1TTmxwWS01eUpUSGpxY2pRZDdiZ3JLWXdXM2xxenlIa1Y3ZUsyWDVDLXFCQ1pYdWsxVUhWeEQ3bGU5MHQxamotUi04VW04aFpsTjdSZ9IBlAFBVV95cUxQenZhRzYxZklHb3JWaEtKWHZBZnNOTXFBRkJUTTJPeWJEYTZfY1VGeTd1R2lTcXlHV2Z4V2hEcWRRcFZDYU9WTVhiQXB4Tm5fQTdnT2hCTFFlTmp5MTFvN2RlOGU0OUFJbGUyazRsZHhDLTJtMUpQTm5Fa1VfTTJpMXg0NzFZTDZrYjVCMzNQd2pPWllk?oc=5" target="_blank">Air Astana в ноябре запускает прямые рейсы в Токио - Vlast.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.10.2026 11:30</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana в ноябре запускает прямые рейсы в Токио - Vlast.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-02" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1Ha3duMWhveDVCWWc5NFhuT2VWODJXZ01iYWcydC1WeWRpYmtPalpaTzhxMVZBS3hNdUM5TjZNY015YjF3eXc4YWw1YlFNME80aGJqdDdUaHpfMVkwUzhFb2FQUUxXY0lNaGRZMXZKVVphRXh2OG1n?oc=5" target="_blank">Air Astana запускает рейсы в Токио - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.10.2026 11:15</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запускает рейсы в Токио - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-02" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9mb1dLOFF5eFBMY0VIMk5wV1JtMTR0OXdmX1F5NXU2MEoxNjJ0RFE2dmV6ZnBZUWFXYVlBQWpQOGhnZ05iUXpBTjJOZVd2LXVKRndUZFZlUTlOQ01KanN0UWdtSXIyUXFRV0tHUEpoVFAxcFBFOUdJN2FQQThLSTQ?oc=5" target="_blank">Air Astana запускает прямые рейсы из Алматы в Токио. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.10.2026 11:15</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запускает прямые рейсы из Алматы в Токио. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-02" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPYnA3dHFPeGNDRTVsUGl1WkJ4MEZGXzlhSlNrZnJxWE8zQnI0cTVkRDM3NEdCMzd6SDk2Qm5ZOFI3LWJPQ2RUWVR3Wm9QMnoxV0txcXJMTWswc1ZZR3h3LTY5ZTU4NU41aV9rTUh0V2VNODdMbDh4Y0Q1OEQxLXlTVkxYVlhtSDM1eEttMlpsb2lMUklsWWJDV2JGQU5ITjhVY3hXdw?oc=5" target="_blank">Air Astana запускает прямые рейсы Алматы — Токио: сколько стоят билеты - finratings.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.10.2026 11:30</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запускает прямые рейсы Алматы — Токио: сколько стоят билеты - finratings.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-02" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOME1hVGJ1TENzWmFKc2ctaHh1djVTWWhFWUtmQ2dxOWlfcnJzb1ltbjdMUnRlN0dNZ2oyLVA0ZnFfcVNCOW9xRHJmdmxrTnp0Y2JUNjdia25qM1gyWFRjWENXWll6Q0k3MmdCaDdSRmFCMERBdGpTM3dSOVJyVDRWWU5RNmlLTUVzZkZxZFhBNUNSTHlFUFJGSlVwVFRYS19wdWZkUHZYSmQ0clJvSXVvMFF4WXJ3Qmg4T0E?oc=5" target="_blank">Студенты представили цифровые решения для КТЖ на хакатоне «KTZ – ALT INNOVATION» - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 02.10.2026 11:58</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Студенты представили цифровые решения для КТЖ на хакатоне «KTZ – ALT INNOVATION» - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -232,7 +351,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-02';
+  document.getElementById('date-from').value = '2026-08-03';
   document.getElementById('date-to').value   = '2026-10-02';
   applyFilters();
 }
