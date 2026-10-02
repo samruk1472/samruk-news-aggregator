@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 02.10.2026 18:15</div>
+  <div class="meta">3 источников · Обновлено: 02.10.2026 20:13</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-13">
+      <input type="date" id="date-from" value="2026-05-04">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-02">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -107,50 +109,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-10-02" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQaEVJVTRRcGZiSk5Gc3pWalkzNkVCUW5UQVhRWkFwUmwyeVMxZjRhVERJRndldjdZWDBsVmU1cm8zT3hkYy02WGlMVmxsTDhNaGpya2JwbEVVNW9namM2dUJmclVBU0NOLTFwMlJnOVZRNW9kaUdUN0RSYm5mV05PRmJOV1I0LUItejVLTzZTeDZJQ2VGNE1BNENNU0JzRUI0ZGpjTUZsajVmeXFVRGVkbEIxWnBta1d5MUpoSkI0OUJOYjRz0gHQAUFVX3lxTFBidlNmZXRMMnNRY3owYlBYU3dNRW91aUJXekJtc045MW5vVjNuSnNycE1uM1BOMUowcWc2OEw2VzZxdWlaTzZ1d0tWUGZvTW5wb0tLbEE5V3haZG55NWZsUUxINGg3MlV5MkxYNFRORUNJYjl3MXFnNzlNVTVyaGtRTHRpNUJWZ1JRMTBDVFQtUFhYTVpQcTY3anpsQUwyQ3VzOE40eUZ0ZTJodFl6NjYtQWlFWG5TOEtHMTRDNnlzbXlxS0Q4UFctOHY0WUNybE0?oc=5" target="_blank">КТЖ обсудила с основателем 01.AI внедрение ИИ в железнодорожную отрасль - BAQ.KZ</a></div>
+    <div class="article" data-date="2026-08-07" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQYVluemtKWnZ1TGdoM3pGZTZtYnctVU04cVhOc1hhXzRRbHVqWDEySmwzSVc0WTZMS19VNEhEUGIyeGlYU3lmWFpVa1BXVUE4UmRJNmhtdGVJRVRNZzYtUXp3d2xJV3k3TXJITW5Ya1RRdlJUdFRMcU9mN1l0cWNXcHk1cFlOakZHSFVuT3pZOUVUSnVmQnpKLVN2eDJyV3lxMlNYdl8xempZZ2g3dGwzZdIBtAFBVV95cUxQSnJ3NDE0QVJZeWZHLS1SVlRTdGJlZld5N255dmxKNi11QWpEeVY1THJNb3FTbVpPQlJfUzg0ZFVhcnBIRHVXR2lUMkFvZktlWnVyWVZxSlNUbXFNdTd3MXVvelVUOWxtN29za3JCRDR1VE9fT0pQWTZ5Ti1yZTVjN05JNklESlNZaENTNl9ON2Q0WVpJMVNMOUtCckFuYXYwQ2h5d2FHcTdWRXdLSnhNMzJabE4?oc=5" target="_blank">Новые горизонты: общественный совет «Самрук-Казына» оценил планы «КазМунайГаза» - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 07.08.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Новые горизонты: общественный совет «Самрук-Казына» оценил планы «КазМунайГаза» - Ulysmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-20" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUkY2SFFzWHpuU1Q3MXN0dVc1Y3hDV2NUUWUzeDNMVXRfMVlqZnppXzhDUXk4SjY1RDNzMHVFZGxQY181ZjdaUkpOODFsenBUMktKbTkwQzVVLXBrMnpaN0hQODNwTUJQY01ibnlTZTk2MF96c290MmJwNGhjQXZQd25jaFQxaVE3NlNn?oc=5" target="_blank">Самрук-Казына готовит долларовый выпуск облигаций в сентябре. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 20.08.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Самрук-Казына готовит долларовый выпуск облигаций в сентябре. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-04" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNS2F5UmxXZkV4QVQ3QkM5Q2R5ZnJXMWZaSUdsd0dEV0IzN0JsWVkzZ3k3S1o1SmYzaUdHTXZUMGNZU3YwQkNiUERtWUR1Rzh1NjBPZmd6dElmTzZhLUprX0FpT0dEaVowZWFoZFZZQjVaWnVWdkhzN0poaFJQbnFhRl9iN1hnaU1COHMzZThhUllKUE0xcTNrVk42SzTSAZsBQVVfeXFMT3puTWJkR2pBcjFpc0d2bkVQSkZGOWM2R19nUWtvV2thcFJ4cm1kLUhVRVByRjVEanJkZ19hbE9mc1lLamF5b2t1aGU1Y3o1NDRDNEpTeWZIeDlMYm1rMFFha19nWmFac1Fmek5KLV91Rkk2QzVLek5wcHV3VUZxWGlycHg5LXIxRHU1MGVtU3lHOEtGcE9WT1lRbXc?oc=5" target="_blank">КТЖ дополнительно обеспечит 16 тысяч мест на майские праздники - BES.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 02.10.2026 17:32</span>
+        <span class="date">📅 04.05.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ обсудила с основателем 01.AI внедрение ИИ в железнодорожную отрасль - BAQ.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-13" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPSkJaWUFGZktfTUtfcjl6Y1o2emdyYU1HeEk1dnQzdWVOMWhBalpkM2ExcHRNcXhoZExUajNSb1BTTENhbVBhYnF0cUprZ2VLdlNyRUJ2bFpCdUN1QTZiRXRRaGpzX25pbUxjYTJrQmtRNmtfRFF4Nl9ScUNCOEFYOGx1eGlEbmJaSlFQNTRMVUNDa3U4R2x2MzNTcngxVzlZY3hrZFpn?oc=5" target="_blank">IPO КТЖ пройдет одновременно на трех площадках: каких именно - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 13.07.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">IPO КТЖ пройдет одновременно на трех площадках: каких именно - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-30" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOdEhHNHNNVjZodzRWdTQzc0lWbjM2RVF4MGFLOGlGNGl0am5kSExiRnNmQ001YkE2ZC10NG5kdDl6TVdaZXRUNW1WejUyc3Ixck5FNkxJTkZOc3VTdV9YLWRMX1VvZDdDRUFISm8ybG0tZEtCYkNLbXlnOW5DUFJ4M0tPMTVTM0tpTTB0V3hJdVJYaXVhbVJCRXB5MDhWOGRsR0tiZHllN0poZzBzdUtxNlZvVXUyeXQ2SkQ3cNIBuwFBVV95cUxNZWkwN081X2tjeXRqekEzSDRFQmZpalBYaFMwang5YjVJd1dlLWJXd0xMdDR0RlEyREVTZm0xUFVDa0p4NUF6WDhKTE8zV1JnV0Z1d0ZVUURHZXNreXUxUjUzTVR6N3RIck85aDByX1h1a0dCUmVnc2plM3RSWEh4Z2l2QnJHd0ZVWm5uWjc3VEVPWXZqMkNXd3lVcU80MW52TERRT05IcGZWSjZYMjhjeDh0cDBKMlJKMFRR?oc=5" target="_blank">Оптоволокно заменит устаревшие медные сети в Казахстане – Газинур Раимханов, директор по эксплуатации технического дивизиона филиала АО &#34;Казахтелеком&#34; - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 30.07.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Оптоволокно заменит устаревшие медные сети в Казахстане – Газинур Раимханов, директор по эксплуатации технического дивизиона филиала АО &#34;Казахтелеком&#34; - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQaThDcjJXOW5mcENvSWJCbXV2Z2djSWtUQTBLM2dMYmR6VHM0am5BNC1NS0RPd2ExOHBJbldHYkFGUnJqVExBUzBSNXFuaVdNNWJQVHd4dVJBT2VXTUI0WF9pU2E3bEo4dG4wNUExcXJyUWRhTWZITURZdFhuX0xuRFVHVmhGbmV5OTRMTWVhNjNYT3F3N3lWYlVfVy0yZw?oc=5" target="_blank">Минцифры и Казахтелеком прокомментировали сбои в работе Telegram - Bizmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 13.08.2026 09:18</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Минцифры и Казахтелеком прокомментировали сбои в работе Telegram - Bizmedia.kz</div>
+      <div class="art-summary">КТЖ дополнительно обеспечит 16 тысяч мест на майские праздники - BES.media</div>
     </div>
     
   </div>
@@ -160,15 +151,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-09-02" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOQW9lV3MzUXItdUV0RURwMXExLU16d2NZSzhIU1pIY0tPR3lUelEza09mblI4WnR2cEFSWTFnQ25Kb2ZhSW1MVGtUR2hld0dZclBjSklCT1JESzYzRDAwNHQ3RG00enpBV2RuU1k3ekVsN1JveWdpYk9CRTVTQm9RWHh3eG5IZm5nM1NkYmI0NkJpWVVLZzVF0gGWAUFVX3lxTE5EbVRyT25KcnIySGctaERUNTZvZHBkV2c3TEtkazhrcVV2QUE4bHplTVN0aU04NU0zQ3NURkVVUkFVMzFJRUNYd3hkblBQek5jUWlwNzFIeGJSOGdxal9fWVVnTE9LQW1xTnNVQktCRV9uOXJWYnQwdjdOaXI2MDZvZ0xKNTNHTElUaFQyNXlaT1gxaWNOQQ?oc=5" target="_blank">&#34;Казахтелеком&#34; переводит Тайыншу на оптику со скоростью до 500 Мбит/с - BES.media</a></div>
+    <div class="article" data-date="2026-10-02" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNVERYYmo2cm9HUmoyMndhSHdCQlgwaXNLNTVfZldaZHEwV3J0TUtSNjVKS1owNUR1ZkF5eUh2U1hhMkRNR2ViY0dDNVZqT2lUR0F0M3U5U0xOVW5DN19waGlqcExnckp2YWlYNEJVNDhWWmRoc0JzX2hkeEd5VTl0aHlJMmc?oc=5" target="_blank">Air Astana запускает прямые рейсы из Алматы в Токио с 30 ноября - Правда.Ру</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 02.09.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.10.2026 19:34</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; переводит Тайыншу на оптику со скоростью до 500 Мбит/с - BES.media</div>
+      <div class="art-summary">Air Astana запускает прямые рейсы из Алматы в Токио с 30 ноября - Правда.Ру</div>
     </div>
     
   </div>
@@ -230,7 +221,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-13';
+  document.getElementById('date-from').value = '2026-05-04';
   document.getElementById('date-to').value   = '2026-10-02';
   applyFilters();
 }
