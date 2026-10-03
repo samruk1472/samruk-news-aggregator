@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 03.10.2026 09:35</div>
+  <div class="meta">4 источников · Обновлено: 03.10.2026 12:10</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-17">
+      <input type="date" id="date-from" value="2026-07-02">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-03">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -88,6 +88,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -107,17 +111,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-08-18" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTE1ZQ1dWRlMtOXVLdnJzV2pFaVBQUkRWNmdrYnprd3pLOG1EWnNucllsQ0hFRjdydlJmcHVyMEZ1ck1jQQ?oc=5" target="_blank">&#34;Казмунайгаз&#34; снизила производство полипропилена на 4,3% из-за поставок с Тенгиза - Rupec</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 18.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">&#34;Казмунайгаз&#34; снизила производство полипропилена на 4,3% из-за поставок с Тенгиза - Rupec</div>
+    </div>
     
     <div class="article" data-date="2026-10-03" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://vlast.kz/vlast-qazaqsha/71091-kazakstanny-bir-aptasy-kyskargan-zrdemaky-tizimi.html" target="_blank">Қазақстанның бір аптасы: қысқарған жәрдемақы тізімі</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOZzNGTVliSnFsb2VaQ3VrTUg0S2MzVm5fdTRPOC0xQ2VQZFh3ZFgyTXJTSGJTaUJRSVp0aURmaXlwVVAydWRMaVVTc1ZJSkI2cjIxSkRqTkZacE9sV096U3dsOGdZRzM3bVNmUVlQWkZHVHlLdXVaejEwaWRGaUNZckx6M2NkSUhkeVkzcWhJSQ?oc=5" target="_blank">Air Astana запустит прямые рейсы из Алматы в Токио - Newshub.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 03.10.2026 11:20</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 03.10.2026 04:03</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Қазақстанның бір аптасы: қысқарған жәрдемақы тізімі</div>
+      <div class="art-summary">Air Astana запустит прямые рейсы из Алматы в Токио - Newshub.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-02" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOVjdvdi03U2VjZlJjT0xCM29lazRHTHBHZ1hLR2xqLVpPOFlockhpNVpLVXh6dWlZS2Zib1RFV3BaVXVEeGRsd2s4MzJyNEp4aS0xS1pQX1JfX1I0cjYtOTRRR29acjRzVlN6a2F3S2EtWnNtcWwtbkMxd3lRbEFoZlNWdHd2TFpzNzl4eVRSU0dPUE85MDRneU1BQXhrMDBxR2U2Q2tjMGxPSFhDdEprSV9qS3BQd9IBuwFBVV95cUxOdmNZVk9UOWVINDBTY0R2c2xSYmJLQi1PWkpuUlhHYUVnSmg5QUlzZ0dTdmphcXN3VFhLb3ZzTGVxMDdGS1lvWFJ3aXdLcGM4OC1lQUgxUWhZVjdGZTlZalVvaE9XTGRtcC1GcU5iRm16YWlaOFVZV1lHLXdjcDBEYkxlVVhHbENTWUZEWDhOdUxqbmdMTGFmODdnZzlsWWdqTm1LQ0NaQlpMdjVNTnhEOV9PTUhIdUowZTR3?oc=5" target="_blank">«Казахтелеком» завоевал две престижные международные награды на MWC Shanghai 2026 - Qaz365.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 02.07.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» завоевал две престижные международные награды на MWC Shanghai 2026 - Qaz365.kz</div>
     </div>
     
   </div>
@@ -127,15 +153,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-17" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQOWpZUkZhMkpHX3d3c1RmLTQ3OVVNR3lyX3JodVhBbnhiMElEMkpHSnBmSGwxWEhsei1LUXB1dnY2NGJnelE0NzNQR2VFYTRndUFDQkJPNzdFQTNkRGFaeUI0ekRsYnJiRnZwMFhpczZMbVBaclZ4eDhsRFlZNXh5d0l0cDlpU2hRbHp3VW9CSk5qVU5EV0lyX3R2QlBEVDRaS1VxNQ?oc=5" target="_blank">КазМунайГаз рассчитывает на прирост ресурсной базы до 4,7 млрд т - Neftegaz.RU</a></div>
+    <div class="article" data-date="2026-10-03" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNcENZQ2lhVF9LYjRVbnBWQjZLMVdNcGVmWnZzZVNtNnc2YWJyYmpiM1B6YjFkYjEwZWxWdHRmZTljRy13NTAwWU1HbWJUb2wzSnBiWmlSX1JHRXVBOGpNWE91Q1p3bDVoWGNmeW1WbkJZZEdaOHJOaW9ZWl9STC1MMWNrZk9wb0U?oc=5" target="_blank">КТЖ установило рекорд по погрузке зерна в сентябре - cbctv.az</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 17.08.2026 07:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 03.10.2026 10:23</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КазМунайГаз рассчитывает на прирост ресурсной базы до 4,7 млрд т - Neftegaz.RU</div>
+      <div class="art-summary">КТЖ установило рекорд по погрузке зерна в сентябре - cbctv.az</div>
     </div>
     
   </div>
@@ -197,7 +223,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-17';
+  document.getElementById('date-from').value = '2026-07-02';
   document.getElementById('date-to').value   = '2026-10-03';
   applyFilters();
 }
