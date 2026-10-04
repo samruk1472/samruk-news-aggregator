@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 04.10.2026 17:20</div>
+  <div class="meta">3 источников · Обновлено: 04.10.2026 18:52</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-18">
+      <input type="date" id="date-from" value="2026-07-28">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-17">
+      <input type="date" id="date-to" value="2026-09-01">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -87,9 +87,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -109,72 +109,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-08-22" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOU19rSkVCU0lYbmM0TFE1SE5ETDdFeEJpQUVGTzlQN09Fb0YtYWpZNjRPVkpLVkRTNDE4cGswT0JlT25Wcm13Q1ZVZ01aT19aSlVsVk5Bak5OMHZTSWhjRHp1T1VfSFcwRE14NzdTWDVQTk0yWHdGbDRoRjJ3VDhwUUZkamgxaGtBeW05dGd6RjNUTW9QRUdqVy02OGZESUpOYXdfelUyVQ?oc=5" target="_blank">«Казатомпром» намерен заключить крупные сделки с компаниями из Китая и России - Kaztag.kz</a></div>
+    <div class="article" data-date="2026-08-27" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBFR1FFUEs5RWdaRk5jSV9xRjdVSU45bVo0dEdnSkkzc3BPX3lrd3pDaTRXTlhoSnljUnR1SGsta2VRbklDakdkMEduNXlDN1ljTmxYVE53?oc=5" target="_blank">12,5 трлн тенге составила выручка «Самрук-Казына» за полгода - check-point.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 22.08.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 27.08.2026 07:00</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Казатомпром» намерен заключить крупные сделки с компаниями из Китая и России - Kaztag.kz</div>
+      <div class="art-summary">12,5 трлн тенге составила выручка «Самрук-Казына» за полгода - check-point.kz</div>
     </div>
     
-    <div class="article" data-date="2026-03-18" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNT1pYTWJmeFBESC1OSHh2d3JPX29wbngxeEZZS0lwSV9obDUzVjhnbk1PTkxNaTVvT3g0TkFFc1pfYThrd20tR1VScGtQSFpqQVdCZ3owalRmNlE1TlpvREJEQ3BTN2xTeWVLTEc0OWFoZXVKSU1wS05heDlJS3RiZHJNR1E0MjE1RkZwNkIzNDJJOG12?oc=5" target="_blank">Как «Казатомпром» планирует укрепить позиции на мировом рынке урана - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 18.03.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Как «Казатомпром» планирует укрепить позиции на мировом рынке урана - DKNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-21" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOTDlEcHA0RTRaQ3VhbEdFMkFIWmZlR3NsOHRocEhEc3pKRzZFRTJiQ2VrWWNmZ0VYc3N1cE12VlJCTkVDOHpRSE00b3JsQzJTM3JxNFh3TlUwXzRTaFhEWk1Pbmx6ZUx5MFhNS2hMaVhDbTVRRUUtRW1SbmhQZGxTTUN3?oc=5" target="_blank">«Казатомпром» согласовал урановые сделки с РФ и Китаем - Caliber.Az</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 21.08.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» согласовал урановые сделки с РФ и Китаем - Caliber.Az</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNejVqSzVPWjdOTVBHR3FGNkNrRkQ5MzRFWk9JQTZaaHMwZXd0aWN2dGNMdXFGZnBMZ3pZMThYaG9OZUN3TEFkNkkweU1iWGlrVFRoQmo3Z2hPTGdILWJzbXZoSHR5a3VPcEMzdzFINHJWRWlJTC15TjdCNkdDNmxabUx3SGZfSmhEa3J5WHhic3VWdF9fc3NUVdIBlwFBVV95cUxOdEdqdVFNd09YYU9hdWYtd3hpXzZhZTUtN3FkUzAybkpmVjVFVHRJYk14aWdRVHZZZ29MaGZEVWthTFdITlU2SHVadWZjdUxIMmpRdHhwYk05VVNUbkJzZmxlSDhJX0lqZ2Q1TUFkdzJtZFlhcUdiQ2UydmlkOEJhZ1FxeGFpREJYOWRzY1pJaWdrMVp3MllJ?oc=5" target="_blank">Air Astana увеличила выручку на 16% и расширила международную сеть - BES.media</a></div>
+    <div class="article" data-date="2026-07-31" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNdk1OeFNXX3RaWlpCVldKNWgtbG0tRkNZbVFyQUtZamtkalViNFlUUl9XVHpaRDFMV1RRX3VicWEzc1NfRFF1dnVyRHpKamRtODZDVC0ySUdsWnYzblhYRllwbFVvYVBVYUx0OFk5aUl4SFF0ZXRXRVZFTnVwTmJQTWNZakFIaUNocDhlM2Iwc3VqM3ZFVGlhVjNn0gFKQVVfeXFMT2lxRWgyUy13ZkhvcFQxQ1lCaDJpdUZlUFVkbjNpLVlWSDBPdGU2Ui1yTGVNLVlfZ0pOaXg1elh0LUtXcmpHZzdlUmc?oc=5" target="_blank">Air Astana продлила рейсы из Казахстана на Кипр до 3 октября - Вестник Кавказа</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.08.2026 07:00</span>
+        <span class="date">📅 31.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana увеличила выручку на 16% и расширила международную сеть - BES.media</div>
+      <div class="art-summary">Air Astana продлила рейсы из Казахстана на Кипр до 3 октября - Вестник Кавказа</div>
     </div>
     
-    <div class="article" data-date="2026-09-17" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFB4bzM0Y01hZ09MSEEzbHM5NkVRYlExVzVyLVFsQTlydjBoNnZjZ2d1MnlabEJqd0VaVWpfYlh4cE1UUTFRZWwwMEVaUF83emFXWnBEN2ZTdUFfSHNPaktnT2RoWXdJdw?oc=5" target="_blank">КТЖ повышает тарифы - inbusiness.kz</a></div>
+    <div class="article" data-date="2026-09-01" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE9qZzM4cG5rZlVvMlkxcGViendtTGpya0xqX0xCaGhRM1BabjY1UG45OEZXaGctaGFyM2lBMnJZd0tfWnN4ZVVLU29qOW1LNUlJN1NEMldBZ1dRcTF3N05RY2xYZFotNjUtakFkYjVMV2dWcFRhZDdpdlVFUlpDZw?oc=5" target="_blank">SCAT заработал в 5,6 раза больше Air Astana - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 01.09.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">SCAT заработал в 5,6 раза больше Air Astana - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-28" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNVGhIMUVQWWZrWFVDTUN1ZlEwWlpCUWZPTkMyUnRMaUpON2lULVZ5Q2gxODN6SGpWX2t5T2hzSkszUHR0MUlUa2RNMWdXY0hBY0NLOW5zLThiRUdoYk1mY2hFVzN4X2dpc0FlQVh5MnMyWHFjOG5sdjVMcGdxSS1sdjZFTFpWQnUtUVc4dDBRYVVIYVNkdWJGUXFXZHRydkE?oc=5" target="_blank">КТЖ связал Экибастуз с Великобританией новым маршрутом - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 17.09.2026 18:47</span>
+        <span class="date">📅 28.07.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ повышает тарифы - inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-04" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNT2RleXNsd3FEeWd2aTdjVktZaUhLendlZVBjRzh6emRlU0R2Rkt6YWlOSGFweHRCcDJoMzRfa21nUlNQU1c5ZjFsbG9qQTdvSXJNUUZjQkg4b011UWdmcGdEODU0eUZzN2lwYUIwemM0STRUczZNTWQ3cVRBRDZuZVJDRXJsRDU3cWhpSjI3dFVQeGRFREFuWGk3ei1DR0NiYXZ3?oc=5" target="_blank">Новый маршрут из Японии в Казахстан запустила КТЖ - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 04.09.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Новый маршрут из Японии в Казахстан запустила КТЖ - Kursiv Media</div>
+      <div class="art-summary">КТЖ связал Экибастуз с Великобританией новым маршрутом - Kursiv Media</div>
     </div>
     
   </div>
@@ -238,8 +216,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-18';
-  document.getElementById('date-to').value   = '2026-09-17';
+  document.getElementById('date-from').value = '2026-07-28';
+  document.getElementById('date-to').value   = '2026-09-01';
   applyFilters();
 }
 
