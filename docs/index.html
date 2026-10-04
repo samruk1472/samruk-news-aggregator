@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 03.10.2026 18:52</div>
+  <div class="meta">4 источников · Обновлено: 04.10.2026 06:39</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-09">
+      <input type="date" id="date-from" value="2025-12-03">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-09">
+      <input type="date" id="date-to" value="2026-10-02">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,6 +86,14 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -102,20 +110,80 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-05-28" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVWZjdUUyVDFvOTJSaVppWURLYWViczlFMGxLcU9ReHJGdGtYdUp4Rk83RjJJLVBJMjROTlhvZ3Z0MWRFME5Ya0RUdHVhdVpzQ25PbVVaMFRYWnFwRzFzampsUUp3RDA2SkxlNWV3TFFHR3ZVV0xaZUtZbG5xR3NHSEJkRktRZ0dvM1dvckkteUgtVHY1WFpUZVNWdDM1bUdKalFuQV8zYTBqUdIBrwFBVV95cUxQR1hKd1FOaVpuTFlOV0lDb0dXYjBTTjd1WlBSR2UwbXdLYVhSWnZQS04wLVJ6ZGU1VlRCbDVvdXhxQVFNd0VoT3NQLS1ad1kybzNxSV85d3BXUm9PVDNQM3NrVWliM0tYNV9yVzIwVldYdE5NbEpPVEUxdmsyQXlXVXk5REU1azJoemx0Szd2MUd2Wk5wdXBPY2NEZS1sS3hpVUJQMWU1dzAxNmdBQnNF?oc=5" target="_blank">Сокращение в &#34;Самрук-Казына&#34;: сколько денег сэкономила компания - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.05.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Сокращение в &#34;Самрук-Казына&#34;: сколько денег сэкономила компания - Новости Zakon.kz</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-07-09" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxNNXpvTE5QOHA5NGNDTHo5RjNYdlJzc0JRclFnaGdRUl9PLWlzaEd6LUtndk10UXVGcUZ4T1B5ZVdOZTJSZ2lvMUw5LVFDTXdacUU2c3d1Z3U0MXpEdzRsYUpuTV82X04tSEg1cWU1QTJoM1NLUnl1OGNwbkZJbE8tWEtKRm5UVkNod0dtYV84VmpnNjZmNldGTjFMRnFSX3FwaEI5cWVuRzBVM1J5MTIwZXJsUEpmRE4wc25IaTM0QWxfZWtacV9rX3N6ZlYtWmdi?oc=5" target="_blank">Тимур Турлов привлек бывшего главу Air Astana к развитию грузовой авиации в Казахстан - NewsTracker</a></div>
+    <div class="article" data-date="2026-10-02" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxOZEVZVHdYcWJidXdHLXpSSk9pVTNXMktkLTRZMVlsdE02T2VPRnF4RFh0VUF0NmxFZ0M3cE1Vak1oMjFKemV0aDZoaW9vamVqeV9aaFJ4RGFOX0M3QUVvLTBNR2s5T2pXNzJMVllxRm1iLTJJZVNHTFVIb1pTQTkxY2lkdGY0SzBWQ0h2TDFkZDI1VkZBYkNleXVQdEdHU25YdEowbG9Rd3hiU3ZaWXExTHBPR1pVWUVDZ3BXNzBiQjVZRkNoaDBn0gHGAUFVX3lxTE5QM2I4VEwzaWR5b3FjNmxiOEN6dUQ3Q05wUHJSZkpNcUowYzFYVE1SWGlKS0d6Wm9JMlY0SHRBRWRmaTY0a1FJRDNJVDZYMVF0UkMwMjRDd3JaYWViaW52WjN1Q3ZTOEF1Q1dBbFhCRUVmbE93RmdJY2txa1BnYVdUNUJTVm45VHVJWGQteFRnNWdPQ2ZrLU9QeFBQOE5WOXpLamlCMlp3VWw2M3RpSlNXTmhCTWpuRVVJRWhUVUM2ci1TZWE2Zw?oc=5" target="_blank">В КТЖ сменили председателя совета директоров и включили в состав независимого директора &#34;КазМунайГаза&#34; - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 02.10.2026 11:50</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">В КТЖ сменили председателя совета директоров и включили в состав независимого директора &#34;КазМунайГаза&#34; - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2025-12-03" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HeXMySlJ1M2k1aUNNNDlYRVpTLWNkQm9sU2hxaEtmeFB1STRneHVqZU40WTIyXzBEdllmQ0Z3QXYzeC1jbTR5cHYzdXFjeXZ4UmV4d2lVWVhYb21LVGZsSQ?oc=5" target="_blank">Казатомпром опубликовал свои финансовые результаты за 3-й квартал 2025 года - Атомная энергия 2.0</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 03.12.2025 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром опубликовал свои финансовые результаты за 3-й квартал 2025 года - Атомная энергия 2.0</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-11" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUUVETEpDTnF0bHcybUNfR3pFQUQ1SU8zdzB1aG44SGF2Z2JIU0l5WmdBUU9kTjQtNXhqdy05WEhWOF8yaFJOMC1xUkpwZkg2aEpnVWdvWkxGMEJ1OHJsUnZaU3Q1N2p4MjJTeEx3TVMtVHotclp6WmtLXzBOS1pTSllKRndDUGJ2WEVEc05CVllIU1lOTEZBazVzeENhY1NMNFRhbWQ0Y3lJLTg?oc=5" target="_blank">Почему «КазМунайГаз» и «Казатомпром» обошли Kaspi по капитализации на KASE - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 11.03.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Почему «КазМунайГаз» и «Казатомпром» обошли Kaspi по капитализации на KASE - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9RQ3htSGNqaTNyYWw0UllnZkpYM0w5aGVSQllDODFBQ0tLVU9OWDRMblYxZmJIX19teVhaVEpOS0hvYTFWelNKNWdUbXVuelNrcm1PQnJMWk96SDdHSXcybzBmaVdqeG45RHhOOEZUWQ?oc=5" target="_blank">Air Astana возобновит рейсы в Дубай - Masa Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 09.07.2026 07:00</span>
+        <span class="date">📅 05.06.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Тимур Турлов привлек бывшего главу Air Astana к развитию грузовой авиации в Казахстан - NewsTracker</div>
+      <div class="art-summary">Air Astana возобновит рейсы в Дубай - Masa Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-25" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNU3M5bXpsdURrQWtIcGY4b0FCTTA3QW1RQmhEeUZlRU83Um5zaU9peGdpMEEwcEhWOF9EM3dkckhSUWxpYi1TYTdBMVJEZUliWUlFVnhEMmVRemVrcUVUMUcxbFdDX1AzX1JRT2hyMFpnY252YnlyVFcydlhxZVBvNFhoWnMtbUlpS1FVS19Wb1djaUk1Ykp0M0V2S2dwdVB6RjNrM21oSlplQ28?oc=5" target="_blank">Более 50 вагонов Stadler для КТЖ не могут выйти на линии из-за технических вопросов - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 25.05.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Более 50 вагонов Stadler для КТЖ не могут выйти на линии из-за технических вопросов - Kursiv Media</div>
     </div>
     
   </div>
@@ -179,8 +247,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-09';
-  document.getElementById('date-to').value   = '2026-07-09';
+  document.getElementById('date-from').value = '2025-12-03';
+  document.getElementById('date-to').value   = '2026-10-02';
   applyFilters();
 }
 
