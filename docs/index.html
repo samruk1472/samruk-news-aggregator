@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 06.10.2026 18:49</div>
+  <div class="meta">1 источников · Обновлено: 06.10.2026 20:37</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-07">
+      <input type="date" id="date-from" value="2026-10-06">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-08-07">
+      <input type="date" id="date-to" value="2026-10-06">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -104,23 +104,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   
 
   
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNRG1VZmJ0bjRhdWZQeWxZellIVHNOM2NKQ3FtckF4d2Z6bXRkM1RNblN2NnZaUlYtc0E5NmltUnBYM2Fmd3dzeXJwLWlrSndsUGhuMUo2bFZQVkxTRUNoNTFlOHNRWHZOVXJhUkY2S2hJa3JpazJLaEItdExkOWtWZGVueDhlSGotUjNoRjYxTlJxNkZjMXNDRmdIUmg1c3c?oc=5" target="_blank">«Казмунайгаз» планирует нарастить экспорт по нефтепроводу Баку-Тбилиси-Джейхан - ИнфоТЭК</a></div>
+    <div class="article" data-date="2026-10-06" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTFA0YmM4Wi1fc0lxazFmS1l2YkZPTEFib2NQQUYycU5pRXRURVJLWjE2OUdFQ292ai1DcjByVlJldzV0YWw2cTBnTzBYNjI5Zzd0UWd4RFpWbGFsSTFIcnZCaXo3WHhtcTlDWnV0TGtUMlBFNm4xUDBuMw?oc=5" target="_blank">Самрук-Казына и Oman Investment Authority создадут совместный инвестфонд объемом $150 млн - TradingView</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 07.08.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 06.10.2026 11:24</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Казмунайгаз» планирует нарастить экспорт по нефтепроводу Баку-Тбилиси-Джейхан - ИнфоТЭК</div>
+      <div class="art-summary">Самрук-Казына и Oman Investment Authority создадут совместный инвестфонд объемом $150 млн - TradingView</div>
     </div>
     
   </div>
-  
-
   
 </div>
 
@@ -179,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-07';
-  document.getElementById('date-to').value   = '2026-08-07';
+  document.getElementById('date-from').value = '2026-10-06';
+  document.getElementById('date-to').value   = '2026-10-06';
   applyFilters();
 }
 
