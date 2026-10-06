@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 06.10.2026 13:50</div>
+  <div class="meta">3 источников · Обновлено: 06.10.2026 16:30</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">6</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">9</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-20">
+      <input type="date" id="date-from" value="2026-07-14">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-10-06">
+      <input type="date" id="date-to" value="2026-08-13">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,10 +86,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
@@ -110,96 +106,129 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-10-06" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-06/fvfv-na-atyrauskiy-npz-podali-v-sud-posle-zhalob-zhiteley-goroda/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-na-atyrauskiy-npz-podali-v-sud-posle-zhalob-zhiteley-goroda" target="_blank">На Атырауский НПЗ подали в суд после жалоб жителей города</a></div>
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBuT2JIcFRaamQ3MmRvcENIa3l1bFZ5cXZJSnhuSjZwN2F4VmhSNDhPTUQyTmlaVVgyaGF5S0tMaXB4OFJqdUV4WXIxU2dyWjhhbnfSAUtBVV95cUxOT09qbks2MllzX1BRcjhsWUJpZzJjS2tsVlA1WXVUVEhYWGE5THVEVTZfOUFieE9vVU56RzI1M1F6ZzVPRDY4QXZnTXc?oc=5" target="_blank">&#34;КазМунайГаз&#34; пока не видит альтернативы КТК для транспортировки нефти - Интерфакс</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 06.10.2026 13:10</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">На Атырауский НПЗ подали в суд после жалоб жителей города</div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; пока не видит альтернативы КТК для транспортировки нефти - Интерфакс</div>
     </div>
     
   </div>
   
 
   
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
     
-    <div class="article" data-date="2026-10-06" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/investments-air-service-and-geological-exploration-274053/" target="_blank">Investments, air service, and geological exploration: Kazakhstan and Oman signed agreements</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 06.10.2026 16:55</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Investments, air service, and geological exploration: Kazakhstan and Oman signed agreements</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-06" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-06/fvfv-ktzh-hochet-podnyat-ceny-na-uslugi-passazhirskih-lokomotivov-v-poltora-raza/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-ktzh-hochet-podnyat-ceny-na-uslugi-passazhirskih-lokomotivov-v-poltora-raza" target="_blank">КТЖ хочет повысить на 50% стоимость услуг для пассажирских поездов</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 06.10.2026 12:14</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ хочет повысить на 50% стоимость услуг для пассажирских поездов</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-06" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-06/svan-kazahstan-v-perspektive-smozhet-obespechit-do-15-mirovoj-dobychi-volframa/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-kazahstan-v-perspektive-smozhet-obespechit-do-15-mirovoj-dobychi-volframa" target="_blank">Казахстану пророчат до 15% мировой добычи вольфрама на фоне гонки США и Китая</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 06.10.2026 11:48</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Казахстану пророчат до 15% мировой добычи вольфрама на фоне гонки США и Китая</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-06" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTXYzWlloa2tEN250ek9BczRLZmpuOUh0djUwcmpPTXhDRG1weEtfYlJSSjVwQWNDeXR0bGV1bFZuZE03NUFacXRqb1NZZjBsTVdLWVBLcFNEVk9FbnJIQklva1BsY0xCa3NYOG12UVQwRVNrOHFpRkhncEdqbUZiZTV1cFV5bFBNbzFPSHZWOTk4VHlWRFZ3RTJaUkpBWHAyRHVDWnpQQnBwNkRaY1NFZWI3N01JMTlaeFk4REZuOXR4bi05cl9JMzh0c2RiTG1KV2c?oc=5" target="_blank">Самрук-Казына и Oman Investment Authority создадут совместный инвестфонд объемом $150 млн - ru.themoscowtimes.com</a></div>
+    <div class="article" data-date="2026-08-07" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNN1lpTzhSLTNvZ3o3RHJzS2lKaVBsMUNxQi1WXzlubXlDeWVGMDlRcGxrNmJZbGFodGRUdGNkMS1ULUFWUVJHekhCNGV1UHNOTU5DTExJNmp4TmVYUzV5cGJfOExWSHJvSmdzV0tfdEduRlcyV1VUZU5neDA3UnB6ZDVhLUFkeXdtM2tVUjNDM3BjM0lwcVEzZw?oc=5" target="_blank">Зачем Минфин передал свою долю в ERG фонду «Самрук-Казына» - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 06.10.2026 11:24</span>
+        <span class="date">📅 07.08.2026 07:00</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Самрук-Казына и Oman Investment Authority создадут совместный инвестфонд объемом $150 млн - ru.themoscowtimes.com</div>
+      <div class="art-summary">Зачем Минфин передал свою долю в ERG фонду «Самрук-Казына» - Forbes.kz</div>
     </div>
     
-    <div class="article" data-date="2026-08-28" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE9wVWoyRVcyUk9LcTdENUlzVy1oc0VDREYyOUJ3d2UzZm5aSXlkeGVoNUp0c1RRdU14eGZhRFZuZFdBejJ2RkljdHhYNzM?oc=5" target="_blank">«Казатомпром» заключил офтейк-контракты на 1,3 млрд тенге — Тазабек CA - Tazabek.KG</a></div>
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTFBkZ3Ewd1VXalFKNEJHTmVnSjRKX2hMNGlCOFJkRWl1VkZMRE1JQTc1SWYwLUZCNVdvQVczamxtUmVaWEw0MS1FNkxwX215Z9IBS0FVX3lxTFBxWUV6QWRQUWpLWHM1cWxRYUFWXzVjZjZRTlB2ZHdNLS14Z2J2eWNZYnNQRWE3VUw4WlNTdS1iWFp5Tkl0MzhLcnotUQ?oc=5" target="_blank">&#34;КазМунайГаз&#34; планирует увеличить экспорт нефти по БТД в 2026 г. на 31% - Интерфакс</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 28.08.2026 20:04</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 07:00</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«Казатомпром» заключил офтейк-контракты на 1,3 млрд тенге — Тазабек CA - Tazabek.KG</div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; планирует увеличить экспорт нефти по БТД в 2026 г. на 31% - Интерфакс</div>
     </div>
     
-    <div class="article" data-date="2026-04-20" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAJBVV95cUxNMDlvbzZjdVAxak0xa1IyTEtzblBFaHdCODUxVFlGclpDS3BjcjJodWFOUTlqU2FYRFN6Vm0tZzBvd2JJZ09GZGZaMjBUMEk1ei15ZHY2WkRLV0dpNjBRU3NtTzljSWFtdHotcDhPVmNZd1lzN3BLWkFHR1JpNjJ2TGZfdV9sX2dicmFQbDN0VGVyRENjUmNtcE5MVkszV3lKSU1Pb3NQLU5QN0RERzNWTjNXR1IwMHZpODF3cUJyd2pHUEM4empRaTZqYkxHUS1DSFR3Qll6U3ZDZ0FmUExNb2p5b1B0d0FQMTN6UXZ4UlVmUDZHOUZ5b1V5MUdsZFlFMl82bWdvbTRsakk2?oc=5" target="_blank">&#34;Казахтелеком&#34; усиливает социальную повестку: поддержка сотрудников, доступ к интернету в селах и инвестиции в человеческий капитал - NUR.KZ</a></div>
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE10VkJYUFFOdHRHc3lpVWdiY0JfLWhJQ3JnQy1ZbXUzSzdiVWVLRmoydTJoQnZiTEd3UEpBUEVFRjhkOEp0emRydHY3UXBGX1VyRWfSAUtBVV95cUxOWDV2cmdIMnlLRE43MmRmQ0V6SVNkN2lZZG4tYnl2RXVqblUtOFZFbUxLQ2xDbUE0QnBDTGhpc0pjNmg5SGdKTlFoR1k?oc=5" target="_blank">&#34;КазМунайГаз&#34; в случае сбоев в логистике использует для хранения нефти резервуарные парки - Интерфакс</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; в случае сбоев в логистике использует для хранения нефти резервуарные парки - Интерфакс</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOSVQ3ODJTbXpMWTZCSXgyT19ZU0ZmN3hTa3V3TnY0ZGM5U3JNY1pzdnRNY0FWYThwdi04R1NuZ1dRNkpvRVA3clhUeHp4YTROekxONEY0THh1anVPb3o0SFo1VUFlYUU5cXVLSEk0VVJQREdaSjVjVVZ0NWpia2VpRFIxTzE4LWgyRG1DZ3N4QTNwNXFtTHZUc19YbFN4UFlqNUg4WW81MDVCa2g0RFZueFlBMXlLTkE?oc=5" target="_blank">Казмунайгаз планирует увеличить экспорт нефти по БТД на 31% в 26г--ИФ - Русская служба The Moscow Times</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз планирует увеличить экспорт нефти по БТД на 31% в 26г--ИФ - Русская служба The Moscow Times</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-31" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE85ODlpN3g4a3ZuNzJpQUVDQ2xOWkI4dlU4aGpwSEhiYVBCbnVSMlNSQ2wxWVhVUEhELVVnRHRxMk14OVJsSVNZVlMwSEVic21sM2tqZXZCdVNmTlYyakxOTlJmT0FzRlUwek1iUkF3cXBERVRoQ1RR?oc=5" target="_blank">Казмунайгаз и CNPC планируют увеличить мощность казахстанско-китайского нефтепровода - TradingView</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 31.07.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз и CNPC планируют увеличить мощность казахстанско-китайского нефтепровода - TradingView</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBOYUNmUTdockRLa01WVDRTRmRuUWFBandDOVpUZkd0YnQtSlpRaXpiVzZUQ1FiU3VSWDE3WUE1aGJnOUk?oc=5" target="_blank">Казахстанский «КазМунайГаз» нарастит экспорт нефти через Азербайджан и Турцию на 31% на фоне атак на КТК - The Insider</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казахстанский «КазМунайГаз» нарастит экспорт нефти через Азербайджан и Турцию на 31% на фоне атак на КТК - The Insider</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiREFVX3lxTE5qLXJrMFRMVkxiNWNVd0t4Q3AwcnF1aEQyUHhwT0ZEeVVKTGhtZmNVX3VzSDFpWmJGLTJhVW9zZm9Wamta?oc=5" target="_blank">Казахтелеком назвал причину сбоя Telegram в Казахстане - Polites News</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 20.04.2026 07:00</span>
+        <span class="date">📅 13.08.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; усиливает социальную повестку: поддержка сотрудников, доступ к интернету в селах и инвестиции в человеческий капитал - NUR.KZ</div>
+      <div class="art-summary">Казахтелеком назвал причину сбоя Telegram в Казахстане - Polites News</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-06" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5peHRPZV83YmZidU00U29UZTQwSG1BTkd0OXBvQzFVWndydjhyVWtfcVQxMDZrLXVvZndCLVZkZ21DX3Q4ajJrZWNHeHp1WkhFSzdrX1dnaDNyQW5Yd0I5ZU5pWjF1Wjc4Y0c0bGE5R3lCQUVZU1BFbHNLRjI?oc=5" target="_blank">Работник АО «Казахтелеком» погиб в Костанайской области - Наша Газета</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 06.08.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Работник АО «Казахтелеком» погиб в Костанайской области - Наша Газета</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-14" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxOQWFNWkRPbXRLSy1RRnpFUEV3V0JuRk1DQkZtczFlVHFjWnFmdGVrb2ZZWThKWHlGcnh4X1FZTERJNlR5NXFEaG1OVUMxcWVPWDJNcjFwYlZkQk92YXpab2diTkpmSGNBTHlnRG5jNW5TdHRWUUJCTm0zVGk2QmZGbThpMWk0eFpVNTk3T1hGYkNQRjNOYWlJU2hrYV9pWWxZal9MNHFVMnE0VUlmUzNlZklPZE45dXBZM2NLb0pLaUxKdG5ub09zQ3BVdFo3V3FBckNLcWFQY2hnWVVfMzNLb0V4NXVRbjFJ0gHuAUFVX3lxTFBpVjZfaE9OWDhLVnc3cHRRLUR3LXVaSm44STl0U0NjSVVQcjVsT1NBajY4YXFUYk9oSUdiaDBFUEd6UVE3SV9uVkV3R3Bvb1FuSy1qMUFBNG5GczFjZkR0VGplUXYxajZYaklqRkNSeno2a3NuMFBpdWxlYU5OaVl5cXZoaTE2akpsUHpVZ01zUHVyV1c4MkJsczFQcjZ5MXRZOXM1N042ZFRfUjdiLTZFVXVRYm1UdUItOVR1SlN5REx0eFBUTXRxZ292QUlVSThiMVp1OEpWOGRVM1NGTm9idXNRMDR6TkpkN2J0TEE?oc=5" target="_blank">Антифрод колл-центр АО &#34;Казахтелеком&#34; помог предотвратить хищение 30 миллионов тенге у жителей Казахстана - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 14.07.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Антифрод колл-центр АО &#34;Казахтелеком&#34; помог предотвратить хищение 30 миллионов тенге у жителей Казахстана - Новости Zakon.kz</div>
     </div>
     
   </div>
+  
+
   
 </div>
 
@@ -258,8 +287,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-20';
-  document.getElementById('date-to').value   = '2026-10-06';
+  document.getElementById('date-from').value = '2026-07-14';
+  document.getElementById('date-to').value   = '2026-08-13';
   applyFilters();
 }
 
