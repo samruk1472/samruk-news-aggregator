@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 06.10.2026 20:37</div>
+  <div class="meta">4 источников · Обновлено: 07.10.2026 06:55</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">4</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-10-06">
+      <input type="date" id="date-from" value="2026-07-16">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-10-06">
+      <input type="date" id="date-to" value="2026-10-07">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -104,20 +108,91 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   
 
   
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-10-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/novosti/71132-atyrauskij-npz-otricaet-cto-dla-otdelnyh-ustanovok-ne-bylo-rascetov-i-normativov-po-vybrosam.html" target="_blank">Атырауский НПЗ отрицает, что для отдельных установок не было расчетов и нормативов по выбросам</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 07.10.2026 11:43</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Атырауский НПЗ отрицает, что для отдельных установок не было расчетов и нормативов по выбросам</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-16" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOYS1HblVld2RZSHBzSEdrNGc1WnFPSTM5Q1VKbTczdjZINTRXaXRSMms1QU5DMDgtaXpMUVFLajBYRGpFR0VMeGFwaWpHVE15VVRfUnR3bjZOV0lSekZPaXRtaEVSc2ZPblZqeWNOOUR5Y2tISTVyeGFyOGNUNDFpX2ktUGJSUjM3TkdQemR6Uk9DWGJzRFhjVElQWDLSAUpBVV95cUxQdFlZdHNmM1p5OUJWLXYteGV2UnRzb1RVNk1SS1Q5U0VvMXJuRmZ5LXoxemEySzNQLS1BQjNOSXpvalc4cVVpLTZXdw?oc=5" target="_blank">Казахстанская Air Astana до конца лета отменяет полеты в Дубай - Вестник Кавказа</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 16.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Казахстанская Air Astana до конца лета отменяет полеты в Дубай - Вестник Кавказа</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-07" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPVWh4VDZNMFh6OWVBQU5vLXJrNEFFTE1sWVVwUHp3WWIzZElBWDVTOGpkNUlxalFFTnBTNkJadmFYdlVlWHRfUW9PaHFyVU1raHB2cTg0SEtSdmdtc3JyX2I0N3RVbEZZSnBQOUZwSnFzak5UNDhMYmlPYkI5ZHAzSXZiUjhwMWRGRDBnTHhzcnhJdUtRYTNNVmsxZkFXZkhZV1hJ?oc=5" target="_blank">КТЖ провело ярмарку вакансий для студентов ALT Университета - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 07.10.2026 05:58</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ провело ярмарку вакансий для студентов ALT Университета - Қазақстан теміржолшысы</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-10-06" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTFA0YmM4Wi1fc0lxazFmS1l2YkZPTEFib2NQQUYycU5pRXRURVJLWjE2OUdFQ292ai1DcjByVlJldzV0YWw2cTBnTzBYNjI5Zzd0UWd4RFpWbGFsSTFIcnZCaXo3WHhtcTlDWnV0TGtUMlBFNm4xUDBuMw?oc=5" target="_blank">Самрук-Казына и Oman Investment Authority создадут совместный инвестфонд объемом $150 млн - TradingView</a></div>
+    <div class="article" data-date="2026-10-07" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-07/zhnb-atyrauskii-npz-obyasnil-szhiganie-gaza-na-zavode/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-atyrauskii-npz-obyasnil-szhiganie-gaza-na-zavode" target="_blank">Атырауский НПЗ ответил на претензии экологов из-за сжигания газа</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 06.10.2026 11:24</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.10.2026 06:23</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Самрук-Казына и Oman Investment Authority создадут совместный инвестфонд объемом $150 млн - TradingView</div>
+      <div class="art-summary">Атырауский НПЗ ответил на претензии экологов из-за сжигания газа</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-07" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-07/svvo-investiczii-v-infrastrukturu-ktzh-rasshiryaet-gruzovye-marshruty/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-investiczii-v-infrastrukturu-ktzh-rasshiryaet-gruzovye-marshruty" target="_blank">Инвестиции в инфраструктуру: КТЖ расширяет грузовые маршруты</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.10.2026 04:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Инвестиции в инфраструктуру: КТЖ расширяет грузовые маршруты</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-07" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLWNoaDBMemtWRUZGREVOTy14VUtrZWVBX2FXVUx6OUpuNzVTY01ZVnBSdFE0U0ItVHpJOGxYbGZVQzlZajVyOU9RcTBZRFJwWWozQzktTndEUnV6U0FWblVid1hXendxYkIxWnZfNDc0UWFMRzhsdjdTcHY2TlBkVFZDNVR1RHRoajRWamdUM0JPTEZoaDk2QUQ5RjZyUXlNTVk3dmswWEo?oc=5" target="_blank">Инвестиции в инфраструктуру: КТЖ расширяет грузовые маршруты - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 07.10.2026 04:06</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Инвестиции в инфраструктуру: КТЖ расширяет грузовые маршруты - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-07" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNVG15RWVmWE9CUVRXMVJWSVJ6WGFKdjJ4MWxIbDRJcFZRVjFNRkplR2VCY3IzRjhEeDR1WVVCcU1wdVpKdkJjR1FRWFlVb2I5bUJBMzdIdldNV3p2czFlTkkwWE5KRDd6QVFkRXBaQUZQMlFoNHdrTG5MbVlvbVZfQlJ1bF83dlQxUm9LVXNMRUJrNFphRHFqU2pFc2k1SVU?oc=5" target="_blank">Инвестиции в движение: что стоит за обновлением парка КТЖ - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 07.10.2026 04:01</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Инвестиции в движение: что стоит за обновлением парка КТЖ - TengriNews</div>
     </div>
     
   </div>
@@ -179,8 +254,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-10-06';
-  document.getElementById('date-to').value   = '2026-10-06';
+  document.getElementById('date-from').value = '2026-07-16';
+  document.getElementById('date-to').value   = '2026-10-07';
   applyFilters();
 }
 
