@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 07.10.2026 14:08</div>
+  <div class="meta">8 источников · Обновлено: 07.10.2026 17:16</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">16</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">7</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-09-07">
+      <input type="date" id="date-from" value="2026-07-16">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-07">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,6 +86,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -107,7 +111,18 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-10-07" data-co="Казатомпром" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-07/kaye-depozit-ili-obligaczii-kazahstanczam-podskazali-gde-seichas-derzhat-dengi/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-depozit-ili-obligaczii-kazahstanczam-podskazali-gde-seichas-derzhat-dengi" target="_blank">Депозит или облигации: казахстанцам подсказали, где сейчас держать деньги</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.10.2026 08:04</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Депозит или облигации: казахстанцам подсказали, где сейчас держать деньги</div>
+    </div>
     
     <div class="article" data-date="2026-10-07" data-co="Air Astana" data-s="negative">
       <div class="art-title"><a href="https://kz.kursiv.media/2026-10-07/assm-tailand-vvedet-turisticheskiy-sbor-stalo-izvestno-skolko-budut-platit-kazakhstantsy/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=assm-tailand-vvedet-turisticheskiy-sbor-stalo-izvestno-skolko-budut-platit-kazakhstantsy" target="_blank">Таиланд введет туристический сбор: стало известно, сколько будут платить казахстанцы</a></div>
@@ -125,7 +140,62 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
+    
+    <div class="article" data-date="2026-10-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/novosti/71132-atyrauskij-npz-otricaet-cto-dla-otdelnyh-ustanovok-ne-bylo-rascetov-i-normativov-po-vybrosam.html" target="_blank">Атырауский НПЗ отрицает, что для отдельных установок не было расчетов и нормативов по выбросам</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 07.10.2026 11:43</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Атырауский НПЗ отрицает, что для отдельных установок не было расчетов и нормативов по выбросам</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-16" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOYS1HblVld2RZSHBzSEdrNGc1WnFPSTM5Q1VKbTczdjZINTRXaXRSMms1QU5DMDgtaXpMUVFLajBYRGpFR0VMeGFwaWpHVE15VVRfUnR3bjZOV0lSekZPaXRtaEVSc2ZPblZqeWNOOUR5Y2tISTVyeGFyOGNUNDFpX2ktUGJSUjM3TkdQemR6Uk9DWGJzRFhjVElQWDLSAUpBVV95cUxQdFlZdHNmM1p5OUJWLXYteGV2UnRzb1RVNk1SS1Q5U0VvMXJuRmZ5LXoxemEySzNQLS1BQjNOSXpvalc4cVVpLTZXdw?oc=5" target="_blank">Казахстанская Air Astana до конца лета отменяет полеты в Дубай - Вестник Кавказа</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 16.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Казахстанская Air Astana до конца лета отменяет полеты в Дубай - Вестник Кавказа</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-07" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPVWh4VDZNMFh6OWVBQU5vLXJrNEFFTE1sWVVwUHp3WWIzZElBWDVTOGpkNUlxalFFTnBTNkJadmFYdlVlWHRfUW9PaHFyVU1raHB2cTg0SEtSdmdtc3JyX2I0N3RVbEZZSnBQOUZwSnFzak5UNDhMYmlPYkI5ZHAzSXZiUjhwMWRGRDBnTHhzcnhJdUtRYTNNVmsxZkFXZkhZV1hJ?oc=5" target="_blank">КТЖ провело ярмарку вакансий для студентов ALT Университета - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 07.10.2026 05:58</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ провело ярмарку вакансий для студентов ALT Университета - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQUVJ3X2txV1ItbDJiQ24xRm5iMTNwSnhkLVBPNEVETi1kWjBMejdER0hwbHB2c0YyWHcxVWZ6TU0zM2VqdzloMlhyZUJvQWR2clhzeFZCLXYxcXIwck1ud1c3OVRub19DWDYxQW43V3I5Yk1ZNUNfZ1FWMUM5alpBOXJPVlRMQkx0QnFiYUgyN3pEWUMzYzdQTDYteFRyNkpYODZHMnhoZ0NYUGZHRmNz0gGuAUFVX3lxTE9CLWM2UkQ4VXZ5bjFVNWl3aklSNEFIa2NLeTVhSG9xYWNXYnZuSXZaZEZhelNPdnozVVR5YTg2M2hsTGRsQjNsRzljRzl5OE1sU2loQVNTR0NoMzliQ1N4bWhINkxFSW5MX0o0bWR2akN2cFA3YkFSaEx3RDV4TkVJYVhMUWJpUzBQaklYS3VQdmw4cUNSYXRRdFlIWktja0ZWLTNXcklLbGlEUHhBQQ?oc=5" target="_blank">&#34;КазМунайГаз&#34; пробурит 26 разведочных скважин в рамках новой программы геологоразведки - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 07.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; пробурит 26 разведочных скважин в рамках новой программы геологоразведки - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-07" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPQ21VX0xIRlZ4ZWlGU0JodWgxbHNMUUkzVEVaUVlyXzJvYVRQZGV0bkdDQ3NfSktpV0E1N2l1S0czd25Rc3N2QXo3X0pZV2xWQVpIWk92YUFaQWhkNEcxcFlaU0JBQ2JPdDN4ZnZXZDVDX0N0RWR5VU1YNmtQbnZmQlVJbmI2amViTU9feURrSQ?oc=5" target="_blank">&#34;Казатомпром&#34; реализует социальные проекты в регионах - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 07.10.2026 10:05</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">&#34;Казатомпром&#34; реализует социальные проекты в регионах - NUR.KZ</div>
+    </div>
     
     <div class="article" data-date="2026-10-07" data-co="Казахстан Темір Жолы" data-s="neutral">
       <div class="art-title"><a href="http://profit.kz/news/75120/Besplatnie-WhatsApp-i-Telegram-obeschaut-predostavlyat-passazhiram-v-KTZh/" target="_blank">Бесплатные WhatsApp и Telegram обещают предоставлять пассажирам в КТЖ</a></div>
@@ -154,7 +224,62 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
+    
+    <div class="article" data-date="2026-10-07" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-07/zhnb-atyrauskii-npz-obyasnil-szhiganie-gaza-na-zavode/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-atyrauskii-npz-obyasnil-szhiganie-gaza-na-zavode" target="_blank">Атырауский НПЗ ответил на претензии экологов из-за сжигания газа</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.10.2026 06:23</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Атырауский НПЗ ответил на претензии экологов из-за сжигания газа</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-07" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-07/svvo-investiczii-v-infrastrukturu-ktzh-rasshiryaet-gruzovye-marshruty/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-investiczii-v-infrastrukturu-ktzh-rasshiryaet-gruzovye-marshruty" target="_blank">Инвестиции в инфраструктуру: КТЖ расширяет грузовые маршруты</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.10.2026 04:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Инвестиции в инфраструктуру: КТЖ расширяет грузовые маршруты</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-07" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLWNoaDBMemtWRUZGREVOTy14VUtrZWVBX2FXVUx6OUpuNzVTY01ZVnBSdFE0U0ItVHpJOGxYbGZVQzlZajVyOU9RcTBZRFJwWWozQzktTndEUnV6U0FWblVid1hXendxYkIxWnZfNDc0UWFMRzhsdjdTcHY2TlBkVFZDNVR1RHRoajRWamdUM0JPTEZoaDk2QUQ5RjZyUXlNTVk3dmswWEo?oc=5" target="_blank">Инвестиции в инфраструктуру: КТЖ расширяет грузовые маршруты - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 07.10.2026 04:06</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Инвестиции в инфраструктуру: КТЖ расширяет грузовые маршруты - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-07" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNVG15RWVmWE9CUVRXMVJWSVJ6WGFKdjJ4MWxIbDRJcFZRVjFNRkplR2VCY3IzRjhEeDR1WVVCcU1wdVpKdkJjR1FRWFlVb2I5bUJBMzdIdldNV3p2czFlTkkwWE5KRDd6QVFkRXBaQUZQMlFoNHdrTG5MbVlvbVZfQlJ1bF83dlQxUm9LVXNMRUJrNFphRHFqU2pFc2k1SVU?oc=5" target="_blank">Инвестиции в движение: что стоит за обновлением парка КТЖ - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 07.10.2026 04:01</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Инвестиции в движение: что стоит за обновлением парка КТЖ - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-07" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-07/zhnb-pryamoi-reis-iz-kazahstana-v-nyu-iork-mozhet-startovat-pozzhe/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-pryamoi-reis-iz-kazahstana-v-nyu-iork-mozhet-startovat-pozzhe" target="_blank">Прямой рейс из Казахстана в Нью-Йорк может стартовать позже</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 07.10.2026 07:44</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Прямой рейс из Казахстана в Нью-Йорк может стартовать позже</div>
+    </div>
     
     <div class="article" data-date="2026-10-07" data-co="Самрук-Казына" data-s="positive">
       <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/skytrain-fencing-appeared-on-saina-almaty-akimats-274091/" target="_blank">SkyTrain fencing appeared on Saina: Almaty Akimat&#39;s explanation</a></div>
@@ -237,7 +362,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-09-07';
+  document.getElementById('date-from').value = '2026-07-16';
   document.getElementById('date-to').value   = '2026-10-07';
   applyFilters();
 }
