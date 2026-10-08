@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 08.10.2026 07:03</div>
+  <div class="meta">5 источников · Обновлено: 08.10.2026 11:04</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">13</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">4</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">7</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-11-28">
+      <input type="date" id="date-from" value="2026-08-05">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-08">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -89,9 +89,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -109,50 +109,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
     <div class="article" data-date="2026-10-08" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-08/zhki-shtraf-20-mrp-za-korovu-ktzh-gotovit-zhestkiy-udar-po-vladelcam-skota/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhki-shtraf-20-mrp-za-korovu-ktzh-gotovit-zhestkiy-udar-po-vladelcam-skota" target="_blank">Штраф 20 МРП за корову: КТЖ готовит жесткий удар по владельцам скота</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxORjl5OGVCTThOZlNXN0VUTVhZcUZubWFrMUYxSTIzenkyMkNVdm5hdVBiRDZKeVcxNkVQbUpyWF94Skl0eU5uWlZHbHpVUzdKNlh6VUlXOU1Hcks0eDIyUHZRWWlnYjFWV3RScmZMMTNuMUxjSHJ1Und0UmxDUlQ4YWswYUNqZVFrY2U4UDlJQWNXN0hBUUhvYTA0bw?oc=5" target="_blank">КТЖ предложила ужесточить штрафы за скот на железнодорожных путях - Noks.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 08.10.2026 05:11</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.10.2026 10:09</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Штраф 20 МРП за корову: КТЖ готовит жесткий удар по владельцам скота</div>
+      <div class="art-summary">КТЖ предложила ужесточить штрафы за скот на железнодорожных путях - Noks.kz</div>
     </div>
     
     <div class="article" data-date="2026-10-08" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQWlg0SWFsRXJOb0JDendJSjk2bzJSZnNmN2VNM1lsRE43RU5zSDdJbHNIeG4yaTBpUVp0dmZMS0FENWZDMndnMWZzbHZlelVCWEtGdGpLM0RTOVFSQ1hmQ29VLTFkQnZKeU5rV0JOV2Q2V1VVcDJVVTFBbnVtYjJYcm9ENjYxbTJDR3lKTTlNclRKemZLbWN2SzFPZWFmVy0xOUJjLWZRYVl6OUQ4cGJyRQ?oc=5" target="_blank">КТЖ инициирует ужесточение штрафов за выпас скота вблизи железных дорог - Қазақстан теміржолшысы</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSVNpVUZIWmJRYjNLYmdCUVJUTGs5UUlUOUhTdGc0YmpqOVZhS0RBUV83YnY3V3c2RGhCRG9vZHpsWEthUW5McXR4OVBrYWwxX0tiLXlTbmc3NUVVNzRFSFBjMElVQ2pNVFZsbXRmUTN5VnRIZUlxclU2QjJRTFlFRmw5SW5VZ0pzejRJR3gtUEdndlpnd0l0VkllSVRhUTBXRDBYVC01a0xSQdIBrwFBVV95cUxNb1JfZFJCZDYzc3VzT01nRjBLY0V3NFdrSzd6TmRYZEVmUjQxM3NxQ0JvYjA2VlJWZWJxUU5SRUptSmk4YThGYjhpUjdselFBT2FBaUZNY1dtZ0tmcU9Qb2hab2FsNmpjUHZyanpDclpBOXJRNmlDSE05MktxSnNXU19acEdHQUZ0Z0NPSGhlQ2F4VFBfOFFjXzk3UjRsMGpvRW1RU21MNW5Ca3BZRERZ?oc=5" target="_blank">КТЖ планирует увеличить штрафы за выпас скота близ железнодорожных путей - Liter.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.10.2026 04:35</span>
+        <span class="date">📅 08.10.2026 06:43</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ инициирует ужесточение штрафов за выпас скота вблизи железных дорог - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-08" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQam9NalNXSTF6WGFQMmhJM0NkOGtFNFIyTHpWY0dsWWtReWZzX1ZyUjV4ZzZDY1RJUWpmdG1ETDVVRno3UU13XzVzM0tFeGRxX0IyX2hySmM3MXp3OGRFTlBPdlBrY0NUMFdWSkV6cGtwcFBBaHBGWGhkWV85WGt5WXZqUzBNVEdkTmZJV09HMEdTc0lTeks1TjZ0bk9CbW91MnhfUk1YYUZSN2x5dW9R?oc=5" target="_blank">Поезда режут скот сотнями: КТЖ вдвое поднимает штрафы - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.10.2026 05:12</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Поезда режут скот сотнями: КТЖ вдвое поднимает штрафы - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-08" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNYjBVRkdaX2luVGNoenhwQTRTVE42SlNzejl4U2pQQ0trczJrd3IyOTM4TmxXZklrYmtoZzdiZUpzb2d0TnQ4NThFUHhYcmxJelNRVGk5SnA2SUFCQjY2UG9yV3ZUdFhsRzR4bzV2djVoU3Y4UVQ3cVZTSmJKbm9ZRjN3X09iMEtxT3lsdmhyeDh2NS1UMllPN2JR?oc=5" target="_blank">КТЖ хочет вдвое повысить штрафы за выпас скота у железной дороги - Kaztag.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.10.2026 05:18</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ хочет вдвое повысить штрафы за выпас скота у железной дороги - Kaztag.kz</div>
+      <div class="art-summary">КТЖ планирует увеличить штрафы за выпас скота близ железнодорожных путей - Liter.kz</div>
     </div>
     
   </div>
@@ -160,28 +138,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-10-08" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-08/zhnb-sp-kazmunaigaza-i-nahodyashhegosya-pod-sankcziyami-lukoila-poluchilo-bolee-7-mlrd-tengge-ubytka/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-sp-kazmunaigaza-i-nahodyashhegosya-pod-sankcziyami-lukoila-poluchilo-bolee-7-mlrd-tengge-ubytka" target="_blank">Проект КМГ и «Лукойла» на Каспии остался без банковских счетов и с убытком 16,9 млрд</a></div>
+    <div class="article" data-date="2026-09-08" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOb2dTMFZ1TzRUQmNyU0E1emJQSi1MN2pyR0RVV2x1Y0E5cUJEc0cwSENrOEpULWROSk50SVZIU2ptbWJ0WnB1Uzhuc25GSThWZlVmWmdZQ3AxQzRlQUFwT2tLZHgxRFY2cUhhNmRwbGVVTnhNQ29La01fS3pGSk1xaWp5MlY0djRqTENXdjdHYU5lQzg50gGTAUFVX3lxTE0ybE9GQ2JreWNDczZ3UkdMa05STURIakc3U2tFZmYzYW9QMnRaUXh4T2RHd1BkWXgtR0U5Qk5oRTQ5RVNteEIxaklBNm1VMHZoY0tWQURuRWZ0Zk9LWVRUaGdsZjRTejF4R2ZESGFJNFc1TTE5MkpmQXAtRGR6cVJTeHdta20yYlBLRmlsT3I2akpsVQ?oc=5" target="_blank">&#34;Самрук-Казына&#34; продлила полномочия главы &#34;Казпочты&#34; до 30 ноября - BES.media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 08.10.2026 05:29</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 08.09.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Проект КМГ и «Лукойла» на Каспии остался без банковских счетов и с убытком 16,9 млрд</div>
+      <div class="art-summary">&#34;Самрук-Казына&#34; продлила полномочия главы &#34;Казпочты&#34; до 30 ноября - BES.media</div>
     </div>
     
-    <div class="article" data-date="2026-09-02" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE54VmNncE5YVWpPMTdVY3VORG56T1Ntc3ZmNDJrR1ZVZFZjMlE0SlN2ODhjZzVhbF9GbU1lcTNPSGluRk5FX0VqZmRB?oc=5" target="_blank">Закончилась эпоха: «КазМунайГаз» полностью остался без иностранных директоров - Ак Жайык</a></div>
+    <div class="article" data-date="2026-10-08" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPeklNWWJhTDU3NVg2QWFiZWVNYXhKOEN0WUZjU185Qk5mQkQ2Zm1USHRSOG5PN3FrUUd6T0lZNURJN0ZPcUdTUmxMR2habHpMN3h4MzE1bUVXeEp6MDVpazJRbmZlOXF3MEdfWUQ0SmF5WDBBbE9fTUUwazVlcXp2WDlHU3FiSUxuSkJ2Y3pUbkRqekNjZVBlTWlQd0hHc05nRzZuM1g0amxnRDBmcVE?oc=5" target="_blank">Мангистауская нефть: «КазМунайГаз» борется за каждый баррель на старых месторождениях - zhaik.su</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.09.2026 07:00</span>
+        <span class="date">📅 08.10.2026 05:52</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Закончилась эпоха: «КазМунайГаз» полностью остался без иностранных директоров - Ак Жайык</div>
+      <div class="art-summary">Мангистауская нефть: «КазМунайГаз» борется за каждый баррель на старых месторождениях - zhaik.su</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNUjhlU1lnMGFQTFliZVdrVzNXdzlmNnVHd1VqdWo5MnJXbXplaTdtcGhsaVNweXJFWXFHaXZGTFNMWFpxYXI4bDVxTk04NVJURHhGSDJCY3JUU1pRUXdNSHVuZWUxNlNYZ04wWjlSRklaUkxYVFlwck1MTFYzVlEwb0RtdjF1dndLYzZJbFNpWTVTeV95a3U1bHZyN3BNeHpmTHZrMnNQa3A3dGVwWjhUdFhpQW9qRGthR2c?oc=5" target="_blank">Общая выручка казахстанской Air Astana в 1 пол 26г выросла на 16% - Русская служба The Moscow Times</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.08.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Общая выручка казахстанской Air Astana в 1 пол 26г выросла на 16% - Русская служба The Moscow Times</div>
     </div>
     
   </div>
@@ -189,83 +178,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-03-21" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPcXItanFXa2lKa05JdWo4YVV6bU9iV2NBWmFQSFJaa25yZDBjem95Wk90QW9paE44czVWMkk5NEh1ZHp4ZndSbEJKLThoZzRRWGFrdEJvNUR3SFVqVjRDcWEzTXZrb3NJcS1CSWNNaGFHX1F6OWN5aHVBY2FFVXJQVXBVOUtKenM?oc=5" target="_blank">«Казатомпром» готовится к росту мирового спроса на уран - dprom.kz</a></div>
+    <div class="article" data-date="2026-10-08" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-08/fvfv-kazatomprom-otklonil-sdelku-s-rossiyskim-uranium-one-no-odobril-kontrakt-s-kitaem/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-kazatomprom-otklonil-sdelku-s-rossiyskim-uranium-one-no-odobril-kontrakt-s-kitaem" target="_blank">«Казатомпром» отклонил сделку с российским Uranium One, но одобрил контракт с Китаем</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 21.03.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 08.10.2026 09:12</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Казатомпром» готовится к росту мирового спроса на уран - dprom.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-11-28" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPaHYwUUdBUzFvNjg5QXk2b0h1eUdhUl8xbHpLall5WEZmWnluNXNycDY1T29DZ2xKUC1TNllIZXhWeXhtQkl2cW52Zm84QWp3SHRKYkh3a1A2X2VCNnZSSGU1clplSVBzaEhQejZsWGY2MzNRS0M4aWVaM25mMExyQ1VOV0JHOWhEV3ZmWkVvMA?oc=5" target="_blank">«Казатомпром» готовится к росту спроса на уран - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 28.11.2025 08:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» готовится к росту спроса на уран - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-07" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOZU1xZldLb010MnZKaG9LblA3M0M2NHpqSDhsdmZleGQ1dGFhZTl4blowQVdsNGJQZWpEam9oYWlLWUpPVmlrMHdIaDhhV3lIbDg4dnQzZ3NTaWhxVThpUE5QQ2xCMERYR0loWC1qLW1MLXhsU3VlM2stRGJDc3U5NWktLXZrUFZqdXFEMHBxZ2Q5dXU4blJvSFJ4cUROVnVubExPTndFdHczS1VPeDNn?oc=5" target="_blank">Токио станет ближе. Air Astana запускает прямые рейсы из Алматы - Вести.kg</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 07.10.2026 15:06</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Токио станет ближе. Air Astana запускает прямые рейсы из Алматы - Вести.kg</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-08" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPOS0zMFpTMDdybTlpQWJUSHlkRjZ1OGpUTU9TeW5OTEM1THkyeW9ya2ItRVMtOVZnU1BCQUtwM0wwTjVUVFY0MjdldWhhY3JhczNmZHlDNEdCX2xHT25YcDM4eDZGWUJBT1kwSl82eEZmbG1qWjQyTWI1OWVHekhURnllbDlvS0s0ZGNLUFpaV2tOV3Nad2lGc0U5bk0yUUx4cFlrRmV0M0M5WHBDLVNNZA?oc=5" target="_blank">Air Astana запускает рейсы в Токио: летать в Японию из Бишкека станет проще - Вечерний Бишкек</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 08.10.2026 03:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana запускает рейсы в Токио: летать в Японию из Бишкека станет проще - Вечерний Бишкек</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-07" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPYm5LejZiSk9LZnRkaUlzdTVVRFIybGprTFVWcF9qVWswYUxXWG56V1hMaml5V1FZUEI2ZWdvSjEyNUF1NHBnUWl5T19VeDRQYUpqd0IxaEV3TzZYYklQV2FMdFVSbGx5emhJVVRUSy1vYm9XTU1WeU5hMzhWa0xXQkpLZklUS3RJTTBFNG93WkJsQjc5MEdNQS1UbFFfX1llV0tkNHExNU5fanJV?oc=5" target="_blank">Токио станет ближе. Air Astana запускает прямые рейсы из Алматы - open.kg</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 07.10.2026 14:43</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Токио станет ближе. Air Astana запускает прямые рейсы из Алматы - open.kg</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-08" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdzZKYVBlX0I0d0Z3UU8yRWdfTno4MG83R0U3QkcwSlFyeEpWX2FRSmhJVUxqNDFWRy1iN2h3dU5NTGMydmZIbzRidnpIMnRZcUdqN2lqTGhOeGMwYjdOX09HbnZNa3U1NjVQd3ljTk9Nd2tDTE1YRjFncXRFWVdGc2lua0NNdThqQUR6aExqNWRYT2IyY3VsQlA3cU12QkRjcGU2UjNHRlhVSmV2Q1NpM0FqVy02MmdZamU4?oc=5" target="_blank">Air Astana запускает рейсы в Токио: летать в Японию из Бишкека станет проще - open.kg</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 08.10.2026 02:47</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana запускает рейсы в Токио: летать в Японию из Бишкека станет проще - open.kg</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-01" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE9SaUVpV0xZQVhpVUdpczlEQlFvb25obEJHajhCdC1mMzVjQTJBcjUtaUtjaUhzaFhpNGJoMmJqYjdTTmVJM2RiQ3B3?oc=5" target="_blank">Рост тарифа КТЖ: что известно - АПК Новости</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 01.06.2026 04:22</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Рост тарифа КТЖ: что известно - АПК Новости</div>
+      <div class="art-summary">«Казатомпром» отклонил сделку с российским Uranium One, но одобрил контракт с Китаем</div>
     </div>
     
   </div>
@@ -327,7 +250,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-11-28';
+  document.getElementById('date-from').value = '2026-08-05';
   document.getElementById('date-to').value   = '2026-10-08';
   applyFilters();
 }
