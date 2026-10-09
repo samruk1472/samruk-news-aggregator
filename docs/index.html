@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 09.10.2026 16:49</div>
+  <div class="meta">3 источников · Обновлено: 09.10.2026 18:41</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-30">
+      <input type="date" id="date-from" value="2026-04-02">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-09">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,13 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -108,64 +106,47 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-10-09" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9QUzMwOXpaTHlidkhpb1dPMXRmU0JjdHY1RG9DWDNCNFlIM0ZkX0RqZ2ZBRVY5R2pjbi10U0NjY1RhaEN0TnZWTkFKQ2pWXzBnY0duYWJnZWM?oc=5" target="_blank">СЕЙТЖАНОВ Демеу назначен директором департамента газохимии АО &#34;НК &#34;КазМунайГаз&#34; - - https://prokadry.kz/</a></div>
+    <div class="article" data-date="2026-10-09" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-09/lngr-kostanay-region-car-train/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lngr-kostanay-region-car-train" target="_blank">Автомобиль попал под поезд в Костанайской области</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 09.10.2026 14:57</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">СЕЙТЖАНОВ Демеу назначен директором департамента газохимии АО &#34;НК &#34;КазМунайГаз&#34; - - https://prokadry.kz/</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-09" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOVVlZMER3QVFVM09ZNVB3SFV1Wl9JcFJrUUpzR1E0RG1WRzVEWC1tSGZHMlhFVmZkQzdueE5FNmJkV01aRExmZXY3dFlyNTB6b3hERzZZX2lVNDRZRjRrNUM0THRGUjQtUXdWY1E0RDZSbWlJbndsOVN0MkVXNkRBcFJWVmExMnBTVlVBNHFZblRSSjM4NG5vbmZqTTNDNUhNcXo1VQ?oc=5" target="_blank">«Казатомпром» профинансировал соцпроекты в Акмолинской области на 1,2 млрд тенге - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 09.10.2026 14:12</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» профинансировал соцпроекты в Акмолинской области на 1,2 млрд тенге - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-30" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSGpTYUVBdU9zMXI0d0xEajJsMEV6akRwN1k1UHlGbGlhbEw2TU5LZ2FzWWl5RmRZMWhSVWIycFlkdW1qY1RpcmdSNDJUMVdQWTRkeXdZZm9Kd2EtelF2TXM1WDYzRk5BczZSbzloV3liU0FiN09YTXVJb3RjTWo3MmVlNHJFTVZTR0Fncm9aeTJrVWRWNVYxUnljT0l5Q2pXSkVGX1FfQ2xoLTg?oc=5" target="_blank">Казахстан в 1 кв увеличил добычу урана на 9% -- Казатомпром - Русская служба The Moscow Times</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 30.04.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Казахстан в 1 кв увеличил добычу урана на 9% -- Казатомпром - Русская служба The Moscow Times</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPY0Q1TGtqR3hvWlZLNE1TNDJGMjJKeGtqcVZZMWNEWGtjTUdrdFp2bWg3WmJELTMyWXNpM1pXMXVlSlhYNG1GMERFcW90SlBBTURkOWxZZHFWa24xczBaUE9LYmVYZFRLd1otRzYtNE1Pd2QzdTBFRTdydDcwbXlxblhybk1lR0pNcnNoQWZLaDNhdlpuOVZkOEliTXFjVmRxQ2ZFcFdZRFNpVmRZZG4zRUVUZw?oc=5" target="_blank">В Алматы Air Astana отмечает трехлетие программы дорожных грантов «Жас Кыран» - Вечерний Алматы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 09.10.2026 15:41</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">В Алматы Air Astana отмечает трехлетие программы дорожных грантов «Жас Кыран» - Вечерний Алматы</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-27" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxPaXp3UVBncHJsZG93Vm94RkNNTGFjVVpMZ2xLZ3dZaTd3Z3lRb2hCVjhubXFkMmZQc0NhaXJ3T0toVUZfZ2lDV3ZMZGhvb2V1akpqVjBacFYwRktHay1sR1FjdFdlUlVkWEY5T0NqTjBFSE1yaERrNk5QLWp6NFhpeTZ1Y2JNay1kQzZDdjNlVERVTkdUQ2xBYnlQQ1FscmlmbDJzeGN1cjVhUFVFdXd0bERPWWdiWk1xaVNrTTRaVm44Sl9INE9ISk1pZzJDNFNldmVXRnItaDNaNkVR?oc=5" target="_blank">КТЖ Express и Комиссия по торговле Чунцина обсудили развитие транспортно-логистического сотрудничества - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 27.08.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 09.10.2026 17:32</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ Express и Комиссия по торговле Чунцина обсудили развитие транспортно-логистического сотрудничества - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Автомобиль попал под поезд в Костанайской области</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxOUVpVQnR6cENvZFRyUm9lS3l0dm50OUdPazBteXMtbUpaanVPWkYydWF6QkhiUHdjaTBfUFU2VkFrRXBIQXlJX2FGOFV3MWFiZ2hpYS13QUt4MnpuSEk4dnhZUVZCWHJtVzNlWDlqTFJDNDFDSmJlRVI3dWIteHdJVlNOcVNLdXg4ajlJeEJYYWp0YUZMc3RubGdJbFdFeHVQX0pPeUxWQzliWmJsRjR2bVNXbzE2VUw3bVpIRjNNanE1Njk2WGJ2S1RrSjliN0dGcjRvX3ZET2Z3WVlmTi1DbGtnUkpPcGJzRnl6aWJ5TQ?oc=5" target="_blank">Казмунайгаз и хорватская Geoenergija Razvoj будут совместно разрабатывать нефтегазовое месторождение Шыгыс - Русская служба The Moscow Times</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 02.04.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз и хорватская Geoenergija Razvoj будут совместно разрабатывать нефтегазовое месторождение Шыгыс - Русская служба The Moscow Times</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-09" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQTTJCOTBqa2piQ1NtQ3VUMzEzQWhPeHZ2NHlxTWNLYTRrdDJLNEJTQ3AxdVZIQk9XZFpIbGxzS2ZwRDZuZlAtWnlpbzF4TnRrX2ZmTlMyb1RJZzJCRWtwa3VyWXRaZVRyYnpFNE5tMmpXUTJRQk1QU0FTNHVKN2hjZVUzSDY3TGhIdEg4UzRRam9PUTlhc0hSYTdoNWlwSm5HQS1KUWFVSWJBX2pMMHY2YklTMVA?oc=5" target="_blank">Новые дома в Актау получают доступ к интернету от &#34;Казахтелеком&#34; - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 09.09.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Новые дома в Актау получают доступ к интернету от &#34;Казахтелеком&#34; - NUR.KZ</div>
     </div>
     
   </div>
@@ -229,7 +210,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-30';
+  document.getElementById('date-from').value = '2026-04-02';
   document.getElementById('date-to').value   = '2026-10-09';
   applyFilters();
 }
