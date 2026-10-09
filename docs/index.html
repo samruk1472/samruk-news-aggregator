@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 09.10.2026 07:11</div>
+  <div class="meta">5 источников · Обновлено: 09.10.2026 11:04</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">10</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">17</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">9</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-25">
+      <input type="date" id="date-from" value="2026-07-20">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-09">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -91,7 +91,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -108,119 +110,102 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-10-09" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNcmV0ZEMwVmlkRUl4aFFfTkU4Vkk4dUZvekVieG1oUEZrWVZxVExTV1g5Umg4ZDU1RWZIZkt1aVRPR19CSzNFZUtXVGtwQ05mMmM5SFFUZ3ZRWndmUWVVZzJkVVdUVExyeTlrSEcxNmVUdE1EOFowNWt3OXA2bHBTNmQzT1BtODQ?oc=5" target="_blank">Глава КТЖ потерял должность в одной из нацкомпаний - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 09.10.2026 06:08</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Глава КТЖ потерял должность в одной из нацкомпаний - Forbes.kz</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(10)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
     
-    <div class="article" data-date="2026-10-09" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQekZJZl9RRnZMOGdZMUpUaXRRbkg2U0NjbENVbURNNHlBY3d5eDA0RC1DbGk2LXRXZnZkckhlVkFqeFZ1ZUIxb1hlR3Z0UE10UTk2c3YxZnEwdmt4ZEVhMDI3UUxXMHpTUzFKMC1WSmVSeVZwWW1tZnNkNXhLZnl0TjhGZlowb1hva2dIVEc1MkU2M3NManU1REVRRUlXeUJVbG5KYUVCUlNpcEVUMHhSN1QzemJpdkpH?oc=5" target="_blank">«Казатомпром» отказался от продажи урана российской компании, но одобрил поставку в Китай - knews.kg</a></div>
+    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-09/devy-pryamye-reisy-na-kurort-v-omane-zapustili-iz-almaty-i-astany/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-pryamye-reisy-na-kurort-v-omane-zapustili-iz-almaty-i-astany" target="_blank">Прямые рейсы на курорт в Омане запустили из Алматы и Астаны</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 09.10.2026 05:52</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» отказался от продажи урана российской компании, но одобрил поставку в Китай - knews.kg</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-09" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxOR3J0XzlfT1Y1aE1xVzR6N29ZczFCbjNWNFNIc1ZYWW0zMThsY3pfVnZhcWdkRHNtcUFCbDJDdHFvZmpIVkVwSzJRWUpJb1ItM0RtdXRId0FFd1I4UVpFYklKTTY4MXNzLVVwa25DQ3pmVER2N3E5bFg2dXJ6WFlQakd6dFFvSzdNSThiRENNLXZrVjhnazZKVEFKLVVNUnJkampHcDB6SzlTQVpJZUdJemJqaHVHQlEzLVJ0WkoyYmNfNmRLNzRyYkNEbUNIR3PSAc8BQVVfeXFMTkdydF85X09WNWhNcVc0ejdvWXMxQm4zVjRTSHNWWFltMzE4bGN6X1Z2YXFnZERzbXFBQmwyQ3Rxb2ZqSFZFcEsyUVlKSW9SLTNEbXV0SHdBRXdSOFFaRWJJSk02ODFzcy1VcGtuQ0N6ZlREdjdxOWxYNnVyelhZUGpHenRRb0s3TUk4YkRDTS12a1Y4Z2s2SlRBSi1VTVJyZGpqR3Aweks5U0FaSWVHSXpiamh1R0JRMy1SdFpKMmJjXzZkSzc0cmJDRG1DSEdz?oc=5" target="_blank">«Казатомпром» отказался от продажи урана российской компании, но одобрил поставку в Китай - Азаттык Азия</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 09.10.2026 05:13</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» отказался от продажи урана российской компании, но одобрил поставку в Китай - Азаттык Азия</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-09" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBHUzJYNjBCRVJwU0ItNzd1Q3hBMWcyMnIzNk1aeFRfcHZuWXEzbEczdHpBTGtzX3NxejBCZC1mRlRPTFBpS2t1QWVKRFllVmZ5VmhxOXptV1QtaTExZE83ckRPcUIwdFYxX1JGb0xwUnQxN0RLWTBEbUdBSQ?oc=5" target="_blank">«КАЗАТОМПРОМ» БУДЕТ ПОСТАВЛЯТЬ ПРИРОДНЫЙ УРАН В КИТАЙ - The Tenge</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 09.10.2026 05:06</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«КАЗАТОМПРОМ» БУДЕТ ПОСТАВЛЯТЬ ПРИРОДНЫЙ УРАН В КИТАЙ - The Tenge</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQTTYyUnVDN2Z0dzZNc2FfR3JMWU40dFFoQnVCUGF3d0NTTjM2Zm1UQTlGRTM1WExoRDYyeEJua2pTdktLM29oQnZMenAwTFBkbF9nTnplbE4xUTRqLXlJWUc1UlhSRF9JRkluY3NlUGx6S2k0MmJ5a2dEREluc00zZW1iZlM2bS1vdXA3UlZ3?oc=5" target="_blank">Добыча урана в Казахстане столкнулась с новой проблемой - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.08.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Добыча урана в Казахстане столкнулась с новой проблемой - Inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-31" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQaXdGQVlmd3BoM1FlLU5TVkJHRW40dGk2OUJpcEFKVDR5RTNwek43cFJUX1pINDhEdm1jVVdwa0ZmR0hPLURhTktjalBjNjBZUU43V214RUFBTjc3UjJWUVBpekVzVGt1bTBxR1RvOVZYZDh6d0YxdDVGLUtIc3pSejdoUVJENkgxRGtZYXA0Zw?oc=5" target="_blank">«Казатомпром» инвестирует в подготовку квалифицированных кадров - Телеканал Jibek Joly</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 31.08.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» инвестирует в подготовку квалифицированных кадров - Телеканал Jibek Joly</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxNeG9HeGRLeFpQalluMS1UeDVXbjBtNER2cVdOVjlUTVZTdUxfakRldEZaZF9JanB6TUlUOWRNaTZuSThmbV9kOUVzU2hqX19qVjFZeDhjaFZHd2IyeXE3SGRpZENSQXlMb0pWSUpfWlV5ZWxTTVpUYXBBdUNCbFdqTER0bWg4TkpRX3VzZndqSmtIX2k2WDFzVDZXbXZZS1ZOWWNyLXh6WWo4S2o1UzJwY2xuSEhXZWhIWDJwOEd3SWc0RFk4dEFpd082N25LQQ?oc=5" target="_blank">Миноритарии Air Astana требуют от нового CEO плана по возврату акций к уровню IPO - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.09.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 09.10.2026 07:58</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Миноритарии Air Astana требуют от нового CEO плана по возврату акций к уровню IPO - Kursiv Media</div>
+      <div class="art-summary">Прямые рейсы на курорт в Омане запустили из Алматы и Астаны</div>
     </div>
     
-    <div class="article" data-date="2026-10-09" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNT1Q5a05kcEF1MXZhZkR1UXMyWTRWUm90d0VWNzRUSEF1VFJITnJVLUllZE82MWkwbUs3SGxRV3AybTNMdEgzdFpyTC1rOUJxMlZST2Y5MHo5NllDZUh6cnVVNWRGYWtuWnVJWUh5WGJwZjc3NHlPWXZrTDk4dFRUSnlzMzhMcVlfSGFCNFgzWjBjWTNhTmVwQ2pCaHgwMklzQ1VMQjlvZw?oc=5" target="_blank">Глава КТЖ – Грузовые перевозки оценил работу Trip Optimizer в пути - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-10-09" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPZFQ1Y2xHeGN5U051S1dQelI5eWN4WjlIN3Z0eTVLRWJhd2Qzd19LTGg1OURTYVA0S3BkcWMzU3Q3cmYtRW9nNURyM3BsUlYyLTB4N3UxZm1OSDVVOWl5bDVnalJLdUxzNnJfSUo0TzBzYkFOdWFSUGQ1ZktBQUpKSnRPMmxFWDdfd2UxYkV3TlBFVHV1bFFwUQ?oc=5" target="_blank">«Самрук-Казына» получит около 19 млрд тенге дивидендов KEGOC - Forbes.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 09.10.2026 06:03</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 09.10.2026 08:06</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Глава КТЖ – Грузовые перевозки оценил работу Trip Optimizer в пути - Қазақстан теміржолшысы</div>
+      <div class="art-summary">«Самрук-Казына» получит около 19 млрд тенге дивидендов KEGOC - Forbes.kz</div>
     </div>
     
-    <div class="article" data-date="2026-10-09" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQSXlJdWpBanRaa2lrcE1JRnE1aDE0WDhUWk51Sktfa2VrdG4tbGxNa0wzU0hzMWE4NnJJQm5uUG5HSE41cnJxZ191YTQ1elR0RUtoNGlnTndwVnVSY1RENDBWakJrY20xdzRpaEJkemU5Y01DLTlLVHhhRTJuZ1gwc25rd29SLXlUcE45bkM3OWRvV0Y4OC0tTVB0QW5ISDBBUEc3NF9zUTAwRm9SWFhwRkhrZw?oc=5" target="_blank">Студенты ALT Университета прошли геодезическую практику на объектах КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-10-09" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxON1JVMXhpdkpib2ZhRFpUdm5mbmRfanlrYTFabUV4cEQ3anBqN2xULUhZY1BFSlBLMWtUVnNZZ21ZLTEwZVJpNXBTR2xiMzdaRWJvVG1KTFNvS2RTWEVFZDJPeXlXaTdmZndNaFlCSjJabHI0V04wQWYwd3VyR051cWVJSUF2dEpoaFE?oc=5" target="_blank">«Самрук-Казына» получит миллиарды от KEGOC - National Business</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 09.10.2026 03:53</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 09.10.2026 07:12</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Студенты ALT Университета прошли геодезическую практику на объектах КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">«Самрук-Казына» получит миллиарды от KEGOC - National Business</div>
     </div>
     
-    <div class="article" data-date="2026-10-09" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNNU9VREQtNXRCdTVWTjFpNkc1OGVzaHNZdXNaelFkZjUxTjhmWXVjSGJpbndlQ1JEdjI5dDVkT2dQUi1YbXJZam9hUHFGV29uSXBWRk56dVBDa242d2tlLWtyS3I4RkdENHB6VVoySTdkQjI2MDBidHR0d2RyOGFWUV9wQkdlQUNGMlJLNXVERVpfTlIzS1lXcTljSFFSZVFKeVZ3YTZBcjVVaWJuNm5NblV0Q2VLMDQ?oc=5" target="_blank">Более 77 млн тонн угля перевезено по сети КТЖ с начала года - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiQEFVX3lxTE5Wd0JHbkVrX0ptZEFuRGtVV245NVRyc0s4U3d0Y1hZdHFIZTNoSXRTVVRaYnVmR0V0Um0zcnIyYWE?oc=5" target="_blank">Air Astana запустит прямые рейсы из Алматы и Астаны в Салалу - • | SOZmedia</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 09.10.2026 04:34</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.10.2026 08:31</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Более 77 млн тонн угля перевезено по сети КТЖ с начала года - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Air Astana запустит прямые рейсы из Алматы и Астаны в Салалу - • | SOZmedia</div>
     </div>
     
-    <div class="article" data-date="2026-09-04" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQS28tOVJmRmZEQnV0a3VocUJCZkJTLUY1a3BhZUk4dVlwZlhLUW5JWHFQQXN1anhLbWFFcjFER2thZEthS2R6a1A0TjNtRXdpemRPVGZFZG1WNW45YUtDX0Zyei0yMk04ejR4ZU03WEl1SUFSamlxUGplN000Z01oRzg4a0hWRkVGSXpvOElTakJidERuWjJHd2hray1aMC1IaENoaE53?oc=5" target="_blank">«Дочка» КТЖ впервые доставила химическую продукцию из Японии в Казахстан - Forbes.kz</a></div>
+    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFB1aHdlR3FxSnJZZFNIdHpRMGRucWlCV2xZSlROb0hZemtKMWhuQkdVT3lVdG5mUmdxbmp5V0xtWm5KTEFnSDBaTDk3REY4WElwcDZWcTA2Q1Y4SEtvRkhVdGtGQml6c192MVZHN1Rn?oc=5" target="_blank">Air Astana открывает рейсы в Оман - SteppeNews.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 04.09.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.10.2026 07:15</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">«Дочка» КТЖ впервые доставила химическую продукцию из Японии в Казахстан - Forbes.kz</div>
+      <div class="art-summary">Air Astana открывает рейсы в Оман - SteppeNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-03" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOT0R6VFhlWjBJRmhXOFo0UGZkcXc5Z2VJcFhIU2N0MWRxQnpLMVpKc3hvdTJSQlhla2xsOEFTVXFKcmpTNGphdENzbmljeG5PVXNUNE9iVDB0dk9WWmNWLVJoNW52VHFHSThCeXBzS2ZSZXFDVVBybWhubUllRkoyeFFPTHpYdlhiTk1VeWpFaENqckxrUFdid0t3UG1ZRk4wbEtKc2o0YXFBUQ?oc=5" target="_blank">«Казахтелеком» планирует создать инфраструктуру для ИИ мощностью до 1 ГВт к 2030 году - the-tech.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 03.09.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» планирует создать инфраструктуру для ИИ мощностью до 1 ГВт к 2030 году - the-tech.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-20" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxQVDBVSmZZRTc1TDY3MXRqeVhWMU9WTEVTVW5DaTVOaFJidEpCZ0llN05mTjdOd2RIelR4Yy1LcmVRelFZV193a3luek92QUpxd29Da2dna2dUQXYtem50QnRJM2hBd1JQZnNPaW84VUlXSTJFd3ZGRmxCbGhLSU1vV2NYaXRfdUtoLU5ZV2JYLVZoci1mTkFRVlNmQ0pnZmk5NjVJRlFxYlR5RGlkaGt5UWVIV2ZOODVvNXlxaGtKR0plSDZ1WDljVkw5VzY1d9IB0wFBVV95cUxPclljcS10SzJxTGtFamhBb2FfNHp0Yy1zeVZXbExhcDY0S3U3VlBtSFZsaHIxSmYyd1R3WmlFZUhZWWJrc1ZMZ1VQSXRDYW1neGxsTkQ5UDI5dlBRQ2ZjaG95dWJCQ0hfR1RUZVc2UnFQaEdLSHlkeGp5a2djRlJRaHVzYlhpc25tUkxyZE1qUUd2elRXOEZBNDhIVnBWTFBYUzVrT1dGbGMtbzU1aUFwMFBQWjQwM2Y2cVFYTEt6MDdvUWhleVpfd290QTBrd1RnMXNZ?oc=5" target="_blank">«Казахтелеком» выступит технологическим партнером «Игр Будущего 2026» powered by Samruk-Kazyna - DigitalBusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 20.07.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» выступит технологическим партнером «Игр Будущего 2026» powered by Samruk-Kazyna - DigitalBusiness.kz</div>
     </div>
     
   </div>
@@ -228,17 +213,105 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
     
-    <div class="article" data-date="2026-09-03" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNd3JYQ2pOMzUxSFVRd0RJdG91c090cmtSNDV2OVJPMU0zclJrY0xrQXlub3lpYjIzZEJua1VnUGNvZW4tcllkVXpxc05YYUV4QmNhdWdUNE50cUFEMUp3Q2VpQXVFdHFmWXVZUlFEU1J0S1M1ZjF3MnI2S3dfMmdHY3hZQnRlRFlTa1pHbUZRbFpPNWxu?oc=5" target="_blank">«Самрук-Энерго» в 2026 году значительно сократила чистую прибыль - Forbes.kz</a></div>
+    <div class="article" data-date="2026-10-09" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-09/svan-kyrgyzstancy-poluchat-55-mlrd-tege-ot-gosbanka-kazahstana-na-solnechnye-elektrostancii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-kyrgyzstancy-poluchat-55-mlrd-tege-ot-gosbanka-kazahstana-na-solnechnye-elektrostancii" target="_blank">Кыргызстанец получит 55 млрд теңге от госбанка Казахстана на солнечные электростанции</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 03.09.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 09.10.2026 07:48</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«Самрук-Энерго» в 2026 году значительно сократила чистую прибыль - Forbes.kz</div>
+      <div class="art-summary">Кыргызстанец получит 55 млрд теңге от госбанка Казахстана на солнечные электростанции</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://vlast.kz/novosti/71169-air-astana-v-oktabre-zapuskaet-rejsy-v-oman.html" target="_blank">Air Astana в октябре запускает рейсы в Оман</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 09.10.2026 12:10</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana в октябре запускает рейсы в Оман</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQeGlMN21qYl9lSDlVUGVUdGNrVFBWNUdNM1ZZV2lfTHQ4V1lsaUhOUkNZSUtfeHJiUzBNb19pSFN2dVFYMHpqa1o3dHhfcXdQSlB3ODRQYkcxd1RiUXZFUC1XZW5ILVlxV1ZoZnp1MHNqS2pRVlZYV09aRjhLZ2d4UTJFemdZZ9IBiwFBVV95cUxNSDlmVXFpbjZIb0xGRzJaekh5dFZ3QmpVX2lfYXVVdk1MTjVJNjJNQWI2TlFOUDQwWFhmVW9zeGlsRE5TdGF3ZnNlRk5LZzhjTndNSFQyOWppSlAxVnFuRE4tSFd6SjFrLXdMVXJZaXhyZXF5c2lmSUpFMjlIMlNDZFdQczlhT3RxSFZV?oc=5" target="_blank">Air Astana в октябре запускает рейсы в Оман - Vlast.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.10.2026 07:10</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana в октябре запускает рейсы в Оман - Vlast.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPM3pRVU01a3d1TUJBOHo3WHRmOGplTEtndHVfa0NMbXpGeVBlc3U4WThUT0JQNTdKT1pIX1RrXzFCNjZSTjN4U044OTBuZ2t6dWpIeWNlQlRHLTIyMk1pTDJCaDJneHF2YjE0amdpWEd4Rl9YQkdUM3E1OTkxWWs1QW5lSXJBaTRLRnI0MNIBiwFBVV95cUxOUDV0WnJtWDJ0V0xGa2xjeEt3N195US1EdVFJOXZKR1MwN3EtdkFVcUJrUXVWOGJKOXVnRzhFdDVjMGdGQVo2T0RManRaZmFOd2s1T0VLTzAxa1Rmb2ZoLW5Qb0RFNU05dmFHam95LWYyZjNKV2puTC13SWZIbEVnN0psanlUTVVfaTdr?oc=5" target="_blank">Air Astana запускает прямые рейсы из Алматы и Астаны в Оман - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.10.2026 07:19</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запускает прямые рейсы из Алматы и Астаны в Оман - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNWmVlckVuelo5S0F5RDZOWldXNmZYandpMjVqWWZiQ1dEODFqaU1SV3pDODU0eU9oLWItUWlXUWRfUE1qVWRfVkNmSGJ3aGpreU5Fa1l2VFpoV3RQb3dfeERDV084WVdtLWlEaG9pSnNTMUQwYkNjNGRObkNDUlJDSFRfSG1PVUhGYjdPWktLZk5JOGJ0?oc=5" target="_blank">Air Astana запускает новые рейсы из Алматы и Астаны в Оман - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.10.2026 08:36</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запускает новые рейсы из Алматы и Астаны в Оман - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSjN3ZWliX1BoSFVaejNzQnZjVEwxOVNJZW04MWc1cEVEMHo3OXpHZThRMUpES1BhZkZ0Vm1rRnpIYkdPSS1KWUNEZWliUlFiRVBPdE9qYi1MRXNxRlVZZHFURzhrMG13ZG5JXzd4Ml9fOGw3a2FlM3JsWUxHTFppSjgwNTFkZm1S?oc=5" target="_blank">Air Astana запускает два новых маршрута в Оман - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.10.2026 07:22</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запускает два новых маршрута в Оман - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQY2J0Y0oxSG1Jb0xEMzdsR3JHY0hPSEEwcVVVTWNOOS1JN0lyQzJINkdyR09QVHBaa1c0aDZGT1d1U3IzZ1NGUFo4S1c3bnBhNFZ1aDZONjNpaGZlMW5KdWpKbnRRLXA4MTM2UU5pMFBib2hlSHhEVU1rZzQ3dEpySjhIRDNvNjR2QXUyMkZCbjRwUQ?oc=5" target="_blank">Авиакомпания Air Astana запускает новые маршруты в Оман - Жайық Пресс</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.10.2026 09:30</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Авиакомпания Air Astana запускает новые маршруты в Оман - Жайық Пресс</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRm9fcC1Fd1R3ekhKMDFmOGZJT0hkdXllMWtRcUQyd3FTQ3FnbzZSYkRHY3J3V1F2dFk5WFVBdUZZU25jWWdsTDhFR2pUX0JSVVhUek81MGR4a01jRmFaR2I3Z2lvNHh3RXdZOERVZFJDZVRkNEJPdUhxMDV6RUppcnItUnRtMk1zSThz?oc=5" target="_blank">Air Astana запускает новые маршруты в Оман - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.10.2026 07:13</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запускает новые маршруты в Оман - Kapital.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1VVHhld29DQW9sUl9KVlV0MEw4QTBsQllrWWhCem9jVUU5amk5bV9WZC1DbnVJcEtfbWw0Ykdyd19VcUJFOFF2NkxyWS1IMzZwQVZFTnpFNFlyemIyWEJhZUVGLXlUTjViUGtyS1p3MGltODA?oc=5" target="_blank">Air Astana запускает новые маршруты в Оман. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.10.2026 07:50</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запускает новые маршруты в Оман. - Exclusive.kz</div>
     </div>
     
   </div>
@@ -300,7 +373,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-25';
+  document.getElementById('date-from').value = '2026-07-20';
   document.getElementById('date-to').value   = '2026-10-09';
   applyFilters();
 }
