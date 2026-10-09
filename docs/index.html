@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 09.10.2026 18:41</div>
+  <div class="meta">1 источников · Обновлено: 09.10.2026 20:23</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-02">
+      <input type="date" id="date-from" value="2026-10-09">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-09">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,11 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
     </div>
   </div>
@@ -106,47 +102,20 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-10-09" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-09/lngr-kostanay-region-car-train/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lngr-kostanay-region-car-train" target="_blank">Автомобиль попал под поезд в Костанайской области</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 09.10.2026 17:32</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Автомобиль попал под поезд в Костанайской области</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi7wFBVV95cUxOUVpVQnR6cENvZFRyUm9lS3l0dm50OUdPazBteXMtbUpaanVPWkYydWF6QkhiUHdjaTBfUFU2VkFrRXBIQXlJX2FGOFV3MWFiZ2hpYS13QUt4MnpuSEk4dnhZUVZCWHJtVzNlWDlqTFJDNDFDSmJlRVI3dWIteHdJVlNOcVNLdXg4ajlJeEJYYWp0YUZMc3RubGdJbFdFeHVQX0pPeUxWQzliWmJsRjR2bVNXbzE2VUw3bVpIRjNNanE1Njk2WGJ2S1RrSjliN0dGcjRvX3ZET2Z3WVlmTi1DbGtnUkpPcGJzRnl6aWJ5TQ?oc=5" target="_blank">Казмунайгаз и хорватская Geoenergija Razvoj будут совместно разрабатывать нефтегазовое месторождение Шыгыс - Русская служба The Moscow Times</a></div>
+    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQblpEWlBaSXdySDliODN2UnM3RUVqcVdxeEowbzh1N0J1WGJLUjFHRnQtUmdkUWI5U202OHhPTkxjaHFmVVVLWHo5VHBnWFhsVWt6YklXWnBTd3E4eHVBT0J5a29aN1RWTW52c3lCbnQ5TjVFRE1BcXRUSl9vb0t0NUVMZ2JzVndEN0ZQRS1sTWJELUg4d21KcXYyandGSW80b1M3dHdiV0dKRDE4TVgyTFc3X0dTTlU?oc=5" target="_blank">SCAT и Air Astana открывают новые авиамаршруты по Казахстану и за рубеж - Новости - «Седьмой канал» - Жетінші арна</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.04.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.10.2026 17:37</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Казмунайгаз и хорватская Geoenergija Razvoj будут совместно разрабатывать нефтегазовое месторождение Шыгыс - Русская служба The Moscow Times</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-09" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQTTJCOTBqa2piQ1NtQ3VUMzEzQWhPeHZ2NHlxTWNLYTRrdDJLNEJTQ3AxdVZIQk9XZFpIbGxzS2ZwRDZuZlAtWnlpbzF4TnRrX2ZmTlMyb1RJZzJCRWtwa3VyWXRaZVRyYnpFNE5tMmpXUTJRQk1QU0FTNHVKN2hjZVUzSDY3TGhIdEg4UzRRam9PUTlhc0hSYTdoNWlwSm5HQS1KUWFVSWJBX2pMMHY2YklTMVA?oc=5" target="_blank">Новые дома в Актау получают доступ к интернету от &#34;Казахтелеком&#34; - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 09.09.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Новые дома в Актау получают доступ к интернету от &#34;Казахтелеком&#34; - NUR.KZ</div>
+      <div class="art-summary">SCAT и Air Astana открывают новые авиамаршруты по Казахстану и за рубеж - Новости - «Седьмой канал» - Жетінші арна</div>
     </div>
     
   </div>
@@ -210,7 +179,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-02';
+  document.getElementById('date-from').value = '2026-10-09';
   document.getElementById('date-to').value   = '2026-10-09';
   applyFilters();
 }
