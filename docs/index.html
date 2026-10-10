@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 10.10.2026 17:41</div>
+  <div class="meta">1 источников · Обновлено: 10.10.2026 19:36</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">9</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-02">
+      <input type="date" id="date-from" value="2026-07-21">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-10-10">
+      <input type="date" id="date-to" value="2026-07-21">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,17 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -112,124 +102,20 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-10-10" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/obsshestvo/71182-nedela-v-kazahstane-mezdu-dvuh-ognej.html" target="_blank">​Неделя в Казахстане: Между двух огней</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 10.10.2026 11:20</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">​Неделя в Казахстане: Между двух огней</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeVN5TEN5SVdTLWJWVEJNbFFaXzl3THFFVGxSMEQxY3A2ejRrZHNFRzR6bWo5STJZVWN6THhzV0VqdmRfeXJSbzU1WC1Ld0x5UGlTZ3JBU1h0ZHRYeWVFZ2RBNHhCUjhFblRDVkdYSV9JQWFIOUVOSGNFeXBSZFpGcFJMV2dPWk1F?oc=5" target="_blank">Правительство передает &#34;Самрук-Казына&#34; пакет акций ERG - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 11.06.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Правительство передает &#34;Самрук-Казына&#34; пакет акций ERG - Inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOWThfOGYxczFHWk15RjBKU0hySWlUdkxkZUVIX29ld3ltMzhMVHd1ejlrT0ExamlFSUtkeHZzMU16bkF6U05kQkMzUnZnbUltb0M5bHhUMGIwV2NISlcwRF8xUGoxWG5KbkVRaWhaRGZfM1JLQmZvYjJQRU9CNzd1cGtBVl9ySl94RW1ycjZFSjZpTVN6bGxwN2lpeXBqWTBZcVJ1adIBpgFBVV95cUxPcmw1SWdRRklRXzVDNjl2aFR0dlZ5VmlCWUUxTjVnWmdtNnk1UmdGZ25Fb3Y0YmFIek5kc0pDM0xGb0xub0lRMDRBWVc5ZC0zSjBGMGpRLTBkNlNMcUlxOVZfUEF2UEdHQzJGTzZGWXFvN2s3aHJnc1RZRU9reXIwaGhHd2lqZk5XZ1F6NUc1T2RTaFFPSHNvVk9ydDJVQ1pMRDdIelVB?oc=5" target="_blank">КазМунайГаз принял масштабную программу геологоразведочных работ - Казинформ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 07.08.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз принял масштабную программу геологоразведочных работ - Казинформ</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-02" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9wZVVZbjFyNmNMMG9UNHZwallwY24zTU01ZTJJS1NnLUQ3YjVYcEJrd0RRSW9KYVplU3RILXFWS0pGYnVUVmxuX1dvQmktNVVqR21yS1NvX0lEdFBETDJZVg?oc=5" target="_blank">Казатомпром обсудил вопросы сотрудничества с США в атомной энергетики - Атомная энергия 2.0</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 02.02.2026 08:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Казатомпром обсудил вопросы сотрудничества с США в атомной энергетики - Атомная энергия 2.0</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-07" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOaUZGY1gxd3RxRUxWUXhZUzJ2YzlSZGVCaVpwQ2M4NWY3bzF4MnM0WGVzMHNvUVFvekczSHhrSTlVS25jOHdaNW80WEJlMl8xLVVTOHhQR0oyQWdaOVVhU0ExTHlQbFhkOW10cmNoRDBlck9ZN2lLb2pTWW9WWTcwRExYa2RjdzE4bElDZE1ldUh0Q3JZSDMwdklKYzNlV0pUOW4xSVJHYTV5ejBwNzdEenAxYzh0bkgwV2o0Ug?oc=5" target="_blank">«Казахтелеком» наградил международных партнеров на International Carrier Meeting 2026 - Kursiv Media</a></div>
+    <div class="article" data-date="2026-07-21" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQVpkRGxuOFFLVzAwVFl1a3NzN2twQ2w4N2pBVmVfVk43Q21MeEQ3UTJ6Z3NWU0xNelVvUi03NlBSWGVQeTV0TzhMdUhERm4ydTY1b2ZTcEU1WTlfcENnakJaU2hpaW9RZVNmMDdLN2Joc2tXZ0dycDY3dV9IMDJDWGszbFhLOHNFY25keGI0NDdjaW9VN0U1QXh5eGwtNmQ1cjI5em1lY2o3SXdfUnlBNU1yMjdrNk84V0J6WklSNkZMX3E1TEo4X2s1ZE1wSTR5dWtRVlZn0gHbAUFVX3lxTE5hV2kxbjNGUGhVVFQwdkx0czA0alZMN0prZmZfbTB1eE9wQTVMMkFpcUlsb3lIQlV4Smp0czh5R09yMVJvNGEwTGFtSE1LbEl3VmR4OHVlb2tqVEJZVVlEZURSbHlNM19DNlJEc0lKRmhpS0RZYkZ6M1BSQjRGTjNBcmVybVdzVDI2bDBwN2xZUGRPbGI5a25DWHZtNDNLdXNiWFB6RHhHY0ZuMEpfZ3dlbWR1eW9SV3FSMXptVmRDYWY1YXNJWGFoYUY3Z2xrWC0wblpHdUFiRVNZaw?oc=5" target="_blank">Интернет в аулы и AI в школы: &#34;Казахтелеком&#34; презентовал цифровые проекты в Кызылординской области - Новости Zakon.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 07.09.2026 07:00</span>
+        <span class="date">📅 21.07.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«Казахтелеком» наградил международных партнеров на International Carrier Meeting 2026 - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOQXZZYUhtU0ljYnZuaVIyUUV3Q1JVVUxQZndlN3hfLUgxM1JabkJlbHpUZHhYVnNQYk9jdUk0dU4xT0dxa2RidEZFbnphQzVkY2R4NENzZHp1b09sclpmamlSTmVKOERNVXBKLUkwZjdOTElBalprQWhpS3BMSGJOclVxM2tZV3pQMjNuQU9CQWtmdWx2VXpGd2VUTzBleFJKazlsVXZLeVFHM1F6YzJUNDVmRHE5VndqQlNZcGhtRQ?oc=5" target="_blank">«Самрук-Казына» купит два отеля для размещения айтишников из неразвитых стран - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 10.09.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» купит два отеля для размещения айтишников из неразвитых стран - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBxVVZ0eGYyVnppVVlsRk8xa1JwcUNkYXR0UE1mOXJhQUxWbVRBN0NTSTBCMzRfdjZFRFV2V0Nsd0loM2FVZ0ZEdmlYMGtGVi04UkhtRnpjR05FTFZWWUFzWkQ0UzRFZ1hkR05sU09zVFdHVGdCTXBMY3l3Y0RiZw?oc=5" target="_blank">Алекс Матрссон: «Самрук-Казына» реализует впечатляющую стратегию под амбициозным руководством Касым-Жомарта Токаева - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 10.09.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Алекс Матрссон: «Самрук-Казына» реализует впечатляющую стратегию под амбициозным руководством Касым-Жомарта Токаева - DKNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPcmlZYVp4Y2ppT0RzbW5rRng0VktIWG4yRXNkUUxaa0lFc3pKWlkzTUJmbWRsd2RyMW1FUW1oM0I4Ul9wX2NmU2hBSE9SaHRzQkVnd1o3SjNrRU1RbUVhYU9kcmp3RUNzUkUzNzluendlMkVHNTBrSHhqMmVLbjlRU29vbkxXSXp5M1dsTkRzbzItSmRnOUt5QlBRZ05QeUVY?oc=5" target="_blank">Глава «Самрук-Казыны» призвал инвесторов вкладываться в КТЖ - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 10.09.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Глава «Самрук-Казыны» призвал инвесторов вкладываться в КТЖ - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPYlNReERxV0lGbHR0MnBFQURUTVJSdk1jV090VVVadnVOTE40Z1B5Yzl2NUVJekt3Q0Q0YmZielJoRW1ueDktMURlNWdsQ2NLRTUzeEJvSXdPYXByRnQ5MkxMTDA5emp0bkdkZXM3VnlFQzZmck4wVkx1ZFBKdXM2RkV4WUxhWWcxcHR0TVZZZVByU2w1WndiVlJ5RGtSQXhDSFBEUnh2ZGlIUVlPRzR4amwtN29DYlF3M2E1M1NR?oc=5" target="_blank">Глава Air Astana назвал срок получения Boeing 787 Dreamliner для рейса в США - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 10.09.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Глава Air Astana назвал срок получения Boeing 787 Dreamliner для рейса в США - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-09" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNbXVfQ0RkalU4eHctRkc2LWhtaWlocXJkajhlLTV2ckZucEJ2NXJlQlNxWTZraWRBaGxmYmoyUVp6ZVlBMWJnTlphRl9IcERJVjRmdGN2LXZCSTVzNFlzT3lTaGZUYko5UnprSVMxZW1ENVU3bVlRZ3JFa2ZYY0xoY2RZdHAyWVVuZlFtTU8zMA?oc=5" target="_blank">Новый рейс в Оман: Air Astana открывает прямые полёты в Салалу - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 09.10.2026 10:45</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Новый рейс в Оман: Air Astana открывает прямые полёты в Салалу - Qumash.kz</div>
+      <div class="art-summary">Интернет в аулы и AI в школы: &#34;Казахтелеком&#34; презентовал цифровые проекты в Кызылординской области - Новости Zakon.kz</div>
     </div>
     
   </div>
@@ -293,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-02';
-  document.getElementById('date-to').value   = '2026-10-10';
+  document.getElementById('date-from').value = '2026-07-21';
+  document.getElementById('date-to').value   = '2026-07-21';
   applyFilters();
 }
 
