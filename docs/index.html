@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 10.10.2026 19:36</div>
+  <div class="meta">4 источников · Обновлено: 11.10.2026 06:52</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-21">
+      <input type="date" id="date-from" value="2026-02-25">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-21">
+      <input type="date" id="date-to" value="2026-09-11">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,6 +84,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
@@ -105,17 +111,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-07-21" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQVpkRGxuOFFLVzAwVFl1a3NzN2twQ2w4N2pBVmVfVk43Q21MeEQ3UTJ6Z3NWU0xNelVvUi03NlBSWGVQeTV0TzhMdUhERm4ydTY1b2ZTcEU1WTlfcENnakJaU2hpaW9RZVNmMDdLN2Joc2tXZ0dycDY3dV9IMDJDWGszbFhLOHNFY25keGI0NDdjaW9VN0U1QXh5eGwtNmQ1cjI5em1lY2o3SXdfUnlBNU1yMjdrNk84V0J6WklSNkZMX3E1TEo4X2s1ZE1wSTR5dWtRVlZn0gHbAUFVX3lxTE5hV2kxbjNGUGhVVFQwdkx0czA0alZMN0prZmZfbTB1eE9wQTVMMkFpcUlsb3lIQlV4Smp0czh5R09yMVJvNGEwTGFtSE1LbEl3VmR4OHVlb2tqVEJZVVlEZURSbHlNM19DNlJEc0lKRmhpS0RZYkZ6M1BSQjRGTjNBcmVybVdzVDI2bDBwN2xZUGRPbGI5a25DWHZtNDNLdXNiWFB6RHhHY0ZuMEpfZ3dlbWR1eW9SV3FSMXptVmRDYWY1YXNJWGFoYUY3Z2xrWC0wblpHdUFiRVNZaw?oc=5" target="_blank">Интернет в аулы и AI в школы: &#34;Казахтелеком&#34; презентовал цифровые проекты в Кызылординской области - Новости Zakon.kz</a></div>
+    <div class="article" data-date="2026-09-11" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPd1JoSVYybldpcEZpMGlJMktQaldQOTR4X3lyeGNhaUkycDJRSkg4TWlSU1JETGtYb0J0bXV2cGJodUE3ams5V2dGNGliOHdoenI0TWV0dFVRWFVfV1RRbjNITm04bXV1eEN5QURKQmJjLXkyRHR6TVUzenlMWjFrRzBZNDFETHFBMlZ1Tk5lX2l1REJIMVprUEhUUVh5TGh2UVVWd1RfNkIwNEY1?oc=5" target="_blank">«КазМунайГаз» обманули на сотни миллионов под видом помощи больнице - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 11.09.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» обманули на сотни миллионов под видом помощи больнице - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPZDYzNm43OVNJMUxEYkpXYk9GU2xsUTFEd1ljVFI4RDJFLWxmVDBVbDAtSEh5WHR2VnFBZmNPYXZhQ0tkc0VhUUZtN1Q4LUx3aTVULXZWQ1FkazZJOGY3cEVhQ1BCX0NCSFpUOXEybnY2a3RiOHdOZWI1MlUwN2dxZQ?oc=5" target="_blank">«Казатомпром» снизил продажи урана на 13% - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 03.08.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» снизил продажи урана на 13% - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-17" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQLWc4OGMtM0g0TDNoVnZ3dnNXTE0waG5WSGFLbk05Q1F6M2tpQndiRVFZV0t2Y0kzSDFURUt2Sm1jWkNlMHdtWDhMc1dpbXJwSUtWLWN5RkJPV1dQbzUwa0hTeXlXZ215RGpsQV9pYlBSLTlQSEd1b1ctQ2JKSWV6OWtJX0l1SUNJX3EzTXJWMjRqblVLbEtlVFZOTUF1WURrU2dXRXJXZ1RBY2pLQVE?oc=5" target="_blank">КТЖ проводит республиканские акции по безопасности на железной дороге - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 17.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ проводит республиканские акции по безопасности на железной дороге - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-25" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOVW9lc1JMTWpQdVFmQWhhS1M1enBVeFkybU1ndHE5MjRld1JVREtKTlJDZy0xcDJmSWFKaGlMTTd3Z29zY0NjMDVaYm5KY0hoOEN2QVBCTXZXZWpBNW1WQVROdTZKbXZDUlphNllwYlBDM2dMT2FjQnc5NlJmQ2Jaakc2RDBNenBJZGVBb2tkUmo1SmJpcnlOZmM4SjBoMEdBWUFwVzd4TdIBpgFBVV95cUxNNGlfUWZEOXA3WVdGUU53OF9HOUg3MDhZUXRQUmNkUUVGV3pjaUpUdzFJcXRMdUEtbl9lbEVpLWQ4ZkYxdlpUYWxSS19laVQzSVp1RGNJNHYwZzBfdnl3TTFURWJ3b1ZfcmljX2d3MWkzV2NOZUR2a092RTlwa2pZaVEzaUFGRFdoYXlnTVowWVhPR3p1dE45S3FHZjNNYlFpRUJNY0Z3?oc=5" target="_blank">&#34;Казахтелеком&#34; переходит к модели инфраструктурного провайдера ИИ-экономики - BES.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 21.07.2026 07:00</span>
+        <span class="date">📅 25.02.2026 08:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Интернет в аулы и AI в школы: &#34;Казахтелеком&#34; презентовал цифровые проекты в Кызылординской области - Новости Zakon.kz</div>
+      <div class="art-summary">&#34;Казахтелеком&#34; переходит к модели инфраструктурного провайдера ИИ-экономики - BES.media</div>
     </div>
     
   </div>
@@ -179,8 +218,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-21';
-  document.getElementById('date-to').value   = '2026-07-21';
+  document.getElementById('date-from').value = '2026-02-25';
+  document.getElementById('date-to').value   = '2026-09-11';
   applyFilters();
 }
 
