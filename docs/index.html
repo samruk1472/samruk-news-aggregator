@@ -60,14 +60,14 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 11.10.2026 10:29</div>
+  <div class="meta">2 источников · Обновлено: 11.10.2026 13:42</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
@@ -76,7 +76,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="date-row">
       <input type="date" id="date-from" value="2026-08-03">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-10-11">
+      <input type="date" id="date-to" value="2026-08-29">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,13 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -111,60 +107,55 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
     <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNaWRyR3R6UzVuUDE3di1xazhlemlVUmxBNXRCWUxCZUJPbjBjVEctUkJqd2VKdzI4RnBNbVZQcDZ0TFJ5aml6SUl3SHNLVDlUX1ZWS0JoVWJxVVdaU205SkZPMzlpU2JWQjktYXJpVUx2ckhBN0d1T2NpZmI3M2pGSmg1NmZHUnVVNC1mM281bw?oc=5" target="_blank">Почему «Казатомпром» увеличил производство и снизил продажи - Oninvest</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNaENaZUJtbFM5d2Q3MVhYWnpaZGVOZXVoOXk3blk5OHN2Z0hXMkh5em40NkY5NVA2aERwc21OdFExd3J0RjZYcExvS055TG9hZ3J1ZFhDVFNoS2VZSUROaXNpQ1FQakFaR2NzX2YzRmhGdzZRbW4xX2lRVHVKSm1JY2VqYnFmNXNwVHIxdmVQV1JvTWtOdEMyMS0xbER3QUhLS1FxOEhNSQ?oc=5" target="_blank">Казатомпром в 1-м полугодии 2026 г. увеличил добычу урана на 9% - Neftegaz.RU</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 03.08.2026 07:00</span>
+        <span class="date">📅 03.08.2026 11:04</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Почему «Казатомпром» увеличил производство и снизил продажи - Oninvest</div>
+      <div class="art-summary">Казатомпром в 1-м полугодии 2026 г. увеличил добычу урана на 9% - Neftegaz.RU</div>
     </div>
     
-    <div class="article" data-date="2026-09-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOX2JfMTJlR2FWQl8zNnNOU0tzNmZDR0hBbHdsTlVHS0ZMNWtPczFkczRITno0TEdEcWNIZTQxZGYyMTUxWjQ3d2RnSy1ndi1HTDk0aGthUlZFYjQ2NGRsRnNUYkd6aFpoMGcwemFaemRPQXhBRkhDQldRSjZOMTZib094VVZ5QQ?oc=5" target="_blank">Заседание Совета ветеранов прошло в КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-08-21" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNb3RaT0xVOHVMa3c2V253MDBOZVBob1dON2x0eW0wYk1oaEtVM3pPbVFmU3BxVFdVZEg5SVJwand3RnF1YWFXaXhJSjF5eHdka0hONk1nSzMzdExvYnVlR2tpX2dhdEhKbUdwOS12NFFEaTJUV21DVGJRdWZCTUt6c3N6Z0xJMGdMeVBEWjJyOVpiNzQwUFFjSw?oc=5" target="_blank">«Казатомпром» планирует поставить уран российской Uranium One - Newshub.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 21.08.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» планирует поставить уран российской Uranium One - Newshub.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-29" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNUTB3Uk5LdjFLSjYwZlpFYTZqekVxclU5a1BJSDNqU2tuNzdxOHFNTTVVNEJ5RlVfUDFwVG5GVl9QUHpiWjdudjVoMC1EMDlHbTYxUGt1RDEwaXlqTmU2c2daenpDX0tmMnpGZHVieGhobXQ4Z2xFTWd6WExFN0lMdURmdmMwcEw2TnlDU196djZLakZtMFhMc0NOTXducXU5cl9xTTd3?oc=5" target="_blank">«Казатомпром» инвестирует в подготовку специалистов для урановой отрасли - Mail.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 29.08.2026 11:38</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» инвестирует в подготовку специалистов для урановой отрасли - Mail.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPN214c3hHTkRwLW1kaGVRTTFENVJyN2M4TGVlZWsyZXRaa3doUjBWQ0JQZzlhNEdxajdrRl9ycy1ZVDA0UnNRalpKdHMzWkF0VC1BNE94MHNxbTZjbzJXT2hMejZBdmREb2VmUTdKX2h6YS0zR1F5bm1qMEF1cFRjMW82dFdyeWZ0dzZWc1pYUWR6c0xJSlhOaS1oc2NFNmQw?oc=5" target="_blank">Глава КТЖ ознакомился с локомотивным и пассажирским парком - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.09.2026 07:00</span>
+        <span class="date">📅 12.08.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Заседание Совета ветеранов прошло в КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Глава КТЖ ознакомился с локомотивным и пассажирским парком - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-10-11" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-11/eduard-poletaev-interview/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=eduard-poletaev-interview" target="_blank">СНГ через 35 лет: зачем Казахстан предлагает новую стратегию сотрудничества</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.10.2026 07:42</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">СНГ через 35 лет: зачем Казахстан предлагает новую стратегию сотрудничества</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-09" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPa2hJdDNFMFpZc3RhYXRRNE1UcUtnMlVEZ1FObmluZ0VVMGNBaUt3TWZBMzRGdFd2bFJSalJXWDdRRXVjSllMUC1mZlplVnJOTGZSN3ZSb05xNTN5UWpmSlprQXp4Ui1KU29HOHI2cEpxSnYwN2g3eGxJU05nVTJrT3NIdjlCSGs4RUtpLUxleVZwVVFjSzlKVFA2WQ?oc=5" target="_blank">Казахтелеком: итоги 2-го квартала 2026 года от аналитиков Freedom Инвестиции - Freedom Broker</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 09.09.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком: итоги 2-го квартала 2026 года от аналитиков Freedom Инвестиции - Freedom Broker</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -224,7 +215,7 @@ function toggleS(btn) {
 
 function resetDates() {
   document.getElementById('date-from').value = '2026-08-03';
-  document.getElementById('date-to').value   = '2026-10-11';
+  document.getElementById('date-to').value   = '2026-08-29';
   applyFilters();
 }
 
