@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 14.10.2026 12:35</div>
+  <div class="meta">3 источников · Обновлено: 14.10.2026 14:53</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-16">
+      <input type="date" id="date-from" value="2026-04-02">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-14">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -107,50 +109,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-10-14" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5HUEdlWVRiS3Jhdk9DQWFNZVh5a20ydnZUcm9HWWxLTlNpbndxLVp1T0JSVHpGd3hRb1h3OGFGejdEWm8xY3ZvLXhGeXZjMW0xS05Zdm9KQmxxUHdiY3Nfc3pTeHlRcFVIVTh2blRhcmhnSFNlWV9MOQ?oc=5" target="_blank">Самрук-Казына хочет разместить дим-сам бонды, проведет звонки с инвесторами с 14 окт - TradingView</a></div>
+    <div class="article" data-date="2026-07-16" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE1qRlg5V2MtMUlLTE9sal8yd0pLT1k5Qm1lenpubFJWWm5wM1VteWs2Zk95S2s0N2VzdEt2RkNRWHVIOWpOSVluY1Vlc1dGZ9IBS0FVX3lxTFBmYjNVWTk5UEtyMmlsMk1jS0w0UW55TlFUWlhtdTBsWHYtRHRrc25QY1U2Y1VZZDI2bHV5VWRFOUZHQ0dVX0ZJcWFjbw?oc=5" target="_blank">Air Astana приостанавливает рейсы в Дубай из-за эскалации на Ближнем Востоке - Интерфакс</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 14.10.2026 07:51</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 16.07.2026 07:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Самрук-Казына хочет разместить дим-сам бонды, проведет звонки с инвесторами с 14 окт - TradingView</div>
+      <div class="art-summary">Air Astana приостанавливает рейсы в Дубай из-за эскалации на Ближнем Востоке - Интерфакс</div>
     </div>
     
-    <div class="article" data-date="2026-10-14" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNWU9JMmpfUFhwMFpkSXljMVJTOVgwVm4tbGJ5ZTQ1U3FtQUZHdXlmMUdlNi00endOLU9kaHpzU251Y1hBbkRHcGhjOENFRlE3Y1N5SjVUTEpKYy03MERDUFR5VmpWRE5fR001cVlYYVBFc05uTE5Nb0NZVWY2YUlESjR4QnpnMVBWSXJwYy1lS0RodWY4ZmNoX28yb1VnLWJLZ0lURU9saWk2ZmhUUXZjdER2aUtlR3M?oc=5" target="_blank">КТЖ увеличило перевозки зерна в страны Центральной Азии на 33% - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-10-14" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JV3NndkctODJ2NzNRWmpxV3lqME92ZUtnb0xIb2xNS1I2QWdMbzAtTEp5VXd6RlRtU1FxT0ROdmpVSXlaRi1nNzQ4SWg2ZXNpckNwZnVMaGRNZw?oc=5" target="_blank">«Казахтелеком» определен оператором национальной системы видеомониторинга - Новости Караганды</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 14.10.2026 09:37</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 14.10.2026 13:38</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">КТЖ увеличило перевозки зерна в страны Центральной Азии на 33% - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-14" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNTVBrQWJTYXV1VVFwMGtMSlVEQzdwN04tY2ZiRVlDejBoUjBoX0NzSmloUzVsV2dVeVFYUEFPczhGYnJyTlUzRklmdzlwQUoxSklzcUE3MFFtSmt3a3hqZDQ2S3FhMk9nNDhUX2RNcUQ2S0wxWVVaRGZoY2VxR3NRTTdab1AzLW4zNlRUankzUE95R2d1MkQ3M09GTTAzaGVBQkZYZVY2ZTBaTjBPQ2c0?oc=5" target="_blank">Более 4 тысяч видеокамер установили в поездах КТЖ - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 14.10.2026 10:57</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Более 4 тысяч видеокамер установили в поездах КТЖ - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-14" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPQ0xoM1JybUlKSHBZWGtmV1RyV2VCYnVFZGFjQjVsX0NtTG02UmdhSkM2RHVuNno2RFJ5aWZHLUdzbm8wS3lCR2FtTHVBcklWQVFaYWxQazNraUxSdm1YVDJUbWNXQmFhcWdxcjNtdDBsT21BMXNqcXFkWTMzUlVpODdsUm9XcG5VOWQ4S3p30gGaAUFVX3lxTE5kdlMtYUY5Z2JwdWNrR3Y0MGJIbUFsX19lQmprc2UwN1dWMlRtTUQ4QlVDNXJMQzE1eWt5X3ZkYk5zVy1ZNHVhNDV1a2R2ckhfeVpEaFUxWHA4ckJTaEo4WnRYYmdpTTRHM2pKeGdnRnl2WmtwVjR1bUx0ZjFYSWFOakNpR3VLdnZpaU1MYWRnYUt6b2NvMno3YlE?oc=5" target="_blank">КТЖ нарастило экспорт зерна в Центральную Азию на 33% - BAQ.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 14.10.2026 09:59</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ нарастило экспорт зерна в Центральную Азию на 33% - BAQ.KZ</div>
+      <div class="art-summary">«Казахтелеком» определен оператором национальной системы видеомониторинга - Новости Караганды</div>
     </div>
     
   </div>
@@ -160,15 +140,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-16" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbEswZWdTTHhfR3RZRGxCZWpLOE1GRUpvS2dVcG9tWjRUajFlMnJEdGxVUE55RWgxUTY2ODM1RDZHdlJuTEw0VHktNTl1bkNZcWljbHBWX05LVFcwZk5FekxORmZMOGg5VDh5ZVlJTFRXR3FPS0xvSDR1NWt2R1BXQnk1U1liamxPNG81R2dZV1hqZXJVaThnUE5PQlg2X1d1NGZ2LVlHMks5dw?oc=5" target="_blank">Стало известно, чей пакет акций «Казахтелекома» приобрел госфонд «Самрук-Казына» - Profit.kz</a></div>
+    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOZ0NBR1VfY1JyUWhOcFphSFpKcHJKTkFqN0FRN0tuSGpmNmg3UmpOekowTDgyMVhMOVRUMDNKVnJhWlRTNFVnRVVia2RfbE5sRHkwWmx1ZmFtbnBtdDdFQzFJcmFNdW50UjVWRzhXSEhzWTZGU21sRUhOYk1PVzJEUjAtZVNpcDVmZ2lrZ3RKRElOa1doaU80?oc=5" target="_blank">КазМунайГаз укрепляет стратегическое партнерство с Национальной геологической службой в сфере цифровизации геологических данных - ҚазМұнайГаз</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 16.07.2026 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 02.04.2026 07:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Стало известно, чей пакет акций «Казахтелекома» приобрел госфонд «Самрук-Казына» - Profit.kz</div>
+      <div class="art-summary">КазМунайГаз укрепляет стратегическое партнерство с Национальной геологической службой в сфере цифровизации геологических данных - ҚазМұнайГаз</div>
     </div>
     
   </div>
@@ -230,7 +210,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-16';
+  document.getElementById('date-from').value = '2026-04-02';
   document.getElementById('date-to').value   = '2026-10-14';
   applyFilters();
 }
