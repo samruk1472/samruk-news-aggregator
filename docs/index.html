@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 15.10.2026 08:44</div>
+  <div class="meta">2 источников · Обновлено: 15.10.2026 12:22</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-01-23">
+      <input type="date" id="date-from" value="2026-10-15">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-15">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,11 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
@@ -108,74 +104,41 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-10-15" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/jekonomika/71247-energeticeskij-sektor-kazahstana-v-ozidanii-momenta-istiny.html" target="_blank">Энергетический сектор Казахстана в ожидании момента истины</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 15.10.2026 14:33</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Энергетический сектор Казахстана в ожидании момента истины</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-10-15" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOczhtUFUtQjVXaEFWQzF1X2pmSnFKRklhb1dNcnRZTlhYTlpWdVA3WUlDOEc4Y3R0Z1FWX3ctbWR0d2RHRkRSSWFYQjMycC1UMmhsbDg5akhaemhIbDlhU3VrTmphaDZKMjZ4eDIweVJOTnVvajVQbzZuNjQxQ2tWYjUtZHpWZzFRNkxPOE9IcE5jRWRvQ0JndE5fX1hKQ3hZeXJFeFVpR2xiOE1ianB3dw?oc=5" target="_blank">«Самрук-Казына» может занять до $1,5 млрд в Лондоне, Гонконге и Казахстане - Kursiv Media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOHlMS0F0Y0V0Z2I3c1JXMUZ4azRtaHgtekRxcnlfTEE3Q1B1enN3eXJlS05ZaDBjRmFCcnlmNng5elV3Q0k0LVdGQ2NJVVpPZld0SnNCS2dVV3dqVWluV0VfdlBMbGNuM3ZXSUloY3FCeVBpNHpvRkd6QnlmblVDREstWEhPV1pzU1pwVDAzSUw5NUdfYWdrelQ1dlpDN3ZLOW4wSGM4MFZmSkU?oc=5" target="_blank">«Самрук-Казына» выпустит облигации dim sum объёмом до 6 млрд юаней - National Business</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 15.10.2026 06:58</span>
+        <span class="date">📅 15.10.2026 09:24</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Самрук-Казына» может занять до $1,5 млрд в Лондоне, Гонконге и Казахстане - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-01-23" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE41VGttQnkyUDlPUGw3cUdTRVhhdmpkRk5WMVJzZ1R1cWdUb2NXczliS0FCUjdrTG5RTE1YYzJDbDdwMFkzMDhNRWVDcjV6dVRGY1pEVy1NTHpoOGNldDVHcg?oc=5" target="_blank">Казатомпром прокомментировал ситуацию с компанией Laramide Resources - Атомная энергия 2.0</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 23.01.2026 08:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Казатомпром прокомментировал ситуацию с компанией Laramide Resources - Атомная энергия 2.0</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQU1B1czRtTWRMU0w1dDFuZHNrRmJUc1o3alo3MlF3TzdiZmMyVF9ITFJocUE0WV9CUThHSUZ0YzNzbnAzQUk0bjU2Y3BuM2lBNTI3MTZCdXVwRXg3Y3RFVnJQNnIzY1RsSE9OZ0tpMVl2OUlBbGtYLWtObE5RcmJPelQyenpGTlFEZ2dTYUUxQjY?oc=5" target="_blank">До Нью-Йорка прямым рейсом: что известно о планах Air Astana - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.09.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">До Нью-Йорка прямым рейсом: что известно о планах Air Astana - DKNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-14" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNYkR0emtNNklNNDAzdmV0cm55OUhJUk5wTFNLdWptUE1BZ1d4cU1VbnZ5VHFJal82NmNsQzBLUmNqSjM5alE3UXd3dFkwc2Q2VURlLUJWZjNwTVdwZ1BBY1VPc1IwMjhaRnhHQnBPUXNLOUNjamx6Y0hJSmdtek1iQzctYkdLekN4b1JpV3BNZW9laTd2Qm5RWVV30gGYAUFVX3lxTE5MVHpiSmZwTGNQdTZlX0RpNkZDTm1SUkZoOUpxcXVuU2JlOHlOVU4wS2NXNTIwTXAxendvalpOVnBQZzhRWTFrbkJaTGUzQmlkQ2FQREJCc001S2JuS2ZSdkR3Yi1qb3ZKeVpjOTR0bk5jcGFzY3FIOV9hN09NVWJMVHJsWGczWFJyV1BOTnRtWGxhQm8zOWF1?oc=5" target="_blank">&#34;Казахтелеком&#34; продал половину компании, которая строит &#34;Долину ЦОД&#34; - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 14.09.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; продал половину компании, которая строит &#34;Долину ЦОД&#34; - BES.media</div>
+      <div class="art-summary">«Самрук-Казына» выпустит облигации dim sum объёмом до 6 млрд юаней - National Business</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-10-15" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-15/svan-samruk-kazyna-mozhet-zanyat-do-15-mlrd-v-londone-gonkonge-i-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-samruk-kazyna-mozhet-zanyat-do-15-mlrd-v-londone-gonkonge-i-kazahstane" target="_blank">«Самрук-Казына» может занять до $1,5 млрд в Лондоне, Гонконге и Казахстане</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 15.10.2026 06:53</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» может занять до $1,5 млрд в Лондоне, Гонконге и Казахстане</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -234,7 +197,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-01-23';
+  document.getElementById('date-from').value = '2026-10-15';
   document.getElementById('date-to').value   = '2026-10-15';
   applyFilters();
 }
