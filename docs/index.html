@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 16.10.2026 05:33</div>
+  <div class="meta">4 источников · Обновлено: 16.10.2026 08:40</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-01">
+      <input type="date" id="date-from" value="2026-06-17">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-16">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -88,6 +88,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -107,50 +111,94 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
-    
-    <div class="article" data-date="2026-10-15" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMmtvUjlYTmhWa0tHSDFmWXRtWU9VOVNqX09tZVg0VHJJU3gwWHI0d0pmZkQxZ2dwZFRLZGtrQmlLYlFDN3pnSVFLT1RaQVRUWTBrdWdVUXI3dW9GWVk5blE5ZVFIcVhWRnNOdUFrTTF1eVdOOEdrQUY0b1VGcUZ0Yk5CNGExeXhRSXB6ZmU4V28wYkdTamhnRjF4QlgwOEl4UDNMUFNQSVhQOVk?oc=5" target="_blank">Air Astana расширяет возможности путешествий из Грузии в Азию - Enbekshi QazaQ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 15.10.2026 20:11</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana расширяет возможности путешествий из Грузии в Азию - Enbekshi QazaQ</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxPOGFFcG1kUk82MFB0MVZtWWdBX3ZQQXlWM3plUFlFemlTaFgyejk5QndZdXlRc1V6cGliX3dJcldaOG94ZzRmQTVZYjR5cElGOWFLX0tEYXoxRG1ZcUxRSms0NWxfWFpGSUh2VnNIb0cwb0tPcFFud2hudnNUTjdLTmdweV9kN2xiNUlWZHlaTHN0WGNHdlJtT1NvUWNWRzRoejRnbF9lQV9YWktuR2d2ZFkzMnhXWnNpUTY5emVTMXJDVzBrZC1fTEJ1ZlR3b21IdTFKS0o1M0l4NjB3WkZ5TE9oZmR0dkpz?oc=5" target="_blank">&#34;Самый интересный день в жизни&#34;: Air Astana провела образовательное мероприятие для столичных школьников - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.06.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">&#34;Самый интересный день в жизни&#34;: Air Astana провела образовательное мероприятие для столичных школьников - NUR.KZ</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
     
     <div class="article" data-date="2026-10-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNTXFEZ1ljMWVSSHlSZVRtWGlwRFczTWV5N25qanQ3NWJSbFU2NTl1UGJ5b2YybjVscFZ5ZDNyc3pLTW5vdXZjTlR1WnNLc3IzTUExQi1kQVY2MVBESXZHbElLOC00R3BxeFgzNVBldWs0dndlLWJhZVg5djhwN0lqT3pneWdYZFZuUC00ZEdrY3dXWFI5SGRNODZRNDJaMTF4NThZdVVyYXd4WTBDaXhxX0ViLTdLZ9IBuwFBVV95cUxOa1JtSGdfMjJjUWxCRTNCM0ZiQXA0MXd6b3RmNE5Pal9GNTJpTHB0cWJ6X0ZfbW5ubHBSZ3BDMXB6OUgzckJVVjRyN0xXQXYtTE01cHBVck11cUNfSm5ocUR5bVh4ZUR1UEhJdFIyWEd2NlhzQ3QwX0ZfMElJdTg0RGliLTNnOHZTclRVOFJyRl9kcEw4bFItdllXSmZDVS02MVUzenNfX1lGR280aGNQcGFvSmdlS3hLelBv?oc=5" target="_blank">Рабочие КТЖ пострадали при возгорании: подробности происшествия - Новости Zakon.kz</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-16/fvfv-amerikanskaya-firma-sozdala-v-mfca-kompaniyu-dlya-proektov-po-kriticheskim-mineralam/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-amerikanskaya-firma-sozdala-v-mfca-kompaniyu-dlya-proektov-po-kriticheskim-mineralam" target="_blank">Американцы создали в Астане компанию для добычи и продажи критических минералов</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.10.2026 01:34</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 16.10.2026 07:16</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Рабочие КТЖ пострадали при возгорании: подробности происшествия - Новости Zakon.kz</div>
+      <div class="art-summary">Американцы создали в Астане компанию для добычи и продажи критических минералов</div>
     </div>
     
-    <div class="article" data-date="2026-10-15" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOX2FjbjNqUVE5NldxQWVyVGpsV2xRdHBaWXVGQWN6X28tY05oUVlxN1JBU1UtV21FS3lBeHYzVkp4eTRzQkZrYTRyVENETHJDdUl3U0V6NGdxRlZld3ZGVmtyc21XZWY0cFFjNi02R0RpM21GWVRDRUk1X3Z6c3dEMHhQb3ZIRnBmQnVYcGl6UkY1bDNY?oc=5" target="_blank">Переливали бензин и получили ожоги: ЧП на участке КТЖ расследуют в Шалкаре - TengriNews</a></div>
+    <div class="article" data-date="2026-10-16" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPQzZuQlNXeGFDRTdzcFQxYWdpaTU1aVdRQmJsUHRHX09pdW1jc1d1dUJFOU02SFp0M0NGcEVLcTBaMmswOS1PbnRDWXR2RHRqUl9xaDRaNlM0NXZTNjhocUhXclNCY193NEx4WmIwaW84NHhDQXhFZXJDVUFJUVFsR1JFa0FKS3kzWGUxRzB2UHdOOWg0RjRUTDV3QzB3MGxXLWwzOFpB?oc=5" target="_blank">Самрук-Казына разместил дим-сам бонды на 3 млрд юаней - Русская служба The Moscow Times</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 15.10.2026 04:10</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.10.2026 08:08</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Переливали бензин и получили ожоги: ЧП на участке КТЖ расследуют в Шалкаре - TengriNews</div>
+      <div class="art-summary">Самрук-Казына разместил дим-сам бонды на 3 млрд юаней - Русская служба The Moscow Times</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-16" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1GMzVvMFBFWWFKM04zMmdrSTBfNjNUZHdpZE5uaFpBOEpNc0k3Z0l5VnhOYk9jR0ZsUmNZaGhZVExuSk02OFFlSEE5aDJxTnFjUzJvUWliZXZwRzVLeVlHVzJlcTBtSkpSRHU4ZnkxNUczNnlBNlR0Wg?oc=5" target="_blank">«САМРУК-КАЗЫНА» АНОНСИРОВАЛ ОБЛИГАЦИОННУЮ ПРОГРАММУ НА $1,5 МЛРД - The Tenge</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.10.2026 06:02</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«САМРУК-КАЗЫНА» АНОНСИРОВАЛ ОБЛИГАЦИОННУЮ ПРОГРАММУ НА $1,5 МЛРД - The Tenge</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-16" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPRkJNSGxkMDNtM2hLUVZybDhHVExnb2t3T2p5V3JqcHF1QktISTNnTzl6QTRHZHN3dWVsdG9FcGNYN2RMcHhyN3psd2RFN3dFSFR5b1ZHZTd0azM3c2lBXzlCMnJmanpZSzlYeGxpeUxCQl9MY3p2bGN2TWJ0TWVWSThrTy1PZFJpU2tfTzFobGhPMjZFdHJpbDRheV9sUTdjandiWg?oc=5" target="_blank">Спрос на облигации «Самрук-Казына» втрое превысил предложение - National Business</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.10.2026 08:02</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Спрос на облигации «Самрук-Казына» втрое превысил предложение - National Business</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxObnFhVTBaMlBYTENSNG9YOXJfc01FU3l5bDZiZE9kaHNQT29DdWtycXFodnlJTFJfUkdkRWhTVUxqdmVpeEFKRkVVaXp6LUM4QmNpRkhXelNlSF9uQjhVdDc2RkVOWURXSlZhRmZhZE91aXg2Mks1ZFVRejFnOW81RjRsTkZUWlJmZFFFejRwZ3RzeDF6ek5nWjZYVVJBUEdTbnJHeHlpUTBYSjQ2MXlFRkJWd9IBSkFVX3lxTE5nZmtXUVpmV3RUWUNyTTlXV0ZwNktRaUwtWkF0YW5scTBlYzZOaGItM2FKaEpvYlNCbTE2MFNuRlVGMkNNZXZOM09B?oc=5" target="_blank">Air Astana вернула вылетевший в Дубай самолет из-за ситуации на Ближнем Востоке - Вестник Кавказа</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana вернула вылетевший в Дубай самолет из-за ситуации на Ближнем Востоке - Вестник Кавказа</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNc1hJSDNFdmhMLWcxckNya2J0ZjExcldFSEdLQUphME84cnNpWVdwYXEwdFM5OHY3OVRySTJoSXNmLWJ1ZHl2YUJsTFo1WGM5cjZKOTdIMjF5MjNySkxHUWVkOS1CYXJ1YWJZVVN0a2RZcC1xcFN5NUJCMWlpWGNBWW1Bc0tQa3RlMWFIcml5Mnd5QXBoajRKdkdJaFo?oc=5" target="_blank">Рейс Air Astana в Дубай возвращается в Астану, еще один отменен - Masa Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Рейс Air Astana в Дубай возвращается в Астану, еще один отменен - Masa Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-16" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQTElVbEg0MWNfSlk4T2lTZEpOeGZFdjdpb0hwb3p3UUJnY0x5Y1lBcVhjSmRWQ3VHSDZSTkJJd3FmN0F4RHBGaVZ0NHlRN2tBaGJobE42dzNlUWJMaTJVZzRFYV9walFWcUc5anNMdmtlZHUxQnlEdU1vNnFRSFV1WnBSUzJVMDNYNElvX0xkY29tN1dkWUcw?oc=5" target="_blank">Air Astana возобновляет полеты в Дубай с октября - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 16.09.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana возобновляет полеты в Дубай с октября - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-17" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxPRDlBazdSYXpiekRORUhiQUx2MTRnNXV5STl5Smtkcl9MVVR3eml6RExCOTRQcmJyTjVYb1pRbnhKaGdOc1B0amlRWjZnaldDeFZMOGJmQ3BSX1dudTZ0eUViQWpUOHlhamh6SFNyVV85N2tmVzVsb0hHX0ozTWpMNXNuX1NHclR6VVE?oc=5" target="_blank">«Казахтелеком» лишится премиум-категории на KASE - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 17.06.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» лишится премиум-категории на KASE - Forbes.kz</div>
     </div>
     
   </div>
@@ -214,7 +262,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-01';
+  document.getElementById('date-from').value = '2026-06-17';
   document.getElementById('date-to').value   = '2026-10-16';
   applyFilters();
 }
