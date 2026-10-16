@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 16.10.2026 14:33</div>
+  <div class="meta">4 источников · Обновлено: 16.10.2026 17:12</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-17">
+      <input type="date" id="date-from" value="2026-03-14">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-16">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,13 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -108,80 +108,64 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-10-16" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/english/71265-the-week-in-kazakhstan-fined-sealed-delivered.html" target="_blank">The Week in Kazakhstan: Fined, Sealed, Delivered</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 16.10.2026 17:05</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">The Week in Kazakhstan: Fined, Sealed, Delivered</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-17" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRkZGSmJ0Skh4RGZ5SmdpbVRqRXVvWjRESU5ZVDFjNFE3d0pmc011cHNJUTNnX0hnbkpJU1pCZEJVTVdWSWw0T3dEUFNOdjRHMjZOMnZWa2cxdlh5czlSd2U5LXhEbmlOUkJha21jNWo0MUFxeWUweFdzbnNoRFhiNXRqS3M3Mk1ma3drWkdBNmgwbXJwY0hIU3ZVY1lRMmU4MWJVWVlaNnU?oc=5" target="_blank">Тайна на 3 миллиарда: «Казахтелеком» умалчивает о дефектах системы обнаружения пожаров - Belles.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 17.08.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Тайна на 3 миллиарда: «Казахтелеком» умалчивает о дефектах системы обнаружения пожаров - Belles.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-08-17" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQNU1NVjJZX0l5VWcwWkZEbW1aRkhjeWVwbGFWX2FydlBfWVU3TVA3WmZVQzQ1dWVrbU9sc3d6Wlh2UTdnZzVlN3BSa2lSM19jaG1RNk1zbjV1d3pNVnZSUmlqbVRFTnVNVjdYbUJaazhtYkQ2cTh6VkhaTlROSTRQaDRETzVMUkJTVlpkcUJubnhEVjhYMHRVVzlVYmdTR0M5ZVE?oc=5" target="_blank">«КазМунайГаз» ищет новые запасы нефти и газа на 4,7 млрд тонн - Kursiv Media</a></div>
+    <div class="article" data-date="2026-09-16" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ1F3S3RlWTctOF9WcUJvODFNSG5ZNVhNWXV0VVU2RE1fMDlmYVJVbUR1QTNxbmVwTXRJNWtaZGltUGlFUmpseVMxVnhYb04wUDY5RjAwMUNCTlRmV1F6b0dVOUJHMXlMRnRVUTFRQ29rZkhUU0ViR1dQS2VBUGZCOUNJM3ZadmVXNmJXSEoyTS0wMXlOcXhFSVN4MmJ1ZnhBR2oxZQ?oc=5" target="_blank">«Самрук-Казына» получил более $1,6 млрд от «Тенгизшевройла» и КТК - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 17.08.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.09.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» ищет новые запасы нефти и газа на 4,7 млрд тонн - Kursiv Media</div>
+      <div class="art-summary">«Самрук-Казына» получил более $1,6 млрд от «Тенгизшевройла» и КТК - Kursiv Media</div>
     </div>
     
     <div class="article" data-date="2026-10-16" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxPQkhDZ1JrRktJNnAwSTczcUk3ZDB3Q01fNkxBYXVCNFA2dGVOX1VSMHRBSGtzaXZMMm1QQ3VEUkVmQ3RqZHVfNjBXTXJrT2hhR1ZPajhMMkVzSzd2OVhIbzJPNUpwNDV5U2YxaUlBdXFKZGhXX1JXUG9aYnFWbzVtaXhDSHZkQ2VWa3g5T3hqR0RuRDM4emZoeW1rNWQyRGNab0hXU3g1N1dkWi11V0R1NmxZNUtLNHp2elNiWjFNSFI4RkR0S012Nk1IaXlpM3hoc3B3?oc=5" target="_blank">СМИ: «Казатомпром» технично закрыл дверь перед «Росатомом» и отдал стратегический уран Пекину - open.kg</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gVBVV95cUxPVFhjWGd5MGpldDN2cmVfSkExdkN2dERqaVowM2RrWEVGX1Y5T0dpSGY1TkhUNG91cmQ0Z1JSenhHaldNam5OVWdjYjllSjc2UGltdmMyeEZDVUEtY0c2cjNBTjVVckVPYUlxNkxJWG5UWXFaQks5a3cxRHpSMk9kNVhVWXVpMkdvejZBUzZwYTdlZ1RXSGxUNFhBcW5oVzJJbTVwaFp4SE5vUGFpeTZlOGtOM1hJX1FRWG45ZlBXVXAtLWpKUzRPeVptUl92NUlReXh2eVpLbXk0cmRfMFA1NGlrUkhIUlYxS2J0anJXSWZ6STl6UlBFY1FjZEItSnZNUlZhWkNyNnF2YU80RW43U29ZSG9MR0NCZDlnU0V2cGtlZm9tLVpiWjJvM3RoMTBQMVJMVlBwTEZnRndqMTFvaUpzd2ctdGUyZ2pWR3YtYmxlaEtzOTZaMDFIaDR5S2FfUThfSkxtdC1rSkRkYnowSTBacllxNzBSNDVEczJhQUs5cnJOd0ZDZHJpa21LQ1V1d0E0dXAwSnA0WEJOb3ZLVnc5QkFyXzNYTHhTNmtTUVFJb1ZHeDlkWXFtSFA0M0V3bEFaVFEzdEZnNnY5TkVMNGpucTBtN1R2cnFicnZXeUlBQnA2d2NIR09zTnZZOFJOa0thTXo5VF91OVBQbXdtNEpUeTlMMERBRm92MXJkeEtZTGdCRG1XcU1POHd6Mi1acFRPZmZCNjlzUENsWEg1UkFtRFlZZUpwRlhERmhJMGY1YkZkemFMS3NOZ2pPVVBsNFV0QlpvY0g5RE1abVBUQUR6ZGtWa05wM1I1YlZmcmdVUUFuQmxYdGZ0UzVUeHZySUpUUVlwaE8zai1BaC1LMVBic3pheHAzZFI3ZnlRTUtfVldTR0tSaEpBZkw5WDRjeTFXN3VENGROSmIzcktrTE5Ub3cteTl3NDhNTndLaXlWdw?oc=5" target="_blank">«Казатомпром» технично закрыл дверь перед «Росатомом» и отдал стратегический уран Пекину » Новости Кыргызстана, Бишкека и Оша — последние события на сегодня - open.kg</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 16.10.2026 11:57</span>
+        <span class="date">📅 16.10.2026 14:06</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">СМИ: «Казатомпром» технично закрыл дверь перед «Росатомом» и отдал стратегический уран Пекину - open.kg</div>
+      <div class="art-summary">«Казатомпром» технично закрыл дверь перед «Росатомом» и отдал стратегический уран Пекину » Новости Кыргызстана, Бишкека и Оша — последние события на сегодня - open.kg</div>
     </div>
     
-    <div class="article" data-date="2026-10-16" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMickFVX3lxTFByb2w3QzB4ZG45S3dIZTViSFNSRURZR2h5LWhUOGpnUl9Xd1lPYkZnblJIcUd2UjJ6N2dja3BOaXRuaUxuQlNHZTdpcW9RVlQtck1neVB6TU9kbERQSkhudW1YVmVWNXdQcTN3Ylk1dHdXdw?oc=5" target="_blank">Работники КТЖ в Шалкаре получили ожоги при сливе бензина - airpress.kz</a></div>
+    <div class="article" data-date="2026-05-08" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQVhrNGdGTEhQazhyWkpHNTlOdzIwdTZrTUwzcUlQTzRmLTdnQ24yVE13YlIzaGN3Tk1vQ1pRZ3V4TDV6UE94VmJjOWVrcF9lek5sanZJRndtTTRtMkxUOHpoNEpNSVhTYUNBLTJwLWZEZTFWUlAyNkdtMXZXSjgzTFNwV1Yxa0M3Yk9RLVNZa2FBYXU4azR2OEtONmU4dkFlM2FJaC1GeHlKNVdyUGxYSVl2cF9ueWVYZnFZ?oc=5" target="_blank">Самолет Air Astana совершил вынужденную посадку в Актобе из-за отказа двигателя - Azərtac</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 16.10.2026 07:51</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 08.05.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Работники КТЖ в Шалкаре получили ожоги при сливе бензина - airpress.kz</div>
+      <div class="art-summary">Самолет Air Astana совершил вынужденную посадку в Актобе из-за отказа двигателя - Azərtac</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-14" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSnRxbzhOTE1lUGQ0akFvV1lCUHRwelRFWGVDeTJKTTRvbkxsYXlRcmc4RFkyb1czbkJpQUZVV3ktalFwN2lCSHBfS1l5Tm5WMFprYWFob1M4NE05b0F4RW9EbURfdXY5VUlJTEtPTVVYbXpQLWNKa1EydGE2ZmIxdkpXYkg2TkpWWC1Xd1VpSGYtSUJfT094c3Rla0tWc0RTa3J0a1FiVzVGUdIBrwFBVV95cUxOR1hqUlZrN3d6VXkyX294UE1SNlRWUGdhdVo5QkFZQ3JzRmZhbDFPWVdmX0dKSkZ5OWllcWxxY1hVdEJ0VXpBLXZfNG1qX0FNN2ZTbkpEakxCckhsdHhqUkZhbFdkS2VCRUh4S2wwcGhLM2FHREE3dThuMnRuSmVHejZYenBxVmcyNXU5V2UzV2hRb3RRUXcwQ0VqYm9TSnl3WXhzOGV1MnN4aFJXZXl3?oc=5" target="_blank">Обновление флота Air Astana: Dreamliner заменит самые молодые 767 в мире - iXBT.com</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 14.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Обновление флота Air Astana: Dreamliner заменит самые молодые 767 в мире - iXBT.com</div>
     </div>
     
     <div class="article" data-date="2026-09-16" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPN21pWTFIQUhYNnoyNnk5OHFXWkRRUS1Gc2pLYm45NkowakxyWFo5aVNTZkxyV2hhUWtLSVZxeDgtSEd1aU4xLWpDbFVMbE50emloZnNFLWFjY05zZHZENUwwMzY5em1pMjloQXp2X19MN0VYN002clItX1pwT21hTTMwTVFFVEJGYTBxakRHZm5DaU1rdnZmWE9YYlRTLVRJN0hvQlBGUG5NLWZXc3Y0RnJMemVYcWNLUTZwX0dySHZHQdIBxgFBVV95cUxPYW9xaHJCNFZ5S2g3dElOWHJIV0lpTV9hbzZ3T3g0NnUwcVI5dU5iMUNGa19vSHBybksxeDJlX2JDS1duSEtKYkFFcktoM2dKNE8zUjF6Mnl4b3VPWHBRdklTTXdLSWt1dFF5cU5nTkJCUHA1N0tGQXFPcExHdVNrbGh0VFNkYlQtQWEtaVZYQVZ1Si1yVDVleEU0aVd0MDFTeXVVMmtaRGhBS2RrWklkcVN1d3BoVmU4MUVoMHNXYmtVc2NnQlE?oc=5" target="_blank">«Казахтелеком» поможет контролировать условия хранения и перевозки вакцин по всей стране - Ulysmedia.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNZGpReWs3S0Y5SGtZTDdsWVZBNWdoUnlNaTJIUXlINXlVZDdBOFZrMGNnMWFCXzR3bTVwOWs5bEhzczR2Y2hza3RRX2FfelZ2T1dZRW53ZXc4T2VTckE2Um1RcWdjS0I1bWRKaFh3NWtCNng5MzJwSUhKdENRSTZBdG9VUzh3cUVpMngyYVBGbnI5RTlEOHY3Yjd3Umt4UHdBam1ha0ZwZ3dzbGczby1Ldm5MWUxYRVYxN0E?oc=5" target="_blank">&#34;Казахтелеком&#34; поможет контролировать условия хранения и перевозки вакцин по всей стране - Inbusiness.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
         <span class="date">📅 16.09.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«Казахтелеком» поможет контролировать условия хранения и перевозки вакцин по всей стране - Ulysmedia.kz</div>
+      <div class="art-summary">&#34;Казахтелеком&#34; поможет контролировать условия хранения и перевозки вакцин по всей стране - Inbusiness.kz</div>
     </div>
     
   </div>
@@ -191,15 +175,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-10-16" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-16/zhnb-kenes-rakishev-ozhidaet-zagruzit-na-tret-svoi-gpz-za-schet-gaza-s-malyh-i-srednih-mestorozhdenii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kenes-rakishev-ozhidaet-zagruzit-na-tret-svoi-gpz-za-schet-gaza-s-malyh-i-srednih-mestorozhdenii" target="_blank">Кенес Ракишев ожидает загрузить свой ГПЗ за счет малых и средних месторождений</a></div>
+    <div class="article" data-date="2026-10-16" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNSVE1MEJMVlY4X0Z6QjgtUkVkSzBjN1phclBqMGRuTVRiWmRjdW1TdllkNk9CM3JkdjZGNHV3eEpadzJhTDdaSGVSSXJTZXJDTk1kaWFsOFJzeWZ6aUxQRndQcnpTM2ZBS0FjQmRwV0lmYzRmMEV6QlFsWEdVb1FvbF81S3EyWC1YSm1sLWFKS3Q?oc=5" target="_blank">Air Astana оказалась в лидерах роста - Freedom Broker</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 16.10.2026 12:33</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 16.10.2026 14:44</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Кенес Ракишев ожидает загрузить свой ГПЗ за счет малых и средних месторождений</div>
+      <div class="art-summary">Air Astana оказалась в лидерах роста - Freedom Broker</div>
     </div>
     
   </div>
@@ -261,7 +245,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-17';
+  document.getElementById('date-from').value = '2026-03-14';
   document.getElementById('date-to').value   = '2026-10-16';
   applyFilters();
 }
