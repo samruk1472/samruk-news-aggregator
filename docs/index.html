@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 17.10.2026 11:18</div>
+  <div class="meta">3 источников · Обновлено: 17.10.2026 13:28</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-11-29">
+      <input type="date" id="date-from" value="2026-08-18">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-05-04">
+      <input type="date" id="date-to" value="2026-10-17">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -88,6 +88,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -107,38 +109,49 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neg">
     <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2025-11-29" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFByU0FKeVJvaF9oa0p6RkFzU1NWOXloMXZSOGc4M1ByUDdZd0FBR0x1bEFGVXJ1QkZXU0NKY2dZdUw5WWR2SWxkaUFzNzJ0bzDSAUtBVV95cUxOT2MzbjQ5LWNYVmdIbXBmV291S2ZQdVpwWHRvYzg1LVY4V2hIUVVkQUR2dWdGUy1FSjBNZ1dUZzVKams0Mms5aGFkWTQ?oc=5" target="_blank">Air Astana и FlyArystan объявили о возможных задержках рейсов из-за обновления ПО для Airbus - Интерфакс</a></div>
+    <div class="article" data-date="2026-10-17" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxNODY1MzZwUzYzM2M1QmxmQms4MWdtdkUtVkFQWndHNTlEbXZ3TVFOOV9PdjBzQTdtT003OG1SYkZETzA3SnJHWVNlVDRicFU5Y0tjbmQ3bHE5Y25ZYlBRa2tIVVpMYTZJRGhsMHVOWWFEWTZIUTlqY3JOcnA2OFlPVGI2SFN0YVFPVW1aUFpsM3N2Mmpnb25iYzNhbmZTcHJkVGlDekptZ05wX216UUhXWjR4Y1ZZUEpBdl9ucXdTR3BCQWxNYmFHUkdWelQtM181WkdSellnYk1XVlpEeUI5WF9NUzNyVkZw?oc=5" target="_blank">При поддержке «Самрук-Казына» на восстановление лесов и укрепление противопожарной инфраструктуры направлено 500 млн тенге - Жайық Пресс</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 17.10.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">При поддержке «Самрук-Казына» на восстановление лесов и укрепление противопожарной инфраструктуры направлено 500 млн тенге - Жайық Пресс</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQUXFsRlFfSlFzYnVsXzI1TkloUnpzWlhRYmZMalhiT2dZUmltaUExMHZ0ZGxCdjVnU3FTZ0lKdklLbXJfX1g4cFF5aFVCZGJFT1cyVWdBdGR4TVRzSjU3WmZuMi1wLWw3cDltUnBQaGd3VHNCY013VFF0TWVwdEE2cDg2bGV1cVlrLXpKMVRGY3dtRElzd29XT185NGljZXVKanNmY2wyXzdHWXkteC0xWEJZVkpyTlhHRjBwRjRfOWFXamtsT29wMU5BLWw?oc=5" target="_blank">Казахстанские Air Astana и FlyArystan продлили отмену рейсов в Дубай до конца сентября - Интерфакс Россия</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.11.2025 08:00</span>
+        <span class="date">📅 18.08.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana и FlyArystan объявили о возможных задержках рейсов из-за обновления ПО для Airbus - Интерфакс</div>
+      <div class="art-summary">Казахстанские Air Astana и FlyArystan продлили отмену рейсов в Дубай до конца сентября - Интерфакс Россия</div>
     </div>
     
-  </div>
-  
-
-  
-
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-05-04" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNTXlPNGlDUHdvMXpiLTFJLW44SWVIMUJRMWt6bWNTaFlhUmNGMXRzajJYbzhWdExpQUNKQXh5RUhEeXhkZDRsWTZ1dDJ1TXQtYWJuaUZUd0R5SVZrOGF0NkVoN3VKRGhGemV5azZZRlU0V0ozeVVkT08zUG4ya3RtNFMwcjhsOXhuTUZUYzVFNjMyMkZGd3RMc2t3aG54YWpwbXY0bEh1SGhFdUMzbEZXQQ?oc=5" target="_blank">«Казахтелеком» выплатит дивиденды, которые в 82 раза меньше прошлогодних - Kursiv Media</a></div>
+    <div class="article" data-date="2026-09-17" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPT3JyTzdmLWRVSFI2dC1jLUZQQXBwMjh1V1dQc2d4a2pqZ3pVYWFEUUp6TTZDa3Jxc25ha29GTG1aS1RhWndfXzdWTHVnMk1aczlMTW5tXzhsdHV1M2w4eDNkRVVabUY5TTl0U3BJeHpoOWJSUjY0YjktZzBPRlp5bE02MVUwYU9wOXJfcGdtOEhmRmVxa1BRLWxKQi1fV3JKd2VSYmQ4M183RVdBX1Q2MGJiRjI5VUZkelJaSk54dXY?oc=5" target="_blank">Казахтелеком хочет занять несколько миллиардов долларов на Долину ЦОДов - Русская служба The Moscow Times</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 04.05.2026 07:00</span>
+        <span class="date">📅 17.09.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«Казахтелеком» выплатит дивиденды, которые в 82 раза меньше прошлогодних - Kursiv Media</div>
+      <div class="art-summary">Казахтелеком хочет занять несколько миллиардов долларов на Долину ЦОДов - Русская служба The Moscow Times</div>
     </div>
     
   </div>
+  
+
   
 </div>
 
@@ -197,8 +210,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-11-29';
-  document.getElementById('date-to').value   = '2026-05-04';
+  document.getElementById('date-from').value = '2026-08-18';
+  document.getElementById('date-to').value   = '2026-10-17';
   applyFilters();
 }
 
