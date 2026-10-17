@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 17.10.2026 08:11</div>
+  <div class="meta">2 источников · Обновлено: 17.10.2026 11:18</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-10-16">
+      <input type="date" id="date-from" value="2025-11-29">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-10-16">
+      <input type="date" id="date-to" value="2026-05-04">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -102,25 +104,41 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-10-16" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPcWxCVV90VThxMWFuSEVDWDFyVEFDUms1d1ZlY1dsQTlEek9zSV9wNDQxQXh5MUIxX3FXZ1RLajM0UDFpeUFENlM2TExYa3dFdUxIUHZaZElNMWc0Rk9EUjJPTEdaY2dTWEp3Y1hkcHBNbTlOekFUVWxKd1haOWhMWGlpNnZzZE5KYlBvUXVlOHducjZ3TU84RjBYZktVdzdTYllYTGlhVFFkbzVLQ3U0MDVfQm15ZFNRT1E?oc=5" target="_blank">СМИ: «Казатомпром» технично закрыл дверь перед «Росатомом» и отдал стратегический уран Пекину - K-News</a></div>
+    <div class="article" data-date="2025-11-29" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFByU0FKeVJvaF9oa0p6RkFzU1NWOXloMXZSOGc4M1ByUDdZd0FBR0x1bEFGVXJ1QkZXU0NKY2dZdUw5WWR2SWxkaUFzNzJ0bzDSAUtBVV95cUxOT2MzbjQ5LWNYVmdIbXBmV291S2ZQdVpwWHRvYzg1LVY4V2hIUVVkQUR2dWdGUy1FSjBNZ1dUZzVKams0Mms5aGFkWTQ?oc=5" target="_blank">Air Astana и FlyArystan объявили о возможных задержках рейсов из-за обновления ПО для Airbus - Интерфакс</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 16.10.2026 12:03</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 29.11.2025 08:00</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">СМИ: «Казатомпром» технично закрыл дверь перед «Росатомом» и отдал стратегический уран Пекину - K-News</div>
+      <div class="art-summary">Air Astana и FlyArystan объявили о возможных задержках рейсов из-за обновления ПО для Airbus - Интерфакс</div>
     </div>
     
   </div>
   
 
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-05-04" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNTXlPNGlDUHdvMXpiLTFJLW44SWVIMUJRMWt6bWNTaFlhUmNGMXRzajJYbzhWdExpQUNKQXh5RUhEeXhkZDRsWTZ1dDJ1TXQtYWJuaUZUd0R5SVZrOGF0NkVoN3VKRGhGemV5azZZRlU0V0ozeVVkT08zUG4ya3RtNFMwcjhsOXhuTUZUYzVFNjMyMkZGd3RMc2t3aG54YWpwbXY0bEh1SGhFdUMzbEZXQQ?oc=5" target="_blank">«Казахтелеком» выплатит дивиденды, которые в 82 раза меньше прошлогодних - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 04.05.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» выплатит дивиденды, которые в 82 раза меньше прошлогодних - Kursiv Media</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,8 +197,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-10-16';
-  document.getElementById('date-to').value   = '2026-10-16';
+  document.getElementById('date-from').value = '2025-11-29';
+  document.getElementById('date-to').value   = '2026-05-04';
   applyFilters();
 }
 
