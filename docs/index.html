@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 17.10.2026 13:28</div>
+  <div class="meta">3 источников · Обновлено: 17.10.2026 16:10</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-18">
+      <input type="date" id="date-from" value="2026-03-05">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-17">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,11 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -109,15 +107,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neg">
     <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-10-17" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi6AFBVV95cUxNODY1MzZwUzYzM2M1QmxmQms4MWdtdkUtVkFQWndHNTlEbXZ3TVFOOV9PdjBzQTdtT003OG1SYkZETzA3SnJHWVNlVDRicFU5Y0tjbmQ3bHE5Y25ZYlBRa2tIVVpMYTZJRGhsMHVOWWFEWTZIUTlqY3JOcnA2OFlPVGI2SFN0YVFPVW1aUFpsM3N2Mmpnb25iYzNhbmZTcHJkVGlDekptZ05wX216UUhXWjR4Y1ZZUEpBdl9ucXdTR3BCQWxNYmFHUkdWelQtM181WkdSellnYk1XVlpEeUI5WF9NUzNyVkZw?oc=5" target="_blank">При поддержке «Самрук-Казына» на восстановление лесов и укрепление противопожарной инфраструктуры направлено 500 млн тенге - Жайық Пресс</a></div>
+    <div class="article" data-date="2026-10-17" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-17/tsse-rabochii-vpal-v-komu-posle-padeniya-s-vysoty-na-vokzale-atyrau/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tsse-rabochii-vpal-v-komu-posle-padeniya-s-vysoty-na-vokzale-atyrau" target="_blank">Рабочий впал в кому после падения с высоты пяти метров на вокзале Атырау</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 17.10.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 17.10.2026 15:09</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">При поддержке «Самрук-Казына» на восстановление лесов и укрепление противопожарной инфраструктуры направлено 500 млн тенге - Жайық Пресс</div>
+      <div class="art-summary">Рабочий впал в кому после падения с высоты пяти метров на вокзале Атырау</div>
     </div>
     
   </div>
@@ -125,28 +123,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQUXFsRlFfSlFzYnVsXzI1TkloUnpzWlhRYmZMalhiT2dZUmltaUExMHZ0ZGxCdjVnU3FTZ0lKdklLbXJfX1g4cFF5aFVCZGJFT1cyVWdBdGR4TVRzSjU3WmZuMi1wLWw3cDltUnBQaGd3VHNCY013VFF0TWVwdEE2cDg2bGV1cVlrLXpKMVRGY3dtRElzd29XT185NGljZXVKanNmY2wyXzdHWXkteC0xWEJZVkpyTlhHRjBwRjRfOWFXamtsT29wMU5BLWw?oc=5" target="_blank">Казахстанские Air Astana и FlyArystan продлили отмену рейсов в Дубай до конца сентября - Интерфакс Россия</a></div>
+    <div class="article" data-date="2026-03-05" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPQkZYTHFPOVdoaDl4RlRBbzRRVGtiWWtaX1ZhNjhldWpjcEZpbjA0NE8zdTd6RVBwdkJiTFRSM0FtQ3U5Y25PMTVHa0I3RlBfZXNfOVdtaU1xTEVLV1JaUHpudUU0aDd0bDhBVmh4aV9TUGdFemVMazI3elR4QmFwQ25haEZoSlZNZDZ5Qk8wakwwRk5WM1czbUJDdHhIQUNXeElaQ2hONlUybzRDb0FZZG5SVUU?oc=5" target="_blank">КТЖ и Главная транспортная прокуратура обсудили развитие железной дороги - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.08.2026 07:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 05.03.2026 08:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Казахстанские Air Astana и FlyArystan продлили отмену рейсов в Дубай до конца сентября - Интерфакс Россия</div>
+      <div class="art-summary">КТЖ и Главная транспортная прокуратура обсудили развитие железной дороги - Қазақстан теміржолшысы</div>
     </div>
     
     <div class="article" data-date="2026-09-17" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPT3JyTzdmLWRVSFI2dC1jLUZQQXBwMjh1V1dQc2d4a2pqZ3pVYWFEUUp6TTZDa3Jxc25ha29GTG1aS1RhWndfXzdWTHVnMk1aczlMTW5tXzhsdHV1M2w4eDNkRVVabUY5TTl0U3BJeHpoOWJSUjY0YjktZzBPRlp5bE02MVUwYU9wOXJfcGdtOEhmRmVxa1BRLWxKQi1fV3JKd2VSYmQ4M183RVdBX1Q2MGJiRjI5VUZkelJaSk54dXY?oc=5" target="_blank">Казахтелеком хочет занять несколько миллиардов долларов на Долину ЦОДов - Русская служба The Moscow Times</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeEtIXzFiQVJjNEZIbk8yNUVXWjQ2M2lXTzl5VW1sV3ctcHZOSVg1Tjk1bndqQ0FiUWpFXzBJd2E2SEdjaTlMRjlYOXh0U2swckhOeEJELUcyaXE5ZlF4aFh5TkVuaG1WbHdTSTNqbFZXRVVOU3k4NFRBODF4MlVmQkNrZnlpYzh1RGVjOHQ3eHNWaXI4UVpFUDllQUhaTFBoX0RHejhoRVVuVUFMMnYwMXpSUzV3SFdBU05V?oc=5" target="_blank">«Казахтелеком» хочет занять миллиарды долларов для «Долины ЦОДов» с NVIDIA - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
         <span class="date">📅 17.09.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Казахтелеком хочет занять несколько миллиардов долларов на Долину ЦОДов - Русская служба The Moscow Times</div>
+      <div class="art-summary">«Казахтелеком» хочет занять миллиарды долларов для «Долины ЦОДов» с NVIDIA - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-17" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOeVVjb1JpZFA0Zm1zZFdlaVY3MkpwUXlwMWdCaWhDRzg5aHV0QzFMbDNxaGlzWlFlSGhSblV4aHdEUUliRGJNcUNqcC10VmtrRlNLMnBwV0lxOFBnUnlCQnNwcmE5YWZ2XzFSNG9OWnRNMzZfMUNpbjEySmZWY2l2ZzJrUEJsV3JFUF92QXVqaHV6S1JRS0p4dXdfV1NsaVk?oc=5" target="_blank">Казахтелеком ищет многомиллиардное финансирование для Долины ЦОДов - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 17.09.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Казахтелеком ищет многомиллиардное финансирование для Долины ЦОДов - Inbusiness.kz</div>
     </div>
     
   </div>
@@ -210,7 +219,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-18';
+  document.getElementById('date-from').value = '2026-03-05';
   document.getElementById('date-to').value   = '2026-10-17';
   applyFilters();
 }
