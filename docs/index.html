@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 18.10.2026 05:30</div>
+  <div class="meta">2 источников · Обновлено: 18.10.2026 08:28</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-09-16">
+      <input type="date" id="date-from" value="2026-04-02">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-09-17">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -107,7 +107,18 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-04-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxNeFJaaW1vSVpDZDdqMHRzYzNkX2V5bWVmenkzc0pKUDFIalFqTmE5bWgwUFVIaHlMaVZpSVNjM2VJa21QLVdhY05KQ01TY0o0REVmWWxyRHJHN0ZnWUVfY3FsQVh0dzVrSjZZbjlsSmJyZlpOeUo0eHdWM1NXOVZZRmtjai1OWWhuWWZvd3R6Q0cyWS1abmtXVnI5XzdtUEp3WUxGeGNrWVYzUUdieGRyUnJmN3Z5bmxiNW1ONFZB?oc=5" target="_blank">Как более семи лет назад перепутанные тросы едва не погубили самолет Air Astana - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Как более семи лет назад перепутанные тросы едва не погубили самолет Air Astana - Kursiv Media</div>
+    </div>
     
     <div class="article" data-date="2026-09-16" data-co="Air Astana" data-s="neutral">
       <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBaR1JsQmpBS2Q0MVBSd1AwazBCVWNGYWpYOW4wa18ya2tEUTFxSTB5OXVNMEZIR2JCRGNTVl80MVBCUGY1X2tMSXZn?oc=5" target="_blank">Россиянка заявила о пропаже денег после рейса Air Astana во Вьетнам - Ак Жайык</a></div>
@@ -192,7 +203,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-09-16';
+  document.getElementById('date-from').value = '2026-04-02';
   document.getElementById('date-to').value   = '2026-09-17';
   applyFilters();
 }
