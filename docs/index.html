@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 19.10.2026 09:29</div>
+  <div class="meta">5 источников · Обновлено: 19.10.2026 14:14</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-20">
+      <input type="date" id="date-from" value="2026-02-02">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-19">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -88,6 +88,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -104,63 +110,96 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-09-19" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOYnp5WDFLS3RLV3hnWi1pbXVBcEJUc0RwdExBeW9yRUVJLXczcmZlX1c2b2paTDdRTmJnX0RpV3BhRmEzNWVPNEVtWGxUSXhib3dJZkV0NGpZX0tiOFl0VDQ0ZTNLcXltbE5paGlDeDE4Unh0cUxQT1RXWUVyd01hWVFBU3FZdEFFQm5EZ0dqcGp2NjVQaFE2dVlCNVFpd0tsUW42YkFLQUM3MjdTWFHSAbMBQVVfeXFMTkxwaXktRzJKc1FGOFJyd3BRWEdUbWQzQm43Y25lakhZQmU1WnFFY3N5OTJDVUFzNU9sVkcwUjE1T08xakxSN0ozSWlmaGg3NkRYSEc4RzVzVGJ1c1NUMjN6WTJNOVZhZmozRXI2SzRKNzNNTzdCVHZ3RjFEdndXU1VwT2tzYzFudlFYTFBGYXFQdTZpQTBKaU5kYjEtWkpESVJiMHpBSVA1YTM5TlIyTTZUWVU?oc=5" target="_blank">Казмунайгаз приостановил поиск нефти с «Лукойлом» в Каспийском море - www1.ru</a></div>
+    <div class="article" data-date="2026-10-19" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQXzV2TE00aXhRSjhIc3VOVmU3WnlvWjJSZlZkMWRzODBkamRSS3B5LS1kR25vdXZvZTRlV1YxTVZRMHRpRkcxcG9vZ0dlYjktbEczUi1vN0NLQUZGOFVQdkZMNFBra1lwbzFvTWVnb2dJZ2VZYTYyUTREdkFwZGJ6a2ZhcmkwV0FuVThHT3RMZzhEVXRsU2ZTeThLSThIdnlS0gGkAUFVX3lxTE91ckZVTHZQRDJkdE5NMFEtSlJmdDE2czdwZzl0YWtSQmN5Skk1YzZoOUFMbmk1cTRqRl9EZ28xc2lINXRPRDVFcmkwcFlhT2hCck1KZkZYTnVYdTdINThPRTQ2NnQtTVo5a25YOFgybktSR01rME9ySVZEdE4xcFlhOER4LW1GX3NZTUM4ellYRTJ4TE80emV0TFZOT1o2SDRXdHBT?oc=5" target="_blank">«КазМунайГаз» ответил на сообщения о задержаниях в Жанаозене - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 19.10.2026 10:56</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» ответил на сообщения о задержаниях в Жанаозене - Ulysmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-19" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQTXJ5RDMyZURsVVBXNzMyaU5vQndlREg4QXB3R0E3V1Y3aXRfdmh3MFduOVhvWkFBWWFYa2FHMVd5emZoTkRvS2hDS3AxY1l5c0piVEJHRy1sdkM1dUY1cWNiNWFFSnpNYk0yVXJwZm5MeTJUaGdTbzg1SHdJbzhrVE40RzhUeU5JcHVfcFYtYlZZdmJoc2F0TExDSDNyZ1BhNjctWE4zRXk1d2JZ?oc=5" target="_blank">«Казмунайгаз»: геологоразведка на «Аль-Фараби» приостановлена из-за санкций - Общественная служба новостей</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
         <span class="date">📅 19.09.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Казмунайгаз приостановил поиск нефти с «Лукойлом» в Каспийском море - www1.ru</div>
-    </div>
-    
-  </div>
-  
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
-    
-    <div class="article" data-date="2026-10-19" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9ycEp1MFlaRWhfV1lPMVBCM3pxc2dDUXp0bG42akh1bHBQR0pNZDRYV3d3OFBCR1MtRE9oZ2RpRHNZdE5nMjZlek5vaHk3ZHdsWFpDUXpZb0JUa01SV3QybUdndUUxeVZibTZMbWpB?oc=5" target="_blank">МИД Казахстана и КазМунайГаз обсудили вопросы привлечения инвестиций - GOV.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 19.10.2026 05:31</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">МИД Казахстана и КазМунайГаз обсудили вопросы привлечения инвестиций - GOV.KZ</div>
+      <div class="art-summary">«Казмунайгаз»: геологоразведка на «Аль-Фараби» приостановлена из-за санкций - Общественная служба новостей</div>
     </div>
     
     <div class="article" data-date="2026-08-20" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxObHk0cGxSVW5sZ296U3RYNi1aVWRub090WUJZYVVDLTFsb0VGUXgwTGxOQll5Um5pY1hpM1l4T1BFOHZDUEdnMU5WUERiQWVZRWtReFpoTVlJWmo3d3hnSzBsSGlVRWdjeVJGeWdtLVZqWHBia19mTzdha2JCRkZRYzBIa2NyRnJNSzgzMDMySXAwX2dlSElZbkxjUlFmejV4TldhXzQ2NzNDTzZ1?oc=5" target="_blank">«КазМунайГаз» готов заплатить до $500 млн держателям своих облигаций - Kursiv Media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOejZ5NUJmTXFBckJuSUlPSUZsajNyM0NjSUV2N1dBNVFhTUdTMzdlMWV0Q056TUZKXzNyQ1EtYnhvTVZnOTlQYmE5V3lvZDhvZmFXVkZBUk4ta2trU0VtTElya01xelRwbUd4VkJaS1JFRW5mOU5KYjF4QmUzMzNMSnJWZXJpY09fZlpfUXh2R29BeHI2T0FfTEFKY01WQ053d09jTXdrRlJJM005dHR0QUhTaDVKSGhkZ2c?oc=5" target="_blank">Казмунайгаз хочет разместить пяти- и десятилетние бумаги в юанях - Русская служба The Moscow Times</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
         <span class="date">📅 20.08.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» готов заплатить до $500 млн держателям своих облигаций - Kursiv Media</div>
+      <div class="art-summary">Казмунайгаз хочет разместить пяти- и десятилетние бумаги в юанях - Русская служба The Moscow Times</div>
     </div>
     
-    <div class="article" data-date="2026-09-19" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNU2FzSUlqX18tOHJGdW90OVJmMklNQ2VGelJFN3pTZklPS181WlV4TDJTSXdRcWRoTjRCelV2WEpOWU5aWldTX2MzdHdsdURIOWhkdmZub3JxbEN0MnZLODNZTUUwaTc4UWxUeGFKdVM5dXlISkJGR01mWlkzajh5ZDhnRE5wZUdJQVE1X01kWF96VUUxMGlOdE9fVXE1VWk0UVQ4Z1djeGdZVU9KZl9J?oc=5" target="_blank">Air Astana признана лучшей авиакомпанией Центральной Азии и СНГ в 15-й раз - Forbes.kz</a></div>
+    <div class="article" data-date="2026-02-02" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Wc0lZeGN6ZjBaajJRVzB3UzlQY1BGMl9VQkhIWTdKU29TdE5sNnlQZlFoWGVwNlFfeGFWV1FPR0RhLUZ4ZUNEOFIxMTFicGVzMzNSRUt1NnNXXzNJcUo0Rg?oc=5" target="_blank">«Казатомпром» представил операционные результаты деятельности за 4-й квартал 2025 года - Атомная энергия 2.0</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 02.02.2026 08:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» представил операционные результаты деятельности за 4-й квартал 2025 года - Атомная энергия 2.0</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-19" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxPejJRUEpDRjhwYmVEX01ycmtEeng4eEE1dVRhOGZ4QkpGZUdWd0FNT01SUnBaNGFWUXBNRllxMmg4SWJqbXc4aUpvNlhEcElLU2FkNERZZjh1YzZTSHlsdXVlT2txV2VpMkZQQ3RGVUxKd2poVWZZUkRQWEJtd2NvLTJ0N2RyUTVLSWEtcjdab2l1aFllMUZrTDJubUxlVmV0MFpJZDNVdnpjaEladlRXWGpuTGxlQnhWOWJpWmc3OU5NUlBLR001U29mMnRzNXc?oc=5" target="_blank">Пассажирка Air Astana заявила о пропаже $450 и банковской карты во время рейса в Стамбул - TravelPress.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 19.09.2026 07:00</span>
+        <span class="date">📅 19.10.2026 05:53</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana признана лучшей авиакомпанией Центральной Азии и СНГ в 15-й раз - Forbes.kz</div>
+      <div class="art-summary">Пассажирка Air Astana заявила о пропаже $450 и банковской карты во время рейса в Стамбул - TravelPress.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-19" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNS2xaZWZ1djROMVRranlrZEE5SF91MlRTY1l3clFJSU1hWUUzMDJYcXg2QkxCU0c2QlRXQ3JsbFdoVzd1ZmI2dXRjREt3anFTTDdkaVh6UHJLV0RTbUZYOGZhV1h3a1BSbm56RE44VEstdFBwRENXZmpTZmZ0ZXNuNHRCOF9sTFpEbHZUaTlmeFFwY2Q5TEE5TGY5b2RUMFVlUk9PM1lNNElmYTA?oc=5" target="_blank">О назначении желтой разметки на вокзалах напомнили пассажирам в КТЖ - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 19.10.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">О назначении желтой разметки на вокзалах напомнили пассажирам в КТЖ - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-10-19" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/10/from-transit-to-trade-economic-opportunity-after-avaza/" target="_blank">From Transit to Trade: Economic Opportunity After Avaza</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 19.10.2026 10:04</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">From Transit to Trade: Economic Opportunity After Avaza</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -219,7 +258,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-20';
+  document.getElementById('date-from').value = '2026-02-02';
   document.getElementById('date-to').value   = '2026-10-19';
   applyFilters();
 }
