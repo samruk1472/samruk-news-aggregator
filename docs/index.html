@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 20.10.2026 09:02</div>
+  <div class="meta">4 источников · Обновлено: 20.10.2026 12:28</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-13">
+      <input type="date" id="date-from" value="2026-07-09">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-20">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -93,10 +93,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
-      
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
-      
     </div>
   </div>
   <div class="ctrl-group">
@@ -113,28 +109,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-10-20" data-co="Самрук-Энерго" data-s="negative">
-      <div class="art-title"><a href="http://profit.kz/news/75274/S-10-dnej-do-20-minut-II-uskoril-raschet-obemov-zapasov-uglya/" target="_blank">С 10 дней до 20 минут: ИИ ускорил расчет объемов запасов угля</a></div>
+    <div class="article" data-date="2026-10-20" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-20/shlc-tokaev-naznachil-kanata-kulshmanova-novym-direktorom-sczk/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-tokaev-naznachil-kanata-kulshmanova-novym-direktorom-sczk" target="_blank">Токаев назначил Каната Кульшманова новым директором СЦК</a></div>
       <div class="art-meta">
-        <span class="src">📰 Profit.kz</span>
-        <span class="date">📅 20.10.2026 07:30</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">С 10 дней до 20 минут: ИИ ускорил расчет объемов запасов угля</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-20" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiREFVX3lxTE1fbkotdUVzeUZWc2d1X0hVdVFEVnBzUVRMVlpmQWdBd3NaMnNpSTdEdElheG5CNFJZLWotRTNsS0dvT3M30gFKQVVfeXFMT1U5Sm9YRUJ0Z293YTVuX19RLWVEQUI1dDhpMUdOODF3M0w4QWozOEQyM29MaVRTOVE5NExQemhDaEtMUGRzZjlWQ3c?oc=5" target="_blank">«Казмунайгаз» приостанавливает проект с «Лукойлом» по поиску нефти на Каспии - BFM.ru</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 20.09.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 20.10.2026 10:02</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«Казмунайгаз» приостанавливает проект с «Лукойлом» по поиску нефти на Каспии - BFM.ru</div>
+      <div class="art-summary">Токаев назначил Каната Кульшманова новым директором СЦК</div>
     </div>
     
   </div>
@@ -142,61 +127,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-05-04" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPWjllZjB5VE00eXdydHR0R2J4MGF0OHR6SHAxbF9kd0hpUDc5aVNOcEIyVnNZaTM0bl9zNnR5SXVINF9TdnlOS2xaUF9KaEZoaExBc243OVFnWm0xOXpBRzN0QzVNT3F1dHV2ZzRKbi00eVp2Qy12ZWlReVVCcmFuUlZLSUx0M2RqWGNwTXRIcS04QzNVOW5RSEtNR3BocE56a0M5YWQ0Ti1nZWRxNnZlUTJR?oc=5" target="_blank">Самрук-Казына разместит полугодовые облигации на $1 млрд на AIX - Русская служба The Moscow Times</a></div>
+    <div class="article" data-date="2026-08-21" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdVg3V0FrbnhXRkR1MEJEcXRXVUFlU29kaXJiekwxdDlOREVaZTY1ei1SejF5STJLRHdqQm4tOGk2NWpZVHpHaUVkMmtOeUJVU0ZsWUNlT0F4b0FDMFZaeEplYm1KN0plQmNUcjZjN3piYWptQ1hfS1lCckQ4RjZ5ZnFneXIycTVYZzhBTlpJNlc5N2M4M3lhSDZOSktmOEFSd012cjdZVEM?oc=5" target="_blank">Казатомпром заключил сделки по продаже урана в Китай и Россию - Kapital.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 04.05.2026 07:00</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 21.08.2026 07:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Самрук-Казына разместит полугодовые облигации на $1 млрд на AIX - Русская служба The Moscow Times</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-15" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOU1JpbG9SVEV4ZU9RQWE5RUVJM0QtRVpOTGFJTTUyVC10aG5VMW9QaWlQcGEzbjhEbWVwZlRoZHZtX1JWMG01NUN5V2l2Z3RMOGlxdFJuTHRGM0lYeHlhSGZPb0xLTkZpZnhOMFAydXNhTklyUnZzWkY2bjU3VDIwckpjNGsya2FZSUJFeVFEeFZIMGFqZGVpN3BRRkNLT3R4T2twdlJreGE?oc=5" target="_blank">«Самрук-Казына» подписал соглашения с корейскими компаниями на $11 млрд - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 15.09.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» подписал соглашения с корейскими компаниями на $11 млрд - Forbes.kz</div>
+      <div class="art-summary">Казатомпром заключил сделки по продаже урана в Китай и Россию - Kapital.kz</div>
     </div>
     
     <div class="article" data-date="2026-10-20" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWkVydGM5ajRQZ2xIVXhyY210SkJYWkU1Vl96SWZJd1ZibHVoU3NKVHh2ZkpqYmZZQWhZRHBrWHgwc2FvSElxcHdqZE9lVTM5NVJES0lBQ0psQ3JNRmxnb091ZnlmWGFhakNqZGZSR3VnU2lSZjFHUWpwYU9CTTI1RzBEZE1icGZ4VUdxQUR1T2tuWTNGcEpFcUZUeTZwTlVLR1ZHeUlRUTbSAacBQVVfeXFMT2xGcndRRFJpcEcwbTc2ZGNWb0VyU2xTaUd1b1I3T1lyNGZvRHdhR3BkUkc2ZTI2emdhYzFGZTM1QlJtUkNFOWlYbHhKbWduWU92SHNsMFVvSUd3RUduUFZLYTNXZGt2VWt3eDdhRmpwdVdORFpyZUN6QTdfa18zc1A3UWoyM1g2ajNfdkRqVmRIbW9UUmdtNHNsSFI2a01NUmF5b3JNeUk?oc=5" target="_blank">Флот Air Astana пополнился 64-м самолётом: первый рейс запланирован на 5 ноября - BES.media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WamhxcC0yT1VEeUMxOFZsTFM5X2lzalViQjhiYVphOEI0YUM1enpjSDdvSnlQWndnV3plUXFmLW04aHhKY09lYmpRRTA1a3VSZHNXb0gtZWNfeUVRQ3c?oc=5" target="_blank">Авиапарк компании Air Astana пополнился новым самолетом - Устинка</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 20.10.2026 08:50</span>
+        <span class="date">📅 20.10.2026 11:25</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Флот Air Astana пополнился 64-м самолётом: первый рейс запланирован на 5 ноября - BES.media</div>
+      <div class="art-summary">Авиапарк компании Air Astana пополнился новым самолетом - Устинка</div>
     </div>
     
-    <div class="article" data-date="2026-07-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYW5VcS1tcVREd2ROQ0NTUENWSl9PNXo0TTBrdHdzS1Z0azNFSjVOTlRvQzBqSDR6NnZIZnl1ODh0YkF1TnEyUFNmWUtHa3BrVUlwaktJRHhpX3J1X1VPYnRCZ2tyWlJsSUFMcTAwMEFGdGw4R3pqelVWUnczX3NWQV9VX181OVpWMVVoaHpib0xmQVdfdWJHZTFHVnhqZGtNN3E5V2dHQzQ?oc=5" target="_blank">Миллиардное хищение в Air Astana: апелляция оставила приговор в силе - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Миллиардное хищение в Air Astana: апелляция оставила приговор в силе - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-13" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNN2lKNjlHOWFnNU0zM3RZVXFNcHhoQ0hDejl3OXhvYm9LT0hoY0ZGWnNIa2ZVdFhkYTBPUW1rQ3Z6ZWoybDFTRGlMNWpnT2JDOEwxeExsUmpkUEpHeXpkUE40N1J2TVVFc1FtVGlrNEJYVWhCMjFoWjFQRDFacUI2dFozclJqRm01SXZJc0s1T21jRUR6bmFTczNnOUZ2dw?oc=5" target="_blank">В поездах КТЖ появится больше мест на Наурыз - Kursiv Media</a></div>
+    <div class="article" data-date="2026-07-09" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZ3o1dk9iX2ROMi1LQmlCSmtsNHMxR3k3SkJZWHZyTVJnUS1LTUt6ZXJUUDJXeUlDdjRBUHRIbDd0WXp0SmRxSm1SdkxVVEZKbnFFZFpCZGJrU1BUclVaM1NwSXlYTXEtTzJYc3lLRWN0Tld5QnFBYkhRSW92dTRvWHh2aDE5MHY0ZFBXdmNrN1ItTHhleHhZT29UQVJmUXBSVFk5OVVlWGwya3M?oc=5" target="_blank">КТЖ продолжает обновление стрелочных переводов на магистральной сети - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 13.03.2026 07:00</span>
+        <span class="date">📅 09.07.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">В поездах КТЖ появится больше мест на Наурыз - Kursiv Media</div>
+      <div class="art-summary">КТЖ продолжает обновление стрелочных переводов на магистральной сети - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -207,14 +170,14 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-08-21" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQbHEtWWJRMlctb3VBX0JBakwtZVhpYlIwWFA4SG5LaEtRSkpNNUNCVkFZWWNNS29wMUJIX2VhSzZXZUk2MVJDUm5LY2dpM0ZIVUx2bDBCU0szWnV4V0lZRUdtOUVRbGxRVUgzYnlnM2Vid0U2blRDTHBISWxGbDMzSmZUbWtmVnZCazZtZ2RsUlNHUHBlWVZmNmhLNi1QeE1mOXc?oc=5" target="_blank">Казатомпром в 1 пол 26г снизил чистую прибыль на 9% - Русская служба The Moscow Times</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE5NY3FLQjNKR240U2hKcWwyTzlmZVdqNzlIVjdVM1EwVV9PbXhMSE1ERk9peDNoMWctQlNiOEZ6eXJfN2dLRXJBSXlheWp1M3hCT1HSAUtBVV95cUxObFc2R1ZHWGJpNy1yQUN4NzdWd2JRUm9tM3ZCSmllREZGeU9uaG1NTHFjcnFuaWFXNUdZWXozblQ0azl4Z1ZKaXdWaEk?oc=5" target="_blank">&#34;Казатомпром&#34; в I полугодии снизил чистую прибыль на 9% на фоне курсовых потерь и роста расходов - Интерфакс</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
         <span class="date">📅 21.08.2026 07:00</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Казатомпром в 1 пол 26г снизил чистую прибыль на 9% - Русская служба The Moscow Times</div>
+      <div class="art-summary">&#34;Казатомпром&#34; в I полугодии снизил чистую прибыль на 9% на фоне курсовых потерь и роста расходов - Интерфакс</div>
     </div>
     
   </div>
@@ -276,7 +239,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-13';
+  document.getElementById('date-from').value = '2026-07-09';
   document.getElementById('date-to').value   = '2026-10-20';
   applyFilters();
 }
