@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 21.10.2026 09:02</div>
+  <div class="meta">5 источников · Обновлено: 21.10.2026 12:38</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">20</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">4</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">16</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2021-03-29">
+      <input type="date" id="date-from" value="2026-02-01">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-21">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,6 +86,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
@@ -109,50 +111,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-04-21" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPZFVSWnRvd25Zem40ZXVWQ2JNSGNuZUU0Mk81NFhITG5nLTBNeHZpU3B6S08zclJWaDA0SW5jR2RoeWQ1U1BzOFM3NjN5MzVIejdUdHhyUmtMaWFBcU44QjY4clhtcWNCT2pZSHZFdmNWb3FVSWk0LVdYVjRtQ2lTXzJCNm5tUnpfSVBjLTF1R3h5QThCc1FRN2pR?oc=5" target="_blank">Уволенные сотрудники «Самрук-Казына» сами будут искать себе новую работу - Orda.kz</a></div>
+    <div class="article" data-date="2026-10-21" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-21/shlc-eks-glava-sczk-askar-umarov-naznachen-sovetnikom-predsedatelya-qazaqstan-halyq-kengesi/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-eks-glava-sczk-askar-umarov-naznachen-sovetnikom-predsedatelya-qazaqstan-halyq-kengesi" target="_blank">Экс-глава СЦК Аскар Умаров назначен советником председателя Қазақстан Халық Кеңесі</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 21.04.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 21.10.2026 10:41</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Уволенные сотрудники «Самрук-Казына» сами будут искать себе новую работу - Orda.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQTzFhRVR1cmRON3ZweEpVVUk1dkhPa2gxekxCTWFrZ2htQWV2dFA2NmdLUW9jeHlSU2NWd1dPNE41Z2hYalZuU3JjU2xCWnRBdS0xSWNkcllRMjRCcVB4ZjZ1Q2RSeDVwS0pLRldWUHprSFdGMEhyTnlvMGtvamlfWDZVSHJpUy1BcFFDV3YtaTcyMzdJSzhNUF9yTQ?oc=5" target="_blank">«Казатомпром» объяснил падение продаж урана в первом полугодии - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 03.08.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» объяснил падение продаж урана в первом полугодии - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-21" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNU0FaaUc3ZURGTi1pS1ZnYUU1UXdzNWtyc1hrcXl3NmFnV2pncm5LbXpzUTktVjE3am5WXzRQZ0lSS19KbG82dWhyaFRMVGRKaU9PaGRjdjdZVWxfT3ZoeXFyaXUzMkU1UFdUbWtpZTFTTko3M1ZCeVFFU3d1WG1uZVZaYVFzOHJKSDYzbFFCdm4?oc=5" target="_blank">КТЖ хочет занять ещё $135 млн на фоне многотриллионного долга. - Exclusive.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 21.10.2026 07:30</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ хочет занять ещё $135 млн на фоне многотриллионного долга. - Exclusive.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-22" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxQekNjVVZtUllWNFVtRWF6elFDbE9Ld3FHMWI0RkptSFIyeElaX25oUndIajkzREt3VGd5MU56MGpTVTJJLXNudVNlZVRQOUdocHBvVjZWZjZuaXhnYTlMSm9KODNMdkdURmNxY0k0VWFXbEhJdnVJUWQ0THIxUzExX3lqX2tPWjNtZ1pRMVFVQkVranJXZU1nWmhJS2VMeGdtVHRXVi1HRk9acmdScnRqS0ZLUmdqejR0RzB5ZVhOQldBQS1yczd2eThmb3hRSGNaMWI1Zk9aRFBCNzJYMUJFcExyMA?oc=5" target="_blank">КТЖ создаст единую цифровую сеть LTE-R для железных дорог Казахстана и международных транспортных коридоров - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.06.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ создаст единую цифровую сеть LTE-R для железных дорог Казахстана и международных транспортных коридоров - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Экс-глава СЦК Аскар Умаров назначен советником председателя Қазақстан Халық Кеңесі</div>
     </div>
     
   </div>
@@ -160,182 +129,72 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(16)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-09-21" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5RekVHMUU5LUJTVDN0WVAxOTI1VEx3MHRDV09pYUt3ZWVhMml3RjJ5dWMzQmZRNk04X1M2QVdsZ3YzZnJnSU5BenlR?oc=5" target="_blank">Компания, связываемая с Тимуром Кулибаевым, потребовала сотни млн от «Самрук-Казына - Ак Жайык</a></div>
+    <div class="article" data-date="2026-02-01" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOSEMzOU9MeTFzc3p4Z0NCRjhCVDhmZ0pxYzZzZ0U0SEwwV1JzYkJpVHRRZEZfbTkyV0lfa3lmbUtUdFJXZFBZR0VUODM2YWNTRzdOTXI3Y1FVcjc3c0d0Y3dqLVp6eWJycDR6UFVKOU9zNWVqRS1mZmVJSnhUMWxHcEVySm1pMG1pcEN4cEF2UQ?oc=5" target="_blank">&#34;Самрук-Казына&#34; обходит производителей Казахстана стороной - Inbusiness.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 01.02.2026 08:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">&#34;Самрук-Казына&#34; обходит производителей Казахстана стороной - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-21" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOQ21qeGJyVzNPb0l6c3owMTBHNmFZZ0swNVRUeGFiT2VvUjJoQnpkN0t5Y3dhbzhvSnJpLU0wbjdtRnBVc0JGTmMxcEVQM3BmZThNUE1Lc2IxaG1HUUVsNFBiOWxqRml1NTY0bmp0dXc0R09lSjBXNUxrdmRWUGdIT1lYdlNNbWpYNlZUNHJfVGNQZlVfM0NKVWlldkZfLUJxMEN4T1o4XzZ5ZWhkZFNsck5raWzSAbYBQVVfeXFMT2prVWdTRjlUOC1KdnRMSmdnWXlzWVcwSXFrTVV2QTczcGlHMW9DM2dMR1FGZXpaWDE5TXdpbW5oNzhIaENrU1MwQWlnWlczQWdMdmViVXYwQng5MG1LUkQyRGZuSXN3R0owREpFQ0VIWFkzSDBscEdOWkFKbVpuVExaTHVRb1J6X0dxX25WZW5LSjk4SEV2YnBOT3p1eFJKWUZnb0MyUDZjX3h5OGhTS282OE9wSUE?oc=5" target="_blank">Казатомпром получил право на разведку урана на участке Кызылту в Кызылординской области - Казинформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
         <span class="date">📅 21.09.2026 07:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Компания, связываемая с Тимуром Кулибаевым, потребовала сотни млн от «Самрук-Казына - Ак Жайык</div>
+      <div class="art-summary">Казатомпром получил право на разведку урана на участке Кызылту в Кызылординской области - Казинформ</div>
     </div>
     
-    <div class="article" data-date="2026-02-27" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQb25vTTduN0pydDhOUFlBUkltRnMzYmUwaDhOV05TN1BBWU5hX1RReXF3NnI1dG5ka2I2M00zVlhJc3JKRkZveFN3RzhyRjVxMWNJSWpLajBPamtEcFVHbzdZOFJqY0dVQ2d6QzJiNnFEQTB2aXp4a0w2YkFPaUtkVjNYMkJfeVY1bzBZ0gGMAUFVX3lxTE9Yd2RjenRDZjhvcWgxblFGekdmU2gwQnQyWk15ZmhmckEwc2dVMVFieExmTV95RGtnVDF0Tk5fbmxjMlRBbUMtejhGMHI2ZG5DOVBJZ2N5aXF1RHQ2bnVEbFVWU0RyUHhmdkgzUHhudVFkbnY5dVNoRDdfMXMtM0g1VXV5SDZibGNsLWFL?oc=5" target="_blank">«Самрук-Казына» сократит 650 сотрудников уже в марте - Казинформ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 27.02.2026 08:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» сократит 650 сотрудников уже в марте - Казинформ</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-04" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPX1lmOTFqZERBSGVhU3l3eGlmTTA1aml1aFdTcVFxbTJZMlQwSlY3Q3Zodl8zS05MS1lyUUtBRXN0eEhKeUJYb0FMLWFnZ2lNNm15eHFpb2pybThwVVVwVkxaZkhzbkVBSHBNMFVSU21SN3BDTHN5aTBKUWhOcElpRVdLMmhycHVjWlFHdDNBSnVOcm1MNmNyV2piNkhhTUE5aUUzODhzX2xrck9ZRlNPTDctbjRVN3PSAbwBQVVfeXFMT1A1bWE3dW5KbFNpdVFrOWtIQjg4OUFwSklVSlV5dDk5LU9fYVRXN3NacV9tMW9rdzFTelhPeVdsbjZRSjdIeFBSZkgxMl9MemV5MG9WQzB5aU9GWkZWS09JRGJQY0sxZS1zS2tZNy1uOVJCUVJMUUhJVVZsdGJqb29IR2Z1dzZyWUp2QTkybGJZbW5tbGVoeHg5cE81eEhFNzNjZ1JVdmROZnJpUFJTOWphUkI2b0pzTEJoX1I?oc=5" target="_blank">Сколько женщин работают в «Самрук-Казына» - DigitalBusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 04.03.2026 08:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Сколько женщин работают в «Самрук-Казына» - DigitalBusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-27" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE15a0xvcFBYbEpPb200RlBxYk9BakxxaEtXUjN4X21XTXN5TWlUNUl4Q1ptekVDUkVDZGFTRXdsdG5fc1h2MnR4eUF3?oc=5" target="_blank">Ветровые станции и дноуглубление Каспия: как &#34;Самрук-Казына&#34; планирует тратить миллиарды - Ак Жайык</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 27.04.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Ветровые станции и дноуглубление Каспия: как &#34;Самрук-Казына&#34; планирует тратить миллиарды - Ак Жайык</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-17" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPMXpSZGNEVklIblh4UUxucFprLTNJWjQyTnhtT0kxOTMtUm5NZnMxTVVKZFdZYUlYekp4RFAwQlNodjNvS2UzMlpZQ2swTUVjeS1EbTRHdU1uckNRLUdXN3ZaVjN4UWhsbE5kV19LRmQtMXJQTTZHYWhPbk4wUkZjUGIyNks1dkxJS1c3Wld2RjVpcTM4Wk9vQ1ZlS3MwVHdqWGZjSUNBd3dReU9SeDNBTV9KcVVGOVHSAbgBQVVfeXFMTWRNQ09USk5PbWdfNC1JT2pIUjM3RG5xeUp5ZXBmeHB3UmkyS2tDdnlsZHkyM3pFQ3pfR2IzYm1OM21pTkJoY0JNSHhBWnVMMjBvYUFGbC1kei05cFhNRDZOVjNZLWVVa1p3cDMtcGhyai1lWHZoZmQ2bjVNWFZYLXVueEMtc3NyMjRaMjl1cUdfak1GRWxxNW9yNHNYM2lVQ2JFZXRFZFJlb1VjYk9tRW1mU054SzNMdw?oc=5" target="_blank">«Самрук-Қазына» поставил КТЖ конкретные сроки по ключевым инфраструктурным проектам - Казинформ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 17.04.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">«Самрук-Қазына» поставил КТЖ конкретные сроки по ключевым инфраструктурным проектам - Казинформ</div>
-    </div>
-    
-    <div class="article" data-date="2026-01-16" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNQWYtdHl3Zzk1R3pDTDhpTjBqLTJDbTl0Rks1NHY1RlBKbjNSNC1zNVUwNnJxaHdwY0JSbG45MG1yTXFBclplMmJVRTF6UGgxR3NrWDVLZkZkdWNCcml0RldLdXR4azhQSXVJME9Fc2VDNXdhNEhqN0Uyb0NVR2JEQzJQR0w3Ym1nMnN3SW90UDJlc2EwcUx0c3pGUkVjX0J3d29DeGt0Qk0yUkww0gGwAUFVX3lxTE5KVUJFeUI3MGhMU0ZOWHRHUnd6UFNmejM1RjdxLVdOazFuQXF4bVhRRVQwWnVhLTlpREd4SlprSUk5UHFDczZPX2c2R0N1dkI5dGFrMHpfZkY2VnI0RzdHYmZLN3BkaUtmTXBINmxrTW5xanRCWFExampuMzBmNEI3b0JRQ00yY2l2S2U2U1dUeF9GLVZTdF91RmJBak40dE1QS0FOVjNzSWFKS3QtdnBj?oc=5" target="_blank">Не корпоратив, а «подведение итогов»: «Самрук-Казына» о банкете на 18,5 млн тенге - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 16.01.2026 08:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Не корпоратив, а «подведение итогов»: «Самрук-Казына» о банкете на 18,5 млн тенге - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-01-06" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNX1UzUkYzVHd1Ykw4UWRwbHdzMndwaXI1X0QxYVdNeTdxYzZ2SHU5dGwzRGRwdzRWYk9wWHJrLVkzTldwQjlpcUplTHhneHJJUm5KVmhMNDhvNWlkUzdMcXZlWmhBcnZNeFQ0Q2Ixc3pTSGo5X0ZPT1l2ckFxUXYzRGVoLUhmWFo3R0RWd0NzcEdhNll2MHR6RnlfLUtDTkhPR1HSAaYBQVVfeXFMTXplV29WVll5MTJJc2RPZFF5c2lEQi1zSG9OQzk4QUQ5ZnVnQlYtaDdaWkVQU1pTaUtrZnhidlFUak5sSGxBUHJYZzU4X2ZNZDIwdXc4bC1MUXdQVm1PWnJueS1TNnEzUHRMaWRwVzY3QzdHLUk3ZDNmLWlMbUJQMHB4dXFhb3BZZlRjS1h3MlRtUkFUNGptR0ZySktjMFBOd2hpRExudw?oc=5" target="_blank">Более 800 миллионов тенге заработал глава «Самрук-Казына» за три года - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 06.01.2026 08:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Более 800 миллионов тенге заработал глава «Самрук-Казына» за три года - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-12-02" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNTENUUjV0cWUzemlpU2g3cFI3SHlHUWIwb3NGV1FFVVNWcGZMalpYYVZVY2otRmY2MUhNM1d3NWtXR3RBWjBBTDVNY1BuektnSHdWcTJoa1NqLWM5eGFFbmtCbWREdkF4anIxQXA2TmkwdUV6SGJhREJGTnNqSnhaM2t3SjlmWFpHT1pPQklkWEdMZW9qUVBSenMwQ2VtZmNuUV90aVk4Sm1Qc3doOUVUWjdGOE9temh5dGc?oc=5" target="_blank">Глава государства принял председателя правления АО «Самрук-Казына» Нурлана Жакупова - Ақорда</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 02.12.2025 08:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Глава государства принял председателя правления АО «Самрук-Казына» Нурлана Жакупова - Ақорда</div>
-    </div>
-    
-    <div class="article" data-date="2025-12-01" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOek01WV9tZlJ2YVQzLVFvNFdyZl9xXy1EQjVxLUp2NVpUOGpBQkV4YWJkTk11TmZiOVVSQzVHOXF3cnZ5djlXRG9kMm9uR1B3Uk1xSkR5SWhHTDBZLVZVSEpaRWpJU2dwZXFrYkJrdzk0T1FJOXFYc2NLZmRrWjdZci1wTG1yQTY5NUo0XzZ1RnJCYUVldU1NTF9kOUE2VUE?oc=5" target="_blank">Аудиторы признали фонд «Самрук-Казына» неэффективным и убыточным - caravan.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 01.12.2025 08:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Аудиторы признали фонд «Самрук-Казына» неэффективным и убыточным - caravan.kz</div>
-    </div>
-    
-    <div class="article" data-date="2022-09-15" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBoeDFzWTVpVzBablJMVFRfY3ZFa0pjNm9SdXpPQjA2eE9tSXhGSXlyWkdQRWF4NFlObHZlUWFQdXNpbEhHRGFMaVlWQWNmcXZF0gFKQVVfeXFMUGE2YldUd1ZjWjRhWURDLTBoZFF0eFFmRk10anlNcnNYR0p0RUtDSlVjTTdmRF9rc0xmVnFpZ0lsTU1jajJnWGhnUXc?oc=5" target="_blank">Госфонд Казахстана &#34;Самрук-Казына&#34; готов выйти из проектов с партнерами под угрозой санкций - Интерфакс</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 15.09.2022 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Госфонд Казахстана &#34;Самрук-Казына&#34; готов выйти из проектов с партнерами под угрозой санкций - Интерфакс</div>
-    </div>
-    
-    <div class="article" data-date="2025-02-20" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxPdXY2blVYdVZvXy1DaVVGY2tBdTh1bW43X2w3R1lZTU1JazV6NjVJXzVhMlVxejdPbE9MZFlSTWNUeFJzQWxqTWZvUmQzT3dmM0F4dWxsVUlrSV8tTUxBY3g0YzNncFJ4aTlQYWpMY0VnMTFKYzZUUzJrNjVjN0N3X25paUV1SnpKZHVYQ0lzeHJ6bkJEZU8waEtTbC14UThpbF81VldDUEEwQmRSYUsycnVVWXl5SnA2OFZzbFRsQ29Yc1QtekpWX3hseG5Ld05NazhxY2txTWZPc2Z0UVHSAeIBQVVfeXFMTXlnbWJ5OHR4X0NTTWg5ejR5cEZsUWs4eURKSnVCVmFwR3NyeEJaYnBtcUxXbFFCRk9tRll2QlVHY001S3VaVXdTeVdjdk1CUGlGQnhSeWplTk1JeXh6ZXg2VzRENkQ3ejJwODFYU0VJb2hCS093UWdPMnJxYkd1VTRWX25wUmduaC1OazY3NkxuV0RwVHFiTlIxU2NxNm4xTDNPYUZ6dXFrOE1xOW5OS0IwbGl0M3JXd2pkTzVGY3RsQkxJS1lXUkF4TFdISHBGallYdmYwMHVoV2s4eEY4YjFDdw?oc=5" target="_blank">Куда идет «Самрук-Казына»? Этапы экономической зрелости страны на примере принципов работы и развития фонда - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 20.02.2025 08:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Куда идет «Самрук-Казына»? Этапы экономической зрелости страны на примере принципов работы и развития фонда - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2021-05-25" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOalBpLXh6OThyWlBsR0ZXOTdaY25CTWREY1JWN0ZBTldycXI3eEgwZ2I4c3F6UlBWY2VhQ0hzZUpTV0lhVGl5b2g3MFBOYy1IMklldkxha1JZNFlxWXpmazJzbFZrVGM2RkRZSm1MWUE1NDdhSTZMdkRmTnk2M0RQeFRvTGstMXFKOFRxZVpybVFsQl84YlE4ZHFOSGdQODdEXzBYX01qVUtOUDhGMlN5Zk9aUXhEUQ?oc=5" target="_blank">Глава государства принял председателя АО «ФНБ «Самрук-Казына» Алмасадама Саткалиева - Ақорда</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.05.2021 11:50</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Глава государства принял председателя АО «ФНБ «Самрук-Казына» Алмасадама Саткалиева - Ақорда</div>
-    </div>
-    
-    <div class="article" data-date="2021-12-22" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOOUozRUhpLVUwdmo0MExpLWRXbUJyQ0daZlptS2ZLdmg5M2tkMzUtYXp0ZzVrb2lzd05qX3owQXJqWlZySnhsN3FKcWdnd0xuQXBkbTk1Q192MWhEakdKZGhIUC1pdlY1VVl2M0lPV0dxR0lxMVRvT0pQZklBOEoxM1d2S0l2ekdlY2RBNTZfd3NFQ05RbWcya1VmM1puaGFQQWFINHZVaEpnbGJhTExJMUI4YjA2RXdFa19MWk4wcw?oc=5" target="_blank">Глава государства принял председателя правления АО «Самрук-Казына» Алмасадама Саткалиева - Ақорда</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 22.12.2021 12:23</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Глава государства принял председателя правления АО «Самрук-Казына» Алмасадама Саткалиева - Ақорда</div>
-    </div>
-    
-    <div class="article" data-date="2021-03-29" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNb1AzZUpORWEwRDhtUXA0T2U1RVdadFllWEtHTzZVc296ZFBLMWZpRFd6dkRFN3ZucVVRSXhyTWlyTFA2YWJQZ0I0TlhIWVQ1S3hwRm5DSjFFTE4wS2ZJSWtSZkZmZVBWM0N5dWEwVnIzbkpGZ0lRRTRuVUpONnlVSXlJWl9Ed1RaTHhF?oc=5" target="_blank">Назначен новый глава фонда «Самрук-Казына» - Khabar.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 29.03.2021 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Назначен новый глава фонда «Самрук-Казына» - Khabar.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-21" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPMjcxaHRuenhPdXZlZmhWbkg3V29neEhMdjJfT0ZhVWRpQ2lyQzVoVzdSRlMxbU1MN2VsY1l0V1J3U1hzdVlBN21raUhOSFVnMVFYSEkxWE5haDNiNHBsY2JXbDV1SWZhYzlVcWdJVmJJWjNtVEJERjgtaGlDeWZxUTJfcTFiWkNZOFd6UFRtb2V6a2M?oc=5" target="_blank">Из Гамбурга — прямо в Алматы: Air Astana получила новый самолёт для внутренних и зарубежных рейсов - Правда.Ру</a></div>
+    <div class="article" data-date="2026-07-20" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQdGNRZ0wwY0ZMNVhxSzFoVHRDUEVKTzd3V3VxQkFaTlREVUZ5T0d4bEdqVGxWWV9TUkM1bnB0ZU9LR2R5Q09QU0s0Y1hNTVh1TkFQRUFSTjVkblVvRTg0MTBzX3ItVnp3eEgtTE5od2VaUGxyenIwbXNDN0hXVkVWcm5QMzdBMW1ldGNGcFhzekNEVEpNdHBfRE1tTnZPZzZDUVAyQ0o1V2JKNUgwLWkxcU9BVQ?oc=5" target="_blank">Пассажир обвинил Air Astana в порче инвалидной коляски и хамстве сотрудников - TourDom.ru</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 21.10.2026 08:49</span>
+        <span class="date">📅 20.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Из Гамбурга — прямо в Алматы: Air Astana получила новый самолёт для внутренних и зарубежных рейсов - Правда.Ру</div>
+      <div class="art-summary">Пассажир обвинил Air Astana в порче инвалидной коляски и хамстве сотрудников - TourDom.ru</div>
     </div>
     
     <div class="article" data-date="2026-10-21" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPQVJDMFdrQ2hCNmdJM25IeEx1aWg3MmFWSkdDbGN0RjhlRUgxWFhJeDBVTXhrZjNJSTV6bmhPdWYtUG9wUVdybkE0Y3FtVVJUbHdTUXE0c2llZllyVGY5ZGFTbHFTSUZWYnhJZWdQeTVHY2cwd3Q0SUF6ZUhxQXh6UU5EVlpySDJmZlNHYTZMbXU1dEc3dElYS1gtYTVWbHU0dTdRZGZiQXJwQVc1?oc=5" target="_blank">Осенний комиссионный осмотр железнодорожных хозяйств завершен в КТЖ - Қазақстан теміржолшысы</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOaGhNQTRERG5aS1RIRVA4MEZDN2Y5d2l3M01aQm5UbmF3Sjh5akVKTnBScXNGMmxPaW9ZYTk0dDBlZVNITHNJNndIMDBqanRoRlVNN2R6alZuMU93ZlZOcTlmb3pZWUd0N1cyOGQxNlVjNnZVdElGYUZtQ0FCVkFUN2U1Q1hyclhqXy14UUJVczhJSW05SnZnaURJVU02ZVpP?oc=5" target="_blank">КТЖ планирует занять до $135 млн на железную дорогу до Узбекистана - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 21.10.2026 05:42</span>
+        <span class="date">📅 21.10.2026 07:03</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Осенний комиссионный осмотр железнодорожных хозяйств завершен в КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">КТЖ планирует занять до $135 млн на железную дорогу до Узбекистана - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWG1NX2hnbmZqZVVVamVOMjZUREdCT2hZYUFNejBoRDM2amVfZDduNlM5Y0E0OHdUcHgxT290ejl1bVpfa1NUTng3ZWp1dFdEMkJOQk5FdktrQy1KODhyWVZyX0RDVkhRX0FhMl9oZFNTenNXbjZ6TF9QN2tLaC1Vc1dnUHBXYU5kb3dkTmVXYUE3bFl0b09GUzNuVTFlUEc4cmVPcFdEOGZHbUZjSmxsM0lTR3RPaWRFSWpTaGJCZnJOdw?oc=5" target="_blank">ТОО «КТЖ – Грузовые перевозки» продолжает обновление локомотивного парка - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 21.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">ТОО «КТЖ – Грузовые перевозки» продолжает обновление локомотивного парка - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-09" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOUWZ0VnRGTmw1S3lRWWdRTC1Ubml1c1REdi1hblJoTTZPUEdKRW5RNTFrWFVGOXJnUHFTNTFrNUVzQmdnTU5FcjZ4d1BPbkZqenhyVzhSMTdmT2ZzWHBRQW8zU3FXeHBfX3h5Z1VodmJqQy1NbnAtU1g4N1NQdU8zdUYyUlpDbk1uOWd4Q0hpdjV0NHVuYkk4LUVUS2t4MjVpSF9MZ0xKR0IySmh2Rm82VExR?oc=5" target="_blank">КТЖ получил 50 новых локомотивов Alstom и CRRC: куда направят технику - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 09.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ получил 50 новых локомотивов Alstom и CRRC: куда направят технику - Kursiv Media</div>
     </div>
     
   </div>
@@ -399,7 +258,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2021-03-29';
+  document.getElementById('date-from').value = '2026-02-01';
   document.getElementById('date-to').value   = '2026-10-21';
   applyFilters();
 }
