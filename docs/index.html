@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 22.10.2026 12:42</div>
+  <div class="meta">2 источников · Обновлено: 22.10.2026 14:52</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-29">
+      <input type="date" id="date-from" value="2026-09-22">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-22">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,8 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
@@ -106,129 +104,41 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-07-24" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOQTQtZ2FQQ2RYNnZfQ3pPdTdIYUhfSll2b1RjVHVWalFTb2FjNjZ6cHRxZnFRbGlDOUZUalBoa0x0djlRMzgxSnBLbnVFX1cxdWh5c3IyYjBKMTN2R0ZGcFlObGgzS3I0cDlYcnZ0MC1sRDZmR09qVnNidndURXhMMUtZQjRva0lNT1JmaDdnamV4R0tsZlFwNW5KeU5xaklfMFZWTGJ0NmlpaFJtUk9LcS11aGJIZw?oc=5" target="_blank">Атырауский НПЗ в Казахстане завершил плановый ремонт -- Казмунайгаз - Русская служба The Moscow Times</a></div>
+    <div class="article" data-date="2026-10-22" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-22/zhnb-arbitrazhnyi-sud-po-kashaganu-otklonil-isk-kazahstana-o-vozmeshhenii-ushherba-v-12-mlrd/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-arbitrazhnyi-sud-po-kashaganu-otklonil-isk-kazahstana-o-vozmeshhenii-ushherba-v-12-mlrd" target="_blank">Арбитражный суд по Кашагану отклонил иск Казахстана о возмещении ущерба в $12 млрд</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 24.07.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 22.10.2026 13:13</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Атырауский НПЗ в Казахстане завершил плановый ремонт -- Казмунайгаз - Русская служба The Moscow Times</div>
+      <div class="art-summary">Арбитражный суд по Кашагану отклонил иск Казахстана о возмещении ущерба в $12 млрд</div>
     </div>
     
-    <div class="article" data-date="2026-10-22" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOZzNMNjNXWE4wUzJ3TTExdXhBVVRiUWtyWUtOWml4UExwUXYzTGM1VGVsZFJSZTVHZ20wd3JKNmlhUkF5X3FVYUxmeURMODFhLTN1QTJETWROZG9NbmN2akNrVVVZcXVXYk9lUkY4a1hsNmk4WERrV1hBblVwdHp6QmtRRUQ3b2JqMWRuZDd3?oc=5" target="_blank">Первый Dreamliner Air Astana поднялся в воздух: когда казахстанцы смогут на нём полететь - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 22.10.2026 09:48</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Первый Dreamliner Air Astana поднялся в воздух: когда казахстанцы смогут на нём полететь - DKNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-22" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOWG13TEhMRzUwMkJPTERkRXc0Sy1DTUpiM3JJM05LdEUxMExRMlVkczNSM25PN3prNFoyTHhOWEpJY2ZzWGxMdnpnMFFOeW83NlAyM1lGbEdfQ2g1RjhubzlrVmI2SFk4MUNyaDdPWUJmQVdzaEVwR2c1TTJZVno4cGRibGttazkyS1c5akhCQ0NIejFHTGRNWWRhNVFqRW5GR1pQdUFQOTFtQU9abjdzQzNMMHVpSEU5SjJHTw?oc=5" target="_blank">Первый Boeing 787-9 Dreamliner для Air Astana проходит испытания в США - Shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 22.10.2026 10:13</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Первый Boeing 787-9 Dreamliner для Air Astana проходит испытания в США - Shyndyk.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-22" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9XZEpxX0UxblduVE1QM2xfcXpreGgxQjh3d0liN0U0TldWcHNXSGNjaXJ5Z3c1QXNfN1I4V0VzNUREQUhWYUFLQmt2eGdmVm1HVVRQYzg0bzNmRndQbmQ1eWJOendSSnh6a0dvUW9sUzBsUFpzVjR3dXF3?oc=5" target="_blank">Первый Dreamliner для Air Astana испытывают в США - Belles.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 22.10.2026 11:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Первый Dreamliner для Air Astana испытывают в США - Belles.kz</div>
-    </div>
+  </div>
+  
+
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-09-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNWnd3TEROZkdyWWVmMWtlUWxHTWFJN3J0RlkwaXAxcG9hLWZLOFQwN1ZwcjB0c1lfYmtUaHh4MEZ4Z2ktUFpNeVdUTUtYVEEycjd6LTF6c1JFMHVVTEgwRWRscnFpNEI1YlNpOHpiemxLc0hjQS10WVNvM25DWTBJaHdTYVM0TXFheXN2TWw5aXgtQ3hkSG1MWndKRWhCSnpmaHdNdnFSRDVETTVUcGNVLVdYM2kzUjJDTnZpTkVvZmU1dUNQLXpheFVIY0c?oc=5" target="_blank">КТЖ не смогла заложить расходы на новые вокзалы в тариф - Kursiv Media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeWIydG1JVG11RFN6QnY0Q2NqWGxQZklldzV1SzB2U1pZNjFtWHo2eEpOWTNBenk0c1paS0NiMWJwZ1FZRi10SDdxS0F0LUVMd1VFRHIxYWhVYW5UQkowUFRzQXhZRXkwa0ZuZGc3Q0x0Q2xXQWlRbENTTWdNYU5iS0x5aDI2TUJEcjN2QTVOZ0NLRmZQbUJuZ04yWnlmSEczVWlITzFrMGR4RDJubGZUN1dtTWh1eXN3QTI0?oc=5" target="_blank">КТЖ рассчитывает привлечь до $5 млрд в ходе IPO при оценке компании в $30 млрд - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
         <span class="date">📅 22.09.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ не смогла заложить расходы на новые вокзалы в тариф - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-29" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQYi1yMWF6N2tsSUswMWpMY1BUbUJ2SFJhNnc5dkNxNXkzbGdRZHE1a0ZzUkFtYnhZX2tITU9Mbm84U2k2N2l1cHUzMExqWnVTTTZ3TVBsSWFDSmV5Y3FQNE00MUdfZFp6VDc0OWtLbVpoLWVrWFk1TVV6SHlCYUdUdWZYRUVURGFWSWRQY2txYkpWbXg2UExtT1Rvck5CM2pEWHVwemhtODJIeWowRnkyRzNxXy1FSnhZME9MdmRDc00wbFFDWXdSUXN3d0M?oc=5" target="_blank">С начала лета начнут курсировать три дополнительных пригородных поезда КТЖ - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 29.05.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">С начала лета начнут курсировать три дополнительных пригородных поезда КТЖ - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-30" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5IUXVaNXRJdVlIRk1PUTQ3YUpXcngwdjVJaFBfYmlCWjRpRjBnLXR4Nm0yMkk1RVhEWWIwdmtBQnhmTTRKM0JUZjdlTWFFLTlVbnJic2NzMGFiNG1JSm12RVQ5d0RvTkRxbmZjMmpWTXppMTNuX2ZFV2xjYWl6UHM?oc=5" target="_blank">КТЖ проведет дробление акций перед IPO - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 30.09.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ проведет дробление акций перед IPO - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-17" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOQ0V3eGh6SW9TWFBScDk3cjhWNzRmbk8tSHRQU2V1ajJBOE00WlFyWEc1eVZLYkFseWpQRG84ZVk2em1yZjZVWWloUEpTeFZRcGlRVy05eThFMGVRTzRSS3I0eXJDa2ZrcmtaR2dNcmFrekZYZXM1am5ZY1kyNHdTdEVLN0NfZ0tuTTdwckZfWUtRSURDOFdhb2tYT1I?oc=5" target="_blank">КТЖ отменила запрет на вывоз нефтепродуктов с мини-НПЗ Казахстана - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 17.08.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ отменила запрет на вывоз нефтепродуктов с мини-НПЗ Казахстана - Inbusiness.kz</div>
+      <div class="art-summary">КТЖ рассчитывает привлечь до $5 млрд в ходе IPO при оценке компании в $30 млрд - Kursiv Media</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-10-22" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-22/kaye-pryamye-reisy-iz-kazahstana-v-ssha-stali-blizhe/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-pryamye-reisy-iz-kazahstana-v-ssha-stali-blizhe" target="_blank">Прямые рейсы из Казахстана в США стали ближе</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 22.10.2026 09:38</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Прямые рейсы из Казахстана в США стали ближе</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-21" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNT2l5U1BDeUk1TFc1OE03czdyaHZjVzhjckxEbDYyeEw1dzdDUVl1T083QzZLVGpYUUROcUxiYlp5TnpCRjBTb1NHNzRPeHZkbWxnNnVlZWJRWlBwRGNydFVlWmt1ZlFrRjQycmVEMXNncEowLXVPQkVRdDFLY0tSdU93aGdaT1JkenR1TDk5emt3U2NvVUF0LWw3ZnJ6SXRjQ2Z5ZUJhNGRaNDQ?oc=5" target="_blank">Новые тарифы КТЖ приведут к росту цены на казахстанскую пшеницу - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 21.09.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Новые тарифы КТЖ приведут к росту цены на казахстанскую пшеницу - Kursiv Media</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -287,7 +197,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-29';
+  document.getElementById('date-from').value = '2026-09-22';
   document.getElementById('date-to').value   = '2026-10-22';
   applyFilters();
 }
