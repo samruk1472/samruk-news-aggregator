@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 23.10.2026 17:45</div>
+  <div class="meta">2 источников · Обновлено: 23.10.2026 19:36</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-02">
+      <input type="date" id="date-from" value="2026-07-09">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-10-23">
+      <input type="date" id="date-to" value="2026-09-10">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
@@ -109,126 +107,44 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-06-02" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1MVHJXU3BMY2E2YnNxbFhaOU5OeFRCNk1aTXhsRUhLeGRRbVIyOWpYOG1QN1RxcXYxMFh5VWVBeWgtTEE4YldTMm00LXhYZ3lURlJUWG5TbVhlLWJpRnJqN2xzMVdqd3JoeFE?oc=5" target="_blank">Результаты голосования годового Общего собрания акционеров АО НК «КазМунайГаз» - ҚазМұнайГаз» ҰК АҚ</a></div>
+    <div class="article" data-date="2026-07-09" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNYzlZLWtMNk9JWVZDblFiX1d2T1YwUUtiTE53YUFfRXlWU2R3dUFXV0luNG5LTDY3Tm9vNzFlWWNnb0lLLUJFYk91M3hBNVZ1bjh1OVB0emxUcEY4T29zNFpBbm9qZUhKcGJ2R0MtNUhJYW1fdjlwUHhCbW82UF9pWlVwVzNQdjVWX0NidlloRHRVXzZKWjZISg?oc=5" target="_blank">Еще 50 локомотивов Alstom и CRRC пополнили парк КТЖ - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.06.2026 07:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 09.07.2026 07:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Результаты голосования годового Общего собрания акционеров АО НК «КазМунайГаз» - ҚазМұнайГаз» ҰК АҚ</div>
+      <div class="art-summary">Еще 50 локомотивов Alstom и CRRC пополнили парк КТЖ - Қазақстан теміржолшысы</div>
     </div>
     
-    <div class="article" data-date="2026-10-23" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxQazE5RTBmZkdvMjVRVG1JUUJXNG5DbVkwamszdVBBZU1iZzZJbG82M2NxX1MxR2JWZzh4aXluclNtVVR4T2tZTkFCUk1qbk9zRmNCYWkxU2szMnk5LWJFTTBpaXlMcHF2THdHVVo0Ti10RGFvdC1qMVJPX0RUOWhfYVFRcnpjYkJ2SnZtV05CMUJTVU9oRFdfS1V2cktGSHh1VFRxM19yalE4ZUJHWGpTeDMydmNmODJrZTlhOEJHV0JEaXlYalNOWnZkM0Q5R0nSAc8BQVVfeXFMUGsxOUUwZmZHbzI1UVRtSVFCVzRuQ21ZMGprM3VQQWVNYmc2SWxvNjNjcV9TMUdiVmc4eGl5bnJTbVVUeE9rWU5BQlJNam5Pc0ZjQmFpMVNrMzJ5OS1iRU0waWl5THBxdkx3R1VaNE4tdERhb3QtajFST19EVDloX2FRUXJ6Y2JCdkp2bVdOQjFCU1VPaERXX0tVdnJLRkh4dVRUcTNfcmpROGVCR1hqU3gzMnZjZjgya2U5YThCR1dCRGl5WGpTTlp2ZDNEOUdJ?oc=5" target="_blank">«Казатомпром» повторно вынесет на голосование сделку по продаже урана российской компании - Азаттык Азия</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 23.10.2026 12:56</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» повторно вынесет на голосование сделку по продаже урана российской компании - Азаттык Азия</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-21" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPNm5xV3BTZjg3aFpqTm9qRjZSOG5kT2FmNHRERS1sT3A3SUprNjd5TkxEaXlIZG1jSV9wTWYyWDZmSDVWTU4zNkZOWkJPcHZQQV9ua1ppTFhic29POHpoYzlFaWw0bzZzV0xFaUxiM2tURG90Zlh0aFkwTWJPbkRncEY2XzFsRWxXcTJaUlpsVFUtWndaS2ljdTJXUWoyS2hGN1g0MnpINl9NVk1IYU16UncxQlNVQdIBuwFBVV95cUxPdUhpbFdUUlh3ZVRvbVJTMlFVbXNockV1SGpqOEVPdXU4N0FSWVp0bTlCYlNHdWY0TjlYZHp3YnloTkdtempIRVJEMWpXMFRDWlBMOEZYT1NoNlh3d00yUGpUWENHd2xwT0ZPSTg2TzI2dE1GMnNKZlVab1R2WjlSakdpUTROQ2QxemZuUk9MX2xNSTRCS3lwOWgtZkZMV1BjNGpvSHBLeWJfb1ZweExqUXpna1NkcEVEaDVJ?oc=5" target="_blank">«Казатомпром» получил право на разведку урана на участке в Кызылординской области - Vlast.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 21.09.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» получил право на разведку урана на участке в Кызылординской области - Vlast.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-21" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAJBVV95cUxQOHBXMHFtTG9TckhfTXd0U1lVN1d3WmlSLXVudTdaNkV0NHRMLUh2OTlrdXY4OG1nbEg4LUNmRktWdUVLTEFCckxQZDQ1bERFTk5HYXROX2xxSWpZamRvM2hWZXBDa3p5OTcwT0p5NVRoNFdrbHRWX3g4b21KMTJ4NXB3VEpBWFVMYWlGc3RXbkFFVVBYVjZDelhOQW96TVhPVjZVcGc3RnVndU8wanE0S1Q0a2drTXBJTGUzVW9odnN2OTh2Q0tUWnU1VzZSaHNEM3d2Um1zRDBrdHFueTNuZ2twVnBOT3pqQ3pkeGF6UXFrS2FoTGVxTmw0RXA5STJCWTNyc2lfTkhUQnd2T0xFVEJ0WlN4NkJvUEEtRzVzZ1J4amxfM1FxcHNpazdHakp2REg3RzJoZGw4cVI5?oc=5" target="_blank">Разведку на участке с 10 000 тонн урана предоставили Казатомпром - Bizmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 21.09.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Разведку на участке с 10 000 тонн урана предоставили Казатомпром - Bizmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-21" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPOXlWWU9zaGN2eV9VVkxubkJORUhpaGNBSHpXVnd6OUI5VW1SaHRTdkE4c0pENk9OdXd4WWFJbGhHZHhfSUNqTnAwVVZzMzUwcFJmRHpxNmN5RmZiU2V6b0hjT05VaGhMR1BEcm9BWDRxNjFUQ0N0X2lOLV8tVlpQT29FRW9fVVBxQ3VuZmVFLUZzbXBZcEUzcTRaMGtpN1lHTmtv?oc=5" target="_blank">«Казатомпром» начнет разведку нового уранового участка в Кызылординской области. - Exclusive.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 21.09.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» начнет разведку нового уранового участка в Кызылординской области. - Exclusive.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-21" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQTmRaV3pQaHNTSkZ6aklXT1JkWThOU19xMWlJaG5oWWtPb2Ywb3o5N0ltTmkxemdXY3NpSkpzZEIyaEJVekZDVHMydldVQUFSVnhxdUluNE1Lc3dhYm5Bank3QndOU2FEVWxab3l6YUlsUWZlUzVLZ3h3Z0tDakVkY2hCdHlTOXBaeGFVaGJEM0ZkUU9TRmhSLVQ3N05mbEtDN1VzUDVpZw?oc=5" target="_blank">&#34;Казатомпром&#34; получил право на разведку нового участка с ресурсами около 10 тысяч тонн урана - Kazakhstan Today</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 21.09.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">&#34;Казатомпром&#34; получил право на разведку нового участка с ресурсами около 10 тысяч тонн урана - Kazakhstan Today</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-23" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOOHVtMi1LZ2x0bUtWNUFJUjlyWTJYVzhCVktHN2hrMEZnTWFLN0tTU3FEWEpNS1J6UmFxNm5nbVVhcDlHRE9Hd09FanRnV0RieGlPeXh4YWpMVXpVTlNaeS03RGI1U191WlQ2UUZJUWhNNlM2UGt5dnlmUFdCdUZjOTFxNzFvaWJDNWRpRENicw?oc=5" target="_blank">&#34;Казахтелеком&#34; подключил к оптике 12 многоэтажек в Актобе - Informburo.kz</a></div>
+    <div class="article" data-date="2026-09-10" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQSmJkYUtQVGxWNllRbDNsa0NWcTV1LW5GcFRBRmhwejd1dXVRSWtOZzV6ME42dTE1Wm4wQXB3SW5YLXE4dUt1d1ZaNnI5WkJFVjBFUjBHRnVhTHdTUGYxQzJpSkF4Mlh4YzM5alFvQ2lPV1hqVWZzN1VPckFobkhseDFQUWJEcWpTNTFfdzFyVVNqOHllZ2hfZVdvVkfSAaABQVVfeXFMTXhpNnZLVmtGQnY2bnJOMmVtV0NIQ0piUE5wcGh6dFBlNnJpOTlQWnM5RmU1a2hNUWI3NkgxTk1FQkJjeW9KNmJsRVdJRzRMcF9hakJPMDNua2lrbVlua2I4OTFMUXlEMUN4RnZDTUhZNV9YQnExQlNsQ3FDUHladFlxaGl5aTYyWFNKM0Y5cE5Dc2FDRTJfMFZKdkFONkJEeg?oc=5" target="_blank">«Казахтелеком» полностью перевел отдаленное село в СКО на оптику - Ulysmedia.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 23.09.2026 07:00</span>
+        <span class="date">📅 10.09.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; подключил к оптике 12 многоэтажек в Актобе - Informburo.kz</div>
+      <div class="art-summary">«Казахтелеком» полностью перевел отдаленное село в СКО на оптику - Ulysmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-10" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUl9nUUlxUjcxZDVnU1F2UUJXaHR4Nnl1UWR4Q3ZxVElIRGtpS1RFUGw4enhWX1k3UnJMMU9hOHpkRmtaX0VMMzRzOHlTRVNWc3lrbWJiVEx0ZXJ3Z2dNQXZPVF9TWXdnbjdoOGNDM25sazZ6Vlp3c29kckFzNmNnMjhuM1FSZGZrbHVEWnRuTFN0UGNYVWFPOHJyRmFJYy1WZHJoR195dmNqOU3SAbABQVVfeXFMTXd5QVp6Y3BlWUVZWFFBamtFb0hfSFY2Y2dPeWVqX0laOVhIMkljZnRzWXBVZzV6dWVPUVdDR3BCT2Y3RjdBclN6V3B2MHpnNi0yal91a3BBRDFqaEpjcFFrLUlpSlA1MU1tRGwwNDBVNk9tcllzc0pLdUVqcmxPV3hwQUdIalZyY0ZRRmNtcUU4Zy0tekQyYzFBQTFNaGExV1ZoX3h0c2ZVOWdLMkdIUWk?oc=5" target="_blank">&#34;Казахтелеком&#34; полностью перевел отдаленное село в СКО на оптику - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 10.09.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">&#34;Казахтелеком&#34; полностью перевел отдаленное село в СКО на оптику - Новости Zakon.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
-    
-    <div class="article" data-date="2026-10-23" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/kassym-jomart-tokayev-received-nvidia-president-jensen-huang-274457/" target="_blank">Kassym-Jomart Tokayev received NVIDIA President Jensen Huang</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 23.10.2026 21:21</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Kassym-Jomart Tokayev received NVIDIA President Jensen Huang</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-23" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-23/lngr-nvidia-expands-kazakhstans-ai-infrastructure/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lngr-nvidia-expands-kazakhstans-ai-infrastructure" target="_blank">NVIDIA раскрыла планы расширения ИИ-инфраструктуры Казахстана</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 23.10.2026 15:42</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">NVIDIA раскрыла планы расширения ИИ-инфраструктуры Казахстана</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-23" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="http://time.kz/news/economics/2026/10/23/nvidia-vysoko-otsenila-kazahtelekom-za-razvitie-ii-infrastruktury" target="_blank">NVIDIA высоко оценила «Казахтелеком» за развитие ИИ-инфраструктуры</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Time.kz</span>
-        <span class="date">📅 23.10.2026 20:29</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">NVIDIA высоко оценила «Казахтелеком» за развитие ИИ-инфраструктуры</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -287,8 +203,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-02';
-  document.getElementById('date-to').value   = '2026-10-23';
+  document.getElementById('date-from').value = '2026-07-09';
+  document.getElementById('date-to').value   = '2026-09-10';
   applyFilters();
 }
 
