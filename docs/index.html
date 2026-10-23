@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 23.10.2026 05:48</div>
+  <div class="meta">3 источников · Обновлено: 23.10.2026 08:59</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-09-23">
+      <input type="date" id="date-from" value="2026-08-24">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-23">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,11 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -106,85 +108,74 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-10-23" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-23/svan-byvshaya-neftyanaya-kompaniya-boranbaeva-pereshedshaya-kmg-poluchila-ubytok-v-75-mln-tege/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-byvshaya-neftyanaya-kompaniya-boranbaeva-pereshedshaya-kmg-poluchila-ubytok-v-75-mln-tege" target="_blank">Бывшая нефтяная компания Боранбаева, перешедшая КМГ, получила убыток в 75 млн теңге</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 23.10.2026 06:29</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Бывшая нефтяная компания Боранбаева, перешедшая КМГ, получила убыток в 75 млн теңге</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-10-22" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="http://profit.kz/news/75339/KMG-Kaspi-i-Kazatomprom-vozglavili-rejting-samih-dorogih-kompanij-regiona/" target="_blank">КМГ, Kaspi и «Казатомпром» возглавили рейтинг самых дорогих компаний региона</a></div>
+    <div class="article" data-date="2026-10-23" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-23/rlzh-chto-uspeli-sdelat-v-kazahstane-za-vremya-pravleniya-tokaeva/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rlzh-chto-uspeli-sdelat-v-kazahstane-za-vremya-pravleniya-tokaeva" target="_blank">Глава государства анонсировал запуск третьего суперкомпьютера в Казахстане</a></div>
       <div class="art-meta">
-        <span class="src">📰 Profit.kz</span>
-        <span class="date">📅 22.10.2026 13:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">КМГ, Kaspi и «Казатомпром» возглавили рейтинг самых дорогих компаний региона</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-21" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="http://profit.kz/news/75337/KTZh-predstavilo-cifrovuu-ekosistemu-passazhirskogo-poezda/" target="_blank">КТЖ представило цифровую экосистему пассажирского поезда</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Profit.kz</span>
-        <span class="date">📅 21.10.2026 10:25</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ представило цифровую экосистему пассажирского поезда</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQcG1VY2ZLaXpyUUNXLUlGVjFSNllXclVMWGVjUWdTMXZFclBoTS0ybDFXOHJUU1k5ekQtOUVhaGJYSm9pdXRfY1VGbEJObnRyNFV0b0g3YXdfeWk5N0UzUlhiSlV0M2ZQLVNucHljd3VMYzlwcUs4aEZ1TS1hc1R6bVluWmVtV1JqN2hjUVZQbXBOVkh5UzlUWg?oc=5" target="_blank">КТЖ представило цифровую экосистему пассажирского поезда - Регистр ТВ Казахстан</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.10.2026 23:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ представило цифровую экосистему пассажирского поезда - Регистр ТВ Казахстан</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOT1BHUVRFUko5bW5iYUl2MHNGWkU2QWJKeWxoQ3FEbXRoM0dWNXd0VlNqUFExaUxqXzRMa2FLQVc1dWJuWXNKT2stVFc2dGFBSTBjRUlFQVh0VlpoNHVZOW51d0xwNjdBTEE2ZkRMbDJTSk5tQ204c2kyaVdkUUVzTUJHWjVrVk11QUE?oc=5" target="_blank">Осенний комиссионный осмотр проходит в КТЖ - Железнодорожник Казахстана - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.09.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Осенний комиссионный осмотр проходит в КТЖ - Железнодорожник Казахстана - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-22" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9kNVBQMFd1aHRoa3ZBSEcwVXRYaFI1cENjVk9qbWwtc1p1cFhQa2djS0NlZE81RTdtUXpUdTZKQ3dMOHZ6Qnl5elRIZjhzUWE5M2UwOEVQTzdqTXVvOWhjdGhjTml2bnFGT2owVlhnSm5PVDZSYm5FY1dn?oc=5" target="_blank">АО «Казахтелеком» напоминает: перед земляными работами необходимо согласовать их с владельцами подземных коммуникаций - GOV.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 22.10.2026 12:19</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 23.10.2026 08:16</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">АО «Казахтелеком» напоминает: перед земляными работами необходимо согласовать их с владельцами подземных коммуникаций - GOV.KZ</div>
+      <div class="art-summary">Глава государства анонсировал запуск третьего суперкомпьютера в Казахстане</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-24" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOZUx1ajIxWEtVUnV2a3dkR1JqaG9XOEFrOGY5TGpnaEgyYU84WnQxQmNDeU01bVJaXzg0dk1vUnJ1enBXdndzeFdhTHBScVA1SUVrNjVTeXY5d1UzclVFUExHU1kxSzNCRUIteFZQTk5HeVJpQjNCdDZtSThGcmxBekVZakl2LWdYb1lEUjhhaUtsaF9JV1RUR0IwZTJHY3dqRHRtS1ljVTl4d2ptZFNsWEFn?oc=5" target="_blank">Казмунайгаз перенес плановый ремонт Павлодарского НХЗ на 2027г - Русская служба The Moscow Times</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 24.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казмунайгаз перенес плановый ремонт Павлодарского НХЗ на 2027г - Русская служба The Moscow Times</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-23" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNckpsNHNZUlJ5N3lIV0pmeUdMczIwOGUwbFUyWkUtZTB4MHhyS2hObE9IRnlpQTltQzdCOXhJcl9nX3hVNHk5QzdicmlkbW96OUpLYXRlZzhzNXIxRVY5Y3hDaHNjZnh5emVNZ2FXY3RhdVhsQUtiRTRkTzMyeGJReFA2eWlHdGtGOUcwS2xRQTVCeEpG?oc=5" target="_blank">«Казатомпром» снова попробует продать уран в Россию - National Business</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 23.10.2026 07:41</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» снова попробует продать уран в Россию - National Business</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-24" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPMUtLOWx1c2hkSHBsMk5XSzRZcmdPOUx3YTB1VGFlUEJWT2UwWnAtdkNMSi1WSGoteXZJU0RIZHFQX0swQnlGX3JCNFluYVZld0d3eUptSWRLMzZXV210MkxtX0o5VXdNcVJJeEhURFVBWXd6SUhmYnNTUENGYXc0b1pUdE1wa1JGWG1JYmQyT1daTXU3X3Rlby04Qkl0QQ?oc=5" target="_blank">Как “Казатомпром“ готовит кадры для атомной отрасли - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 24.08.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Как “Казатомпром“ готовит кадры для атомной отрасли - TengriNews</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-10-23" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/10/kazakhstan-gains-ground-as-regional-base-for-french-companies/" target="_blank">Kazakhstan Gains Ground as Regional Base for French Companies</a></div>
-      <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 23.10.2026 05:17</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Kazakhstan Gains Ground as Regional Base for French Companies</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -243,7 +234,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-09-23';
+  document.getElementById('date-from').value = '2026-08-24';
   document.getElementById('date-to').value   = '2026-10-23';
   applyFilters();
 }
