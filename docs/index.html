@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 24.10.2026 08:33</div>
+  <div class="meta">3 источников · Обновлено: 24.10.2026 11:47</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-28">
+      <input type="date" id="date-from" value="2026-07-21">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-24">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,9 +87,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -106,69 +104,79 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-06-25" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNV3I2QXZkX2dfTDN4ZTlWbWFEODNIYkN2SXdSUUhmdXJvWElkTUFOOGozSEtROHFQNnRteFhXVmR1NkpDaXlSX3FTR3RpZGNZOUtMYnp3aUhrV0VqZG9EWjRkRHJrSU9TV3dMNWg0SVJiMFp2OGZrcGJWVXR4WTFBU3hYTjlXUdIBhAFBVV95cUxQR1pQMWlHMjQxS0szOGxYOTdITlQyS0dsSkxjUHM3TGNja1U2SDhMN2FYS2hxbW43dkxmSHl6amtLNDlrNlVrTWVpUnY4cUV5OWM3eUktSHRvdW16dUxPVHlzMG1oNXBjZTIybG5xN29sWXBNWHlCSGk3Ny15aG1CZlhFcHc?oc=5" target="_blank">&#34;Самрук-Казына&#34; займёт 1 млрд долларов через облигации - BES.media</a></div>
+    <div class="article" data-date="2026-07-21" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNNHQtbHBIc2Z1WV9aelRFaUhrb2xwUmxzUDlhb1A2UFFMLXFXeGk0blpiMTdEeXVpS1BrUnlPRE9mRkJaVjBTbFZjM3phaGFmNzJsY2NmTUtaU2RVZUpMVU4zbnBQQm10UjJzU1A5MFpvb0VjNmpYY0M2ZFNmMkx4UTRrajNOR2NTSHFUelZhN2ZwazRSdEN4T0wtNTZsUThJc1E?oc=5" target="_blank">Пожарный поезд КТЖ принял участие в тушении пожара в Алматы - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.06.2026 07:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 21.07.2026 07:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">&#34;Самрук-Казына&#34; займёт 1 млрд долларов через облигации - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-05" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5TdXFLd0Rudnp4UTNJekJ1MzR3V0RvUmU1VDhpc1J0LUxOdlFZdFAtaXlvRGVqcmRISkJGVE0wTUxZSUgzQmZoWjBZY19FdGRya09RcUV0YklqYTFESVktaA?oc=5" target="_blank">«Казатомпром» и «Cameco» представили промежуточные итоги по добыче урана за первое полугодие 2026 года - Атомная энергия 2.0</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 05.08.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» и «Cameco» представили промежуточные итоги по добыче урана за первое полугодие 2026 года - Атомная энергия 2.0</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-28" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNOWJEZEFqRnZwOV9NM0xYYWZEVWtMZkRoanNmN2htcnJLYUh5LVBET2psck1IajNkQjEtV1BsS1NZaE96cXQ1djhFNXpXNHJ6T1dKQXRRV3ZOQXRKemhRX2NqdlJBeTZ4eER5SUZ0S2p0b1JrZzAxTU11d1BCdEEtODloMUUwWE54YThHTEZDd1VCNEdieXFUWFpyYmxvNDZ4NWJabHZ6Sm5rcEhuYkR0ZEgtaFhFaXM?oc=5" target="_blank">«Казатомпром» направит 335 млрд тенге дивидендов - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 28.05.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» направит 335 млрд тенге дивидендов - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-24" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5KZHU3SGtZWFI3Wlg2WmxXYm9mSEtXay0tdTZZLVphcVRQeDFyZFlEQ0ZiR1dnY2ZZYU1BRlE0dDUyUjFMNTZ5cnhB?oc=5" target="_blank">Сразу два новых направления: Air Astana начала летать в Оман - Ак Жайык</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 24.10.2026 07:04</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Сразу два новых направления: Air Astana начала летать в Оман - Ак Жайык</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-24" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPSml4b05KZXBsU0t1azh1ZVZWTW5hZkpoNVBQdmZBZVhpRHBGOTRYMHRzM1JvZ0tQNF9fREFvXzB5VG1qSnEtMjhvajRMb3Npd0VoUzd2c3IxR3JpOE9TZkRNMlNlcWE1ZjdwRFAyYlBRNHRVaV9sSlpqYWJwU3gwOHpSYkdzQlRzQU1WZG1MSUpfWW5xTmRBUVlaOUJPWi1LMnluaHJn?oc=5" target="_blank">Air Astana выполнила 24 октября первый регулярный рейс из Астаны в Салалу (Оман). - Exclusive.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 24.10.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana выполнила 24 октября первый регулярный рейс из Астаны в Салалу (Оман). - Exclusive.kz</div>
+      <div class="art-summary">Пожарный поезд КТЖ принял участие в тушении пожара в Алматы - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-10-24" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQTjdkWWxTa09pdFU5Rkl5Z3VsNDhvSE9XcElpWEtNcjNfVGJTaU56SFZLbDhpMnozTU9WaHRwb0J0d3RyMWNZang2WWJHcVQ2WVlCSzZrM2c2WGhwcUo5bkN1bW4yallpMVB1cXE5YXpaYjgxdkVKTWJDbFJLaDFaSDk2WHZ6T0NvcVR4Qg?oc=5" target="_blank">Air Astana запустила прямые рейсы из Астаны и Алматы в Оман - Caliber.Az</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 24.10.2026 08:40</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустила прямые рейсы из Астаны и Алматы в Оман - Caliber.Az</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-24" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYWVXU1BEb1FNT3hJYkFIUGNOaE5kM20xY294VWM0UTJtXzZsaUMtZnpvb1JBd2dTa0JEMVhTVmhmZlVBczhxZDZtSWphdmdQTG4yZEFfbmk2eGU2Nmt0SjYtdnBZNmZoSGxpc05tZnRLMkdLYkZ0UmR3Rm1hT3I1VmRmOXdwbkpk?oc=5" target="_blank">Air Astana запустила прямые рейсы из Астаны в Салалу - SteppeNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 24.10.2026 11:07</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустила прямые рейсы из Астаны в Салалу - SteppeNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-23" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQTE02RWczeUxnTUNINW5pb0FHc256eFI4b1lJQkRqTENiY1JjRTh1RWZRYVVRdXU2MWc2dEpTQUhFbzFFaFJtcmNIc1FyUUxaRmNaSU9VZXVRSnYtZFB0ZVJQWWtvZVBSblhmdjk3TW1NZW4yTnpZX19WWmFIc1JMdm5OLXdCakQ1eDNMSG1OWEdZNVY0TkZyUWR5VUVFTXVX?oc=5" target="_blank">Скончался один из пострадавших работников КТЖ в Актюбинской области - Informburo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 23.10.2026 23:30</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Скончался один из пострадавших работников КТЖ в Актюбинской области - Informburo.kz</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-10-24" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-24/svvo-ktzh-pokazala-vokzal-v-taraze-posle-rekonstrukczii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-ktzh-pokazala-vokzal-v-taraze-posle-rekonstrukczii" target="_blank">КТЖ показала вокзал в Таразе после реконструкции</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 24.10.2026 10:16</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ показала вокзал в Таразе после реконструкции</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -227,7 +235,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-28';
+  document.getElementById('date-from').value = '2026-07-21';
   document.getElementById('date-to').value   = '2026-10-24';
   applyFilters();
 }
