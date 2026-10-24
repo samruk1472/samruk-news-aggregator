@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 23.10.2026 19:36</div>
+  <div class="meta">4 источников · Обновлено: 24.10.2026 05:28</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-09">
+      <input type="date" id="date-from" value="2026-10-21">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-10">
+      <input type="date" id="date-to" value="2026-10-24">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -109,42 +111,58 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-07-09" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNYzlZLWtMNk9JWVZDblFiX1d2T1YwUUtiTE53YUFfRXlWU2R3dUFXV0luNG5LTDY3Tm9vNzFlWWNnb0lLLUJFYk91M3hBNVZ1bjh1OVB0emxUcEY4T29zNFpBbm9qZUhKcGJ2R0MtNUhJYW1fdjlwUHhCbW82UF9pWlVwVzNQdjVWX0NidlloRHRVXzZKWjZISg?oc=5" target="_blank">Еще 50 локомотивов Alstom и CRRC пополнили парк КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-10-23" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQbE1ULVFZRjNiVzlqbTNPRFJXdDFpa0d3d1gtTTRhRWJuVFFNMG9YTV96Zk1KaGhTYkVBbm9QajJpYzk1SllweVJKa3R0aXRIOUpoTG8zSGphZVFfNFRoeS1PRlY3NjNOaU5Ja2d6U2NEOUJqQzVYTThLYUVpYlpfbFhlQ21ab1d1alFaa0xVZ09NUk0zb0JWek5ud3BsQQ?oc=5" target="_blank">Казатомпром» вновь обсуждает продажу урана «дочке» «Росатома - egementimes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 23.10.2026 13:49</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром» вновь обсуждает продажу урана «дочке» «Росатома - egementimes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-24" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBWUHkwX1dETkZ5VzAtX1Q0cEFkN3dXSWVpV1h0aFJsdGVSUEpwQ1pPSGgxcnQ4bDlrYWE4eDZRZzh4Yng0MG1HLS1objBJZ0J6SFpSNzNmVHd5U19UYTRBazZMVUFWdWpQdWxmSHFIazU5MDQzeDI2bTA4dF8?oc=5" target="_blank">Air Astana запустила прямой рейс в Оман - KAZISLAM</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 24.10.2026 05:05</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустила прямой рейс в Оман - KAZISLAM</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-21" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxOVXVxVnptR1RoNmFQNEFJMkZMb0w2U1VJempaR25feHoyV2pRNnFjdnVoc0lITnU2MTAyQW5oMmROcWtsa2F5UXJUY3lFRllPdUJxSEItalRHOFo4dnhFb25peTllWk8zRm1rYWRwQ2gxUGJOZHlLUEtmUm5LNDdhd2Ftc1FxTmhCdURKWDItbzZHTWlMWV91MUNMaTJmRWlYdUFnVVlNUU9tRV9ZYzhLeG9nRkJNT0VnYUU4ZE9R?oc=5" target="_blank">Интернет в пути: КТЖ подключила к Wi-Fi более 1,5 тысячи вагонов | 21.10.2026 - Новости - «Седьмой канал» - Жетінші арна</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 09.07.2026 07:00</span>
+        <span class="date">📅 21.10.2026 18:40</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Еще 50 локомотивов Alstom и CRRC пополнили парк КТЖ - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQSmJkYUtQVGxWNllRbDNsa0NWcTV1LW5GcFRBRmhwejd1dXVRSWtOZzV6ME42dTE1Wm4wQXB3SW5YLXE4dUt1d1ZaNnI5WkJFVjBFUjBHRnVhTHdTUGYxQzJpSkF4Mlh4YzM5alFvQ2lPV1hqVWZzN1VPckFobkhseDFQUWJEcWpTNTFfdzFyVVNqOHllZ2hfZVdvVkfSAaABQVVfeXFMTXhpNnZLVmtGQnY2bnJOMmVtV0NIQ0piUE5wcGh6dFBlNnJpOTlQWnM5RmU1a2hNUWI3NkgxTk1FQkJjeW9KNmJsRVdJRzRMcF9hakJPMDNua2lrbVlua2I4OTFMUXlEMUN4RnZDTUhZNV9YQnExQlNsQ3FDUHladFlxaGl5aTYyWFNKM0Y5cE5Dc2FDRTJfMFZKdkFONkJEeg?oc=5" target="_blank">«Казахтелеком» полностью перевел отдаленное село в СКО на оптику - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 10.09.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» полностью перевел отдаленное село в СКО на оптику - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-10" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUl9nUUlxUjcxZDVnU1F2UUJXaHR4Nnl1UWR4Q3ZxVElIRGtpS1RFUGw4enhWX1k3UnJMMU9hOHpkRmtaX0VMMzRzOHlTRVNWc3lrbWJiVEx0ZXJ3Z2dNQXZPVF9TWXdnbjdoOGNDM25sazZ6Vlp3c29kckFzNmNnMjhuM1FSZGZrbHVEWnRuTFN0UGNYVWFPOHJyRmFJYy1WZHJoR195dmNqOU3SAbABQVVfeXFMTXd5QVp6Y3BlWUVZWFFBamtFb0hfSFY2Y2dPeWVqX0laOVhIMkljZnRzWXBVZzV6dWVPUVdDR3BCT2Y3RjdBclN6V3B2MHpnNi0yal91a3BBRDFqaEpjcFFrLUlpSlA1MU1tRGwwNDBVNk9tcllzc0pLdUVqcmxPV3hwQUdIalZyY0ZRRmNtcUU4Zy0tekQyYzFBQTFNaGExV1ZoX3h0c2ZVOWdLMkdIUWk?oc=5" target="_blank">&#34;Казахтелеком&#34; полностью перевел отдаленное село в СКО на оптику - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 10.09.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; полностью перевел отдаленное село в СКО на оптику - Новости Zakon.kz</div>
+      <div class="art-summary">Интернет в пути: КТЖ подключила к Wi-Fi более 1,5 тысячи вагонов | 21.10.2026 - Новости - «Седьмой канал» - Жетінші арна</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-10-24" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/10/kazakhstan-eyes-direct-flights-to-new-york-in-2027-as-air-astanas-dreamliner-undergoes-testing/" target="_blank">Kazakhstan Eyes Direct Flights to New York in 2027 as Air Astana’s Dreamliner Undergoes Testing</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 24.10.2026 04:30</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Kazakhstan Eyes Direct Flights to New York in 2027 as Air Astana’s Dreamliner Undergoes Testing</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -203,8 +221,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-09';
-  document.getElementById('date-to').value   = '2026-09-10';
+  document.getElementById('date-from').value = '2026-10-21';
+  document.getElementById('date-to').value   = '2026-10-24';
   applyFilters();
 }
 
