@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 28.10.2026 06:41</div>
+  <div class="meta">4 источников · Обновлено: 28.10.2026 10:14</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">15</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">13</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-11-05">
+      <input type="date" id="date-from" value="2017-12-11">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-28">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -89,11 +89,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -110,152 +106,91 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-10-19" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9uREV4VkswMHlJZ2l1TEVPTUcya0g3U3piTHdLM3p0ajFlYm91UTJPUmgteUJHYmlxSV94SmdJQnBCM0QxTmc0azBCZzhEMjhSQ0RGeG9UZVg1UlFEcGlscTcyU3V0a3hfTno4?oc=5" target="_blank">НА AIR ASTANA НАЛОЖЕН АДМИНИСТРАТИВНЫЙ ШТРАФ - GOV.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 19.10.2026 22:12</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">НА AIR ASTANA НАЛОЖЕН АДМИНИСТРАТИВНЫЙ ШТРАФ - GOV.KZ</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(13)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-05-07" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOdHNKbERYYXdwSTBvMkxKRFN5RjZMbnNIV0RibnlnQmo0WjZoZWNMajktOU9mVTNRYWdiYlY5Sl9ObzdiY0Rsampic1hWRW53ZjM0Ql9IVEhYSlZlRF9JT1h2Ul82SjJySktUTzdBMHFlZUFxLVNmWVVhQ3pnQU01Sg?oc=5" target="_blank">Почему КазМунайГаз приостановил проект «Каламкас — Хазар» - Каспийский вестник</a></div>
+    <div class="article" data-date="2026-10-28" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPa1NLeHJiVzl3UWJNNm9nTVpRdkdLVURjek5EZUxGa3FSTndFTTg3MUZUMnZFMmlTMEFsZWpBa0MzWk5qc1d5U1lEcnNrZjlCWm9WYXREcTk1Ry1HWGJ0a0hxTFFTbEpDUUE0bmNpRDhOU2hDa3ZsTnhuMHNlTGhmNWNfOG1IR01SV3VFU0NROC00bHZjRHNickl4dEpNMTRGWFFfWGh3QkFBeVhmelczZGxsR1pxNFZzTldLdVBNQQ?oc=5" target="_blank">Казмунайгаз договорился с Exolum о развитии авиатопливной инфраструктуры - Русская служба The Moscow Times</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 07.05.2026 07:00</span>
+        <span class="date">📅 28.10.2026 08:37</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Почему КазМунайГаз приостановил проект «Каламкас — Хазар» - Каспийский вестник</div>
+      <div class="art-summary">Казмунайгаз договорился с Exolum о развитии авиатопливной инфраструктуры - Русская служба The Moscow Times</div>
     </div>
     
-    <div class="article" data-date="2026-04-22" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9iQkJYSGZlRV83ck9TNFduRFoxbTM5ZW5QUGpWR014Qkl2TnZ5X2hJZHNta3BpSkRGMFZESTdkTGIyWlRfNXNpN2o1U2NVcUtSbnRFRUc3R21icjVSS0QwcmMxcXhSMUE?oc=5" target="_blank">КазМунайГаз, KBR и KazFoodProducts договорились о сотрудничестве в сфере производства SAF - ҚазМұнайГаз</a></div>
+    <div class="article" data-date="2025-05-29" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQeWwwTjltRnpPcVdjOW9iUGVxdzZRM2hzMk1GSjBTUlhhb2xxU0I1c2FpaFE3cGF5bkJFdlYtaUtTUU44amluM0p1N2N5eGVIMXZKRGtWSTZNQjM4Wmtjbk1TaXdGXy1SaHJrdXZSRHYzdC05ZlRFcnFFdzdtZzlYTlZuMXhYZw?oc=5" target="_blank">Тенгиз, Кашаган и геологоразведка: КазМунайГаз и ЭксонМобил рассмотрели перспективы партнерства - ҚазМұнайГаз» ҰК АҚ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 22.04.2026 07:00</span>
+        <span class="date">📅 29.05.2025 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КазМунайГаз, KBR и KazFoodProducts договорились о сотрудничестве в сфере производства SAF - ҚазМұнайГаз</div>
+      <div class="art-summary">Тенгиз, Кашаган и геологоразведка: КазМунайГаз и ЭксонМобил рассмотрели перспективы партнерства - ҚазМұнайГаз» ҰК АҚ</div>
     </div>
     
-    <div class="article" data-date="2026-10-28" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOZUtFbDgyVFpLLUNONWgxcHRRMHJjbkV5MVlyYmxQNmMyOHJYWUFFaHo5eVNUTzVQc3ZrTnFLMklrd1J1RFoxS09TdE1Ua05rLV8wZFozYjRzSExVbkc1R25qOTdjNzc2ZzRYQkRTOThkQ0VjZ3RZWDgzN19LVjhhSUZqc0VJdkNfdGlIWUY0Sko5b2RtYnFBR0xRRllzVDBSV0FPeFltbmtmcGtrTXhsWg?oc=5" target="_blank">Тасболата Каримова проводили на пенсию в ТОО «КТЖ – Грузовые перевозки» - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-10-27" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQVk9yRjMzM2c1dU5PekxpeWdXTEFiMEVob0dYdmtiSEQzUmk4Q1JER2hJaXU2NUFuOG5aQzVYbG9KTGVFV0hLT0FMSHlMSmY4ck9CdENQZzlZbmlZRGxyeW5yZndHdXBzdVgzTUNTTzF2ajVWd25lbkFGUzcyY09ENnVENEU1Zl9jbEZpNmpFZUFKTEh1UTQzUnJNaHlhTWMz?oc=5" target="_blank">Air Astana открывает зимний сезон новыми маршрутами в Токио и Оман - Bizmedia.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 28.10.2026 05:02</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 27.10.2026 11:37</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Тасболата Каримова проводили на пенсию в ТОО «КТЖ – Грузовые перевозки» - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Air Astana открывает зимний сезон новыми маршрутами в Токио и Оман - Bizmedia.kz</div>
     </div>
     
-    <div class="article" data-date="2025-11-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxONlBxSzgyd0VMYWxfaURlU0xYUjdSbTdQT05ETUpnSmxwMTF4NTktNTVvZXVMTGd0bHpSdWgwMDRHQlowX2dMSlROY2l2S1F2cnk1cmVqLWEyT1Rua3d0bmYzSlVQcHh5T19heEdsT3Z5WUl4RVk5alNIeFR5M3MxRnh5OXlzMkhneHN0REhHWDBnc3d0SnJj?oc=5" target="_blank">Делегация КТЖ посетила железнодорожные объекты США - Железнодорожник Казахстана - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.11.2025 08:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Делегация КТЖ посетила железнодорожные объекты США - Железнодорожник Казахстана - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-28" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQbUJ4UUI2TFRhMGJBMFVReW51NkN6Rlp4RFFxMGJUR0c2T05KUk93bWtXYXFFX2dBcXplZS1DeXU3VG1oZ2VsOEIzcDM0dXpGc0dPRlNIckIyNmdIeF9MVFRKcWRjY1R5MGotQlhUMWZLQ2Q4ci1PM2NqMDJVdGRlTXVZcWJXU1RzdERTWnJMZTN4YlNpY29CeWxnNzF6ZFZBOTRfU0s5V1RaY0U4UWxadkV1VXc1UTJFWFVxa0YtOGZFVjhjMXYxenJNWQ?oc=5" target="_blank">ZTE и Казахтелеком представили передовые решения в сфере связи на AI &amp; Digital Bridge - Kapital.kz</a></div>
+    <div class="article" data-date="2026-05-08" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE8tUTFRWTVEaFUtTXhVWldTeGZuczlLbkFoY1loVVR5emVNVTU0Z0E3czRDNExSdUk3WExsZi0zUEx2Umd3Wl9Ra2l3?oc=5" target="_blank">752 миллиона тенге: &#34;Казахтелеком&#34; раскрыл выплаты Багдату Мусину и топ-менеджерам - Ак Жайык</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 28.10.2026 05:00</span>
+        <span class="date">📅 08.05.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">ZTE и Казахтелеком представили передовые решения в сфере связи на AI &amp; Digital Bridge - Kapital.kz</div>
+      <div class="art-summary">752 миллиона тенге: &#34;Казахтелеком&#34; раскрыл выплаты Багдату Мусину и топ-менеджерам - Ак Жайык</div>
     </div>
     
-    <div class="article" data-date="2026-05-05" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOWlB4aTA2eHh2TUJ6UG8wMVFxSWw2NTNxS3pSbVF2WVczaE5yTng1dW5LeW5MWkdfWUVyZXV5dXZ6dUFCSENFYmNIZnBvNDlGOUFJTWM1RS15VXg2emVnVktMcko5eEh5bWxYbTRXRW9iaU1WWjY0RWtaVjNYTG41ZE80dmliMnZieU5XMXhWTXdkZw?oc=5" target="_blank">«Казахтелеком» сократил размер дивидендов в десятки раз - Forbes.kz</a></div>
+    <div class="article" data-date="2025-11-20" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPQjkyeXBYRXFwWXpBeklhNWg1MUtVMUdTUUxqNDBWVDV6M2lkOUMwanBiZUJfSWlGRzluY1k3bEV0YThIZEdELXFJZE1CNDZhSlB1THo2SmJ6UU1yOHI4UmIwejc2WXZSR21VWVVHNWQzX0hsckxuREZpaHNBQ2s5N2k2NHZjREU?oc=5" target="_blank">Причины сбоев ККМ прокомментировал ОФД АО «Казахтелеком» - Uchet.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 05.05.2026 07:00</span>
+        <span class="date">📅 20.11.2025 08:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«Казахтелеком» сократил размер дивидендов в десятки раз - Forbes.kz</div>
+      <div class="art-summary">Причины сбоев ККМ прокомментировал ОФД АО «Казахтелеком» - Uchet.kz</div>
     </div>
     
-    <div class="article" data-date="2026-05-12" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNZ1hJTW9ZQ0lrNF9QQWFGUW5tLUN5QTFOcVhKX19sNG5YWkx6MU1ybldHd1ZaMlNEenFQdjJfT2hYMjVNVnFwcmd4a201ZGlkYmN0emljRDVqVkFCR3hnVFg4ckZOS0FzRzBPb1dUWkE4ckVZNHlKY1R0dWRhczFrWg?oc=5" target="_blank">Сколько заработал «Казахтелеком» в 2025 году - Forbes.kz</a></div>
+    <div class="article" data-date="2017-12-11" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1jNFh1a0F4YnNXdEJfSm56UTQxSW5QR0pQaFpDN3RHbE0zXzhVbVRLRkRLRGVmSE1xczhCVDJUUU0wdlo0UHR6bmJIS0wtNDJzZFptUEFkRGpsQmdQbkdCaHZ3eTZXbG9fTFBYZFJ5Nl9tMVNDOFRhTA?oc=5" target="_blank">Казахтелеком и Алма ТВ отключили российские каналы. - ALAU.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 12.05.2026 07:00</span>
+        <span class="date">📅 11.12.2017 08:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Сколько заработал «Казахтелеком» в 2025 году - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-20" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOX3ZlNzNvdzBqRDNxS1ZHaTk3UzBvOGFKVURlMFRBTEFhenkzeHh1NUJoeFkybFZFQXpTSlB0bDZJcklwWTFrTVNRcUlQS19xSjBGcDRoUXhzZFFjbmVpMmdBR3lxZ2VLal96ZVVBSTRoS2drWUdtQmlkTEw1MVF4OS05ZHlwZk5aZ0N30gGKAUFVX3lxTE5ad0FxaENBT3RWdWRWMGRZcFNkVTVMbnVXd3U5TFpsVHR1OVdaUUUyXy10RFNMMldSUF9NTmxKci14a0d4b3JncmJ1VktvM1hYY0JfTzBDRmM4a05LSlNJaUNsYUtuUkhRZV8zOHB0Mkk3UzlfaFlYRlY2VHVkZV9NUG5WeHBZOEFUUQ?oc=5" target="_blank">&#34;Казахтелеком&#34; сообщил о мерах против телефонных мошенников - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 20.04.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; сообщил о мерах против телефонных мошенников - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-29" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxNSFY0alZpVTFxYkdvanpTbGJJRDVXVFp0X2xTMEJRODVtT2NiSFI5b3pCX1d2NktKbE1OUzBjRUtpQm43T3RoNjFJUjZEczBfTTVzMThvbDUzdmtJYWJhWXdhY0lLTkJvazF1ZDcxdjlmMXJJV1pRQV9LRWNFaWxpem15enNHNE9WRUHSAYgBQVVfeXFMUExCRVNHMWR6V0JzQXFkTGxybWp5VVA0eDN4NVIySkd3ME8wTVdkV1pJRkNPWkVidVdQU1dKYnJvZ1BpVGJyeXBfTk8zeG80dzliNmRTT2FQeFhGc1M1NEoyMy1ZaXNpZGFKMGlSV0lnSzZkeWdmQVJ2WTJTd3prOVl6MHRTaEItdg?oc=5" target="_blank">Фонд &#34;Самрук-Казына&#34; увеличил долю в Казахтелекоме до 91,28% - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 29.04.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Фонд &#34;Самрук-Казына&#34; увеличил долю в Казахтелекоме до 91,28% - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-22" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5jcVpqdFFkU25LUG10SXhjbHdsU1RYNnMwZFlERVBTT1I0NkZMUWRRVHYtZ25aUWNwQ0M3eF8xSFRjUWZka1N6RHh3?oc=5" target="_blank">Плати за «развод»: почему «Казахтелеком» требует деньги при отключении интернета - Ак Жайык</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 22.04.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Плати за «развод»: почему «Казахтелеком» требует деньги при отключении интернета - Ак Жайык</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-24" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNR2NmNHRSYXNLOXZYTzdOZHpQYXpBeWRzVXNER2lCdlNweWpkcHhUMTBLdng3UDJJSkhyQW1EQkU0NE5heV9NbjRNS3BlSnlyZk9NVndSSUY2NEl5T2FkX1FQbm1ZZ1FhZmNSSk1fRnhEbWpfUFJHNzF0eUYxS1NvY2MwLTZzVlJTZl9uZFB4aGUtREZWY1pKU3k1aVh2ZmVXRVB0QzNCWDNlemY5SXRDQ2RGYnZtMVlFUGdTWm0zX2tZRS03Yzh3Nnl0emjSAdIBQVVfeXFMTnVqMlZJSFpIbnY1YTNiRDBQemt2UVc3V1pKVDVsWUZ1NnRTV21HM3Y0bDEtd05mejJrSlp6LUZQRno0cS1zRkRxSzA3VVJfTkJYa3hjdjBucFJEeURoVnJrTGpyNWNrWmdiNDQ1UnQ1YzQ3YmpGdlZXMVFrcWI0dW5LZXlfQXNhMVZIZFBFWG4zS3B6Y0gtWkt3c0pwdHI2b3VVQTJvUXJNOE4ydWV3VWJTa1BUczlVNmpacFZOU3lROERnMjJKcGZfeksyWGpDVWR3?oc=5" target="_blank">Казахтелеком объяснил, почему берет деньги при расторжении договора – и когда платить не нужно - DigitalBusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 24.04.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком объяснил, почему берет деньги при расторжении договора – и когда платить не нужно - DigitalBusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-20" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE4zTDYwVlB0cUZOaVF5bHhIVm9OeUc2akpVQlNVZS1WQkQ3dnNqanJWMUVRMlExZzZIS0JwY19DVm1kWDZ3ZEtFYUN6aWtCREc0aXl3cEtIUGxtQms1R2hwR19CMHNla3Y5NnV1SGtheVBVY2IwdFEza2RB0gF4QVVfeXFMTmhDSVRDVEExdTd2czJjQ1c0d1lKSzJNVjd2dHBuMUVOTnd2ZDJEUHBMTXpqTDltalJBZU9lV3MwQ2hEYk53RkhSZTFIaTdEZEp3RUpUaVpTQktFd3Q4d2plSm1YWW9oWVNHMmYzZFh6VDkxZml4T2FO?oc=5" target="_blank">&#34;Казахтелеком&#34; отчитался о прибыли в 2025 году - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 20.04.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; отчитался о прибыли в 2025 году - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-04" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQZHgzOW15cklHcU9vdWdUMk5zMXFJak02QmRaMzFsdHJhWFI2SUlxdXRHMGg2RlUweWlnSVF4NnhYLUlIX2ZBMEJRMmtQUHdudm1YcGt4NzZ5b1hheV9KVVUycWJHUUVUcWwyZUUySlpPd2VKczBicEo5dGRWTVdUck1IR3g0d1dIQnpJOGZn?oc=5" target="_blank">Казахтелеком выплатит акционерам 3,5 млрд тенге - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 04.05.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком выплатит акционерам 3,5 млрд тенге - Kapital.kz</div>
+      <div class="art-summary">Казахтелеком и Алма ТВ отключили российские каналы. - ALAU.KZ</div>
     </div>
     
   </div>
@@ -263,28 +198,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-10-28" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/10/air-astana-expands-winter-flights-as-vietjet-offers-promotional-fares-to-hanoi-and-prague/" target="_blank">Air Astana Expands Winter Flights as Vietjet Offers Promotional Fares to Hanoi and Prague</a></div>
+    <div class="article" data-date="2026-10-28" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-28/rmch-top-10-neftyanykh-kompaniy-kazakhstana-po-itogam-2025-goda/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rmch-top-10-neftyanykh-kompaniy-kazakhstana-po-itogam-2025-goda" target="_blank">Топ-10 нефтяных компаний Казахстана по итогам 2025 года</a></div>
       <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 28.10.2026 05:44</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 28.10.2026 08:15</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Air Astana Expands Winter Flights as Vietjet Offers Promotional Fares to Hanoi and Prague</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-05" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNVmF6Q2VtaVpYWHlCN1B1OEdUZW9SNWZ1NjUxeW93STViYlV3VURHV3YxckpXcWMwY2FxX1ppMUV6ajh1X0RKTGlxSERnc1BGMEsyei1PNDRsdVFHb25lQnA0YnR5SVkzZlZLblA4T0FpVUNWM3ZkZUE2M2pHZ0Y1RnZYQ0FmM3RpU1ltaDFOUnl1Vi0zb2p3bnlmUkdFQVVvWlE?oc=5" target="_blank">Казахтелеком выплатит дивиденды, которые в 82 раза меньше прошлогодних - Profit.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 05.05.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком выплатит дивиденды, которые в 82 раза меньше прошлогодних - Profit.kz</div>
+      <div class="art-summary">Топ-10 нефтяных компаний Казахстана по итогам 2025 года</div>
     </div>
     
   </div>
@@ -346,7 +270,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-11-05';
+  document.getElementById('date-from').value = '2017-12-11';
   document.getElementById('date-to').value   = '2026-10-28';
   applyFilters();
 }
