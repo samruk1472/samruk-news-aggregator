@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 28.10.2026 10:14</div>
+  <div class="meta">7 источников · Обновлено: 28.10.2026 13:43</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">19</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">17</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2017-12-11">
+      <input type="date" id="date-from" value="2026-02-12">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-28">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,9 +87,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -107,17 +111,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-10-19" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9uREV4VkswMHlJZ2l1TEVPTUcya0g3U3piTHdLM3p0ajFlYm91UTJPUmgteUJHYmlxSV94SmdJQnBCM0QxTmc0azBCZzhEMjhSQ0RGeG9UZVg1UlFEcGlscTcyU3V0a3hfTno4?oc=5" target="_blank">НА AIR ASTANA НАЛОЖЕН АДМИНИСТРАТИВНЫЙ ШТРАФ - GOV.KZ</a></div>
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-28/zhzh-maksutov-ex-glava-samruk-energo/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhzh-maksutov-ex-glava-samruk-energo" target="_blank">Кайрат Максутов освобожден от должности главы «Самрук-Энерго» на фоне проблем с ТЭЦ-3</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 28.10.2026 11:25</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Кайрат Максутов освобожден от должности главы «Самрук-Энерго» на фоне проблем с ТЭЦ-3</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-27" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPU2FRemlodlk2YkdHQ3lTb2pfY1NfR0tWVndxYnNQRERnWkVCYzNMa1k2dC05V3dWWVAzQU5TSUo5SFFfd3Z4X0RzQThrZHJQOF9lWEYwZ04wZEhMMWw4cFVJR3dxZ3ozakVsQVhURF9tdEVsRUllWlotTUN5SzFlQklGSVdkTDRBOFBOMkZrMVQ?oc=5" target="_blank">Искусственный интеллект поможет Air Astana экономить топливо - DKNews.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 19.10.2026 22:12</span>
+        <span class="date">📅 27.08.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">НА AIR ASTANA НАЛОЖЕН АДМИНИСТРАТИВНЫЙ ШТРАФ - GOV.KZ</div>
+      <div class="art-summary">Искусственный интеллект поможет Air Astana экономить топливо - DKNews.kz</div>
     </div>
     
   </div>
@@ -125,93 +140,198 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(17)</span></div>
     
-    <div class="article" data-date="2026-10-28" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPa1NLeHJiVzl3UWJNNm9nTVpRdkdLVURjek5EZUxGa3FSTndFTTg3MUZUMnZFMmlTMEFsZWpBa0MzWk5qc1d5U1lEcnNrZjlCWm9WYXREcTk1Ry1HWGJ0a0hxTFFTbEpDUUE0bmNpRDhOU2hDa3ZsTnhuMHNlTGhmNWNfOG1IR01SV3VFU0NROC00bHZjRHNickl4dEpNMTRGWFFfWGh3QkFBeVhmelczZGxsR1pxNFZzTldLdVBNQQ?oc=5" target="_blank">Казмунайгаз договорился с Exolum о развитии авиатопливной инфраструктуры - Русская служба The Moscow Times</a></div>
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/novosti/71393-glavu-samruk-energo-snali-s-dolznosti-iz-za-sryva-tempov-realizacii-investproektov.html" target="_blank">Главу «Самрук-Энерго» сняли с должности из-за срыва темпов реализации инвестпроектов</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 28.10.2026 08:37</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 28.10.2026 18:14</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Казмунайгаз договорился с Exolum о развитии авиатопливной инфраструктуры - Русская служба The Moscow Times</div>
+      <div class="art-summary">Главу «Самрук-Энерго» сняли с должности из-за срыва темпов реализации инвестпроектов</div>
     </div>
     
-    <div class="article" data-date="2025-05-29" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQeWwwTjltRnpPcVdjOW9iUGVxdzZRM2hzMk1GSjBTUlhhb2xxU0I1c2FpaFE3cGF5bkJFdlYtaUtTUU44amluM0p1N2N5eGVIMXZKRGtWSTZNQjM4Wmtjbk1TaXdGXy1SaHJrdXZSRHYzdC05ZlRFcnFFdzdtZzlYTlZuMXhYZw?oc=5" target="_blank">Тенгиз, Кашаган и геологоразведка: КазМунайГаз и ЭксонМобил рассмотрели перспективы партнерства - ҚазМұнайГаз» ҰК АҚ</a></div>
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="http://time.kz/news/politics/2026/10/28/kajrat-maksutov-osvobozhden-ot-dolzhnosti-glavy-samruk-energo" target="_blank">Кайрат Максутов освобожден от должности главы &#34;Самрук-Энерго&#34;</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 29.05.2025 07:00</span>
+        <span class="src">📰 Time.kz</span>
+        <span class="date">📅 28.10.2026 16:35</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Тенгиз, Кашаган и геологоразведка: КазМунайГаз и ЭксонМобил рассмотрели перспективы партнерства - ҚазМұнайГаз» ҰК АҚ</div>
+      <div class="art-summary">Кайрат Максутов освобожден от должности главы &#34;Самрук-Энерго&#34;</div>
     </div>
     
-    <div class="article" data-date="2026-10-27" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQVk9yRjMzM2c1dU5PekxpeWdXTEFiMEVob0dYdmtiSEQzUmk4Q1JER2hJaXU2NUFuOG5aQzVYbG9KTGVFV0hLT0FMSHlMSmY4ck9CdENQZzlZbmlZRGxyeW5yZndHdXBzdVgzTUNTTzF2ajVWd25lbkFGUzcyY09ENnVENEU1Zl9jbEZpNmpFZUFKTEh1UTQzUnJNaHlhTWMz?oc=5" target="_blank">Air Astana открывает зимний сезон новыми маршрутами в Токио и Оман - Bizmedia.kz</a></div>
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5faE9yelNnUlhOc2puOEtFdlh5VWYxSlZPN2pqdWRUTUdLQ2NZWkRZVnZJOU5STHFFckRGQmZhdUticGdNM3dFdlNnZHN3cERvUzJpcEdSckoyUEFSbDFueTlIMUhSbXljQ0pfOElxUjJuWWthQWdQRkhVUVU?oc=5" target="_blank">Кайрат Максутов освобожден от должности главы «Самрук-Энерго» на фоне проблем с ТЭЦ-3 - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.10.2026 11:25</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Кайрат Максутов освобожден от должности главы «Самрук-Энерго» на фоне проблем с ТЭЦ-3 - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTFAwLS1fdjNRekpWM0lGLUVyRmxpZ2sxN3RVb2U4WndRblF0cy1lVy1ELUtzejFoMUQwbWd6NERwdDNlaVl4eGNOY0JnWQ?oc=5" target="_blank">Главу «Самрук-Энерго» уволили сразу после критики Токаева - Фергана - международное агентство новостей</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.10.2026 12:14</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Главу «Самрук-Энерго» уволили сразу после критики Токаева - Фергана - международное агентство новостей</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxObWF5N05jQlVYcElqNERoaGZDcWFUbXN5VjhWbWtrQ1hYV3hOVm5oQ3pTSWs5dEtWQzRWcFo1QXpMeTU4bERQNXRJUk9MREJKOF9zc01kbVR1TS02VGJ0eUIxS0NrTG5URFhWRzJVb2tmclVLQlZmZW1jVWpobUV2R1pIcnNEYnkzWi1XcXhteUl4LVFEcFFVOXJ2U2RFSnQtblZqWXpNYi10YkI1T3Fj0gGzAUFVX3lxTE5nb1NYbHcxeFJvMWRGRmJ0SS13MUNSQ2RNM3FUUVRod2RqZkM3VUpkd3BxLUhvWUMwbVV1YWw5ZW0yV2dOTjNMQk9GMGhEQXUweW83MEtBWVlUR1N6SXNYSkpNTVlncUFmRzV5cm1XT3lxWFFVVjlEb2RCYnVrbnRXVGpiSm9MbmFxand0bzNVNjlIOF9IQ1pkamYxN0x3Y1RiUjJ2b2FmX3l3YXBYTWRLM1o4?oc=5" target="_blank">Не справился со стройками: главу «Самрук-Энерго» отправили в отставку - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.10.2026 11:07</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Не справился со стройками: главу «Самрук-Энерго» отправили в отставку - Ulysmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPVTZVNEpiaU4wemJxUlZ0ckpwWGJqRXBjY0NpaVVJTFptb3V4ZGJKa1VSRDY3VUF0bEtqckJ0NHFoblFhOVVTN2htNWFDRG9Fa1dwX2Ywc2dzaFpHNE5wb2w2NlhiRzNPbE55Tk5vdVVhdjVMMnYxdF9aX2E5NVRaaVRKdlpiZkUwcFVYd18xLVAxTjFiYTRma3RMY1NUWmpPUG5xMWpETFRDOW85VEkwdlItNmNncDdCOFHSAb8BQVVfeXFMT0IwQVczYjk1b0dTSGZHdmxzYUhyWXpRNUZBYlZheTJXVEVuZDlRS0ZnV3dwMkx3TERTVTZWa0FJWHQ1T1hTQjBVZGV4UVYycEoyZVRpQlJReVBBU2gybmZXbkJEb1cyaWFQZVlFcUJnZFE1YzNnNzVlZ2FuSjhlUklYTVJjU0pOSW04aEFWbkZWRjhKN3dRSkw4ekpkSDBUVlpyTjFBTzJmendsM0ZlMXBsOXJQLVJvRjFVbU0ycWc?oc=5" target="_blank">Главу «Самрук-Энерго» сняли с должности из-за срыва темпов реализации инвестпроектов - Vlast.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.10.2026 13:14</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Главу «Самрук-Энерго» сняли с должности из-за срыва темпов реализации инвестпроектов - Vlast.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxNa0lLWVZ4WThBT2F6TGRXWjAyR3Jib3BTNk04MWN1MXdWaFJ6ekFkclBobHF5OGloUld0N2lGNk9MRHFiSXJoM1V5bjFFM3VvSGZybWE4cXlZTW41a1ZYYXpCUXBaeUYtX3A0cXFVZ1h1MjlGamRPYzRSQnU0VzhRVVVJRDJxZE5MQlN0OXJObUp6M2fSAZgBQVVfeXFMUDlSM3kxSEJyYzVmVV95WlJYM1pnSzg1b2hzZ0Z2eW9qeWh6NjlDM1ZHVUhUMzJZeXh6YlY2WG15b0NVYVNuakFDSG5sLUYxTGtGeGRiTXBsY0M2cGlYRUFMcG5ab1BRRzVMSktWRUV3WVJXM3ZvM05QOW9fUDJPbEZLOVRlVjV4dFpTSzZYTWZqODRRNEM1Qm8?oc=5" target="_blank">После критики Токаева уволили главу «Самрук-Энерго» - Azattyq Ruhy</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.10.2026 11:23</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">После критики Токаева уволили главу «Самрук-Энерго» - Azattyq Ruhy</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxQRGJxbmI0ejFHYXM2NmpuQmw4LWNaNExTbU5PNlNtRjR0M2xaMUpKT2t4SnRtOURNWkdFZGZUQWtscHVJMnppUTBNbjROVzM5N3BReHpJZVNYUHFuUjBhX0dpNVhKeWhaMFFJRzU1ZW93d0taeTh5dEZVcUJEdng0NW5paE9JYzdVcTlPZnNaNG5aZHhfUEE?oc=5" target="_blank">Кайрата Максутова освободили от должности главы &#34;Самрук-Энерго&#34; - Informburo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.10.2026 11:17</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Кайрата Максутова освободили от должности главы &#34;Самрук-Энерго&#34; - Informburo.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNOGVHd2VHUmY0SUhZanBJXy1iUnI5V21WT1FUWXZYYllJU2Z1MExob01qdllDejlVZXJmOUdlQ09UUWtLOGJfZGlXMkZTRkl1V3VOekJaLVZnWlNlUWlBZUxBenJFaFJwWXNEQ3ZtRXlsUVlhY1R1czI2UVBDRE1Cbm10YWFJTEQ2ZEdaTDJNbWlmZkJfR2FLLTVpYlBIU3c?oc=5" target="_blank">Главу &#34;Самрук-Энерго&#34; уволили на фоне критики за затягивание энергопроектов - Qumash.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.10.2026 11:25</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Главу &#34;Самрук-Энерго&#34; уволили на фоне критики за затягивание энергопроектов - Qumash.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxORlpNaVlGd3hTc19JMVNKS0lscmVSU3h5NzNxbHloSE9EZlZWQmtURHFpLWViazkzTFlKRUFMSVBQMG1NVnpHSlVkSG1ya0JJYzNxZEs1OHNLZXljdGZCalN2X3d3THRvR1ZzTlktSGQ1VURQTmFVaENZOFg2aDhrRlJJeHI0cDlGY1QwazJrRVlxdw?oc=5" target="_blank">Кайрата Максутова сняли с поста главы “Самрук-Энерго“ с жесткой формулировкой - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.10.2026 11:04</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Кайрата Максутова сняли с поста главы “Самрук-Энерго“ с жесткой формулировкой - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOcDZyd05vX25LQ1N3YUk5X3UwREJyeTNISGs0aFp4bEM5QTYzcUs1MmVDS0dHWkE0MDBRQmFYaW04NHZKbmRCNThJaW90TVhuWlpDZkJyRXJJcU1tVnJlVTY1ZElnWC1qUi1GaDVUQlRibzB0QjV5NDJyMG0xLV9WTWtmbUJPMzhPWDRPaVpiSXNlXzNFMWfSAZQBQVVfeXFMTUROdjJWcXA3NktTazFtSzB6RFIwSEVjeTk5ajRxOU53WU53S0tZZWNWZUdpMWhlTXN2UVJHS1B2eWR6MWdRT01YdVFxNnBPTC1HS2w5c0pqOFNqVW1fejZEbmdNQnE4MHdRbFZlbFFRbXZsVUgySkhKNUFuSWtLYTh3Z0gzajRsend1MkpSdVktSS1JUA?oc=5" target="_blank">После критики Токаева уволили главу &#34;Самрук-Энерго&#34; Кайрата Максутова - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.10.2026 11:17</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">После критики Токаева уволили главу &#34;Самрук-Энерго&#34; Кайрата Максутова - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFBXX1lZUVhzcnZ3czlrYjJmTE1ES2V4c1RBV0R6RFluWG4xTzQtSnZIeHd4TXhiak03RldkaWttMnFreEVLUE5yRkJZc0NGNHQyNVVwREliOE9RenBlTF9IU1FZWnItSFBZZXpmREdBRmNUOE9LaUxn?oc=5" target="_blank">Кайрат Максутов покинул пост председателя правления «Самрук-Энерго» - 365info.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.10.2026 11:11</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Кайрат Максутов покинул пост председателя правления «Самрук-Энерго» - 365info.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-20" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5uTklRYUg0WExmclkwV2p5Nzl6ZVpoSUYzbXgyV01MR2MtVVAxYU9KVDJHRTNyT0FXbEkxU2hNenoyd0lwNFVTUUxza1dPNm5ScTRJTzRVTDg0RUZaVXZqZA?oc=5" target="_blank">«Казатомпром» будет поставлять уран энергокомпаниям Швейцарии, Чехии и Японии - Атомная энергия 2.0</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 20.03.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» будет поставлять уран энергокомпаниям Швейцарии, Чехии и Японии - Атомная энергия 2.0</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOTzhNNFBuTEI3ZkpXYm9uckZHOS0wVFZ5U3N3enhXQUFkc0pZUWktT093TkxYRk1uQlh1QTN4N2sxaXRmcWlQY3BhVzhBMWNnYWQyYzlaM0p5ZktZN09jQzZKQW5Xb2oybF9BZFB0UmdYdHE5T3hvRHdEb19QLXVWTENocVU?oc=5" target="_blank">Air Astana сообщила об изменениях рейсов в Дубай из-за эскалации на Ближнем Востоке - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 27.10.2026 11:37</span>
+        <span class="date">📅 12.07.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana открывает зимний сезон новыми маршрутами в Токио и Оман - Bizmedia.kz</div>
+      <div class="art-summary">Air Astana сообщила об изменениях рейсов в Дубай из-за эскалации на Ближнем Востоке - Kursiv Media</div>
     </div>
     
-    <div class="article" data-date="2026-05-08" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE8tUTFRWTVEaFUtTXhVWldTeGZuczlLbkFoY1loVVR5emVNVTU0Z0E3czRDNExSdUk3WExsZi0zUEx2Umd3Wl9Ra2l3?oc=5" target="_blank">752 миллиона тенге: &#34;Казахтелеком&#34; раскрыл выплаты Багдату Мусину и топ-менеджерам - Ак Жайык</a></div>
+    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPWXhETklyWmNlcjRub0Y4MEtpTTJNR3hoSUVJb1lRamt1N2VOcnRFT014RGt1ZUxTVE9tZUZxOXVmVTBxeDlCcGc0RTFZa213akRuUU80Sm52SW9zUkdFclBoQ09uSTNpVlpuTWVlYi1XekJNcU1QdVpuVm5iRmZRVXl4amVadUd0OGZxQnpma1p1OHRGTkhPbjBYWjFkVjR4R3c?oc=5" target="_blank">Air Astana ушла в убыток на фоне роста расходов на топливо - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.08.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana ушла в убыток на фоне роста расходов на топливо - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-16" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbmh1Unh6aUxGU2dxd2hLd3JWWEhNWE5Db1hxTWQzVkRKbXpHenVVV0VWUFFXRW9ZT1paMUFobVJISDNnZE9RYWxmQjZ3eDljZnlEUXRiNDRaM0RTdWhSa3AweDl1dm9uZWNnV2lyRGhVMjhEX09icU5aYUhLLUVwM1dJbWxYdlNZWDBOUk1GdHE4WjlzbHJQZnpBQlJobmgtbVdqLUczaktvWDhuQ1A0RFEyRUZjd2QzQmZoWTRMRndWMzQ?oc=5" target="_blank">Air Astana ответила на предложение уйти с Лондонской биржи - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 16.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana ответила на предложение уйти с Лондонской биржи - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-12" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNbDRyaEhSbk9ndWp1MlJqQnZadkw0TmdveEVsbzQ4TkJrZFZVV0dSWkdhaWM2QlFMc0xMbV9tMS1oLTJrcUs2VEVWX1IxUlNKMEJrZEk4blJIREVITkhBdUtiLXJfTjBuRHBEaHl2aTF3RmFsM0dNc05xdnF0MFBlWHJ1OXBsWHpJRUUybTA0SGZGc0xRNU1tWEZnc2lsaVFNTFBOZVV3?oc=5" target="_blank">«Казахтелеком» проведет собрание акционеров для обсуждения трех тем - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 08.05.2026 07:00</span>
+        <span class="date">📅 12.02.2026 08:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">752 миллиона тенге: &#34;Казахтелеком&#34; раскрыл выплаты Багдату Мусину и топ-менеджерам - Ак Жайык</div>
-    </div>
-    
-    <div class="article" data-date="2025-11-20" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPQjkyeXBYRXFwWXpBeklhNWg1MUtVMUdTUUxqNDBWVDV6M2lkOUMwanBiZUJfSWlGRzluY1k3bEV0YThIZEdELXFJZE1CNDZhSlB1THo2SmJ6UU1yOHI4UmIwejc2WXZSR21VWVVHNWQzX0hsckxuREZpaHNBQ2s5N2k2NHZjREU?oc=5" target="_blank">Причины сбоев ККМ прокомментировал ОФД АО «Казахтелеком» - Uchet.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 20.11.2025 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Причины сбоев ККМ прокомментировал ОФД АО «Казахтелеком» - Uchet.kz</div>
-    </div>
-    
-    <div class="article" data-date="2017-12-11" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1jNFh1a0F4YnNXdEJfSm56UTQxSW5QR0pQaFpDN3RHbE0zXzhVbVRLRkRLRGVmSE1xczhCVDJUUU0wdlo0UHR6bmJIS0wtNDJzZFptUEFkRGpsQmdQbkdCaHZ3eTZXbG9fTFBYZFJ5Nl9tMVNDOFRhTA?oc=5" target="_blank">Казахтелеком и Алма ТВ отключили российские каналы. - ALAU.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 11.12.2017 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казахтелеком и Алма ТВ отключили российские каналы. - ALAU.KZ</div>
+      <div class="art-summary">«Казахтелеком» проведет собрание акционеров для обсуждения трех тем - Forbes.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-10-28" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-28/rmch-top-10-neftyanykh-kompaniy-kazakhstana-po-itogam-2025-goda/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rmch-top-10-neftyanykh-kompaniy-kazakhstana-po-itogam-2025-goda" target="_blank">Топ-10 нефтяных компаний Казахстана по итогам 2025 года</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 28.10.2026 08:15</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Топ-10 нефтяных компаний Казахстана по итогам 2025 года</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -270,7 +390,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2017-12-11';
+  document.getElementById('date-from').value = '2026-02-12';
   document.getElementById('date-to').value   = '2026-10-28';
   applyFilters();
 }
