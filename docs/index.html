@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 29.10.2026 18:49</div>
+  <div class="meta">1 источников · Обновлено: 29.10.2026 20:43</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-03-18">
+      <input type="date" id="date-from" value="2026-07-31">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-10-29">
+      <input type="date" id="date-to" value="2026-07-31">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -106,34 +104,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   
 
   
-
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-03-18" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPQmRwM0NiNlBCU3pLc1RSOTZUSXIzTENTdTB1TWRLVGxRM3dYVVUybG0ySFowRVRCaUVHT2JSTktjWmdMNkl5RWdPRWhnVmxGUUlSZWhPWHZ3OFhhaGIyZ2pQbUl0OWRIOEdiVVN2N0dXeDNWZ2R5TlljTFFRWVFqajZHcTk5V0tsRF9USWVFS055ejIzRGNzQVJOQnJQcUoyOTBQWFAyMGhrWGNDMXc?oc=5" target="_blank">«Казатомпром» работает над контрактом по поставке концентрата урана в Индию - Forbes.kz</a></div>
+    <div class="article" data-date="2026-07-31" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNVThHekZ4eHk2dFBiaXRlU1RYYXBZLU1PcE5ERUV5QTd2QXpIUjhib2M3UkIwX3E2ZEhtV1AxRVJZQVB2YkI4aHJZRlVtX09EcU14VzVWZmVqYnp6X1RVd0doaW5GZXZ0MmtBY1NKRWI2RjlZYzFkZksyS0E2QmVQVWtQSTMtQTdXa050cUZyU1RpcEQzSDNpcWt0clJpc0Z3RUY5QzB5QmY3VlpSaHc?oc=5" target="_blank">Передовиков производства наградили к профессиональному празднику в КТЖ - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 18.03.2026 07:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 31.07.2026 07:00</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">«Казатомпром» работает над контрактом по поставке концентрата урана в Индию - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQSDd1ZXpXU1hERXoycG00VmE3U0x4dVNySndGZUR1LWRiSlpJcEJKbWZUcDhCZUxjZEhFQngzS2RaNzFYeXhkSTZUdGZmeTVHcXlidFdZRmhNV1cwOG9TZEM5T2RURUJsbndYcjhrUEY1ZDR1bEEzWDN0U3ZCVHZzb2FIX1c3dw?oc=5" target="_blank">Высокоскоростной Wi‑Fi появился на рейсах Air Astana - АиФ Казахстан</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 13:56</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Высокоскоростной Wi‑Fi появился на рейсах Air Astana - АиФ Казахстан</div>
+      <div class="art-summary">Передовиков производства наградили к профессиональному празднику в КТЖ - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
+  
+
   
 </div>
 
@@ -192,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-03-18';
-  document.getElementById('date-to').value   = '2026-10-29';
+  document.getElementById('date-from').value = '2026-07-31';
+  document.getElementById('date-to').value   = '2026-07-31';
   applyFilters();
 }
 
