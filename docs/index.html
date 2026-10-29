@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 29.10.2026 16:37</div>
+  <div class="meta">2 источников · Обновлено: 29.10.2026 18:49</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-02-25">
+      <input type="date" id="date-from" value="2026-03-18">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-29">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,15 +87,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -112,107 +104,36 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Самрук-Энерго" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOUDl4bkpUYjNBczIyUkI1SzNCZU5ZcWhQV1VBU05xZmJ5dW9aakRJb1FfTFgyaC11ckhOSHhmdTcwS0JYVU45cjlyYWNfQktPLXNZOEdJZzZoVWQ1Z2FVUEk1VlE1Sk1RM2UzMVRXcW9qSVpKcV9sY1VGWFF3bHZNZlpocUlzVXpTWDBhbUllVHotM0haLXFCYWFoU21hcDM4QWg2YnpLbzVqdTZq?oc=5" target="_blank">«Не сделал должных выводов»: Бектенов объяснил увольнение главы «Самрук-Энерго» - Shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 29.10.2026 07:46</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">«Не сделал должных выводов»: Бектенов объяснил увольнение главы «Самрук-Энерго» - Shyndyk.kz</div>
-    </div>
-    
-  </div>
+
   
 
   
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-29" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxObXQzd292NU1sQ1dtd1dyLWhqN01OMHNRRUFKdTRBUk9LRkxhNWZVUHc3aFRTZjFjeUwtdjFmRFI4djVaaHhfOGMtN2hMR0hvcERvZ3ZEMzFrT2tNWEMyS1VDcnBaTE9HMXpGZnBOVTA0ajZEWFR6R0ZvX0kwcU9DV1JWQ2V5WXNfSnpmM3hwNXN2VlFtUU55VmlfNA?oc=5" target="_blank">КазМунайГаз привлёк 3,5 млрд юаней: куда пойдут деньги - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 29.08.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз привлёк 3,5 млрд юаней: куда пойдут деньги - DKNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-20" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPbUlpQkdISmZZdFYzdE8wNzc4VkJkSGlFOWxCOENRcVN5NWhtM29kR0lYMnFFb2pvV0t3N0c2dzRpMDRoQlBqb2owZXBpLURmd1MzNVNZMUpRa1ZzWFY1MlVZQkRRcTJGTTM4bjNMa0xfbldDWlBhX1VFN1FoVllzN1RKa1RadVlEdWs1SEdnekNNczl6QWMyT9IBlwFBVV95cUxPSk9ObTRTS21EbnpGellRVXJPREstNklOVkUzSm9pOGkzMmhuQmxGeW1YNUpJb0RXZ3daTHV3dGgyVmNuUmdZYUZHdDBOQUNjRk45RTFEeGIwTUVVZlFfZGVrSlRhZXoxOFRqQVFRc3AwMmswUEtRMWRWYXJRamcxV19rcW1yNzhwY3llZ3VCQnlCUWEtTXdV?oc=5" target="_blank">&#34;Казатомпром&#34; потратил на закупки более полутриллиона тенге в 2025 году - BES.media</a></div>
+    <div class="article" data-date="2026-03-18" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPQmRwM0NiNlBCU3pLc1RSOTZUSXIzTENTdTB1TWRLVGxRM3dYVVUybG0ySFowRVRCaUVHT2JSTktjWmdMNkl5RWdPRWhnVmxGUUlSZWhPWHZ3OFhhaGIyZ2pQbUl0OWRIOEdiVVN2N0dXeDNWZ2R5TlljTFFRWVFqajZHcTk5V0tsRF9USWVFS055ejIzRGNzQVJOQnJQcUoyOTBQWFAyMGhrWGNDMXc?oc=5" target="_blank">«Казатомпром» работает над контрактом по поставке концентрата урана в Индию - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 20.04.2026 07:00</span>
+        <span class="date">📅 18.03.2026 07:00</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">&#34;Казатомпром&#34; потратил на закупки более полутриллиона тенге в 2025 году - BES.media</div>
+      <div class="art-summary">«Казатомпром» работает над контрактом по поставке концентрата урана в Индию - Forbes.kz</div>
     </div>
     
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxON3ZZVmFwX3UtZTdUN1c4Q0xZY0I0LW9Sb0pSS2d0azQzRkpSNFVJY2xUQVI3STV2ZUpIeXpBSlFUclNCdkxQYWRRc2M3TDFUMW5zZVdZa04yV1F3Z2hzVk5QRDhtbi1sTDJ2VUlvSEFZbXRzUmQ5bE5qaFVPQzFwYVR1RHpVUUhXODYxYi04eXpZZkd5VG9LQ3VTN0VkZw?oc=5" target="_blank">Air Astana запустила спутниковый Wi-Fi на борту своего самолета - Forbes.kz</a></div>
+    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQSDd1ZXpXU1hERXoycG00VmE3U0x4dVNySndGZUR1LWRiSlpJcEJKbWZUcDhCZUxjZEhFQngzS2RaNzFYeXhkSTZUdGZmeTVHcXlidFdZRmhNV1cwOG9TZEM5T2RURUJsbndYcjhrUEY1ZDR1bEEzWDN0U3ZCVHZzb2FIX1c3dw?oc=5" target="_blank">Высокоскоростной Wi‑Fi появился на рейсах Air Astana - АиФ Казахстан</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 11:34</span>
+        <span class="date">📅 29.10.2026 13:56</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana запустила спутниковый Wi-Fi на борту своего самолета - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdUpYX1ctY1NxTG43ZnJjcVNOWEtQeGc0aTkxaVJIN3FtTUNOajlSaTlKdzQ3amxlSDZJUTJUREU1OEl1akRSQk1Lc0RXN0FlTlNQOFlUbDU1UXJfdDFreVQtTENibEY0VllGWVc1M1dReDVkd0NobDJXYWpRdm5BV1lqd1FocHhfOTk0RF80c2R1V1pTSmxFYjdfVm5ZUVF3TEdIUzdlLWN4NWdsbElESlNqaENnN0gzckhVc282OW1scVFoMDFNQg?oc=5" target="_blank">Пассажиры Air Astana смогут выходить в интернет на высоте полёта — пока бесплатно - Lada.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 13:25</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Пассажиры Air Astana смогут выходить в интернет на высоте полёта — пока бесплатно - Lada.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-30" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBTMDlFWmhrMFoxY2RaMWkxTHRZaXQ5TmNZdXRuREJTYnNITHNOLU1icVhSQW1Wd1g5WkhyV19MTWpiem5WbEVsQnhSbG41S21YNDF5NzZ5OGRfeWtzNFIzallvMUtJbXNWdU5YUmRWcnF2ek1hc19udlNDQ3daUdIBfEFVX3lxTFB2RzJ3MzVSdGZTMWpfUGp0dEo4X0FteE1pdVJodFlSTk5reS14aUp0UHlWV2trTHp4VjRpOW5ORm1aUGRTQkQydzkybC1vd1pfRV9qdFhZU0JUY3NOQ1hSajBwcl9hQkNjaG9iQzZqNE5pXzVSdG1uSVV4S3o?oc=5" target="_blank">В КТЖ объяснили задержки поездов аномальной жарой - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 30.06.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В КТЖ объяснили задержки поездов аномальной жарой - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-07" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNcTRPWlByTzgtdHhaaGJSMGRzOWlsZ19Sd3FrZXlDLTVNN2p6bU1TdkRtN1Exa2cwME5ldTROT2tFZEJ5YzZxNEY4MERjSTA2bjB5cEdtUjlyWjNOY3kwYjBCV211STV2ejFTOFlKaVF1c0YzTzJFSzVMVm5CLTBrcjZYdmVScE9RSmJBSXA3XzlRMGJrTi1Wa0YxMUtSSkJzOGcxQTduS29UUFFfU0V2YUNZcHo4dVkyS28xaHZjZVp2UWdJc3FwZU53?oc=5" target="_blank">Ожидающая вагоны Stadler «дочка» КТЖ получила более 25 млрд тенге убытка - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 07.07.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Ожидающая вагоны Stadler «дочка» КТЖ получила более 25 млрд тенге убытка - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-02-25" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPVkdxVjFuT1M5ZTAwSzNRWi1SZWR4eVluSmxJQ1A3Ym1NWFlaR2ljTC0wYTZJQWU2a1p1engyUVhZTlZVZnNFNE9uSEtZSkpnZDRrZ2cweXl2UkpqbWZVcE5lUlhzNWZiYVE2ejMwMFFxc0tnUXVIaHV4OGpxMFhZMWJyMDRDRFVZd0ZYS09SRk5CQnJCWmI5MmVRaW5iZC1yY2lJa0NGc09nRVNnWmpJ?oc=5" target="_blank">«Казахтелеком» превращается из оператора связи в провайдера ИИ-экономики - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 25.02.2026 08:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» превращается из оператора связи в провайдера ИИ-экономики - Kursiv Media</div>
+      <div class="art-summary">Высокоскоростной Wi‑Fi появился на рейсах Air Astana - АиФ Казахстан</div>
     </div>
     
   </div>
-  
-
   
 </div>
 
@@ -271,7 +192,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-02-25';
+  document.getElementById('date-from').value = '2026-03-18';
   document.getElementById('date-to').value   = '2026-10-29';
   applyFilters();
 }
