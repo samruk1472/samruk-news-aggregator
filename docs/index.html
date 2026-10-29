@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 29.10.2026 13:53</div>
+  <div class="meta">6 источников · Обновлено: 29.10.2026 16:37</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">18</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">13</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">4</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">7</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-11">
+      <input type="date" id="date-from" value="2026-02-25">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-29">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -89,9 +89,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
       <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
@@ -113,15 +115,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="section" id="sec-neg">
     <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-09-29" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQMTZ6OFRfcjE3Rjl5YXJaSVc4aDNmRGVhaEJiZXpEYjA3RXlFaThudVB2aVhXcFpSaEU4U0U5QUhXRy1ETnA1UzhmQml4LTN2V083TXQ2V0RkV1FtZjZXajR5Qlh5SVNqcFNkdG9kTDJqQVc3Znd0eFhLRGRCYkhHRTUxQ2xkd184b2NBdjkzRkhSdEdZbFJQczJnZG02dUhjWEE0Zy1FX2VzQ3c2amxNWGczelBuUQ?oc=5" target="_blank">КТЖ на KazHackStan 2026: искусственный интеллект на службе кибербезопасности - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-10-29" data-co="Самрук-Энерго" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOUDl4bkpUYjNBczIyUkI1SzNCZU5ZcWhQV1VBU05xZmJ5dW9aakRJb1FfTFgyaC11ckhOSHhmdTcwS0JYVU45cjlyYWNfQktPLXNZOEdJZzZoVWQ1Z2FVUEk1VlE1Sk1RM2UzMVRXcW9qSVpKcV9sY1VGWFF3bHZNZlpocUlzVXpTWDBhbUllVHotM0haLXFCYWFoU21hcDM4QWg2YnpLbzVqdTZq?oc=5" target="_blank">«Не сделал должных выводов»: Бектенов объяснил увольнение главы «Самрук-Энерго» - Shyndyk.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 29.09.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 29.10.2026 07:46</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">КТЖ на KazHackStan 2026: искусственный интеллект на службе кибербезопасности - Қазақстан теміржолшысы</div>
+      <div class="art-summary">«Не сделал должных выводов»: Бектенов объяснил увольнение главы «Самрук-Энерго» - Shyndyk.kz</div>
     </div>
     
   </div>
@@ -129,203 +131,88 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(13)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
     
-    <div class="article" data-date="2026-10-29" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5UWFlPbVdnb0RTaWQ5RXd2QmE5WktoRk5OY1pBZ1lZU0p6SU5TMXh0Y3VjMG5MTV9pRGhER1hzajJ6aXFGaGFqWVJRdDlKYkJDVzkwVnE3eGJwaEE?oc=5" target="_blank">Бектенов об увольнении главы «Самрук-Энерго»: «Ему неоднократно делали замечания» - Bestnews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 29.10.2026 05:42</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Бектенов об увольнении главы «Самрук-Энерго»: «Ему неоднократно делали замечания» - Bestnews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-11" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxORDlER3FIZ3Frb2VOMVVYVTFFbWlOWnRDLWlOVDJ1OXR3ZFVkWE92MTJjSU9CLVpnYkJRMnhsWDRBVXFTdGswUmpJUU1fU0pBcjBXcFZJTHRMLUloOG11OWNJNVJnMkVnc2w2RHpBRnItR0RHQVdmdmJhQWFyc0w2c3pUX2EtdkxjTFJXS3BXTHhhZ1hxOFVYNjlB?oc=5" target="_blank">Правительство может отдать «Самрук-Казына» свои 40% в ERG - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 11.06.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Правительство может отдать «Самрук-Казына» свои 40% в ERG - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-29" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBjb18yaUFnc3c2cW1TLWphY3E4R01pTHNiWjdpV3NjcmRxLTVVTC1aNmJNSXhybGRQYVpUQTFINWFySWFDMDNqWU5RVFhQU0NFQ2gtV2hsdnZyT0J1ODlOajBNV2R5QW04ck9IQ3ROMGxsbUkx?oc=5" target="_blank">«КазМунайГаз» и испанская Exolum модернизируют топливную инфраструктуру аэропортов Казахстана - Ertenmedia.kz</a></div>
+    <div class="article" data-date="2026-08-29" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxObXQzd292NU1sQ1dtd1dyLWhqN01OMHNRRUFKdTRBUk9LRkxhNWZVUHc3aFRTZjFjeUwtdjFmRFI4djVaaHhfOGMtN2hMR0hvcERvZ3ZEMzFrT2tNWEMyS1VDcnBaTE9HMXpGZnBOVTA0ajZEWFR6R0ZvX0kwcU9DV1JWQ2V5WXNfSnpmM3hwNXN2VlFtUU55VmlfNA?oc=5" target="_blank">КазМунайГаз привлёк 3,5 млрд юаней: куда пойдут деньги - DKNews.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 29.10.2026 05:24</span>
+        <span class="date">📅 29.08.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» и испанская Exolum модернизируют топливную инфраструктуру аэропортов Казахстана - Ertenmedia.kz</div>
+      <div class="art-summary">КазМунайГаз привлёк 3,5 млрд юаней: куда пойдут деньги - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-20" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPbUlpQkdISmZZdFYzdE8wNzc4VkJkSGlFOWxCOENRcVN5NWhtM29kR0lYMnFFb2pvV0t3N0c2dzRpMDRoQlBqb2owZXBpLURmd1MzNVNZMUpRa1ZzWFY1MlVZQkRRcTJGTTM4bjNMa0xfbldDWlBhX1VFN1FoVllzN1RKa1RadVlEdWs1SEdnekNNczl6QWMyT9IBlwFBVV95cUxPSk9ObTRTS21EbnpGellRVXJPREstNklOVkUzSm9pOGkzMmhuQmxGeW1YNUpJb0RXZ3daTHV3dGgyVmNuUmdZYUZHdDBOQUNjRk45RTFEeGIwTUVVZlFfZGVrSlRhZXoxOFRqQVFRc3AwMmswUEtRMWRWYXJRamcxV19rcW1yNzhwY3llZ3VCQnlCUWEtTXdV?oc=5" target="_blank">&#34;Казатомпром&#34; потратил на закупки более полутриллиона тенге в 2025 году - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 20.04.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">&#34;Казатомпром&#34; потратил на закупки более полутриллиона тенге в 2025 году - BES.media</div>
     </div>
     
     <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQeWRiVE1ZUGp2NEpPNFJoRVJLcm9wMGw5WlZDM2lyTHNRVnlyZk9yTUhSQlVKSTRudkQtTENjem1XSVQ5T25FQ0hCbHZWZGV4VWJ1RENHa21odG92RC12QV8wR3luS19GRjVYWEEtalNjWHFxWV96eG1oSGtFbnFRRDJyeG5hVHF5cmR4djlST1ZnaW0tMnU2cA?oc=5" target="_blank">Бесплатный интернет в самолетах запустила Air Astana - Kursiv Media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxON3ZZVmFwX3UtZTdUN1c4Q0xZY0I0LW9Sb0pSS2d0azQzRkpSNFVJY2xUQVI3STV2ZUpIeXpBSlFUclNCdkxQYWRRc2M3TDFUMW5zZVdZa04yV1F3Z2hzVk5QRDhtbi1sTDJ2VUlvSEFZbXRzUmQ5bE5qaFVPQzFwYVR1RHpVUUhXODYxYi04eXpZZkd5VG9LQ3VTN0VkZw?oc=5" target="_blank">Air Astana запустила спутниковый Wi-Fi на борту своего самолета - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 10:47</span>
+        <span class="date">📅 29.10.2026 11:34</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Бесплатный интернет в самолетах запустила Air Astana - Kursiv Media</div>
+      <div class="art-summary">Air Astana запустила спутниковый Wi-Fi на борту своего самолета - Forbes.kz</div>
     </div>
     
     <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNY1dQeTA5aFhBY0JHR015eThfUWNVWkxGeFhIYzFYSHV6ZHNvSGl5S0U4TkkzYmZzUmd4LXA3YmFmNHdCeEFUYmgxYWRNY2J4Ml9aT3k1YXlIZ1pucDVyeTNpRnlONzJjZTg3ZFhBVW9Yem9SWjM0enprR0hVVzlMa29SVEJranlfT3g4MWxsWGQ5VEs0VWRrMDZoUzlJM0plcVhMVlEyMjVORENLTDBrZHN4UnVLZWRXeDUySTZyaktkZ9IBwgFBVV95cUxNY1dQeTA5aFhBY0JHR015eThfUWNVWkxGeFhIYzFYSHV6ZHNvSGl5S0U4TkkzYmZzUmd4LXA3YmFmNHdCeEFUYmgxYWRNY2J4Ml9aT3k1YXlIZ1pucDVyeTNpRnlONzJjZTg3ZFhBVW9Yem9SWjM0enprR0hVVzlMa29SVEJranlfT3g4MWxsWGQ5VEs0VWRrMDZoUzlJM0plcVhMVlEyMjVORENLTDBrZHN4UnVLZWRXeDUySTZyaktkZw?oc=5" target="_blank">Air Astana запустила спутниковый интернет на борту самолёта: до конца января Wi-Fi будет бесплатным - BES.media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdUpYX1ctY1NxTG43ZnJjcVNOWEtQeGc0aTkxaVJIN3FtTUNOajlSaTlKdzQ3amxlSDZJUTJUREU1OEl1akRSQk1Lc0RXN0FlTlNQOFlUbDU1UXJfdDFreVQtTENibEY0VllGWVc1M1dReDVkd0NobDJXYWpRdm5BV1lqd1FocHhfOTk0RF80c2R1V1pTSmxFYjdfVm5ZUVF3TEdIUzdlLWN4NWdsbElESlNqaENnN0gzckhVc282OW1scVFoMDFNQg?oc=5" target="_blank">Пассажиры Air Astana смогут выходить в интернет на высоте полёта — пока бесплатно - Lada.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 11:13</span>
+        <span class="date">📅 29.10.2026 13:25</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana запустила спутниковый интернет на борту самолёта: до конца января Wi-Fi будет бесплатным - BES.media</div>
+      <div class="art-summary">Пассажиры Air Astana смогут выходить в интернет на высоте полёта — пока бесплатно - Lada.kz</div>
     </div>
     
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE05UTE3MGN1MmU5RXdYU2EyaFlnRUJoaEpWYmhjd0d1RS1VM0Q3WHdRX0dWTlFwYURaYTBfRmNVODBoSG1aLXc4V1h3?oc=5" target="_blank">Интернет в небе: первый самолёт Air Astana получил спутниковый Wi‑Fi - Ак Жайык</a></div>
+    <div class="article" data-date="2026-06-30" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBTMDlFWmhrMFoxY2RaMWkxTHRZaXQ5TmNZdXRuREJTYnNITHNOLU1icVhSQW1Wd1g5WkhyV19MTWpiem5WbEVsQnhSbG41S21YNDF5NzZ5OGRfeWtzNFIzallvMUtJbXNWdU5YUmRWcnF2ek1hc19udlNDQ3daUdIBfEFVX3lxTFB2RzJ3MzVSdGZTMWpfUGp0dEo4X0FteE1pdVJodFlSTk5reS14aUp0UHlWV2trTHp4VjRpOW5ORm1aUGRTQkQydzkybC1vd1pfRV9qdFhZU0JUY3NOQ1hSajBwcl9hQkNjaG9iQzZqNE5pXzVSdG1uSVV4S3o?oc=5" target="_blank">В КТЖ объяснили задержки поездов аномальной жарой - BES.media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 11:10</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 30.06.2026 07:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Интернет в небе: первый самолёт Air Astana получил спутниковый Wi‑Fi - Ак Жайык</div>
+      <div class="art-summary">В КТЖ объяснили задержки поездов аномальной жарой - BES.media</div>
     </div>
     
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNOFJ2bHVvWXdhUEJ4WTlWb3FwWW5LRXpya05uS2prdlFLWWFVRDRtejlKdXc5SXVDeGY2MXlDNWZhdzlaM0NGdVA3blpjcFUxZmF1OEFnNjdJUGlRQk5FcUNwSFI3cDctVzlwTXMza0J1cTZoVzlGN1YzdUZZU25hUFNKbUR6VXVSemw1dXdkdTkzTC1hUElOU0RBanRtSDdhTEkyUUd3VXI5WjV0V2lPWUNn?oc=5" target="_blank">Первый в Казахстане рейс со спутниковым интернетом выполнила Air Astana - Kapital.kz</a></div>
+    <div class="article" data-date="2026-07-07" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNcTRPWlByTzgtdHhaaGJSMGRzOWlsZ19Sd3FrZXlDLTVNN2p6bU1TdkRtN1Exa2cwME5ldTROT2tFZEJ5YzZxNEY4MERjSTA2bjB5cEdtUjlyWjNOY3kwYjBCV211STV2ejFTOFlKaVF1c0YzTzJFSzVMVm5CLTBrcjZYdmVScE9RSmJBSXA3XzlRMGJrTi1Wa0YxMUtSSkJzOGcxQTduS29UUFFfU0V2YUNZcHo4dVkyS28xaHZjZVp2UWdJc3FwZU53?oc=5" target="_blank">Ожидающая вагоны Stadler «дочка» КТЖ получила более 25 млрд тенге убытка - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 11:30</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 07.07.2026 07:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Первый в Казахстане рейс со спутниковым интернетом выполнила Air Astana - Kapital.kz</div>
+      <div class="art-summary">Ожидающая вагоны Stadler «дочка» КТЖ получила более 25 млрд тенге убытка - Kursiv Media</div>
     </div>
     
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE5xRk9hQ05WQmFBa1I2S1F3Y3ZScTc5S1A3bklwVEVaNmQxZEYzdmVBa0NhMloyT2lZd1doX0RpMXhKRVpPR0pRXzJ2RHdkc0duTjRuMm5Qd2k5Ujk5Z3c?oc=5" target="_blank">Авиакомпания Air Astana начала оснащать свои самолеты доступом к интернету - Устинка</a></div>
+    <div class="article" data-date="2026-02-25" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPVkdxVjFuT1M5ZTAwSzNRWi1SZWR4eVluSmxJQ1A3Ym1NWFlaR2ljTC0wYTZJQWU2a1p1engyUVhZTlZVZnNFNE9uSEtZSkpnZDRrZ2cweXl2UkpqbWZVcE5lUlhzNWZiYVE2ejMwMFFxc0tnUXVIaHV4OGpxMFhZMWJyMDRDRFVZd0ZYS09SRk5CQnJCWmI5MmVRaW5iZC1yY2lJa0NGc09nRVNnWmpJ?oc=5" target="_blank">«Казахтелеком» превращается из оператора связи в провайдера ИИ-экономики - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 11:46</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 25.02.2026 08:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Авиакомпания Air Astana начала оснащать свои самолеты доступом к интернету - Устинка</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPaEE5T1E1YUdjeHNLWHgwSzFfd2FuYlFzOGRycy1kdXZNR3JjTWFuV2h5UngwZ0llMEREUEdTbTR5N09uZkZPbm5GckExRDhVRHRXdkwyRWpMbkNaVTlab20tOXFQQVBBT0JaSS1kc25yY1dzcVduUkprcmRvVTY2eFpLWlA3aFZHbXRTLWZuazdiaTlVZVE?oc=5" target="_blank">Air Astana выполнила первый рейс со спутниковым интернетом на борту - Казахстанская правда</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 13:24</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana выполнила первый рейс со спутниковым интернетом на борту - Казахстанская правда</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE80cFRsQlp0dlQzaExSVHlOT213SEV5LWVKSFoxS2U0QWFmUnktWkRRWXUtZFZGanowUTBlSEptOF9mWjZoa1FpZWJ6YnVrRVBicTFZRTl3TkUtRVdNN2ppblVMWXRlYTlSZTFINE9haHZDWUk0dkhUVXNsOHd1V2c?oc=5" target="_blank">Air Astana запустила высокоскоростной бортовой Wi-Fi. - Exclusive.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 12:15</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana запустила высокоскоростной бортовой Wi-Fi. - Exclusive.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE11bFNha2FSSTJaRHJoZGZoM2lray1nb0IyY0pqdkRxQXF5NzY3TXRVTGhMeTgwY0d0MklCWTNlS2ptQUxBc0Fad3ZCZ3VlQmI5bktOdlM5VXJqdmw5Wi1VQjhBRmFLTzJrQ201TTdncWp6bl9jQXdWaW5CWlpWUQ?oc=5" target="_blank">Air Astana запустила Wi-Fi на борту самолетов - SteppeNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 10:47</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana запустила Wi-Fi на борту самолетов - SteppeNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE91djdxdlhkUHF4a1FEbU1wcUtteF9HVnVNY3hMMnB5dXJVOW5vaEF2bEJuOHZ4dXByeENfVHRpSDhEUjE1emtZX3RMM0lsR3hXUEVBb3FZcEVhZ0JkMlFLTW53cUVmb1FzM1lnZjNBaw?oc=5" target="_blank">Air Astana запустила спутниковый Wi-Fi на борту - airpress.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 12:45</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana запустила спутниковый Wi-Fi на борту - airpress.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOdDV0RlpybDZMLVR6aUFvcDZDSGozUENGbWotR1ljajBiVXhBRkphNEhxQzhSX1NQX1hZenFEbWJTbjFvOE5hdTE3X1EwUzh3d3N0NXpleGV2aUo0V2ZSNHBkTFVHMG5nY09fTU5DdU5zaWlkZlJsRkF6S1BocFVOXzVybU1IWktSb0dLZGZfbnlGNXlzUzQ2VkVkY1p5UjFIaEgwUTN6anpPYWFi?oc=5" target="_blank">Air Astana запустила первый самолет с Wi-Fi: кому интернет будет бесплатным - Finratings.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 11:07</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana запустила первый самолет с Wi-Fi: кому интернет будет бесплатным - Finratings.kz</div>
+      <div class="art-summary">«Казахтелеком» превращается из оператора связи в провайдера ИИ-экономики - Kursiv Media</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-29/devy-besplatnyi-internet-v-samoletah-zapustila-air-astana/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-besplatnyi-internet-v-samoletah-zapustila-air-astana" target="_blank">Бесплатный интернет в самолетах запустила Air Astana</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 29.10.2026 10:45</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Бесплатный интернет в самолетах запустила Air Astana</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxOc3NLRUVrX01UM2l2bDJQcnJSSUppZk1MM2ZvcmhiR09lQjVrOTNYZUdHLUNuT2ttdzh5czNrbkxrZjhXaXdDV1BNX3hDOUoyVXpFWWtxWTR2WTVDWElvVE5KX1FmbGxrUkdzeF9mMFlIMFItSmRIRDR2Y3lPLXpLRHZxOHFDTVpxb0FWSjZsV05OWktYNTV1d05Rd2V0eVBremFaOEZsTzZwUWNHOVJFZEtucXpKRkR0MHRGRDBZTTRCd9IBwgFBVV95cUxOc3NLRUVrX01UM2l2bDJQcnJSSUppZk1MM2ZvcmhiR09lQjVrOTNYZUdHLUNuT2ttdzh5czNrbkxrZjhXaXdDV1BNX3hDOUoyVXpFWWtxWTR2WTVDWElvVE5KX1FmbGxrUkdzeF9mMFlIMFItSmRIRDR2Y3lPLXpLRHZxOHFDTVpxb0FWSjZsV05OWktYNTV1d05Rd2V0eVBremFaOEZsTzZwUWNHOVJFZEtucXpKRkR0MHRGRDBZTTRCdw?oc=5" target="_blank">На связи даже в небе: в самолётах Air Astana появился высокоскоростной интернет - 24.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 12:15</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">На связи даже в небе: в самолётах Air Astana появился высокоскоростной интернет - 24.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiQEFVX3lxTFBSUGhiRl85aGR6SlVRbjF6bXZ6SUlxSWEtQ0FkdlVYbUdYTVpqZEtGeE51TUREUVJ3cjBkX3M2bGw?oc=5" target="_blank">Air Astana начала предоставлять пассажирам высокоскоростной интернет на борту - • | SOZmedia</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 11:13</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana начала предоставлять пассажирам высокоскоростной интернет на борту - • | SOZmedia</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxObmhVRnNhcTN5YmdYQ3JIbUhHd0t2OC03bmxNRkFNX0YzUUxhSHFkbHcyeUdSSjl2blVRMXphZGxzTVpmNnk1OU1WcUhPZXN3cURYd0RIT29fR2QwZjkzWlB6dVphaWw5WW5XdHhZaXNyanVsN3dqU0REZlE0dEw5OUpRc3ltajBtTGt0dTJKRVJxM0pXR2lZ0gGjAUFVX3lxTE05TUw1cmVpZWd0VEJYRkVRNS1aWUlaQXRnNFpJMkxIcFNkX0VvVmI2NTliaHpoUk5wRUM0UEtsdWtXMHJBVTZGcnhCUGFVUGxSOUtid1dkWDNITmE1YjdpVG5MT0hTSi0wQ3NOa1NERmNFZC10M3VFaV80UFFoQmFiRkJ0NUlBMVpORG5zT1U2NFVqd3RWQlZjaFJ5WVZwWm9qVDA?oc=5" target="_blank">Air Astana запустила высокоскоростной Wi-Fi на борту самолетов - BAQ.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 11:45</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana запустила высокоскоростной Wi-Fi на борту самолетов - BAQ.KZ</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -384,7 +271,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-11';
+  document.getElementById('date-from').value = '2026-02-25';
   document.getElementById('date-to').value   = '2026-10-29';
   applyFilters();
 }
