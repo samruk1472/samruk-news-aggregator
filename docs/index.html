@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">7 источников · Обновлено: 30.10.2026 10:40</div>
+  <div class="meta">7 источников · Обновлено: 30.10.2026 13:45</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">25</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">17</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">6</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">19</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">15</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">4</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-04">
+      <input type="date" id="date-from" value="2026-04-06">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-10-30">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -93,8 +93,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
-      
       <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
@@ -112,223 +110,174 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-10-30" data-co="Самрук-Энерго" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNZjN4eTJiZ3RXZWtPN3R5T3Z3RzRCZXhKOURnZzdZR3k0Ty1rT2FmUkJMaFIwZm1QUXV6dG5zTEhfQkpzR1VSWXVUMV9ackl5V2ptWXcyT3BESHB6NmtSN0I2MG5Oa3UxXzY4bFYzS3NBWkVOOThNbFh3YzJQa2gwSXJRRmI3bFM2RzVXcWphWk9GMnBoOFRz?oc=5" target="_blank">Скандал в &#34;Самрук-Энерго&#34;: кто теперь возглавил компанию? - Informburo.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.10.2026 06:52</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Скандал в &#34;Самрук-Энерго&#34;: кто теперь возглавил компанию? - Informburo.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-30" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE43bWRSUVM2blZoYjZQbmVWREdlRFYwQUV2Nm5sOVYzMzhRRFdwWkpiN0Z3NDFuSE1GYldMaDczQ21NMHYzUWs2bmln?oc=5" target="_blank">На фоне споров с NCOC: «КазМунайГаз» пошел на внутреннюю сделку по Кашагану - Ак Жайык</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 30.09.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">На фоне споров с NCOC: «КазМунайГаз» пошел на внутреннюю сделку по Кашагану - Ак Жайык</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(17)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(15)</span></div>
     
     <div class="article" data-date="2026-10-30" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFA3ckZDOVlvZ0pHbTY0QWh3bUg3YUVidzZMYVhCX0RheXQ3ZjJPMExnMnhqYWJ2UXNib3Q5aE0wUXIwR1kwS1dQRTZVc25NY2Ywc0c3SkZzUEJaaWF5MS16Mk40bUp6d2I0MEZuemt30gFsQVVfeXFMTWQ1X0NkZXpIYVdXSHhDWHRXaGtPSjBfOGF0N1NCQ0JObUFCa0loSlBtcHNKUTUyRWFNNDZkM2Z0UXFkTHFuSWZlY0xCaHNuVGVGNGtTSko4V2dxLUROblFqeVRtVVZVWkpVR2c1?oc=5" target="_blank">Ансар Айдаров возглавил &#34;Самрук-Энерго&#34; - BES.media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTlpxMW5jbG1TWjBtM2k1R0ZzR1ZJN3ZTTEpVcWJYRElyM3hNVVRYMzlPTTlqV1lROXFMS0YzY1N4WHBoblBQUmgzOERzM3Vxd01fd0NiZ1Uta1QwdDA1UjFJeWJXVDN4c0htc1hzQ1ljZ3J1LWhybmhlaUhlemRsallFMDlsNUpNTmRjc1hRUUNZc19ZWVh3ay04T3NSanVXTG5MdklmM1FKdw?oc=5" target="_blank">В Казахстане сменили руководителя энергохолдинга Самрук-Энерго - Neftegaz.RU</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.10.2026 06:41</span>
+        <span class="date">📅 30.10.2026 13:10</span>
         
         <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Ансар Айдаров возглавил &#34;Самрук-Энерго&#34; - BES.media</div>
+      <div class="art-summary">В Казахстане сменили руководителя энергохолдинга Самрук-Энерго - Neftegaz.RU</div>
     </div>
     
     <div class="article" data-date="2026-10-30" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTFAxZmlmZkJQWnZpdVhpdXVvZnJXSGxzZ1JfVmhlODZGeDlSd1Z4WjkzYWNKUFhVNnNIS2gwMWc4c0V1RUxEM0FLbnlvTnpuemJzNThsWnZmOUxXcm9KeXB6a25MSy12MXFYZ19Nd3pmN2hXdHZDN0hFZA?oc=5" target="_blank">Назначен новый глава «Самрук-Энерго» - Forbes.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWmhhZXpUejVScDhfamdJUFQtT1EzTGtZZUd2SGdzc1h0S1F5T0JTS1pFQ2Z3Y3Y5VUFfSURSYmRNQi16Y0ZKeFBBR3Zmb1hSTWxrbzBqaHQ5WlVxOFoxbVRnUXRWaEY5bElZQVpIV2hpbHVHX3UtcGN6d3Q2OElzeHFRQUNOY2tO?oc=5" target="_blank">Ансар Айдаров возглавил &#34;Самрук-Энерго&#34; - Kazakhstan Today</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.10.2026 06:37</span>
+        <span class="date">📅 30.10.2026 07:50</span>
         
         <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Назначен новый глава «Самрук-Энерго» - Forbes.kz</div>
+      <div class="art-summary">Ансар Айдаров возглавил &#34;Самрук-Энерго&#34; - Kazakhstan Today</div>
     </div>
     
     <div class="article" data-date="2026-10-30" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPSzJ2SUQtWXdJM0Y3RWdyQ1M0VTE1bHBSZHRGWDYtRV9kSlJfcXJCMVM5Z2o1Q2ZlbDdkWmU1NFF0b25oNHRKTUtYdjN3SHpoZWlMSlh5T2gwb25qZ0dpd3lRZGpmLVVPbHhGQjlnMnFvbHU5Y3ItMTlTVHRCYzBNSQ?oc=5" target="_blank">«Самрук-Энерго» возглавил новый руководитель - National Business</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxOY1NMVkZ2U2gtZDMtMF9wWDdNSmVsYVh0Szdtenp3Z0FQUHlzS202N3ZsTkxlcVBsclRiWVgzckpSbDRlblhVRmNWbVlFWUc1dFlDR18xWVJYWFR0OWF5WlFDUHhJWUY5dWlWbkdyblZmWV9POG8xbllwblIwc0c2QmJlSGJ1NjNFSDd1Yw?oc=5" target="_blank">Ансар Айдаров возглавил правление АО «Самрук-Энерго» - Shyndyk.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.10.2026 07:18</span>
+        <span class="date">📅 30.10.2026 08:33</span>
         
         <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">«Самрук-Энерго» возглавил новый руководитель - National Business</div>
+      <div class="art-summary">Ансар Айдаров возглавил правление АО «Самрук-Энерго» - Shyndyk.kz</div>
     </div>
     
-    <div class="article" data-date="2026-10-30" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNcWUtM1NfVXVGUWVCcFdaZ2d4NTMwaFVONmt6a3hPZ0R1SzVVbzZmRDMwOXdNS3NRLVBnbHpkOGJta2VURGJ6WVlNS3ZpSzZHSW41bmlkeERScWo2bF8ybDNDZEZ5Q2JRSDduWEdsaXM3QkQxQ3RnX0I5ZXlRTHlsR2dMazhMUjlPbm5wUU9IUU8xaEgxdXoyRzBMcGxGN0xUVlZXYlBxOGF0MUhyUE9Xem5hSdIBuAFBVV95cUxONHc4N3V2R0FXMTNCYzFUUXpPOUdrajBTMlQ0d0dOenp6OTFEM2ZodHY0SEM3bk03bFJoZW9fYU0tY2tJUTJCT2ZZT0pJYXVVQVZBRjFWLWJTUDZDQ0RFRVVfZEF6T0hLZUJYNGROZmdFaGpBemRqUnZDTW5OckNYdU5KdUFORTI2eXlNTW5KaTIxR2o0aEx4YmU3V29YWW9kdTdVTWpYdy14dWVNNUZoa19nNHlzaldy?oc=5" target="_blank">После увольнения Максутова «Самрук-Энерго» возглавил новый руководитель - Azattyq Ruhy</a></div>
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOYldpaHVxUUFsWUFtLVdHakFFc1k3MWVmOXBaRjJCUXRfWXdnamwwMHBDdlFBQktwOVFlVTZSQXo5MUtJZzUzNXdsUzZfMUJUYm1NNFpSdVdCY0c3NFVLczdUTEptbGhhSnc3d2RsblRCeEZfQ18wcXBKLVk5dWRlbHhYWQ?oc=5" target="_blank">В «Самрук-Энерго» сменился руководитель после критики Токаева - Belles.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.10.2026 08:43</span>
+        <span class="date">📅 28.10.2026 07:00</span>
         
         <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">После увольнения Максутова «Самрук-Энерго» возглавил новый руководитель - Azattyq Ruhy</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-30" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOLUJKU1M2c29adnNPS3JOVHFPTDhDVER3UXZjQWo1S0swYWRVSFlKcWFNdWVpc3ZWb0JiM2NWX0hmcUpHaEhHdnktRVEyUW5HYzgwQUprREx3NENIUllmRFQtRUhDNzNrVVBkRXVMYjFlRWlubU03WVNUX0VkQ1lZaUxTUEthN2FyaVlKM0pvNWVnbFc2T3dBTzJmTUNpNEdG?oc=5" target="_blank">«Самрук-Энерго» возглавил новый руководитель после увольнения Максутова - Politico.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.10.2026 08:18</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">«Самрук-Энерго» возглавил новый руководитель после увольнения Максутова - Politico.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-30" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNVmxDQ1FEMm9zTFRoTXFyemZQYUdfdnlKR2g3WUhFdnY3ZFd6SVVTNXl4NzBtQzJzYUNQd2dld19OYXRXaFN3N0JuZEpkSzhGVDkxV0R3THV5SVY2T0Y1WXdUSWpDelhOaV9sWmtpcjJfclVyVGZrcldmZUs0b2VFellsUnpRRTV5ZTVaVWpkUWFoVW5QYm9IQVd3ci1ldWtyYkltV1oyX1J5MWwyTVJvc1RxN1FTek80Ym04YzYxdDNVWlFub1HSAcsBQVVfeXFMTmhnYlpIZ0FWZVpYaU9hSXFaWnBzdzczYXZFeWR1WGNlbjVIemxIYVJVWTl4NUN2ZkRNZURVNnE3M2x3X0VOMzRBUVdYNmtsR1NTSFdtQUVuVGVrbEptX1A2Y1k3d0pQUVBqTXNZMWNqWlpPSU95TGJtWHB5d2JyNWdfUDdla2lsaWZ3dzZPU25Nd1VDSzhlSEpQQ3FMVXNGQjZ4d05iZjJ6RWUzaS1nMS1DMjdILXF3Mm4xWWRXVm5fVlVDdnJMcG5qNUU?oc=5" target="_blank">Ансар Айдаров назначен новым главой &#34;Самрук-Энерго&#34; после увольнения Кайрата Максутова - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.10.2026 05:26</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Ансар Айдаров назначен новым главой &#34;Самрук-Энерго&#34; после увольнения Кайрата Максутова - Новости Zakon.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-04" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPNUZiZTZja2NoTk1uZ1UwbTVyVk5hdS1EN1dhSVc3bVF1aFdPbTBFSTkwREF4X3FjeHFSTHFHanlXYTRoYnExYnBjMVV1OEpuZk1HbWlEU3JUcloyLWVqdXhNYUF0cjZla1RxRVJ3WFBrUnZpS0ludmNCWEdzcU00MV9jQ2VTeTZXZWhuVzA5Y1VOQnNQSmMzXzd6YzdPNXFEYUczTjJvbS0xRFowNnBn0gGuAUFVX3lxTE42emx2MnpSclloWTNwaHBlQUFQd2ZXYmJfTEd1SUpEcTlkbXcyYUZ0VHN5NFU5cTFMNDRBTy0xcFhGMVBSZ05jdm0wMGFSaU1FVDlOcE1mcGtzamtrX2o4R2pNSWRuZ0VVSEZOaEtJNGZlVmhic0pqNGQya0tnX3dqNnc1c0xrLWNQLWNub2pwNm9KU2tsZ09mWjcxajVsd1E5cnVZQWRKR0wwWGFIdw?oc=5" target="_blank">Почти 7 трлн тенге: сколько потратила НК &#34;Самрук-Казына&#34; и что меняется в системе закупок - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 04.05.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Почти 7 трлн тенге: сколько потратила НК &#34;Самрук-Казына&#34; и что меняется в системе закупок - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-30" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPbklTWWN1SkFKRl9COXN6MV9ZZm1PSnZaTndSRDd4OEk0TmJOeUpBQ3lETUpFbG1MV3B3QUJYQkJIekJaUkl1eTh1LVBka3FDV0VwenY5VDN3dkFXYnpPZ1dIb3dFMFJFS2IzamxoVjM1UEF6YlhkT2xrdFdRWlgyMDZSbDVQQQ?oc=5" target="_blank">Ансар Айдаров возглавил «Самрук-Энерго» - Datification</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 30.10.2026 07:31</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Ансар Айдаров возглавил «Самрук-Энерго» - Datification</div>
+      <div class="art-summary">В «Самрук-Энерго» сменился руководитель после критики Токаева - Belles.kz</div>
     </div>
     
     <div class="article" data-date="2026-09-30" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE9hYTFZT0Frc284dklmTEJOTVNIaU04SGg5b2tuVmVZTjdVdEZpSzlRcElCWmNmR2stTElFbmdzdjhLRlJLbXRWcnJlcFY3bzhJUGVjTXU2X0N1ZUJZT0FVVEk3OUF1X2JpeV83aGNDOTgyQlhCSHEyeUlXM3M?oc=5" target="_blank">У &#34;Казмунайгаз&#34; отобрали вклады в банках - КАРАВАН</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBGWEFpaThlb1AxYjZ3dGN2UnIxd3BnRVB6RFc4N0JwVzg5NUM4WFJQZVRZdVY2RERBdEdHOHVQSXlOb09PTWlLRjBSZFgyb3BtSW5rSDREdDdQVTdLX3plR05qR19pMW16cncxT0xnUGM3d2tOX0VYRV9BTnpyZw?oc=5" target="_blank">&#34;КазМунайГаз&#34; выкупает долю в проекте Кашаган за 2,8 триллиона тенге - Правда.Ру</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
         <span class="date">📅 30.09.2026 07:00</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">У &#34;Казмунайгаз&#34; отобрали вклады в банках - КАРАВАН</div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; выкупает долю в проекте Кашаган за 2,8 триллиона тенге - Правда.Ру</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-30" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOT3pyY1FWTWJQbVBOYTlacG0yNUJmUkxvbk1BbTNxSlRsVDJZUzIwV2hiRWpMYkEwY1YtYWFfbTUxTDBQMENhZGZnWXVadG0xb3lldHdNQm5ibGhsUnFqMmNXVklCMmJ4RE1VSmY3Y1o0X29VTUlfTFNnUS1EaWJibU05NTMzNGdGckxlY0NqT3ZSSEItcXlJYXJFTQ?oc=5" target="_blank">КазМунайГаз вышел из нефтегазовой компании Phystech II - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 30.09.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз вышел из нефтегазовой компании Phystech II - Kapital.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-30" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPdGR6cWRDRGhEVUY5ZzhKeUFvWlZtakxQU1FLUkdaRmVOYUVXdmJaRF9ZaU44b0gwSnEtQzFnM0FWVzVmN2hoM0hFWUFlbEhQamdCckpLWGNiemE5ZlI5MnlfOUNPQTZKenpUSXhDME53Sm1lZkFLYnRLenVrbUNzQ0FkZzlHTDlfZ2MyN1hJQlEyVktLSXc?oc=5" target="_blank">«КазМунайГаз» выкупает 100% KMG Kashagan B.V. у своей дочерней структуры. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 30.09.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» выкупает 100% KMG Kashagan B.V. у своей дочерней структуры. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-04" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipARBVV95cUxQTl9vY3JxajFuRWJHeGYyWnk5bmpJcDdRSUVaYV9fZFNvU1pZcUQ3eGN5V1VTX0p1QUw0ZTlUNkxVMFJhZjJSS3RIMnlTLXhCZjgxbkwzUTdBbTFKVl9uRVVnU3NTVTlfU2pPc3ZxNEJkV19lZ0txWGpHMDk3MlJlR2xPVkUxem9nSGJ1QnNHN2NYOG45RlNmR1BmaXhDaHlFRzlpZHlNd0QxbFp1MjdKNVNSSGl3Wk9TdlZUcXZaRXVaSk00TXV3MF9NeXlsejhPTDQxWkY4TTdVQ1BfR3FDckdDREcxUGI3UjFTTkdtM3diTFBZeUIxMlhDVXlzNVdfVEJDZ0taT0JocUhCbF9LbEM1ZzAtMVV2M2RUQ19VRXg4dmlyeVJ4a21ieXNFYmVqNU55bWYtbmlfaF9pOUJqZUpWekNEUWJ0dG1xcTRTQVBTY0tLYXFpNGIyYWJiUk0wLWdVV0U3Nzh3Mkw2NkJKLWo0TklKS0FEZi11aEZ3ODZQY3pnb204c2dKdDNiMGxDQnRPb1J1b3MxcWZPdXM3cmVwX2RrY0dvenI2QTBjNkVPYkFROVBVaE0wLXlqLWhrNjNDcXRhbE5MUmxGQzJGcGxHemM3VVYwU055cEo4bEM1VEJJc1A2YTY4TC1OLVNySnhBaWNpcERSR1dKZWc3T0ZkNTJOb3RDOUxvXzJXbWJEcGNoVURQeXlKQURrVzgxTEJZRw?oc=5" target="_blank">КазМунайГаз: от отраслевых стандартов к международному инжинирингу - bilim.expert</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 04.06.2026 12:03</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз: от отраслевых стандартов к международному инжинирингу - bilim.expert</div>
     </div>
     
     <div class="article" data-date="2026-10-30" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxPVHhqT3NobHNueTVkT1ZGZmZIQ1otbElZZmJ2X3EtUF90anJ6T1U3MDl4MWhkUEJYeUNtcTRyS1VTOXNUNDFNZGFCNEdqQnFGSVJaZ2JteUYtak1ISy1yTEt3RlZ6MGMyNzVkUURLNURaaE14WkI0dGxqOVEwOWV5V0F3VmhNaXp1Yk1seWpnUHpPbVNTcno0SUY5U3E1LXg0OUhsUTRSeEF1OGxnTm44VHNVcy0yRTJRb0VsSkNOcU9kYzZLc0hxVXhiWU96ZTJCT2paYzVmamxleFV1TEdRUzVaTFlaaThYVkNSYUJnLWzSAfYBQVVfeXFMT3gya2ZIdWxQMEhBRzVPRlJfQXNqUHVOTFlDdEgxWmhUampXSlV4d2tUYklHVm9PT2NhdVZwVmR5UmY3UHFUaUFBRXM1ck5oN0ZYTkZvWnFpY3lWTjgwQTA0ZUtkLXRiMVFVT1h5YnZGekpSLU9ueENJaHoyVkNKLWFKQnNBX0JYZU9EeEktVGVkdVphclFtVFFwRU5fZ2VqSUcwWS1wdkM3aFlIcHdpY1hldDJtTUZUR3IxU2JUVDM3TUN5TXdhb2QxMjNLYl95Rld6SW1LVzlSNEtXbTNoRmFoMEpBcG9ac1F6VmFlOTgzT0x4X2lR?oc=5" target="_blank">Казахстан планирует расширить авиасообщение с Китаем до 30 направлений: Air Astana подписала стратегическое соглашени - Qaz365.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQMTVlYlB1Tkl2eGd5eWdKWTcyRUp3MzdScVA1RlhxdE9acW5oSV9PTUxXdUhFaXFMbWk1aW1jZnRYS29ZdkNhUFRDWF9fR0NMdG1PQ0tSV3NyemU2bmtRWmtpaWNhMC1OLXB6WjFLVmNiczQxcnMxTzd4aDZrelowRXp0QktYN1RvWFd2SWpncnZGR25jdHN2N0ZpcjE2Zmp0SGRXMDNMQ0VVa25MRnlCaGpPc1h4UQ?oc=5" target="_blank">Air Astana сделала важное заявление о развитии авиасообщения с Китаем - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 30.10.2026 08:34</span>
+        <span class="date">📅 30.10.2026 11:34</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Казахстан планирует расширить авиасообщение с Китаем до 30 направлений: Air Astana подписала стратегическое соглашени - Qaz365.kz</div>
+      <div class="art-summary">Air Astana сделала важное заявление о развитии авиасообщения с Китаем - Kursiv Media</div>
     </div>
     
     <div class="article" data-date="2026-10-30" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQV3BUcnB0aVpDOE42NlQ4OFFUSG1mOE85cHdtZ0tINkNGSHhBQ2RZcmVMeHRaeGtRTmYzZF8tVHBDcU4tZjhrNFVKX3IxZ0wwcHBlWS1KS01KaG1UUURDYThRSmdodFlVSjc3UXdqM2JFOFZGR2hWSWJGMU0xaF9BNXpGS0RPbElZWnhHUWJ4c2xTQ1p0eWJIM0h0WE15ei1BdFQxemlnMTFLR0pnLWc?oc=5" target="_blank">Air Astana создаст совместное предприятие с китайской авиакомпанией - National Business</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOTNCOUoweERLS2VaUWF6RzRMcjRBbU9HSzRtY3A1bXNRY3pfbEdPQTJmU1ZjdUozc1VuZ1pPV0NwLVloU2cwVHBiSzVNSzNnRl91R1MwUFJEU3UycHZOZmo2Wk55RlRJRnZVb1NrelZpUE5rZ3ZrVzVtbFh6d1JldDNmTVVoQVFPQkgwbVF4dS01Y3lzYzhHQnctaGVfeEt1NXBMSlhZT1EzZGs5UzJLaHZUS2lnbl9Gb1dWUjN0R09fT1XSAcMBQVVfeXFMTzkzQjlKMHhES0tlWlFhekc0THI0QW1PR0s0bWNwNW1zUWN6X2xHT0EyZlNWY3VKM3NVbmdaT1dDcC1ZaFNnMFRwYks1TUszZ0ZfdUdTMFBSRFN1MnB2TmZqNlpOeUZUSUZ2VW9Ta3pWaVBOa2d2a1c1bWxYendSZXQzZk1VaEFRT0JIMG1ReHUtNWN5c2M4R0J3LWhlX3hLdTVwTEpYWU9RM2RrOVMyS2h2VEtpZ25fRm9XVlIzdEdPX09V?oc=5" target="_blank">Air Astana и China Southern Airlines договорились расширить авиасообщение между Казахстаном и Китаем - BES.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 30.10.2026 08:56</span>
+        <span class="date">📅 30.10.2026 10:38</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana создаст совместное предприятие с китайской авиакомпанией - National Business</div>
+      <div class="art-summary">Air Astana и China Southern Airlines договорились расширить авиасообщение между Казахстаном и Китаем - BES.media</div>
     </div>
     
-    <div class="article" data-date="2026-09-30" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQVTNKdmtvWHUyNWE3VEk3NnFJUlNHanFzSnlSc3dockwyMU5KV0Q5d3UyRXBhTFRjdzBCbGlnTWZEVTY4UGZuOWJaaDJIUElQc0o5aDRvNDd6RWs5Wmg5Sk43YjI3Q24wbE1SejBqTjRBY2Y0SjBvR2lWR2Q1dk5VeWgwanVydUtrZ2ZjeTBPYUpKUHhKcEJhQ09EVGpvTXlwSWJYbGN3?oc=5" target="_blank">Air Astana запустит прямые рейсы Астана - Бангкок с декабря - Интерфакс Россия</a></div>
+    <div class="article" data-date="2026-10-30" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxONk80elhNWEZnMzlKUmxidjdTYVJoQ2g4X3lBemRpdkhJYmxOSU9mS0VxNW9LUWs0bi1YMTVFQnNjNVRFYUhwdkZrc09RNXFIOEhRV3FzTTFRQ0ZjMVhOaTlPZ3JrSjFHSU5sYW5YUU5yRlE4VUw2OUtHWm9IYVNvRW95WnBoZ00?oc=5" target="_blank">Air Astana и China Southern расширят авиасообщение Казахстана с Китаем - DKNews.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 30.09.2026 07:00</span>
+        <span class="date">📅 30.10.2026 12:18</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana запустит прямые рейсы Астана - Бангкок с декабря - Интерфакс Россия</div>
+      <div class="art-summary">Air Astana и China Southern расширят авиасообщение Казахстана с Китаем - DKNews.kz</div>
     </div>
     
-    <div class="article" data-date="2026-07-31" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPNFNpUEwwcEdmeEh5Z3dNZE5jNzAwMERxTktZcHItTDBEZGJ5UlN5VUlwbU1xZktXN2puSm9BU0dnZ0hBay1yVElYNkR2RGtZRkh0RURhc0FlNzlFZnZxUlRkYWZ4Z3Z3WlVXQlFzNFNTS1VXenlMUG9tQld0am1IVXlobTRkWVgxd05WckRwaVFLWjJxVkRiMEp0NEdrcXNiYzFjNm9JM0QyMTJKSU9GZHFSbko1dGhrMUxuX0p3?oc=5" target="_blank">Air Astana продлит до 3 октября выполнение прямых рейсов из Астаны на Кипр - Интерфакс Россия</a></div>
+    <div class="article" data-date="2026-08-31" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcmVKSm5HSlNBLUI4VkZ1Q0d0d3Qza3gzQ052cDB2S2V6TExzT0kzMHYxYTBxZkhFMnMyU2hITksyWElNMVNVbWNPdTQ3bWVQbklnTDVqamZEYXQ2RVBhVU5iT2tRalU1YkoxVG5QSEo0UzI0dnNEVzA5ZlNtanZsMVNkamJWVkZxbkR5SGI4SDRrdUJxcFRMSnpkVWt3eTNhLUdWZHBubjZscXBUSGZhQWMxT01FYlhr?oc=5" target="_blank">Экс-глава Air Astana Питер Фостер получал в среднем 57 млн теңге в месяц - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 31.07.2026 07:00</span>
+        <span class="date">📅 31.08.2026 07:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana продлит до 3 октября выполнение прямых рейсов из Астаны на Кипр - Интерфакс Россия</div>
+      <div class="art-summary">Экс-глава Air Astana Питер Фостер получал в среднем 57 млн теңге в месяц - Kursiv Media</div>
     </div>
     
-    <div class="article" data-date="2026-09-30" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPQWNPUXVYQlVKWUJad215QllSRTUtMThhOUJVU1ZjWmNnV3E2T1hiWjRHUEZ1Yy1JV0N5TXhzbk9QeVIwQzFBb2hoeUQ4ZEE4T2dPb1BxU1FMblZjeWFwRy1xR0hHRTUxTk90YkV3bENEZzNWY0NnUHhrclVOWG9kNXhlc0VjczdPenZaNTc0WUPSAUpBVV95cUxPWFljb2xSU21GYlU3S0NYdFNDYnA5N1VyTXNXQzhsRVpnbUpkRXY2NzlqRFVRVlpzdFhFcVNPaV9wdTltbk44Q1FmZw?oc=5" target="_blank">Air Astana в декабре начнет летать из Астаны в Бангкок - Вестник Кавказа</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 30.09.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana в декабре начнет летать из Астаны в Бангкок - Вестник Кавказа</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOd21EYmxha2xiMk5ZbGpXRjFWUkoxanI0OUdlQlc2T3BfLUJ4T3p3cWlscUVtMFI1NF92NTJqVVpkYkd0WFl6emF3ZlV1ZjB3OEduVFNab1lBSmJVcU9mX0VlLTQzYTN5SWZYRm9HQTdjN3lmdTljaUI3ZmlHTHZIWWp3bw?oc=5" target="_blank">Купить билет на поезд КТЖ можно будет во сне - Hronika.kz</a></div>
+    <div class="article" data-date="2026-10-30" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOZERXdk5vTDZfZkppV3QxdEdzVnB4SmNoNWRkUmgzZFR5bXp1cUJ3UHY5Y0dBSkMxbFBxR2F2RDFHSTdySHQ3NUVUUmtyaTRMYWFPSHJTYndNNkZwZGhGMXZZWjNTRWV1VGJZcFRSc211Z2NBalNRMzZMaWtFdkNjdjBLc3dpd0JwTUgzWmJvWTNJaWlVMmVxSXZyazlnT2NfTEZySWgtU2dmQnp6SUJtS2VibHJTQ01oMW9rX052VQ?oc=5" target="_blank">В Астану по воздуху привезли 1 тыс. овец из Австралии для экс-топ-менеджера КТЖ - Kursiv Media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.10.2026 04:01</span>
+        <span class="date">📅 30.10.2026 11:28</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Купить билет на поезд КТЖ можно будет во сне - Hronika.kz</div>
+      <div class="art-summary">В Астану по воздуху привезли 1 тыс. овец из Австралии для экс-топ-менеджера КТЖ - Kursiv Media</div>
     </div>
     
-    <div class="article" data-date="2026-10-29" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxOMWw1aWpUOFVWbU92ZHdyRVprME9pNFJMN1hFbTVDd3BSNGdIR2dRakp4aTFST25pN3o4M3RrV0JJbHQtYlZCeHIyX1FscllybG1QTjluUlNOaE4wVGdacUlMNzJzdjRKN2RyTGZkblRkSTk3V01WTkFJaUZFczRTVl9TZzI5bGRqQ3ZURWpCU2tBYVA2OElyRGduekhPaU05Sk1MLWxWaWUtTEN1ZnJUTlN0OTRQQ2xlMlgzaE5WcG1aZnQ5VDZWVG5DR2hlaWNOWnE3NWEtWnMyOFN0dXp6bTF2SXpFVVNPcEVwVmxyMWFCd9IB9wFBVV95cUxPT3I4Y3RKUV84ZzBUVWgwTTFlb2tWTncwU3pfZWtjN2JKMnlEUngtUjd0ZFFJQkt1amlzdzBGU25mTU5qdk9iNmdZYkR4allvQ2p0aWtIb0h4N3k4VG9ZY0haWHY1MXV6V2lMQ1g0cWJZUHJMRnpUdmJlSlkwQlFlSU9qYXVHY0d5bWwtOTV2UUlyNEZzektnZ2VIbHpNaUNxUTVwVGR3ZW5YUW9aMFJYYnNPZzNlOGFJdkhTZ2xyOVZMTkkxbGFZRXNtMVR5LVFneGVNeVg5OG5aS240OW9NblVFNllSREhSZ3hSZi1pR3FCdEhLNTVF?oc=5" target="_blank">ZTE и &#34;Казахтелеком&#34; представили передовые решения в сфере связи на форуме AI &amp; Digital Bridge 2026 в Астане - Новости Zakon.kz</a></div>
+    <div class="article" data-date="2026-07-02" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPUUJjbVhmSi1qcDh1OFhoTThCbjZuQ05wQk1lY2tiWDV2MEdsTTY4OXlXX3BMM25Cb3VpM2o0MnBWMEdLSTZpbXRXSEFYbkR5Ry1HZU9OVF9BZGdqWDQ2Qmxoby1nUmtFV1h6ZFNweWxscnhSTFZYNGhZZmp6YXFjSno1R3hmYTQ3OXJ1UG5Iak5WY2tvOGl1LUx6R1BVbUJtc0VkU3FfS0hoZnV0cVBsR2ExeWvSAbYBQVVfeXFMTTBtNnNWb0l5NzIxbTFSYzdQS1Y5VEgwbzFTVWxuT09vRUVzak1ZYncwUjJNc2lRMEN6U0VVWXQxekhSR01fVGhpWFgwLUVRcXRnZDNMVmY3bk55X0RsQVVfWjBYdkU1U3FiM1NRZEdpTG9qUUZ3M1BlTTRUb0ctdFQ5TGVUOFRWeUJHUURONHFTYVEtYTFCRW5Ya19aOXlMZUprWHFwNElHZFRmZUF6Q0JGU1ExZmc?oc=5" target="_blank">«Казахтелеком» завоевал две престижные международные награды на MWC Shanghai 2026 - Казинформ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 29.10.2026 04:08</span>
+        <span class="date">📅 02.07.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">ZTE и &#34;Казахтелеком&#34; представили передовые решения в сфере связи на форуме AI &amp; Digital Bridge 2026 в Астане - Новости Zakon.kz</div>
+      <div class="art-summary">«Казахтелеком» завоевал две престижные международные награды на MWC Shanghai 2026 - Казинформ</div>
     </div>
     
-    <div class="article" data-date="2026-06-01" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOSGhhajVBV3l3S0xVQjNpUjY5b052bDJJU3ZCanNCcURibHNGWmlVSHRUUmxxdjZJb19zZS1ER0lGVzNaU3VIV25feU5nWmFpWUJfOFNsakFVRG82UktVcFZpREdfVjBCSVdrRlB0dy1KdkJfNzhFSjlGVG9ZR29PUXlhQnV4dkd1RWM2cGNHY2RNalEt?oc=5" target="_blank">&#34;Казахтелеком&#34; помирился с курирующим его министерством - Inbusiness.kz</a></div>
+    <div class="article" data-date="2026-04-06" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOSm9GeDRmaEhONDFfTmNmQS14SHRHUW1Rem5JRHVlM3dRZ3EyREc1U3BpQXZBcW10bjFCa1o4WXdISE41YjdnSWpXcHZ4OVcxXzN6Z3FKd1ZRQ09PbWx1ZWRjM3lQb3pvenV4M1otSjBYQkxlOFRlNXpQTmw1S3BLcER1bHdzQldkX25NM3FuNEE5WWI4RlBSS1V4d3hteG5mUmc?oc=5" target="_blank">Казахтелеком и AzerTelecom реализуют стратегическую сеть связи через Каспий - Каспийский вестник</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 01.06.2026 07:00</span>
+        <span class="date">📅 06.04.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">&#34;Казахтелеком&#34; помирился с курирующим его министерством - Inbusiness.kz</div>
+      <div class="art-summary">Казахтелеком и AzerTelecom реализуют стратегическую сеть связи через Каспий - Каспийский вестник</div>
     </div>
     
   </div>
@@ -336,72 +285,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-10-30" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-30/svan-v-samruk-energo-naznachili-novogo-rukovoditelya-posle-uvolneniya-predydushego/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-v-samruk-energo-naznachili-novogo-rukovoditelya-posle-uvolneniya-predydushego" target="_blank">В «Самрук-Энерго» назначили нового главу</a></div>
+    <div class="article" data-date="2026-10-30" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-30/kaye-air-astana-sdelala-vazhnoe-zayavlenie-o-razvitii-aviasoobshheniya-s-kitaem/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-air-astana-sdelala-vazhnoe-zayavlenie-o-razvitii-aviasoobshheniya-s-kitaem" target="_blank">Air Astana сделала важное заявление о развитии авиасообщения с Китаем</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 30.10.2026 07:44</span>
+        <span class="date">📅 30.10.2026 11:30</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana сделала важное заявление о развитии авиасообщения с Китаем</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-30" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-30/svan-v-astanu-po-vozduhu-privezli-1-tys-ovec-iz-avstralii-dlya-eks-top-menedzhera-ktzh/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-v-astanu-po-vozduhu-privezli-1-tys-ovec-iz-avstralii-dlya-eks-top-menedzhera-ktzh" target="_blank">В Астану по воздуху привезли 1 тыс. овец из Австралии для экс-топ-менеджера КТЖ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 30.10.2026 11:26</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">В Астану по воздуху привезли 1 тыс. овец из Австралии для экс-топ-менеджера КТЖ</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-30" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="http://profit.kz/news/75383/Air-Astana-zapustila-visokoskorostnoj-bortovoj-Wi-Fi/" target="_blank">Air Astana запустила высокоскоростной бортовой Wi-Fi</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Profit.kz</span>
+        <span class="date">📅 30.10.2026 11:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустила высокоскоростной бортовой Wi-Fi</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-30" data-co="Самрук-Энерго" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5tcW1zOTJWdm9TajBiWm1tczlxNkxSNGFNSDdJeFZqTEFZWGZidE1yS1dCTFFYNm40T20tbmh0bXRvOUtielo3LTl2UjgzMk5hV0o5SmFKaXNRUjFvS1g0MElNcVRZRlZXdjNUcA?oc=5" target="_blank">&#34;Самрук-Энерго&#34; возглавил бывший директор по инвестициям компании Ансар Айдаров - Интерфакс-Казахстан</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 30.10.2026 06:15</span>
         
         <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">В «Самрук-Энерго» назначили нового главу</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-30" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-10-30/fvfv-15-mlrd-te-ge-potratyat-na-to-chtoby-uvelichit-moschnost-ust-kamenogorskoy-ges-na-3/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-15-mlrd-te-ge-potratyat-na-to-chtoby-uvelichit-moschnost-ust-kamenogorskoy-ges-na-3" target="_blank">15 млрд теңге потратят, чтобы увеличить мощность Усть-Каменогорской ГЭС на 3%</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 30.10.2026 07:36</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">15 млрд теңге потратят, чтобы увеличить мощность Усть-Каменогорской ГЭС на 3%</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-30" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/10/air-astana-launches-first-flight-with-high-speed-satellite-internet-in-kazakhstan/" target="_blank">Air Astana Launches First Flight With High-Speed Satellite Internet in Kazakhstan</a></div>
-      <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 30.10.2026 07:23</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana Launches First Flight With High-Speed Satellite Internet in Kazakhstan</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-30" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQWXY1V1pzX0FnU1FmckJ6bFJSSDdqRHNuS2t0SmJHUVBXdDUxREZ6VTZ1RzR3U1lQa0pWQ0hGNmh4SnROTm95Q3BlSW16Z0FIRllHNm12NlpFeU5vNXd0aWw1cFNjS1Q2N0tPam1Sb0pXdTFaQ0Jud3VfVF83TXNyQ3ViZmpWemY5OXY4RA?oc=5" target="_blank">Air Astana и China Southern заключили стратегическое партнёрство - airpress.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 30.10.2026 10:28</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana и China Southern заключили стратегическое партнёрство - airpress.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-30" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQeEhTTlpnNThoODZWckxJOEZROHBkcnItVTU4NTg1Wk1zSW1hS3hmNWxFNDhONDVUd0R1eFZnSTFJWWpVUUxvSXBmd1lhb1pFeFIwa3I3ZjdRbzZqTjE2eWt2eW1tbFVsa2dCMVRxQzJaNGRWTk50am1ldFJhY3dBdjdEbURuYlgyZmdPbDBtenFlQQ?oc=5" target="_blank">Важное соглашение подписали Air Astana и China Southern Airlines. - Exclusive.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 30.10.2026 10:35</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Важное соглашение подписали Air Astana и China Southern Airlines. - Exclusive.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOSVl1X3FHa25CU0pmWEJrbHFZbmNEdjRVYmdRUEpaUmdWblJuOHZ1S0w0b2FsMGF4V0VHZHpPbGwyaHFnLVhaMG5YZnh2MXMwU1duQVF5V2FCWmVWLWJjd2s2b3ZlLWZIa2ZKLWZ2VGNYdTJnU0xRRGNIa0JybnZwLWFR?oc=5" target="_blank">Air Astana запустила высокоскоростной Wi-Fi на борту - 7kun.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 29.10.2026 12:10</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana запустила высокоскоростной Wi-Fi на борту - 7kun.kz</div>
+      <div class="art-summary">&#34;Самрук-Энерго&#34; возглавил бывший директор по инвестициям компании Ансар Айдаров - Интерфакс-Казахстан</div>
     </div>
     
   </div>
@@ -463,7 +390,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-04';
+  document.getElementById('date-from').value = '2026-04-06';
   document.getElementById('date-to').value   = '2026-10-30';
   applyFilters();
 }
