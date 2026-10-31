@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 31.10.2026 17:32</div>
+  <div class="meta">1 источников · Обновлено: 31.10.2026 19:37</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-03-19">
+      <input type="date" id="date-from" value="2026-08-25">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-10-01">
+      <input type="date" id="date-to" value="2026-08-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,8 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
@@ -104,47 +102,20 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2025-03-19" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPbERLRDR2RXhwNXVUUk9PQnBZX1RIWHpKeEFpVGpqV3JLdjlKUTg2ZkhjWUJhdnRuZ3dmdGJkNm9hZmZUZDRDdTE4a0p2SnQtSjNKVnBqTlpBNHdBSGdlOW1mQ1FtOVg1M01ES2J1VFo0OGFfbXRWdVdtSkNZVGsxazZYRnhGTFd6U1UwYU5rbTlocXNvQVZ2dnBnZ2hsVlNVSEpJWllzRHozV01Va0I1amJ5YUlBRHRob2fSAb8BQVVfeXFMUDB0TjNZRG5RRjdkRXJaaVV2WGJvU0lYUV9FMk1TSEhaSDRuM01QUWM2MGt5aG1EOFNMRkhRME5NZHk2RXFwQlR0OElndGtGalFyWWgtTEdHay1yUGlzQmE5ZTVfQkVBMFNFODVlRkpZZXF6akEzWnpDRXNwdTZpX25hb2E2UTlzbDllN0NtYVZmY0d5MXV4Y1ZSU3Vadm5IRFBpTV9MSVYweTlKQV9scnJXbXlsbVZ3UG1uZkhlT0U?oc=5" target="_blank">Ущерб государству на 460 мл тенге нанесли директор и сотрудник «Казахтелеком» - 24.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 19.03.2025 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Ущерб государству на 460 мл тенге нанесли директор и сотрудник «Казахтелеком» - 24.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-10-01" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQZ0ppeVhQNC1OUXQzR0tnSXM0NzB3ek43T3E1dDZaX192NFVzazZvbkE1UGJhRWJuLW5XbXJBQVFqOHV3TDNScUI0c1d0QjRsUVZCaFNxUFJpZmZ4d2dUUUZybngzdkoyWDVnREpCR0tXUHZtOEQwRWxZMDBsN2xoZXZhWTJiR1FsNXZvaUtBNnQ1VHBoNnlF0gGfAUFVX3lxTE42R1E0QWtBay1DVGlSTzllTGU0TGhMRFYxU29kZjF6cTV5aDByUVk4RHE4Q2xDaHJXUzd0b3RiczNMekFFMW5YNkVTb1VmS0pkaW1uZFRmOWUxcHZKZnlveklIQ09yaHlXTW1tSFRWWTJMVGlsZnlsdUF2Q1d6cXlaU29VZ0k2aUlEZ29aaXJGbnAxX0hJTnlhd2Jka0ZJYw?oc=5" target="_blank">Новый экспортный коридор в Узбекистан откроет КТЖ - ElDala.kz</a></div>
+    <div class="article" data-date="2026-08-25" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOTFkzbXJIVjZXbEhMZldfZkVHUGEzM0c2QmdNLUZfbXpaTENsLXlmZ05KREJ4cHFxMDVMSWNPcVZuMkNFaDVrdzZscEFzYmFGYlhnMXJSVFdJZm95cVFPOHpreU1vWkJLOEpkdUFVb3ZSMGR6LTh3dEZfYXlYOVpsU1NHc3RJa3ZZMjFvNS0xOWVBWFFSci1ROTgzTU9EQdIBnwFBVV95cUxQTDBUcUJXaGc5b3pkbTZmRlF4Z0ZGQWswSDZ5RWFkQmtKNVRteGdVc2ZTZ1VxVGJzaFBaM2NJNUJlT215Z29sZ3I3SHg1NXFlalJQWGU0Z2VYTENhSzZXd0xsZFhfdFJaMzJiMVVnRTZQbHZuWGZZUE5LUkNNbWVRRm5WRmFHa09KdWN6YjFLWExIbW00VkdCOGxLSWY2clk?oc=5" target="_blank">«Казахтелеком» наращивает закупки у отечественных производителей - Казинформ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 01.10.2026 07:00</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 25.08.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Новый экспортный коридор в Узбекистан откроет КТЖ - ElDala.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-01" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOWDlvZm1ld0k1dzgtWVp3bGYzbnhxZ3hkSW1XV2E5Y3B5bHR4bXNFbFowLTRMT2ZOY2F4Si1XYjA3ejlaN1pjQ204YVlmOGZsb3Z5Q3lZQU9mN2dtSmQ1MFJPUDlDTE9GX28waTF4d3BPellTOG1VUGpYMkxjbjhDZXZPb1N4aklyYW9NOWRkM2pXY1dKZlNiaFdnSV9Cbmo2MlgtQXVUTkYycHhMdmpEZnA3XzNGdw?oc=5" target="_blank">КТЖ получит 170 млрд теңге на новые пассажирские вагоны - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 01.09.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ получит 170 млрд теңге на новые пассажирские вагоны - Kursiv Media</div>
+      <div class="art-summary">«Казахтелеком» наращивает закупки у отечественных производителей - Казинформ</div>
     </div>
     
   </div>
@@ -208,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-03-19';
-  document.getElementById('date-to').value   = '2026-10-01';
+  document.getElementById('date-from').value = '2026-08-25';
+  document.getElementById('date-to').value   = '2026-08-25';
   applyFilters();
 }
 
