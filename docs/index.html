@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 02.11.2026 07:22</div>
+  <div class="meta">1 источников · Обновлено: 02.11.2026 11:55</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-10-24">
+      <input type="date" id="date-from" value="2026-11-02">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-02">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,10 +86,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -106,63 +102,41 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-11-02" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQkp0ZktNVFFvQVpBUEJDdU40X2pqY2RPWmUzOFE2ZlUtSzZubkJBa0FUQ0ZxaWZCZzk0ckd2NmswRWwyaElKaXZHOEl5YzN6NFBtYlJWWEdQWV9kRjNwTm5MOWt5Rm9VdndjeWxkQ1AzUVctOGpuX2NYSlMtY2N6eHdGYWJ5Rm53dVVJSk1iejZoWlNGZER4dWVwQVZld19aQVJ5Y2otT2dwN1E?oc=5" target="_blank">Вопросы пожарной безопасности и гражданской защиты обсудили в КТЖ - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 02.11.2026 06:34</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Вопросы пожарной безопасности и гражданской защиты обсудили в КТЖ - Қазақстан теміржолшысы</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
-    
-    <div class="article" data-date="2026-11-02" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1IQzg5QWpzTHNwMXNGZDhLeENIaVpYbkRKaE5IYzV3WWFuM3RQZHktNkU4TzJCQVlSbS02YUtmZ3RoN280Vzd5NXQxMVcwcFJXYUxwQWNYZHB0TU0?oc=5" target="_blank">Владимир Школьник: биография, «Казатомпром» и семья - airpress.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 02.11.2026 01:35</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Владимир Школьник: биография, «Казатомпром» и семья - airpress.kz</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-11-02" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9vOW5OSnBzcWFNWmVJSEt0Q1hadDRKSGpzLUNqb1RBSTVuajkxNlhoUWlUbWtXUklqcmRydzNfc2VnSGdHYUtZRmlPd3JqazkwZ3RsRnhn?oc=5" target="_blank">Air Astana и China Southern Airlines создают совместное предприятие - check-point.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOZUJMVlR2ZzdlZDBQTDlhS2F0bTBwNEp2X3M3RDA4aUtxY3pxYl9IMi1kYkRlMVRad0xQQVJyQUhGUXRfeS1sZTN2T1A2V3hFWlBVRWxKMWJtSVdLa3ZHa1Q4b21iN0YwcGk3NXMzMFlWVWZaYXlYdjdXZXR0dkpyZ3ZQMkZHc1Z6LVJJdWhiQTQ3c1EtbVljNXRiNNIBoAFBVV95cUxPWHRXb1c3eDJxVlB2TXd4RzRrdHZvWjVsOUFkYzhfd1dDN3lWUDVfMklzd05sWWE1dDJmWDdCd3huREpQTUYxb1FVUVc3M2FOSWJmaEF2Q1BvNHBXb3htdEYwNGs1V05XQm5YYW44QWdrXy1yT0RfVmEtR1F3UjJTdVVKdzUyYkNwUG5qWV85N2JwRTZkSU44RC1FNHhfMDQ2?oc=5" target="_blank">Новые правила перелетов в Китай: Air Astana объяснила, что изменится для пассажиров - Qaz365.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 02.11.2026 06:37</span>
+        <span class="date">📅 02.11.2026 04:20</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana и China Southern Airlines создают совместное предприятие - check-point.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-24" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQczJkV2Z0M0p3aC1ENGVXTEZCcWpmb1dSYjVYdXA0Smc1bzhqTFBQVzR6d1F0WTdtR0RtOHhXWmlhWlpWWlVlRzU0UU1BSkh5elFLRFUxSTlkc2NtVGlFUDZhMUFnYkk0cXJWVmNxZzhVMFZnV2FQUXUwS18xTHpEZFBpTWhlbllIRHNqYnc4MVVObjUtZjVxdnpURnlvMXNL0gGmAUFVX3lxTE15VlNzMUVKaU43VTFEYXlTUnRkbE9lVm55XzVhUVY1aExpNVNaaFU5VEdDVGFuWll3X0hOTmVVU2NnQlJlX0FlNVdnM0VvdXFHQV83OFhmU1MzOEk5YV9rcFVmWk0yLXVMOGJIeUdRbks1cEwzNG1kdVBiNldVc2IzbGZYUEg5UzBGRGdYWXFnel9HN1hCcjhYOFNVSDlKd1hKcm11Z3c?oc=5" target="_blank">Без пересадок в Оман: Air Astana открыла сразу два новых маршрута - Arbat media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 24.10.2026 04:19</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Без пересадок в Оман: Air Astana открыла сразу два новых маршрута - Arbat media</div>
+      <div class="art-summary">Новые правила перелетов в Китай: Air Astana объяснила, что изменится для пассажиров - Qaz365.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-11-02" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMEwwN0w5SW9nUnFKUzlBRHJoVVZiZ3gwcWFuMWIyU2ZsdEszMTY0ak1VU25iQ0R0SVVHWnY3TWN4OWtJaXV5dzdNdFJweWl1a0xZNkRCNHNXdDRlZHdkcDZ0ejdqOFRhTlhfb09STkkwMjMxaF9OSkN6aHFfNGwyUW9xU2JrT2tXMFgxb183WWpGNzRRSHI4NG1yYXVCeDZBcm1tWE5UOGd3dnlwTW1ka3dsdzktT0hvclVzX2xEOW0?oc=5" target="_blank">Air Astana и China Southern Airlines подписали соглашение о стратегическом партнерстве - Вечерний Алматы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.11.2026 09:16</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana и China Southern Airlines подписали соглашение о стратегическом партнерстве - Вечерний Алматы</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -221,7 +195,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-10-24';
+  document.getElementById('date-from').value = '2026-11-02';
   document.getElementById('date-to').value   = '2026-11-02';
   applyFilters();
 }
