@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 03.11.2026 19:59</div>
+  <div class="meta">1 источников · Обновлено: 03.11.2026 21:19</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2023-06-02">
+      <input type="date" id="date-from" value="2026-07-30">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-11-03">
+      <input type="date" id="date-to" value="2026-09-03">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,12 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
@@ -111,71 +105,33 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2023-06-02" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE1xdTNkZC1xbUljM2d4aGVGNUM0WU1mckxnN3FzbVBuTjRfZXpBbWRwSDl4NFctblRCQ01tbFhxWVJucHgyWkxxbkVhaU1oUVdjenIwMHV2eFFrVW1ZcDBYQmhHRQ?oc=5" target="_blank">АО «КазМунайГаз – переработка и маркетинг» сообщает об итогах реализации Плана поставок удешевленного дизельного топлива для сельхозтоваропроизводителей - ҚазМұнайГаз» ҰК АҚ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 02.06.2023 12:39</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">АО «КазМунайГаз – переработка и маркетинг» сообщает об итогах реализации Плана поставок удешевленного дизельного топлива для сельхозтоваропроизводителей - ҚазМұнайГаз» ҰК АҚ</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-31" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNdk1OeFNXX3RaWlpCVldKNWgtbG0tRkNZbVFyQUtZamtkalViNFlUUl9XVHpaRDFMV1RRX3VicWEzc1NfRFF1dnVyRHpKamRtODZDVC0ySUdsWnYzblhYRllwbFVvYVBVYUx0OFk5aUl4SFF0ZXRXRVZFTnVwTmJQTWNZakFIaUNocDhlM2Iwc3VqM3ZFVGlhVjNn0gFKQVVfeXFMT2lxRWgyUy13ZkhvcFQxQ1lCaDJpdUZlUFVkbjNpLVlWSDBPdGU2Ui1yTGVNLVlfZ0pOaXg1elh0LUtXcmpHZzdlUmc?oc=5" target="_blank">Air Astana продлила рейсы из Казахстана на Кипр до 3 октября - Вестник Кавказа</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 31.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana продлила рейсы из Казахстана на Кипр до 3 октября - Вестник Кавказа</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNejVqSzVPWjdOTVBHR3FGNkNrRkQ5MzRFWk9JQTZaaHMwZXd0aWN2dGNMdXFGZnBMZ3pZMThYaG9OZUN3TEFkNkkweU1iWGlrVFRoQmo3Z2hPTGdILWJzbXZoSHR5a3VPcEMzdzFINHJWRWlJTC15TjdCNkdDNmxabUx3SGZfSmhEa3J5WHhic3VWdF9fc3NUVdIBlwFBVV95cUxOdEdqdVFNd09YYU9hdWYtd3hpXzZhZTUtN3FkUzAybkpmVjVFVHRJYk14aWdRVHZZZ29MaGZEVWthTFdITlU2SHVadWZjdUxIMmpRdHhwYk05VVNUbkJzZmxlSDhJX0lqZ2Q1TUFkdzJtZFlhcUdiQ2UydmlkOEJhZ1FxeGFpREJYOWRzY1pJaWdrMVp3MllJ?oc=5" target="_blank">Air Astana увеличила выручку на 16% и расширила международную сеть - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.08.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana увеличила выручку на 16% и расширила международную сеть - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-03" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNUkFJLVdQVUtHUUNVcW8zeFhleWJnMVBISUhjRS1OaXRuNEZTckdMOXdVYVdqc1dpbFlrQUVuckcxRkVkMTFrVzI0TzVfRUFoak11dTVhME1hZ0RleUdScl9sTno1YTRwbjFFR0xjRzZaQlJMUkR5YWtPVFdDUENmRXRKOW5iS2kxSlZaSThJQjllY0loSDI5OV9iUHhmSHdfejJiQ9IBqgFBVV95cUxPQmx4a1FpWUZZM3p3QUJlcUdIenU2dFQyU1IwU1BhMGU0emNvU01rMktGYndRZFp1QmhJcVVBY2hCZEVuN3hxSzl0RnBVSkpMZ2I1OWwxVjF6NTA0VEhUZ1dGYXlWOVIxbU1KbDRnYXNsX0dodlc4SElLNjFLYnRBUHQ5aDZReVNWVUpLM1RpZTRPTXlHNDlScjRPWTI3cDJ6YnhOUWVpTnBJdw?oc=5" target="_blank">АЗРК направило предупреждение в адрес АО «Казахтелеком» - ru.elordainfo.kz</a></div>
+    <div class="article" data-date="2026-07-30" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOdEhHNHNNVjZodzRWdTQzc0lWbjM2RVF4MGFLOGlGNGl0am5kSExiRnNmQ001YkE2ZC10NG5kdDl6TVdaZXRUNW1WejUyc3Ixck5FNkxJTkZOc3VTdV9YLWRMX1VvZDdDRUFISm8ybG0tZEtCYkNLbXlnOW5DUFJ4M0tPMTVTM0tpTTB0V3hJdVJYaXVhbVJCRXB5MDhWOGRsR0tiZHllN0poZzBzdUtxNlZvVXUyeXQ2SkQ3cNIBuwFBVV95cUxNZWkwN081X2tjeXRqekEzSDRFQmZpalBYaFMwang5YjVJd1dlLWJXd0xMdDR0RlEyREVTZm0xUFVDa0p4NUF6WDhKTE8zV1JnV0Z1d0ZVUURHZXNreXUxUjUzTVR6N3RIck85aDByX1h1a0dCUmVnc2plM3RSWEh4Z2l2QnJHd0ZVWm5uWjc3VEVPWXZqMkNXd3lVcU80MW52TERRT05IcGZWSjZYMjhjeDh0cDBKMlJKMFRR?oc=5" target="_blank">Оптоволокно заменит устаревшие медные сети в Казахстане – Газинур Раимханов, директор по эксплуатации технического дивизиона филиала АО &#34;Казахтелеком&#34; - BES.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 03.11.2026 00:11</span>
+        <span class="date">📅 30.07.2026 07:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">АЗРК направило предупреждение в адрес АО «Казахтелеком» - ru.elordainfo.kz</div>
+      <div class="art-summary">Оптоволокно заменит устаревшие медные сети в Казахстане – Газинур Раимханов, директор по эксплуатации технического дивизиона филиала АО &#34;Казахтелеком&#34; - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-03" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPZndIYjBYVnFxSGRFS1htcVhWaUdCSUZqdzh4ckVIQW9TbGwydHVDQ1gwaDQ2aThuSXpvekd6b3lPMTN3X0RGMGVqSEtyVmZHSVR4TVlpSkxYUTZMaS1VVWRHNVZ3UkxDRnRMbTRLN2xwU0sxaS1lNktsLU94VTJrZnNHTWpLZXRxTWIwUUd6VjJWOW4tYWdRQUpwQkYtUUw0X3lUYmZZdkhZYUw4VEZObWdjYWx2Zw?oc=5" target="_blank">Казахтелеком запустил новые станции в селах и обеспечил интернетом тысячи людей - Qumash.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 03.09.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Казахтелеком запустил новые станции в селах и обеспечил интернетом тысячи людей - Qumash.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-11-03" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOS0U0Tm1VYklmVXd0N0EyUVFGZDUzVi1HVjRtMDB1ZVMtQ1A3SWkwNjNRbWN0MmtDS3o1OC1adnZCdzNmYl93emZOQlpDVEdEZS03OUpXa0ZfX2dmSWZPT2xFVU5BSHpQUUFTTjNyY3kzYk5hcWJWSDN2bDE1V1JmeHlVdkZTdktxYkoyYm5SODhscy1yTFE?oc=5" target="_blank">«Казатомпром» заключил новые урановые контракты с Индией и Китаем - ИнфоТЭК</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 03.11.2026 14:30</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» заключил новые урановые контракты с Индией и Китаем - ИнфоТЭК</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -234,8 +190,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2023-06-02';
-  document.getElementById('date-to').value   = '2026-11-03';
+  document.getElementById('date-from').value = '2026-07-30';
+  document.getElementById('date-to').value   = '2026-09-03';
   applyFilters();
 }
 
