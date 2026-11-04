@@ -60,12 +60,12 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 04.11.2026 17:46</div>
+  <div class="meta">1 источников · Обновлено: 04.11.2026 20:18</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
   <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-11-04">
+      <input type="date" id="date-from" value="2026-08-06">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-11-04">
+      <input type="date" id="date-to" value="2026-08-06">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -102,36 +102,20 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-11-04" data-co="Самрук-Энерго" data-s="negative">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/dont-go-outside-until-spring-almaty-residents-complain-en-274649/" target="_blank">“Don&#39;t go outside until spring?” Almaty residents complain en masse about smog</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 04.11.2026 20:41</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">“Don&#39;t go outside until spring?” Almaty residents complain en masse about smog</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
     <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-11-04" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/construction-of-almaty-chp-3-is-9-months-behind-schedule-274646/" target="_blank">Construction of Almaty CHP-3 is 9 months behind schedule: what went wrong</a></div>
+    <div class="article" data-date="2026-08-06" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQY1NKSDNaN3ktcm1MY09yeXNTT1ZCMVBPSWNGd3pubWlHUFVnYXhiSkFwVVNodGczVUFwemFHTnRHb0NuRlFZelVkd09CYjRNMXNxeF9vSlRiSXNUZEpmV1kzNHdncW10TVFpYXc2MWgwRVNLRVhsLVhDelQ4Y21yLXMxb3RqUGYyRUtLZC1B?oc=5" target="_blank">Контрольный пакет ERG перешел к фонду «Самрук-Казына» - Forbes.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 04.11.2026 20:21</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 06.08.2026 07:00</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Construction of Almaty CHP-3 is 9 months behind schedule: what went wrong</div>
+      <div class="art-summary">Контрольный пакет ERG перешел к фонду «Самрук-Казына» - Forbes.kz</div>
     </div>
     
   </div>
@@ -195,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-11-04';
-  document.getElementById('date-to').value   = '2026-11-04';
+  document.getElementById('date-from').value = '2026-08-06';
+  document.getElementById('date-to').value   = '2026-08-06';
   applyFilters();
 }
 
