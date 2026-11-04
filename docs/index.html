@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 04.11.2026 11:47</div>
+  <div class="meta">3 источников · Обновлено: 04.11.2026 14:59</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">21</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">13</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">7</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-05-27">
+      <input type="date" id="date-from" value="2026-11-04">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-04">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,15 +87,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
-      
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -112,168 +106,20 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-11-04" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/71492-tocnoj-daty-zapuska-vagonov-stadler-poka-net-mintransporta.html" target="_blank">Точной даты запуска вагонов Stadler пока нет – Минтранспорта</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 04.11.2026 13:59</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Точной даты запуска вагонов Stadler пока нет – Минтранспорта</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(13)</span></div>
-    
-    <div class="article" data-date="2026-11-04" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxPSVB5UFl3alJYeHhOekRnOV9aSGN4cDBMaENSTU85REEtenBvU0hfT3prc3daNkVFTEpmdmctMWJDM3pOOU9BT3B4UG40ZDMyb2ZkcS11NzY2VDlUUWRocE9rSXBJZEJzUUxMYnQ2Y3lQNXNtNTRBeGNSWmUxc2MtR05ob2xsbFVvRXc?oc=5" target="_blank">Бектенов раскритиковал руководство «Самрук-Казына» - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 04.11.2026 06:14</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Бектенов раскритиковал руководство «Самрук-Казына» - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-04" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQU0xCVWVUUl9HOWhWVzB6a05IUzNCRFZ5aVF4LVVrUEFEcFg3YVAtSUthME5Xc0ZGWi1jbmxIc1pWaXlRdEp0TW43Ym4tWkZBVnNYdFNjNDNYVGpQd1pxcXl6MEVoRWhNY0ljZk5jTlFpc2Zmd2RRVnh3Rk9VaG5oVlpFNWtwSEhxMnRjV0s4U2ZRWHdVN1JyNDJobEtFSFZRVHNSMWk2cmM1dFE0ZWZSQUJxLXVWNC1RcEkzcnVFWjF5djVoTThyWFMwWERQakoyaE5ETklWN3HSAdwBQVVfeXFMTlNMS2dzaF9sM1ZTdFNSZkQwQmFJeVlZcWlNdkdadEpxNkRuU0xhVlA1RU52cVZJLTNyeUV0TFB5dnRXYklIdW9PSDFmN0dpTjRmaGFFVmtjYjFnMm83Y190Z1A2Wm1CdHFReGIydVVkalNNY19oM2ktcmdoNnVvVDRNMkk3UnVKSW51Uy05aVZ1YTJQR2l3LVdBOUMtbFhUYXRzdnI0OGRWeDJKRXNnWVM3aE4wcW91U0hQVVBHMEQ3d3QzRU8wbDN0aUVTSUFBNkFRNTEtYTZHamNyeA?oc=5" target="_blank">Непредвиденные обстоятельства – новый глава «Самрук-Энерго» объяснил срыв сроков модернизации алматинских ТЭЦ - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 04.11.2026 09:57</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Непредвиденные обстоятельства – новый глава «Самрук-Энерго» объяснил срыв сроков модернизации алматинских ТЭЦ - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxObGpUd0twTW1WZWdrTE1oSU9fUUgzT0NibnA0MUY2Y3ZYOEgwbUM4eXpiTzUzRlNpcWxLTnEtN250alFLaDVWLXVnMmU3UW5ZTHpNMVUxR1N3c0p5QmZXb2JIUmYwTnNYQWNsSjEzLUxvZjFtaGdXVUtNa0tkWFoyOUxDdkZ4cFI0OGRFZmVJekhoVGM?oc=5" target="_blank">Названа причина увольнения главы &#34;Самрук-Энерго&#34; - Inbusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 28.10.2026 11:00</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Названа причина увольнения главы &#34;Самрук-Энерго&#34; - Inbusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-04" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxONFJrZnd2QjNHX24xblhXQTcxUUVCWGc4aE5uQW1pS19PbmxoLXBlTnJja1VpN0trQWVkTHAxQnR2czJ5UVZGeVVwRTRIdlRTZW5wa1ZHblREMVJhckFYa1VsQkNjM3Y5cFppeWR2SjBjdHJnVUtOUlhkUDZUaFphQ2tqS09jNFAtNDVlMmxsa1c0NHc5cVFR?oc=5" target="_blank">SOCAR и «КазМунайГаз» обсуждают совместную геологоразведку - Vesti.az</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 04.11.2026 09:55</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">SOCAR и «КазМунайГаз» обсуждают совместную геологоразведку - Vesti.az</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-04" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxOelNEX3RSZ25la3M5SWRESEhFaWZ4RDIyU1dxUFNWRXdYcnVLUThCSVpGeTZudDctcUNEUXd4eVdrLTVoUG54Q2FVc0VIckF6Z0xzdzByaWxCY25NQUJCci1NR0h4M2tmb3RKa3ZiS0M1dW9LOUQ2aFlSbklCN1kzYm84Ym9kdW1SaWxDSG1pejhYeGpRVnhQbGNzRWlUTG1UQ1JFalBWQlpfZGFfZ1lod25Fa0RJT3dJQ1NlaGlELUYzenQ2M0tmWkdFbm1ZRXJ4SjAxQXZvX0F3a2fSAeABQVVfeXFMTlNrUE5NMUFiNDZobk1XR0pQa3lSWWY2UUhxSTQtU3RLbHA3dzdzYUFtUVJZUFRXLUR4MDhMeFVFOF8tLV9BVU42QTYzNVNKWk5mdG9WVHNBVmxtYnlNLW5ROXRvckswNUF2QlNUcFFvWnpkTjVnYWFsZmU1TmJBM08yX2g0aXl2R01QMzQxYTg4VjQ1ZlBBck5uRGtkbVZQM3N6MEtWZlNPeW1uRm9HajNCcThlVF9SRHRRRFBoRTZITHYycnAxd1MwbHlaQmk4SnFGTlMxSFBKZzF2cGlhZlI?oc=5" target="_blank">Страшно и опасно: Глава КазМунайГаз заявил, что Казахстан готовится к бурению до мезозойских горизонтов - DigitalBusiness.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 04.11.2026 08:19</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Страшно и опасно: Глава КазМунайГаз заявил, что Казахстан готовится к бурению до мезозойских горизонтов - DigitalBusiness.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-04" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOVFdTSnJrajc5LW5pWVlXRU5DM25JUm1VMVpxNGVuRmZFRm9UdmNMNUZzUWdOQi1ic210VWJUdDJsV1NTS0Z1U21fVUdEX0dfRnh2VkNOUmtVbElGZ09wLW9RZ0Q2aGV1X19JSjRXSjNhOURaS3UwMWdOd2pXb1YtVWh0dXppOUlSWGlCbDRIZmY4c1JPbFlMc1czbnM1QjlodlN6ZNIBqgFBVV95cUxOai1iNF9CWnhGMWd2bVpVZnpvSXNIRzZOSkdJNUdjNkdPeW9xM1lrTzJuUGliLTJocDR1SktaU0pCYXdsVDRkcnV4TGFlUElwR0xaZjdwZWtvbndhM1Y4VmpVU2dnNFYzczJnZG1TYzk1T2lPMmY1T2dKZ1JiRVpOY1Y0ODNJYnZFSEVlbTBzUWdKSWRfbjljeDRjVnZpNW9zQTFoNG9SREV5UQ?oc=5" target="_blank">КазМунайГаз изучит глубокие горизонты на глубине до 8 тысяч метров - Qaz365.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 04.11.2026 09:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз изучит глубокие горизонты на глубине до 8 тысяч метров - Qaz365.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-04" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNYTU0VHNIUTVvczZGNTVkdlpxbDhqM3VJVm9fOHZzM1F1RVRPZVY1dDFZNk5VOVhkVHBMeUlaSjY5VjZhajI4cXE1V1BlVExoS2hEVDhlU2lxZHNobjNudXBULW0xeTlGQ20wRVZRcFVzc3gxVHRPYkJzUTBfVzBNWl9kcDB6elIzQ3h2Ul9OamF2WXp2bXRSSEZxT3RiVEN0YWxRNU1wZw?oc=5" target="_blank">Запасов нефти в Казахстане хватит более чем на 45 лет - &#34;КазМунайГаз&#34; - Kazakhstan Today</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 04.11.2026 09:49</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Запасов нефти в Казахстане хватит более чем на 45 лет - &#34;КазМунайГаз&#34; - Kazakhstan Today</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-03" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNWHVta05pcHRLcmJzMVFHaEkwdU52S29HVzlsTFRBUWdwQk9GVjB3Z25USENDcTlfbW9qeENnT09ncmtockFTNERrVWNZSGRpS0JENTFEVEdwRmZkS2x5emV1WmNITFRXcjUtR1hXa0otU3Nza0ctZnhiY1dyV2E2bjFfM2tlZzBINlBqMHI2YkFZSmZDSmhj?oc=5" target="_blank">Сколько «КазМунайГаз» заплатит членам правления за 2025 год - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 03.07.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Сколько «КазМунайГаз» заплатит членам правления за 2025 год - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-04" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPS2tDN2tVWWNOVnBhaXF5eXhDWlJXOVNGU1hES1Z2R040UnVfRGkyaURxTzllV0hiaHZaMkhsSVlkTnZqeUkyY1hLS2J2RHA2dUs0blFEelBJR0pWSHJ0TXN3R0NMc3JMcXllOHhpSlV4eHlCaWtzUWtzS0E0cU8tOHpzNHI4ZWxzcWI4UkFGclN1SFJJbkZwUUtYWUpXMGg0TkFUVWxoSlFSbGpqS3o3V3o1LVg2dFJVV3fSAb8BQVVfeXFMTk90cllHX3dWQ0FpazluSWp0R2lET3NuTjQzTmxrMm9iSm9VMTEyUkg1N1lGbTlnR2s0X3A0Rm83Mms2c3pDbGQyZ1FkS25uS3NNM1ZDc3VqcV9YSFpxZFQ4YWhuLVNvU0gwUjJHV2c1UVowU2pmaVpWNVBqTk1mNjZ6TGtVVVE3NHNuLWVxQ09PUHNZblI1aTU0OVBFUUJETFJmeEpoN3hkRnJnVTdGWjhfQnNocEVORTJjbXNwRUU?oc=5" target="_blank">Первый грузовой самолёт для КТЖ AirCargo планируют приобрести до конца 2026 года - Qaz365.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 04.11.2026 08:40</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Первый грузовой самолёт для КТЖ AirCargo планируют приобрести до конца 2026 года - Qaz365.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-04" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZHN2M2dIOWJzQTk0ZzFkZGVLanVEaXVCZzNVRUVDYkJRbFhHZ01rYU5OdU1QaGkwZXZHVUtuUS1mVjVMM2xLTHNOV0tsallqQm9BcFNORjI4NjQyUk5HU29xQWRLSVQ1S3JOSDFud2dsZzRma2YxVU5MMEtlZ256dURBYlNQZzRzcFNzVFB0eUxTcTVoMnY3MXN3amNId0dNdGZGalRnUWlSdFpLbzdHTWU4UlJiTTlB?oc=5" target="_blank">Более 12 млн тонн зерна перевезено по сети КТЖ за 10 месяцев - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 04.11.2026 08:38</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Более 12 млн тонн зерна перевезено по сети КТЖ за 10 месяцев - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOWJ5S0JveWpKRkQ1MTNKbUo3d0JFajFhemdwazluLWlseTNSNkQxZXFyUG1wdjdScERiZzUtbnZYTlRMZ1l3NkNrOUhELTZ0TjRDbXpiRElYY09ob3duZUJFU1VTemc0ZnRiT3Ixc1ppM2JxaXBDbWFtcmJqV2xWVUNGNXFfQTdla2dFd0kxLVlKVGpHU25OWm1wdHQ3SlRodFpMS01WWTdTOXJDMVJ2QjRIanhKVDM5M3hUMTVzVERzd28?oc=5" target="_blank">Главой совета КТЖ стал австриец, работавший у миллиардера Дерипаски - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.10.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Главой совета КТЖ стал австриец, работавший у миллиардера Дерипаски - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-05-27" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQdHVzb21mdEZvdDBOeUVCalZJTnBhU0JKRHVoakhIUTE0S05hWVlQRks4STQxT182aENWMk94alplTk80MzdRVU9jdl9NamlfRGVNVmRUeHl2T3ZjT052V3Q3cHlMSDJSaHJYWF92YW0tMUZvWXIwSV9RbWE2YVB5LVNXWDBDbjVlQXAxRzhreklRSTFfSVhmaQ?oc=5" target="_blank">КТЖ ведет масштабную модернизацию магистральной сети - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 27.05.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ ведет масштабную модернизацию магистральной сети - Қазақстан теміржолшысы</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-11-04" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOZHBFczRxWjgtcW52cExMY1kwUkpIa0VZRnFmYlQ3X1NWeFlyaFVhSlJmYXZXUW1HVmtLalFheUFTM3hKQlVYTHo5LXNzdWx0UkZ4bjFvamhxYkJPM3lKOGRLSEJLVWlUWEFtOFJfLV82bndsU0ZhUzFGVy1Ob2JBZTNjVjlrck0xc3Z1Z0tDV0xFUkNEaUFqTmZXaUNnbXJ2a2ZibWxnd1dUbzhqaUlLODVR?oc=5" target="_blank">25 тысяч за отказ от интернета: пользователи жалуются на «Казахтелеком» - Newtimes.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNR2xXWW40UVBPYlhQWUJMM3dQN0ZESGVHMjBEdHlfRUZfRG1JeUR3SEZ1azZjUnBzR1g2RXR5cUt6TkVBcnlPbHRKdDNYMl9RY3JReDU5c2tMZlZKSnRNYXB4WHBBZTdOZmg4cUZ0V0tybFdzaG96cDN6cmpCSmdmTFJtSU5NVXFQWUoyV240RGZ4NEJ5QzJSSkhQREx6dTY4TmpiSl9qcEZ3UmlfT3YxRmtxUzNzZmRUTjlwdnRtZVJ5ZVZzN2o3VA?oc=5" target="_blank">МИИЦР РК и «Казахтелеком» договорились о сотрудничестве в рамках проекта ускоренной цифровизации Казахстана - GURK.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 04.11.2026 09:01</span>
+        <span class="date">📅 04.11.2026 11:28</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">25 тысяч за отказ от интернета: пользователи жалуются на «Казахтелеком» - Newtimes.kz</div>
+      <div class="art-summary">МИИЦР РК и «Казахтелеком» договорились о сотрудничестве в рамках проекта ускоренной цифровизации Казахстана - GURK.KZ</div>
     </div>
     
   </div>
@@ -281,83 +127,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-11-04" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-04/svan-kto-stroit-tec-v-semee-i-ust-kamenogorske-vmesto-rossiyan/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-kto-stroit-tec-v-semee-i-ust-kamenogorske-vmesto-rossiyan" target="_blank">Кто строит ТЭЦ в Семее и Усть-Каменогорске вместо россиян</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 04.11.2026 09:47</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Кто строит ТЭЦ в Семее и Усть-Каменогорске вместо россиян</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-04" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-04/svan-dela-idut-ne-luchshim-obrazom-kogda-nakonec-zakonchat-stroit-tec-3-v-almaty/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-dela-idut-ne-luchshim-obrazom-kogda-nakonec-zakonchat-stroit-tec-3-v-almaty" target="_blank">Дела идут не лучшим образом: когда наконец закончат строить ТЭЦ-3 в Алматы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 04.11.2026 09:05</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Дела идут не лучшим образом: когда наконец закончат строить ТЭЦ-3 в Алматы</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-04" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-04/zhnb-glava-minenergo-schitaet-chto-dve-pervye-aes-v-kazahstane-postroyat-k-2035-godu/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-glava-minenergo-schitaet-chto-dve-pervye-aes-v-kazahstane-postroyat-k-2035-godu" target="_blank">Две первые АЭС в Казахстане построят к 2035 году</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 04.11.2026 08:02</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Две первые АЭС в Казахстане построят к 2035 году</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-04" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://vlast.kz/novosti/71489-sroki-zaversenia-modernizacii-almatinskoj-tec-3-perenesli-na-god.html" target="_blank">Сроки завершения модернизации алматинской ТЭЦ-3 перенесли на год</a></div>
+    <div class="article" data-date="2026-11-04" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://vlast.kz/english/71495-an-experts-view-on-kazakhstans-planned-data-center-valley.html" target="_blank">An Expert’s View on Kazakhstan&#39;s Planned Data Center Valley</a></div>
       <div class="art-meta">
         <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 04.11.2026 13:29</span>
+        <span class="date">📅 04.11.2026 16:57</span>
         
-        <span class="tag">Самрук-Энерго</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Сроки завершения модернизации алматинской ТЭЦ-3 перенесли на год</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-04" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQaVZPVjk5MUt2S3lHaHJkY3lrNEhDWUxPRnV3eTB2UDNkQUNWcDVobml5SW9KMDc5SGNwMDFrSmVRbWtuMk9SR2g2ZnlCaW40azl0WC1qa245aWZXX0s2WmlxLWh3N25EU0JRdXh5Z1F6Q3BVMV80MXFwVXRlenhqdUtDSWNKcEtyT0xyeEg0ZHJvZFVzb2ZVREJFOG9GWlhRVUNxa1B30gGrAUFVX3lxTE5jYTIyZnlnZkplRzR4VkVUZDN2ZWtGdldPNVJPRFhMVTBVU3VTdms3TkRORk1nUWtDWFZTd3d6XzJacDFKeFBMY1NDc25oWHgtWkNGbUxKM3hHV1lpYk43d2xQN3pRSVhTM0c5VE1LZklxNVZPR1pza1AwR3lNMkFQdC1YbEplODkyZjNOcnRRTU5iZmxWNkx2ZnlyR2FMQVRacmJMSnhaNG4wSQ?oc=5" target="_blank">Главу «Самрук-Энерго» уволили после срыва запуска ТЭЦ-3 в Алматы - Azattyq Ruhy</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 04.11.2026 08:04</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Главу «Самрук-Энерго» уволили после срыва запуска ТЭЦ-3 в Алматы - Azattyq Ruhy</div>
+      <div class="art-summary">An Expert’s View on Kazakhstan&#39;s Planned Data Center Valley</div>
     </div>
     
     <div class="article" data-date="2026-11-04" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxONVdfRnJDMVJMSVA3U2ZxZ3NhdW5NelJVcDJic05TWXFxMkQzSmFhemtkUVZweUprTnctbXFabWZoWHdWd1M2RlFCVC1adjEydjlXSlQzRkpTOWlkRloyVlhobWhMS2hocGt0NWl5cEdzTXNzTkM4cGJaZXpEV3AxaXVoNWRVRXJrd0F5b1czRGM?oc=5" target="_blank">КазМунайГаз оформит новые контракты на разведку - Kapital.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOYkJZbkZQYWw4OGhKTENJM0tjaVJTZFJhRTV6OFduV3M4SVdxZ1R6MFRUcU1rcXJBV3lNSXVTN2FoSncyVmZiOUNsbmhtNWZNbjJIT01oekoyTUZ4WGRHQllnLVRvWnN1R2lqbzcxN3NPR2p1Q2UyRlZXaVZMUWRxSkhKbTdKM0dFMUtmOFN3?oc=5" target="_blank">&#34;КазМунайГаз&#34; не раскрыл, сколько заработал на росте цен на нефть - Qumash.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 04.11.2026 11:20</span>
+        <span class="date">📅 04.11.2026 12:25</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КазМунайГаз оформит новые контракты на разведку - Kapital.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-05" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQRVBOa3ltTkRWdzVxZHBrUkc3MzIyNmNCNVRiV3hUOUtlTFd6VTBOV2ZFR3VmRF9UZ243WUNUQVpUZ0JUSUFHdnVCdFZkRzEwUVFId3V2NGNfLW0taHdLUVFNNGZVX0h3dU1sNTd2QUJPX3VpVjd4WDBxaXF5akszVkY2WkVyZkM0a0NEbmJnbGJwMUQyRUhYdVlCb0NMTWhVekFDS1VVVmkxS0xTVURZRk12cDhaWHRjaWJRTVhWUEc0U0ZN?oc=5" target="_blank">КТЖ отказывается от разрозненных IT-систем в пользу единого хранилища данных и ИИ-ассистентов - Profit.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.10.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ отказывается от разрозненных IT-систем в пользу единого хранилища данных и ИИ-ассистентов - Profit.kz</div>
+      <div class="art-summary">&#34;КазМунайГаз&#34; не раскрыл, сколько заработал на росте цен на нефть - Qumash.kz</div>
     </div>
     
   </div>
@@ -419,7 +210,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-05-27';
+  document.getElementById('date-from').value = '2026-11-04';
   document.getElementById('date-to').value   = '2026-11-04';
   applyFilters();
 }
