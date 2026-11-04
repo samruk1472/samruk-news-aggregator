@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 03.11.2026 21:19</div>
+  <div class="meta">6 источников · Обновлено: 04.11.2026 07:17</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">14</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">10</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">4</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-30">
+      <input type="date" id="date-from" value="2025-11-13">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-09-03">
+      <input type="date" id="date-to" value="2026-11-04">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -105,33 +115,170 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(10)</span></div>
     
-    <div class="article" data-date="2026-07-30" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOdEhHNHNNVjZodzRWdTQzc0lWbjM2RVF4MGFLOGlGNGl0am5kSExiRnNmQ001YkE2ZC10NG5kdDl6TVdaZXRUNW1WejUyc3Ixck5FNkxJTkZOc3VTdV9YLWRMX1VvZDdDRUFISm8ybG0tZEtCYkNLbXlnOW5DUFJ4M0tPMTVTM0tpTTB0V3hJdVJYaXVhbVJCRXB5MDhWOGRsR0tiZHllN0poZzBzdUtxNlZvVXUyeXQ2SkQ3cNIBuwFBVV95cUxNZWkwN081X2tjeXRqekEzSDRFQmZpalBYaFMwang5YjVJd1dlLWJXd0xMdDR0RlEyREVTZm0xUFVDa0p4NUF6WDhKTE8zV1JnV0Z1d0ZVUURHZXNreXUxUjUzTVR6N3RIck85aDByX1h1a0dCUmVnc2plM3RSWEh4Z2l2QnJHd0ZVWm5uWjc3VEVPWXZqMkNXd3lVcU80MW52TERRT05IcGZWSjZYMjhjeDh0cDBKMlJKMFRR?oc=5" target="_blank">Оптоволокно заменит устаревшие медные сети в Казахстане – Газинур Раимханов, директор по эксплуатации технического дивизиона филиала АО &#34;Казахтелеком&#34; - BES.media</a></div>
+    <div class="article" data-date="2026-11-04" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBjMWg0SFFMeThuU1lZbWVPUk44M2ZXaXpaZ1JVS255eXFteG1uY09oRXNwc19tMEd0OHI0djVPN0d4eDlrVjRHWm93?oc=5" target="_blank">Бектенов потребовал жесткого контроля над проектами &#34;Самрук-Казына&#34; - Ак Жайык</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 30.07.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 04.11.2026 06:18</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Оптоволокно заменит устаревшие медные сети в Казахстане – Газинур Раимханов, директор по эксплуатации технического дивизиона филиала АО &#34;Казахтелеком&#34; - BES.media</div>
+      <div class="art-summary">Бектенов потребовал жесткого контроля над проектами &#34;Самрук-Казына&#34; - Ак Жайык</div>
     </div>
     
-    <div class="article" data-date="2026-09-03" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPZndIYjBYVnFxSGRFS1htcVhWaUdCSUZqdzh4ckVIQW9TbGwydHVDQ1gwaDQ2aThuSXpvekd6b3lPMTN3X0RGMGVqSEtyVmZHSVR4TVlpSkxYUTZMaS1VVWRHNVZ3UkxDRnRMbTRLN2xwU0sxaS1lNktsLU94VTJrZnNHTWpLZXRxTWIwUUd6VjJWOW4tYWdRQUpwQkYtUUw0X3lUYmZZdkhZYUw4VEZObWdjYWx2Zw?oc=5" target="_blank">Казахтелеком запустил новые станции в селах и обеспечил интернетом тысячи людей - Qumash.kz</a></div>
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOejBLeVJoSmFfT3Z4Ymc2RHg4ejJGNmVhcHRRQ2dYZlczSjY1eTJ3dkhTNlpFdUdlWGplNVZUeDVua1hZRTBqcVJLWkVDSF9uQjFxQUZ6dGF5UldWai1oN19fVkdwMzE2QVdNZVpVZWYzcldRekMzOVdnZURuQnk2WEFTRXQtUzNvZlBJRHVpaXBjM0dmRkNiaUppUHVVeHUwaW52SDZR?oc=5" target="_blank">Руководителя «Самрук-Энерго» сняли с должности после критики Токаева - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.10.2026 11:28</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Руководителя «Самрук-Энерго» сняли с должности после критики Токаева - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-04" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxQVTdBeS15dm9TUjVCa0pBdzBUaGUyOUJ5dV9zLUFKaEhfQkV6ODZDOUdkZG5LTmt2SkR4b2VpTWZHcy1FcXRCOUNFNHl5TDBaNnNNRnVoaFVfRHc2dUJCcFdYMkxOMTkwYUYtUEt2VWhsX25meVhSS1A2T1R3V19tbkV5b1daUVdGZFlRc1VJeHFYcUtiT24xblRuUWh3T2tFZzFVSWpTQ2paNDBwQVdqNEVrRW9BMjJoYjZoaExzZw?oc=5" target="_blank">Бектенов раскритиковал руководство «Самрук-Казына» за срыв сроков по инвестпроектам - National Business</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 04.11.2026 06:56</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Бектенов раскритиковал руководство «Самрук-Казына» за срыв сроков по инвестпроектам - National Business</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-28" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxOa1JzcDRxczl0NmNLRmZOU0JGazE3NUNLTEhxdl9Va09va1NPN0ZsY2phaThLQmdWQURLMGl0cEs4WHBGVFdka2tjcmdia0Uwb25zZkpKSXpaRFNCbk9lSTZaRWZRSnVvbWliQ1NoNy1sQjE5TzNmemhhcTk4YjlWMHBKZ0VhUDVoanhMV2RnUEJab0FaSVFnUjZvY3VfY3hsckQ1dVFCU19mZU9mZVNKU29paHJtalNENDJIYi1oNEhHQQ?oc=5" target="_blank">Кайрат Максутов освобожден от должности председателя правления «Самрук-Энерго» - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 28.10.2026 11:12</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Кайрат Максутов освобожден от должности председателя правления «Самрук-Энерго» - Kapital.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-28" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQWTBMUHRYLWdMbHNuM2ZDcm1UV2Y2WXREbkQ3ODIwOVVxWnpiMTNQclQxN05mRm9VbUxIa0d3MktSdTZHdU5EVUs3WTRTS2FfRFM0VmU1T1pud3NQWkU0RDRrczNfRDhiS2ZjUXhVa0JpcW9yNmFPSHdYdW52YzZKUVRxeFA5QTBPdzFiRGk4SVBkZjQ?oc=5" target="_blank">«КазМунайГаз» выпустил Dim Sum облигации на 3,5 млрд юаней - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 28.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» выпустил Dim Sum облигации на 3,5 млрд юаней - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-04" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVEgwU1BvU1FDNVYtNlBfVzl3UjllYzJWRzQ3emlLN2QyTVhBaXFrZ21fbDFVc0RoTUc5TzBTSU5BNWYxNWRyWTY2S3JrNDJFb01KRjh0dW5kcmVPeXZtNkxDVmUzdTRzV19JWUd3c1JsWXc0aVRVNm5sWWNWVUlOUFF0eGtJLVVlY0Q0ZEtpdlZad1ZMaktTcGhTTUcxcGwwcGFwV2ZkY28?oc=5" target="_blank">«Казатомпром» увеличил производство урана на 10% за девять месяцев 2026 года - Oninvest</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 04.11.2026 03:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» увеличил производство урана на 10% за девять месяцев 2026 года - Oninvest</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-04" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5sbUFLcEZJUGtmeUFiQWRQLUVSMEQzZzNDaVBxZU51NnZFSl9xVWMzSEM2SG8xMVRtSkxPNC1jS01JV3daejhZY3p4dGRNZ0FoeHhIeW9SWVc1alBzVk5jeGRUMXN6dTdvOXc?oc=5" target="_blank">«Казатомпром» увеличил производство урана на 10% за девять месяцев 2026 года - TradingView</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 04.11.2026 03:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» увеличил производство урана на 10% за девять месяцев 2026 года - TradingView</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-25" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NcFFBRmJLRmtiTUw2YmVLODlYTlVVTUZJTVktM20zZ0dCdEFNS2haTktPb2dtZE5HWjhrMmJPamlLN1RIN0FjZDR0Y0dsb0Z1OVZEOFRQS1VqX2FVMHlOUA?oc=5" target="_blank">«Казатомпром» заявил об окончании эпохи «дешевого» урана на фоне ускорения спроса - Атомная энергия 2.0</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 25.08.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» заявил об окончании эпохи «дешевого» урана на фоне ускорения спроса - Атомная энергия 2.0</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-04" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRVJjeUI4SHdxTFNYTWJETWpCaXc0NTNTY215Nk90Yko2TkNKUk5WN2NRdWg4R1ExeVJ4XzNXckctU084TU04RDB4N1A1bl9tSGs4TDNoUV91UnFJRTVTRlp0aXpwOTExU0kxUThSVzBOMS1xamFaTktYbW9WSTFyTVBEWVZVQmY1LS1fOXQzVmRreGNzVGdhT3BsNXhKZkdrdUxGR2VUY0hmYzg?oc=5" target="_blank">Семейское и Атырауское отделения КТЖ проверили на готовность к зиме - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 04.11.2026 05:26</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Семейское и Атырауское отделения КТЖ проверили на готовность к зиме - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2025-11-13" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOVWt3cVE1aEdFQU5OcUR2Mm1XQjV3enY5R0FaQ3dxX1lmTDhPeFl2cVc1QVd2bjAxNTFuTFpOVlRFMDdVZmQwU05lT2V3Qm92V1NsZ3NKaWVCdk9mdWd1Mk5ZQk5fWEZPMXlqOGRIMDR6Y0U2cEdfY2lvMnc4TkRId0g4d3JzalMzUU5IZFJYSUpoWDV6NzRrbE1CMTZRWXpCVGcwaFpnYXNtc3VPaWhfemg5NUY?oc=5" target="_blank">«Топ-менеджеры получают по 10 окладов»: «Казахтелеком» ответил на жалобу работников в Актау - Orda.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 03.09.2026 07:00</span>
+        <span class="date">📅 13.11.2025 08:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Казахтелеком запустил новые станции в селах и обеспечил интернетом тысячи людей - Qumash.kz</div>
+      <div class="art-summary">«Топ-менеджеры получают по 10 окладов»: «Казахтелеком» ответил на жалобу работников в Актау - Orda.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    
+    <div class="article" data-date="2026-11-04" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/11/kazakhstan-signs-new-uranium-supply-contracts-with-india-and-china/" target="_blank">Kazakhstan Signs New Uranium Supply Contracts With India and China</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 04.11.2026 07:12</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Kazakhstan Signs New Uranium Supply Contracts With India and China</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-04" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/11/kazakhstan-to-produce-494-medicines-under-862-million-investment-plan/" target="_blank">Kazakhstan to Produce 494 Medicines Under $ 862 Million Investment Plan</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 04.11.2026 04:59</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Kazakhstan to Produce 494 Medicines Under $ 862 Million Investment Plan</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-22" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE9UUlVxeVJ4cER5QWhtS2hMRi1tVGVtVWU2Z2tVQUFSNG9pdDhFWUFyQ0RfX25hRVQ2cjhYcWpwRzQwckxuNGhmdDlsb3dhUQ?oc=5" target="_blank">АО «НК «КазМунайГаз» - Прибыль мсфо 6 мес 2026г: 903,773 млрд тенге = $1,858 млрд (+80% г/г) - Smart-Lab</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 22.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">АО «НК «КазМунайГаз» - Прибыль мсфо 6 мес 2026г: 903,773 млрд тенге = $1,858 млрд (+80% г/г) - Smart-Lab</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-03" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOMFlTVUF5THRvSnZwMFVyR20xSUtVV1l5UFFJX1RPVjU0QUJLZ2p5cGdxZE04bmE4UVJES0hwOFV5cHpOUjk3dmtqRmVpdEQ4MXMyR3Y0WVcyRFR2N0dhMWZ2cEZBdi1GX2xxS3NnMTZIblhGamNPZDFqanljN0d0VW80MmM2bUhCV2hob3o1OVd1aTFVeWc?oc=5" target="_blank">«Казатомпром» заключил контракты с компаниями Индии и Китая - Silk Way TV</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 03.11.2026 17:52</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» заключил контракты с компаниями Индии и Китая - Silk Way TV</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -190,8 +337,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-30';
-  document.getElementById('date-to').value   = '2026-09-03';
+  document.getElementById('date-from').value = '2025-11-13';
+  document.getElementById('date-to').value   = '2026-11-04';
   applyFilters();
 }
 
