@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">7 источников · Обновлено: 05.11.2026 07:45</div>
+  <div class="meta">4 источников · Обновлено: 05.11.2026 11:45</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">14</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">13</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2018-05-21">
+      <input type="date" id="date-from" value="2026-10-02">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-05">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,13 +87,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -110,173 +108,129 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-11-05" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-05/devy-bilety-na-dolgozhdannye-shveiczarskie-poezda-stadler-postupili-v-prodazhu/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-bilety-na-dolgozhdannye-shveiczarskie-poezda-stadler-postupili-v-prodazhu" target="_blank">Билеты на долгожданные швейцарские вагоны Stadler поступили в продажу</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 05.11.2026 05:17</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Билеты на долгожданные швейцарские вагоны Stadler поступили в продажу</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(13)</span></div>
-    
-    <div class="article" data-date="2026-11-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-05/devy-bolshe-chem-na-sutku-zaderzhali-charterniy-reys-air-astana-iz-kitaya-v-astanu/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-bolshe-chem-na-sutku-zaderzhali-charterniy-reys-air-astana-iz-kitaya-v-astanu" target="_blank">Больше чем на сутки задержали чартерный рейс Air Astana из Китая в Астану</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 05.11.2026 06:08</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Больше чем на сутки задержали чартерный рейс Air Astana из Китая в Астану</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-05" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://vlast.kz/novosti/71498-poezda-stadler-zapustat-iz-astany-so-sleduusej-nedeli.html" target="_blank">Поезда Stadler запустят из Астаны со следующей недели</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 05.11.2026 10:28</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Поезда Stadler запустят из Астаны со следующей недели</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-05" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBVSGkyMFhsbGlVcjg2b0FSbTZxTGRWVDJJSE9uckRMa2VtMTRqRWJVeFNxQVhEc3g5Qjd0TkFnSTItclgxLTNUQkthRlFFR0FaRlVCbkVvQlV5OHZGWlE?oc=5" target="_blank">После критики Главы государства в «Самрук-Казына» обсудили сроки открытия объектов - Bestnews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 05.11.2026 04:10</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">После критики Главы государства в «Самрук-Казына» обсудили сроки открытия объектов - Bestnews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-05" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQdklabVk4Rm5nUGswZS0yZDZBaHNiUTdGbGNBWWxOc2xxVEhYbEZzVEM5elZHQlpxZXNldkdEYmVvQmV1UmE3ZV9ZcWNWalNvVVh2eDh4RVotczJnaExweU5IRURuSDUtb3lPUzJOQTdmUXNqS2NXeWdtSHFHSlJFMjBDN2UtQWFCNS1PWC0walJmYTFBUHpCbkNTVmVPRU1abTRkTnY3MUVSVURRRkprTXB3?oc=5" target="_blank">«КазМунайГаз» и SOCAR обсудили наращивание транзита казахстанской нефти через Азербайджан - Каспийский вестник</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 05.11.2026 06:47</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» и SOCAR обсудили наращивание транзита казахстанской нефти через Азербайджан - Каспийский вестник</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNMHVXS2xuVkhzTmxzZjk5amhRVU1SMWg3Sk1NeTJVZVFMejZESUF5ZV9IRmQzUmh5cmFfSXFXYXFITW9QS2tjc0s2aml6ckg1cEdYazd5Nmh3QmhMSjFydWxNNmpoalpaZnNBRVVZbUNaTXNCWXRteHZOREhEa3EtNlpNWkNxbVh0cHVxc3hkdS10Nm1Xc0ppUElHQkpZNm9YSDV0TU1KNklQdXJxVExOOENHN1REQTZTRlE?oc=5" target="_blank">Больше чем на сутки задержали чартерный рейс Air Astana из Китая в Астану - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.11.2026 06:11</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Больше чем на сутки задержали чартерный рейс Air Astana из Китая в Астану - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBRblpFTFpnRWg2cnNjeE9GM2xsYXp1LW4zYWV0OWRRVXc3WEJYMTNhWkhzYXh3M0ZaMDRwWG5Yd3dZVjdkT2dFOUR3?oc=5" target="_blank">Рейс Air Astana из Китая застрял на 27 часов из-за технической неполадки - Ак Жайык</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.11.2026 05:26</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Рейс Air Astana из Китая застрял на 27 часов из-за технической неполадки - Ак Жайык</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOaTN2cVNla3RMbTZqVzZlbldoM19oUExIZHRkMG9qVDQ2RmVua2RCMWprbG9OS0lqa0hRTUtuX1hKMm9saUV1aUVFUXpUVlFVeVlyQmVwdjE4dEMyRzFtaDFiZGJjT2ZBQXYyRlQySTAtbEhEelRRTDhySVdRLXZHSkdqVU5kaFQyTDQ3Q2x0dDFSU3R2MlJ4Nl9pZEt1WTA?oc=5" target="_blank">Air Astana объяснила задержку рейса Санья-Астана на 27 часов - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.11.2026 05:29</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana объяснила задержку рейса Санья-Астана на 27 часов - NUR.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPS0twel85aGM3NHZTblNMZWswc2Nra2V2ekZyNzc0YzRXVk16eFJURUxNZ2J4WHJjNF9NbW9qa0FWbTJEUzNmWlpLTUpENVVTMy1xZWZNRmE2dGtZeXpPXzd6azg0WFFFNmdBWV84U05UemtsMUNRVnprWi1VNHBrSkp6QlZnWFd1YUZiTFM0Y2hDazNtd0RHNjNSbHA2a2dLalJTaWpwSjgzbllfc2Y4RFZB0gG3AUFVX3lxTE5VbGdMc0RvUndsMlFtckdYYnlZdmtZX2xiOFJRSTRYQk8tZkV0SFozN21zOUZqNTN1QUdheTdyX29RcFJIVWVzX1BUdFBFTmZVWDk3MndVYi1lWFluMEwxLVJmRjBNWTZzRTZNeDdKaWltOW0xQ0RxMHBTUUZWNjVsdTAyNzdMYXpjT3c1Szd4bGV3bFd5alFRQ1c0S2RrWEs0Qnp2OWlGSmRITzNPTXA0dURLbWJ2cw?oc=5" target="_blank">Пассажиры рейса Air Astana с детьми ждали вылета из Хайнаня 27 часов - Azattyq Ruhy</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.11.2026 07:12</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Пассажиры рейса Air Astana с детьми ждали вылета из Хайнаня 27 часов - Azattyq Ruhy</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-05" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYjg0Q01DRTJiUW44QzVWa2R3eElHTXVUWEtmb2FnVWZ1YTMtZ1ZqRWZlT19DRm92LU54QW0tVk95YkFZUEdzMUFFR3VBYVIweDd6MzQxS0lReXBPVWxYV0Zkd0VlOUozTWxFQlZxS0ZUSWt6eDN6dHluS2ZkR0ZDUUpMVTFlcDRnTGlNcTRLODNGb3k3RXNoRkJnNlo2TWllNkN0WjJxY3h1UdIBrgFBVV95cUxOZzhJUTh0UHRKU3dQSVNwV3dTSHlzRlh6am9fWTlSOS1oRmpuZl9FX19ZaERpR3gtdGVZYlNodncxbC1DUXRfbHRzdzJiNXV1V2hILW0yZW5VbEtSNEc3clZYMWszZ2tLUHo0eXotd1lDcjRQTTVmYVBoakpuWWZYRGI1a0Q3YjdvdVBXakpiRy11Z1JpV3psRUJoX1VMaS1hM1Y0WGRlZlFuZVZIZHc?oc=5" target="_blank">Казахстанцы застряли на Хайнане из-за проблем с самолётом Air Astana - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.11.2026 05:32</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Казахстанцы застряли на Хайнане из-за проблем с самолётом Air Astana - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPU1VaRHNwd1YydnBzdThQYlg2MU5sV0tfRkZhS29BTE5aV0dBSnJQN2NXcWphQnVBV0dPTVUxbWdOV2owa1RlbndPX2NoZ09FYXgwX0hrLTVTOVdtR2tnMzl5a0xEWjBPc3VBUDY5cjFsRGo0dkhkTERFazRqSFc3NFRZTEdsU1FZZXYzVXdUb3RIaWxPb1VqUHhuOGhra1M1LUw5MGNCbC1YRjhq?oc=5" target="_blank">Прямые рейсы в США и Японию должны стать приоритетом Air Astana — Токаев - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 01.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Прямые рейсы в США и Японию должны стать приоритетом Air Astana — Токаев - Forbes.kz</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
     
     <div class="article" data-date="2026-11-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTFA1Y203bEoza29NRFpVNkh3VUdScHBQa0tYVFlYTnhLOHRVTUdUWHVUSk9nWEMwRHN3emp3ZEhWRkI3NnVUSVlUazRwQWJMekhSZkEwRjFMU3hHNUYwUTZWY1ln?oc=5" target="_blank">В КТЖ показали новые вагоны Stadler и назвали первые маршруты - Bestnews.kz</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-05/svan-kazahstanskie-kompanii-stoimostyu-bolee-6-trln-tenge-vyjdut-na-birzhu-cherez-ipo/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-kazahstanskie-kompanii-stoimostyu-bolee-6-trln-tenge-vyjdut-na-birzhu-cherez-ipo" target="_blank">Казахстанские компании стоимостью 6 трлн теңге готовят к IPO</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.11.2026 06:20</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 05.11.2026 10:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">В КТЖ показали новые вагоны Stadler и назвали первые маршруты - Bestnews.kz</div>
+      <div class="art-summary">Казахстанские компании стоимостью 6 трлн теңге готовят к IPO</div>
     </div>
     
-    <div class="article" data-date="2026-11-05" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxQYzJXN1Q0b1NwUFUxYnlIb0VMRDJrQlo1eWdjSEN3cjhVeGZ6WkNTejhWOEVxWkpKTDhyNXpwY0hxM3hHNDV3U09peVQ1cGl5TkxOYjN1M1E1NmRpV2Y1T0w5aHMxLW9ZYUZtVnBsWVJWMGJJMEI5aU9xOWV0QVp5RFNBODZGNl91d0NzeDlkdTB6a3pjdS12Rk80MmYzV1pmWDVUOXQxekhBQ3ltdFhyaTU4clpWYlRyMENlbG1CMjRyelpjR2tfXzJqWUJYNzhXTERjVzI0ekw2eF9NX29kYnFB?oc=5" target="_blank">МИИЦР РК и «Казахтелеком» договорились о сотрудничестве в рамках проекта ускоренной цифровизации Казахстана - Кызылординские Вести</a></div>
+    <div class="article" data-date="2026-11-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-05/devy-kazahstanczy-smogut-chashhe-letat-v-uzbekistan/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-kazahstanczy-smogut-chashhe-letat-v-uzbekistan" target="_blank">Казахстанцы смогут чаще летать в Узбекистан</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 05.11.2026 04:28</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 05.11.2026 08:02</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">МИИЦР РК и «Казахтелеком» договорились о сотрудничестве в рамках проекта ускоренной цифровизации Казахстана - Кызылординские Вести</div>
+      <div class="art-summary">Казахстанцы смогут чаще летать в Узбекистан</div>
     </div>
     
-    <div class="article" data-date="2018-05-21" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQeXo5bjRDRldDUFljT2RQc1huaDdicVVRekJtQmUyV3B0Wk52bHIwZjFvclBGN0JNNHlfaGFMemotM2FCSUQ4clNRZUhkYmMwZm1IbmdvSlE2bXhEWFRxaU53TU43NmRXZDkwYWVCZW5femxxUG5EWWN0WkNuUVdzT3p4c0Jqd3U5Nmhaek9PQy1LWDVsTjhOZFVuTm02MzRrYzI5WGowTmxHWHpmVGlYbjVn?oc=5" target="_blank">На какие деньги &#34;Казахтелеком&#34; будет покупать Kcell и как это изменит рынок связи? - Informburo.kz</a></div>
+    <div class="article" data-date="2026-11-05" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/novosti/71506-do-pati-krupnyh-castnyh-kompanij-stoimostu-66-trln-tenge-podgovorat-k-ipo.html" target="_blank">До пяти крупных частных компаний стоимостью 6,6 трлн тенге подговорят к IPO</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 21.05.2018 07:00</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 05.11.2026 15:52</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">На какие деньги &#34;Казахтелеком&#34; будет покупать Kcell и как это изменит рынок связи? - Informburo.kz</div>
+      <div class="art-summary">До пяти крупных частных компаний стоимостью 6,6 трлн тенге подговорят к IPO</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-05" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi-AFBVV95cUxPRHJnNURHcDVqTGlTT1VfdGlLOVhaQ2dELU0yLXVHTFhUNGVRRS1naFc5Zk9NS3lQWDRIRjhnd0FXaUJSVkdyRVFMcnZ6V0ktX3ZGZlZCYUV3eFdVRERIRmtJNVpDaEdZZFBTRDRuSnc2ZnJGd2l1N1RaYW9VMGd5VTl2SFlyRkhwdUJ0Q1RzV080anNJTlk5SFNJT1Y1RGwzRGRlbTkxYVZTR2VFcmF2TG9aTnZuSXA4anF3X0lOUWxsZkZBdmg0UE5ndUoteEd4b0U5YjMyQXZEbWc4VTFJQWVVeUVsYlVSNnotX3RvSDJvNTc2ek8ybA?oc=5" target="_blank">Олжас Бектенов провел совещание по развитию электроэнергетической отрасли страны: рассмотрены проекты Фонда «Самрук-Казына» - Официальный информационный ресурс Премьер-министра Республики Казахстан - PrimeMinister.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 05.11.2026 08:49</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Олжас Бектенов провел совещание по развитию электроэнергетической отрасли страны: рассмотрены проекты Фонда «Самрук-Казына» - Официальный информационный ресурс Премьер-министра Республики Казахстан - </div>
+    </div>
+    
+    <div class="article" data-date="2026-11-05" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPREpJZUNCWHZTNmptMjdxTFRtTFJmX2FiaWNtR0JoUHhkS2QzVlgtNFRPeU1hajg4ZVVoVDBDdWQ3b0M3T1hvMEUzaWRMZFpYZjU2aDBmOHZ6STFxQWV2aTVXVFd0Rk5zMmxYeUdmWlFNT3dwbVM4WFByY2NIbjlzN3V5djJGT2F2NGxxSTVJNmFOZw?oc=5" target="_blank">Новые вагоны, розетки и USB-C: что ждёт пассажиров КТЖ - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 05.11.2026 08:14</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Новые вагоны, розетки и USB-C: что ждёт пассажиров КТЖ - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-05" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYTV0U09fWkQ1OGlLd3IyWEpxc3MwRUJhMTFmTWlSZk52WkJWNThfMVE4THJ6ZFFra1dPeTlMdk9xR3J4MjZ4YnZ3Q2J5R3VTaTdYd045allFTi1VLUlpRlExdXExRHAyX3ZYc1o2NktjVklYb2FIV1BLQmw5RjZjZUtpOGk4aU9nVGhqdFlhNWxhbFJWeElqd1lIbWVvRHZQNG1sVmpVR3h0MXZDMzJNTkxrM204SGpm0gG-AUFVX3lxTE5YZ2kwYm1Fck9iQkM1ZXc2dXhlcWJZa3U0eGFud3NOdTY3Wjc4S193UjRvdi1tS3AtTTdaVElpTGw4dkQ4R1lrSVNVdm4yZnhOUGoweWF4am1sdFFPeHZlRzhMNFV5Y3ZhU2dLb2NpY0xGbUFHMUVGU3RnQl9EWF9TdFlvLVh5aTJRWFVuR05sbDRTQjIzbU1WczZJbnlhcndFdXdQNXRYWDR6eDBHNWhIdTJtdmwtQkpCY1U0cWc?oc=5" target="_blank">58 мест в плацкарте, Wi-Fi и розетки: какими будут новые вагоны КТЖ от Stadler - DigitalBusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 05.11.2026 09:30</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">58 мест в плацкарте, Wi-Fi и розетки: какими будут новые вагоны КТЖ от Stadler - DigitalBusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-05" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMjVWTGMzcndjMno1dV82N3VUUEVmSmIxZzNYajBucHpIOUNvU09tM2I3UGxhRnR2MFF3NXVtWWVSRjJ4OUd0eUQ3ZHRSdklLZHNQTmVUTUpkWXVGbEJSV3c0SW1SRWFEVWFoYWJhUmRTQktMZjBfZkg4UEYwTmktRHE3Y29xZGpoeWI40gGQAUFVX3lxTE5JYVRZY1QzMXlKRFNfUUZhSENsczM4WUtNVG9xUmJaUWpiS3lCRnppV3plcXVsWXdZNkdEQWN0eFpQdGRwSzNrS0o3cDBwM3BqVU1kLUw2bms1MGtGQmtDUzdFUGV6a0pCT1UzRU5FdzBKTVNRTjdTSEh6VjlPVjU1T3BOU0ZpTTRSendVanBqXw?oc=5" target="_blank">Выплаты руководству КТЖ превысили миллиард тенге за год - Malim.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 05.11.2026 10:40</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Выплаты руководству КТЖ превысили миллиард тенге за год - Malim.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-06" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNOE1BRkQ5dlN6NW9Bd1FoRjNGZmNrSWNxWDNQeHN2bGV6U2U5TGxRMmQ3R29CdzA0YkJGU3JmRmlUUl8xSDNnWF8tNTVuNmdDYnJTT016eWY4YkJFZVlkVl9oSjNuYjBHWUxWV1Vmb1poeFl5RUZiQlVpSXh4VkZTOVdST2dVQQ?oc=5" target="_blank">Еще 18 локомотивов пополнили парк КТЖ - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 06.10.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Еще 18 локомотивов пополнили парк КТЖ - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-11-05" data-co="Самрук-Энерго" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-05/zhnb-kazahstanskaya-ges-vyplatit-akczioneram-bolee-11-mlrd-tengge-za-polgoda-raboty/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kazahstanskaya-ges-vyplatit-akczioneram-bolee-11-mlrd-tengge-za-polgoda-raboty" target="_blank">Одна из крупнейших ГЭС в Казахстане выплатит владельцу более 11 млрд теңге</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 05.11.2026 09:54</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Одна из крупнейших ГЭС в Казахстане выплатит владельцу более 11 млрд теңге</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-02" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPUEZEUXRONWxDMkpRbW50MkhvOTVxSEJ6Yl9ZaGhGS1ctdTZuMjZTR0ZSVTAxYlh2WXBJeWNHWXozc1F1cTczNUc4Rk5LWG16VUphR3BKLVFoTm94dVhVR2dYT3JscGh3cTBhQXdJb1g2Q3h1UjE4S3JuVG9aUXQ0dXJHVDdua0ZmRjFnMkRmeHZFN0dENkp6NGtlQkE2Z3Iy0gGiAUFVX3lxTE84TFJhdk1fSTEzODdMZXdTall3SDdscHRiamxYcm16R2w0SnNhRjZDaVFNM0JieG9TZkllbjRkbjhNRnMzaEljenBjY3l4M2tPTW04aGd0TG5CSll6Z3ktaU1VWVp3OFZ4a29wWjFBal9zN0JQTVFSa05ZVDZjTllhQnphNHNMUWdXWi1WNFYtYWZneHVJUWJOSEpnTFlKN3BOQQ?oc=5" target="_blank">1,45 млн тонн зерна: КТЖ установило рекорд по погрузке в сентябре - Казинформ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 02.10.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">1,45 млн тонн зерна: КТЖ установило рекорд по погрузке в сентябре - Казинформ</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -335,7 +289,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2018-05-21';
+  document.getElementById('date-from').value = '2026-10-02';
   document.getElementById('date-to').value   = '2026-11-05';
   applyFilters();
 }
