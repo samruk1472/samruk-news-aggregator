@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 05.11.2026 17:51</div>
+  <div class="meta">1 источников · Обновлено: 05.11.2026 20:29</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-07">
+      <input type="date" id="date-from" value="2026-11-05">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-05">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,10 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
@@ -106,85 +102,41 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-11-05" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/court-ordered-two-large-companies-to-pay-a-kazakhstani-woman-274677/" target="_blank">Court ordered two large companies to pay a Kazakhstani woman 177 thousand tenge per month until retirement</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Tengrinews (EN)</span>
-        <span class="date">📅 05.11.2026 22:18</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Court ordered two large companies to pay a Kazakhstani woman 177 thousand tenge per month until retirement</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBuT2JIcFRaamQ3MmRvcENIa3l1bFZ5cXZJSnhuSjZwN2F4VmhSNDhPTUQyTmlaVVgyaGF5S0tMaXB4OFJqdUV4WXIxU2dyWjhhbnfSAUtBVV95cUxOT09qbks2MllzX1BRcjhsWUJpZzJjS2tsVlA1WXVUVEhYWGE5THVEVTZfOUFieE9vVU56RzI1M1F6ZzVPRDY4QXZnTXc?oc=5" target="_blank">&#34;КазМунайГаз&#34; пока не видит альтернативы КТК для транспортировки нефти - Интерфакс</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 07.08.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; пока не видит альтернативы КТК для транспортировки нефти - Интерфакс</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
-    
-    <div class="article" data-date="2026-08-07" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTFBkZ3Ewd1VXalFKNEJHTmVnSjRKX2hMNGlCOFJkRWl1VkZMRE1JQTc1SWYwLUZCNVdvQVczamxtUmVaWEw0MS1FNkxwX215Z9IBS0FVX3lxTFBxWUV6QWRQUWpLWHM1cWxRYUFWXzVjZjZRTlB2ZHdNLS14Z2J2eWNZYnNQRWE3VUw4WlNTdS1iWFp5Tkl0MzhLcnotUQ?oc=5" target="_blank">&#34;КазМунайГаз&#34; планирует увеличить экспорт нефти по БТД в 2026 г. на 31% - Интерфакс</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 07.08.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; планирует увеличить экспорт нефти по БТД в 2026 г. на 31% - Интерфакс</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxPdTU5X3BIc1B3Y1ZXR2tBekFFQi1uVzZ4cF9VZnhWT282VGI1cUtiNEZ6OXFLRXIwdlhFa0FlVGdtSHV5aHRrT0NLZ3NMVl82c0ZoMWpXOVpsOTNabHZKa0J1bm1BazZrdmk0Tzl6Um53ZndLNDBWTGw2WXpRYmJRNXBvNUpCakdhQ0hnZFJTeVNYUDljTmd1bm91d2dTeC1TSWdyZGZPSE5QclBhMkxPX1hmcDhNdGxacEJ6SNIByAFBVV95cUxNNUlGaWV4dWxTb2FHSzlKMkI1dk4zS0VUbDR3TFQwTjVPVVZ2SldJQ3ktamFxNEhWdFVabTZtNTEySmtJanV2TVNKSmVBY2g1VHpQbTFQc3JmdzNUY05WR0JNZnVwUG1EcHAtZml3bF9UQ3JqTWc0UUFjRHhwUkVLdHBEVk9MdjllQTBvbmlYbEY1TEYxcEE4OXE2NUlWS2hmOUc1eWdJU3FYRTJFNEJtX0djVExoWHNEMzAzNkFpOTNHYzNYMnY4Sw?oc=5" target="_blank">Железные дороги Казахстана обновили на 572 километра: КТЖ завершила годовой план ремонта - BAQ.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.11.2026 15:57</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Железные дороги Казахстана обновили на 572 километра: КТЖ завершила годовой план ремонта - BAQ.KZ</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
     <div class="article" data-date="2026-11-05" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVDRKbzZONFU0QU93NVI2eEhUYk90azN0SkJKVzFZWEJYa0tCdmlsc1JCeDdaS2d6b1UzeHdVSlF4ZXQ5ZjFDOHNjR3UwN09hb3hyUFQ2aHlTbG90VHhsSl93Rk9kcEtwT0lETFdfdzNHR2UwSmNrT0JyMGllTl9sbEpjZDVza2xfTHREZzZkZjgwMG1MOTFjZDZmSFh5RFNoVEpQTTY2dUdfT1pRSU8yT2doY0ItaDdGenJ5N09PbmtsR05WMWZMT2xLYWRkM01zYTJ1MzluUHlMOUxQ?oc=5" target="_blank">МИИЦР РК и «Казахтелеком» договорились о сотрудничестве в рамках проекта ускоренной цифровизации Казахстана - Регистр ТВ Казахстан</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRGNzalpZakhjMEJfRHUwYlRvem0wcjNCZ3NRc0o1ZzhieDJNc2ZoTW8ydGxDcjlvRy1zM2pXVGtpR1M5SHpFT2xvR0JhVHJEZTI2WkFHXzdsZHJlcHpFakE1SWZfMFdiWXBLclBqXzhlQ3F1UWpBNXc1YWNncVh3ZXJLS1dfRnJwWVJHVTR2NkZBbGhaQ3JaVmhKT2lSSUhGOWlrOGtKd2VDMEdjTWZ5UFE0Y0Vib1Rm?oc=5" target="_blank">Жамбылский суд обязал «Казпочту» и «Казахтелеком» платить женщине до пенсии - Newtimes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 05.11.2026 16:56</span>
+        <span class="date">📅 05.11.2026 14:37</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">МИИЦР РК и «Казахтелеком» договорились о сотрудничестве в рамках проекта ускоренной цифровизации Казахстана - Регистр ТВ Казахстан</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-05" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNNGpPMHFTRHFEX3I4OThyYTdDMGN0NGtVdU1WcFEwLW55V2xqbVNjQmxSbEVWWlVFcFB2Mjk0QzB4NDdqZ0dmV2FYOXh1SnQ5bmV1aGpLczRzbS1QMG5xN2tYc2lXNndNLUdQWG9rVUhKbnJCcGdPRHpFWFZlWWo4TFFvc2VXbjdDaTVJWEViSHlaTHFZZms4RE8taVNiY1p1bVZ1UkU3X18tam9HWnUyeGpHZlPSAboBQVVfeXFMUHJtTElUQTJPOHJOQk5NZmNld2xvUUVXZ20yTFdOWnZPRHRVVmFrRlI1TjZETEctNTdnWXlpcWhTQkw0RTVEMzl4a09WS0dfYWt3WmlSZXRCWkJmby1VTHM2aVo1Q2FRaVRscjZ4LUxTYV91VGNqWnlKZVlXWkNpaDVIUFUwaW10R0lGTmdpUTQ4MW9aTVF3RUM2eDZMRUNSYVdtenBvc2Q3Uy00c3ZuUHZXakJvWmlsUUV3?oc=5" target="_blank">Крыша рухнула на женщину: &#34;Казпочту&#34; и &#34;Казахтелеком&#34; обязали платить ей до пенсии - Liter.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 05.11.2026 16:56</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Крыша рухнула на женщину: &#34;Казпочту&#34; и &#34;Казахтелеком&#34; обязали платить ей до пенсии - Liter.kz</div>
+      <div class="art-summary">Жамбылский суд обязал «Казпочту» и «Казахтелеком» платить женщине до пенсии - Newtimes.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-11-05" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMHR1LWlEU3hLVGp1QjQwaE5pak1xcFRPcExXUEtqWklTUFNEZ0NGMU9hdHlRTjNOZjdlZExrbmdhdFNudTY2TlpMdWkzM1RRYzY1QVNtRmxTQk1jTC1MVWJkNkhTanhILVVtdkY4U3BKYklRZXU4aElFenh2Nl9ISjVWY0pDc1FCTXoyLXpCeVJlVzFvYXhKOHR4R3piOW5Gc2VuOHAtbzNrWkxjV0RjdXNISXJ4UVpPUlk3LWZWODZFdjJaMGJQdTBMMU50QU5I?oc=5" target="_blank">МИИЦР РК и «Казахтелеком» договорились о сотрудничестве в рамках проекта ускоренной цифровизации Казахстана - Profit.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 05.11.2026 17:50</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">МИИЦР РК и «Казахтелеком» договорились о сотрудничестве в рамках проекта ускоренной цифровизации Казахстана - Profit.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -243,7 +195,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-07';
+  document.getElementById('date-from').value = '2026-11-05';
   document.getElementById('date-to').value   = '2026-11-05';
   applyFilters();
 }
