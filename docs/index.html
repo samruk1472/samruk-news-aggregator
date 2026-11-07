@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 07.11.2026 06:52</div>
+  <div class="meta">1 источников · Обновлено: 07.11.2026 10:50</div>
 </div>
 
 <div class="stats">
   <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-11-07">
+      <input type="date" id="date-from" value="2026-11-06">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-11-07">
+      <input type="date" id="date-to" value="2026-11-06">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
     </div>
   </div>
@@ -102,23 +102,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-11-07" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPcDRNOVN5NG5WU0MwUWIzYmpSd1M4THJ1Qko4Um1JSUItSkJBV2o0N3VrYlowRE9wS0tGV1pVcVFUblNoUFpfQV9pSjBmWGtLMUxrRWFEek5wd0xPNVBWS29MNjZ1RTJvb2hjYVBfdHJCWWZkREJSVFBZLUtjWVgtcWpXNHc4dFduNEphazBBelEwcTJseEUyR3U4VFJ5WHVjS1Npdks2YUxIcFBYMkE0NktBdw?oc=5" target="_blank">Казахтелеком планирует провести интернет в более чем 1000 сёл Казахстана - Талдыкорган Инфо</a></div>
+    <div class="article" data-date="2026-11-06" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTjR3TkhLdklQZVFWMDVIM1E1WUJiNTlLTnY0T3FpbEVFdkNyVlZoNXEtak9aWGpJVGRQZDRhZlRMVjN2NE9NRkt4dDBGUjd2OWVDNUFzcUxDdE4xZEVHSnNkS0RZN1g1NnBLSEgyNGkwNFNsWmNXM0VFNFFTMVBpSWVuQnd0UVNyNnF4M1RLV203NWU3UFd1b1Q5cGsxbU50aklmOG9xOXU0Vjg3MWEwNVJVVUhxemQwUnpna25RYkU4djJ0Mzl5RllyZ3gyQV9qdHc?oc=5" target="_blank">Пассажир Air Astana вернул билет через 14 минут после покупки, но потерял 68 тысяч тенге - TravelPress.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 07.11.2026 03:25</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 06.11.2026 13:25</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Казахтелеком планирует провести интернет в более чем 1000 сёл Казахстана - Талдыкорган Инфо</div>
+      <div class="art-summary">Пассажир Air Astana вернул билет через 14 минут после покупки, но потерял 68 тысяч тенге - TravelPress.kz</div>
     </div>
     
   </div>
+  
+
   
 
   
@@ -179,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-11-07';
-  document.getElementById('date-to').value   = '2026-11-07';
+  document.getElementById('date-from').value = '2026-11-06';
+  document.getElementById('date-to').value   = '2026-11-06';
   applyFilters();
 }
 
