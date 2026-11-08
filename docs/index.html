@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 08.11.2026 14:00</div>
+  <div class="meta">3 источников · Обновлено: 08.11.2026 16:30</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2021-03-29">
+      <input type="date" id="date-from" value="2017-04-10">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-10-09">
+      <input type="date" id="date-to" value="2026-11-04">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -87,7 +87,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -104,10 +108,59 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-11-04" data-co="Самрук-Энерго" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxOTXdOYXcwRHZ2REVaYThKRVdJTXZrQW9jellaWGQ0VnoxT05sclMyTmtrSzNCMm1OQ3B5XzBvTFFLdURxTFNMNTF1VktTWVpjZExwVGowU0hSMVJBdVNSZUhWdFNoek5xeE9MT0Nia19IWGNNU3dWSGtvSFN1YTVoNmhGT01xblVKc19tY3h2bVpHcUx1bG5Oc2NWNnhfMDh0eGhHLTRTbnZhTTM3X3NKNU1nSXdLaTFTbVNHUjdCcnJiYktxMkZFZnN0X2ROYlY3LTViaXA1TENGY3c3YTA5Vw?oc=5" target="_blank">&#34;Дела идут не лучшим образом&#34;: министр связал ситуацию с ТЭЦ-3 в Алматы и увольнение главы &#34;Самрук-Энерго&#34; - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 04.11.2026 09:46</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">&#34;Дела идут не лучшим образом&#34;: министр связал ситуацию с ТЭЦ-3 в Алматы и увольнение главы &#34;Самрук-Энерго&#34; - NUR.KZ</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    
+    <div class="article" data-date="2017-04-10" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPMEF4MS1ReWJGRks3M3RNeXBWdmtoajhhdG1ZUS1FeWJRelJIUFlOVFNJaEs2X01aOWhyaUgzeWdlN0diMmN1czFWbW9JT0wtUFkwekFzNDc5WjJ6bEowYnZFY1RNTEJqTV9KaVVISm1nVzI0ZjRuTWpXTjR1Q1VrY1VocWt1MEVQbTBEQVJ3?oc=5" target="_blank">Самолет Air Astana экстренно возвращен в аэропорт Алматы - 365info.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 10.04.2017 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Самолет Air Astana экстренно возвращен в аэропорт Алматы - 365info.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOTkdHN1FoRDRJZEI2ei1JT0p4dHBkOF9SczE3UlF5SVFZMXhUUUlYOVhBWHBGMDZTU3hXQjQ1WlhobENQOFdhYnlUYWZab2pOTnFoUFNqQVdkaDU2TlhNUmJoaHplWmRncmZBVGRBSTRDRU5jMUs5MkFvR21hUHlUc0xaMnVQRWhXcUw2eGVvX3FtQQ?oc=5" target="_blank">Председатель правления КТЖ Талгат Алдыбергенов снят с поста - 365info.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Председатель правления КТЖ Талгат Алдыбергенов снят с поста - 365info.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-09" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNT1Q5a05kcEF1MXZhZkR1UXMyWTRWUm90d0VWNzRUSEF1VFJITnJVLUllZE82MWkwbUs3SGxRV3AybTNMdEgzdFpyTC1rOUJxMlZST2Y5MHo5NllDZUh6cnVVNWRGYWtuWnVJWUh5WGJwZjc3NHlPWXZrTDk4dFRUSnlzMzhMcVlfSGFCNFgzWjBjWTNhTmVwQ2pCaHgwMklzQ1VMQjlvZw?oc=5" target="_blank">Глава КТЖ – Грузовые перевозки оценил работу Trip Optimizer в пути - Железнодорожник Казахстана - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 09.10.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Глава КТЖ – Грузовые перевозки оценил работу Trip Optimizer в пути - Железнодорожник Казахстана - Қазақстан теміржолшысы</div>
+    </div>
     
     <div class="article" data-date="2021-03-29" data-co="Самрук-Казына" data-s="neutral">
       <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWWJENVR4Mmw0V0ZMVXZIZmhSNFVEZzE1TDF0UTZIRlNibk9yNm92MnhidngxS29wdWF0alpZWXVIUGQ0OFVVNFNqWWVrSWllbHJ1Smp4bVBmTUpkUDNrRmJkN1VlNmpOMTJjS0pWWVM0czJ6eUNzR0w3d2szOEkxcVRTUWgzaEdaMFlB?oc=5" target="_blank">ФНБ «Самрук-Казына» возглавил Алмасадам Саткалиев - Талдыкорган Инфо</a></div>
@@ -208,8 +261,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2021-03-29';
-  document.getElementById('date-to').value   = '2026-10-09';
+  document.getElementById('date-from').value = '2017-04-10';
+  document.getElementById('date-to').value   = '2026-11-04';
   applyFilters();
 }
 
