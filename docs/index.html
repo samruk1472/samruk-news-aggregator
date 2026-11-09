@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 09.11.2026 17:02</div>
+  <div class="meta">3 источников · Обновлено: 09.11.2026 20:25</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-23">
+      <input type="date" id="date-from" value="2026-02-10">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-09">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,7 +87,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -104,52 +108,63 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-11-09" data-co="Самрук-Энерго" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-10/tsse-s-zhivoi-sobaki-sodrali-shkuru-v-aksu-volontery-trebuyut-ugolovnogo-dela/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tsse-s-zhivoi-sobaki-sodrali-shkuru-v-aksu-volontery-trebuyut-ugolovnogo-dela" target="_blank">С живой собаки содрали шкуру в Аксу: волонтеры требуют уголовного дела</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 09.11.2026 20:25</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">С живой собаки содрали шкуру в Аксу: волонтеры требуют уголовного дела</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-04-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPSlFUdVhQRzJjNnhwNnlHWkhxYlVqakhhTVhHQTlTQmpTZWNtaHlSc0pnNWdiMFlmNWFiZ2lKQ0VUYUpMMUZfdXhQRnJicVNvQWI5V2p3Y1FKRlV0NmMtdE43alhMQmxpc3h5SVNGMnQ1QWRpZXZQRl9mcWJNdTM4dEVMbHU?oc=5" target="_blank">КТЖ инвестирует более $10 млрд в железные дороги - airpress.kz</a></div>
+    <div class="article" data-date="2026-11-09" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-09/lngr-astana-independence-day-lighting/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lngr-astana-independence-day-lighting" target="_blank">Астану начали украшать к 35-летию Независимости Казахстана</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.04.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 09.11.2026 18:31</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ инвестирует более $10 млрд в железные дороги - airpress.kz</div>
+      <div class="art-summary">Астану начали украшать к 35-летию Независимости Казахстана</div>
     </div>
     
-    <div class="article" data-date="2026-04-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOZkNObTN6cUxyQ3VNNVVuTk5hUDI3MC1sWG16Q25KeWFVNEZKbnJ1WUNCd09nNk92Y0RibmhSMXRGV3J4cVdhX2JTR1RweHFtZ1dSWWFnSUloN3JsdlBaRmx2SEJvd3VaeGNDTWpBWkRwWHlWQVdpYmhURU44WmdxcmlzblpaZktZRFZKQ3QzQQ?oc=5" target="_blank">КТЖ готовится купить терминалы в портах Европы и Кавказа - airpress.kz</a></div>
+    <div class="article" data-date="2026-11-09" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTFB6Nkg1Wkc5MGNQQUE1TEFRY0V4bXVUemNab1RncDNBV212M2FxaG9ySkJKcjV1MG9TeVRUbEM3UThyckNZbXAwTVh5NU5GTGQxRUROY1pRazNmY0UxOXNhbkgwZUJFNlZQSkhxQ2daUjZqdENkdGRlZQ?oc=5" target="_blank">«КазМунайГаз» потратит 4,2 млрд тенге на аренду автомобилей с водителем - Ertenmedia.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.04.2026 07:00</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 09.11.2026 15:25</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">КТЖ готовится купить терминалы в портах Европы и Кавказа - airpress.kz</div>
+      <div class="art-summary">«КазМунайГаз» потратит 4,2 млрд тенге на аренду автомобилей с водителем - Ertenmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-10" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWHIyeHZfUDhFc0w0b2k1TDVvcTQydFN5ejVSSmxPZGkzbjVldUdHY3ZQVGJpdjRQakZYd0c5LXZRYndYR3FqczlIWXRncUdTS181WHlhNU5ZeGU3MXZ0X21jazlLUWx5TGd6VGRqNXptUmc1dS0xcEpSOWpMdVh5SU5aTG5xX2ly?oc=5" target="_blank">Air Astana открывает новый рейс из Астаны в Китай - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 10.02.2026 08:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana открывает новый рейс из Астаны в Китай - Forbes.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-11-09" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-09/svan-scat-vozmet-v-lizing-dva-novyh-samoleta-boeing-737-max-8-v-irlandii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-scat-vozmet-v-lizing-dva-novyh-samoleta-boeing-737-max-8-v-irlandii" target="_blank">SCAT возьмет в лизинг два новых самолета Boeing 737 MAX 8 в Ирландии</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 09.11.2026 12:59</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">SCAT возьмет в лизинг два новых самолета Boeing 737 MAX 8 в Ирландии</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -208,7 +223,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-23';
+  document.getElementById('date-from').value = '2026-02-10';
   document.getElementById('date-to').value   = '2026-11-09';
   applyFilters();
 }
