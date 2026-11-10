@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 10.11.2026 12:00</div>
+  <div class="meta">3 источников · Обновлено: 10.11.2026 15:21</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-09-11">
+      <input type="date" id="date-from" value="2026-08-12">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-10">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,6 +84,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -104,52 +106,74 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-11-10" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdF8wNGx5dVJ4emRadVo4X2k3Znl6THl0SGJHVjFna0VWcFcyUmRyOS1UWVo3NG44VGJHX3hpMVdELS1zRFdmOGxpbXFiR2RZQWw1VldLbXk4QlR3Tjc4bDdZbTl1QkZ5cmpaZ05UMnFGVnhBM09pMHpXNWptemlDSTlZNFp2SFRfNmpaa29NbUMybk5FOVhCdkZ3UGU0SUpfNVlId0l5VDZnZkk1dURqbkFyQnVrcmVC0gG3AUFVX3lxTE53TXdfZ3hINGdpYks0QktPVjZkTVBWbW9CdDdJTUJ4alE5MWIyMHF0WUVQQ1IyeHRXTExROWdSaWhSMi1tX2VxaXRCU290V3hiSnktbTJTamI0SUhqYXZnYmE4MnpreDdmZTJSTGhvRkRYdFBkLUxqWjE3dXN1R01rODhJLThQWVdvUGFLX2ZYZzJsbEVqYnhJQS12REEwamRqamE5b2doVGJMN2MwNFZ0RjNIUHpVaw?oc=5" target="_blank">&#34;Работа над ошибками&#34;: что изменит новый глава &#34;Самрук-Энерго&#34; после увольнения предшественника - BES.media</a></div>
+    <div class="article" data-date="2026-11-10" data-co="Самрук-Энерго" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-10/aina-doch-eks-prezidenta-kyrgyzstana-pomogla-raskryt-set-podpolnyh-sobachih-boev/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=aina-doch-eks-prezidenta-kyrgyzstana-pomogla-raskryt-set-podpolnyh-sobachih-boev" target="_blank">Дочь экс-президента Кыргызстана помогла раскрыть сеть подпольных собачьих боев</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 10.11.2026 09:02</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 10.11.2026 12:50</span>
         
         <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">&#34;Работа над ошибками&#34;: что изменит новый глава &#34;Самрук-Энерго&#34; после увольнения предшественника - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOX2JfMTJlR2FWQl8zNnNOU0tzNmZDR0hBbHdsTlVHS0ZMNWtPczFkczRITno0TEdEcWNIZTQxZGYyMTUxWjQ3d2RnSy1ndi1HTDk0aGthUlZFYjQ2NGRsRnNUYkd6aFpoMGcwemFaemRPQXhBRkhDQldRSjZOMTZib094VVZ5QQ?oc=5" target="_blank">Заседание Совета ветеранов прошло в КТЖ - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.09.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Заседание Совета ветеранов прошло в КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Дочь экс-президента Кыргызстана помогла раскрыть сеть подпольных собачьих боев</div>
     </div>
     
   </div>
   
 
   
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-11-10" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-10/fvfv-kazahstanskaya-its-pervoj-v-regione-zapustila-torgi-na-budushee-ipo-anthropic/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-kazahstanskaya-its-pervoj-v-regione-zapustila-torgi-na-budushee-ipo-anthropic" target="_blank">Казахстанская ITS запустила торги предсказаниями на IPO Anthropic</a></div>
+    <div class="article" data-date="2026-11-10" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-10/zhnb-karagandinskaya-kompaniya-eduarda-ogaya-prinesla-emu-milliony/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-karagandinskaya-kompaniya-eduarda-ogaya-prinesla-emu-milliony" target="_blank">Карагандинская компания Эдуарда Огая принесла ему миллионы</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 10.11.2026 11:18</span>
+        <span class="date">📅 10.11.2026 12:31</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">Карагандинская компания Эдуарда Огая принесла ему миллионы</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-10" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPQ1FCTF9oSnIyQ3pDNF9YcjNpUUduSEgtS0cyWG9jUkhSeHJmZEE0ekRlMy1MZkdCblQ5cVRGUXZDdVVTYndoeXJ6TUtMRDhMaXg4Tm4xb3pYclpOdl9zY2dvY1Roc1VPWmtBSml2YlozS3hKWHIxM0xMaWlkcjZBb0xzQWN6Q0d5aTNYUS04SXlqeUFXVFRB?oc=5" target="_blank">Российский VK Cloud в Казахстане: причём здесь QazCloud и КазМунайГаз - Qumash.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 10.11.2026 13:03</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Российский VK Cloud в Казахстане: причём здесь QazCloud и КазМунайГаз - Qumash.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-10" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxORHFnLUt4VnVJQ0k4OVB4SndPSXp6dklZdGRPLW5lZlBoMkpGX1luQXN1Sk1BeHRreFpQMHRwNGNpbEtjS2h2djBUclNmMWxWNW1QT2N6WWNJcmFJLURjUzRyazY0eFJqWDJ6bXdtaGxMSF9MSVZaQWZTYVB5MVJDTG9HT1ZiYkxGSHpKOA?oc=5" target="_blank">ЮНПФА: КТЖ как амбассадор семейных ценностей - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 10.11.2026 12:56</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Казахстанская ITS запустила торги предсказаниями на IPO Anthropic</div>
+      <div class="art-summary">ЮНПФА: КТЖ как амбассадор семейных ценностей - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPN214c3hHTkRwLW1kaGVRTTFENVJyN2M4TGVlZWsyZXRaa3doUjBWQ0JQZzlhNEdxajdrRl9ycy1ZVDA0UnNRalpKdHMzWkF0VC1BNE94MHNxbTZjbzJXT2hMejZBdmREb2VmUTdKX2h6YS0zR1F5bm1qMEF1cFRjMW82dFdyeWZ0dzZWc1pYUWR6c0xJSlhOaS1oc2NFNmQw?oc=5" target="_blank">Глава КТЖ ознакомился с локомотивным и пассажирским парком - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.08.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Глава КТЖ ознакомился с локомотивным и пассажирским парком - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
+  
+
   
 </div>
 
@@ -208,7 +232,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-09-11';
+  document.getElementById('date-from').value = '2026-08-12';
   document.getElementById('date-to').value   = '2026-11-10';
   applyFilters();
 }
