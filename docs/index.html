@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">7 источников · Обновлено: 10.11.2026 08:03</div>
+  <div class="meta">3 источников · Обновлено: 10.11.2026 12:00</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-03">
+      <input type="date" id="date-from" value="2026-09-11">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-10">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,15 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
-      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
       <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
@@ -112,102 +104,31 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
-    
-    <div class="article" data-date="2026-11-10" data-co="Самрук-Энерго" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/71556-k-podradcikam-po-almatinskoj-tec-3-primenat-strafnye-sankcii-za-sryv-srokov-samruk-energo.html" target="_blank">К подрядчикам по алматинской ТЭЦ-3 применят штрафные санкции за срыв сроков – «Самрук-Энерго»</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 10.11.2026 11:54</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">К подрядчикам по алматинской ТЭЦ-3 применят штрафные санкции за срыв сроков – «Самрук-Энерго»</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-10" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/novosti/71545-na-dvuh-zeleznodoroznyh-marsrutah-kazahstana-obnovili-passazirskie-vagony.html" target="_blank">На двух железнодорожных маршрутах Казахстана обновили пассажирские вагоны</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 10.11.2026 09:22</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">На двух железнодорожных маршрутах Казахстана обновили пассажирские вагоны</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-10" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPa2EwZ2VzUjJHMUttaDE3Z3M3djRZaGNrUUNIamM5cmFxTC1HdHQ2OF9oUHhmT1Bkaml6MW02NnJCaHZLWmIyNEdEMklyZF85d3hMUkE0cFcyYWFRSG8zaG9XQmxIcFkwWFNobDdHbElENk16OFFObkRvNlliVERDRklzcmo5OU1tRDh2RmFyalhrSVFOWVhGLXl1Nk1RemJidTdLOF9idHdGc2VuVldrZE1TWQ?oc=5" target="_blank">КТЖ представило подходы к пожарной безопасности железнодорожных объектов - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 10.11.2026 07:24</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ представило подходы к пожарной безопасности железнодорожных объектов - Қазақстан теміржолшысы</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-08-07" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNN1lpTzhSLTNvZ3o3RHJzS2lKaVBsMUNxQi1WXzlubXlDeWVGMDlRcGxrNmJZbGFodGRUdGNkMS1ULUFWUVJHekhCNGV1UHNOTU5DTExJNmp4TmVYUzV5cGJfOExWSHJvSmdzV0tfdEduRlcyV1VUZU5neDA3UnB6ZDVhLUFkeXdtM2tVUjNDM3BjM0lwcVEzZw?oc=5" target="_blank">Зачем Минфин передал свою долю в ERG фонду «Самрук-Казына» - Forbes.kz</a></div>
+    <div class="article" data-date="2026-11-10" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdF8wNGx5dVJ4emRadVo4X2k3Znl6THl0SGJHVjFna0VWcFcyUmRyOS1UWVo3NG44VGJHX3hpMVdELS1zRFdmOGxpbXFiR2RZQWw1VldLbXk4QlR3Tjc4bDdZbTl1QkZ5cmpaZ05UMnFGVnhBM09pMHpXNWptemlDSTlZNFp2SFRfNmpaa29NbUMybk5FOVhCdkZ3UGU0SUpfNVlId0l5VDZnZkk1dURqbkFyQnVrcmVC0gG3AUFVX3lxTE53TXdfZ3hINGdpYks0QktPVjZkTVBWbW9CdDdJTUJ4alE5MWIyMHF0WUVQQ1IyeHRXTExROWdSaWhSMi1tX2VxaXRCU290V3hiSnktbTJTamI0SUhqYXZnYmE4MnpreDdmZTJSTGhvRkRYdFBkLUxqWjE3dXN1R01rODhJLThQWVdvUGFLX2ZYZzJsbEVqYnhJQS12REEwamRqamE5b2doVGJMN2MwNFZ0RjNIUHpVaw?oc=5" target="_blank">&#34;Работа над ошибками&#34;: что изменит новый глава &#34;Самрук-Энерго&#34; после увольнения предшественника - BES.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 07.08.2026 07:00</span>
+        <span class="date">📅 10.11.2026 09:02</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Зачем Минфин передал свою долю в ERG фонду «Самрук-Казына» - Forbes.kz</div>
+      <div class="art-summary">&#34;Работа над ошибками&#34;: что изменит новый глава &#34;Самрук-Энерго&#34; после увольнения предшественника - BES.media</div>
     </div>
     
-    <div class="article" data-date="2026-11-10" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE9tcmFkTERabWkybWhYU3QzVVNZNTBlZlU3VVV1R1c0Uk5lNUpSLU14OTVuVnktY3pYem1NSVVzRWxtLUlSOWI2OHhR?oc=5" target="_blank">«КазМунайГаз» и Chevron обсудили освоение Тенгиза и новые нефтегазовые проекты - Ак Жайык</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 10.11.2026 06:06</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">«КазМунайГаз» и Chevron обсудили освоение Тенгиза и новые нефтегазовые проекты - Ак Жайык</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-03" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPZDYzNm43OVNJMUxEYkpXYk9GU2xsUTFEd1ljVFI4RDJFLWxmVDBVbDAtSEh5WHR2VnFBZmNPYXZhQ0tkc0VhUUZtN1Q4LUx3aTVULXZWQ1FkazZJOGY3cEVhQ1BCX0NCSFpUOXEybnY2a3RiOHdOZWI1MlUwN2dxZQ?oc=5" target="_blank">«Казатомпром» снизил продажи урана на 13% - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 03.08.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» снизил продажи урана на 13% - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-10" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOdEFXTHhOb2F1SUZocnIwaW9nNWpoV3hJQ1pWWTVSRXg4anFiTWZFMGdOcGR6M3NoSWJTRVFERVNoN2lKVjdMVG9oVnZ3TUhQbHlqdTYwemtMM0U0SHUyYzFTTjMzc1ZSMWFvQzNZUWZHbkxkWnVNSjUwYjFGQ2FqX0RrQi1zVExoSXlQZVR3cDJ3LXJGUWMwQWtEZlViUQ?oc=5" target="_blank">Разломали чемоданы на двух рейсах: казахстанка пожаловалась на Air Astana - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 10.11.2026 04:28</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Разломали чемоданы на двух рейсах: казахстанка пожаловалась на Air Astana - Qumash.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-10" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQTjNwcXJjcFBKRXpwN2JPM2l2eFZidlZPVkJCWmJYVk5KcUItMTlRdjhLMHR2M3VDSDRfUXdiRnFtRTU2UjRlSEZGMmNyM1BmU2xoT1lOSmRDY3VpVEMwa1VQeUZMdEZYMmNBVWRMVzBjN1hWQTE1VXpHbndBMTdyWHI2X3pyNnNHTEVtU0dNTldaUWtEVUJuNGtrZGlkZHpZdU9QS2lHTnluOW9iSVV6bkJBYU9kdw?oc=5" target="_blank">Об опасности поражения электрическим током на ж/д объектах напомнили в КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-09-11" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOX2JfMTJlR2FWQl8zNnNOU0tzNmZDR0hBbHdsTlVHS0ZMNWtPczFkczRITno0TEdEcWNIZTQxZGYyMTUxWjQ3d2RnSy1ndi1HTDk0aGthUlZFYjQ2NGRsRnNUYkd6aFpoMGcwemFaemRPQXhBRkhDQldRSjZOMTZib094VVZ5QQ?oc=5" target="_blank">Заседание Совета ветеранов прошло в КТЖ - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 10.11.2026 03:49</span>
+        <span class="date">📅 11.09.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Об опасности поражения электрическим током на ж/д объектах напомнили в КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Заседание Совета ветеранов прошло в КТЖ - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -215,28 +136,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-11-10" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-10/zhnb-samruk-energo-rasschityvaet-na-shtrafy-za-zaderzhku-perevoda-tecz-3-na-gaz-v-almaty/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-samruk-energo-rasschityvaet-na-shtrafy-za-zaderzhku-perevoda-tecz-3-na-gaz-v-almaty" target="_blank">Подрядчику ТЭЦ-3 в Алматы грозят штрафы из-за срыва сроков</a></div>
+    <div class="article" data-date="2026-11-10" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-10/fvfv-kazahstanskaya-its-pervoj-v-regione-zapustila-torgi-na-budushee-ipo-anthropic/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-kazahstanskaya-its-pervoj-v-regione-zapustila-torgi-na-budushee-ipo-anthropic" target="_blank">Казахстанская ITS запустила торги предсказаниями на IPO Anthropic</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 10.11.2026 07:43</span>
+        <span class="date">📅 10.11.2026 11:18</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Подрядчику ТЭЦ-3 в Алматы грозят штрафы из-за срыва сроков</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-10" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-10/ezif-u-menya-est-zamy-glava-samruk-energo-ajdarov-otvetil-na-kritiku-o-svoem-diplome/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ezif-u-menya-est-zamy-glava-samruk-energo-ajdarov-otvetil-na-kritiku-o-svoem-diplome" target="_blank">«У меня есть замы»: глава «Самрук-Энерго» Айдаров ответил на критику о своем дипломе</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 10.11.2026 06:40</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">«У меня есть замы»: глава «Самрук-Энерго» Айдаров ответил на критику о своем дипломе</div>
+      <div class="art-summary">Казахстанская ITS запустила торги предсказаниями на IPO Anthropic</div>
     </div>
     
   </div>
@@ -298,7 +208,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-03';
+  document.getElementById('date-from').value = '2026-09-11';
   document.getElementById('date-to').value   = '2026-11-10';
   applyFilters();
 }
