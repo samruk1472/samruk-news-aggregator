@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 11.11.2026 11:37</div>
+  <div class="meta">4 источников · Обновлено: 11.11.2026 14:52</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">11</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">9</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">2</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-11-11">
+      <input type="date" id="date-from" value="2026-11-06">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-11">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -91,7 +91,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -108,97 +108,91 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    
+    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/kaye-stadler-zaplatit-za-zaderzhku-vagonov-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-stadler-zaplatit-za-zaderzhku-vagonov-v-kazahstane" target="_blank">Stadler заплатит за задержку вагонов в Казахстане</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 11.11.2026 13:14</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Stadler заплатит за задержку вагонов в Казахстане</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/kaye-kazahstanczy-zhdali-pochti-god-vagony-stadler-nakonecz-vyshli-na-marshrut/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-kazahstanczy-zhdali-pochti-god-vagony-stadler-nakonecz-vyshli-na-marshrut" target="_blank">Казахстанцы ждали почти год: вагоны Stadler наконец вышли на маршрут</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 11.11.2026 11:41</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Казахстанцы ждали почти год: вагоны Stadler наконец вышли на маршрут</div>
+    </div>
+    
+  </div>
+  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/aina-chem-budut-kormit-passazhirov-v-novyh-vagonah-stadler/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=aina-chem-budut-kormit-passazhirov-v-novyh-vagonah-stadler" target="_blank">Чем будут кормить пассажиров в новых вагонах Stadler</a></div>
+    <div class="article" data-date="2026-11-11" data-co="Самрук-Энерго" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/aina-v-temirtau-opasayutsya-unichtozheniya-unikalnoi-sovetskoi-mozaiki-1967-goda/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=aina-v-temirtau-opasayutsya-unichtozheniya-unikalnoi-sovetskoi-mozaiki-1967-goda" target="_blank">В Темиртау опасаются уничтожения уникальной советской мозаики 1967 года</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.11.2026 11:00</span>
+        <span class="date">📅 11.11.2026 12:43</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Энерго</span>
       </div>
-      <div class="art-summary">Чем будут кормить пассажиров в новых вагонах Stadler</div>
+      <div class="art-summary">В Темиртау опасаются уничтожения уникальной советской мозаики 1967 года</div>
     </div>
     
     <div class="article" data-date="2026-11-11" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQVS1GdjNGbHFPZWZLQXZVYjByZGNSLVdTcGRWMi1EcUcwcjQ5MFdxQkFNVVhZWGtzNk9JN0VfeGs5RFk4OXpBVW0yblY2RG8yVk5UYnUtdFRfdEk2OGk0Ukp6b3o0UDJmMDZ6Y002WnpuNkpqWHQ1QndQMV9raXUxR1lndmxYLXI5MmdYX0I5X3ZQX3hMODlZSXFidkhLSndNSnZTeW8yT21NYjJfOU55cnlkOA?oc=5" target="_blank">Air Astana улучшила пунктуальность рейсов: что может повлиять на перелёты зимой - Bizmedia.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPN0VTX0NfRnUteXZrNnhJUXhVWnZjakNpckJJcm5pa1kxNHJ4VEdNVDRnMlluQUYxWVdLelZRd3hXVi1OWU91QXhOMnBqVWVpcmQ1QnBNQ1llYXlNZnViMTNGZ2Z1LTZuZllUTG4yWERpOWlfY3VpU0RRN19CaGxzd2s5N1lWcWxXOGJoYWNldDBCdw?oc=5" target="_blank">Самолёты и птицы: какие проблемы выявила Air Astana - DKNews.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 11.11.2026 08:40</span>
+        <span class="date">📅 11.11.2026 12:52</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana улучшила пунктуальность рейсов: что может повлиять на перелёты зимой - Bizmedia.kz</div>
+      <div class="art-summary">Самолёты и птицы: какие проблемы выявила Air Astana - DKNews.kz</div>
     </div>
     
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZjdoVGJkOXhCQUpFeHhjdmQtODJkTWxfbVRKTlRPLWYySXJwV0hqRFdLaHBLNy11WFVDUnNrajlXVTV5eW5xazFTTEQ0UVNRaGkwaHN5T0pPaG9MYTZONjFFa3l4Q050TGR0RVFWa1EycHZjX21VLV9tSVJxc0FkTWQ2dTRXWkMyX1M5RmFEbFpOaXpTWm1GV0hLM0pYN200MjlQZ3Z0c2tVcGdBVThzVm5mY1l2ZTlf?oc=5" target="_blank">В КТЖ рассказали, когда вагоны Stadler появятся на всех маршрутах - Kursiv Media</a></div>
+    <div class="article" data-date="2026-11-10" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQN1lUNkprejhySmY3S3dfTVoyQXlybC12LVVPQURFMFBaQUZYQ2RBZmI0SmdZRU9IajdPZGxsN2xoSWl4Z1ctVzlIdlNPczdMMnVKM3NISlJWeFJobFliNEJJdzdGSjB6RjZmU1VWeEJ3a3J3N2x1dVdNUXBVU3F5ckNHd1NxVnZzT2o3TnhzbnREem9HWnB0cWxBUWo5ZXhVYi1WdlZZY0RtaGlGMDB0ekZoTHlDZkJPSXc?oc=5" target="_blank">КТЖ обновило состав поезда «Мангыстау – Семей» новыми вагонами - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.11.2026 09:44</span>
+        <span class="date">📅 10.11.2026 04:18</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">В КТЖ рассказали, когда вагоны Stadler появятся на всех маршрутах - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMVdra0VNUzAyb0p3c1h0Z1FTMnZsOEN0M0U0LWxVNVppb3JSbUpBSG05eWJmSXJ6Q1ctdXdJQzRTM1JjZllyd0RHaFk1SjNCbVVVcExFNm8xeVlHc1cwa1MwamEtbms3SFFfWHVQMm9QVmJOMzNvLUFlZDJnOHB2WmVsMDZFNnphZkVhaUtHdGwwNDFkZEIzWllRQURhOXdoUy1ENU9SYkhZUQ?oc=5" target="_blank">Изготовитель Stadler выплатит компенсацию за задержку вагонов, заявили в КТЖ - Informburo.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.11.2026 07:35</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Изготовитель Stadler выплатит компенсацию за задержку вагонов, заявили в КТЖ - Informburo.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBseWczM2hQUkdYbWNmMTNGZE84UzhHY2k2Y0lTdEp5NWNSeGlUaEdPNi1oRGZwQVo3enJPYjlFLVdkbjN5VVFId19QRG5ISzlhZ0hPU0lqN21IUHhrOWc?oc=5" target="_blank">Руководство &#34;КТЖ&#34; и &#34;Stadler&#34; не ответило на вопрос о стоимости сборки одного вагона - Bestnews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.11.2026 08:39</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Руководство &#34;КТЖ&#34; и &#34;Stadler&#34; не ответило на вопрос о стоимости сборки одного вагона - Bestnews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQRE0xWXJVZVZuZWVOdlJ1MVdCOGk3QURBakloeGN2U29pc3F5SEw5TnNJc3pVenJMdUpHbHEwNzFPNVhCVmdoNy1KRGsyQ2ZQSnE3aHJ4SGJoeDY2WWZSQWdRbWxoVGxfNFQ3VnRYUDBVMWNnTG8xTG0xaW1RZWIteG1KMXloZl9tY1lWUzhaZklIUlRfQnpkRUtNeVVpQTJ5cHdodWVQS2tlR0ZvWnRud9IBsAFBVV95cUxQRE0xWXJVZVZuZWVOdlJ1MVdCOGk3QURBakloeGN2U29pc3F5SEw5TnNJc3pVenJMdUpHbHEwNzFPNVhCVmdoNy1KRGsyQ2ZQSnE3aHJ4SGJoeDY2WWZSQWdRbWxoVGxfNFQ3VnRYUDBVMWNnTG8xTG0xaW1RZWIteG1KMXloZl9tY1lWUzhaZklIUlRfQnpkRUtNeVVpQTJ5cHdodWVQS2tlR0ZvWnRudw?oc=5" target="_blank">Stadler выплатит КТЖ компенсацию за задержку новых вагонов - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.11.2026 09:35</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Stadler выплатит КТЖ компенсацию за задержку новых вагонов - Новости Zakon.kz</div>
+      <div class="art-summary">КТЖ обновило состав поезда «Мангыстау – Семей» новыми вагонами - Қазақстан теміржолшысы</div>
     </div>
     
     <div class="article" data-date="2026-11-11" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQaHp4c1VMZ1gyWHdKeFBmX3M4RVhrNTBVREdIZWJ5NjZGYVlwclh6UUJMTVNLbzZPQjJFRGRNdUd1akJndnJUcmNLdmFWX3hQVEEyS0NGQWVkOVhHdGFEUXlKSnlMQmRHbThsdlpsaFd3VERCWTNJeVdRbWw0dWtEeHFVQzlKMkRnOHdYRGZYUmVGcEJSc216N0FyOHVKUlRkUmdfSi1Ec2lpSjR5WWd6OUt1WlBSUTI4NzJ4dzNaTV9HU3o1?oc=5" target="_blank">«Казахтелеком» откроет кредитную линию в Citibank на сумму от 73 млрд теңге - Kursiv Media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQTmt6VTNpWVNvQ2o5R2F5WXJHeDBwTnZnODlKM2s1Y2hqdVZDcy1iS0NzNGJxdE4ycndwTUg0X2xrOU5uQ2tLWWZiYVEzbHZBdlZJSTFqM0lpTmRfaFBfQWF1eHNpV0RDOUhWZUtDRmVmaTNEWFVDU2ZqMUxESUpjX013Ti1vNmhWZDduTTM2cmhvZUZDTlROdWVmZw?oc=5" target="_blank">«Казахтелеком» договорился о кредитной линии с Citibank Europe - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 11.11.2026 09:39</span>
+        <span class="date">📅 11.11.2026 08:35</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«Казахтелеком» откроет кредитную линию в Citibank на сумму от 73 млрд теңге - Kursiv Media</div>
+      <div class="art-summary">«Казахтелеком» договорился о кредитной линии с Citibank Europe - Forbes.kz</div>
     </div>
     
-    <div class="article" data-date="2026-11-11" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNUGlPdGxWVkhtSUdFcTd1UjFsMUNaUXBlU1ZuOVZRa0cyWmdWNm1jSF8xbDNUdmw1cU5URXRlUFVaLTZabm91MGRtQ0VycldHdDFVRC1TY1dncWZZc3gwNjU4X2JZbF95LXhkNG5NMWVuNjI4OWNmSHA1OEJkX0FfU1huaW1zNjBBa3BGTnFxa2JjYW1XTEpPcENYVXlLOU9XMm51OWszeXRMWGJJbVVDMDg1RTNDNU9BWW5kYVc4SEl4Q2Nj?oc=5" target="_blank">«Казахтелеком» привлечёт более 73 млрд тенге финансирования от европейского Citibank - National Business</a></div>
+    <div class="article" data-date="2026-11-06" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQOFMtTUlyUkY0aTJIWVFfMzc3bmc1MllPd2s1Ym1DVHFnTkRoREJjaVZnUzlXcGw1QjlXelFuMmRaRU5GYjE2ZEt3YlM1ZkRQQjlTM0VCZ1lIQjNPc2NRdFg5TElJaUFrMG9fdXBxOWFKdkpsT29XdkFrbWltaWtkWUFZMVk5UUdka2h5VmxjczVHZnQ4Unk3eUJtRExlZlZ2NGwtV3dkVTZPUEtveFpMbUtUalgwYVVCWXJjSdIBwgFBVV95cUxPVm1EdUdjeG5vTTMzdmgyTE9laXFWRHVZbXB0S0pCZGNmc3ByenR4cjVwS1U2ZFRreW8wS3FCeTNtcVRNZU96ZlBvbl9qRXBoMURoUGV4QW9teDdaVXpWQzRrMGMzbk00Y2hfa3dERFZseld0anVXeWJUTm5WbmFpalFLZjZzQWJDLVBPYjg3TmlIQ0ptSm5lUkY4eE9Oc3VETjJhOFgzSGRHTlVUZ2NhZzVrdldtWkJWOXhUUHc3cFV5Zw?oc=5" target="_blank">Казпочту и Казахтелеком обязали платить женщине 177 тысяч тенге каждый месяц - Qaz365.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 11.11.2026 09:31</span>
+        <span class="date">📅 06.11.2026 03:23</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">«Казахтелеком» привлечёт более 73 млрд тенге финансирования от европейского Citibank - National Business</div>
+      <div class="art-summary">Казпочту и Казахтелеком обязали платить женщине 177 тысяч тенге каждый месяц - Qaz365.kz</div>
     </div>
     
   </div>
@@ -206,39 +200,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
     <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/kaye-v-ktzh-rasskazali-kogda-vagony-stadler-poyavyatsya-pochti-na-vseh-marshrutah/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-v-ktzh-rasskazali-kogda-vagony-stadler-poyavyatsya-pochti-na-vseh-marshrutah" target="_blank">В КТЖ рассказали, когда вагоны Stadler появятся на всех маршрутах</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.11.2026 09:43</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В КТЖ рассказали, когда вагоны Stadler появятся на всех маршрутах</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/fvfv-kazahtelekom-planiruet-otkryt-kreditnuyu-liniyu-v-citibank-na-summu-ot-73-mlrd-tengge/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-kazahtelekom-planiruet-otkryt-kreditnuyu-liniyu-v-citibank-na-summu-ot-73-mlrd-tengge" target="_blank">«Казахтелеком» откроет кредитную линию в Citibank на сумму от 73 млрд теңге</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.11.2026 09:38</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» откроет кредитную линию в Citibank на сумму от 73 млрд теңге</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQWU9qY3dZajdmcE9DQjBQam5uNlk0UHJ5QzAwTnJic3Nwdjl3Q2NfRm5uS1Z4aVZ4bEJsMnZEMHZFckNvLXJRQ0ZrWnQzWVloT1hhZVJHbjRZa21pdmZkNmpONlNGd01iM190bmhKZnZrcTNXVGd1T3Q4SEltaGdCZFJtcFlQcGhzbE5DVXJUMnQwUHBEb1YtR0FWRmdyc1RROFNFM0x1d1lBTmRwcl9DaWFQWUhHT21KVHp1Uml5MEJGMlRVbDlnOHhn0gHPAUFVX3lxTE5HS2lwMWlnMV9iMTl6a3o4cnJidzhqWmU4aldMNzN3X3Y1NlJHbmtKb3VaWWdfbEZ1N25HcEx2Mmk2QzlNS2Qxa1ctZmRpR2tFQTlhemRTYXZNeTRtczIwMTRXakROZnA4aG9mQmM1Mmt4d2tvWkU1SVU5bWZlSnNfLWlPZlVWY3RLZS1IQmZ3cndILXNDQVl0bGY2Y2F0TGZqRTFsQ0EwT1NqWERtb1UzbFpRY3JIbnotdi1UcGVGWG1Zb2RTaER1MFdaMlNnTQ?oc=5" target="_blank">Будут большие расходы: в КТЖ рассказали, почему в Казахстане нет скоростных поездов - Новости Zakon.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPRWhzTFgtU1pzY2VPWHMwN08tYlo3ay1maUlRVDF5VjA3T1dVcWZRZUxEY1poSWNFX044ckw0eVNaWWRqOHVyWU5SdXBCa09hNmJCeFJYb040aGpVYlU1ZGkyNXYwYkZJd2ZwMEhDWHo0dWFWQkI2YlRPbkpycEdXeTV0U29rekUwSkM4ejROYTg3R2tlQWZvZHdLZ3pWdERaWVBEN0tiaUl3ak9RX2kycVQ3alpCc3ZfNUNWQnE5aWU0Z29TVjhZ?oc=5" target="_blank">Почему поезда Stadler в Казахстане не смогут ездить на максимальной скорости, объяснили в КТЖ - NUR.KZ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.11.2026 10:14</span>
+        <span class="date">📅 11.11.2026 12:52</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Будут большие расходы: в КТЖ рассказали, почему в Казахстане нет скоростных поездов - Новости Zakon.kz</div>
+      <div class="art-summary">Почему поезда Stadler в Казахстане не смогут ездить на максимальной скорости, объяснили в КТЖ - NUR.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxObDN6emk3T05UcWZ3SDcyaWxSTTVOWExUN1pqZGphOVdPVmJCdGRQSTd3TmhseXlVVW11a0FISHd0NTBUVmVISmJDeTFxTzM3dXFjdGNNSXZEV3B0bkVvQkV2d3hqZmw5QzlZTmRPYVprdmVxeTJjNUlyQUdPb292QkZMbGk0X3lOMTFMVjNndEc2SlE?oc=5" target="_blank">В КТЖ объяснили, почему поезда Stadler в Казахстане не будут ездить на максимальной скорости - 365Info.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 11.11.2026 13:10</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">В КТЖ объяснили, почему поезда Stadler в Казахстане не будут ездить на максимальной скорости - 365Info.kz</div>
     </div>
     
   </div>
@@ -300,7 +283,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-11-11';
+  document.getElementById('date-from').value = '2026-11-06';
   document.getElementById('date-to').value   = '2026-11-11';
   applyFilters();
 }
