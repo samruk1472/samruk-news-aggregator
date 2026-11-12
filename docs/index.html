@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">6 источников · Обновлено: 11.11.2026 22:20</div>
+  <div class="meta">8 источников · Обновлено: 12.11.2026 08:00</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">26</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">19</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">5</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">68</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">8</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">54</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">6</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2022-02-24">
+      <input type="date" id="date-from" value="2025-12-03">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-11-11">
+      <input type="date" id="date-to" value="2026-11-12">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -89,13 +89,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
-      
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
-      
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -113,28 +111,94 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
     
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/kaye-stadler-zaplatit-za-zaderzhku-vagonov-v-kazahstane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-stadler-zaplatit-za-zaderzhku-vagonov-v-kazahstane" target="_blank">Stadler заплатит за задержку вагонов в Казахстане</a></div>
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/novosti/71593-zaderzany-glava-ktz-i-rukovoditel-fonda-samruk-kazyna.html" target="_blank">Задержаны глава КТЖ и руководитель фонда «Самрук-Казына»</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.11.2026 13:14</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 12.11.2026 12:05</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Stadler заплатит за задержку вагонов в Казахстане</div>
+      <div class="art-summary">Задержаны глава КТЖ и руководитель фонда «Самрук-Казына»</div>
     </div>
     
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/kaye-kazahstanczy-zhdali-pochti-god-vagony-stadler-nakonecz-vyshli-na-marshrut/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-kazahstanczy-zhdali-pochti-god-vagony-stadler-nakonecz-vyshli-na-marshrut" target="_blank">Казахстанцы ждали почти год: вагоны Stadler наконец вышли на маршрут</a></div>
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPM3VYWWg2WEZ3OUVtbGE3RnhNSTJwam1ZcXFZUklQV0JZcEhBXzN2NHBKcjM3SDJYVmlFYlR5N3NibG02MnF3bHVFZFVnbFF1WE9uQ01zNTZ6MzRUUlF2MDhmdW5xeW5qLUJhY0ZQNjhsOHVvUF9hcDkxOFB5YV8ySjFZWnpnaFFOUVhMQjlB0gGPAUFVX3lxTE5tUDk3ZnRrLWJPUjFxZ2N4d0FPenU1b0V4T1FuUjVnRFYtZjVMNjZpR09fWnlGcEZvakRCVDhFbVU2YWRMZWVOZHNadk5DOTYyYUkwWm9NVWpEQzJxbGEzZnk3UEw2M1lJVU12MnpyMjBEX3VHRElUalVtYjhHSGd4Y3JuQ3lJaEdHeHUyanhz?oc=5" target="_blank">КНБ подтвердил задержание глав «Самрук-Қазына» и КТЖ - Казинформ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.11.2026 11:41</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:09</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Казахстанцы ждали почти год: вагоны Stadler наконец вышли на маршрут</div>
+      <div class="art-summary">КНБ подтвердил задержание глав «Самрук-Қазына» и КТЖ - Казинформ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPWXVXOEx5ZTcwMHM5WjJ4Y2Z3R3M2dHFFZk1LSVRCUkYzX09pb1hwZ2hfWGNqbDBKZVBYUXk1TFRieGhST3pxNngxenhVLUI2cnVYemVfczZrQlRPOEtpR2ZvVXl1LXUyalhNZGowak9KRDVHNWFpcGRNX1hlSE5Ha3Ffc0RtNzdJMW04d1ZVdEFXZmdtaFBr?oc=5" target="_blank">В КНБ подтвердили задержание главы “Самрук-Казына“ Нурлана Жакупова - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:01</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">В КНБ подтвердили задержание главы “Самрук-Казына“ Нурлана Жакупова - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxOV3lFYlBCbnA3d09mWUQxaWcwV1J1bVBGNHNKM0lHNUU4ZGJrNlpjNFpSanFBMjY3VVd2UmprSkJhajhmZXZ5MXFqcWpGREx1UXpFZXhGRnBqajV5ZUs1cFNSQmozVjZady1PR1JodlI2V2c5OUtGUnVtbE42S0g0U09YbFVDbDZFZjFVZlhVVmxEdWs?oc=5" target="_blank">КНБ подтвердил задержание глав «Самрук-Казына» и КТЖ - КазТАГ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:05</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">КНБ подтвердил задержание глав «Самрук-Казына» и КТЖ - КазТАГ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQRlE0U2k0SWhYZXQ2R0dfZ0JFOERaUkduLUN4M3FtaU5vaHJaUTBoSHJDZmxlNWdCckNtamNWY3FzamdVZFRfeE5TZldObVl1ZnlZVnFLTVJRQ0h3MnljZXRjTHo3b0MyQXVQenRYUk1YN1dTSHF4dUVrZWFRZnRJMkxjTm9udlNuRW9CeDh6czZ3ZzYtZVFSSmlQb2dha3drNlBxZDBR?oc=5" target="_blank">КНБ подтвердил задержание глав «Самрук-Қазына» и КТЖ: подробности - Newtimes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:04</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ подтвердил задержание глав «Самрук-Қазына» и КТЖ: подробности - Newtimes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOTk93aDRzZ1pFc3NSLUVMM2w3LUx0TWJMLXdqbElMaVlScHJGd2kxVHBkZ0lpcGt1SkhsZVF3VzU0Y1ZzaHllbDI5S3pVVEt6eFFLS25JMnVFVmxMMzhoaVM2dUR0RUlwX0NWbW9LZFpHRG9rTTR5ZnhzWWdIRDBQVEgybkhEMTlYU1JFVlZfWGRnR3YtUUMxdmVPcEJUOU02alZNS1hIcTVCWjJONGlHVlJZb0U?oc=5" target="_blank">Задержание руководителей «Самрук-Қазына» и КТЖ: при чем тут чемодан с долларами? - Finratings.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:33</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Задержание руководителей «Самрук-Қазына» и КТЖ: при чем тут чемодан с долларами? - Finratings.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE40Qk1WRUozRVJ3V2ttQ0VkenlEUDI5aVlZX3Z3SnZxbndDSWNnMk5lNmM2THlfS3NBbkRiVDZHaU51Qml4M2VqNHJtVdIBUEFVX3lxTE5QNGg4RndSYmdXemtFMW5MS2hUT3haMjBySWpldjlUcGVYcGc3cmZpVU5SZkdETEtTNmJ4dE5QeEswMlJPVmhaNlNBMXA3T2RJ?oc=5" target="_blank">КНБ подтвердил задержание председателей «Самрук-Қазына» и «КТЖ» - Телеканал «Астана»</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:08</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ подтвердил задержание председателей «Самрук-Қазына» и «КТЖ» - Телеканал «Астана»</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-10" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQX1Flc3FDTUtkbXNtQVNRWVlWTGRHVEt0M19Mdk85Y0pYV3l4REMtWEdpdm4xWnZFanRGZVZ2dE5FQjcxNjRCbEIySU9yeHdkN0hib1ZFaC1XazNZTWM2N3NDbUNraEl3RnZDWmVvQ3hzVVlwUHZ6MHZmSWo3TXdkbjBYVEVfelN0b3Y3RkJxWTl6VzBNQlRROEU0RE5VTzN4djhJN0hvU3PSAa4BQVVfeXFMUGZxandaNl9iXzVycldXeE9YaDhFZzlMbURDWnFfZnNab1JfcVcxeHAtSGphSWRCZnhfYVhHbUdxT3RKTU1jSkJrSkpqVm1QbVU4LTNZZjZkdWdIcEpBRi1CUnNYaEJFd3J6OEZHcjk2ZThObTA3cG1LaEFvdkREWHlPRzM2bmxyMF9HcmdnUXNkdTZzd1Q3TTBGTTAwclJlM1VkYUVPZ0NuOURUeC1R?oc=5" target="_blank">Два перелёта и три сломанных чемодана: жалоба на Air Astana - TravelPress.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 10.11.2026 07:49</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Два перелёта и три сломанных чемодана: жалоба на Air Astana - TravelPress.kz</div>
     </div>
     
   </div>
@@ -142,215 +206,600 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(19)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(54)</span></div>
     
-    <div class="article" data-date="2026-11-11" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/assm-cvetilnik-v-vide-bashen-bliznetsov-na-almatinskom-arbate-sdelal-master-v-astane/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=assm-cvetilnik-v-vide-bashen-bliznetsov-na-almatinskom-arbate-sdelal-master-v-astane" target="_blank">Cветильник в виде башен-близнецов на алматинском Арбате сделал мастер в Астане</a></div>
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-12/devy-chto-izvestno-o-stolichnom-zhk-atlant-gde-brosali-chemodany-dollarov-iz-okonde/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-chto-izvestno-o-stolichnom-zhk-atlant-gde-brosali-chemodany-dollarov-iz-okonde" target="_blank">Что известно о столичном ЖК «Атлант», где бросали чемоданы долларов из окон</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.11.2026 06:34</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Cветильник в виде башен-близнецов на алматинском Арбате сделал мастер в Астане</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-12" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOS2JJczJreEJqUFgtdmd1eXNGT2FzbnNjMGlvdlZaMnNndTZKRkU1TGxGenAtWmxFZC1VNEprSjNIX0xFOHNnb3NITnJqUVdSOG5FQnM5RzJkNXIzdUE2N2RBSGw5cGlNckRmMUt0OTZBNlU5SWtVY0FSLVk5SjJHRkNrLUpCbkdzRnVVeUswZlJYcXMwckQ2bjB6LW8tQXROQ2tZSUlkdWY?oc=5" target="_blank">«Самрук-Казына» может заработать на ERG после получения 40% акций – экономист - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 12.08.2026 07:00</span>
+        <span class="date">📅 12.11.2026 07:38</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Самрук-Казына» может заработать на ERG после получения 40% акций – экономист - Kursiv Media</div>
+      <div class="art-summary">Что известно о столичном ЖК «Атлант», где бросали чемоданы долларов из окон</div>
     </div>
     
-    <div class="article" data-date="2026-11-11" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5Ldms5ZnEtTHU4bVlmQkdHTms3ZmZsZ2tVSVhRT3E2X0hxYmdmTDVDSjY2X2lPM3lLVml0SG5XNWJYTVNqWm1uR3B3?oc=5" target="_blank">Добыча растет, запасы снижаются: как &#34;КазМунайГаз&#34; тратит свои нефтяные резервы - Ак Жайык</a></div>
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE9SQlZaa3JEUkNkN0FYczZ1YnZERHBQMUsydXliSWZEMzJ1R3dHa1NPRF9DRUh2ZVkzWDY2QUliM0g2azhMb0RkNXBScEkxd9IBS0FVX3lxTE40TUE0U1RDVEdOeFNCc3hWc2E4OUVTS3N4VU9MbVhKdlVuVDRHQ04xSkVYXzhwOEtSeGhIQ3l2blVNREQzX1g5NUY4VQ?oc=5" target="_blank">В Астане задержаны главы госфонда &#34;Самрук-Казына&#34; и КТЖ - Интерфакс</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:16</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">В Астане задержаны главы госфонда &#34;Самрук-Казына&#34; и КТЖ - Интерфакс</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTE10eXRDNmphNEFDSTJTQ2pudHNraUdRTURYbm9pS3dOVXQzTzlPd2NZTnlocUhROTRtQmxla3o5bG9EZw?oc=5" target="_blank">В Казахстане задержали топ-менеджеров госфонда «Самрук-Казына» и местных железных дорог - Frank Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:24</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">В Казахстане задержали топ-менеджеров госфонда «Самрук-Казына» и местных железных дорог - Frank Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPcV9ONEREY05vV3FzdmY5QjFJWTROOVlybFRCUWtzcFg4RFFRb3VVQXZJaUVRYnE3amFod1R6aGlWQlY5VVltQVJVcDd5U2F3b014OEhxQ05BRkZrWHJXbTFwY0VmcXNwTUlnQXQ5M18xWFNuTUg2YnRUUGVuSU9WTnJ3QjFPcDlYc3hOWjFnbWh3dk4wOFlZTXFmQQ?oc=5" target="_blank">В “Самрук-Казына“ ответили на сообщения о задержании руководства - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 06:20</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">В “Самрук-Казына“ ответили на сообщения о задержании руководства - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPbVJ6R0pRUUNYRC1GUmlCQU5Vc09hQTJ6MFAzRUk5MEJBWERId3hHNnZfLTJHelhqeks4bnFYZEpDRko0anFfSTdfMDdwOVlMVXV0SXJoWGtBRnlQU3V2cFJoZmpPZ0pqbGtFckRYd1NRa2piUE1QdFQwZWtIVHVBY3ZONkVzUnRaVkd3MmFqZTQxclYtLXow0gGcAUFVX3lxTE14bzVfaF9LckYtSU5rR0lkdTQyTUVjUlM0VzFwZDBBTW4tQmowSFRxZWVOaTgxM3R0MWxJOUIyaHBDNWtFTEZjbDhsbGJVM3NtcFQxMGhPMVI2VnhWejB0VkRjNWtlX0t3OXJYd2ZPMjZscTBGSDlINjRoZmJ6TlJvWHhTSE1EcUVsVVlrd25LcnByRDBoT1BmM2tTZg?oc=5" target="_blank">Задержаны главы «Самрук-Қазына» и «Қазақстан темір жолы»: что известно - 24.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 06:57</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Задержаны главы «Самрук-Қазына» и «Қазақстан темір жолы»: что известно - 24.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNdlFiYWJlVy1malgzVmM4clJ1YnJFY0phRno1RW81clNfQ2EyVXpZWDNSdnN5RG1HTFRxRGZ5TUlmNEdJUVY5UDlWV0JjNGlENVRURmpNaWUwWExfTFFnYjhwak5Ub0FHajcxdFd3VnFQRjNMaVhCRFFSY3BBWDZlQU9TdVIyeHlVc0M5b2lB?oc=5" target="_blank">Главу Самрук-Казына Нурлана Жакупова задержали в Астане - Informburo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Главу Самрук-Казына Нурлана Жакупова задержали в Астане - Informburo.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPRHZmWHlmcHpDUUhnZzMtUEhNeDU0RlE5RkNXbW8zTXZSQ1RuM2x1TkpDbWZLNGl2YjU5RVBuS2c2cVo0Z3o0S05aZWNLNXhjUDZvZFh6QmFUQ0VSckJpdWhES0hheGo0M1dJUXRfV2JTZFhMdThWOTg3YTNNQVBZSWYzY216akg4VVkxQlc4ZXBaZkw5dzd2aWhDM0Fpbld0SGJqTHRaTkRrX0lfZlc5NmYzaV9KY1U?oc=5" target="_blank">В Казахстане задержали главу фонда «Самрук-Казына» и руководителя железнодорожной компании - Anticorr.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:55</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">В Казахстане задержали главу фонда «Самрук-Казына» и руководителя железнодорожной компании - Anticorr.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOSl96OXlCbXg2T1Z1VlFGamp6bV9KTGY1N09SbDFTd1ZRMVRQazByZThobjY4clNHYlpsM0xtaXFQV0JxUVQ4UkZ1SzhUUnFOUV9idm4yRUhKaldWVWZ6a3owbDFicTZIX1ZtWm84NDlybnpSbnBveWh3UDRLZF8zaktGY2ZJVkdxQkhCY0dJUkUwTF9QU3VLRmVpSGJ6V3NhR005TmJmVERkejEwT0NEWHYtZUdKblE?oc=5" target="_blank">Задержания в &#34;Самрук-Казына&#34; и КТЖ: политолог объяснил, какой сигнал подает государство - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:45</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Задержания в &#34;Самрук-Казына&#34; и КТЖ: политолог объяснил, какой сигнал подает государство - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1jYjh4RkJGR0REN1NhVlJpMm9PNmNvNFVsMzhwVXh3bmtHMjI4Y3VKcTNyUW96R25BNVRNMnNObU55dnRzRlR3akVRQVZER0o4SS1mNmRQWGZKT0E?oc=5" target="_blank">Задержаны главы «Самрук-Казына» и «Казахстан Темир Жолы» - Bestnews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:32</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Задержаны главы «Самрук-Казына» и «Казахстан Темир Жолы» - Bestnews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbVhFdFN0QWxHdWI4UDlyYWx6WUNibkNYN0FSQVpkYV9SMEluSVVORWV5Y0FyaURwc1ZwX2lqLXFwMk5qOG82M2FldkdQWnZxZ3dYdjNVcUFELXVPVnJPcXE5VkFQc3hpV1ZXdEJTVkhJUlItSXRxSDh2WTVDVjFlS3hILXF2OUlGNXI3Zjg1RENxVXFQaVRGWWFnUGUya2VQZW9vSVNuQXExYWM?oc=5" target="_blank">Сообщается о следственных действиях в отношении глав «Самрук-Казына» и КТЖ - КазТАГ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 06:25</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Сообщается о следственных действиях в отношении глав «Самрук-Казына» и КТЖ - КазТАГ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOQWRremNwYnM4bERMS1YtbXIxanhuRFlhNHVDaVQxYXU1Y0Y4UUNkUWxxbFVrcXlTWVk4M3RvWDNHc1pPVmtBczd4MU4zWGVEVmc0ajhUTi12TEdNb0JKWS1yeVRPMzg1RTJfS295TTRwNVBDOG9oeko5a2d1SnpEREt2NERBTkdqazJCRWpSVDc3WUVISmRLZnppeFVsX0lxVVFPeEQ1TEY2ci1IMWI0NnU4ckFuUmc?oc=5" target="_blank">В Казахстане задержаны руководители «Самрук-Казына» и «Казахстанских железных дорог» - Apa.az</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:32</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">В Казахстане задержаны руководители «Самрук-Казына» и «Казахстанских железных дорог» - Apa.az</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxOY2NXT3Y4NXlnQzNucVpfMDREdE5BRnRuclpzRlpGMmhteDVxUENTMWRJM2luNlloZ1oxR1l0NGM1Q2lzXzFhZzVIZUJkbnE5N1pqUVNJYkJNbms0TVpfdC1USjhIUjhNYWl6cDVFeHBtdE9RQUZRMGdteDlMT1NIMjRpSGtabDAxaXFlZXVIVk5FVlpaWHN6RzdvUXJNR0c0ZzRWOHAxNEFBNFVSZEp1MnZCUkhwNVkyMXE1TA?oc=5" target="_blank">В Казахстане задержаны руководители «Самрук-Казына» и КТЖ по подозрению в коррупции - Azərtac</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:52</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">В Казахстане задержаны руководители «Самрук-Казына» и КТЖ по подозрению в коррупции - Azərtac</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPcHVrOWxXVTh4V3ZvdXlGWHh5emxTZWxOR2RFS3dLOTlVQ3FfbVhLWjBqOV9VdFVOSWJ2N1AyTEhKUGt6TkRlQUpjeDNzeHU3R3hoS2xVS09wUFdHODVzdGFfd3hhNkl0VGNWVFJpT29DUlZ1aUtBSURGcTlieDN0LTluR0NKcThLS3Rua3hCVzF1Y0N0eS1WbU1TbFc4Y21wZDN1RXNTeUJSLUdUa3NUY241QlZ6MmpEYUZDYUZB0gHDAUFVX3lxTE43ejNpNzVkcFMxazJkYUZwaVMwZDNTZFpwZUNZbVY3QmdDWS1oaFBidmtXMzdZRnotcWNBQngwTDhmbThENnlFa0ZjRFN3RzllN2VZMXVOYzdRUUNPMW5ZU3B4Q1l1TWdnMTBhWm1XdDd1aS03eUZxMmVUZUJrUWlRRHZzTTVlSmJZYnB4c3JPVENScjdUZVhTT0tRVHVSMFB4aXMzT2E4U1NFZURoUE9Db3Q5XzBKaGF5NFVVMnc0ZVVPOA?oc=5" target="_blank">КНБ задержал руководителей «Самрук-Қазына» и КТЖ по подозрению в коррупции - Qaz365.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:07</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ задержал руководителей «Самрук-Қазына» и КТЖ по подозрению в коррупции - Qaz365.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOcUFaQlY2V245Qlk0QUpiWEZYN0MwaXgxZnRMTURRU2FNbm9mb2QwQlMtYzNpTEJyMnl3azFyd2tNYzBOeGo0enIwNVJ6TllTSkZSX1RYTzVBeF9kd0JWSGV0ai12RVdhaUU4Qi1UMDc4V2gycm5tZFFKcXdCLUM2QU9RRURvS3dRZE9YQmlpY2hqaXBfOHVyQXhETDhuTlQyRllrRkNHRm14QVNnV3RPTDdXTHZTZXFnSHc?oc=5" target="_blank">Руководителей ФНБ «Самрук-Казына» и КТЖ задержали по подозрению в коррупции - National Business</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:07</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Руководителей ФНБ «Самрук-Казына» и КТЖ задержали по подозрению в коррупции - National Business</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQSHRYUGhHY1daTk90VE9JT2szcEtiNTdwZTR1WTRuMFBHQUFaS2NxVnY1WTNvVlZ6NHpHYTZRZFl1cXZuWHJ1UUZfWW9zMWNMREYyejgzZ3BrZTR5OTBjblNhdmNIVjlEeGpvaWw3azY0MlNWNHk2cDlSMUtMQUNxdlQ0NkVuSGhPeHF5SUtTMzJIeVprdnl2d0RGQ2d3Q09fZjVj?oc=5" target="_blank">КНБ задержал глав «Самрук-Казына» и КТЖ по делу о коррупции - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:06</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">КНБ задержал глав «Самрук-Казына» и КТЖ по делу о коррупции - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPNUt4TkpFd3M3Y2l2NFljWmd4SnBoUmhhNFlELURCUGI5bFVGVE4wMk5SZ2pqLWowam1QOEZfSmowd29FWldfQlUzaWxBd2M0YWxlUnFaVzM5bnpQdzR4U216NGE4SWpRZS1OR28wNUFneEtzQ2ZIRmpRZ2FfanNLT3ZPb1F4T2tlS0tJRklSRQ?oc=5" target="_blank">Задержаны глава КТЖ и «Самрук-Казына» по подозрению в коррупции. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:10</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Задержаны глава КТЖ и «Самрук-Казына» по подозрению в коррупции. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBFNU1tQ3llNXloOEdBSXVZSlVBb0hFUXJGVjdMX3V1M0xYVkhFM0pkVFgzSlJqcnVQNWVJZzFuQV90a25GMzFSR3pSU1RPWk9S?oc=5" target="_blank">КНБ Казахстана задержал главу «Самрук-Казына» и главу «Казахстанских железных дорог» по подозрению в коррупции - CentralAsia.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:54</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">КНБ Казахстана задержал главу «Самрук-Казына» и главу «Казахстанских железных дорог» по подозрению в коррупции - CentralAsia.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1hcERqYVhaU3hiVzVWOS11d21qLUt3T2FiRC1oeTBiN2RIRThfMzc2TU5yNGpud29fbXBueFRCVWxGRmFLcVh6Z3FyMUhQWjNwc1ZHeXIycS1NaTJUaHFvLUVvRE9Vc2xLZjUzeUc4SFRVY1Q3M0E?oc=5" target="_blank">Задержаны руководители «Самрук-Қазына» и КТЖ - Казахстанская правда</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:19</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Задержаны руководители «Самрук-Қазына» и КТЖ - Казахстанская правда</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQLTZheDYxckRINFN5MEZUMkx5MjVRT1Y4djBHQTdBZFpCOVhpd1lTOXdWQTZiQk9hR2NRdnhHeE5WdFZoWWQxZENQTks4TFh6TklRd0h2STE2WHl1b29Sek5aYUt0TlpCYjdaWWVOZVhmSHNRWDk0Q1JVd19zc2tuSE1lQnpmbXlQQU9SSjhEVHYzbDBTd3libFl3c0xDR25BeGc1RXZEQkJsdmtyU1k1VzFfZWtHRzjSAbwBQVVfeXFMT1RJWDJJSGcyVm5vZjhORVo4Wnh6UVVBRmJyMV96djE4SldWSzdNLV9BQjdkV2tDam5FZk1ObzlKN0dreWVzYW50ckdPSjBQUXNMVUJkTnVkYUszNkdzREJsd3hRRUJHWFdDRjZNcG9ra3F1RlpJZEZjejNEVTIyTFo2a29XMHpFYjQxajgxWUZtVFpFWDFSN3RDY3pLQ1RHT2VVLTVFX3dWTUlwTHpQWkNPa003X0FneXR0NmU?oc=5" target="_blank">Глав «Самрук-Қазына» и КТЖ задержали по подозрению в коррупции - Azattyq Ruhy</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:06</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Глав «Самрук-Қазына» и КТЖ задержали по подозрению в коррупции - Azattyq Ruhy</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQcllVM0V3UWhJWFdzOWlsc2hLajdBdEFKUVhieERFbFY0Ykw1c3FaT1NTaXMxQVlob2dPck1pZ04xSnpHN0dkRk9yMk02RWVuc1VHMHM2VGtvUUNmX2E3Rk9FWUV3UGlvUUVOZExiVTNUOUJJQXZOVGc5WEs2MzJNdHdLenBaVGZZVlJURmFZWVpWcnM4OTJLNkZ5aUctcFUzamRR0gGoAUFVX3lxTE1BQ1BkejNFVk50RDRZMGZjb1FfM3ZZTWV4SU9JSFA5S1NaSjhBQkhHLWZZLUZNZHMwV3VjVExLZUdBYktLelIxSWQwUkdpVEc3NDQ5eEFGdHNsMGw5V3Rhc0VFVDFSdDBhZWJvdno0dTVXRUJSX3g1am5mSW5RSnpVWGlLSEd2a1l3QkZiSFl0NEExaDAwYjkxUUZZS3hfal9USkNHQnlvaQ?oc=5" target="_blank">КНБ заявил о задержании руководителей &#34;Самрук-Қазына&#34; и КТЖ - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 06:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ заявил о задержании руководителей &#34;Самрук-Қазына&#34; и КТЖ - Новости Zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBzZXJVWnZfdVJzdFhyR3BoWm1qUHFvRnFfNGdkTzVOUHZqZlJ2SHcxMGNwOW9NSXA1WGRIcDJxSGZHS0FlVzg4VE1QZENrdGVKQmUtZTBZTE5mdEJUUkE4clE2Rk40TUd5Q3ZRMjdrOVpOQmtHUlFuWl9WQQ?oc=5" target="_blank">КНБ задержал глав «Самрук-Казына» и КТЖ - Bizmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:16</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">КНБ задержал глав «Самрук-Казына» и КТЖ - Bizmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBmYUlWdkhiRW5hcFBXdWFKMnN5cFIxTk1Ub2theGV6ZVhBell1V2NwbkNUUWE4MTdkZGduSUVwNWtQQzNkR3UtOU5jWFJqZ3N5X2h3TXRlOHBHMXZyUnlHdjJnWExnOVhwU0psRzNEV2JNSzBreVE?oc=5" target="_blank">Задержан глава КТЖ Елжас Отыншиев: 12 ноября 12:02 - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:02</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Задержан глава КТЖ Елжас Отыншиев: 12 ноября 12:02 - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1sdXZ3ZlB5c3ZSMzdZSFpNdWpwX2JrelVXcG95V2NsWTRwWWY0cUc4U3hKa3pScEZ5XzMyVkZmeWt3bnBEd1E1dHZQSGI0ODMtTElxZ2RaekF3dUFUekQxMlJ3?oc=5" target="_blank">КНБ задержал руководителей Самрук-Қазына и КТЖ — Деловые новости Казахстана - LSM.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:04</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ задержал руководителей Самрук-Қазына и КТЖ — Деловые новости Казахстана - LSM.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxPbTZnTkxBLTBFTmdGSmFHQlEydHRkeUF3TUFoNk5jclBuUnFLS1FrblBFMTdadE1IZnpXS0ZLVzlkdTQ5cXNXVEhjdXYzaDRGNmRSdG5pRE1IY2lFeTR1eENjQllmdnM5bXJTVEZzdVBNUlhHTzl2YW02R1RFMHR5aWI3cF9UYnQzN09WaV9pT1ByaFdkUDdmNWVlRFZyZTA?oc=5" target="_blank">Главы &#34;Самрук-Казына&#34; и КТЖ задержаны по подозрению в коррупции - Регистр ТВ Казахстан</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:56</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Главы &#34;Самрук-Казына&#34; и КТЖ задержаны по подозрению в коррупции - Регистр ТВ Казахстан</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaFFNcm9iMXRaOWYtbFFuQnVqZmlnNWtmazdIRkZtMXVRdlg0OWVPZFNmUWNSc2Rwa3BTbWVSTW56UXNpT2xhd25TdW52UHRFQm1takI2SENkaUVqT21zV1Q2X2o0OWw5d2FKaGY3OVd1UzBSTEV2MUdLZkVJbEU2ZDl3SmdjRndOd0pv?oc=5" target="_blank">КНБ задержал глав Самрук-Қазыны и КТЖ - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:01</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ задержал глав Самрук-Қазыны и КТЖ - Kapital.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-09" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQSUhNUWRXd2JXUlpiY3l6ektFMUM5OXRFU3haRXo1X2hzMWl1MHIyMkY0OUcwd3V0RHZoVWkyOUdSaWs3b2tHWmhfWXdvRUtnbDg0RnY3ODlJNTYyNGwzc0ZMbkMwcVVsVjFpb19JU2k3MWtER2lzeFBRajlXb2ZTR2tKUGctMFlWdC16eTJyOFRaS3NKRklTeUVWYi03c0dxemtXUzY4QXFqOC12cXc?oc=5" target="_blank">«Самрук-Казына» в 2026 году планирует завершить инвестпроекты на 3,2 трлн тенге - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 09.09.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Самрук-Казына» в 2026 году планирует завершить инвестпроекты на 3,2 трлн тенге - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNakswN1o4TExOMUptMHhmemxpaUFjTkVTeUFYcFFpSUpEa2pDSzltTUJGWEw0RmthcWx2Zm5MTTdETFdTY0FHTG9JZTJ6R2lSN1FjTEp0eWJSekJOcXJiUUVDOC01ZkpNc1Nqb2xZeHhGTU96b0lvZ3hJczRJZjdvT282bjRRZXowcF8yZ3BJS2RyYWhLZUdGMHVManhSelFRQUprZU8tbE15X0ZrdVByOXV3?oc=5" target="_blank">Halyk Bank, Казатомпром и КазМунайГаз: какими акциями торгуют клиенты Freedom - Freedom Broker</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 11.11.2026 06:04</span>
+        <span class="date">📅 12.11.2026 07:18</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Добыча растет, запасы снижаются: как &#34;КазМунайГаз&#34; тратит свои нефтяные резервы - Ак Жайык</div>
+      <div class="art-summary">Halyk Bank, Казатомпром и КазМунайГаз: какими акциями торгуют клиенты Freedom - Freedom Broker</div>
     </div>
     
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/aina-chem-budut-kormit-passazhirov-v-novyh-vagonah-stadler/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=aina-chem-budut-kormit-passazhirov-v-novyh-vagonah-stadler" target="_blank">Чем будут кормить пассажиров в новых вагонах Stadler</a></div>
+    <div class="article" data-date="2025-12-03" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HeXMySlJ1M2k1aUNNNDlYRVpTLWNkQm9sU2hxaEtmeFB1STRneHVqZU40WTIyXzBEdllmQ0Z3QXYzeC1jbTR5cHYzdXFjeXZ4UmV4d2lVWVhYb21LVGZsSQ?oc=5" target="_blank">Казатомпром опубликовал свои финансовые результаты за 3-й квартал 2025 года - Атомная энергия 2.0</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.11.2026 11:00</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 03.12.2025 08:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Чем будут кормить пассажиров в новых вагонах Stadler</div>
+      <div class="art-summary">Казатомпром опубликовал свои финансовые результаты за 3-й квартал 2025 года - Атомная энергия 2.0</div>
     </div>
     
-    <div class="article" data-date="2026-11-11" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQVS1GdjNGbHFPZWZLQXZVYjByZGNSLVdTcGRWMi1EcUcwcjQ5MFdxQkFNVVhZWGtzNk9JN0VfeGs5RFk4OXpBVW0yblY2RG8yVk5UYnUtdFRfdEk2OGk0Ukp6b3o0UDJmMDZ6Y002WnpuNkpqWHQ1QndQMV9raXUxR1lndmxYLXI5MmdYX0I5X3ZQX3hMODlZSXFidkhLSndNSnZTeW8yT21NYjJfOU55cnlkOA?oc=5" target="_blank">Air Astana улучшила пунктуальность рейсов: что может повлиять на перелёты зимой - Bizmedia.kz</a></div>
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNMFJmM3V2RTVyZVc5OFVUbThnN0xBck0xTkV2V3dXamxydU9FMjl1VFpRMXdFa3luSVJ6VDNUOFVURjQ2NnY5VTd5U3ZVbFBfc1QxXzhlek5ZV2Fvd1RPSDVCVVIxUXhKRlRpbnB6aTktNmFHa20zWDJnMkpKdVI2VmcyMU4tdw?oc=5" target="_blank">КНБ задержал глав «Самрук-Казына» и КТЖ - Datification</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 11.11.2026 08:40</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana улучшила пунктуальность рейсов: что может повлиять на перелёты зимой - Bizmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZjdoVGJkOXhCQUpFeHhjdmQtODJkTWxfbVRKTlRPLWYySXJwV0hqRFdLaHBLNy11WFVDUnNrajlXVTV5eW5xazFTTEQ0UVNRaGkwaHN5T0pPaG9MYTZONjFFa3l4Q050TGR0RVFWa1EycHZjX21VLV9tSVJxc0FkTWQ2dTRXWkMyX1M5RmFEbFpOaXpTWm1GV0hLM0pYN200MjlQZ3Z0c2tVcGdBVThzVm5mY1l2ZTlf?oc=5" target="_blank">В КТЖ рассказали, когда вагоны Stadler появятся на всех маршрутах - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.11.2026 09:44</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В КТЖ рассказали, когда вагоны Stadler появятся на всех маршрутах - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMVdra0VNUzAyb0p3c1h0Z1FTMnZsOEN0M0U0LWxVNVppb3JSbUpBSG05eWJmSXJ6Q1ctdXdJQzRTM1JjZllyd0RHaFk1SjNCbVVVcExFNm8xeVlHc1cwa1MwamEtbms3SFFfWHVQMm9QVmJOMzNvLUFlZDJnOHB2WmVsMDZFNnphZkVhaUtHdGwwNDFkZEIzWllRQURhOXdoUy1ENU9SYkhZUQ?oc=5" target="_blank">Изготовитель Stadler выплатит компенсацию за задержку вагонов, заявили в КТЖ - Informburo.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.11.2026 07:35</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Изготовитель Stadler выплатит компенсацию за задержку вагонов, заявили в КТЖ - Informburo.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBseWczM2hQUkdYbWNmMTNGZE84UzhHY2k2Y0lTdEp5NWNSeGlUaEdPNi1oRGZwQVo3enJPYjlFLVdkbjN5VVFId19QRG5ISzlhZ0hPU0lqN21IUHhrOWc?oc=5" target="_blank">Руководство &#34;КТЖ&#34; и &#34;Stadler&#34; не ответило на вопрос о стоимости сборки одного вагона - Bestnews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.11.2026 08:39</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Руководство &#34;КТЖ&#34; и &#34;Stadler&#34; не ответило на вопрос о стоимости сборки одного вагона - Bestnews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQRE0xWXJVZVZuZWVOdlJ1MVdCOGk3QURBakloeGN2U29pc3F5SEw5TnNJc3pVenJMdUpHbHEwNzFPNVhCVmdoNy1KRGsyQ2ZQSnE3aHJ4SGJoeDY2WWZSQWdRbWxoVGxfNFQ3VnRYUDBVMWNnTG8xTG0xaW1RZWIteG1KMXloZl9tY1lWUzhaZklIUlRfQnpkRUtNeVVpQTJ5cHdodWVQS2tlR0ZvWnRud9IBsAFBVV95cUxQRE0xWXJVZVZuZWVOdlJ1MVdCOGk3QURBakloeGN2U29pc3F5SEw5TnNJc3pVenJMdUpHbHEwNzFPNVhCVmdoNy1KRGsyQ2ZQSnE3aHJ4SGJoeDY2WWZSQWdRbWxoVGxfNFQ3VnRYUDBVMWNnTG8xTG0xaW1RZWIteG1KMXloZl9tY1lWUzhaZklIUlRfQnpkRUtNeVVpQTJ5cHdodWVQS2tlR0ZvWnRudw?oc=5" target="_blank">Stadler выплатит КТЖ компенсацию за задержку новых вагонов - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.11.2026 09:35</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Stadler выплатит КТЖ компенсацию за задержку новых вагонов - Новости Zakon.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQaHp4c1VMZ1gyWHdKeFBmX3M4RVhrNTBVREdIZWJ5NjZGYVlwclh6UUJMTVNLbzZPQjJFRGRNdUd1akJndnJUcmNLdmFWX3hQVEEyS0NGQWVkOVhHdGFEUXlKSnlMQmRHbThsdlpsaFd3VERCWTNJeVdRbWw0dWtEeHFVQzlKMkRnOHdYRGZYUmVGcEJSc216N0FyOHVKUlRkUmdfSi1Ec2lpSjR5WWd6OUt1WlBSUTI4NzJ4dzNaTV9HU3o1?oc=5" target="_blank">«Казахтелеком» откроет кредитную линию в Citibank на сумму от 73 млрд теңге - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 11.11.2026 09:39</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» откроет кредитную линию в Citibank на сумму от 73 млрд теңге - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNUGlPdGxWVkhtSUdFcTd1UjFsMUNaUXBlU1ZuOVZRa0cyWmdWNm1jSF8xbDNUdmw1cU5URXRlUFVaLTZabm91MGRtQ0VycldHdDFVRC1TY1dncWZZc3gwNjU4X2JZbF95LXhkNG5NMWVuNjI4OWNmSHA1OEJkX0FfU1huaW1zNjBBa3BGTnFxa2JjYW1XTEpPcENYVXlLOU9XMm51OWszeXRMWGJJbVVDMDg1RTNDNU9BWW5kYVc4SEl4Q2Nj?oc=5" target="_blank">«Казахтелеком» привлечёт более 73 млрд тенге финансирования от европейского Citibank - National Business</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 11.11.2026 09:31</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» привлечёт более 73 млрд тенге финансирования от европейского Citibank - National Business</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Самрук-Энерго" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/aina-v-temirtau-opasayutsya-unichtozheniya-unikalnoi-sovetskoi-mozaiki-1967-goda/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=aina-v-temirtau-opasayutsya-unichtozheniya-unikalnoi-sovetskoi-mozaiki-1967-goda" target="_blank">В Темиртау опасаются уничтожения уникальной советской мозаики 1967 года</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.11.2026 12:43</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">В Темиртау опасаются уничтожения уникальной советской мозаики 1967 года</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPN0VTX0NfRnUteXZrNnhJUXhVWnZjakNpckJJcm5pa1kxNHJ4VEdNVDRnMlluQUYxWVdLelZRd3hXVi1OWU91QXhOMnBqVWVpcmQ1QnBNQ1llYXlNZnViMTNGZ2Z1LTZuZllUTG4yWERpOWlfY3VpU0RRN19CaGxzd2s5N1lWcWxXOGJoYWNldDBCdw?oc=5" target="_blank">Самолёты и птицы: какие проблемы выявила Air Astana - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 11.11.2026 12:52</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Самолёты и птицы: какие проблемы выявила Air Astana - DKNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-10" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQN1lUNkprejhySmY3S3dfTVoyQXlybC12LVVPQURFMFBaQUZYQ2RBZmI0SmdZRU9IajdPZGxsN2xoSWl4Z1ctVzlIdlNPczdMMnVKM3NISlJWeFJobFliNEJJdzdGSjB6RjZmU1VWeEJ3a3J3N2x1dVdNUXBVU3F5ckNHd1NxVnZzT2o3TnhzbnREem9HWnB0cWxBUWo5ZXhVYi1WdlZZY0RtaGlGMDB0ekZoTHlDZkJPSXc?oc=5" target="_blank">КТЖ обновило состав поезда «Мангыстау – Семей» новыми вагонами - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 10.11.2026 04:18</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ обновило состав поезда «Мангыстау – Семей» новыми вагонами - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQTmt6VTNpWVNvQ2o5R2F5WXJHeDBwTnZnODlKM2s1Y2hqdVZDcy1iS0NzNGJxdE4ycndwTUg0X2xrOU5uQ2tLWWZiYVEzbHZBdlZJSTFqM0lpTmRfaFBfQWF1eHNpV0RDOUhWZUtDRmVmaTNEWFVDU2ZqMUxESUpjX013Ti1vNmhWZDduTTM2cmhvZUZDTlROdWVmZw?oc=5" target="_blank">«Казахтелеком» договорился о кредитной линии с Citibank Europe - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 11.11.2026 08:35</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» договорился о кредитной линии с Citibank Europe - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-06" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQOFMtTUlyUkY0aTJIWVFfMzc3bmc1MllPd2s1Ym1DVHFnTkRoREJjaVZnUzlXcGw1QjlXelFuMmRaRU5GYjE2ZEt3YlM1ZkRQQjlTM0VCZ1lIQjNPc2NRdFg5TElJaUFrMG9fdXBxOWFKdkpsT29XdkFrbWltaWtkWUFZMVk5UUdka2h5VmxjczVHZnQ4Unk3eUJtRExlZlZ2NGwtV3dkVTZPUEtveFpMbUtUalgwYVVCWXJjSdIBwgFBVV95cUxPVm1EdUdjeG5vTTMzdmgyTE9laXFWRHVZbXB0S0pCZGNmc3ByenR4cjVwS1U2ZFRreW8wS3FCeTNtcVRNZU96ZlBvbl9qRXBoMURoUGV4QW9teDdaVXpWQzRrMGMzbk00Y2hfa3dERFZseld0anVXeWJUTm5WbmFpalFLZjZzQWJDLVBPYjg3TmlIQ0ptSm5lUkY4eE9Oc3VETjJhOFgzSGRHTlVUZ2NhZzVrdldtWkJWOXhUUHc3cFV5Zw?oc=5" target="_blank">Казпочту и Казахтелеком обязали платить женщине 177 тысяч тенге каждый месяц - Qaz365.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 06.11.2026 03:23</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">Казпочту и Казахтелеком обязали платить женщине 177 тысяч тенге каждый месяц - Qaz365.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-10-13" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBON2NWTkE2cFRWaEMtZjFLUEV4eFpTRWp6MndLU2s3RnZHRDNZU1FoWTc3N1hUaEtVaF9ia0haTktOdVNCcWQ5bTln?oc=5" target="_blank">Новое назначение в АО «Самрук-Казына» - Ак Жайык</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 13.10.2025 07:00</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 12.11.2026 07:25</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Новое назначение в АО «Самрук-Казына» - Ак Жайык</div>
+      <div class="art-summary">КНБ задержал глав «Самрук-Казына» и КТЖ - Datification</div>
     </div>
     
-    <div class="article" data-date="2026-08-13" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQOU93dDBiLXNlMmpmYVg3U25kOFVtVTd1djRNT1JRRHhuYUdCUHd0dkkxUnVma3V2YTd0YS16eDl5UHRJVUdqeWs0XzNnTHA5SHdnamRnUEhkaUQxS21VcV9XZ3Q4b0g4bXllcmZiNDdYYWtuNHhBN2RpSTJ1d0wyM2RzVWxXa055OG1kQmYzMVB5dXJqVW1yRE5mTE9XdTR0SkJvdGhHZ0dXd0xZbjlYY1FpTHQ?oc=5" target="_blank">Парк КТЖ пополнился 146 современными локомотивами с начала года - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-11-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOT1RrbWxma2pYQ3ZCSG5faG8teTdFU1ozdk0walJnZ2ZzdFJTSjNLa1BrTldGTnNodXhGTm9kT2dRcGVaQ3BwWmsxZ0txTFpsUmFTU2lyM1hCdG85Nm8ybWRoWFlhcGx0emNiczRSREN3NVRiRXRsbUdENFIyZjhUWllVdWM2TElDUTZySTRjNW9vR0REVUpsSw?oc=5" target="_blank">Air Astana намерена вдвое увеличить число рейсов в Китай - Operativ Məlumat Mərkəzi</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.11.2026 05:36</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana намерена вдвое увеличить число рейсов в Китай - Operativ Məlumat Mərkəzi</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-13" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOSGI0M1NmQnd0Y3U4VDBwOW0xUFBpd3Q2dUtTSFlGXzhUbjc5aTRBNTE0Sks0M3V6NGZ0QkNjaTZfNjRfY2VaSms0WDlrQXI5dllpVTFyc0NMYjRQdlQzRmxIYzVPTm1JYVp0dHV0bEJyWnlRUmFucG1BZXlFZzhlZmpISHlOd1I1VzBWWV81aDlmdUtjYXBWQ21DT1FfX0ZN?oc=5" target="_blank">Air Astana открыла новое направление - рейсы на курорт Лангкави - Вести.kg</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.10.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana открыла новое направление - рейсы на курорт Лангкави - Вести.kg</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOdlZZcE5WYkF2YVlaQ2psVkhIWVlPVlo5bk9YV0dsaW0zUm94bTdnUUNFOEJtUGludEc4U3o0MmRlU2h0YUFFQms0X1pTTUdTcXJtb2VhMXdheWpFaFU0NEFiQWlCYm1FQ180bU80QmV5N1ZmRDZMLWhubWdFaHVqQ1FGRnMwbUlSQVFLZEZxMklQWnBvLVhYVVpZM1pJQ2Roam10YXdwejQ5SVZhWXM1QQ?oc=5" target="_blank">В Казахстане задержаны главы &#34;Самрук-Қазына&#34; и КТЖ по подозрению в коррупции - Report.az</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 13.08.2026 07:00</span>
+        <span class="date">📅 12.11.2026 07:09</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Парк КТЖ пополнился 146 современными локомотивами с начала года - Қазақстан теміржолшысы</div>
+      <div class="art-summary">В Казахстане задержаны главы &#34;Самрук-Қазына&#34; и КТЖ по подозрению в коррупции - Report.az</div>
     </div>
     
-    <div class="article" data-date="2022-02-24" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNbTBUVVA5Zmw1alMtLXBGSmY5SndBRWprTzRsUEE1TFo1d1ZpeUhiTWdzMTUyb2hKTkcwRVVZa2N6VFdGdWVKYXFndURfSHZkZFZtV2RTQVE3QkQ1UzZ4TzExQWR1U2VHLVQ4R0lrdXVqQ055blFhbmlnQldPUjRGX1MyQUJzTFZTeHlLYUducGhmcUx4U25WT2xCMFdUQ3hBdHBteGJYWkw2ZGNralR4SWNR?oc=5" target="_blank">Президент принял председателя правления АО &#34;Казахтелеком&#34; Куанышбека Есекеева - Ақорда</a></div>
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQVFFERUtKNVVxRnktNWRMSVlFM1IwZnNGMjFPVWxYbWJ4aEYxS3ZPdDhpTlhtTk5hZHFnWWo2Wi1UX0VmcVhKS2FqaC1SdTFxQVhIVXVLZGcxTFdxVkZnYVQyYWo4ZkoxY0YtYlc5OVJfQTByb1VMakxRMl9qTjk5OEl5RjJVSGtfSHdIVWdaQkpYME1nV29zRGtOSmx4eDNHOGFuY29wMzJBWWVobFFN0gG0AUFVX3lxTFBCZWJmaDhEOEtZZmx6LWUxR1lRU0oyM1ljNFpPcmdiZVZBeU1wZ3BzOW5SdFlRb0QzY0h2NFZUV0JHMVBrdS1TbjJfeEp6MlhEN1gxbFBONE1ma3FNeUZ3aUxEMVFOS0hWT2c3RzZJa0RZNFZ4eVRvNWZzRUI2akVsS0d4TTh1c3VMc19PT0VmaXRXSzFfWS14QTVhMno5bFBzVnpwS21KTkw2Q3daRjBGWndUWg?oc=5" target="_blank">Главы «Самрук-Қазына» и КТЖ задержаны: КНБ подтвердил информацию - Qaz365.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 24.02.2022 08:00</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:08</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Президент принял председателя правления АО &#34;Казахтелеком&#34; Куанышбека Есекеева - Ақорда</div>
+      <div class="art-summary">Главы «Самрук-Қазына» и КТЖ задержаны: КНБ подтвердил информацию - Qaz365.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOT3dzMk5abThHWlIxSTRxTFVRQ19iMENWM294TFEwZlM2OUphdzg4d0hVQnM2THBRa2t2VmxMR0RtOEV1OGpnNEdmdzFZUzlGVWlJdXFZOWMzZWRsd1BKRUI0ZC0zT0pTN21CcHRTaWdOV3ZQc0pIeTlEd2tnNUNVYUhkT0o4d3hCbzZCUXpyd1VzV19GZm96SVR3?oc=5" target="_blank">Что известно о задержанном главе КТЖ Елжасе Отыншиеве - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:21</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Что известно о задержанном главе КТЖ Елжасе Отыншиеве - NUR.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOVGlDN1JyT2dYY1BPeE9oRkltRC1lclUxa2VCMGhfbGxGMmFMd1JYZmx0ME1KSkYwQmdzaURhU1VXTU01Q0lOUDdRZlBGakc2QmlxRzNuTHN5V0ZEaHhJZTdlWjRkMFI5RWVuMkszYUd1anM1bWk0anM4SmNEeHVqZEU0M040X3MxOVFRX2I4V0ozQXVS?oc=5" target="_blank">КНБ задержал глав «Самрук-Қазына» и КТЖ: что известно - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 06:58</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ задержал глав «Самрук-Қазына» и КТЖ: что известно - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPY0s3b0J2T0lpNVRRbXRkVkN0Rnl5Y0hSRkFWa1dfNUFwaGdwd3ZYaG5HNG5SNHBQQzI3eGN1OUV0c3hwSUxkT1MtQmFKXzJScXBGemtDX2lNbTE0eEFGMURfTjRoOTM3aVBWN2RnSWJ4ekd4WEVERldTZzROdHV3aWpab0k1bDdWWC1JOFNMVUxoTUtIZllrNDN3?oc=5" target="_blank">Главы &#34;Самрук-Қазына&#34; и КТЖ задержаны по подозрению в коррупции - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:13</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Главы &#34;Самрук-Қазына&#34; и КТЖ задержаны по подозрению в коррупции - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxPS05YZnpoTUsxYUNNel8xcnNyZXNrWkFyYjVqX0pFTnRSU2tqLTZHdGt6T0Rya09oZE1wMG85MVpXQkdXVlZjUjFYYnRyWFVhM1o3Ql8tQlllR0tEdzVsSzdXMG53Y0hMQ1dpVWl0NG85SWwtb0daUGN2NFNTQzQ3UmwzYk52QUFpQUE?oc=5" target="_blank">КНБ задержал руководителей &#34;Самрук-Қазына&#34; и &#34;КТЖ&#34; - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:05</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ задержал руководителей &#34;Самрук-Қазына&#34; и &#34;КТЖ&#34; - NUR.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPalVfN09YMnBjOE1HMGFNWUt6Rk15bjUwbjUzLWhrQ3JMMWV0dXhsVE9OQVFqSGttZDl4c2djR0FlQW5OZTh6RUUxcjQtNXRaT3VLVnJQNjJmMVpxTVQ2ZW5ZRTh1Ti1iMXdjLVBLWkd2NkZBSGhHSlZQVGRCTTc5Q2tjNUxFMGthX0lvcnRfN1I5WTkxdS1VUlZnZUN1U1pXdXRzbg?oc=5" target="_blank">Не проработал и полугода: карьера главы КТЖ Елжаса Отыншиева до задержания - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:31</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Не проработал и полугода: карьера главы КТЖ Елжаса Отыншиева до задержания - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOdE5xamJMdHJCaWNEYnRtR3BOa0xhRk1nVlFwZklBcVNDU3lQN2Y4ZFJHUkVRSm5hdHV5cnd0N2xETWxHQmRtLVZDZjJ3LWpPQmp3ak9QRlF0TFZ6eUp2TlM4bGZTQllDRnJUWlEwVUpyY1lMX0hoWndSZU5fMGlNTThZVE1DanJCSVY5NXZiZGNTYXR5NWNzTDNabw?oc=5" target="_blank">О задержании глав Самрук-Қазыны и КТЖ заявил КНБ - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:01</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">О задержании глав Самрук-Қазыны и КТЖ заявил КНБ - Kapital.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNdDZENlJoV3NoZlh1SnVoU0lCVVpuTjdyZHNEaS1zRHNwejhIRFFpZGc4bGl5dDI2WHdMOUdub3ZJdlNEQTh3RDVKVTdUaW1GTUZqUEVlRFBjUmZaaEQ3Tl9hYVlOeV9uMWZDUEZoa3NyT3kyVnhEOE1wOWFEdzVHYkI5ZXdtVnZPZTdUeGUxRm5sUEpmSzdWSHZLVQ?oc=5" target="_blank">Глав &#34;Самрук-Қазына&#34; и КТЖ задержали в Казахстане - YK.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:22</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Глав &#34;Самрук-Қазына&#34; и КТЖ задержали в Казахстане - YK.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQcHMyLTlKcFdaNFlMSUlVTFFzZVNxbWlXSzFaUTk3VUxLNEQ5LXNvd2dnVTBHb1UzYVA0X0dNSGlQUDZXU0V2eHhEM3JmZGwtUUdOaW4wcUgwN0FEWTdpOEkxaVJhUXA3X3BqM0hreV81SS1DSmFERkRKSmtWOGNlYnJvbURTRGNWNnlaWVBmel8zUXdYdFJoVDBXcWkxMGxWZFZQWDRZc3pkVncxZ1NycWlvYTLSAbQBQVVfeXFMUHBzMi05SnBXWjRZTElJVUxRc2VTcW1pV0sxWlE5N1VMSzREOS1zb3dnZ1UwR29VM2FQNF9HTUhpUFA2V1NFdnh4RDNyZmRsLVFHTmluMHFIMDdBRFk3aThJMWlSYVFwN19wajNIa3lfNUktQ0phREZESkprVjhjZWJyb21EU0RjVjZ5WllQZnpfM1F3WHRSaFQwV3FpMTBsVmRWUFg0WXN6ZFZ3MWdTcnFpb2Ey?oc=5" target="_blank">КНБ заявил о задержании руководителей АО &#34;Самрук-Қазына&#34; и АО &#34;НК &#34;КТЖ&#34; - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 06:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ заявил о задержании руководителей АО &#34;Самрук-Қазына&#34; и АО &#34;НК &#34;КТЖ&#34; - Новости Zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPQmNHbk9uS2tfdUtQMVNPOGF5OTE3MVVGVWdaMUhqYzlnTFhIUm9Od3MzY3g1VFRkcmNwYldrV2R6UmNoYWpNY095elAtbHVVZ1dOZng4bkFzNjlQRDFuTmhEaHNDdEdfYUtyUFNhVUtHeVBPMEV5ZDVtZFBrS1h0N3JsejNSTEdUSzRPZDktazhQMTM2MlVRbDVLaGdIWEZIRXQyTTNXN085MG1wWFpudm51OFZjNDlmMHc?oc=5" target="_blank">КНБ подтвердил громкие задержания в руководстве «Самрук-Қазына» и КТЖ - Lada.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:14</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ подтвердил громкие задержания в руководстве «Самрук-Қазына» и КТЖ - Lada.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaU56MTVLODFqd0tvNU84QzZsVDNJUVdZRFhaSWZHdFNSVXZxUEpJSXZ4OHh3dzJWb3NoQUdQRk5jeWs2SEhrWVFZbG1mcFp5czdTM2g5MUhKdS13X2F4ZGRYQ2hLakszemdFOE9nR2R0Q2xCNFlaN1NKSFNRQ2QxUzdtRVQxN1JjbTY0dkNubm9TNnBwSUNtVi0yQmZDSTdJVHNOVHFCa3N0N0xIWllpdjZhX3kzRi04?oc=5" target="_blank">КНБ задержал председателя правления «Самрук-Қазына» и председателя правления АО &#34;КТЖ&#34; - Hronika.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:07</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ задержал председателя правления «Самрук-Қазына» и председателя правления АО &#34;КТЖ&#34; - Hronika.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNd2pXN2hiN2kwdUNka0hrOGlfelF5WEdjOG5ERlJZTWc5MThlRkZqWTZOWVlPZXZMNUhwemFxTWRJSktWckxVQkNXNTY4NmkwWHhCcExzdWtMc0dITDdoY2l2TWFCUFJwNmthMkNfRmxWT2Y5UnVWcDdEODlnUW5fSDJ3Y29ObHVCSWxDcg?oc=5" target="_blank">КНБ задержал глав «Самрук-Қазына» и КТЖ по подозрению в коррупции - Belles.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:02</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ задержал глав «Самрук-Қазына» и КТЖ по подозрению в коррупции - Belles.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQZUIzMUtHdndtYjBhaDdDTFBtS3pvVVZaZU51aV9pMXZhODVhMk5lQ00wdGlibTVqWFVRUTBfNFNtWXhENVQ1b29qaUIyRXk2cW93VklUN1BLajlVUWpLVDl4Yl9Pd1Z4eTJVZ2czaGZWeWJXTjFkRHUyZW4xUmJJZGx0MWRWUUJPbXlTbjBVWS1McnB3a0QtaGJ3?oc=5" target="_blank">В КНБ заявили о задержании руководителей «Самрук-Қазына» и КТЖ - diapazon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:17</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">В КНБ заявили о задержании руководителей «Самрук-Қазына» и КТЖ - diapazon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxOazZPbU1ZNnRUYUJNU3RQQVloYWFmdEd6TTNVay1QaTVOQWJCS3E4c2wxaWhCSzMwSDd3dS03LVVDa09XZlVDWUxIbkNTZGhzZ181ZlA1dk9LblhxZGZiSUxqa1JGZXF4QmJYSmhVYTYtS1FUMTd4NHM2MEd5NnBWZG83dF9kUkd1N2JhMEhYS3BmUzVnNHRSNkFwUy1yQ2hlckpqdE9GV2VjOFk5NFBsUzV6TlVQQXc5b2VyWE9SVWNtV3gweUZiQW1QSl9RMDlfdXpjdGpZN084Y2R6RTlpRVhR?oc=5" target="_blank">Главу «Самрук-Қазына» Нурлана Жакупова и руководителя КТЖ Ерлана Отыншиева задержали по подозрению в коррупции - Toppress.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:23</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Главу «Самрук-Қазына» Нурлана Жакупова и руководителя КТЖ Ерлана Отыншиева задержали по подозрению в коррупции - Toppress.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNZVBJMEFCd0Z0VFVNYTEzYmN6RVhhWUxodkl1a1FteWthZWJWV1FSVWNXdF9ic3FaM2VCd004RFpfTS1HS3NFMzBHYWhueUlTZGg0dHNmcFgtQnVKWXBmTnhjMzFmSjVQNDNlSTJPa3ZCaFBXdnA4UERSc19KbkgyVWln?oc=5" target="_blank">Задержаны главы правлений «Самрук-Қазына» и КТЖ - Вечерняя Астана</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:51</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Задержаны главы правлений «Самрук-Қазына» и КТЖ - Вечерняя Астана</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1UNUgyeEwyb1otNmF0Umxvd3duR2JlVHd1OGo0dXBKcldTVFVTNVJlakgyTmFEWHpWQkljZXBNYUxFM0RQUFRaV0xwOE9kVHdmMDVTRDhLMmtSYVF2Z3pycXIxY2R5OGRSWURueVNnaHFRSDhC?oc=5" target="_blank">КНБ задержал глав «Самрук-Қазына» и КТЖ по подозрению в коррупции - airpress.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:49</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ задержал глав «Самрук-Қазына» и КТЖ по подозрению в коррупции - airpress.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxQRjBVX0pLMWJtbzVJcjNMX2FCLW1RWkpIRGp5cEg0clhQVXA4bTVnYUVfTTlxVFNjYzFJZE5SUi1MdVV0NWtNMkdOUEhHTVlETnB1TnFsRWZ0LURZQnBqLVFsc3F2RDZiQUJ5LTV2c3BjeTRJQnVWcmgzZktNaFZpanZZbElaeFMza2ZtNzRIQjFwTWFTUXFwRVhKY2FuNm82LV9RcHdBTjVNLUhFNElFN21ROXRQN1pka3NJU1FpTl9KajNrcVBzd242c19GbjB0UUhta3cySmEwMDZ3Vm5rOVY1RnY?oc=5" target="_blank">КНБ сообщил о задержании председателей правления &#34;Самрук-Қазына&#34; и КТЖ по подозрению в коррупции - Arnapress</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:25</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ сообщил о задержании председателей правления &#34;Самрук-Қазына&#34; и КТЖ по подозрению в коррупции - Arnapress</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBQTGtOWEdDdVpGTGl0Ny0ySFNjT184QzRDazVWX09yMTZObHY3RHk4b09mN3d0djI1NHlJTGdQOVNDcjdTWjBqLTFGNlF1d3c2eU5FV0hBWWVpelRMS0ViQk44a0R1V1BuQ24xb09LT2tZM3hU?oc=5" target="_blank">КНБ задержал глав «Самрук-Қазына» и «КТЖ» по подозрению в коррупции - 365Info.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:11</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ задержал глав «Самрук-Қазына» и «КТЖ» по подозрению в коррупции - 365Info.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxORUNuSkNLZ0MtTEVWMkd1WGQyMkVZMnE0OXhiS0ZvaDRocHJrbGExcGZzWHZJaUw3MzhTdHB4VFI2dEUxcUNiTVdIU0U4Z1VRSDRiX1VpU3JaazVmT0k2dGFXN2h3VFk4QnVwSjl6SHZfbkduaVlxWXdBUE5CeVdtcHFFeld5bFc5YURv?oc=5" target="_blank">КНБ задержал руководителей АО «Самрук-Қазына» и АО «НК «КТЖ» - 4Vlastinfo</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:28</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КНБ задержал руководителей АО «Самрук-Қазына» и АО «НК «КТЖ» - 4Vlastinfo</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOUFg5eVhqX29rY0JNaWdRcHdFUFcwRHpsZGR4SGF5Q1Z5NHVMQzV0VnFOX0RrUmtHbDMzR2dZV1dqMmt0QXRsVkZtYk9WUkhwRnNEYTBRQTlPT0JIbmJPcmtHUTJjc3ZtWFlWZk1Sd2VZZkpRcjFmQmx4bWNGcFRQTTZ1TWZjVEJEU0tzYmQycEtsRTZRd2JTaTZR?oc=5" target="_blank">КТЖ совершенствует систему производственного обучения - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.10.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ совершенствует систему производственного обучения - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-08" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxONmpvck83RGhyWDNodkhtVFdtRXVWeFVVOTh3Y0tuQVRMTm40VHEyTnJ2UTNPcHU2a1doNFZUTVhla2Y3NkNOX3duanh0WERwOXFDMHRTZ0Q0Mk01TkhjWGEtUnpSNXRKSUJmUkNuYU9QeHdHend0Ty1yaUZ0TEZuVXhfcnBUd1hMSTJfell6QjI1LVI0eS0xSWNvN2JwekxjWWRaSkR3Vk96RmRpX2dNLXJkdzBZVkRxYVBnLQ?oc=5" target="_blank">Руководство КТЖ встретилось с представителями SIPG и NIZE Intelligent Technology - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 08.09.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Руководство КТЖ встретилось с представителями SIPG и NIZE Intelligent Technology - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-09" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOcG1yWTdzYUNjanpDQ2tJakwyMzJJMDhjd0g4di1veURod050QzVJWmNLU2l0UjdDZU5zajI4d0hRX1FKY2t1ZnVBLU1nc3BKWGRIMm9RMG1qR1htb2I4c3FIS01DNnI0RWFtZ1JsOXQ1TEhvOTZlVGt3WW1UdFctbUpLOHQ0QWtkd0VDcmJOTG5xbXhpVXF1aW9n?oc=5" target="_blank">КТЖ обновило 5,5 тыс. км железнодорожных путей - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 09.09.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ обновило 5,5 тыс. км железнодорожных путей - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
@@ -358,61 +807,72 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
     
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/kaye-v-ktzh-rasskazali-kogda-vagony-stadler-poyavyatsya-pochti-na-vseh-marshrutah/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-v-ktzh-rasskazali-kogda-vagony-stadler-poyavyatsya-pochti-na-vseh-marshrutah" target="_blank">В КТЖ рассказали, когда вагоны Stadler появятся на всех маршрутах</a></div>
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-12/fvfv-chem-zapomnilsya-nurlan-zhakupov-karera-dohody-i-rabota-vo-glave-samruk-qazyna/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-chem-zapomnilsya-nurlan-zhakupov-karera-dohody-i-rabota-vo-glave-samruk-qazyna" target="_blank">Чем запомнился Нурлан Жакупов: миллионные доходы и работа во главе «Самрук-Казына»</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.11.2026 09:43</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В КТЖ рассказали, когда вагоны Stadler появятся на всех маршрутах</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Самрук-Казына" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-11/fvfv-kazahtelekom-planiruet-otkryt-kreditnuyu-liniyu-v-citibank-na-summu-ot-73-mlrd-tengge/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-kazahtelekom-planiruet-otkryt-kreditnuyu-liniyu-v-citibank-na-summu-ot-73-mlrd-tengge" target="_blank">«Казахтелеком» откроет кредитную линию в Citibank на сумму от 73 млрд теңге</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 11.11.2026 09:38</span>
+        <span class="date">📅 12.11.2026 07:33</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«Казахтелеком» откроет кредитную линию в Citibank на сумму от 73 млрд теңге</div>
+      <div class="art-summary">Чем запомнился Нурлан Жакупов: миллионные доходы и работа во главе «Самрук-Казына»</div>
     </div>
     
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQWU9qY3dZajdmcE9DQjBQam5uNlk0UHJ5QzAwTnJic3Nwdjl3Q2NfRm5uS1Z4aVZ4bEJsMnZEMHZFckNvLXJRQ0ZrWnQzWVloT1hhZVJHbjRZa21pdmZkNmpONlNGd01iM190bmhKZnZrcTNXVGd1T3Q4SEltaGdCZFJtcFlQcGhzbE5DVXJUMnQwUHBEb1YtR0FWRmdyc1RROFNFM0x1d1lBTmRwcl9DaWFQWUhHT21KVHp1Uml5MEJGMlRVbDlnOHhn0gHPAUFVX3lxTE5HS2lwMWlnMV9iMTl6a3o4cnJidzhqWmU4aldMNzN3X3Y1NlJHbmtKb3VaWWdfbEZ1N25HcEx2Mmk2QzlNS2Qxa1ctZmRpR2tFQTlhemRTYXZNeTRtczIwMTRXakROZnA4aG9mQmM1Mmt4d2tvWkU1SVU5bWZlSnNfLWlPZlVWY3RLZS1IQmZ3cndILXNDQVl0bGY2Y2F0TGZqRTFsQ0EwT1NqWERtb1UzbFpRY3JIbnotdi1UcGVGWG1Zb2RTaER1MFdaMlNnTQ?oc=5" target="_blank">Будут большие расходы: в КТЖ рассказали, почему в Казахстане нет скоростных поездов - Новости Zakon.kz</a></div>
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-12/shlc-knb-zaderzhal-glav-samruk-kazyna-i-ktzh-po-delu-o-korrupczii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-knb-zaderzhal-glav-samruk-kazyna-i-ktzh-po-delu-o-korrupczii" target="_blank">КНБ задержал глав «Самрук-Казына» и КТЖ по делу о коррупции</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.11.2026 10:14</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 12.11.2026 07:03</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">КНБ задержал глав «Самрук-Казына» и КТЖ по делу о коррупции</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://vlast.kz/english/71596-kazakhstans-authorities-detain-head-of-samruk-kazyna.html" target="_blank">Kazakhstan’s Authorities Detain Head of Samruk-Kazyna</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 12.11.2026 12:37</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Kazakhstan’s Authorities Detain Head of Samruk-Kazyna</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/11/kazakhstan-launches-locally-produced-stadler-coaches-on-astana-almaty-route/" target="_blank">Kazakhstan Launches Locally Produced Stadler Coaches on Astana-Almaty Route</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 12.11.2026 04:49</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Будут большие расходы: в КТЖ рассказали, почему в Казахстане нет скоростных поездов - Новости Zakon.kz</div>
+      <div class="art-summary">Kazakhstan Launches Locally Produced Stadler Coaches on Astana-Almaty Route</div>
     </div>
     
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPRWhzTFgtU1pzY2VPWHMwN08tYlo3ay1maUlRVDF5VjA3T1dVcWZRZUxEY1poSWNFX044ckw0eVNaWWRqOHVyWU5SdXBCa09hNmJCeFJYb040aGpVYlU1ZGkyNXYwYkZJd2ZwMEhDWHo0dWFWQkI2YlRPbkpycEdXeTV0U29rekUwSkM4ejROYTg3R2tlQWZvZHdLZ3pWdERaWVBEN0tiaUl3ak9RX2kycVQ3alpCc3ZfNUNWQnE5aWU0Z29TVjhZ?oc=5" target="_blank">Почему поезда Stadler в Казахстане не смогут ездить на максимальной скорости, объяснили в КТЖ - NUR.KZ</a></div>
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZi1oWGVUNTNHbDJiWHhndzZZUE9QMEdTejZEUC05Y1NRRE5DZVdVYjRXSFNTdXJIYzlvblFqR2FDZU10dGxOMzhDSmVYWGhOajIwWkU2SVlXSGFKbk5idGhHb1c4UG96VGtaT1hPcjRWa3MtTXVVY2g2aDZrU0RKY1laNDNKLXdoakU2Unc0WU9KazN0a2x4TVFBQ1VzVFNKMF9NZ09BWXJUZ3V5Qjhubm42eGg2aGZjR01Z?oc=5" target="_blank">Чем запомнился Нурлан Жакупов: миллионные доходы и работа во главе «Самрук-Казына» - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 07:34</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Чем запомнился Нурлан Жакупов: миллионные доходы и работа во главе «Самрук-Казына» - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxPazRHMy1jTUNQMzVOdTM3Y1VXenFoXzE5VmFlRjBFTlRmdkRYUlk4TVRvek5CSWJfRzFrZGVEUEl1eHBZd1hLZWtoNkZ4RE5sbkVOUHpSQTJlOE50UHVOR2RmZkZHWHp3My1LdDJGNTBhUEhqdXlDZnJZUHhuNFh5cXA1dDNiOTNBZVFDaWFTMDFRRGU2RmJQN2VTVllLWDBrQzdsQWlHR2FUZUdBbFNZOF9MR2gwUDZOSG5DczdYd1FpblBaOVRKR25OWjRjSnRDcGV0TjI5YmRuRWpZWlBWTGNhdw?oc=5" target="_blank">КНБ сообщил о задержании глав «Самрук-Қазына» и КТЖ: в соцсетях распространяется видео с разбросанными долларами — OTYRAR - OTYRAR</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.11.2026 12:52</span>
+        <span class="date">📅 12.11.2026 07:26</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Почему поезда Stadler в Казахстане не смогут ездить на максимальной скорости, объяснили в КТЖ - NUR.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-11" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxObDN6emk3T05UcWZ3SDcyaWxSTTVOWExUN1pqZGphOVdPVmJCdGRQSTd3TmhseXlVVW11a0FISHd0NTBUVmVISmJDeTFxTzM3dXFjdGNNSXZEV3B0bkVvQkV2d3hqZmw5QzlZTmRPYVprdmVxeTJjNUlyQUdPb292QkZMbGk0X3lOMTFMVjNndEc2SlE?oc=5" target="_blank">В КТЖ объяснили, почему поезда Stadler в Казахстане не будут ездить на максимальной скорости - 365Info.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 11.11.2026 13:10</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">В КТЖ объяснили, почему поезда Stadler в Казахстане не будут ездить на максимальной скорости - 365Info.kz</div>
+      <div class="art-summary">КНБ сообщил о задержании глав «Самрук-Қазына» и КТЖ: в соцсетях распространяется видео с разбросанными долларами — OTYRAR - OTYRAR</div>
     </div>
     
   </div>
@@ -474,8 +934,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2022-02-24';
-  document.getElementById('date-to').value   = '2026-11-11';
+  document.getElementById('date-from').value = '2025-12-03';
+  document.getElementById('date-to').value   = '2026-11-12';
   applyFilters();
 }
 
