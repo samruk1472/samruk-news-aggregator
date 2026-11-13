@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 12.11.2026 21:57</div>
+  <div class="meta">7 источников · Обновлено: 13.11.2026 07:39</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">38</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">7</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">25</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">6</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-11-12">
+      <input type="date" id="date-from" value="2025-10-17">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-11-12">
+      <input type="date" id="date-to" value="2026-11-13">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,6 +84,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -104,47 +108,442 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(7)</span></div>
     
-    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi8AFBVV95cUxONUpVSmp1cVh6ZVEzTkhyYTVyQk9qcUFBS0hzSmd1RjlrVlFUa29ydUkzVkItcmtuU2VWSWF0ZkNicGNOYlI3ZGNhZTBWY0tSTW0wNENzWFNyZ1lSU1lJMWZxZnpIRVU1X2lYVlV1eEFjaGJjSWNQa3VLLUF2U0xvMkZ2NEp1OWtFWVpCQ2Q2aDZqd2IwRE1memgzZUpCMmlzMGVzRnh2R0toeHkxN2R5LXVqVHRtc2h1X21sQzAtY3B5WkV1Q0tiYkNHaDJtNU9PU3RPQ2RHT19HQVJETkI0YVZIZWtXcklFdGtoNkNrWWE?oc=5" target="_blank">В Казахстане по подозрению в коррупции задержаны глава госфонда Самрук-Казына и глава железных дорог — КНБ - Русская служба The Moscow Times</a></div>
+    <div class="article" data-date="2026-11-13" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-13/svan-milliarder-otec-devalvacii-i-akim-kto-vozglavlyal-samruk-kazyna-i-chto-stalo-s-nimi/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-milliarder-otec-devalvacii-i-akim-kto-vozglavlyal-samruk-kazyna-i-chto-stalo-s-nimi" target="_blank">Миллиардер, отец девальвации, аким: кто возглавлял «Самрук-Казына» и что стало с ними</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 12.11.2026 07:18</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 13.11.2026 05:27</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">В Казахстане по подозрению в коррупции задержаны глава госфонда Самрук-Казына и глава железных дорог — КНБ - Русская служба The Moscow Times</div>
+      <div class="art-summary">Миллиардер, отец девальвации, аким: кто возглавлял «Самрук-Казына» и что стало с ними</div>
     </div>
     
-    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOMUdpaHIxZjU2MDN5emZLRXRUSko3RnI2NHZtMlkzR3JtZWJRV0h2bVpNMXBGUk5WSUVqejJNQ3Q2QXpMUXhLUFpxWGROejhvWVhTS2k4N29IMk1xaUxkbnkxV2ZLc01ZekVhV3pGVllCVThjX1ZPUC1UWHlSRlpfNXh5MEdjZDFSNnlhaFduUXhJbURuSlBR?oc=5" target="_blank">Токаев выступит с принципиальной позицией после задержания глав &#34;Самрук-Қазына&#34; и КТЖ - Kazakhstan Today</a></div>
+    <div class="article" data-date="2026-11-13" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-13/fvfv-britaniya-vvela-sankcii-protiv-sibura-partnera-dvuh-krupnyh-proektov-kazahstana/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-britaniya-vvela-sankcii-protiv-sibura-partnera-dvuh-krupnyh-proektov-kazahstana" target="_blank">Британия ввела санкции против СИБУРа – партнера двух крупных проектов Казахстана</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 13.11.2026 04:56</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Британия ввела санкции против СИБУРа – партнера двух крупных проектов Казахстана</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/novosti/71606-velikobritania-vvela-sankcii-v-otnosenii-rossijskogo-sibura-vladeusego-dolami-proektov-v-kazahstane.html" target="_blank">Великобритания ввела санкции в отношении российского СИБУРа, владеющего долями проектов в Казахстане</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 13.11.2026 10:55</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Великобритания ввела санкции в отношении российского СИБУРа, владеющего долями проектов в Казахстане</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNWDczdHdta01UakNGTkVTSGxKdFcxVFhneS1yU2J0U0hVblZYMjl4aWFXMkNEakdJRGJpaVRkeU1yejZORzY4eWtjakVGZ2J6Y0M3RFZSTTZ0NzRraFhvXzUwdHVKMTdYcUd3YjBHYV9XbDJrMG1BYzYzM0ZNZ21yeDVYOVB4bDQtX084TzdCU1ZYQXFadlB3dDNmUExQNktjWmc4VUh6blRPVWVwR1lhTmJCZF9IdUhxZFFSNmlqajV4VUIyYWc?oc=5" target="_blank">Акции компаний «Самрук-Казына» почти не отреагировали на задержание руководства фонда - National Business</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 12.11.2026 19:33</span>
+        <span class="date">📅 13.11.2026 04:28</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Акции компаний «Самрук-Казына» почти не отреагировали на задержание руководства фонда - National Business</div>
+    </div>
+    
+    <div class="article" data-date="2025-10-17" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxQYXYwLTdZOVhFdGZkUV9HX3NobnlaMExaYml0OXg1UDByT2Vuc0tCUXdLN0NBVW9SU0Jxb1NPOHNqRTRnZHoyZmdLOWU0RWU2bXR3a1RsTHhUbFIwd2VXZE5POGx3OVZJd1BwSGJPTHFrTjdzR1hMWlZtX0YzSERxQ2xnaUFyanpTVU9ITmpzRjVHR0I5YmFSMzExeHpKNHZ6UWJuQ09GVjhUdFVxbDF6dVpUdE1BQ2pLdXNYQTNIYnktWm1ZWE5xcHZZeW1UQmlXSlltMTdKdkJkZWVrUks0V0JWS1Badw?oc=5" target="_blank">КазМунайГаз объявляет о поиске стратегического партнера для совместной реализации проекта «Шыгыс» - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 17.10.2025 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз объявляет о поиске стратегического партнера для совместной реализации проекта «Шыгыс» - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE5NV2lSZXktS3F2WjBUTnFUVWNoN2tLQ2JhV1BEdWNKQzlZQ0duenY5bnFNZXQyVHpWLXpBVS1OYnNrMVNPNVhkbzhXNmExZ2ZYLW44VFhNMzNYU3ozcEFtTEdTcmtLOE1PZWZDUEI1RE96QQ?oc=5" target="_blank">Air Astana за девять месяцев 2026 года получила убыток $2,7 млн - airpress.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.11.2026 04:27</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana за девять месяцев 2026 года получила убыток $2,7 млн - airpress.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQRFc0V2JUVjBINUx5cUdNWHpNT0hGRGZfa3dmeVdvWFprcGJ3LXpndmVGdHJURkh0X1JVN1h1bXRtVTVCZU1OejNXUENmMmxMRVI4OUxpMjA0RTdNMlZIWnJQdWJkSUdVS1l0SVpTRlVsSE5pVjZ0bnlrbUlCbEtpOGdvT29ZWG5DRjNsTFRQSndkemIxSF9xV0prY1ZxZW1KdmJIWjVR0gGqAUFVX3lxTE5Kbk1CQ3ZON21kQWw0R0llM2xEbjVwTzVJMjh1UkRhUWtlOWNXWG5PWTdWRjA0ZEdXM1JWWHdZcU82OGFqRUR4LUVtNDAtLWkxeEtkNlBadm1oNUVzUGNRZy14NWswYWRWbWw1bnFtSXc5UU1kSHJ0MG95dkRVeHp6OFhESXBLRVFIR25wM25CQ05VRTFiWDdQWXZXMDJiSUs4dnA1Vlc0WlRB?oc=5" target="_blank">Эксперты предсказали отсрочку IPO КТЖ из-за коррупционного скандала - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 20:39</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Токаев выступит с принципиальной позицией после задержания глав &#34;Самрук-Қазына&#34; и КТЖ - Kazakhstan Today</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxNMHFMVmtuRjMwbERERG53bE5RcXo5RjFlWXd2c0ZQTlp3TEk5YU04Q01YVGcwaVAyZUMybnBDbXJZc1B1VTFnZDJDeU1JY1A3dF9xcWNBSkx3R2d2b0Nsb0U2eFczYnpMaUlJRmJRd0FSRFFLME9abHVZYW1ZbTZuUXA5aDNxMTVvYlVwZlg2US1VeVNjTEhDY01YRUF5U0FGYUxXM3EwNkFsNzJtOUM2WXRzR3BRMVY2NzFoVnJEUFoxamV1bENvM2pHY0FVR0Ytd1VPNWNSX2pPbGNjaDhuaWEycGY3QQ?oc=5" target="_blank">Антикоррупционная служба Казахстана задержала Нурлана Жакупова и Елжаса Отыншиева — руководителей «Самрук-Казына» и КТЖ - Портал РЕПОСТ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 12.11.2026 21:02</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Антикоррупционная служба Казахстана задержала Нурлана Жакупова и Елжаса Отыншиева — руководителей «Самрук-Казына» и КТЖ - Портал РЕПОСТ</div>
+      <div class="art-summary">Эксперты предсказали отсрочку IPO КТЖ из-за коррупционного скандала - Ulysmedia.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(25)</span></div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/novosti/71605-air-astana-v-dekabre-zapustit-regularnye-rejsy-v-sarm-el-sejh-iz-almaty-i-astany.html" target="_blank">Air Astana в декабре запустит регулярные рейсы в Шарм-эль-Шейх из Алматы и Астаны</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 13.11.2026 10:12</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana в декабре запустит регулярные рейсы в Шарм-эль-Шейх из Алматы и Астаны</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="http://time.kz/news/main/2026/11/13/tokaev-provedet-soveshhanie-sovbeza-po-situatsii-v-ktzh-i-samruk-azyna" target="_blank">Токаев проведет совещание Совбеза по ситуации в КТЖ и «Самрук-Қазына»</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Time.kz</span>
+        <span class="date">📅 13.11.2026 08:30</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Токаев проведет совещание Совбеза по ситуации в КТЖ и «Самрук-Қазына»</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVzhQV0Ftdzc4TXJVTy1ZZ3FpMVp5aTJvenRsUWlKODVKREMzb1R6OXZfVUpfVGsta0R3a2E2a2FHUDZXN0FxeW4xVXhmOEE1S0dDVWkzVmdRbGluSUI0a29pVXRIS3NsU3RKamFELWRzc1BUbnlTUkJUam5HMFAtTG1qcmlqVk5xblpDWm1mNXI4QzhncVZDajNsckc4X1JKcDlkU3hpb0NJNUNZUVlOS1QxT0JsMTkzUUdSeGpTdXdzQQ?oc=5" target="_blank">Миллиардер, отец девальвации, аким: кто возглавлял «Самрук-Казына» и что стало с ними - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 13.11.2026 05:29</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Миллиардер, отец девальвации, аким: кто возглавлял «Самрук-Казына» и что стало с ними - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPeWVka3ZLcS0tSW9LV3ZNcG5wZjlYWjJjWHYtQXJiMTNqRXhRaFRqMERfQWs5b25WUktUME9jLUdIdmRudlpVM3dBMFpDYndOa2EzaTk3WEx4SVFaR25ldkVaM0EwS2Y1Nm5jTnVqOGo5QVNtTGVhT1padFJEZEU2SkMwNXA2MTlOMm1VQkF4NzVRWXhSeEhmcVVCMWvSAZsBQVVfeXFMUFd4OVJ2QlJOa2RQaUNrNHNwQXVaOGpEdlc4MmUzSFRoNUcwQzNieTdTV3NKUzktbVBxVjMyTHplcnZPVDhFRm5yeVQ1cHpFaElEVmlnelFFTmNLYy1TN2F2aHVTUS1tamEtWHY2Ti1NRUNTWjkzbzZXLWhCTE8xb1g5U1R3TTBfeUJQNVlfeHJPaWNpWGR5QTRWQjg?oc=5" target="_blank">Как изменились акции компаний &#34;Самрук-Казына&#34; после задержания Жакупова - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 13.11.2026 05:14</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Как изменились акции компаний &#34;Самрук-Казына&#34; после задержания Жакупова - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS0ZmYVdoTjZSTC0wN3FkS0JnQk02RjR4S0g1MUFCb3lDVDRzZ3NSbXNCSHRwbEVnRzdaOGQxNm9maG45Zmc2VDdGcXpBYkJjQWJ1RzIybmZEQUNaWkdDSUZNaVZacXp5cTB6MXljMnoyQTNfTFppcFZUUm9BYzZWaTc3OVlaWGVZbjR3SktsSzhITmt1UXltd3dhd2hOcnZhVGl0c3pmSE04dTBOZFU1QnlNWW12d1Vm?oc=5" target="_blank">«Мы не тем делом занимались»: тренер «Барыса» высказался о задержании главы «Самрук-Казына» - Offside.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 13.11.2026 04:15</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Мы не тем делом занимались»: тренер «Барыса» высказался о задержании главы «Самрук-Казына» - Offside.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBYV3Q1VmQ1VW13c3dIWklVZkUxcFBrdFNheUtxaFduYlM4c0xDdGlKNk0zbXZqbFFwbmpSbGQ5ZmxSSmpFMkl0YjlJSi1NdDI2cWJhX0l3T2JtNGZmZnc5R1FBaGMzWExOdTR2QjF3?oc=5" target="_blank">«САМРУК-КАЗЫНА» СДЕЛАЛ ЗАЯВЛЕНИЕ ПОСЛЕ ЗАДЕРЖАНИЯ ГЛАВЫ ФОНДА - The Tenge</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 13:06</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«САМРУК-КАЗЫНА» СДЕЛАЛ ЗАЯВЛЕНИЕ ПОСЛЕ ЗАДЕРЖАНИЯ ГЛАВЫ ФОНДА - The Tenge</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQmF1OHVNMWw2eE5rQkVtamhTbGpPUDVXcWFaWVNvODFqZEk4S1p1LVczcnZQRDd2QVE4a2NQZHlmVWN1a19KN05pbVhIaVBuT0ZnWUdaWEZobk1rT0lfYzRyckN5T1hqZ0cwbUV3VURSVlE5RnA4VHRRVndkMVItZ0YyZ0NHWFlqRDNJMS1VRHoyVVJhUm9QbDhVUHVhb1l5MHFWRFZBQmRJdmtuOG9kZE5kMWg3cWZURDBIYlVlaktqVW83ZHhISQ?oc=5" target="_blank">Токаев проведёт заседание Совбеза после задержания руководителей «Самрук-Казына» и КТЖ - National Business</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 13.11.2026 06:17</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Токаев проведёт заседание Совбеза после задержания руководителей «Самрук-Казына» и КТЖ - National Business</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQemt3VWlWaHVGX2lndFVhRmxKcm5CZ3phYkhXOURMRnZIb1ZMZ2dobWQwWTNuVGFHbmw1dEVlUDJ2Z3lpZy11UTlfYV9MTlJNN1lOanVWRlA0aml1dG55bkpXeGhNUUVFRmhqQUQzSEdpMTdLb3JTRVJUQ3hGVVlKNDhkSTVuMllCLTFLRA?oc=5" target="_blank">IPO КТЖ под угрозой после задержаний топ-менеджеров - Inbusiness.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 13.11.2026 07:27</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">IPO КТЖ под угрозой после задержаний топ-менеджеров - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNUGtTWk1GYlVyeElBVG1WMzF0a3NwNzdDeHEyWFpkREs3QVNiZTdJaDdLZHdjdVRyS1VVYl9XS0NXbHJxWHZvQjJiREEwOUp4dDQtUTdnUWs2RDR4eHQ0dU1qaHdOZ3lxLUhYTHF5R3N3SVZjZ0hSS3d5UW5yVndJaHc1VUtjbEl6T1pQaFo3UUhzcFJZXzF6MC1HZlh4YnF4NzZ4RXlrcw?oc=5" target="_blank">«Всю систему менять надо»: нужен ли Казахстану ФНБ «Самрук-Казына»? - National Business</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 09:58</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Всю систему менять надо»: нужен ли Казахстану ФНБ «Самрук-Казына»? - National Business</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1sUTc2d2Jrei1FcDV6N3l2amxWdmVEc25pTkdZRTJ5WVVETmpsOFEydGFjWDhiU2hmcmZuUnNIQW1UUVVwV0NYRmxDYUJqTzdQUGZqbDJLRDhBZVB4cWNvM1U3TkQ2R0x2aEYxdWdkNDVDM0dPOURHaERRWHBUWkU?oc=5" target="_blank">Расул Рысмамбетов: IPO КТЖ не будет – это точно - Informburo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 13.11.2026 07:35</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Расул Рысмамбетов: IPO КТЖ не будет – это точно - Informburo.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPRlhXS2c5b21TVEczLU8wWTJUUTdkNW8zQ29nS2t6cURKR1ZkLV9vREFrU1FzRzVJYVYydnhRUy12Snk2Y1VnT3Vpdi1JbnBKcUIwdFpVLVlRZUN4blVTZ0c4ck5Ja2RBRVBMMm40a05MaFo5a1lGcGw3eDVmUU1mRTNQRmdoa3p3Z1pCdU9ZUERHYlZXV2F3QTd2eHZLMEZERFhuU182bDdSZUVGRE9BNTJMWWw2ZGF3dDB5eHB1QQ?oc=5" target="_blank">Дайджест NBK: как Жакупов выбросил из окна доллары, доверие инвесторов и IPO КТЖ - National Business</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 13.11.2026 03:09</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Дайджест NBK: как Жакупов выбросил из окна доллары, доверие инвесторов и IPO КТЖ - National Business</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNb3V3N2ZGNkdoTlpTeXloSWpYel9aTkwtM2FQVVA5dEF6dnFSUmtyQ0FrQXNlNEh2cE1rNVVtOFRtNzhUV0VKeE5IWVFvbDhhWU9xTDZVSUxvZ2FCdUFreXFWaElPckNHNFpscHh1UnFWLTNjSC1Tczdnd0pQZUlwUXpTV2N1TnhCNjQ3S1A0eWZ6UUZWc0huM9IBlwFBVV95cUxPLVhHSWg1NjBSQ2FySEtZeHNVYmFoUExoUWZQaXA4cGFRb2RWZU1uQmRValpnWFlVSW9Rd3pfMF9Bd19KRHJ4cTItanFpNFMtdGZOVnVyakpKWjR5RllzeTVPZlNFOFVuaWxaNEZ5Q0xFaWxSLUR6bmhwejN1OUdCRmZxc0VxcHRJS1hSU0hFdjUyQWZrVnpB?oc=5" target="_blank">Air Astana запустит прямые рейсы в Шарм-эль-Шейх из Алматы и Астаны - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.11.2026 05:34</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустит прямые рейсы в Шарм-эль-Шейх из Алматы и Астаны - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQVTY4MWI0c3E5VFM0SUktcU9JaXlYQU5oc3A3MnJUV1NDNjFHdjNoVXd6Q0RTb3ZDZGdkWEs0R3ppNnBWdTl1MzkxNU9hQ2lzMEprWkdiNXE0UXd5RjFCdkVydVdKdzdITHdZaG9pVVdaQVVGbjcwNnBNNk9ZdExmUUFQdmlHYTg0d1FWQVZsNWg5VzZlQXowUW02NWVBejBta3dmOHJwOGIyOUxILW1uUE1TNA?oc=5" target="_blank">Air Astana запустит регулярные рейсы из Алматы и Астаны в Шарм-эль-Шейх - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.11.2026 05:38</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустит регулярные рейсы из Алматы и Астаны в Шарм-эль-Шейх - Kapital.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaXgzV3o3TzFhWXdoeWNPNmp1SERrNFYySk9kaVE4QTJqd1Vzd3Ywd214eUt5aHFMQ2tlRHktZDQzRzM3QlFWYTVablVRcTNua3lXX2ZFd2RyN2t5V09GZVdmdC10RUVOVlBMdzBqQXpzLXE1MXI3VVRDWTZlMFZwaW1xWkgwTndPLXl1aHdjbTBZUXFCZXJvLUI4NTlFSTV2cWV6eWJfd08?oc=5" target="_blank">Air Astana открывает прямые рейсы на популярный курорт Египта: сколько стоят билеты - Bizmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.11.2026 06:57</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana открывает прямые рейсы на популярный курорт Египта: сколько стоят билеты - Bizmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-30" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTzQxTGQ1VTAzc1BjdnlIeTFwLVZaaE4zRzU2cVNzQ0c4cFNUb2RjaEx3d2tfaEdOVEpMdXU0T2dkcDAwb2hsUUdxRGFoV1ZFdTdlX2o1bTdBcUs5UE0yT2stWU9kWndUWmlfZi1WRDJFbzhPekVrczBablVjNWFTbWk1R015aUl0eG1R?oc=5" target="_blank">Air Astana запустит прямые рейсы из Алматы на Лангкави - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 30.09.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустит прямые рейсы из Алматы на Лангкави - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNNDdIdUhGSUlhOWttbTdOZ0ZJWlJ2MHhFdzg0QUtBVG1fcmtzZTVTZFZKLW5nSkRBQXNnakFvbnE2UzdfVkQxVlZoZ1lCSlA1SWQ1Y2RfSlpDSS1FMkFXd2hUSUstcWoxQVJPQjVnVGV3a21BUFhISkhwSU93VjJrMC1BNUZEUGdDNERPNU1ZTXVHMlVEQ2c?oc=5" target="_blank">КТЖ высадило 65,7 тысячи деревьев за десять месяцев - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.11.2026 06:23</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ высадило 65,7 тысячи деревьев за десять месяцев - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNOENlYWlUZlozN2otelA1czd6Q1FQV0htVG9jcFRGU25Zd3I5ME5XOWFKZFFIei1OOG1kQjNGeVhaWUh0Yk13ZzhJaTlJYmFJVFBNRGNYZFFEM1FoZnBVc0xQTEUtWFk2ZHpYUmE3RldNWjROdkliTnZHaUJTZFgyelE0RGxPQU5jbTJNVWhhRWlqcG1GU3VyUEItMFVEdGt0cmJNY1liVmtQTFB1MHVJ?oc=5" target="_blank">«Секрет» на 1,38 трлн: КТЖ запустила вагоны Stadler, но продолжает скрывать их цену - National Business</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.11.2026 04:26</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">«Секрет» на 1,38 трлн: КТЖ запустила вагоны Stadler, но продолжает скрывать их цену - National Business</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFA0WWJ3eEFTb1FHZ0RQRjBYV2liRkp1U0xZRG9seExwTEg4VmtveXZ2SFp3SlYtTU9nVGtmaWh0Z2kxazFKZWlRNlhSbmhfdE1JbGFEYUVVLXlKTUlPU0E?oc=5" target="_blank">Президент Казахстана проведет Совбез в связи с задержаниями руководства &#34;Самрук-Казына&#34; и &#34;КТЖ&#34; - Bestnews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.11.2026 03:35</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Президент Казахстана проведет Совбез в связи с задержаниями руководства &#34;Самрук-Казына&#34; и &#34;КТЖ&#34; - Bestnews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBXWWJZSlFrTDc5UzZwZjQ3dUJTOWNvM1I1a2hRaUNBUHpiSVA1U2pSWDh2LUxscWM1bDdOZ3VqS24zUENMYlg4S3h3cnBZaG9PN1FWSGo4cER3NHFsNFhfa1pUSlZCQWhQWTJhdjhLUEFlZGxKTzVFLThR?oc=5" target="_blank">КТЖ, скорее всего, отложит IPO после задержания главы — Bloomberg - airpress.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.11.2026 04:33</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ, скорее всего, отложит IPO после задержания главы — Bloomberg - airpress.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPOEVQeXRtZXZaNHBQbU1IZ19WakRhUUpOWkVHZzhKNVo4UDF6ZGI5WWpKYUZGdUdralFta3FrS2tBTXhEbUtPNXRzMklSZjVWRFJPUjNlR01IWkVwcUk2aWJjSDNYM1dRbnV4OFJtSnlpWGY0N1BNOHZxRmVTSWVsQUdRUk42d0gzeXBDT05YMGNpOXp2RjdTTlY4MDFkcEZDbVVwd2hBdw?oc=5" target="_blank">Токаев проведет совещание Совбеза по ситуации в «Самрук-Қазына» и КТЖ - Toppress.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.11.2026 07:17</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Токаев проведет совещание Совбеза по ситуации в «Самрук-Қазына» и КТЖ - Toppress.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSUZSRGtfZ3o0QkIyNDlZbnYtX1VVMHJNTFB1YWY5U1pBSUgtU1dFeHV6SFF4N1RPUFpiQ0drSFdsTEN3RE9WdUVFRG8zVkJZandOZndwNnk4Q3JJTTZXd0RpVEo4NVkyTVA5YkxYU1A1YVVMeFBRMmd4NXFOMnZVTHMxT1lzVTU0WFRHVktwUXRRM3Fsenh2WjRjQ21EVG42eGl4dnE2eUlyTUdyWEh6YlhuMU4xVGxlT1hub3hOYXZ0Zk1pSy1rY3hKckpiYzRSRXVteFo5R3g0NlXSAeABQVVfeXFMTTNhUlpTQUJGNWgtcjdDUGlPNTZERk5qbDF3dWJpUFdRNnlUWW9qZUwwSXAwZVN1SVhxSURkbWFqUDB1UzVrQ2Ryblh6VGZ3a3QxbXBTQlRJbzNXNUI1TU1XdTYycVZsTW14aXUzMmZSdHVQNDYwTVZLNUYzRGVFdjNpenByS0ppZFdxSm9rMWFDbVJBYnlRbUZhU0lfZFZQV2tiUk5YWnlzRV9Tc3M2eUpqa0lTMnB4bVVJVmE5b0k2ZHRUMHVpS3FzR1VnVU1ESnVzcUQ5ZEdlcC1hMUtkY3M?oc=5" target="_blank">Закон должен работать на всех этажах власти: политическое значение задержаний в &#34;Самрук-Қазына&#34; и КТЖ - Новости Zakon.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.11.2026 05:01</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Закон должен работать на всех этажах власти: политическое значение задержаний в &#34;Самрук-Қазына&#34; и КТЖ - Новости Zakon.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQajlyRmlnYW9JVXNkN25Ddl9oUl90Y2lnOHdyMktRb2hqMEhucUNiblIzZTExbkR2Q0JPWDI3Zi1qRmNhX3lHQ1VIS056ZlEyOXVlOFEwVXdtNzJldzdzcHFuZmV2VFRkanVlNWlZT0MwSHFrWEMzQUZHb3haTV82cnpaREpuU29hYkcwZTNETXFrTVREdHI4VmI5b1JraUd5ZmxrNlZPXzNwWDBQUEtOYWg1d1VCZmVTMWtiUA?oc=5" target="_blank">Токаев проведет совещание Совбеза на фоне задержания руководителей «Самрук-Қазына» и КТЖ - Вечерняя Астана</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.11.2026 04:04</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Токаев проведет совещание Совбеза на фоне задержания руководителей «Самрук-Қазына» и КТЖ - Вечерняя Астана</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxOellqZ3l6MGp3Q0V3c2ZQLWxTaDdrOFRpTjI0elQ0TWpEY1NkeUcwelJhUTZObGNlZ3FBblk2U095N0Q4VEJxYUVhX2c5d09xaVlBek5xa2tLOTlTcVR1cTFjVXk2WkJvVUhCamg1Sm5KYW45VUx6UUNPN2tyMmdyQjhpbS1ick1oVXpKR2Zua2VDeEnSAZgBQVVfeXFMUEd1aUdKaUpIZ1pGMHlyajdBdW1BYmJldnhHT29BRG5uLWdhaHF4VWZXRzljZ3Z6TGJUY3pIX3ZBNlJLek0tRzFvRk9oUmNGUDdFNXU0XzlyUld4R3c3Q2M2SXBoWmxIc19HVHkzNkRiaUtmbnAtMUVwaUFzTi1aQjQtaGVYWWJZazhuNFdVVU11Wl9xZlJmeWI?oc=5" target="_blank">Задержаны глава КТЖ и руководитель фонда «Самрук-Казына» - Vlast.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 07:05</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Задержаны глава КТЖ и руководитель фонда «Самрук-Казына» - Vlast.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdTJxRzQzVUhEaFRFZll5N2cta0hLN3U5NE9ienhOZ1N3dllqTDlTOElGYUl0S2NvbzJfenpESExYdGZHNkhZbUVTeUloSk1rQkxpY0VLUTNOQXhOYVgxNzlDS0JkcGxxdTJoT1ozWHh0dWFrYjRTREw1WUNMeTE0MUg5aGstSVRzZS1OdFIwR1RkVEJFQkxEVU9iUmdiV0dHVjdhRzdXN0VTSDRaN05xSlpHdmRSdGZJeFFNamxXNU9yZnM2cFNMTjc5U3dVczhackE?oc=5" target="_blank">После задержания глав «Самрук-Қазына» и КТЖ под вопросом оказались 5 миллиардов долларов - Lada.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 12:45</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">После задержания глав «Самрук-Қазына» и КТЖ под вопросом оказались 5 миллиардов долларов - Lada.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOREE4SDBEc3JXZGRuaDZSRmMtTVFzd1J0VjlUT1FkaGtFNENhTkhQcWsxMEFEMzNvUzFrNmVEc2tFNi1nS2YxRU5zRVBkREUyWnZtUTFiOVdmOEZVRENHdTJGNHlSbU01MEZZQngtS1NWb3N2UnRib044WXFtWW5rcnlnYk9xZV91S2tLQ0t4QnBNZEw2c1VXY1Z0b2JUT3AxS3pJRFBra3F1WEk?oc=5" target="_blank">Токаев проведет совещание Совбеза по ситуации в КТЖ и «Самрук-Қазына» - Время — общественно-политическая газета</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.11.2026 04:52</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Токаев проведет совещание Совбеза по ситуации в КТЖ и «Самрук-Қазына» - Время — общественно-политическая газета</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-13/devy-iz-kazahstana-v-sharm-el-sheih-mozhno-budet-letat-kruglyi-god/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=devy-iz-kazahstana-v-sharm-el-sheih-mozhno-budet-letat-kruglyi-god" target="_blank">Из Казахстана в Шарм-эль-Шейх можно будет летать круглый год</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 13.11.2026 05:28</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Из Казахстана в Шарм-эль-Шейх можно будет летать круглый год</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOZy1pSVd4aFk4RHVFQk53RFE0dk82d19HUkt4RzhGU3NWaDNxMVNRT1NDcmJ5TFRLN2VGamlRNUxMeUVhSGVhZjlVRWlKVWdNQmRrRC1kVDdlQVpGU3UtX1V5X0ZmZVUtLUtOU1hNQzE4MGdldnpYeUJkdkJ5dnlDek1Td2I?oc=5" target="_blank">Air Astana запускает регулярные рейсы в Шарм-эль-Шейх. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.11.2026 06:15</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запускает регулярные рейсы в Шарм-эль-Шейх. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxOTXNlN1ZhTzEtV3A0MzUzX1l1XzVjVWhnb2FlcndKaHYybUJkWks2UFRrbXo2SklJanRwSl9PU1ZzZEZtU1ZPdnVOQXZOUjNNaFRjMEYzNDBtdlRoUDdSalI1MkRtTm9aVGN0NXJRTEZYV3dXallMR3dkQjNDampyRjk3ZjJGeDAtcWdEbDhxUDVlM2Z6dlNoUW9ZWUtzbTItOGdUZ0ZjTU50SFE1ZVVoNW1uZTlTOUFLeWdjWUtKME1DTzU3MVHSAcsBQVVfeXFMTk55M1llM1hGZ3gwUmpuQXh1MjQ4TkdKdkx1T0dHSWIwbVFrdEdxVWdiZFU2SkQ4VUVaY19qcmNEUmJ5LUIwTkhIZjE3YW01TEtZbURZMHA2a2UyaUNsX3R3SUU4U0pidW5HMDdjY1Y0WjlBbHN6Qm10NFlNNjJiZmUxLUthRHpobGp1NHBjUThWdV96WWpCWHdWaDc4ZFp3SDhfaXBYRmk4T2pBSEI5VmtHRnJlWjFuaVdHR1lST0pScnpxbDBxaEZLb2M?oc=5" target="_blank">Air Astana запускает регулярные рейсы в Египет из Алматы и Астаны: билеты от 283 тысяч тенге - Qaz365.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.11.2026 06:32</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запускает регулярные рейсы в Египет из Алматы и Астаны: билеты от 283 тысяч тенге - Qaz365.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBfMkNjbjlrX0ZOVmtVY0F3VTNCWFJUY1JhVGdfTE9fbVdQYmNyWGJZVTdKendtMVN1WE12SWg3QWZKNlp4S0V1MzN3?oc=5" target="_blank">В Египет без турпутёвки: Air Astana запускает регулярные рейсы из Алматы и Астаны - Ак Жайык</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.11.2026 05:22</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">В Египет без турпутёвки: Air Astana запускает регулярные рейсы из Алматы и Астаны - Ак Жайык</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxQVTcyZF9fNE1ZVVpuczBLNmFzQ3FvTW5WdzV0TjdCMnJBMUpadHRHWkFUQVJaM3dlQTFSaTNjcHZ4VDZsZzA1aENERDBHRjZBSnZaVXZLTHg2anRYUTgySy1DMmFzem80S1ppM3ZzMHFPZUdaRUh5b21sRVJhVjhNbnd0YjZWemFqeHRwb1QzNUlHSTBTa2MxOHdSdFF0NHc?oc=5" target="_blank">Air Astana запускает регулярные рейсы в Шарм-эль-Шейх из Алматы и Астаны - Казахстанская правда</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.11.2026 06:15</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запускает регулярные рейсы в Шарм-эль-Шейх из Алматы и Астаны - Казахстанская правда</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQTkMwaTh0dmhrNDNlWHJlQzRwalFlWEZyWjQ4alNCQlBzWERoelVsTHVvUjFOZFJTZlpaV3JPMGdQcTNPcm8zYXpkeXhtUU95UjVSNmg5dHBNZFM3V1RKdEVia1lzT0NkRlpYZ25ENWtoQWVNMF9iTnlzN1ZUSTVYN3NxWjVpUQ?oc=5" target="_blank">Air Astana запускает регулярные рейсы в Шарм-эль-Шейх - Qumash.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.11.2026 05:37</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запускает регулярные рейсы в Шарм-эль-Шейх - Qumash.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -203,8 +602,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-11-12';
-  document.getElementById('date-to').value   = '2026-11-12';
+  document.getElementById('date-from').value = '2025-10-17';
+  document.getElementById('date-to').value   = '2026-11-13';
   applyFilters();
 }
 
