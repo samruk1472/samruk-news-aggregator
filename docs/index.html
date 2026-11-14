@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 13.11.2026 21:42</div>
+  <div class="meta">5 источников · Обновлено: 14.11.2026 07:26</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-11-13">
+      <input type="date" id="date-from" value="2026-07-23">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-11-13">
+      <input type="date" id="date-to" value="2026-11-14">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -103,22 +111,93 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNXpmUU9rV25FWDlzTFFWWDh2V1l0RHNrZUVuaXFPei03aFlJUDJ1Q0IweTJMeU8zdDBYTTBRcG5QRGxIcHF4QWszOVNHcXY1bFg4VHIzM0k0am9fZ015NGJfN3I4WnJoYUY2aEFoeExVSzRvQUhlVHB1Um9CY2MwOHJVWFdMNm5KeTRiWFJkd1hPNkZtOTlFd2NoTDFvRGlianpSVlJCT2LSAawBQVVfeXFMTkxZMG56QVRfXzdtT0tDdWFTQmVub2VBbVZJWkk3YXUtWVVjSDNMNGlyeUFvLUxDU09rV09OWEhmOHhfUEMyYnVfdVV4ZkJuZnV5M1JnUUpERnR1LWxPWVZjU0IyX3YwTjd0cWx1RjA2a3NPbk12dE5jalBOQ0VMSnlNZ0k4U1NnQThDTktlaDJrTlhreV9fYl9uRU9TeTVpU3BSX2IzRlhwRzFEXw?oc=5" target="_blank">«Смена модели управления»: что ждёт КТЖ после коррупционного скандала - Ulysmedia.kz</a></div>
+    <div class="article" data-date="2026-11-14" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxObUFENEFGLW5vc2YyLUlYOXctb1dNTGI5X2t2OFh2eWRDQ1RJODJ0S3c4NjNEUFlFSnd3d3hWTVYycHRGdDdaVm5GWlZ3aUhkc3hXbkswNDVTdGNfY19PSmxaZ09UanN1SE52dGRmMU5yeWZsUS1oUlpIR3dzUzJMQlR0Y2s2Y3B2eDNsX1BTYS1zdC03LVdTSllLMXNoSlk?oc=5" target="_blank">Президент потребовал перезагрузить работу КТЖ и транспортной отрасли - Inbusiness.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 13.11.2026 17:31</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 14.11.2026 03:04</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">«Смена модели управления»: что ждёт КТЖ после коррупционного скандала - Ulysmedia.kz</div>
+      <div class="art-summary">Президент потребовал перезагрузить работу КТЖ и транспортной отрасли - Inbusiness.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-14" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQd08tazdhR3p6bWlLdWdDemwzeWlubkhnWXdLbHZRVU1qV0xhNTFzWlRIUnN2U0k1WG5Zd2JWOVQycWtoSTdTRmhWQlFPVF9FdFFlVVdxelRQdzVSQWpsUDBIc3MycDI1VEVic0o1YkdlSUxldEZOWHd1NjFUN0Q5RlJtdGwxc0hmMHpEYklySmc2dE9uT0xRMl90YU8?oc=5" target="_blank">Air Astana отреагировала на задержание главы своего совета директоров - airpress.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 14.11.2026 04:20</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana отреагировала на задержание главы своего совета директоров - airpress.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQeWx1VmRpZk95STJhTjkxQ0lTT3dxcHdkRVBNblVIVVB3TGhiOTdaN1JSZ1hNUnJsTkVPMUVrSThPenRWRUI2eDNIYWxqYnhlVmNpVkh3c0R2V1o5TzQwbm9LbVVOUXVJaFRSd2l0MzdUOHQ4SzZaM016QjFjaDROQklmYVpHeU1zWkpJOXVqempDaFYzMjN5ckYxRE8wUEdta0NyU2NEcmdoaWdRS3ZOLVpB?oc=5" target="_blank">«Денежный дождь» в Казахстане: как задерживали главу «Самрук-Казына» - rosbalt.ru</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 12.11.2026 08:45</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">«Денежный дождь» в Казахстане: как задерживали главу «Самрук-Казына» - rosbalt.ru</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-23" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5wenFrRk9yRkEwdjJGQ3NlZkVOb0pmWFpmei16bThGakx6UlhBRUo1VHBaeTRfUVo4bVhBd2pYY1h6amExSDRNX3FCQVdCam0tM04tV1BQZmJzYmpkM0tTcjh1MzQtNVBF?oc=5" target="_blank">КазМунайГаз подвел итоги деятельности комплаенс функции за первое полугодие 2026 года - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 23.07.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз подвел итоги деятельности комплаенс функции за первое полугодие 2026 года - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-12" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQX241MVA0SU9MTFVraVFMX29SQlZkQ012UEd3YkpFRzNVbDB0bk5UamdmeFhKbmpKaUE0bFpkVlVUbVNkSVl6YllLTmdBMExwcUlLLTV1MEhQQnVkMVJjM01xMTl5VXZGbFZMT3BOS25EUTRwQjVGMEZtenc5VVF6WTgtQTJNYXdrbi1vQWNoM0NwcHNtcXJFS3hudnVnSHpQRTRKWEV3Sy1yQ2VjdzJBZ0hUZWxCZw?oc=5" target="_blank">Казатомпром инвестирует более 13 млрд тенге на социальные проекты в регионах Казахстана - Mail.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 12.11.2026 09:56</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром инвестирует более 13 млрд тенге на социальные проекты в регионах Казахстана - Mail.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-14" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQRTI4ZHBGZVRKMXJzUDQ3Qy1PQ25QUTh5bXNOYVpmaG1KZ2NNWHFBck1CNmNBNkRxUWtFZ1lfanNkZVlHUmh1Zno4SDFTXzFrbnhKbnNZVXRmdHVfdGxyd0VDMkhIbmFiRWs5b2lVSGMwcDVZWjhGY2s0WFpWNmI5aGd2V29kNlY5Y294NFowY0xsWk9ob251d0ZwaC1tTlVuYWc?oc=5" target="_blank">Токаев потребовал повысить эффективность КТЖ и высказался о коррупции - Noks.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 14.11.2026 06:02</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Токаев потребовал повысить эффективность КТЖ и высказался о коррупции - Noks.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQWExRcXNhM2ZVRXRMcjN3cmJNTE9XRVNzdk1tS0xBY1A3dmVrM2VfVlZma0hpZUxlTUdTM080MC1ldXZwRHdmektwNndJOUFXWDNETjl2UGJ4UlVaNUJKQXJrV2RxQndpNEhzOUtmMnlmTGRjcjZIYkxaeWNERmhSLUNUR002NFlNTWdiXzRn0gGWAUFVX3lxTE1NSXlTSXJmTndiNDg4VGs5cFBNNzBET3JVTklFbEt2WTdhWnRGS05CY1M1dTEzaWxnMFJoa01hdW4zUVJNSl9HXzFNWkZOWVBXVXpQamNlNnpwN1p5Z3NWRHRkZUtFM2tEWEdTR1owYnVBclpicU1vX0tnRE9uWjF2UzZpdENXR28zQXJIVGdCN3lXMG5Jdw?oc=5" target="_blank">Токаев раскритиковал работу КТЖ и дал важные поручения - Central Media 24/7</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.11.2026 14:35</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Токаев раскритиковал работу КТЖ и дал важные поручения - Central Media 24/7</div>
+    </div>
+    
+  </div>
   
 
   
@@ -179,8 +258,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-11-13';
-  document.getElementById('date-to').value   = '2026-11-13';
+  document.getElementById('date-from').value = '2026-07-23';
+  document.getElementById('date-to').value   = '2026-11-14';
   applyFilters();
 }
 
