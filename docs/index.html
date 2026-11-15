@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 15.11.2026 11:41</div>
+  <div class="meta">1 источников · Обновлено: 15.11.2026 14:27</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-06-17">
+      <input type="date" id="date-from" value="2026-11-12">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-11-13">
+      <input type="date" id="date-to" value="2026-11-12">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,8 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
@@ -104,34 +102,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-11-13" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNRHZQUzdsc3BKeEN4amdxZF9vTmtyRHdURDJBYm5zVjBMRWNmR0M1ejVKNFYxUWVvVlZWdHhYWTNKUW9kcUk5cV84MVloT2JZZlVJRlFPQjhya1RlSERuRW9WMzVRZmh4bkRfMWFQT2Q1UUlzTVk4VEx0T2hxbWxFYVhBNW43Sy03dFR2QjR0ZVltU0dvZjgzYkk3WnFSVHg3YWJ5TU56TkJaaDBndl9VVy1WV0c4VmtJeXB0cA?oc=5" target="_blank">Токаев проведет заседание Совбеза на фоне задержаний руководителей «Самрук-Казына» и КТЖ - Newshub.kz</a></div>
+    <div class="article" data-date="2026-11-12" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNZ3E5RHRKMnhkeXBtTGY5Wll4bDVoajZvYkJ5S3FBNTg1d3l3emh4cHA1ckRyc0JYZW1YWk04Nzk4YkNUa3VxY29xUGV0dkprWmNVTzJhbVJSc19lWFo2a0xtRzZ0Y1pGLWUtS0FMUUt1bWgxRUpvYXhCZzVFN1JONjgzYl96amQ1SzFTSU5B?oc=5" target="_blank">«Самрук-Казына» продолжает работу, несмотря на задержание главы. - Exclusive.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 13.11.2026 04:48</span>
+        <span class="date">📅 12.11.2026 12:45</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Токаев проведет заседание Совбеза на фоне задержаний руководителей «Самрук-Казына» и КТЖ - Newshub.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-17" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxPRDlBazdSYXpiekRORUhiQUx2MTRnNXV5STl5Smtkcl9MVVR3eml6RExCOTRQcmJyTjVYb1pRbnhKaGdOc1B0amlRWjZnaldDeFZMOGJmQ3BSX1dudTZ0eUViQWpUOHlhamh6SFNyVV85N2tmVzVsb0hHX0ozTWpMNXNuX1NHclR6VVE?oc=5" target="_blank">«Казахтелеком» лишится премиум-категории на KASE - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 17.06.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» лишится премиум-категории на KASE - Forbes.kz</div>
+      <div class="art-summary">«Самрук-Казына» продолжает работу, несмотря на задержание главы. - Exclusive.kz</div>
     </div>
     
   </div>
+  
+
   
 
   
@@ -192,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-06-17';
-  document.getElementById('date-to').value   = '2026-11-13';
+  document.getElementById('date-from').value = '2026-11-12';
+  document.getElementById('date-to').value   = '2026-11-12';
   applyFilters();
 }
 
