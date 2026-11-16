@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 16.11.2026 20:00</div>
+  <div class="meta">9 источников · Обновлено: 16.11.2026 22:46</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">30</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">10</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">17</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-11-16">
+      <input type="date" id="date-from" value="2026-09-09">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-16">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -87,7 +87,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      
+      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
       
     </div>
   </div>
@@ -105,7 +115,106 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(10)</span></div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-16/zhki-po-mneniyu-tokaeva-siloviki-dopustili-proschety-chto-izvestno-o-smene-glavy-knb/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhki-po-mneniyu-tokaeva-siloviki-dopustili-proschety-chto-izvestno-o-smene-glavy-knb" target="_blank">По мнению Токаева, силовики допустили просчеты: что известно о смене главы КНБ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 16.11.2026 10:45</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">По мнению Токаева, силовики допустили просчеты: что известно о смене главы КНБ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/novosti/71636-tokaev-ucel-korrupcionnoe-delo-v-samruk-kazyna-pri-resenii-ob-otstavke-glavy-knb-smadiarov.html" target="_blank">Токаев учел коррупционное дело в «Самрук-Казына» при решении об отставке главы КНБ – Смадияров</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 16.11.2026 15:45</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Токаев учел коррупционное дело в «Самрук-Казына» при решении об отставке главы КНБ – Смадияров</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOMnJsem5FUXZNYktGYS1RQzc2bXV1MjBzeXh2SkItT1dPYzczWGpjNTFFejVId1Z3YTRQaWp5TmVCaDBYUG5Wd3lSTW9rOG90SFhqZzBCUE1PalRlckcyaVFLb0Mxa3RzQWs1anZpSTJGbXJoYlJJdFpVQnRZbE4tRTJ1ZURVb0lzbVN6ZW5LVDl4VFNqNVV6emsxZGRsSzR1NTVEcGItZ3lhWlhXSWdv?oc=5" target="_blank">На фоне скандала. Казатомпром могут вывести из состава Самрук-Казына - Neftegaz.RU</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.11.2026 11:38</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">На фоне скандала. Казатомпром могут вывести из состава Самрук-Казына - Neftegaz.RU</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-14" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQOTdtNG9xaTlmZTF4dVZ4MXc3YlpxRWRCeDBDZ1VTX3dlV2lzN29uQm0tVTJvQnNieVVuVUhwdmJZbnJpM3Bsb3VJWU14ang4cHJHMWhFaTZhR2l2YkluaHhaQ0xWTTJzVF9VMUEtZUJWSXhjclZsRWlQd0J2c05VRVpxVnZiMkkwMEE?oc=5" target="_blank">В КТЖ прокомментировали задержание Елжаса Отыншиева - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 14.11.2026 10:26</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">В КТЖ прокомментировали задержание Елжаса Отыншиева - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQbU1BNzFEcnFPdk85VHVJUE5xUnVVeUFDYmtOUUtoY3VnTTdpWnc0YlNhS1VIYlhNYWhMNEJNTm1HMkMxSmZVUGVNSHUzTGxDTHRtbU14bkktSEprTS0wbVRUNHVHajJiTEt1TEk0U1ZTaUE3bXpxYzhkVWVZdjcyT1VPTjlTRDZsUV9JQl9CM0Q1b0N4ZjVRM3BOSzQxSDNZNzJ0Q3Jhcw?oc=5" target="_blank">Токаев прокомментировал задержание руководителей «Самрук-Қазына» и КТЖ - Shyndyk.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.11.2026 10:27</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Токаев прокомментировал задержание руководителей «Самрук-Қазына» и КТЖ - Shyndyk.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNT1BZRzFmMGRlNzZJMDM2cXdON0FpMUtVb2t6NTQtYThnRV83NGFZYllkdXE5cW1hOWJ1NVJZT1lQT1p6RzgzX3BKUGVwakJHbVBHdnBwVFA2cmJjNVlEQXVwM1U1aEFiYnpCVGtiN1pSa2tiZmNPdTJFMzN2aFVxSm9JeDVxOGx2cmwtbUJ4U1hjVERZSVVjdzk3bVEyQ3Vua3I2NWg2SE5EV2lFOGlXRnBzSXhSMzNYTy1CckZwaTg?oc=5" target="_blank">Токаев назвал задержание руководителей «Самрук-Қазына» и КТЖ сигналом масштабной коррупции - Newshub.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.11.2026 22:31</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Токаев назвал задержание руководителей «Самрук-Қазына» и КТЖ сигналом масштабной коррупции - Newshub.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/the-president-knew-from-the-start-akorda-comments-on-samruk-274876/" target="_blank">“The President knew from the start”: Akorda comments on Samruk-Kazyna investigation</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Tengrinews (EN)</span>
+        <span class="date">📅 16.11.2026 19:05</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">“The President knew from the start”: Akorda comments on Samruk-Kazyna investigation</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KOGxxay1UMVh4c2luazdGMTBYZ1g0V3pvM3dhNU8xNmJhQTgxd2pFZzgtTDR1VFVndGZQQzBCc0NyREdoS3NoblVYWDN3WnJkZXc?oc=5" target="_blank">ИСКАЗИЕВ Курмангазы освобожден от должности первого заместителя председателя правления АО &#34;НК &#34;КазМунайГаз&#34; - prokadry.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 16.11.2026 13:24</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">ИСКАЗИЕВ Курмангазы освобожден от должности первого заместителя председателя правления АО &#34;НК &#34;КазМунайГаз&#34; - prokadry.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMVRlWUJNRFlLRkxKXzdkTWdpUE5FYTRtd01qVC12aEhmX1dsaUFIcTJObEpFei13N2JXdkV4LUs4SUlmRjFIb1p1MEpXYnY2QlpvS19vMEVzT0RtRkFVbHo2cTd2a1F1ZGYyZ09Wc0xjRzUxaVRQc0Q1R2s5aldFOFlSQWdLcEhOUFpnRmJhVllFV0pUSkdsUkUzQXJmOS0wRlkzME9UaUNyMDF1ejRhZ1ppZ2NhSXl2SVhsTU9CLVFDUQ?oc=5" target="_blank">В КТЖ прокомментировали задержание председателя правления Елжаса Отыншиева - Shyndyk.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 13.11.2026 11:48</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">В КТЖ прокомментировали задержание председателя правления Елжаса Отыншиева - Shyndyk.kz</div>
+    </div>
     
     <div class="article" data-date="2026-11-16" data-co="Самрук-Казына" data-s="negative">
       <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQQWtKODBXa2RKaVhoVno0X2pMc0p4dHhac3dLUVJZWlp5OGE1RWNBdjVac3JWcGZ5RURPblZULS1ZRzlRRks5bDVzdjY4XzJ1M0p3MFY3eUROdk9qQ0VCRmtLVXdRaHZ6bExsTEp6UDJqenJhbG5JR0wwczRNbUJkTW9jRE1nYmd0WHQ5aF9NRkw0Q2NRNHU3NFh0bW9iZ0VvVFVBTmJKazdLcUNrTjdHTNIBsAFBVV95cUxQN2tkb1VsSlJRZTVnNVgyMF9fNXRoWDFJWS10S3B6Q2M1anhvUEFxQzRhUi1Qajg2UGpuZXZ1YXJGaXV0T09DTUhlQnFQUDVLckZsZlJybG9uQ1Z5Nk1ucW1LOWpaN3FVTnRZRmFtRS1rTVJob2ZxckRfS0V6TzFaODlkTFFxX01qSDZyQ0lkcTQxWXZKWFRhUmNQUzU1ZWlLdy1wMVM4VXRQM2VZbHVsbA?oc=5" target="_blank">Коррупционный скандал в госхолдинге &#34;Самрук-Казына&#34; поставил вопрос о реформе госсектора - DW.com</a></div>
@@ -123,7 +232,183 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(17)</span></div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVko2TzhoRDFRUkxaMXJBckZ1VlVUZExIa0xhUEpfRjhqb3lvTTIxRkQzclZ3NTlpa3g5RFRCUU9mLUlXVDk4cm01RGM4RXhsS3Vjbl9qVDYxcHd0WU0wMUFNVGZSTVFnR0p0SWVkclpIU0c4MzZLYzhnaHRxWjFkcnJPTm5WSWRrNThvUFlMbFFTNFZXSHIzNFpFU0x0XzgxOFVZRGtCMWd3Z9IBqAFBVV95cUxNWGJ1RGM5TGVoTEdmNHR5azFOci1hM1lSMU5zaGdiVl8zOEtzVm1iZmFJY0xvZmpVbGNfSHFRQXN4SUxBUmExelNYQWNaY1VyOW9RdUROOGlWQkstSnJXSGhBczZjaWRuMWNrT3M5YkUxeThPbHNrRnRJLUVHSDVtYnVnTnR3cVlVWEI3VkZUQUppTUQtZHMyY1RZR0NRNm5EMnpyTmZ2NWg?oc=5" target="_blank">Токаев объявил взыскание министру МВД после задержания глав &#34;Самрук-Казына&#34; и КТЖ - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.11.2026 10:49</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Токаев объявил взыскание министру МВД после задержания глав &#34;Самрук-Казына&#34; и КТЖ - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQSlE3MmRpMHU3RzNkX0NYYnFQaWtvbU4tSzJ3UVE5X3RGM1R5ZmZWV2dIQ0pyNDQ1R2xwTEYyaWl5OEZ2dlplajlNM010TEZWMnRoVk80UHE5R0N1c3d0bEhlOGo4bUZGQUEtX05jb0NpVEpxZUlkY2pCT3AtakpVWE1PZm5rTWFra3paMEhLM0tTMUhqZHBFNFVBdWI4QQ?oc=5" target="_blank">“Президент изначально был в курсе“: Акорда о расследовании по делу “Самрук-Казына“ - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.11.2026 11:11</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">“Президент изначально был в курсе“: Акорда о расследовании по делу “Самрук-Казына“ - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQOURZeVJOTlFlam53Wk05bjI3QXBseUg1aF9rUkFUUmltNC1mamk5d285UGY3MGF5NUxIcUwwRDBrZ1QtSHRwNWVTMGRYSXBRbzNFOFBpbG9KY29sWHMtNXQwUkFPd1hCajFjU096SWhMYlJQOFd2Z1BRSTR1QUZ3NGNnUnhzR3Nsa1FWRGxaVW9zX3FWYkJxT1ZyUlh1UGlyX0E?oc=5" target="_blank">Нет сомнений: Смадияров о коррупционной сути дела глав &#34;Самрук-Казына&#34; и &#34;КТЖ&#34; - Qumash.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.11.2026 10:49</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Нет сомнений: Смадияров о коррупционной сути дела глав &#34;Самрук-Казына&#34; и &#34;КТЖ&#34; - Qumash.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPM0hPYU43WnB5bWw3RzExLUFRT1FhNGpwVV9obktVNzVSaDZUQy1RWWNWV3QwZm03RG13SXNpZmpnNVBiczIyR21tenFfSEhYTGNrSTlxRG1Mb1dGdktJUW5qRGdZV1IxNTUyMFVkNWZCLWxaX2RnZ3ZlaFU1aEFzZQ?oc=5" target="_blank">Казатомпром могут вывести из Самрук-Казыны — эксперт Тельман Шуриев - airpress.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.11.2026 10:22</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром могут вывести из Самрук-Казыны — эксперт Тельман Шуриев - airpress.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE9FanNuQThDMnlvVWN6OEVia1l1Z3dVTWxwOWV1U3Byczc4S3BuaS16NnpUdF9JQ1p4a0pTU1AtV2lkWkIzczRGSUwyNVdrRnJjaWQtTHRwUVlUMUkzN1U5S3dVSF93YWkwTGpYZDMwNnFHTVlWS3hoTGk1OXU3Zw?oc=5" target="_blank">Токаев знал о расследовании в отношении руководителей «Самрук-Казына» и КТЖ - 365Info.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 16.11.2026 11:21</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Токаев знал о расследовании в отношении руководителей «Самрук-Казына» и КТЖ - 365Info.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNaVJQNkc0bEozdTlXRXZWLTIzSUcxenRfWENkb285ZDlzWjJuOXhrNElmVFExRkplYTI4czcxNnNObThwZ3ViYi05V3FrU3dadEgyT2xvdFJRY2ZSdlF2eFNBajFLUE1HSTlVb3BCZEhxNXVaRjAwWnVuU09WaFBmanJUZ2Z4ZEdiUmp2TVNfMXdUdzRuOEFScXkzWDZrSVZTVGc?oc=5" target="_blank">На что “Казатомпром“ направил более 13 миллиардов теңге - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 16.11.2026 09:03</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">На что “Казатомпром“ направил более 13 миллиардов теңге - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-14" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNMk1FQkRKYTZZMjBCajVtYVVmUktOSnFsTnRvYXB2Y0xITnNsQ3ZRSXZwaTdCTUh3UzVEZ1VQeldmUUJDSU1ZMldjem8zUl9hVGFsOVBSYUxXUHREOEJXRVM1N3JaaTJ1OXhXMFdEdk1rVThnVUV5Z3BBNTg4TktoNGgwcl8?oc=5" target="_blank">Самолет Air Astana из Астаны перенаправили в Туркестан из-за тумана в Шымкенте - infohub.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 14.11.2026 19:17</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Самолет Air Astana из Астаны перенаправили в Туркестан из-за тумана в Шымкенте - infohub.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPWVJSUmp6VEdMQWtoTUltOTluSjlLaWt5b1VhSlNtRTBHcTRrc1BBRVNoY3FCenp6MnFBSHk5UmxWS3pNbTdpeTcyVzU2VnRva0w5d0tfTzJJblFhc3NySG9DeWFYZjZwc0lpQkh5QmY2WG1qX3dWNlZLc0FCS25LSEVJNmh1dFRRU3hiSlloblp2SWZGajY4MExkbVRod1hmV2F3RU9YU2x1WjUwMTNxWnUxSzAyZ1RZRFpqZ0RPbzJmeWhNY0E?oc=5" target="_blank">Задержки поездов и неисправные вагоны: в КТЖ обратились к частным перевозчикам Казахстана - NUR.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.11.2026 11:18</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Задержки поездов и неисправные вагоны: в КТЖ обратились к частным перевозчикам Казахстана - NUR.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5LbE5mYThBZnpLU2x6eW84VVdadlA1clhQaG1LZjB3Vlp2ZnQ2WVpwanhMczZCeWZDN1k1dmxwMEUwdnBFd0tmVGtB?oc=5" target="_blank">КТЖ ужесточила правила приема грузов в Узбекистан и Афганистан - АПК Новости</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.11.2026 11:31</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ ужесточила правила приема грузов в Узбекистан и Афганистан - АПК Новости</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1CQ01mUV80WGljeDQweEN6RW9wY2RxLS1LRUIzS2VBck1mcnMzb01OUFlpNDlhOEJENzhkS3hNUndjOG9XLThYU2hiX1VBbGNKYU14MjdUeTgwOUJkMzd1TGo2TzhqdkpKSGxIY25rVnBGX2c?oc=5" target="_blank">КТЖ ответила на жалобу о холоде в поезде Алматы — Петропавловск - airpress.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.11.2026 09:34</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ ответила на жалобу о холоде в поезде Алматы — Петропавловск - airpress.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQT0RuM1ptREROVS1aeC0yMm9BeGhzNGVMZFgxajJ2aGNzNWpSbk1DNmR1Y19TQVZNeFVCMG5lNHZZdHJJNHRhQ3ZsR0RDZl93UUNmaEU0Ty1HdmxRSjVIR0RWd3RnQ2RjRGdoXzRoYnp0MnlHVTJtZlgzc3kzMlg1QVdqVzVSRnlWVjM0Y0ZwVjE?oc=5" target="_blank">Победителей спартакиады КТЖ наградили в Астане - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.11.2026 11:02</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Победителей спартакиады КТЖ наградили в Астане - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQY3ZaNDlKbEliVWthX01jQW5lTUhPS0NBV0FCUXNCOS0zeHd3b2hVdWprelpBcnVjOHdjR181c210SWdhZnJFZ0FMYXFxV1YxVVdzV2Yxam5BbkxwT2VwbXBWWU84YXdxNllPWUY4X0puMHdCM2dnMnBnVnEwZWhDUnlMN0hWaTZmWjZCaEM0MnlEQVhYbDBmQV9aTWlfRDZYbW45bFJwajlScVFTbVg4?oc=5" target="_blank">От бокса до бизнеса: Головкины, «Самрук-Қазына» и бывший сотрудник КТЖ - Sportnews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.11.2026 10:43</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">От бокса до бизнеса: Головкины, «Самрук-Қазына» и бывший сотрудник КТЖ - Sportnews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-16/mksk-v-kazahstane-vypustili-knigu-o-gromkih-pr-kejsah-menyayushhih-biznes-stranu-i-obshhestvo/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=mksk-v-kazahstane-vypustili-knigu-o-gromkih-pr-kejsah-menyayushhih-biznes-stranu-i-obshhestvo" target="_blank">Книгу о громких PR-кейсах, меняющих бизнес, страну и общество выпустили в Казахстане</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 16.11.2026 12:28</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Книгу о громких PR-кейсах, меняющих бизнес, страну и общество выпустили в Казахстане</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="http://time.kz/articles/zloba/2026/11/16/chto-zhe-budet-s-samrukom-i-s-nami" target="_blank">Что же будет с &#34;Самруком&#34; и с нами?</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Time.kz</span>
+        <span class="date">📅 16.11.2026 19:07</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Что же будет с &#34;Самруком&#34; и с нами?</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-09" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOekQyM2cyNkYzTU5mVGF1VGhha09FMFBUX0REOUlqcTZrYThVQzBMSFE0RkNYM19NOVVRY0hfSkJjcFNTeDltOEhkeVpZeTE0eXlaTHRwVGVSM0hYMkt0RkQ0MHhJVGp0Y2dxSUFEbGJZWTJnUlliRDJvTl9PSlJycU5CZWdROEkzS2xWOUp1Qm00ZzEtT0E?oc=5" target="_blank">Борт Air Astana, летевший из Алматы в Лондон, сел во Франкфурте - Informburo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 09.09.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Борт Air Astana, летевший из Алматы в Лондон, сел во Франкфурте - Informburo.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxONXdraDk0ekprNGU3bFEwYmJnTS0yRU54eE9WczJIT0g1S0hITEtIQXNkakNGMmRyR2VZZXlyNzJLVjhOQmRFWmdpa09CWHFFZWJKRGU2SXRLbGx1RXVDT19fVTJNX3I4MGd1OGhTRDY1TDFXTlNYMzQ4Q19aT0VNTVhTQlVfT19KRXVWdDdNbnA1cjItMjVCb2hYdXQwSVVNNF9acW1zZkNOXzJsZkc2ZHZaSEQ3MUczNlFDbTJNUk9BZmQ0TUpRdTZtdEFXQUdXTU14cnlsUQ?oc=5" target="_blank">Контроль за безопасностью движения частных перевозчиков и вагоноремонтных предприятий усилят в КТЖ - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 16.11.2026 10:08</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Контроль за безопасностью движения частных перевозчиков и вагоноремонтных предприятий усилят в КТЖ - Қазақстан теміржолшысы</div>
+    </div>
     
     <div class="article" data-date="2026-11-16" data-co="Air Astana" data-s="neutral">
       <div class="art-title"><a href="https://kz.kursiv.media/2026-11-16/svvo-samolet-almaty-goa-ekstrenno-prizemlilsya-v-deli-passazhiry-zastryali-v-indii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-samolet-almaty-goa-ekstrenno-prizemlilsya-v-deli-passazhiry-zastryali-v-indii" target="_blank">Самолет Алматы – Гоа экстренно приземлился в Дели: пассажиры застряли в Индии</a></div>
@@ -139,6 +424,44 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://en.tengrinews.kz/home-news/almaty-will-be-without-power-check-your-address-in-the-274868/" target="_blank">Almaty will be without power - check your address in the outage schedule</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Tengrinews (EN)</span>
+        <span class="date">📅 16.11.2026 14:34</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Almaty will be without power - check your address in the outage schedule</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Самрук-Энерго" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-16/zhnb-kompaniya-vladimira-kima-prinesla-bolee-15-mlrd/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kompaniya-vladimira-kima-prinesla-bolee-15-mlrd" target="_blank">«Казахмыс» принес миллиардеру Владимиру Киму более $1,5 млрд в 2025 году</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 16.11.2026 08:03</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">«Казахмыс» принес миллиардеру Владимиру Киму более $1,5 млрд в 2025 году</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-16" data-co="Самрук-Энерго" data-s="positive">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-16/svvo-na-remont-elektrostanczii-vydelili-384-mlrd-tengge-chto-dolozhili-tokaevu/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-na-remont-elektrostanczii-vydelili-384-mlrd-tengge-chto-dolozhili-tokaevu" target="_blank">На ремонт электростанций выделили 384 млрд теңге: что доложили Токаеву</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 16.11.2026 13:43</span>
+        
+        <span class="tag">Самрук-Энерго</span>
+      </div>
+      <div class="art-summary">На ремонт электростанций выделили 384 млрд теңге: что доложили Токаеву</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -197,7 +520,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-11-16';
+  document.getElementById('date-from').value = '2026-09-09';
   document.getElementById('date-to').value   = '2026-11-16';
   applyFilters();
 }
