@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 17.11.2026 12:40</div>
+  <div class="meta">2 источников · Обновлено: 17.11.2026 16:37</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">8</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-11-13">
+      <input type="date" id="date-from" value="2026-10-12">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-17">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -107,99 +107,49 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
-    
-    <div class="article" data-date="2026-11-17" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-17/svan-fond-samruk-kazyna-uvelichil-svoyu-dolyu-v-kcell-do-55/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-fond-samruk-kazyna-uvelichil-svoyu-dolyu-v-kcell-do-55" target="_blank">«Самрук-Казына» увеличил долю в Kcell до 55%, инвестор из ОАЭ владеет еще 15%</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 17.11.2026 09:08</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» увеличил долю в Kcell до 55%, инвестор из ОАЭ владеет еще 15%</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-17" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQRFNzVzRidjFlbHhtQ2cza3FFNjhNNVRpbjBHeXV5VVktbmMyelZfUVpjaVVWN3ZhQTJ2a3V5al9NY2xQcXpRa2hRSmMtQXR6NFNudnU2bnBsVVpZeUdnSE1zWFdTN3VBMV8ybFRQY3VrQzNINWxaSDRERTF6Zy0tU01vNEh1Tkt2MzBDaVZrUVBGbFRBRmFVcGtlVQ?oc=5" target="_blank">«Самрук-Казына» увеличил долю в Kcell до 55%, инвестор из ОАЭ владеет еще 15% - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 17.11.2026 09:18</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Самрук-Казына» увеличил долю в Kcell до 55%, инвестор из ОАЭ владеет еще 15% - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-17" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPTEtWUEFLS1EzQllXVzdlbVo1NmJBeXBMNGxfN2NTN3BReVdLb2lXMEtHUjRmZ0RCWF81UVBXVXoxYTNZNUtCbThtTWE1Z0xvZmZRRlYzMEZKNGJYYVVSTXBSdnBQelJIdGwwblJyY0pHcFFGQzludXNGZ0JJelhrUWx5Tm5iZV9FMW4xa19fUnZuNUhNVUpudnQ4VmRGM1B1Q1loQ3g2cDdCbXFEeVpCLWpIazMwTVEtRVJpSFFrcUR0LXV4UHln?oc=5" target="_blank">После расследования о миллиардах «Самрук-Казына» на редакцию SHYNDYK.KZ началось давление - Shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 17.11.2026 08:21</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">После расследования о миллиардах «Самрук-Казына» на редакцию SHYNDYK.KZ началось давление - Shyndyk.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-16" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRVFZalJpZDdidWNKcW9CVl9tR1lMT0hXOFMtRkRsOTMwcnNyRDZxZXVuMTJXMjI2T1JUOHNlajF1QnN4N2NsZVNGNzNLekFOX0p5ZHItSVNVelhyenZoVDZzTmloZFdDMFlzQl9sOXh4Y2wwWXF4NjlXSkVDaWg1ZWtyWnZlTlJOTUhDUWV6ZkhOdjY1azdKTmVSODdVYW8yVGE5SnAxd3VuTU84QTBNc25ta1dySXJSZDhnclV4Mmp1NW00UjFiODdjcHhSRGpI?oc=5" target="_blank">Декларации, «золотые» тендеры и пекинский офис: семейные доходы и нарушения в «Самрук-Казына» - Shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 16.11.2026 18:40</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Декларации, «золотые» тендеры и пекинский офис: семейные доходы и нарушения в «Самрук-Казына» - Shyndyk.kz</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
     <div class="article" data-date="2026-11-17" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFBGZjNBY1djVWtSM0ZFY2VNVGx1VThoWVFJbE1PenN0NTFNX3UzdlpfTjF2UnNCYTJ0S3dxNnlsUlRnXzI0SjVURVJUUjZUeDJSTFJneA?oc=5" target="_blank">КТЖ временно запретит экспорт грузов через порт Курык - АПК-Інформ</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNcnpabkxQNDlzSHpVaXFwZDRVUWZ4X2o3SVlVVXZRZnNvdHRGc1N5eG4tRmZJUE43bWpPUzMwNF8tSmV2VktTS21jOVJUYU9yTGlHaHc0ak1aNVA0cUVzVHc3UHYyTDBucXpiSmZuUVk2ZHZ0SERJcjRfSGpsazFXWExPWk10NzYwVjhuQzA3ajRWam1lME55R2F3QzdfM185eTJ5Qk1rb9IBrAFBVV95cUxOaldnMkQ1ZW45XzdMWHNTUUNiLXhoTmJGbmpjSHJfakZIM050c2lXaVBmWTFxTFVweFFiOGlKMDlnendCX0tVOEhMN25faTNYMkl4cGszWHpDa1FsS0Z6ekxlTW5pU3E3TVBqS1JVTV8yWVMxbEZuTUVYODNxb19vUXB3YzNEWFZvUjg4TENnY2NLamk3UjVWRXRwY2ticzlDbXNQbXBKeDl6bXo0?oc=5" target="_blank">&#34;КТЖ тут ни при чем&#34;: туалет сломался в новом поезде Stadler - Новости Zakon.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 17.11.2026 12:33</span>
+        <span class="date">📅 17.11.2026 13:44</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ временно запретит экспорт грузов через порт Курык - АПК-Інформ</div>
+      <div class="art-summary">&#34;КТЖ тут ни при чем&#34;: туалет сломался в новом поезде Stadler - Новости Zakon.kz</div>
     </div>
     
-    <div class="article" data-date="2026-11-17" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPRFBkTmZwcExSamIwSTl6a1VJbkI0Z2pnTldUNVFBNXZXSVVZUVloQUJMLUxCaTlWYTBObHUwbk5FWkxRUWJfM0JPU3ZNY1ZsTTR3VEJPc0RObjhpa19mUjB4dk5uTlc0RUcwYWZBY2Z5QmpMRFlxLWpJc0hkVW1feGFxbzZYQkFrZWxlMEx4VGJqaDZiN0hYWHZRQkhHRU5FTTVz?oc=5" target="_blank">&#34;КТЖ тут ни при чем&#34;. Туалет в одном из вагонов Stadler уже успели засорить - Informburo.kz</a></div>
+    <div class="article" data-date="2026-10-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxONVlNUndMazQwa1J0MWk5bnA4Y1dSRFdSMEE0emJybFpSU2NtTWFvcmNsYVJQcTZqSHFqQUE2T2RrMUxoa1F4R2VDNk1BMkk3Z2l4c3ozVjBJRXdQbE9GVEhRUlFzQ25kSVdobGRLRUJfR2RMUHAzb2ZjR0dfSTh6VmVkMzhpNEwtVE90dlIxbmxtcWt0eURRTFBmbG4tUmRqTkcxMVR0NzAyNmpkTXg5cjlJWHc0Zw?oc=5" target="_blank">Более 400 локомотивов КТЖ оснастили интеллектуальной системой Trip Optimizer - Қазақстан теміржолшысы</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 17.11.2026 05:35</span>
+        <span class="date">📅 12.10.2026 07:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">&#34;КТЖ тут ни при чем&#34;. Туалет в одном из вагонов Stadler уже успели засорить - Informburo.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTEFaSDZoUWNzM3FnT1VVUDEwbUN3aV9UbGpyWWROLUFKbDM0cnE1S1B6TFYwMHdZRTZIZFA0N09iWVFObEpJa243bWRJY3VBcjVhUHJtMUpETi0xN1JiX3RxT0xqUlc1U2xWVmxmTjNRYVJycjdBMG9yZlY4ei1uNFdHend0SU1XNm45Q3EwVFpqVkM3OVdPQTVXTWRQRVc0M0xhVmhPWlZMNDFRT2drMjYwVlMyZ2o0UDZncFIyeTVRSUctT1FBU2U3MUdlcGd0?oc=5" target="_blank">Токаев сделал жёсткое заявление после задержаний руководителей «Самрук-Қазына» и КТЖ - Lada.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 13.11.2026 10:16</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Токаев сделал жёсткое заявление после задержаний руководителей «Самрук-Қазына» и КТЖ - Lada.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-13" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQaEdoS01ya01hcy11YmhQNDNBbGEwNFlxQUY1d1Y2UjE4Z0thel9tczVPRk0xM0lseHVVekl2ZV9rakJzYjFWSzhSZktkVXpXT0I1MDlwUXRJUFkzWkV2N0NhWG9KcThtc0hwRy1Uek5OTThXbV9qeV9JV3prdkxVSGE5SHpTbHRvWWtReW5iNXNzY2JUOC1rMnRORmVlRm5odXc?oc=5" target="_blank">Токаев раскритиковал работу КТЖ и потребовал повысить ее эффективность - Kazakhstan Today</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 13.11.2026 15:21</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Токаев раскритиковал работу КТЖ и потребовал повысить ее эффективность - Kazakhstan Today</div>
+      <div class="art-summary">Более 400 локомотивов КТЖ оснастили интеллектуальной системой Trip Optimizer - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-11-17" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://astanatimes.com/2026/11/air-astana-to-launch-direct-almaty-tokyo-flights-this-november/" target="_blank">Air Astana to Launch Direct Almaty-Tokyo Flights This November</a></div>
+      <div class="art-meta">
+        <span class="src">📰 The Astana Times</span>
+        <span class="date">📅 17.11.2026 13:58</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana to Launch Direct Almaty-Tokyo Flights This November</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -258,7 +208,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-11-13';
+  document.getElementById('date-from').value = '2026-10-12';
   document.getElementById('date-to').value   = '2026-11-17';
   applyFilters();
 }
