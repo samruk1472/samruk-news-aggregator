@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 17.11.2026 18:57</div>
+  <div class="meta">1 источников · Обновлено: 17.11.2026 21:33</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,7 +74,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-29">
+      <input type="date" id="date-from" value="2026-11-17">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-17">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
     </div>
   </div>
@@ -107,39 +105,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-08-29" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQbnpKU2N5VkdXMDVrdFJVeVkxUVZCZVZoY2llQVo2MEx6SEhHd2E1T1lNWVRmQnNsdWlsTmliaE1XbkxReEZBQmVmZ1J6UVZvNGlNc1NJOHVKVzJFRG9Ta2FMNmhKRmVGWmNHWnQ3dWxRVHY0Q1MybXJfcWV1Nl9sejdDRWxVbzA1OS1lOWJQZXRHWHNoazdrbkMtaXFMMXhhS0dqNXpn?oc=5" target="_blank">КТЖ и Huawei усиливают цифровизацию железных дорог Казахстана - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-11-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE94bC00S0VyVDhHMVFCaG1VZ1VuSVMzS2t2R2dVaFhjZ1JLb3gxMlZiNDhobmdiWjRJQ01ZT0c0VWZxWE5oOUlXUTktZUI?oc=5" target="_blank">Air Astana планирует с 30 ноября 2026 года начать прямые рейсы Алматы – Токио - CentralAsia.media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 29.08.2026 07:00</span>
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.11.2026 19:10</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">КТЖ и Huawei усиливают цифровизацию железных дорог Казахстана - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-14" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxONVctSnZPcG5sSGlUVGZXZmN1WVVXUWg3S1VHNm5RTkl6NG9hbEYyTzItazZQSlVza3B0ZFJTNkR0M1BaeUdJSkZac25hQjlxVF9JZ0RIc2FRbGRQZE1aVWM2ajctWTlwUUd5YzZnakJSTmIwRnJuYWc1NWRjUXNlemZyQm9GQ01uTGhnTy1YVjNSc0ltZjloaE5QUnVPZUgyZHBwM1VPWEhEbGpxbXlnTEVEYTRwUmNRWEHSAcYBQVVfeXFMTUUyelB5Y1FhdnV5TFVzSFJZeEdCRVd0QzducUQtVWJFZDFoQ0ZDa3AwY0YxSzduS1NtUms0cjFWTGdsd1Uwa0Y5WmRpc2dwRElEV2FISlUxYk9tTVo3bTRBN1JEb2VHVE55YWwxQnM1blpxRGx1Wk5rUzZ6ekIyZHZDQnZlbHN0ZGppaUl2Y1k5bjZ5bHh4ZUlNc0F4Q0lEY1JOc2pVZlBRQVlwUEdJMHZ1Z0I3ZEdHVGtoSkQtQ2lPR05aM1dR?oc=5" target="_blank">КТЖ продолжает работу в штатном режиме после сообщений о задержании руководителей - BAQ.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 14.11.2026 09:09</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ продолжает работу в штатном режиме после сообщений о задержании руководителей - BAQ.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-17" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNRG9Ib0dnVzB2alNYLTBRNmtTMkt3WDJ0QnJvUUJ4NUZOaTJMMF9VLXZjWkJlb25kVy0tSkdwTTN6UW9udUVNQ0FtcFo3eWs0Ml9BQU81Q21tZ3NBbkNqWUxjYXhPZC12S3BwRDRpQTRvNzVSTldkS3R6TTJ0YVlfRTV0bGJDTGc2T3RUZlJBeFBpSUFp?oc=5" target="_blank">«Казахтелеком» выплатил инвесторам вознаграждение в двух валютах - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 17.11.2026 12:29</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» выплатил инвесторам вознаграждение в двух валютах - Forbes.kz</div>
+      <div class="art-summary">Air Astana планирует с 30 ноября 2026 года начать прямые рейсы Алматы – Токио - CentralAsia.media</div>
     </div>
     
   </div>
@@ -203,7 +179,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-29';
+  document.getElementById('date-from').value = '2026-11-17';
   document.getElementById('date-to').value   = '2026-11-17';
   applyFilters();
 }
