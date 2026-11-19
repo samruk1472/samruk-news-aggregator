@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 19.11.2026 12:23</div>
+  <div class="meta">7 источников · Обновлено: 19.11.2026 16:13</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">18</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">9</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">26</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">4</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">18</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">4</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-18">
+      <input type="date" id="date-from" value="2022-10-22">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-19">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -86,6 +86,10 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -109,105 +113,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
     <div class="article" data-date="2026-11-19" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-19/lsbs-v-almaty-brigadam-skoroi-pomoshhi-i-poliklinik-vydali-smart-videozhetony/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lsbs-v-almaty-brigadam-skoroi-pomoshhi-i-poliklinik-vydali-smart-videozhetony" target="_blank">В Алматы бригадам скорой помощи и поликлиник выдали смарт-видеожетоны</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-19/kaye-zavod-bolata-nazarbaeva-pustyat-s-molotka-skolko-gosudarstvo-hochet-za-byvshii-aktiv/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-zavod-bolata-nazarbaeva-pustyat-s-molotka-skolko-gosudarstvo-hochet-za-byvshii-aktiv" target="_blank">Винный завод в родовом селе Назарбаевых продают за 739 млн теңге</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 19.11.2026 12:09</span>
+        <span class="date">📅 19.11.2026 13:30</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">В Алматы бригадам скорой помощи и поликлиник выдали смарт-видеожетоны</div>
+      <div class="art-summary">Винный завод в родовом селе Назарбаевых продают за 739 млн теңге</div>
     </div>
     
     <div class="article" data-date="2026-11-19" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-19/rlzh-novoe-zaderzhanie-v-samruk-kazyna-chto-soobshhili-v-kompanii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rlzh-novoe-zaderzhanie-v-samruk-kazyna-chto-soobshhili-v-kompanii" target="_blank">Новое задержание в «Самрук-Қазына»: что сообщили в компании</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-19/ezif-zhivotnye-sprovoczirovali-tysyachu-dtp-na-zheleznyh-dorogah-kazahstana/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ezif-zhivotnye-sprovoczirovali-tysyachu-dtp-na-zheleznyh-dorogah-kazahstana" target="_blank">Животные спровоцировали тысячу ДТП на железных дорогах Казахстана</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 19.11.2026 11:53</span>
+        <span class="date">📅 19.11.2026 12:53</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Новое задержание в «Самрук-Қазына»: что сообщили в компании</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-19" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-19/ezif-arestovannyj-glava-samruk-qazyna-zhakupov-sohranit-post-v-sportivnoj-federaczii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ezif-arestovannyj-glava-samruk-qazyna-zhakupov-sohranit-post-v-sportivnoj-federaczii" target="_blank">Арестованный глава «Самрук-Қазына» Жакупов сохранит пост в спортивной федерации</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 19.11.2026 09:38</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Арестованный глава «Самрук-Қазына» Жакупов сохранит пост в спортивной федерации</div>
+      <div class="art-summary">Животные спровоцировали тысячу ДТП на железных дорогах Казахстана</div>
     </div>
     
     <div class="article" data-date="2026-11-19" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-19/zhki-finansiruemyy-samruk-kazyna-fk-astana-peredadut-v-chastnye-ruki-do-konca-noyabrya/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhki-finansiruemyy-samruk-kazyna-fk-astana-peredadut-v-chastnye-ruki-do-konca-noyabrya" target="_blank">Финансируемый «Самрук-Казына» ФК «Астана» передадут в частные руки до конца ноября</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 19.11.2026 08:43</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Финансируемый «Самрук-Казына» ФК «Астана» передадут в частные руки до конца ноября</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-19" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-19/shlc-snishozhdeniya-ne-budet-tokaev-prigrozil-korrupczioneram/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-snishozhdeniya-ne-budet-tokaev-prigrozil-korrupczioneram" target="_blank">«Снисхождения не будет»: Токаев пригрозил коррупционерам</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 19.11.2026 08:38</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">«Снисхождения не будет»: Токаев пригрозил коррупционерам</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-19" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXFkMlR6UVBwLUNqTDFETm84TVh1ejk5VGZhMjRHcTBMTTJaNlUtZXlzM0N2V3hOWDZtM1RVMC1ncTFDY2NIYVVYbmtSUVFKWEhWMjUxd2tPVnRISEZBLWRJRDZXaUhQRFA2UXVjbVB0X1o4ZWI2d3BQa1hGUC1jVDhKeHF2aVFmTF9FeGRWZXNpOFJFRDVHUkgyeWlnUS1tbXdiblRyc2JHY1p3VFdSWDUySVNwT0EwUjlYa0UtWQ?oc=5" target="_blank">Повлияет ли скандал в &#34;Самрук-Казына&#34; на финансирование спорта в Казахстане - NUR.KZ</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPbXZfaEtpRTNPcjcyM0k2dXF3RExGWFcxdmUtVHl1OUFXUGN6QTd4VzduMUN1YXdRNUptb1AxNlQ2MVpRWHp1Q1lOQzhuTzBjQTc4QWZ5OVlmaVJ6dUloa21qNXhiOHRaVUpjc1g1b2dRQ3ZTNkQ5TjZCZVlYX3lkUjNXRWgyeGxsTGJ0OFVOTjNmM1pQcGFVVmJRRC1meEhF?oc=5" target="_blank">КНБ подтвердил задержание ещё трёх руководителей КТЖ и «Самрук-Казына» - Politico.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 19.11.2026 09:50</span>
+        <span class="date">📅 19.11.2026 05:10</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Повлияет ли скандал в &#34;Самрук-Казына&#34; на финансирование спорта в Казахстане - NUR.KZ</div>
+      <div class="art-summary">КНБ подтвердил задержание ещё трёх руководителей КТЖ и «Самрук-Казына» - Politico.kz</div>
     </div>
     
-    <div class="article" data-date="2026-11-19" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOVXA0eHBvQmRueDhhdmRBdklhY1NKbXpHV3kwOGRMSWxtNFRKM3V1elNfa2d2ei13OGlxWEo3d3otX2pMWTVYTmlGTFI2NkcxOFI1TVo4ZV9xdmd1bjEyNXM0Z2o4b1dOc0NGMjlUMUM2ZnBfN1dEOEh2bVRIU3Jod1dYZjcxYU9zbEFTT012UU1iU0NaNWpTcTg3dWVTTnBEcmpR?oc=5" target="_blank">Новое задержание в «Самрук-Казына»: что сообщили в компании - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+    <div class="article" data-date="2024-12-30" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFB2Z2tSSUp1UXZyQ3RCUzhXRkhMSnk3aVBvXzZZVDVWUDdCOFBreUQ1RXdDSWJuZVlGVFJ3N2pkQkE0bHN0enpRcUVPU0VnSmlqTkZ1ZEZGQTNleTg0bVFzMzhSUEcxUHhndWVjUGlR?oc=5" target="_blank">КазМунайГаз построил новый спортивный комплекс для жителей Уральска - ҚазМұнайГаз» ҰК АҚ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 19.11.2026 11:57</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 30.12.2024 08:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Новое задержание в «Самрук-Казына»: что сообщили в компании - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-19" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPVHBOX1FDYzNzaXpCeV9IdzAtemhHWHV4eGRxeGJNM3lkT25CcHFwSkhJa0g4NFNqVkgwWmtSRF9sTFM2OVhxSmV6REJudE50QVZaR2xIamxMLWg5V05TZFJTcElBT2hiWXFRMEh5eTdFSTVpWFpvdVlYbWI3RjNxTnBQempjbHVkM3o3SktXYl9WT19Ea0HSAZsBQVVfeXFMTXBhLWdtY2ctSExtOGJDdWo0aFRoUThiS3hZaW12aXFxN2NXZUc5c2ZvTXAtejE4aWpaZnNRTjNVcDdxSGRRa1RsUjFlbzU1eFRuM0VBSzdPUUVFUHhrZ0FCQU9EWjNxZWtDVnlyUmRjZG9sZElwTTZNdHRzY0VsQUV1RFBfZXhkZ3BGZ1VCRUFvUUlpZnJ4YkUxdlE?oc=5" target="_blank">Дело “Самрук-Казына“: Жакупов сохранил одну из должностей после ареста - TengriSport</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 19.11.2026 10:34</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Дело “Самрук-Казына“: Жакупов сохранил одну из должностей после ареста - TengriSport</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-19" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNdnZSTURyQmF0OS1GNFpGYlRacnZXcGNEd3ltQ2VKM2RUMEl0dDNkOFdWb21VRGl3dllqWm42NGxyUnpfWkF3azc4NmxzaGxMUjBmRnRZQk53ZzJtZnZmdDB1MDZ1SE56bGROb3BIeGJQTk9PTUNmUVp0TGRieGdpb2U3Z0o5OGVfT0JRQXhtQ095YjBFTV8wRXYtNW9tdU5DZkE1Wml6aktaZVREeXFZWjN4NVJtUFgtTUE?oc=5" target="_blank">В Минспорта рассказали, повлияет ли арест главы «Самрук-Казына» на финансирование спорта - Bizmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 19.11.2026 09:45</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">В Минспорта рассказали, повлияет ли арест главы «Самрук-Казына» на финансирование спорта - Bizmedia.kz</div>
+      <div class="art-summary">КазМунайГаз построил новый спортивный комплекс для жителей Уральска - ҚазМұнайГаз» ҰК АҚ</div>
     </div>
     
   </div>
@@ -215,72 +164,204 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(18)</span></div>
     
     <div class="article" data-date="2026-11-19" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxNR2J5VFV6aFNBUXg5aTZDOFhhTFVqNGRab1JicGhQZ2FfVmdjcHJSa29YaGR6NlhPeGlRaUo2cFZFWmZwZGlVUUl6dlB0WDhnZWxtQ1BDSWdsSVN6QWZJMWRXTjE3X2tFLXFDU0UtR2kzX0ZMcGpCeFlhOTdscVFjSE1mbFltTjVFYXVQV2RXVHdhRE1ud3ZlaDA0dE9ZZjZKTGdLYTJaSHB2elJIckJqaGgwM090b1M3MThISjdyZw?oc=5" target="_blank">Финансируемый «Самрук-Казына» ФК «Астана» передадут в частные руки до конца ноября - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
+      <div class="art-title"><a href="https://en.tengrinews.kz/kazakhstan_news/there-will-be-no-leniency-for-corrupt-officials-tokayev-274945/" target="_blank">There will be no leniency for corrupt officials – Tokayev</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 19.11.2026 09:17</span>
+        <span class="src">📰 Tengrinews (EN)</span>
+        <span class="date">📅 19.11.2026 20:46</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Финансируемый «Самрук-Казына» ФК «Астана» передадут в частные руки до конца ноября - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+      <div class="art-summary">There will be no leniency for corrupt officials – Tokayev</div>
     </div>
     
     <div class="article" data-date="2026-11-19" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOWVBoR2w0bTc0TkFqYVJndVlITEFqMGZmaUE2SUhSQVJEQnV2UFFXbS04NncwQWI1N0JiYjZPSGpRNHNUbk5Kbjl0WHJaQV9XQUtNbUFuWmVyemNlQjBBMDY5QlJCSnJHR2MtNUJJNVJoZ3BSSWFVUkNBVzhINTBuZlRSS0dKU3ZpRXlOV1NXOFVYdlZVWDhB?oc=5" target="_blank">Самрук-Казына: КНБ начал расследование против главы департамента закупок - airpress.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTmxFYXVTVjc0dFR4RnA4Um13b08zdFFUdkFCR1E4SW9VWkZHZ3hHQ2hIX0tSeGpJYXFWSU4zNERGSTBKbVlyaTdkZi1FdEVJRVBPMm5zOVRkVy1vRXV5SGZVQWdyZWpxdkgtVUhtTldwZ3VPS0U1bUR3V0RrZ1VTNHVibXpFak5rc0xwTng5aUxSVkh2TTZXakVKdGFiRWdUQXB6SzY3WFM?oc=5" target="_blank">Подтвердилась информация о задержании ещё одного сотрудника “Самрук-Казына“: 19 ноября 20:04 - TengriNews</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 19.11.2026 10:22</span>
+        <span class="date">📅 19.11.2026 15:04</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Самрук-Казына: КНБ начал расследование против главы департамента закупок - airpress.kz</div>
+      <div class="art-summary">Подтвердилась информация о задержании ещё одного сотрудника “Самрук-Казына“: 19 ноября 20:04 - TengriNews</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-19" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPZnlKWEtXMkdhYUpWOEFlYlcwa0VUZUhHQXNSUnY5aHdodVRxOUs5R1FYZHZpTUZPa2dZRFVmZ2xjd24weTBEUlRaNF9fZ2U4anpINm9CeFZKWVRpbEYtR0U1RmxfTjhiRWdwMnBRWjc1eDNDNmpjQ3dwRjZaZVVfTDJ1OVl0ZEEzdWg5dDBjbkp1dHZzVnI2NVZVajF1QQ?oc=5" target="_blank">Задержания в рамках борьбы с коррупцией в «Самрук-Казына» продолжились - КазТАГ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 19.11.2026 13:34</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Задержания в рамках борьбы с коррупцией в «Самрук-Казына» продолжились - КазТАГ</div>
+    </div>
+    
+    <div class="article" data-date="2025-12-15" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNN25LaGNOdC1PUkNLUG5kbWhrX0lJU2RRRm9oNnk4S2h5WV82ZWduMWNEd2UzbnVSTWdMcjZIbzJqOG9HUDc2ZWxyUHdHN2pnbm5WdEVhZElqcEhjbDRyMjdhdU1HWXlYejFWR1BaZEl5VnFjNE9sX0ZrMnV0bmoyUGtjNA?oc=5" target="_blank">Сәлім Нағым назначен руководителем аппарата АО НК «КазМунайГаз» - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 15.12.2025 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Сәлім Нағым назначен руководителем аппарата АО НК «КазМунайГаз» - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2025-12-31" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFAxS0ZMMEtqQ1ZuRUZ1X2FMZ2lWbl9UTUhYNWlWSkZnSlZib0VzU2pqc3ZzS0wtMEZHOHRmWEN4eDhlU0RndXN2ZG9Ma0ZYVHFJLXcxUzdxVlA0XzhSd2J0M1BLYjY?oc=5" target="_blank">АО НК «КазМунайГаз» развивает систему менеджмента по противодействию взяточничеству - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 31.12.2025 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">АО НК «КазМунайГаз» развивает систему менеджмента по противодействию взяточничеству - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-11" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNOHlqWUg0eVhZYVBTN2dDY29nRkRRMzJwVDhIQW5veGlwR0VZa21WSjdlQmI4czYzaGRCbG5tbG9TZ3J1X2pLWnpBVXBhajZfUDNUVk04bXdPdVdoeE5UdWExSWxZNmlJQjN0SzEwYmJZcDVPWXYwejhkaUZ6cS01ZkR2Y0s?oc=5" target="_blank">«КазМунайГаз» меняет стратегию добычи в Мангистауской области - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 11.01.2026 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» меняет стратегию добычи в Мангистауской области - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2025-03-20" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1TNG9ka3VDM25uY2lXNlRIYlpDZ2FfaUhaeldiUVI3WHpYQkJ6SUx0T2w3NzlWbUNlUVpuNVdRWTlQNjhwX0N2QWJTM3NxNzJqZEFPclZtcThLRWZHeHhKNkZoYVBLb2ZYeE1WNDZsNA?oc=5" target="_blank">Финансовые результаты АО НК «КазМунайГаз» за 2024 год - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 20.03.2025 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Финансовые результаты АО НК «КазМунайГаз» за 2024 год - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2025-04-30" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5iTU14MlRhMng2MUpXSjA5N1pxMWtia0V5WnBlWGJzblB0Ulo3TUdTVXE0NzJJS1dCUHBmc3hlYnlPeGMxcGVPU2Z4dmhLaXZ0dHVPMUo1c0lyeGF2N0tkQVRsT3RNa2ttc2c?oc=5" target="_blank">АО НК «КазМунайГаз» опубликовало Годовой отчет за 2024 год - ҚазМұнайГаз</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 30.04.2025 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">АО НК «КазМунайГаз» опубликовало Годовой отчет за 2024 год - ҚазМұнайГаз</div>
+    </div>
+    
+    <div class="article" data-date="2025-04-21" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9YN1RGOFVkMlgxVW1sc0h4NGsxNFlPZVNvNk55RWFZRE5xRlR1VmVjUnRhRkcwN1dZTm5hamRfTmlDWTJBaE0zanh1V2pOOFZKTlUzTXpGemJIRWt6R2pETjhoeUJsMER3eEI0?oc=5" target="_blank">Казбек Кусаинов назначен заместителем председателя Правления АО НК «КазМунайГаз» - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 21.04.2025 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Казбек Кусаинов назначен заместителем председателя Правления АО НК «КазМунайГаз» - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2025-02-28" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9JM0RMOTJWcFdRdHhGTENJZ0J6YXlOMS1HcnlvazFPckUtNjRVdlpSUDhnYTB5VWdFN25qQzFMM3ByY05RVGVlakNCVG5EY1pvMnhleEVQN04yamUybEpiUWlCS0tYRnFkYVE?oc=5" target="_blank">Производственные результаты АО НК «КазМунайГаз» за 2024 год - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 28.02.2025 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Производственные результаты АО НК «КазМунайГаз» за 2024 год - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2025-07-23" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOd1daeGtSRFJkQ25JMTlqOXV1cWFMU2ZyTXFKd2s0bUN3eTBobUhDVVIwRGM3czJ4MTM5VUNkUGdjaWdjWi1meWI5Y3N0eEtoRURJaDM4bnBhOXMzYWgxUjRKWEM3Y2VwS3JJa1c5YTkybWFKWC1Wa3ZFUy1jVWhkV0RCR3QwbWdIaDc5VGs4SnhWWTdEVUZSTkI5NA?oc=5" target="_blank">Дәурен Мұратбай назначен исполнительным директором Представительства АО НК «КазМунайГаз» в городе Актау - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 23.07.2025 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Дәурен Мұратбай назначен исполнительным директором Представительства АО НК «КазМунайГаз» в городе Актау - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2025-10-23" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOLWRtWG5BSHdaOWhSWG9JbFBpN1NPSzA1SHRIR3JCSFYyNzdOWU1acVJvVm9LRDl0YUtiajZzLTF0Mk9EVXFsTkVCMDJ6SXhUbGJWMGdlUkFNWWpTWUNoYkpOamtIazZ4ckstZ3FzdXJVajhxc1ZjTnFlVzgwWUJydUZMMzh6SGlXX25meHRn?oc=5" target="_blank">АО НК «КазМунайГаз» успешно закрыло книгу заявок на дебютный выпуск еврооблигаций в китайских юанях (облигации «dim sum») объемом 1,25 млрд юаней со сроком обращения 5 лет и купонной ставкой 2,950% - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 23.10.2025 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">АО НК «КазМунайГаз» успешно закрыло книгу заявок на дебютный выпуск еврооблигаций в китайских юанях (облигации «dim sum») объемом 1,25 млрд юаней со сроком обращения 5 лет и купонной ставкой 2,950% - </div>
+    </div>
+    
+    <div class="article" data-date="2025-02-10" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1za3ExVDFGc0g4el9DRGQzdExEVEEzQzZ3SGFHQ3ZwR3BfQVJXVWlzMTJfbkJFOXFrWnZ3OXlhTWI1OTlCVUMzT1c2UjhwN1VVMTJHbHVqSFY2R0NUZjIxLTNsSHdsMjFTRWc?oc=5" target="_blank">АО НК «КазМунайГаз» сообщает о кадровых назначениях - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 10.02.2025 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">АО НК «КазМунайГаз» сообщает о кадровых назначениях - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2023-06-15" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5FRU1CWXVkVG03N1pqbjVOc3ZWQ3B1RVFOd0k4LVM4SE1YSVFHMGpPNklJWHJoakJyYk56ck5lUDRFZEt6ajNYcFdDZzdhUnRjTnUtT000WFVDSDhXMEI0WVZRbzFPOHM3ME9R?oc=5" target="_blank">Мошенники от лица «КазМунайГаз» привлекают деньги казахстанцев - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 15.06.2023 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Мошенники от лица «КазМунайГаз» привлекают деньги казахстанцев - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2022-10-22" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNcHNpQVN5TXh4eTJFdkhZS3RLdkowZ0Uxb29DT205NWExVEdiY0RIZk1HN3lncEFDanNVaUJaUHpwcnZZb1cyckVsUFJ5bDBVM1hKYWRmOVduTzVCTVRicFNVbW13ak1fWS1xSmFRZGxHU0ZneWo5ZEcybUNmY3NpSVZCSENjMFRVYW0wSUozVko1UVVDTGt5b0JxOFdGZU03RXp1RVRNQi1jN2dUcFU0?oc=5" target="_blank">«КазМунайГаз» открыл новый Диспетчерско-аналитический центр - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 22.10.2022 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">«КазМунайГаз» открыл новый Диспетчерско-аналитический центр - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2024-03-29" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQWGMtLUx3OWp0OHpuOVJXTDh5QlBSN1prbHNlMHVQN2o5QXBIU0xJSnBtbENOeVFSM0NxczR3bTNUN2UtOTdGamJFRU1ENWY2Nzk3TlQzOEs5V0xmcUpsd19qVU9QM3lWWXFDa2E3ZG5VbDZQRXZJRnB6ZU5RMTd5aHprVVBhVTN4NGhrbXNHYmZJWGhsRkNvX0xTMHpDWkE5ZXBGelhsbU0tYmZqQkFJTF9n?oc=5" target="_blank">Глава государства принял председателя правления АО НК «КазМунайГаз» Алика Айдарбаева - Ақорда</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 29.03.2024 15:01</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Глава государства принял председателя правления АО НК «КазМунайГаз» Алика Айдарбаева - Ақорда</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-21" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdVg3V0FrbnhXRkR1MEJEcXRXVUFlU29kaXJiekwxdDlOREVaZTY1ei1SejF5STJLRHdqQm4tOGk2NWpZVHpHaUVkMmtOeUJVU0ZsWUNlT0F4b0FDMFZaeEplYm1KN0plQmNUcjZjN3piYWptQ1hfS1lCckQ4RjZ5ZnFneXIycTVYZzhBTlpJNlc5N2M4M3lhSDZOSktmOEFSd012cjdZVEM?oc=5" target="_blank">Казатомпром заключил сделки по продаже урана в Китай и Россию - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 21.08.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром заключил сделки по продаже урана в Китай и Россию - Kapital.kz</div>
     </div>
     
     <div class="article" data-date="2026-11-19" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE9wbFBRMnBNdmZQRkxHY3M0YnM5WWY2bG96N3c5SjhLTkNLSV9HZEJRRjRoT2xzU1dMb2tIdndqRFZ3VlhqaFRJN2ZjSUkzby1kNGpCNVRud0t1SEFFUHV0VzRITzFtUXJyVjBhVHFmbWVOcGlyRlNQVW9lTFk?oc=5" target="_blank">Глава Air Astana Ибрахим Жанлыел вошёл в руководство AAPA - airpress.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQLS1xLXJqcktUT0YzeWZUMWRhel9ZaXU1MXlHYW9lUExqc3B3QUJsbjhkU1o4UU12QXhJeW1nd0RuVzFOU2U0NjNvcDdpbGw2WE54d3JwUDliVEUyLVp2aFNNTkJoQkRTSkpJb0F0a2U1Q05nbUpkZjczMmY4VkYtcVhBcjNpZUNwWlpCajU5cFpWSS1ISnlCTjRnbU12QXhJMl92dVlzUFVVSG43d2lDSWNR?oc=5" target="_blank">CEO группы Air Astana назначен вице-председателем исполнительного комитета AAPA - Bizmedia.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 19.11.2026 10:24</span>
+        <span class="date">📅 19.11.2026 07:15</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Глава Air Astana Ибрахим Жанлыел вошёл в руководство AAPA - airpress.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-20" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWkVydGM5ajRQZ2xIVXhyY210SkJYWkU1Vl96SWZJd1ZibHVoU3NKVHh2ZkpqYmZZQWhZRHBrWHgwc2FvSElxcHdqZE9lVTM5NVJES0lBQ0psQ3JNRmxnb091ZnlmWGFhakNqZGZSR3VnU2lSZjFHUWpwYU9CTTI1RzBEZE1icGZ4VUdxQUR1T2tuWTNGcEpFcUZUeTZwTlVLR1ZHeUlRUTbSAacBQVVfeXFMT2xGcndRRFJpcEcwbTc2ZGNWb0VyU2xTaUd1b1I3T1lyNGZvRHdhR3BkUkc2ZTI2emdhYzFGZTM1QlJtUkNFOWlYbHhKbWduWU92SHNsMFVvSUd3RUduUFZLYTNXZGt2VWt3eDdhRmpwdVdORFpyZUN6QTdfa18zc1A3UWoyM1g2ajNfdkRqVmRIbW9UUmdtNHNsSFI2a01NUmF5b3JNeUk?oc=5" target="_blank">Флот Air Astana пополнился 64-м самолётом: первый рейс запланирован на 5 ноября - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 20.10.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Флот Air Astana пополнился 64-м самолётом: первый рейс запланирован на 5 ноября - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-18" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYW5VcS1tcVREd2ROQ0NTUENWSl9PNXo0TTBrdHdzS1Z0azNFSjVOTlRvQzBqSDR6NnZIZnl1ODh0YkF1TnEyUFNmWUtHa3BrVUlwaktJRHhpX3J1X1VPYnRCZ2tyWlJsSUFMcTAwMEFGdGw4R3pqelVWUnczX3NWQV9VX181OVpWMVVoaHpib0xmQVdfdWJHZTFHVnhqZGtNN3E5V2dHQzQ?oc=5" target="_blank">Миллиардное хищение в Air Astana: апелляция оставила приговор в силе - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 18.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Миллиардное хищение в Air Astana: апелляция оставила приговор в силе - Forbes.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-19" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPRmJMakZjLTI4ajlzN3k0bm5ldjV0aHFNalNCWjBmMnFjenVSYlZEaktjUVZIZ0haZTUxZDc3MnpfY1A0c1dzdVo5WjhUaDNVZHFXN3Jrb05OTkVBRzRvWHJPYmFLVXRZQlMwRkd1MTlURzRqYzE2S0dzNERhT1VNeHdqSUpUNmJEX2JOZ21zQQ?oc=5" target="_blank">Восстановительным поездам КТЖ исполнилось 90 лет - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 19.11.2026 11:56</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Восстановительным поездам КТЖ исполнилось 90 лет - Қазақстан теміржолшысы</div>
+      <div class="art-summary">CEO группы Air Astana назначен вице-председателем исполнительного комитета AAPA - Bizmedia.kz</div>
     </div>
     
   </div>
@@ -288,39 +369,50 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    
+    <div class="article" data-date="2025-09-21" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE92QnNuNDg3NlpReGZLMVZvSG9WOUQtbG5RNEtLSkQ3MWpIZnE3SDM1TE9wSzFveDBMVWF2aFpZbFppX2VYTmhnekpma3NRLXAtV1FSaXE3MlVyOW9ub0pheF9oVG85Zm1yTDZNNw?oc=5" target="_blank">КазМунайГаз и Honeywell укрепляют технологическое партнерство - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 21.09.2025 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз и Honeywell укрепляют технологическое партнерство - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2025-03-05" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE5MWFFFdWdmVFBKdkRWSmRZTWRDRDVvSXRRV2VPYVY5OUNCYTRlU2RFcWVjbVFOdm5FYzlfSWVKUU1McWlsY3NySjZ6bnEtNnl3LTJqUTlPNTZfdUY3cnB3aUh1LTNPSzVXRnJmTHZqV1BLWWVaQ24w?oc=5" target="_blank">КазМунайГаз, SOCAR, Татнефть и Узбекнефтегаз укрепляют сотрудничество по цифровизации и промышленной безопасности - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 05.03.2025 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз, SOCAR, Татнефть и Узбекнефтегаз укрепляют сотрудничество по цифровизации и промышленной безопасности - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2025-05-28" data-co="КазМунайГаз" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxORDJxN0R0bkY5RnRFdHk3eFJqbjl1ckJMbi03cU1vNDY1OEZJeURGbEhoZWpJaktUN3BQSnFveDB6X0dYM2Y4Tmh0OEtWQ0k0Y3J3RWxHaUpDbzJQOTJQa1hMc2Q4XzVya2RnOWdwSlhGV2pGVjY3WE5qVGlUVlhWblBDdnpLanA3cUE?oc=5" target="_blank">КазМунайГаз и Узбекнефтегаз расширяют сотрудничество - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 28.05.2025 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз и Узбекнефтегаз расширяют сотрудничество - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
     
     <div class="article" data-date="2026-11-19" data-co="Казахтелеком" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-19/zhnb-brk-dast-kazahtelekomu-milliardy-na-dolinu-czodov-v-ekibastuze/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-brk-dast-kazahtelekomu-milliardy-na-dolinu-czodov-v-ekibastuze" target="_blank">БРК даст «Казахтелекому» 50 млрд на «Долину ЦОДов» в Экибастузе</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBQNVQyVWI5cS1ZNW5WM2hWVXVTdWZoWjc2OUFjMld3Q2RkY3BpZ0lfT3laeWd2YXZRdHVUVHhMaURGa0pqWjNTc0w3NUFldXB0TnRNYm5GT21vdFdkYmZ0NDZncUlUTVNvZXVpS2I2aGpZNnZIR1owd0p3?oc=5" target="_blank">Казахтелеком: чистая прибыль за 9 месяцев упала на 88,7% - airpress.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 19.11.2026 09:02</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 19.11.2026 13:28</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">БРК даст «Казахтелекому» 50 млрд на «Долину ЦОДов» в Экибастузе</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-19" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://astanatimes.com/2026/11/kazakhstan-targets-first-direct-flights-to-us-by-end-of-2027/" target="_blank">Kazakhstan Targets First Direct Flights to US by End of 2027</a></div>
-      <div class="art-meta">
-        <span class="src">📰 The Astana Times</span>
-        <span class="date">📅 19.11.2026 11:25</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Kazakhstan Targets First Direct Flights to US by End of 2027</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-19" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNSWJmVi1mOGplR1lpTFlsUkdoN0I5Yng5VGFnQ3Z0ak95bDE1QVFoMFQ5bk04MkRFMllvZEVpUG1Ya2pKQU5wN0dPbUR1Mmd2TmppR3poQ1l1RXlsMXlLak9DX2plLW9tSXpJRkhjQVhGcndqR2hiakFmeVNXOGxWT19vWQ?oc=5" target="_blank">Air Astana готовится к запуску рейсов в США - Bizmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 19.11.2026 05:30</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana готовится к запуску рейсов в США - Bizmedia.kz</div>
+      <div class="art-summary">Казахтелеком: чистая прибыль за 9 месяцев упала на 88,7% - airpress.kz</div>
     </div>
     
   </div>
@@ -382,7 +474,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-18';
+  document.getElementById('date-from').value = '2022-10-22';
   document.getElementById('date-to').value   = '2026-11-19';
   applyFilters();
 }
