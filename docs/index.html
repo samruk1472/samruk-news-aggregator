@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 19.11.2026 22:48</div>
+  <div class="meta">4 источников · Обновлено: 20.11.2026 08:10</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">1</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">35</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">29</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-12-18">
+      <input type="date" id="date-from" value="2026-02-10">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2025-12-18">
+      <input type="date" id="date-to" value="2026-11-20">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -102,25 +110,409 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2025-12-18" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQZ2lZbDNKc3ZpQzVDYk1fNGNCSFJ6MU0tZVVfLXFka2FWSTM3UmxNNWFtOC1ja3FGTGkwclJ5Vmo3M0pXcmZUZmVjcEk1YV95LTJ4Tm9qY3ZsbEJHLTdHZ2ZOdzVRYUdISTByb0lXX25KOHAxWHVxYlZoTERXUHlzdGwzY1FjWi1rUlRWLXc2MTRfT1VzcGFtTzVtOGNXSmxfQWc?oc=5" target="_blank">Проектно-конструкторское бюро инфраструктуры открылось в КТЖ - Қазақстан теміржолшысы</a></div>
+    <div class="article" data-date="2026-11-20" data-co="Казахтелеком" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-20/assm-meta-mozhet-vypustit-karmannogo-ii-kompanona-za-300-no-komu-on-nuzhen/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=assm-meta-mozhet-vypustit-karmannogo-ii-kompanona-za-300-no-komu-on-nuzhen" target="_blank">Meta может выпустить карманного ИИ-компаньона за $300, но кому он нужен?</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 18.12.2025 08:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 20.11.2026 07:50</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Meta может выпустить карманного ИИ-компаньона за $300, но кому он нужен?</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-20" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxOcTlKbkthc0FwVng1Wk5qMWFCSXRtZGp4UTVmY0NQbkNQc2d6M2pKdHFrV1NjMm1NZUtORkhRQlpFc0Q2SGhBekNWdTBGem1TRlNsc0xONTdfTGphN3NEazV0NHJ6bS1WUHRhR2tLTUR4SkczaTBBT2c2M0wxVkotUFZ5V1RfQXUxNElKR1l6al8zcTJCVTJPSmVyWTdaeXFxU1FET1lHMmdPbk9GRF9SbHUzLUU5RUVaTWFvZHRIMDRmZVFVVHZqU1ZkWWliQQ?oc=5" target="_blank">Если платить главам «Самрук-Казыны» и КТЖ миллионы долларов, уйдет ли коррупция - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 20.11.2026 07:47</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Проектно-конструкторское бюро инфраструктуры открылось в КТЖ - Қазақстан теміржолшысы</div>
+      <div class="art-summary">Если платить главам «Самрук-Казыны» и КТЖ миллионы долларов, уйдет ли коррупция - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-05" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1LV3k1ZDdzaEw0bzZZdmVXaUJ3QlI1dkVVRXFZWWJjRjZmMVBtMzBNdUg2MTJDSDdIb0lkZ1pqejFSS040Tk1QMU50Tl92Q1AyVTJFY2FoVE5wZV9UeHNzcDlPcVdvc0RDcDdyN1ZMSmpoU0R0clFLQ3lQaw?oc=5" target="_blank">Чистый убыток Air Astana вырос почти втрое - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.05.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Чистый убыток Air Astana вырос почти втрое - Forbes.kz</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(29)</span></div>
+    
+    <div class="article" data-date="2026-11-20" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-20/kaye-pochemu-millionnye-zarplaty-ne-spasayut-ot-korrupczii-ekspert-raskryl-problemy-samruk-kazyna/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kaye-pochemu-millionnye-zarplaty-ne-spasayut-ot-korrupczii-ekspert-raskryl-problemy-samruk-kazyna" target="_blank">Если платить главам «Самрук-Казыны» и КТЖ миллионы долларов, уйдет ли коррупция</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 20.11.2026 07:46</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Если платить главам «Самрук-Казыны» и КТЖ миллионы долларов, уйдет ли коррупция</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-20" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9FYlFDOVNkeENobmdmMlJfNWthS1NhNjJmeW9jdUt6WVY1enM2OXc2UHBkZ01FUFNMTW9SeC11VHNmblNDcjVNc0V6Q1pMakxhbF9mZVU0NlM3Uk0wNkdXTThWTVgyeVllc0NnSnQ4cmdjTmRUNHNET1M5bVRpdTZjMXlncmFNc2NBa05WSm5CUEJR?oc=5" target="_blank">Что задержания в «Самрук-Қазына» меняют для IPO КТЖ - National Business</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 20.11.2026 04:23</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Что задержания в «Самрук-Қазына» меняют для IPO КТЖ - National Business</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-19" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxOV1YzcENtOXlXWDZIVjV1OTRVRG5fT0xRUVJxMFNveEgzVzd6X3NPSDBIeHV1dGcwNjg5Wk5oYmk4ZWhUSDZyd2ZQTmFFbnZwcHZrSWQwcWZ2VUdxNzZjQUNwdGo5SU8tZVV0UUh2MXFUM196UGFUZTBLRTJINXdXTy1XckZWTkdQSWQyMVBoSkVuRHhMWENiWWNKdDhPVE5DUnlzVksybVRIVzUyR0lVY3Jib043MWRiLVBhODVCM3hkN2dhN1JOMzdqZjdydw?oc=5" target="_blank">Депутат потребовал навести порядок в закупках «Самрук-Казына» и усилить парламентский контроль - Shyndyk.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 19.11.2026 11:39</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Депутат потребовал навести порядок в закупках «Самрук-Казына» и усилить парламентский контроль - Shyndyk.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-15" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPVEtrNDBGem8yYWZoSjItbmN1LXdPVEpMYmZSRlNvRG8wRVBkTDhxU191QWFJQmxKSERWejEwSUR6OUhuTlB1RFhSMFhoUTF6N19KczZXMV9sM0E1QVlnQmZoN2Y1d0tRbk8ybTJGY1R6bHh3Sm5RY1RQQnViTjZJaWFMQ0dwLWFoNTVFRnU3WDhQLWI0RGQwS3l3?oc=5" target="_blank">Казатомпром: итоги за 1-й квартал 2026 года - Freedom Broker</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 15.06.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром: итоги за 1-й квартал 2026 года - Freedom Broker</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-20" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNbnQ0VzRHaGFBTDFSWjhxUlp4R2wxMlptM21ldEZrLXRrQTROQ3VkcUpMdHpfcHdlSUFzQWdwQW5kSlhtNTAwcmVEUjAzdllIVDM4UGxvOU8yVVI2UTdwVl9KT3h5TzItNktXUUQ1UmJneDduVzRBYnBkZ3RGTDZfRGlTMnhDZw?oc=5" target="_blank">Air Astana получила премию APEX 2027 в двух номинациях. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 20.11.2026 05:50</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana получила премию APEX 2027 в двух номинациях. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-20" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQb0JyTC1mRGtqYk9GTGk1NVQ1dTRDS3JxRjJCUVB3YjNZTlI2NkFxb1V0U25HT3pCd1Vtbm5zMHhmZU8weTIxYWpoUFM5UXdVVm96aXA4M2FVY09CcFhyZ3VjRnBhaFpXaVV4YzEtWGc2WGU0b3NiMlMzWDIyVDM3U1h2YTJsRFU1OVBuQ1c2czhSbUF3dC1J?oc=5" target="_blank">Эйр Астана: итоги 3-го квартала 2026 года - Freedom Broker</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 20.11.2026 05:27</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Эйр Астана: итоги 3-го квартала 2026 года - Freedom Broker</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-18" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPWFJaLUpQX0RTLTNaaWlsWUU5UzlXcjk1VG5GbVRSM1Q1TEpjQmlaOGYxWi1LM09Ubnk4ODJPZUoxMnJkVjlvQzJ1dHFsWnJRSUxMUDZrNHhJRWJYdVFhSE4tUklPQlg3dUFWM0N1Y2c1RFZfa1ZUYUdDN2Z6Y3IwRXBxVnhkMHBLeDlza0hwN0tldw?oc=5" target="_blank">Air Astana и FlyArystan продлили отмену рейсов в Дубай - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 18.08.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana и FlyArystan продлили отмену рейсов в Дубай - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-23" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNLXVaM0FON1V0N2twdTRrb3dXQ2U5blQtS0pEaE16MzVrcWt2WTlDazVWaVVzNlhvRUp6RExOeFJmc0lrMTgtMmdPX3pranFBSUF6MWdjUXh0bXdzSW5UM3VtLVBnWTVJWkNLeHJEQU1WV0ZvWjVMcklTSTBQWU1xY2IwUmZ1bzBkVm51U3hHOHZ6Nk42SkE?oc=5" target="_blank">Air Astana закупит 50 самолетов Airbus на 7,1 млрд евро - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 23.06.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana закупит 50 самолетов Airbus на 7,1 млрд евро - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNQTNVY1YweE1uTk5zLWNBalJVSjVmRHZ1T1J2NXA1c1BWSnoyTGduTnFSS0VCcmJKWnl0aXBvNEpuYThVV3dkSFJQWFRjUGE5bm1xbmNma0N1VDlsME5oU0loVkRHYlFYUUtYcExaU0ZhZzNQNUI2Z0QwQjRKVldKQkZXM1BfcE12MUg3OXI5Q1HSAZYBQVVfeXFMTThYeGhVQndUR0dQR1lzTG02c09XdUc3aE5aSzc2MDBQVWZQc251QkU1eU5rOEFrdTNfemtaQWJHdWtzbC1oYkFwUjgwMi11NkNoRlg3WHFOb2Q3N0pFZjlDQkFxcmFHa1Z3enU5MGhEVVJzZWhGaHVYMjVwNXB3QjZqN1AwSzlXZlp2TUhIRUh6a0M4T0Fn?oc=5" target="_blank">Air Astana изменила расписание рейсов в Дубай - 24.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 12.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana изменила расписание рейсов в Дубай - 24.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-25" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQaXZfbG14bGgzVWFNemdXeFlQUE5ENGFVSUVwcEgwb0FfMTBPbGlLLWJnaV9HX0w0Qkh5QWNFUGpYTlROUzlxWnY2bkhheTFyWVk0cEdGZExmSXI2MjIyb0tRVFBkUzYzX2VEcTZ6Z1JDNENOdXhaZHVSZTZQNXBWS1FtVFhwYlAzR2tRRWFVQ0ZUSG04aDJOd0E1UXYxTW1zRXNSMGlSRzJ6VC00b0RRZnhlYUFxNXM?oc=5" target="_blank">Air Astana стала третьей авиакомпанией в мире, подтвердившей соответствие закупок ESG-принципам - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 25.08.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana стала третьей авиакомпанией в мире, подтвердившей соответствие закупок ESG-принципам - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-16" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNa1dsdWM5WGdUTVY2SE43bHBXYjU1U19mQ1cwWjdjN0JDdjRtY3d2ZXF4TUxPSk5Qb1VYWVJ3ZzFROWNuVXNQRXh4MFc2WjZsbDk1QnJzbXBNc0hYM3FGMUdsbm92UTIyLVdPVXdBc0pHRmZ2UVpVRVlweTdOaFVISUozMWJQLUE?oc=5" target="_blank">Air Astana вновь приостанавливает рейсы в Дубай - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 16.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana вновь приостанавливает рейсы в Дубай - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-31" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOTUtyUGhscDZwclBSV3NsZXZiTzdQbkRCalhOLUdrX0xkYWtWNVFvQkNjWUtxRUdLOHpCMVgteGc3RTRYbktVWk1ISXFoRFlXdjBvTGZ5UGJ6WE43N1huVC1qZm95VEduZkZSS0lqRHVndFBoM3FJNElqUWhXblk1cGtNSTktVkUtd1ZqNzBPcmFaTWRRVW9QbEg2QnVvLTZHdHMw?oc=5" target="_blank">Смена «экипажа»: что ждет Air Astana после ухода с поста СЕО Питера Фостера - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 31.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Смена «экипажа»: что ждет Air Astana после ухода с поста СЕО Питера Фостера - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-06" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPZVVHOHhmUFA1OUI0ZWJrZDVoUzZyOXpmT3VfY0RuanE4emFmaXZTSFp6Skp2aE9WalZTZFlMbEpzOHlDT2o4LUZqN0o2RVo4NHU0SUgwUkJXT09MM0t5aFh6c05RRjNxd3lWY0o2RzIwOWl5elppUkN4b0NCVTFjeVFFMjI?oc=5" target="_blank">Air Astana меняет курс: что ждет главную авиакомпанию Казахстана после смены CEO - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 06.05.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana меняет курс: что ждет главную авиакомпанию Казахстана после смены CEO - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-05" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBCNTYwLTN5UGkydlNFMXNRbjhELXNvTFJzaVpZSU5ZdEdLUFhyQXRZRnA2TWlmUmtaa0F4OGhONDZqZkNCYmZabU56aE9Sc3d1bm1fc2RXTm9YWFJXYlNXX0Q2S2lTaXM3dTFkNGJxX0lkZ0JXTHkyQmdiMzU?oc=5" target="_blank">Air Astana возобновляет рейсы в Дубай - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 05.06.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana возобновляет рейсы в Дубай - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-14" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRnVlVnJwV0I1Zkl6T0V1LXpvWWlQTXJvbjQzNTBXWkFNQXluMUE1b0Y2MTJzREZGU0Vrb0pkNEt6eTU2ZjYwMkNrQjZ6aG1ONWxkLUgwMS1QWVpPUDhOa2txaHdlWmJCbTFpUHQxR1I0S3diTXg4UDBrN2lNMFFtZ240WjBRU1liX3ZlSTc4Qll1UGxybjRiUDFjWXllUVA5SHE4WHVtUVFmLXM?oc=5" target="_blank">Будет ли Air Astana летать над Россией после выхода британского акционера - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 14.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Будет ли Air Astana летать над Россией после выхода британского акционера - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-08" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQNWY0ZkZIRTlyQTNNUERwS0doOUY3QmphTUt0WnlEWU9IZ1Q0WGNXYklJQ2FJNlJvdlpaZF9TaE1ZOExhdnRwaERSWTd3elV1UHFDU3M0aHpBaC1oc1B5RTJLZzJhajVVMkZvM3pYOEtYeU9rUWNpUThEV2hGejhoLXpmcmZCSXFHVTJGNA?oc=5" target="_blank">Самолет Air Astana совершил вынужденную посадку - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 08.05.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Самолет Air Astana совершил вынужденную посадку - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-06-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPTURxRTRWQ1pSVWd3NlJnUmlxdzRRbWk1ZVc4U3RJQnZPZVFZYlg3eGh3eVBZR0F4M3h1SGJFdHZ5dEd0dk9wWFlQUE0waGRtY2QyRVBzQVktaUZNUE9jSHhlUkdWTTFocTJVcm9KOUVmQUczWng5UFlIZWhYT0NyNFU1VUIybzR0cHN0WS1hQndjRlVL?oc=5" target="_blank">Air Astana запустила авиасообщение с очередной страной - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.06.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустила авиасообщение с очередной страной - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-21" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYWJHc1RmWHl5TTJZYkQ0cWp2Q0tXOVRrdkE5OXozSHZFOGdTakppazZMUlhEWWQwTG0zR3A3Mnl4T3pvTXQtc0tBM3M5MVptcUJMRHNCQUQ0TVNmb1U2N1pBX0NMQmo4LVYwcXJDemwwbmlOY3V1cE1WMW1NeUpQc0FJbi1PXzJZZDJz?oc=5" target="_blank">Air Astana готовит масштабные изменения для пассажиров - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 21.05.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana готовит масштабные изменения для пассажиров - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-19" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQU0liOVRBTFAtSFgzdEV0Vy1tRHNxeGxGa2ZhUmhyZ3U4dnRSUzNtV29LR1NaUEg2NkR1UHh3SlhIWURjYXRONFl3QWRNRU96X2dOMWZLREVuN21NNkJ1dmpKdW1KOGVmQm5ra09va1BtYXlpa2Vja3ZMSzBWTFlWZU82dVRZZ3g2RzBPdTE2aHF4RTNi?oc=5" target="_blank">Британская компания выходит из состава акционеров Air Astana - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 19.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Британская компания выходит из состава акционеров Air Astana - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-03" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPNjdLcXZwYmRfR1ZiVkdnOWpyTlljZ1VrSk1Lblh4cVAxWUMtOFZKcENXamF6M3RkQUlpY2RUR2VrbWpoVEZnN2xjX0drMHl3Y3N4Q184N2dkUVNleUhHelp5SXpNS3ZXdVlvQzFLZ25PLWs1QXQwZ09UMG5zZldYREF4MjEwcnJlM0pRY3RTZkFaZw?oc=5" target="_blank">Воздушный флот Air Astana пополнился новым самолетом - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 03.04.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Воздушный флот Air Astana пополнился новым самолетом - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-31" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOdk4tLXBpeDNhMjZVWlgzR2pOVmJpQ2lPVS1lT3ZNZzJWNzVNRTdEUno1OV95Y1hwYmpsdnFYMmVVbjZRQS1vdlh5Wm5FbzZJNFVjTmU3X2x4U1VpRDZFaE5BQ0pwSTlvbGR2b1VXSnBrSVhCTFQ4R2dheHlwZE5Vei1B?oc=5" target="_blank">Air Astana резко меняет размер дивидендов - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 31.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana резко меняет размер дивидендов - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-20" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNOWVFdDZLSl9JRnZ6MzhpaHVBbndhVDZ1c1hzcHVwZExiRkV6MnpvZ3FuODRCLXc5S2NMM3J5QV8tV19OTWs3YnBWX1dHNVdoZDM5WVF2RjBLa0dzdGt1OWVueWxzQVdCOTZVdGwyUjhJNkdVS0RSY05zd0FwNHpsODMyWmZMNTFqTVFOQ0UwNjlUZFQ1MkZmMQ?oc=5" target="_blank">Air Astana откладывает прямые рейсы в Токио. И причина не в самолетах - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 20.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana откладывает прямые рейсы в Токио. И причина не в самолетах - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-01" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPMG00c2lDaFhXTjZXc0NKOEFHY2luR19CQTYzRy1KaG9DeERZaWlrQ0tNTzJWX1oxaFMxaFJfNF9kZF9DLVM1bzhya3BETXIwWFVtRmJaNTN2ZXFMS08tOC1HNnZ2XzBpUDRNN1liMG5YdFBwdFN0Sk1qVXVMN0RCRFlONFRpdTEtQzdKWFB3ZEN1NEFMTzdCd3RjWndyekFRVHNIVW9SYi1yTFF4NjNQdnRNYw?oc=5" target="_blank">Президент принял главного исполнительного директора Air Astana Ибрахима Жанлыела - Ақорда</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 01.07.2026 10:08</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Президент принял главного исполнительного директора Air Astana Ибрахима Жанлыела - Ақорда</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-17" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQOVppYWM4OGhPbFAzWmhkbkozZUx6d09qN1hjTkNqZU4tOEZGVzljdWdTa21yYUxXR0FLR1EtZzVtdWZIRmVzTGpjZXd1RXZQMFV0WlYxOFoxelp1bG1rMDRGOWQ3MWVSaVk1WEZrQmx0aXMySWgwWmNhcVM1WVpDdWd1RExEeDRleFI4azBQdThZbzFWSXdGaVltZw?oc=5" target="_blank">Air Astana объявила о новом этапе обратного выкупа акций и ГДР - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 17.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana объявила о новом этапе обратного выкупа акций и ГДР - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-28" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE9lVU5Ca29sdk5yQW83ZjctRzhOUjQ1Y09jeUwyaFg1QkpQNmxjZlVlSVJzdExIVUktcVZ4ODZQYVB5aVZOTTRORjhsUm13aUdaWjQzbno4WThmeEx6NzFlTVJxSUo1Mk5QRTVxSHRHUDRxN2tod3pRcGpCems?oc=5" target="_blank">Air Astana отменяет полеты на Ближний Восток - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 28.02.2026 08:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana отменяет полеты на Ближний Восток - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-31" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBwMllHbnNYb0J2Z3NGRXJTRGhhTVZ4Z0g1NHNoWVJnYVByTUZ3T055dFhZM3FxWmFRTFROenJyWG9XS0FiLVlONDBOR2hqWTBvOFNlTzRPdFQtRGFCNnBSNWNNbGpBcS10cTlnRjF1SzRMV3ZvQWZyOVM5OWxOUQ?oc=5" target="_blank">Air Astana запустила новый рейс в Китай - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 31.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустила новый рейс в Китай - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-10" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNVnNSb1Y2WUZCdkJBa2Q2Y2xLS00wem9JRlBaOUZNcmVuV0czOWxvRDVxbzMzamZvTHZvSWx5X1VYakF4Nk9UY3ZmRVY5cUdmMDJ2czZvQ3psb19vN2VJNFh0ODg5QW9MenNzZEFjdnNlS0psMmlYb1BuNnQ4UUFET19ZUXQ1ckQzN3dEXzQwUHpSZVhsZTdR?oc=5" target="_blank">Акционеры Air Astana одобрили покупку 50 самолетов Airbus - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 10.02.2026 08:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Акционеры Air Astana одобрили покупку 50 самолетов Airbus - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-31" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRC1BMlVzUWRBdXhxYjZTTjQzejJKYk55TnNOZ0ZTS0pPclA0cFdMbVBMQ3lhU1A1Xzdialk2ZWswVm56TjU3cG0wV180MDV4RF9kR3RTODVRWXN4R1dzX3Nmajd4SXRmVkRpZXBJaGZYRFQ4bzcwRTJoTDV3eUc3aTVDa25nUDR6?oc=5" target="_blank">Air Astana готовится к выплате дивидендов - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 31.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana готовится к выплате дивидендов - Kapital.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-23" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNVHZrRXNzQXljTUR2MHhDcTV6UUxWZ0d2elVaNE1fT0lBc0hsZGNKNm94Y01ITWhhR0FTalp3czBDcm1JR1hScmRiWnhrMjZMX283OTlRX09GRnY3dVRLWE1HWVdBQUp0bDdVTF9zUHhnbWR4b0puZDM2TUJXcDljenJpazNtLTk2MTUwRFAtQ3VQR3ZrMFlJT3VaeDF1WFRzSm1YY21qeUZOdUpkeGREOFlheWJTM000MEE?oc=5" target="_blank">Глава государства принял главного исполнительного директора Air Astana Питера Фостера - Ақорда</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 23.02.2026 10:01</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Глава государства принял главного исполнительного директора Air Astana Питера Фостера - Ақорда</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    
+    <div class="article" data-date="2026-05-29" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPTFRGMzlDR0xORjBPa04tTmdGd3JPNm95R1hWdjFyOTFqbWVVQWZCamZmYTRaNDE0UllrcVdBSWVjcUlONDZJNU0wTzlOSVRwMHVsRFZUNjlDdVNWSjQ1U0hsOTlyRG5MZWEwZFdCRTNrQVdMaWN5QjFjeHRjQmZEZ2RCbkR6ZGoyYVJOZEU2SVRCbmZzdEdISA?oc=5" target="_blank">Air Astana направила на дивиденды менее 10 тенге за акцию - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 29.05.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana направила на дивиденды менее 10 тенге за акцию - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-05-19" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNTnlFQTljY0RxQlZYT1dJRmhHQnM5RVB2TERlaUtoX0pTbTkwTE5pam1TR1doaUFEcWhjenNVMWc5Vm01Ql83QVlYb2UyVlZoVFlfWnloa1F0MlFsNklLeUp2S3RsRjhfZmdsTWtkbG5hcmtkaDR0VHN2YlhlZXVvNXgzZGpNWl94Vm1EcWE2eG84cXpibmdwT2tFeTJWZ3lTSkQ0bGFkMnA1aDJqU1h2bQ?oc=5" target="_blank">В Air Astana рассказали, сколько будет стоить запуск прямых рейсов в США - Kapital.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 19.05.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">В Air Astana рассказали, сколько будет стоить запуск прямых рейсов в США - Kapital.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-03-13" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOckxLeDR2SW5XVzZTdjFSY01BWXBTS2tMRE5yeFFIU1hfT2NUNFlvRzVlbUtoaTVaeWZzOWpxeHpaa0pZVUMyU1BOaWNqR1VSdnp0NzdfdzRHcU5YZzV6RlNkVEdDZUNqX001MHJoZmZfMnlsNFMyNzNpNzJ0cXdqUE9sWFdoSDhCNW5Z?oc=5" target="_blank">Чистая прибыль Air Astana сократилась в три раза. Почему? - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 13.03.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Чистая прибыль Air Astana сократилась в три раза. Почему? - Forbes.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -179,8 +571,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-12-18';
-  document.getElementById('date-to').value   = '2025-12-18';
+  document.getElementById('date-from').value = '2026-02-10';
+  document.getElementById('date-to').value   = '2026-11-20';
   applyFilters();
 }
 
