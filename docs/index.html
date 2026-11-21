@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 20.11.2026 22:25</div>
+  <div class="meta">4 источников · Обновлено: 21.11.2026 08:03</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">2</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">9</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-11-20">
+      <input type="date" id="date-from" value="2026-01-05">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-11-20">
+      <input type="date" id="date-to" value="2026-11-21">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,9 +85,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
+      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
     </div>
   </div>
@@ -107,33 +111,126 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
     
-    <div class="article" data-date="2026-11-20" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZ0JFczBwRTdGUWRRWERKdG1ZbzM3SVJ3eHZGYVhjNVJxd19MZHZQaGVhV0owZ1dVWTBWTVlUd1RZWDNEOU1RVkFUQWFaRERvYnZGUVFfc0dPcTFLQ2w5LWhCa3Q3enJIc2N3b0djRGNBSXFfUzBFMHpsVHY3ZXg1MkxjRkFYWS1pM0ZBWnZhTmZMTE12TXVTM0xvU3FOVC1OVlpQX0hJV0M5djBNV3BkNDBCWEZzNmFfQXlkNUpGNTlEaGJIWkRyMDdJRXdpLWxXS1E?oc=5" target="_blank">«Осадки в виде долларов»: в Казахстане задержаны глава «Самрук-Казына» и руководитель КТЖ - Ритм Евразии</a></div>
+    <div class="article" data-date="2026-11-21" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://vlast.kz/vlast-qazaqsha/71699-apta-tynysy-auys-tjis.html" target="_blank">Апта тынысы: ауыс-түйіс</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 20.11.2026 21:33</span>
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 21.11.2026 08:53</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">«Осадки в виде долларов»: в Казахстане задержаны глава «Самрук-Казына» и руководитель КТЖ - Ритм Евразии</div>
+      <div class="art-summary">Апта тынысы: ауыс-түйіс</div>
     </div>
     
-    <div class="article" data-date="2026-11-20" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE00dUNkUEh1OTl0aDZJMTFfenVvVGNHbDRROFV4WldRTFlPdmNDQ0xRRGlxLTRXcTRBMG5fUl9ZOUNlTXAyUlA4MGJIX2NHT0dZX2JERWQtaF9taEs2eldtRzFWa0lxUG5Canp5UWV5eDVzM0U?oc=5" target="_blank">МИИЦР РК и «Казахтелеком» договорились о сотрудничестве в рамках проекта ускоренной цифровизации Казахстана - GOV.KZ</a></div>
+    <div class="article" data-date="2026-10-08" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOczR0WG13b3hpVW8zRTM4d09fNWwxeXNUR2ZHU2M4dHNOQ3ZYM1NYdUV2bnFvZGpHeXJxQ2loUHQ3dE5YT2ZLOEgyMHo3c0tJa3ZnM3ZPQkRMVkdyLXo2ZnVOeEQwa0JQN3hUREVKcEhFMVhnLV8ySE1aUXZVdkhuQ1hwVS1vbFM1U1E1cXNn?oc=5" target="_blank">Аким Акмолинской области и Казатомпром подписали меморандум - GOV.KZ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 20.11.2026 17:37</span>
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 08.10.2026 07:00</span>
         
-        <span class="tag">Казахтелеком</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">МИИЦР РК и «Казахтелеком» договорились о сотрудничестве в рамках проекта ускоренной цифровизации Казахстана - GOV.KZ</div>
+      <div class="art-summary">Аким Акмолинской области и Казатомпром подписали меморандум - GOV.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-20" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPcFBvTklpcWtvQ2swV0pvRlhUc2xyNXRKSUpjR1d2QlRFZkc4eF9Lajltb3VGa2llYldsVm1FNzV1N1dDQVNIWHVmVXdKbnhHVWQ4TnRPQTNpaUFyWjItLTQtODNLWXh4MFFydFhMTFp5ZDBZMGNlbnpRR1hqLVlJdS1BVDluWDdQUzVVbEhIdk5YUdIBlwFBVV95cUxNTTJlYjA2X3lyTmw3MXozYll2TndGbmIxZk9GaThqRm1ncnRoN1Z1cEJJcnNZUWY1dUFyOFZ4WGF0RzdVUXRfRW9uUFByUEVvYTh6cHNRcTRKYk90MFlxM05WQ2ZPNjB1UXJiUmxmSDlKLURhMmFqLTZ0bWUyUzVVZnVGcXlQOGVxM2FtSGN1UU9lTkY1U05v?oc=5" target="_blank">Air Astana получила пять звезд APEX и звание лучшей авиакомпании Центральной Азии - TravelPress.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 20.11.2026 10:22</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana получила пять звезд APEX и звание лучшей авиакомпании Центральной Азии - TravelPress.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-02" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE5mZm1FVWg5NV9pWWhmMW9MWGd6eW5OcVpHdjViVnBLa0lVZHBMaE85c3UzMmtPVEpMbnhjdFducU13Zm40WU9id21DeTJwRnl3VFNnVjVJTmxlLUpONlBoVGlDREotSklCY0p6Qzc4OEhsdTlWNTRxaUk4VWxEUQ?oc=5" target="_blank">На связи даже в небе: Air Astana выполнила первый рейс со спутниковым интернетом - GOV.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 02.11.2026 07:38</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">На связи даже в небе: Air Astana выполнила первый рейс со спутниковым интернетом - GOV.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-14" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOTWJVd0h5MzdIUlpHaDhCd0gwN0RBX0JuODVHaUpQbnRHWnNGU1dtVGYzVW04MGhxTHdSaW8yMmhqNHBjUzdFVEtBWFBaYUpMSVhoRXRYOWc5cHhkbVJ2RjhSb0JjMmh0TGRlSDFPTnFiYnV6U0laaUp2ZksySWFOcnk1STVndGJuWFZSdjlhMFMxZV94T3FVenp4MkhRcTFtZzZWT29B0gGrAUFVX3lxTFB1MUZzbXY3VXd2S3k3WmVyMXNzcGVFSTFRX2w5TGFhYWRZQ1hGMDRNd08xX1oybmc5WThSdG5acDN0a0FyUW5nVkVCU1hqT0dLYjZUck51NW92dERzUHVZd3h3aFVMeUFFcEVWeFNvemlGLXBFWURpeW92bzRSajJaaTJ4dUk2V1BNaEtaczBPZVJ3dWFVanZSMUs3ZWNfYVJ2UkMzZWpMWDZHZw?oc=5" target="_blank">Air Astana возобновляет рейсы в Дубай после временной приостановки - 24.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 14.07.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana возобновляет рейсы в Дубай после временной приостановки - 24.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-21" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQN0pJTXpzdXBldGd3dGJibE5LVzA1RlpPX2pLdU5RMllsVTVBUDlKaXVUaXBWa3FvY3I2SVdyaVhURmpRZW1tTE1DZmRHRXZmZTF2ZEtsU0trSzFISHpmZVBPOUFQcFBCRWlmSnJ0cTlWbE12UkxNRWdvRGloOThIN1UtaGsyUDctS1lESWJYSk91TjNUS0F1dE1fdnFQWlVlWUVVWWQxX3FkSVNIWHl5RGRR?oc=5" target="_blank">Главные инженеры и инженеры по охране труда КТЖ прошли обучение в Алматы - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 21.11.2026 06:01</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Главные инженеры и инженеры по охране труда КТЖ прошли обучение в Алматы - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-21" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQcGY5SFNDM3dWc1NRTFk2Z2VnVE5TTXJFTy1RWVZReWRGazB0akJyeGZxb1NkbEVncTJocmx2bVBVcDkzQXYwNWZQYUV3aDFfUmVibXQ5YXpsT2M2MW5kUmNoQ2Q1NXlWd2R0TkRTSVpqd3B1U0NFSjVPYllsNjc2Tg?oc=5" target="_blank">КТЖ ищет обходные маршруты для экспорта казахстанского угля — Деловые новости Казахстана - LSM.KZ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 21.11.2026 06:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ ищет обходные маршруты для экспорта казахстанского угля — Деловые новости Казахстана - LSM.KZ</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-03" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNWEJLUVlUYTJSN0FQMnRfZUFTdHoyRVZRd2NrNUliZVpqNVZjN2U3NlRyeXByNmxYSDRJZjhvZzZCVzNUSjNWLU10WV9iR0IydzFnRnhVYnZ2MGttQ3hsX0pmX0dvZV9vbXROSWp1VnFNcjE1M3Q0N0VOSmxicDNSckR2enJMYkZXTGp6Mk03aFctR0hXUS1TdjVrME5fOG11eHlwVVZLamJzcF9MaHRoY3lBeHQ5Zw?oc=5" target="_blank">Локомотивные бригады КТЖ предотвратили 39 ДТП на ж/д переездах - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 03.09.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Локомотивные бригады КТЖ предотвратили 39 ДТП на ж/д переездах - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-01-05" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNR29vM2diM3dtVTAwbDJ6UE5MRHNpSEhIaDZHY0ZNb2d4d0NMcUVKZnlWSlIyUU11NUE5WUh0d0dzdFJuWDRVSTEwUGV0MTdDRUgtWEV0SGNCWkltc1RtbGcxM21rXzZ3LTVfVmZ3MUk0UEFZeHBtOExXclZzaHVZOE5UZVlNOXhMQWU5VHJIUndPQWh1UGdMSWFsRUF6em5GaGtxYw?oc=5" target="_blank">КТЖ и КазМунайГаз перешли на автоматизированный обмен данными - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 05.01.2026 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КТЖ и КазМунайГаз перешли на автоматизированный обмен данными - Қазақстан теміржолшысы</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-01-21" data-co="Казахстан Темір Жолы" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUWV3WC1jUGFRYXBuZ09VLVpNeEozbHRrc3J6WE8yRnhULVZlLURfYjdWTWR5RzZiZ3pLUzB4NDJHckpUOW9Mams3b1g2eTI3NUZvZkZJZnVnakR2anFpVkd5MWlQMEVrN1ZKcW8zalpRVzFEZFI5Y2VyV1VQWHRESWxGajJNbnUzeFdUWXZTS2d4QUZVWnFjeHYwbzI3cXE2V0lkM08zLUFBZw?oc=5" target="_blank">Контейнеры, маршруты, терминалы: КТЖ готовит сеть к росту грузопотоков - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 21.01.2026 08:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Контейнеры, маршруты, терминалы: КТЖ готовит сеть к росту грузопотоков - Қазақстан теміржолшысы</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -192,8 +289,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-11-20';
-  document.getElementById('date-to').value   = '2026-11-20';
+  document.getElementById('date-from').value = '2026-01-05';
+  document.getElementById('date-to').value   = '2026-11-21';
   applyFilters();
 }
 
