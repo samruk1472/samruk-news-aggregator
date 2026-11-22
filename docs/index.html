@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">3 источников · Обновлено: 22.11.2026 14:59</div>
+  <div class="meta">1 источников · Обновлено: 22.11.2026 17:37</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">3</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-04-24">
+      <input type="date" id="date-from" value="2026-11-22">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-22">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -84,10 +84,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
-      
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -106,63 +102,25 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-
-  
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+  <div class="section" id="sec-neg">
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-10-23" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVWVrNmtmRGhqQk16WDBvY3Q4MEM2ZXlpYzROZVItMEhnamI5TDNmSk5TMDVxSVZucHhIUkNkU2hKUklOdDB0RVJITE1rWnRkUTY0U1NfR3NoS21JS2w4MEt6Yk5lMnpzaTFUakEzQjhwOVJELUJvRHFFZ1dlZGdPUVN4bEFoMXdLS1NJR3UtV1d6WEJZeW1wWVlzNnpTQVVBTEw0TFYyTmRrdFFJd2cyZWdpNzdZOWNDMllkRE1kR09ZcWdsQ3c3NTN3MFEwOExibEJubnZ3?oc=5" target="_blank">Казатомпром во второй раз вынесет на голосование акционеров вопрос о поставке урана «дочке» Росатома - Kapital.kz</a></div>
+    <div class="article" data-date="2026-11-22" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-22/tsse-osuzhdennyi-na-12-let-eks-akim-zhambylskoi-oblasti-mog-vyiti-na-svobodu/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tsse-osuzhdennyi-na-12-let-eks-akim-zhambylskoi-oblasti-mog-vyiti-na-svobodu" target="_blank">Осужденный на 12 лет экс-аким Жамбылской области мог выйти на свободу</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 23.10.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Казатомпром во второй раз вынесет на голосование акционеров вопрос о поставке урана «дочке» Росатома - Kapital.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-22" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE00YUtJTXlJemhMQU5INmswSzVjODNvSkZCUXAyTjF3OTBTTVJvTXoyX3JJWnVzUmpnMnp1cU5hYkZXTXdjZWNqTmswZER4RVYtMkdYNzdRdXpVY2R3MHQ0elhMVVNsVlQwcVFEbGVXT3ptcHEzRGRVb0xxSzlQQQ?oc=5" target="_blank">Air Astana хочет больше рейсов в Индию: с марта 2027 года — 21 в неделю - airpress.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 22.11.2026 13:33</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana хочет больше рейсов в Индию: с марта 2027 года — 21 в неделю - airpress.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQS2t6dUtNOHpLcE5OZVB1c0RCeXBWZkh1Y0N1ZXRJQ05nd3FFRGlyT2l5UEpmbkhSdUxOelhvbW5nRVJoX25GS0VoU0tMMkdiWkE4R2MwdXpnOXlydXMzSWJIS1NnU2dkcTU1NEhNVk85UnQwV2NZTEFwREpWUTVYS0tLanRNNUU?oc=5" target="_blank">КМГ и КТЖ обеспечили сквозной цифровой контроль логистики нефтепродуктов в Казахстане - ҚазМұнайГаз» ҰК АҚ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.06.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 22.11.2026 15:29</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КМГ и КТЖ обеспечили сквозной цифровой контроль логистики нефтепродуктов в Казахстане - ҚазМұнайГаз» ҰК АҚ</div>
+      <div class="art-summary">Осужденный на 12 лет экс-аким Жамбылской области мог выйти на свободу</div>
     </div>
     
   </div>
   
 
   
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-04-24" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNbHNwM1ZBVTQ4TlhSVjV2Sm9rX2lhT3dNd0dvSjZtMDZOUTFCZG1mU3VfRlVHMlNNS1FxRUNaNDVQU2VkS0R2aDVneW12dEdKYlh4RFp3YURWWE9DZDBEdE1zWFBIbE15ellrYU5XVGtuNm5xXzc5Uzk3UHNjSXBiYld1R01ZR1hWdEpOa3FkN0RORVJ2MWpnYlVtWllRczA?oc=5" target="_blank">Казатомпром планирует направить на дивиденды 335,2 млрд тенге - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 24.04.2026 07:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Казатомпром планирует направить на дивиденды 335,2 млрд тенге - Kapital.kz</div>
-    </div>
-    
-  </div>
+
   
 </div>
 
@@ -221,7 +179,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-04-24';
+  document.getElementById('date-from').value = '2026-11-22';
   document.getElementById('date-to').value   = '2026-11-22';
   applyFilters();
 }
