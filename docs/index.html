@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 22.11.2026 21:22</div>
+  <div class="meta">7 источников · Обновлено: 23.11.2026 08:39</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">5</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">14</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">5</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">9</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-28">
+      <input type="date" id="date-from" value="2026-08-05">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-10-08">
+      <input type="date" id="date-to" value="2026-11-23">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,7 +85,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -103,17 +111,61 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
     
-    <div class="article" data-date="2026-10-08" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQam9NalNXSTF6WGFQMmhJM0NkOGtFNFIyTHpWY0dsWWtReWZzX1ZyUjV4ZzZDY1RJUWpmdG1ETDVVRno3UU13XzVzM0tFeGRxX0IyX2hySmM3MXp3OGRFTlBPdlBrY0NUMFdWSkV6cGtwcFBBaHBGWGhkWV85WGt5WXZqUzBNVEdkTmZJV09HMEdTc0lTeks1TjZ0bk9CbW91MnhfUk1YYUZSN2x5dW9R?oc=5" target="_blank">Поезда режут скот сотнями: КТЖ вдвое поднимает штрафы - Kursiv Media</a></div>
+    <div class="article" data-date="2026-11-23" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-23/fvfv-ktzh-nuzhen-strategicheskij-investor-im-mozhet-stat-kitaj-glava-qams/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-ktzh-nuzhen-strategicheskij-investor-im-mozhet-stat-kitaj-glava-qams" target="_blank">КТЖ нужен стратегический инвестор, им может стать Китай – глава QAMS</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 08.10.2026 07:00</span>
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 23.11.2026 08:15</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">КТЖ нужен стратегический инвестор, им может стать Китай – глава QAMS</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-23" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-23/shlc-espaeva-raskritikovala-samruk-kazyna-za-neprozrachnye-otkazy-biznesu-v-zakupkah/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shlc-espaeva-raskritikovala-samruk-kazyna-za-neprozrachnye-otkazy-biznesu-v-zakupkah" target="_blank">Еспаева раскритиковала «Самрук-Казына» за непрозрачные отказы бизнесу в закупках</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 23.11.2026 07:16</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Еспаева раскритиковала «Самрук-Казына» за непрозрачные отказы бизнесу в закупках</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-23" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-23/zhki-skandalnyy-serial-s-otravleniem-50-chelovek-na-semkah-v-almaty-vyshel-na-netflix/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhki-skandalnyy-serial-s-otravleniem-50-chelovek-na-semkah-v-almaty-vyshel-na-netflix" target="_blank">Скандальный сериал с отравлением 50 человек на съемках в Алматы вышел на Netflix</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Kursiv.kz</span>
+        <span class="date">📅 23.11.2026 05:53</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Поезда режут скот сотнями: КТЖ вдвое поднимает штрафы - Kursiv Media</div>
+      <div class="art-summary">Скандальный сериал с отравлением 50 человек на съемках в Алматы вышел на Netflix</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-23" data-co="Казахтелеком" data-s="negative">
+      <div class="art-title"><a href="https://vlast.kz/novosti/71711-tokaev-utverdil-sostav-ekspertnoj-gruppy-po-voprosam-strategiceskogo-razvitia-kazahstana.html" target="_blank">Токаев утвердил состав экспертной группы по вопросам стратегического развития Казахстана</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Vlast.kz</span>
+        <span class="date">📅 23.11.2026 13:11</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Токаев утвердил состав экспертной группы по вопросам стратегического развития Казахстана</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-23" data-co="Самрук-Казына" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQOXNXclFYVFlZNjdiUXloak1WRmF5T29RNThmc3FscmdaNWI2eWhEU0ZuU2dweHZZdkdlcGxsdC1ZekNRTG5nc3Fna2h0Yk0yQ2lVVVpPUXRlODR0MkRCVktBM3ZzMU9LUllrYl94OHIzNmVrazh0dk1IMkNsX2x4WDhxcGFGTm54dnlfMDBLRXprREJCNDVIMTFTTHRiNGR5T2gwTXA2TQ?oc=5" target="_blank">Аудит “Самрук-Казына“ засекретили, а в КТЖ нашли миллиардные нарушения: что известно - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 23.11.2026 06:08</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Аудит “Самрук-Казына“ засекретили, а в КТЖ нашли миллиардные нарушения: что известно - TengriNews</div>
     </div>
     
   </div>
@@ -121,50 +173,105 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(9)</span></div>
     
-    <div class="article" data-date="2026-09-07" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNHhLYjdOT1NWMnNaeGFRYVhJT0RfOFRuT0tDMmRvMDVDY2RBX2JJLTRYaWpqY09vMXJGMEdrYjZJUVhMejB3V2lTQmRiZmZtaUJoTE1PQ1hJSEJFSm10TTdEQXg3MFFJaWZEVkZZSzJVS3JmeVRqb0dkZHBZMERmOUE4eWpjdDFoY21GbGdXYjdZX3BNQVFyMzBXdER5SUpOTmQ0dHlxb3c3QVd6V21nVWNyRGIwNncyT1dhU0o4Sy00QQ?oc=5" target="_blank">Швейцарские вагоны Stadler приняли в Казахстане после смены главы КТЖ - Kursiv Media</a></div>
+    <div class="article" data-date="2026-11-23" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQMEZfYVIwLVBJall5MzVfS2FVQjJKRUcySzRIRW5uMmhVSnpEY3JzQkJwSExlYlpoOXctb2MxN2dxN1N1MWgxQ0gwVVRucGI5R1I3cW1jVHYxakdFbXh1dHlDSWtfUG1BVGkwZWt2VldvbWJQVnBhQ1JUVWxjVFJYMzEzaEFkOHVjRVRsWDBxTGVUdDh1UE5RWHY5MHEyVXpQMW1jVmtjUkVZQThHVTJ6cUJNcXVkZmMybHVBQQ?oc=5" target="_blank">Еспаева раскритиковала «Самрук-Казына» за непрозрачные отказы бизнесу в закупках - Kursiv Media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 07.09.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 23.11.2026 07:18</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Швейцарские вагоны Stadler приняли в Казахстане после смены главы КТЖ - Kursiv Media</div>
+      <div class="art-summary">Еспаева раскритиковала «Самрук-Казына» за непрозрачные отказы бизнесу в закупках - Kursiv Media</div>
     </div>
     
-    <div class="article" data-date="2026-08-28" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNclMxd3JKVFNvV1V0bS0xVG4xNFpaZ0QyNnhNTXRZcEozM0hGdHRoVDhxbjd1ZjBIQ01ReTRMOEFIam1CRUM4YkNzZVJQX2lkeHhsNHlWTkI5bk5ha0xOcmJ4RHFwa3gxZWRQWTBFaVotNXpUaEVPczhzVVV0RU9ETHNhWmNSeXM3WWFzN3JJUFhQMTE3cy1RbC0wMmZOQkRfbnA2YzI4eHBDRmxhQmJnTWplcEpsT2Y4dmpOU256WGpVWXdEZnZPbg?oc=5" target="_blank">КТЖ расширяют применение интеллектуальных систем диагностики и автоведения от Wabtec - ROLLINGSTOCK</a></div>
+    <div class="article" data-date="2026-11-23" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQTFJyR0JkNnBTa1RUWnY0TF9JWEd4QU9vV291MkUyU25hMGpscXRmU29yX19iR0NNbjJzR01VRFNkUW5lT3ZJQjZrdUJQb2pCXzd2d1VNM3I4YnlnclA1NWMxeVpsTGVNbzNhRzJ3OTA1T28tRk9qdWFwWm9tWFJOWUpvQmVjSTlYMVRDUXFaRTFueUp0YkdRNzdhMDVwcjdpcmk1c1VfV3ZxV2pSVkE?oc=5" target="_blank">Проекты фонда «Самрук-Казына» по импортозамещению раскритиковали в Курултае - National Business</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 28.08.2026 15:17</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 23.11.2026 06:05</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">КТЖ расширяют применение интеллектуальных систем диагностики и автоведения от Wabtec - ROLLINGSTOCK</div>
+      <div class="art-summary">Проекты фонда «Самрук-Казына» по импортозамещению раскритиковали в Курултае - National Business</div>
     </div>
     
-    <div class="article" data-date="2026-09-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeWIydG1JVG11RFN6QnY0Q2NqWGxQZklldzV1SzB2U1pZNjFtWHo2eEpOWTNBenk0c1paS0NiMWJwZ1FZRi10SDdxS0F0LUVMd1VFRHIxYWhVYW5UQkowUFRzQXhZRXkwa0ZuZGc3Q0x0Q2xXQWlRbENTTWdNYU5iS0x5aDI2TUJEcjN2QTVOZ0NLRmZQbUJuZ04yWnlmSEczVWlITzFrMGR4RDJubGZUN1dtTWh1eXN3QTI0?oc=5" target="_blank">КТЖ рассчитывает привлечь до $5 млрд в ходе IPO при оценке компании в $30 млрд - Kursiv Media</a></div>
+    <div class="article" data-date="2026-11-23" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOZ2d0aUNXRlZqeDExVFV1aTlUVml0bDl1VzEwNkVYcEMwLW44elp4VzRTQjB5ODlOQ28yMElpOFQ0enFieFdFVFcyNzZEZDZFQjFDVGJra0Z6ajZLRDZHVUF4bG1zUHgxQ0R1MG1XWjd6dnZHZ1haLTk3M0daY25HQTNuMDVOaDJ6cnRCc1IybGE5azljNWRaOGVUZ2h6RHZrNUF3M2Qxc3ZYYTlzalEwMlJ1ZmotUdIBugFBVV95cUxOSmJCcDFEb21MQy16QUZpZWNmTXh4WmJ5Y1QyNjcyQW5tYmlWRGNrT1FXblQ3Rmhrc0d0bnpNSEFNUmhkNXZFS2QxbmpXLURqTnVtajA5MkNhN1JrZTlKb0gtZEVuaG5ObEExSFFfdC01XzRXS0tLT0hrUVlDckNtSGxnLWhzUHVLeE9kcGZDcWxXdHk2c2JGcmcyVzNCMTJ1VzBKdnlDdWU1eW9yUE40Z2RvRG1UNFVfREE?oc=5" target="_blank">Заберут ли «Казатомпром» у «Самрук-Казыны»: фонд и атомное агентство уходят от ответа - Ulysmedia.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.09.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 23.11.2026 04:54</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">КТЖ рассчитывает привлечь до $5 млрд в ходе IPO при оценке компании в $30 млрд - Kursiv Media</div>
+      <div class="art-summary">Заберут ли «Казатомпром» у «Самрук-Казыны»: фонд и атомное агентство уходят от ответа - Ulysmedia.kz</div>
     </div>
     
-    <div class="article" data-date="2026-10-05" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxORS1vQTQwWE1GYjNhNEN5Ym1vd2dKeXE5VXdHSVNTYXNmNGRrb2JfXzA2OU5nc052MWh5Q0xuaG82U3Z4MDRYeU4zZ1JrN3B2OHVfclhuSVRfNVpfa3NxU25uNzlkTzVVdmg2LTdPZFRmRERGdlFRQk9JNkRlaFBpTU40SXZLMGUzOW5XTlpoYi1hV08xUUJIeXpfTWtYNzA?oc=5" target="_blank">КТЖ построит 10 терминалов за пределами Казахстана - InfraNews</a></div>
+    <div class="article" data-date="2026-11-23" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1ESXdqaUUtd2F3ODE3c2tiNjB4SlVLaTVHajh3Q2NTVHl2YlVDaXB2RDR0U0J2T3UtTVR6NlJJZFREdmdJRk0wTHBTMHhpNm55U3gwUGRfQktENjAzSDY3QkM0Z2FPWGliVG4ySg?oc=5" target="_blank">Fitch намерен сохранить рейтинговую оценку &#34;Самрук-Казыны&#34; и КТЖ после задержания руководителей компаний - Интерфакс-Казахстан</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 05.10.2026 07:00</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 23.11.2026 06:00</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">КТЖ построит 10 терминалов за пределами Казахстана - InfraNews</div>
+      <div class="art-summary">Fitch намерен сохранить рейтинговую оценку &#34;Самрук-Казыны&#34; и КТЖ после задержания руководителей компаний - Интерфакс-Казахстан</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-23" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE1IY0JvbTNsRXV5Q0h0SVlYOXpfNVlZUlppSjdXOGVJMFlPWUppUGRLSWRzR1FfdkJOYTUzbUlVQ2VEWWxmRG1DVFlxY9IBUEFVX3lxTFBNU0RWQTdzaHIzWldqS05MZzIxRU9SdDVvd2lkZ2xsSWZmblR3OGpPXy1XMTJ1YTFrS01FQllNVlp1R3dLZFh6SU1CUEtHNEpQ?oc=5" target="_blank">Президент принял председателя правления АО НК «КазМунайГаз» Асхата Хасенова - Телеканал «Астана»</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 23.11.2026 08:35</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Президент принял председателя правления АО НК «КазМунайГаз» Асхата Хасенова - Телеканал «Астана»</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-23" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPSE11WnJlbXBjZ0VVb05PY1VCM050clQzWmtEaEs1TXNBMVZBdWpXZnJxdU5HLVl6cGFzYzA4NERrZlRaYmVETlBmajJfUWlYaThvekJ1WE1YVmFTVHV1ZnE1UkdEREowZU96OU83bUttamRncEhfbmtkWlBvVzRleEtzcjhWb2hrNjdEeFNfcDhKYlI0OEE?oc=5" target="_blank">Казатомпром строит современную поликлинику в Кызылординской области - Мой ГОРОД</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 23.11.2026 06:09</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">Казатомпром строит современную поликлинику в Кызылординской области - Мой ГОРОД</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-05" data-co="Казатомпром" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5TdXFLd0Rudnp4UTNJekJ1MzR3V0RvUmU1VDhpc1J0LUxOdlFZdFAtaXlvRGVqcmRISkJGVE0wTUxZSUgzQmZoWjBZY19FdGRya09RcUV0YklqYTFESVktaA?oc=5" target="_blank">«Казатомпром» и «Cameco» представили промежуточные итоги по добыче урана за первое полугодие 2026 года - Атомная энергия 2.0</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 05.08.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">«Казатомпром» и «Cameco» представили промежуточные итоги по добыче урана за первое полугодие 2026 года - Атомная энергия 2.0</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-23" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNYV9IcGItMHZEUmx2SnZtUF9CbnZYM1BxUVFYcmdfbmN3eEc4OTY1aFBZUVFSbUxySUdUaFdQUy1paUhXUHIwYXlsbGFabmtkel95Rmdab3ZkN2ZrUkEyZENva3VReEw5ejM2UC1XUE9ENll4WC14NEIzQUdra21kanU1X2hLbVdneHJjSk9Eb19NMUhlQXA4NUNPWFFtZU9OYXM0dWtiRHl1LVdMbnc?oc=5" target="_blank">КТЖ нужен стратегический инвестор, им может стать Китай – глава QAMS - Kursiv Media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 23.11.2026 08:17</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ нужен стратегический инвестор, им может стать Китай – глава QAMS - Kursiv Media</div>
+    </div>
+    
+    <div class="article" data-date="2026-11-23" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNTVpYVDZnbTJfSGhDNWgxY3NHc21kRWJrYllEM0FNZzc4d2RmNWNvOGlHS1FJRHZINzVBdF9vR1ZDRVhGemJFVlRxMVpmWnNhQndFX2NOTWJGX0ZROTViRTRCeUUxcTNqcmtwOUlXX3ZzWnJMVENLSC1sbHBVaWxSMDdIaEhZaFpEQXpjUGZRdkc5UGxkU1FnZlRHMnc5Ql9aWG9xVlpaZlN0Zm41WXVqRWlna0lEcnFsWEpGZ0htdnJDLTZibEE?oc=5" target="_blank">Неделя NBK: миллиард для миллионера, «Казахтелеком» теряет деньги, подарок для китайцев - National Business</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 23.11.2026 03:16</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Неделя NBK: миллиард для миллионера, «Казахтелеком» теряет деньги, подарок для китайцев - National Business</div>
     </div>
     
   </div>
@@ -228,8 +335,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-28';
-  document.getElementById('date-to').value   = '2026-10-08';
+  document.getElementById('date-from').value = '2026-08-05';
+  document.getElementById('date-to').value   = '2026-11-23';
   applyFilters();
 }
 
