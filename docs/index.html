@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 23.11.2026 18:54</div>
+  <div class="meta">4 источников · Обновлено: 23.11.2026 21:54</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">7</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">5</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-11-23">
+      <input type="date" id="date-from" value="2026-10-22">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-23">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,7 +85,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
+      
+      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
@@ -107,28 +109,17 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-11-23" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-23/svvo-banki-rekomendovali-ktzh-otlozhit-vyhod-na-birzhu-do-2027-goda/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svvo-banki-rekomendovali-ktzh-otlozhit-vyhod-na-birzhu-do-2027-goda" target="_blank">Банки рекомендовали КТЖ отложить выход на биржу до 2027 года</a></div>
+    <div class="article" data-date="2026-11-23" data-co="Air Astana" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-24/nvbr-kazahstanskaya-semya-postradala-v-dtp-v-omane-chto-izvestno-ob-ih-vozvrashhenii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=nvbr-kazahstanskaya-semya-postradala-v-dtp-v-omane-chto-izvestno-ob-ih-vozvrashhenii" target="_blank">Казахстанская семья пострадала в ДТП в Омане: что известно об их возвращении</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 23.11.2026 15:00</span>
+        <span class="date">📅 23.11.2026 20:32</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Банки рекомендовали КТЖ отложить выход на биржу до 2027 года</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-23" data-co="КазМунайГаз" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOYzg2REtGNXpwXzI4UEttdXhETTNUdXlYSGtmaXVMdEFaZk1TWXExcE5QM0tWd01MYzRXQTRYekFldWlDbG0wRmZKVmR1VlAzWTBvaVNPeWstX3VXekFZSk5KZzhOSHRHUXZCTldibG1uYWRQTnhiZnNXRWg1N0lWa0Jvd2RmX0FMY0czZWNLR3ZkUmR3THc?oc=5" target="_blank">КазМунайГаз и СИБУР оценивают санкционные риски - ИА Девон</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 23.11.2026 09:04</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз и СИБУР оценивают санкционные риски - ИА Девон</div>
+      <div class="art-summary">Казахстанская семья пострадала в ДТП в Омане: что известно об их возвращении</div>
     </div>
     
   </div>
@@ -136,66 +127,71 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
-    
-    <div class="article" data-date="2026-11-23" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="http://time.kz/news/economics/2026/11/23/kazmunajgaz-nameren-uvelichit-proizvodstvo-tovarnogo-gaza-pochti-vdvoe" target="_blank">&#34;КазМунайГаз&#34; намерен увеличить производство товарного газа почти вдвое</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Time.kz</span>
-        <span class="date">📅 23.11.2026 17:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; намерен увеличить производство товарного газа почти вдвое</div>
-    </div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
     <div class="article" data-date="2026-11-23" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFA0ckdBSE1NQnhPZVI2UUZFYl9XVmx6T09nWmFubG55RnNQbDBwa0pKYUFrUXFhLVByaFRvUjV4d3MyYWdPT3ZkS3N3cnhzTUlXeFZ5c3MteWk?oc=5" target="_blank">Агентство Fitch подтвердило рейтинги «Самрук-Казына» и КТЖ - The Tenge</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQekM0N1pGZ0M5d1VXWmlzMEVaWHVIc1pqcUdRVTZ5Mm9DUDY2bE5kUXJOblVrOG9uWk5IMFNlZ25RNlFQYXlsRGx5ZVZTcUhOSjZpUlNRZ2FfSl9zaEFmcm81N1Ywb0VMM1NxNjNXY2ZuZ0JuMDdGd2tMbU14NUk3VnU3bDc4QlR0Q1Q5S2gtUmthWkJpVFdoX3RybXJZUUd0OGZ2R25Yd3pSeWgzM1duNl83RHJkd9IBtAFBVV95cUxNRDBvZENIRGgwbTYzaGRlVVduNDZZR2VuNjYwZ1dvdEtaSF9NZkhNbnNJMjZZd2MtcWZaQU9jME1lRmdIaHc2VWktVzF1Rzh5WVpwSVh1NHJYNzcxRVlIR0FhV0ZkQ01xbjc5cWlxXzlXdnRqc2c3VDVDRUY4WDVPMW9wYnpaZkhtZmE4MUt6ckRHclFaaXNHd2NXNzJQSnFBMzU3Y01LZ0JxRS16WWdtd25iaDY?oc=5" target="_blank">&#34;Самрук-Казына&#34; закупает у казахстанских компаний на триллионы, но бизнес жалуется на барьеры - BES.media</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 23.11.2026 14:05</span>
+        <span class="date">📅 23.11.2026 06:21</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">Агентство Fitch подтвердило рейтинги «Самрук-Казына» и КТЖ - The Tenge</div>
+      <div class="art-summary">&#34;Самрук-Казына&#34; закупает у казахстанских компаний на триллионы, но бизнес жалуется на барьеры - BES.media</div>
     </div>
     
     <div class="article" data-date="2026-11-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE9odEM5VzU1R3l3cG1sWHd1U0Q0dlBkdTQ2ZVBUY3Q4cVFqa2ZnUWJPd2E2Mmt0M19TUEZFektvUkRfSFpQbGM3aXZR?oc=5" target="_blank">IPO КТЖ под вопросом: международные банки советуют отложить размещение акций - Ак Жайык</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNVTNzN3BjdDhrMVFqcERFaGlYU0lGVDhGZ1ZUdXNsMTdtNVpnd0xob204NzdlNHhDZUFrZFQwcm4yR1ltOUphTWNwREhMd0ZMSEpnQksya3hZSGdrbWdiUENvWEtwQ0lsVW5GY2VMLUFtcGlnb3Z4Z0VKdDZYcE5LcWJyRkJUTTdlNWNBMndzR1Z0bmZsbGZLa1otQdIBpwFBVV95cUxONmMwWl9jdXZJYjVacm9PaGlhQmE3VHhyTGlTR1dMRXRXUkRNWDdEY08xLUVqRW5Qd1hjVF81SWZGSVhqRVJGU1pWY2c5NlhPSUJSWUdsZHkzd3F1b3JqRUNjcFdLQjBSdUFoX0NEeE5IYVZ3OGQtQ3dudzl2OThQcURoX19fUEdNMkE4ZThhaVRWRkU4UFBmZ3Rhd1k5Ulc0cEl6Tmxibw?oc=5" target="_blank">Fitch сохранило рейтинг «Самрук-Қазына» и КТЖ - BAQ.KZ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 23.11.2026 15:39</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 23.11.2026 13:22</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">IPO КТЖ под вопросом: международные банки советуют отложить размещение акций - Ак Жайык</div>
+      <div class="art-summary">Fitch сохранило рейтинг «Самрук-Қазына» и КТЖ - BAQ.KZ</div>
     </div>
     
-    <div class="article" data-date="2026-11-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPYzBWUjlnWHlDa0FKVjhNT1VLRmRJVWpvLUVNWERzWkNWZmtqZzl4S1daNzRYTWNxZXAwa2xVUkFaRnNrUW5hcFdjdU9GR1FqaDJSczV5TzFDNU1jeS1XNHRJelBoR0FCamR2RDNTbkpHNzJYV3FHQ1Znczg0Mjh6TkJmNm9QNVFlR3BjMHZQNm4tOHAtdDN4NlJfMElna0dOMW0wZ0NR?oc=5" target="_blank">Банки рекомендовали КТЖ отложить выход на биржу до 2027 года - Kursiv Media</a></div>
+    <div class="article" data-date="2026-11-22" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTFBybzl0TEVibkZwekozV1ZZLVZBbkhKZ2c0Z1FrdlFnR2I0U3RrREtaNlU4QzFIOVlDVzNSaElFUjREa0w3cnZibG5ESjZzQQ?oc=5" target="_blank">Fitch подтвердило рейтинги «Самрук-Қазына» и КТЖ — Тазабек CA - Tazabek.KG</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 23.11.2026 15:03</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 22.11.2026 18:30</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Банки рекомендовали КТЖ отложить выход на биржу до 2027 года - Kursiv Media</div>
+      <div class="art-summary">Fitch подтвердило рейтинги «Самрук-Қазына» и КТЖ — Тазабек CA - Tazabek.KG</div>
     </div>
     
-    <div class="article" data-date="2026-11-23" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPTzBmcUM1alRfZEJhYWlfc2ZIMmsxTVQ1QXR0SW9HUjFUZlVLWFcwaGVwM3lqb0pkQkkwSG81T1FENW1vX213ZVVYSVFLUktVV2J2blo3SnJ3bmFBX0dvOVp0TVJtVVFYbWl4MmZmV0JQWThiTVpMTU5oUmtpaU1EUk9aTmpJc3ZYOTNxeGZXUEdQZmg0bjNEeDhodmcydzhxNTJydzdNYVhFZUpVYWxwdWd3?oc=5" target="_blank">&#34;КазМунайГаз&#34; намерен увеличить производство товарного газа почти вдвое - Время — общественно-политическая газета</a></div>
+    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPU1lQM01UcjdBUUZ0dXFDaVFMZEpnektxVzZIN1RaR3lnT1p6a09USHVUMUtrMTQxY050VmFZYVdQMXptWWs5ZGZkT3hoY1E3bTBHTFhOZUpHZnNCZ0tNRHN1emdNc3FYMUZDc2o5emhEd1ZzaUxWQzhmVWExWkZnXzJ5cFFyMDFIUXVjdE40QkZ6bU5fblpTTU9ieDhxU0dwY2hlcTFZZDU0ZEQtWHc?oc=5" target="_blank">Токаев экстренно соберёт Совбез после задержания руководителей &#34;Самрук-Казыны&#34; и КТЖ - BES.media</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 23.11.2026 14:28</span>
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 12.11.2026 08:00</span>
         
-        <span class="tag">КазМунайГаз</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; намерен увеличить производство товарного газа почти вдвое - Время — общественно-политическая газета</div>
+      <div class="art-summary">Токаев экстренно соберёт Совбез после задержания руководителей &#34;Самрук-Казыны&#34; и КТЖ - BES.media</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-10-22" data-co="Казатомпром" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOV19hNzdVNzg5Y2hQVlFWV0ZpbVVULU5DTk1FSVhFSUh0eUlEdVJlVHJ0RzYyVHdibHdZbmlVWEM4d1dFazZsOU1Pb0pNVHhKVHQ1Y05yUzR0V3VPWnh3NjhyMWZVYVBUNHBWMUNta0F2dGRLV0lRbTBHZS12NWFKc2NSZmV0WkZkLXRWM1g2amtUM0d4cVQxaUszblpzUF9ocU53TUxR?oc=5" target="_blank">КМГ, Kaspi и «Казатомпром» возглавили рейтинг самых дорогих компаний региона - PROFIT.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казатомпром</span>
+        <span class="date">📅 22.10.2026 07:00</span>
+        
+        <span class="tag">Казатомпром</span>
+      </div>
+      <div class="art-summary">КМГ, Kaspi и «Казатомпром» возглавили рейтинг самых дорогих компаний региона - PROFIT.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -254,7 +250,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-11-23';
+  document.getElementById('date-from').value = '2026-10-22';
   document.getElementById('date-to').value   = '2026-11-23';
   applyFilters();
 }
