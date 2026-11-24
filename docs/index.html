@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">4 источников · Обновлено: 23.11.2026 21:54</div>
+  <div class="meta">2 источников · Обновлено: 24.11.2026 00:37</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">6</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">17</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">11</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">3</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-10-22">
+      <input type="date" id="date-from" value="2026-07-31">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-11-23">
+      <input type="date" id="date-to" value="2026-11-13">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,13 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
       
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -109,17 +107,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-11-23" data-co="Air Astana" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-24/nvbr-kazahstanskaya-semya-postradala-v-dtp-v-omane-chto-izvestno-ob-ih-vozvrashhenii/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=nvbr-kazahstanskaya-semya-postradala-v-dtp-v-omane-chto-izvestno-ob-ih-vozvrashhenii" target="_blank">Казахстанская семья пострадала в ДТП в Омане: что известно об их возвращении</a></div>
+    <div class="article" data-date="2026-10-23" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxPclVILWhrRlk3bG41UDRDQ2d1MW9wZjN5TG13VFJ6Z2JULWpOZTg4OThzY190WjJOQUpDalBuQnFQZ3ZjSWFEQ25jeGNpemt2V0ZRajZyMTBQZHlzV3dOMzh0TkUxWFBwVEd0c2hvSVZiWENzaHIybHpoQXpQSTE5VGhZdFo5am84UjRNZl9ueU1MNUNxQVZUM1dBVUtYZVk?oc=5" target="_blank">Казмунайгаз боится нарушить санкции против ЛУКОЙЛа - oilcapital.ru</a></div>
       <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 23.11.2026 20:32</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 23.10.2026 07:00</span>
         
-        <span class="tag">Air Astana</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Казахстанская семья пострадала в ДТП в Омане: что известно об их возвращении</div>
+      <div class="art-summary">Казмунайгаз боится нарушить санкции против ЛУКОЙЛа - oilcapital.ru</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-17" data-co="КазМунайГаз" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPTjJ4Wjk0RUpwSWNFT1JMRU0zOEI1bjkwazhjVFhXZmFiOFFYZ2RTVnNRNVRpVVBIVnBnd0ZxY1pFRzJNN29xM1RhbGpaNkttZ0JwSDB1QnlRZ0NldVhINHd6Q1lKUFJoWkc5NmFRR2YtdWw1MnNraUNxNFFkamlsZnhYYzhuMUZkdUd5eGtuLWVxT2docW5aR3Z2bkk?oc=5" target="_blank">В группе КазМунайГаз совершенствуют систему управления рисками: методология плюс цифровизация - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 17.08.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">В группе КазМунайГаз совершенствуют систему управления рисками: методология плюс цифровизация - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-09" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNcmV0ZEMwVmlkRUl4aFFfTkU4Vkk4dUZvekVieG1oUEZrWVZxVExTV1g5Umg4ZDU1RWZIZkt1aVRPR19CSzNFZUtXVGtwQ05mMmM5SFFUZ3ZRWndmUWVVZzJkVVdUVExyeTlrSEcxNmVUdE1EOFowNWt3OXA2bHBTNmQzT1BtODQ?oc=5" target="_blank">Глава КТЖ потерял должность в одной из нацкомпаний - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 09.10.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">Глава КТЖ потерял должность в одной из нацкомпаний - Forbes.kz</div>
     </div>
     
   </div>
@@ -127,50 +147,127 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(11)</span></div>
     
-    <div class="article" data-date="2026-11-23" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQekM0N1pGZ0M5d1VXWmlzMEVaWHVIc1pqcUdRVTZ5Mm9DUDY2bE5kUXJOblVrOG9uWk5IMFNlZ25RNlFQYXlsRGx5ZVZTcUhOSjZpUlNRZ2FfSl9zaEFmcm81N1Ywb0VMM1NxNjNXY2ZuZ0JuMDdGd2tMbU14NUk3VnU3bDc4QlR0Q1Q5S2gtUmthWkJpVFdoX3RybXJZUUd0OGZ2R25Yd3pSeWgzM1duNl83RHJkd9IBtAFBVV95cUxNRDBvZENIRGgwbTYzaGRlVVduNDZZR2VuNjYwZ1dvdEtaSF9NZkhNbnNJMjZZd2MtcWZaQU9jME1lRmdIaHc2VWktVzF1Rzh5WVpwSVh1NHJYNzcxRVlIR0FhV0ZkQ01xbjc5cWlxXzlXdnRqc2c3VDVDRUY4WDVPMW9wYnpaZkhtZmE4MUt6ckRHclFaaXNHd2NXNzJQSnFBMzU3Y01LZ0JxRS16WWdtd25iaDY?oc=5" target="_blank">&#34;Самрук-Казына&#34; закупает у казахстанских компаний на триллионы, но бизнес жалуется на барьеры - BES.media</a></div>
+    <div class="article" data-date="2026-11-03" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQRnNiQjdFZ2o4VDU5TVpxUVNqQi1uWVlGandmM2RPUVNXNnRWeDh0RE5xS2VmSXhmX3FxeWNqTFQyQ0FnOVRXNGVIb2lITDVJSWVFbEQwdjlTTm1KdGo3d28wV29pa21mUV9HVktiNDVXQzM2TXpaMWtRRHZaNjRKbTFXb3VmYUVnSE5SV3ZjOWhma09iWjEtWTVZdVRwZV9rdE5xY1ozQUpCdWxXMU5iU2dxS3l6Qm8?oc=5" target="_blank">Азербайджан может нарастить транзит казахстанской нефти: что обсудили SOCAR и «КазМунайГаз - Media.az</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 23.11.2026 06:21</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 03.11.2026 13:42</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">&#34;Самрук-Казына&#34; закупает у казахстанских компаний на триллионы, но бизнес жалуется на барьеры - BES.media</div>
+      <div class="art-summary">Азербайджан может нарастить транзит казахстанской нефти: что обсудили SOCAR и «КазМунайГаз - Media.az</div>
     </div>
     
-    <div class="article" data-date="2026-11-23" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNVTNzN3BjdDhrMVFqcERFaGlYU0lGVDhGZ1ZUdXNsMTdtNVpnd0xob204NzdlNHhDZUFrZFQwcm4yR1ltOUphTWNwREhMd0ZMSEpnQksya3hZSGdrbWdiUENvWEtwQ0lsVW5GY2VMLUFtcGlnb3Z4Z0VKdDZYcE5LcWJyRkJUTTdlNWNBMndzR1Z0bmZsbGZLa1otQdIBpwFBVV95cUxONmMwWl9jdXZJYjVacm9PaGlhQmE3VHhyTGlTR1dMRXRXUkRNWDdEY08xLUVqRW5Qd1hjVF81SWZGSVhqRVJGU1pWY2c5NlhPSUJSWUdsZHkzd3F1b3JqRUNjcFdLQjBSdUFoX0NEeE5IYVZ3OGQtQ3dudzl2OThQcURoX19fUEdNMkE4ZThhaVRWRkU4UFBmZ3Rhd1k5Ulc0cEl6Tmxibw?oc=5" target="_blank">Fitch сохранило рейтинг «Самрук-Қазына» и КТЖ - BAQ.KZ</a></div>
+    <div class="article" data-date="2026-11-03" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE13T0R0NkY3c3c3MkZza250T0ozN3JBZDhDR0pNUXpURTgtNmNOWFRzbFBUNVNOUFdLTFVfVWJqeTROY2tIMXU4aWx1Q3BrcHJ5cWQtejlR?oc=5" target="_blank">SOCAR и «КазМунайГаз» обсудили расширение сотрудничества по транспортировке казахстанской нефти (ФОТО) - Trend - Новости Азербайджана. Турция, Иран, Центральна Азия</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 23.11.2026 13:22</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 03.11.2026 12:59</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Fitch сохранило рейтинг «Самрук-Қазына» и КТЖ - BAQ.KZ</div>
+      <div class="art-summary">SOCAR и «КазМунайГаз» обсудили расширение сотрудничества по транспортировке казахстанской нефти (ФОТО) - Trend - Новости Азербайджана. Турция, Иран, Центральна Азия</div>
     </div>
     
-    <div class="article" data-date="2026-11-22" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTFBybzl0TEVibkZwekozV1ZZLVZBbkhKZ2c0Z1FrdlFnR2I0U3RrREtaNlU4QzFIOVlDVzNSaElFUjREa0w3cnZibG5ESjZzQQ?oc=5" target="_blank">Fitch подтвердило рейтинги «Самрук-Қазына» и КТЖ — Тазабек CA - Tazabek.KG</a></div>
+    <div class="article" data-date="2026-07-31" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE85ODlpN3g4a3ZuNzJpQUVDQ2xOWkI4dlU4aGpwSEhiYVBCbnVSMlNSQ2wxWVhVUEhELVVnRHRxMk14OVJsSVNZVlMwSEVic21sM2tqZXZCdVNmTlYyakxOTlJmT0FzRlUwek1iUkF3cXBERVRoQ1RR?oc=5" target="_blank">Казмунайгаз и CNPC планируют увеличить мощность казахстанско-китайского нефтепровода - TradingView</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 22.11.2026 18:30</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 31.07.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Fitch подтвердило рейтинги «Самрук-Қазына» и КТЖ — Тазабек CA - Tazabek.KG</div>
+      <div class="art-summary">Казмунайгаз и CNPC планируют увеличить мощность казахстанско-китайского нефтепровода - TradingView</div>
     </div>
     
-    <div class="article" data-date="2026-11-12" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPU1lQM01UcjdBUUZ0dXFDaVFMZEpnektxVzZIN1RaR3lnT1p6a09USHVUMUtrMTQxY050VmFZYVdQMXptWWs5ZGZkT3hoY1E3bTBHTFhOZUpHZnNCZ0tNRHN1emdNc3FYMUZDc2o5emhEd1ZzaUxWQzhmVWExWkZnXzJ5cFFyMDFIUXVjdE40QkZ6bU5fblpTTU9ieDhxU0dwY2hlcTFZZDU0ZEQtWHc?oc=5" target="_blank">Токаев экстренно соберёт Совбез после задержания руководителей &#34;Самрук-Казыны&#34; и КТЖ - BES.media</a></div>
+    <div class="article" data-date="2026-11-13" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOcllUZk5NSEd1ZG05cWthc1hLUFRWcjlrTHB6aUFDNE1DZGJZNmdLOFJGMS1seDlfTllqRmhOaUROWF9ZRVVVOWxBM0YwRzBlSWlLaC1nOGM4TV9jLWNOejVUcFQxZkJGcFZUMkJVMUJrVUNqdTBrZ1Q5VEljNmtKRzk0QWd4OWp6S01hUk1OaHFDUQ?oc=5" target="_blank">«Казахтелеком» откроет кредитную линию в Citibank - Zaim.com</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 12.11.2026 08:00</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 13.11.2026 03:23</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Токаев экстренно соберёт Совбез после задержания руководителей &#34;Самрук-Казыны&#34; и КТЖ - BES.media</div>
+      <div class="art-summary">«Казахтелеком» откроет кредитную линию в Citibank - Zaim.com</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-23" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOOHVtMi1LZ2x0bUtWNUFJUjlyWTJYVzhCVktHN2hrMEZnTWFLN0tTU3FEWEpNS1J6UmFxNm5nbVVhcDlHRE9Hd09FanRnV0RieGlPeXh4YWpMVXpVTlNaeS03RGI1U191WlQ2UUZJUWhNNlM2UGt5dnlmUFdCdUZjOTFxNzFvaWJDNWRpRENicw?oc=5" target="_blank">&#34;Казахтелеком&#34; подключил к оптике 12 многоэтажек в Актобе - Informburo.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 23.09.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">&#34;Казахтелеком&#34; подключил к оптике 12 многоэтажек в Актобе - Informburo.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-13" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQc3VrVWFwR2ZHaGhacm0wSks2N0c4ampoWEFJVHBLdjdHVVRIS3NwNmtHZnp0N014QVVCMVk5aDBtRjE1YnF2TENXdmJoU0ZiR0JobWZ0VjduMWUzcnljNS1uakhROHJHNk1tM01aOXprUW12ZkQ0ZS1yY0poRFRmRVkzOVJ6cUJORURfaHpFNG1Hc0JyVmRCcg?oc=5" target="_blank">«Казахтелеком» назначили оператором национальной системы видеомониторинга. - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 13.10.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» назначили оператором национальной системы видеомониторинга. - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-16" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPN21pWTFIQUhYNnoyNnk5OHFXWkRRUS1Gc2pLYm45NkowakxyWFo5aVNTZkxyV2hhUWtLSVZxeDgtSEd1aU4xLWpDbFVMbE50emloZnNFLWFjY05zZHZENUwwMzY5em1pMjloQXp2X19MN0VYN002clItX1pwT21hTTMwTVFFVEJGYTBxakRHZm5DaU1rdnZmWE9YYlRTLVRJN0hvQlBGUG5NLWZXc3Y0RnJMemVYcWNLUTZwX0dySHZHQdIBxgFBVV95cUxPYW9xaHJCNFZ5S2g3dElOWHJIV0lpTV9hbzZ3T3g0NnUwcVI5dU5iMUNGa19vSHBybksxeDJlX2JDS1duSEtKYkFFcktoM2dKNE8zUjF6Mnl4b3VPWHBRdklTTXdLSWt1dFF5cU5nTkJCUHA1N0tGQXFPcExHdVNrbGh0VFNkYlQtQWEtaVZYQVZ1Si1yVDVleEU0aVd0MDFTeXVVMmtaRGhBS2RrWklkcVN1d3BoVmU4MUVoMHNXYmtVc2NnQlE?oc=5" target="_blank">«Казахтелеком» поможет контролировать условия хранения и перевозки вакцин по всей стране - Ulysmedia.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 16.09.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» поможет контролировать условия хранения и перевозки вакцин по всей стране - Ulysmedia.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-23" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOZjlwTG9pTWNPanRtejRJdnhfTGtoMG5GcUw4SlBpTVNsS2REajRlMGUtRWFFNFN0dlF0OFJfVTNYSFplTWxOcGpBV1NrR0dZS290WXRkd2wxRWk0a0QzWjhSU1R4NXUxN1hmNTUwUUY5RWZYNl9yTTRzY2ZYWmhNRUxaUHBHanBiZFQ5OE5aYw?oc=5" target="_blank">NVIDIA и «Казахтелеком» расширяют ИИ-инфраструктуру страны - DKNews.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 23.10.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">NVIDIA и «Казахтелеком» расширяют ИИ-инфраструктуру страны - DKNews.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-15" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxORnRMZkhhTVlxZVNjMGFFcmlrTnJJbVpUVGNYME5idnNPQzRic1VUUHI3WEljM0JsaWtKbGRTSGd4eXFuVjFQWElRSm5WdmFtWmtGaDN5WDVVUThoR01keXlpdzBkT2l1blBRVEhrdnV1VzE2OGtNUnk3Q3ZsWV8zN0ctSjBzRGZkTnVmdEN5QmtRUQ?oc=5" target="_blank">«Казахтелеком» лишился полного контроля над оператором «Долины ЦОД». - Exclusive.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 15.09.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» лишился полного контроля над оператором «Долины ЦОД». - Exclusive.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-17" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5sNWxaa2c1V1NJNXpZY3ItVURZSUlXaU92NUxPOURTOFk3SjhlSTQ5X2RaZGNWWDlSVjNtcGQtUE9tQ21PelVQaWN3?oc=5" target="_blank">Глава «Казахтелеком» объяснил слова о возможных сокращениях из-за ИИ - Ак Жайык</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 17.09.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Глава «Казахтелеком» объяснил слова о возможных сокращениях из-за ИИ - Ак Жайык</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-03" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOT0R6VFhlWjBJRmhXOFo0UGZkcXc5Z2VJcFhIU2N0MWRxQnpLMVpKc3hvdTJSQlhla2xsOEFTVXFKcmpTNGphdENzbmljeG5PVXNUNE9iVDB0dk9WWmNWLVJoNW52VHFHSThCeXBzS2ZSZXFDVVBybWhubUllRkoyeFFPTHpYdlhiTk1VeWpFaENqckxrUFdid0t3UG1ZRk4wbEtKc2o0YXFBUQ?oc=5" target="_blank">«Казахтелеком» планирует создать инфраструктуру для ИИ мощностью до 1 ГВт к 2030 году - the-tech.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 03.09.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» планирует создать инфраструктуру для ИИ мощностью до 1 ГВт к 2030 году - the-tech.kz</div>
     </div>
     
   </div>
@@ -178,17 +275,39 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
     
-    <div class="article" data-date="2026-10-22" data-co="Казатомпром" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOV19hNzdVNzg5Y2hQVlFWV0ZpbVVULU5DTk1FSVhFSUh0eUlEdVJlVHJ0RzYyVHdibHdZbmlVWEM4d1dFazZsOU1Pb0pNVHhKVHQ1Y05yUzR0V3VPWnh3NjhyMWZVYVBUNHBWMUNta0F2dGRLV0lRbTBHZS12NWFKc2NSZmV0WkZkLXRWM1g2amtUM0d4cVQxaUszblpzUF9ocU53TUxR?oc=5" target="_blank">КМГ, Kaspi и «Казатомпром» возглавили рейтинг самых дорогих компаний региона - PROFIT.kz</a></div>
+    <div class="article" data-date="2026-09-15" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1PWGtRQmZxcGJ4eWJGUGhIU3hicFgzM1M4NXEtc1V1bFUyZnlwVU5HMGFybVNuZTJIUUNYSGYyUzljbGM0bGh4S2w5cUVJSGRJNy1mdDVaNjNDSVR4cU1HWlBhM0ZDRWdGMDN2RndJcjBFUERlRWJV?oc=5" target="_blank">У АО «Казахтелеком» сменились миноритарии - PROFIT.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 22.10.2026 07:00</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 15.09.2026 07:00</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">КМГ, Kaspi и «Казатомпром» возглавили рейтинг самых дорогих компаний региона - PROFIT.kz</div>
+      <div class="art-summary">У АО «Казахтелеком» сменились миноритарии - PROFIT.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-23" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZ0p6endrcXY0VW13NVh4RjJEUDQxbHY2N1NpNW5HNjdOX3JQY2w5QWItcS1pZkMxMmtRSzE5OVRfaHFBZ21jeTRTWVBIZjV5ZlpBNXJtVUgxQU9kNllQU0pnVHRKSk56aE9sSFB5S045ay00QUliVWFYZWVTU0VyRG4xTks5Y3FXQ2RDM2NvQXdUa0pfdWJhaFJiQVpENVlnSWZSNlpKUUpyWmM?oc=5" target="_blank">NVIDIA высоко оценила «Казахтелеком» за развитие ИИ-инфраструктуры - Время — общественно-политическая газета</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 23.10.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">NVIDIA высоко оценила «Казахтелеком» за развитие ИИ-инфраструктуры - Время — общественно-политическая газета</div>
+    </div>
+    
+    <div class="article" data-date="2026-09-09" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPa2hJdDNFMFpZc3RhYXRRNE1UcUtnMlVEZ1FObmluZ0VVMGNBaUt3TWZBMzRGdFd2bFJSalJXWDdRRXVjSllMUC1mZlplVnJOTGZSN3ZSb05xNTN5UWpmSlprQXp4Ui1KU29HOHI2cEpxSnYwN2g3eGxJU05nVTJrT3NIdjlCSGs4RUtpLUxleVZwVVFjSzlKVFA2WQ?oc=5" target="_blank">Казахтелеком: итоги 2-го квартала 2026 года от аналитиков Freedom Инвестиции - Freedom Broker</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 09.09.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Казахтелеком: итоги 2-го квартала 2026 года от аналитиков Freedom Инвестиции - Freedom Broker</div>
     </div>
     
   </div>
@@ -250,8 +369,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-10-22';
-  document.getElementById('date-to').value   = '2026-11-23';
+  document.getElementById('date-from').value = '2026-07-31';
+  document.getElementById('date-to').value   = '2026-11-13';
   applyFilters();
 }
 
