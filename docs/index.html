@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">9 источников · Обновлено: 25.11.2026 09:37</div>
+  <div class="meta">5 источников · Обновлено: 25.11.2026 13:46</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">72</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">13</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">54</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">5</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">20</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">2</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">18</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-12">
+      <input type="date" id="date-from" value="2026-11-24">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-25">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,15 +85,11 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
       <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
       
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
       <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
@@ -113,149 +109,28 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(13)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
     
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-25/fvfv-odin-rossijskij-vuz-na-dvoih-chto-izvestno-ob-uvolennyh-iz-kazatomproma/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-odin-rossijskij-vuz-na-dvoih-chto-izvestno-ob-uvolennyh-iz-kazatomproma" target="_blank">Один российский вуз на двоих: что известно об уволенных из «Казатомпрома»</a></div>
+    <div class="article" data-date="2026-11-25" data-co="Казахстан Темір Жолы" data-s="negative">
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-25/zhnb-stadler-rekonstruiruet-korpus-chtoby-vypuskat-130-passazhirskih-vagonov-v-god/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-stadler-rekonstruiruet-korpus-chtoby-vypuskat-130-passazhirskih-vagonov-v-god" target="_blank">Stadler реконструирует корпус в Астане, чтобы выпускать 130 вагонов в год</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 25.11.2026 09:05</span>
+        <span class="date">📅 25.11.2026 11:42</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Один российский вуз на двоих: что известно об уволенных из «Казатомпрома»</div>
+      <div class="art-summary">Stadler реконструирует корпус в Астане, чтобы выпускать 130 вагонов в год</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-25/zhnb-kazmunaigaz-predlozhili-vyvesti-iz-samruk-kazyny-i-provesti-spo-v-londone/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=zhnb-kazmunaigaz-predlozhili-vyvesti-iz-samruk-kazyny-i-provesti-spo-v-londone" target="_blank">«КазМунайГаз» предложили вывести из «Самрук-Казыны» и провести SPO в Лондоне</a></div>
+      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-25/akczii-kazatomproma-padayut-bolee-chem-na-4-posle-zaderzhaniya-top-menedzherov/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=akczii-kazatomproma-padayut-bolee-chem-na-4-posle-zaderzhaniya-top-menedzherov" target="_blank">Акции «Казатомпрома» падают более чем на 4% после задержания топ-менеджеров</a></div>
       <div class="art-meta">
         <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 25.11.2026 08:38</span>
+        <span class="date">📅 25.11.2026 09:54</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» предложили вывести из «Самрук-Казыны» и провести SPO в Лондоне</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-25/rlzh-kazatomprom-gotov-pomoch-sledstviyu-posle-zaderzhaniya-omarbekova/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rlzh-kazatomprom-gotov-pomoch-sledstviyu-posle-zaderzhaniya-omarbekova" target="_blank">«Казатомпром» готов помочь следствию после задержания Омарбекова</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 25.11.2026 08:29</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Казатомпром» готов помочь следствию после задержания Омарбекова</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-25/fvfv-istochniki-soobshili-o-zaderzhanii-chetyreh-chlenov-pravleniya-kazatomproma/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=fvfv-istochniki-soobshili-o-zaderzhanii-chetyreh-chlenov-pravleniya-kazatomproma" target="_blank">«Казатомпром» уволил двух членов правления – задержание одного подтвердил КНБ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 25.11.2026 06:41</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">«Казатомпром» уволил двух членов правления – задержание одного подтвердил КНБ</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-25/ezif-knb-zaderzhal-top-menedzhera-kazatomproma-omarbekova-po-delu-samruk-kazyna/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ezif-knb-zaderzhal-top-menedzhera-kazatomproma-omarbekova-po-delu-samruk-kazyna" target="_blank">КНБ задержал топ-менеджера «Казатомпрома» Омарбекова по делу «Самрук-Казына»</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 25.11.2026 06:33</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">КНБ задержал топ-менеджера «Казатомпрома» Омарбекова по делу «Самрук-Казына»</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-25/rlzh-atyrauskaya-kompaniya-brata-eks-akima-almaty-poluchila-shtraf-na-3-mlrd-tengge/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=rlzh-atyrauskaya-kompaniya-brata-eks-akima-almaty-poluchila-shtraf-na-3-mlrd-tengge" target="_blank">Атырауская компания брата экс-акима Алматы получила штраф на 3 млрд теңге</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 25.11.2026 05:08</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Атырауская компания брата экс-акима Алматы получила штраф на 3 млрд теңге</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/english/71740-kazakhstans-uranium-giant-reshuffles-board.html" target="_blank">Kazakhstan’s Uranium Giant Reshuffles Board</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 25.11.2026 13:22</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Kazakhstan’s Uranium Giant Reshuffles Board</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQSFhra3loNVQ0bkJScnhHMXItbENrTVVFV2lNSlJzR3p4NktlSlduTnNrekpnTWQ5MFhkNmRKWWI4RklQSmFFc3hZUE9kZTV3X2xaUGZZWldCT25pQlBjeEl0WFRHc0xWakhrOEV4V2dUdDFZV3NBT3RJQlE0LTdIRnNQbHFfQmRrUGhXT1Z2WHVOeTE1QXM5WmFpMk5Vc3pBZ2lEN1BQRXliTXNHcmtDMzhJTXVDdGxTNTU0cVpJdW0zenlRTHp2TnZlTnVPSU81dXl1SVNR0gHaAUFVX3lxTE9PLUR4eGlXZVRCSmJtVjROSnZQeklQUjFaMERLS3M3cUZUbVNyclZBblBiVGZGN1Brc2xVVWRBU2l4MDRzTnBPRWtVemRBQTlNTjRPMjFGa0d3bms3NlBBcnFRS2xvNkNTMEVBVV9KWnNrTnFBZWYxdUd6SGdSekgxWWVJSXNlVUtxQjBac1VYQTZlb2lnbWVNTXdVdWJMNlFPMDRnbHBscFRkMGVUMWNhcGtHNDdjWFREOWJTWnNaNUI4MEg2aEZmdUpEeUlTMWlCeHVWNVZHSWpn?oc=5" target="_blank">Шарлапаев о задержаниях в «Самрук-Казына» и его «дочках»: коррупция негативно влияет на деловой климат - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 08:27</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Шарлапаев о задержаниях в «Самрук-Казына» и его «дочках»: коррупция негативно влияет на деловой климат - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQOWFfdUhRUEFJZXprbGlvODIwVVp2dXhqVFVacEIzX2JEU2l4N0FlWjdfNWRldi0wRFRiWEdRd0p2TkllQVZsY0lTZ0tnejMwYzRkdE1JYnNYS1h5NjBobFlVVVR0QUtWNm84WkhsWVhmU2F2T2thREhYLV94MGNXbjRpcFJETEZOMWJHa2NhSGdaT0FSR0d5eUU4UmVUM3RSODlpbGdNTmFMR3FWWmhPMnl3UkNnVlU?oc=5" target="_blank">«Казатомпром» уволил двух членов правления – задержание одного подтвердил КНБ - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 06:43</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» уволил двух членов правления – задержание одного подтвердил КНБ - Kursiv Media</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE5CYnk0MWZYRmE2VllweVFOLVUxZDBnZXQ5SW1CcER1em9lbjhLTk1EYXZvM3lPRGt4M01qcjZaODFkX0J3b3ZqT0VnVmQyVUlPb2c?oc=5" target="_blank">В Комитете национальной безопасности подтвердили задержание главного директора по производству национальной атомной компании “Казатомпром” Куаныша Омарбекова и других лиц. “23 ноября 2026 года Службой по противодействию ко - Instagram</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 07:18</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">В Комитете национальной безопасности подтвердили задержание главного директора по производству национальной атомной компании “Казатомпром” Куаныша Омарбекова и других лиц. “23 ноября 2026 года Службой</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVnNpbks3RHF4U0xSMjB6YXNJUGthb2pKeEQzMU5JMGZuemk0OW5OaWVONklBbkJnZG1TTGZHZnVnZTZzMGpPWlVkbHdVbXdKSkhzTnlCUDFaa3pRWV9pZ2xvTGtSWDlhdVhnNlAta2RkdTRrLTFoQ3N2ZkdieFVmRnl4eVlkeDJxRTdSUlNsamlmbm5OQ1hHazg5UG0tZVNTNkRFT0RwWjktclFScWFkWmFycjRhMFEx?oc=5" target="_blank">Задержание экс-члена правления &#34;Казатомпром&#34;: что известно о Куаныше Омарбекове - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:39</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Задержание экс-члена правления &#34;Казатомпром&#34;: что известно о Куаныше Омарбекове - NUR.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQQ0JLLWtvdTRSaU1ENHZBSy0tNEhvb3BpeEhlR3pLUXkxRGVMT1RweFBPei1uZS0zLW5pVF9XZ2VJQVMzcU16QmpfeGpUVGZIVUh1TDFpTi0zeEEyMjA4UFF6cm5EZGdFVGRIQlhvcnVZcE9UU2lKenMwUDJJUUhWZEo0NXVaUm5ZY3BGQUl6MjdXbTlPdkZoeklKYw?oc=5" target="_blank">«Казатомпром»: Задержание Омарбекова не повлияло на работу предприятия - Caliber.Az</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 08:44</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром»: Задержание Омарбекова не повлияло на работу предприятия - Caliber.Az</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPZTZYUUNGd295WnVFcDExNkdxaTlfM2QyYjVtckdSeGpKNmlXTkdDSHVsYVJlcjJ3M0NHbXRMbGZzNkswaFdEeWxKamVkTlVVRGRYdXJRc0xnUlJDTERjU0hXaEtCSnY5a0VOS09GUHdmUWRPbTBsU0dzdXptcGU1VzFsQl9BRkVVQks0aEZ5bWdCSThGUEJaSWdSQmFaLWwwaW1RVDFkQUg1aUowRGZqWGRiTy0td28?oc=5" target="_blank">Задержание Куаныша Омарбекова: в &#34;Казатомпром&#34; сделали срочное заявление - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 07:52</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Задержание Куаныша Омарбекова: в &#34;Казатомпром&#34; сделали срочное заявление - NUR.KZ</div>
+      <div class="art-summary">Акции «Казатомпрома» падают более чем на 4% после задержания топ-менеджеров</div>
     </div>
     
   </div>
@@ -263,665 +138,209 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(54)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(18)</span></div>
     
     <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://vlast.kz/novosti/71736-knb-soobsil-o-zaderzanii-clenov-pravlenia-kazatomproma.html" target="_blank">КНБ сообщил о задержании члена правления «Казатомпрома»</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxOLWwzT212T0JGdWJ5dDBTNEZ0VC1EcVR3eDA5anVwMjhaOUtTNVlGd2NDUXJfU2JsX3QxYlpmNVhSN3c2Ym5FVHFqOVR5Q05yTzhmY3AtR1NaVHZwbjc1UjVMb3hDUkF5bllocXFBYnhkTkVNQXlVN3JpWHk3UHYyanE4NVpUbDBNck42SnRNNmpWczVnM3hDQ3NpcFVBN1BDZm9ZSV90VTlNMFl4NHJEX1VPampKdXBHQTU2TFJWUWd0RlN2blE3eXpJRTRPd9IB0wFBVV95cUxQYUhRWDZURGNnc0JVVHM4WTh1ckFoWTZYUVI3SlBjNzVIRjBOcUF2Z1AtTlB3dEN3bW5oWHZxNjk0Y0ZaRHRFamV6bm1QMEFiNnZFZEJ5WVdocU03Q0xTdHJQQmtaMHhYUFBGdVJ1ZE5Ea3dUVm5qVUJtWi02ek1BX1dWcmFXbWlxZDV6Q296TEVLeVdyTDZFU3lUSE9mU1lrWDVzTnkxU0V2Q2ppQk9sWmd4RGdMamx6RldsbnN5Z2tjRC04TGpJWjU2S0xLQ2Zrbzhj?oc=5" target="_blank">Коррупционное дело в «Самрук-Казына»: что связывает трёх задержанных топ-менеджеров - Qaz365.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 25.11.2026 11:34</span>
+        <span class="src">📰 Google News — Самрук-Казына</span>
+        <span class="date">📅 25.11.2026 10:18</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">КНБ сообщил о задержании члена правления «Казатомпрома»</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="http://time.kz/news/events/2026/11/25/kazatomprom-prekratil-polnomochiya-top-menedzherov-posle-ih-zaderzhanij" target="_blank">&#34;Казатомпром&#34; прекратил полномочия топ-менеджеров после их задержаний</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Time.kz</span>
-        <span class="date">📅 25.11.2026 13:35</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">&#34;Казатомпром&#34; прекратил полномочия топ-менеджеров после их задержаний</div>
+      <div class="art-summary">Коррупционное дело в «Самрук-Казына»: что связывает трёх задержанных топ-менеджеров - Qaz365.kz</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQTWZMckFDSWFxYnpZSnlYeFRhNlFwMFJ1LXhXRXZ5ZjZGOUVPUHhQNjFMYk1vdEZUdm01YTk4QUNhVmJMMksxNHdWVHpYaWRmU3UxZVpZcDdicTFnVTFaQk5jZnNSY2hPeDM4T2U0S05SakVpdnBnSnVxcHJrS3g2WjhrTVp3TTRnMThKWlNDOGZsT0tlcGR5Umc4b0tOT0w0NHfSAaABQVVfeXFMTnlHb1pZMVdKVlQ5eFBXUE9fNHVjbUNsY3NhRUQ2NV9HMjVpNm9aM3ZLY1dtNDdOQ0RwMEEtUnk1WDJyTDNZUjAtaW15XzlxOWEtRDRpdkJTRjFCLW1nOEpXeDBGYjFiUm1QYlk1MHJ0T2hKNURsM2FReXdCem54VWdpQXBnVElxd3E5RF8xQ1JyNFhWaFVpQk41ZU9NQmc5Qg?oc=5" target="_blank">&#34;КазМунайГаз&#34; хотят освободить от опеки &#34;Самрук-Казыны&#34;: что предлагают изменить - BES.media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPVFBsN1IxVXhFV3pSOGZPdHdrZHBHOTNhRlE3cGZ6VGt6djFRWHVqRjg0ZlhobVJzU1hVSWVjb3pDeGdncW94WElrNFFwaDcwM19qQy1zemg0NmN0c3pRS0xtdXdqeXV4WjJIZHJmSDY3c1pLNVNsWThERlVYSE5QVHY4Vno?oc=5" target="_blank">КазМунайГаз предложили вывести из «Самрук-Казыны» ради SPO в Лондоне - airpress.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 09:12</span>
+        <span class="date">📅 25.11.2026 12:58</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; хотят освободить от опеки &#34;Самрук-Казыны&#34;: что предлагают изменить - BES.media</div>
+      <div class="art-summary">КазМунайГаз предложили вывести из «Самрук-Казыны» ради SPO в Лондоне - airpress.kz</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQbUw2ZWNoclpnY2tpekxVeHdpVVhMUDM2Nm44clVMaEpKSFZwcVBvYWJQTHhTSmdpaS1IWExDcG9lOHIwWGk5MzFKRDc4YW1wOXBaVFNHcTE5WnoyVjZCSHlBcEhMekRzb2RBRXJta0dYMlZiRUFfc1piVUgwbUtGU1l1SVJQQnJEVW85Q003WnN0MWZ1NXlkUWFnbXVfaDQtTEIzZGg5R0huTVFwZ3hYUWdyMFg?oc=5" target="_blank">«КазМунайГаз» предложили вывести из «Самрук-Казыны» и провести SPO в Лондоне - Kursiv Media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQMDM2M2xwLW5tODVRUFIwLTRzY1JIcmhObllGc1o2VjZKZ1Byel9nS0JQLVhsX1Z3bmt0Q2VzX0hYWlA1NUtaWlA2TlBzNXo3dUxKSnVUdTJ0YUF2ZjB5c3ZFTzcySUEzNjdGUVJVZmNtMTFyTE5FOHZtRzUzM05rdUxMNDJhYUxUaS10QmVSWXRUUjJ2Ni1remFzUHJkNzd5NGtmSTBnWXVieVg1VkIyLWRfRQ?oc=5" target="_blank">«КазМунайГаз» предложили вывести из «Самрук-Казыны» и разместить до 20% акций в Лондоне - Businessfm.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 08:41</span>
+        <span class="date">📅 25.11.2026 11:45</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">«КазМунайГаз» предложили вывести из «Самрук-Казыны» и провести SPO в Лондоне - Kursiv Media</div>
+      <div class="art-summary">«КазМунайГаз» предложили вывести из «Самрук-Казыны» и разместить до 20% акций в Лондоне - Businessfm.kz</div>
     </div>
     
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVDJ0cXd5QnFiN2ZKdkJWTkswU3JIekdiaDN5c2R3SG1kd3NpSVJwMGM5REVtZ2hSWDlzVHRjYnJvR2JUSGFPbE5jSDlpaHRTVmU2R1pvdnBJRExvUXEyZnN5VjBKOEJqYjlYa0p1TmxZQXc5X05lUWtoZXQtbk1oSG1RV3B4T0tMTGpBRmNwd19yWmZ0R3VTXzJwcWFXelRVQ0FKWVRXRmNsRV9abXF1NmZhZXhuVnk4cy02Y2xwNHE5QQ?oc=5" target="_blank">Члена правления «Казатомпрома» задержали по делу о коррупционной схеме «Самрук-Казына» - КазТАГ</a></div>
+    <div class="article" data-date="2026-11-25" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNWkRQMjYwWHo4cm5NVHVxVzNJeExqbGNZMUxZdWNvc25yYWlfZ1g0WU1kSHR0VGJrMTJzSFVFSG5HQTVYN0ZjQkRGUFdzRDNWRXNQVzIwUkhFeWJ5aVVLTkxZdjRBYUc1Tk1WUzNxeTRCUVBOcjE5TkI4TFI1NnJSSEVWQ3ZvSmlSaGpaNjJMVHlYbU1Ld3cxc19XRWdwSVpNS1RxWUNpYXJKSDhrOUVmbFB0b3ZiLUpzekkxU2NyYVJ4b3AxeEIwTlJtQlDSAcwBQVVfeXFMTVpEUDI2MFh6OHJuTVR1cVczSXhMamxjWTFMWXVjb3NucmFpX2dYNFlNZEh0dFRiazEyc0hVRUhuR0E1WDdGY0JERlBXc0QzVkVzUFcyMFJIRXlieWlVS05MWXY0QWFHNU5NVlMzcXk0QlFQTnIxOU5COExSNTZyUkhFVkN2b0ppUmhqWjYyTFR5WG1NS3d3MXNfV0VncElaTUtUcVlDaWFySkg4azlFZmxQdG92Yi1Kc3pJMVNjcmFSeG9wMXhCME5SbUJQ?oc=5" target="_blank">«Нужно реальное корпоративное управление»: «КазМунайГаз» предложили вывести из состава «Самрук-Казыны» - Ulysmedia.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 08:20</span>
+        <span class="date">📅 25.11.2026 11:48</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Члена правления «Казатомпрома» задержали по делу о коррупционной схеме «Самрук-Казына» - КазТАГ</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPeDNkamtmWW1VdHAtN1ZNVjZZbHdCMHN4VUpybjI5aWJwWDlKaUVUQ2EteGJRUmZGMEk0R0h3X0N4ZGJJVXR2cmRNUGx3b2gzeWhWdHdHY2Y1a3JtT3Y5Q3lKT0E4bzcxdkI5ZnJZNUJxS0xlTXhYbkwtZ0xEb1FSWWhjX1ZfQjNvU21uSXBlSE1nLVRlZXFCWE9RX1RveFlkQnRDajAtSDRsRG5LTmEzYtIBsAFBVV95cUxPeDNkamtmWW1VdHAtN1ZNVjZZbHdCMHN4VUpybjI5aWJwWDlKaUVUQ2EteGJRUmZGMEk0R0h3X0N4ZGJJVXR2cmRNUGx3b2gzeWhWdHdHY2Y1a3JtT3Y5Q3lKT0E4bzcxdkI5ZnJZNUJxS0xlTXhYbkwtZ0xEb1FSWWhjX1ZfQjNvU21uSXBlSE1nLVRlZXFCWE9RX1RveFlkQnRDajAtSDRsRG5LTmEzYg?oc=5" target="_blank">Члена правления &#34;Казатомпрома&#34; задержали по делу о коррупционной схеме в &#34;Самрук-Казына&#34; - BES.media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 06:33</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Члена правления &#34;Казатомпрома&#34; задержали по делу о коррупционной схеме в &#34;Самрук-Казына&#34; - BES.media</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOcW9YNFFZcldJWllvbkk2RnZ4VW0xSzRkMHIydEl2dVV3SHlvY1NwYVhTRzNCTDdqNEVmZDJYRHF2aUVSaVlITHNyb19Gb3Nid1NWUVFUS1hHRHJyalRvUGEtczNwNmY1akUxV05PMWlKcEdPV0JnQzBrU3dRMzV5ajlsVHJ6aFV0UlZSYVB5UEJqeXpjc1RDeHJzckxvVVBmaTdDdXdoNnR6YkdMUW54cUh4MWlxZw?oc=5" target="_blank">КНБ задержал топ-менеджера «Казатомпрома» Омарбекова по делу «Самрук-Казына» - Kursiv Media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 06:37</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">КНБ задержал топ-менеджера «Казатомпрома» Омарбекова по делу «Самрук-Казына» - Kursiv Media</div>
+      <div class="art-summary">«Нужно реальное корпоративное управление»: «КазМунайГаз» предложили вывести из состава «Самрук-Казыны» - Ulysmedia.kz</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQZ08zdmotcWNhNWhVT3pPRURnRWdwd1AxLWxBc2p3MVBPMklpdGlxTkZJUXNHUGJpdjJndWkzNkVKNlZWRVo2RDZ0Rll3U1lXNHpzLXdZN3BQSHg2dUFMYlJMY2pLTEI0OG9GTnNJQWEtLUNhTFZaOWhkblRSQm5XNlJwWTZvaFh0cHUyVTVQRmtDa3Y4RzhiSHpKRTlJTmZiVDBkem1n0gGkAUFVX3lxTE00U1d3alFtd2FPTkU5blBSS2hBM3hsMEdtYVJHcS16MGFENERZMHVhNWszZTIzYVdBTXluc3RDLVBFdnoxU3E3NC0wdVJVVTNISDBVcUE4U2RKRVZhaUtwNWFwc3RKUm9HdW9BZGdJdzFZLV81d3V3dnJlNG5iS1RhQ1Q3a0Q0cE9pSThfemhoWGhyeXpJZ2hzbGRieXY2QXlRSVdX?oc=5" target="_blank">&#34;Казатомпром&#34; досрочно сменил двух топ-менеджеров после задержания Омарбекова - BES.media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOT0FzTkpidkY3eFZwX2pEWFA2ZG9RMEpqUm0tZFAyZEFNczR6RVJmcUR4Qk1YNG10VDc0bHJWdUxKYjlKTElZcmEzQ21kTXc1cVFqdnlUM2F6YzlyUHEzZmF3UkYyZDk3aFo4dDlTb3A2OXVZWEwxeGlIWE5zMnkyaGhleTdOd09mV3pBZjQwR1cxSzBuWVJN?oc=5" target="_blank">Коррупционное расследование в Казахстане затронуло «Казатомпром» - Бакинский рабочий</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 06:44</span>
+        <span class="date">📅 25.11.2026 11:07</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">&#34;Казатомпром&#34; досрочно сменил двух топ-менеджеров после задержания Омарбекова - BES.media</div>
+      <div class="art-summary">Коррупционное расследование в Казахстане затронуло «Казатомпром» - Бакинский рабочий</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdDZ6NndjZ1g2bEVULWVia2tQT1d5SVBiR0d1azNLazBKT1ZFTTlKRHVyVlo3dl82Uy0xZkxfa2FRSUdTNExQM1B2TThIVWFGUTBxcmNmcGlZX2dPeXNsbDRvdUUtRUpybkZVd01YZmtQRnBhUmcwd3RBeGZ5QzIzWm84amZnMjY5bTlwU2t0Qm1DbHRra29IR0g5QXN4UGs1cHNJRnMwbWF4NGfSAbABQVVfeXFMTlZtTWhtMUlNSVF3eFVmRWNfX0wwSjJ2Z1k0M3VadmRWY29mblI3NklhU3lfM3NiZ2QwazV3RHhFcUNOY0Y3SnB2eVRqN3hFTDlhNzEyRDJjUWVrMXJ6U2xEa0ZMa0NzVDFRNzh4aDNSdzJxRC03TC1nOVQyY0J6cHM0MlJlWjVLLVZWM2Z3WE9RTmNaeUxkUDFGY1Q1blpjRVBlNTNvNldFVV9oaXMtWWM?oc=5" target="_blank">Топ-менеджера «Казатомпрома» задержали по делу о коррупции в «Самрук-Казына» - Arbat media</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 07:00</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Топ-менеджера «Казатомпрома» задержали по делу о коррупции в «Самрук-Казына» - Arbat media</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE00UV9WQlBwbDNKZFZrc3Zkb2djZVBUOFRZOXhQVUpsMGNQS2Y0TUNkTWoxRElueXBKRl9wLTZpOU5GOExpYkxlSg?oc=5" target="_blank">Члена правления «Казатомпрома» задержали по делу о коррупции в «Самрук-Казына» - CaspianLife</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 07:08</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Члена правления «Казатомпрома» задержали по делу о коррупции в «Самрук-Казына» - CaspianLife</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNa2JOYkhQNXFVb3lxWjFvM2cxQWdFbzNESTlaMzFuNFZwSlNkT3F3dTJqVE9xUVpYVjNWamxWN3JLbVFDTFBzZV9mT2RIQmlrYUdubE9wWjh5UW9POTY2djNCdkdNUWVoUGlnUENxa3QtZWJHMF9xNFBia2dyMm5lNmh2UEdsYmhDOFJibC1uakVlbDNYQng1a2lVNkJvbXJUdFV0am12b2stNHoyTkgtTlEyMzBENzRwM203REhwUXc3NE5ydTIwNQ?oc=5" target="_blank">В Казахстане по подозрению в коррупции задержан член правления Kazatomprom Куаныш Омарбеков - Cyprus Inform</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 07:49</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">В Казахстане по подозрению в коррупции задержан член правления Kazatomprom Куаныш Омарбеков - Cyprus Inform</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQdkRwWGhrUmF5Y0NOeExFWDcwV1lCb3dzX09FRllhSzJ5eVZtVHdPSUV5eUQ5WGktRUR1c01TUnpDeF84ZWlhNzZQN3lXOWJJcTJDaHZvS0FkSDhqYWEyMDduZW9wYmJacVdKOFJnbFhBYkRIXzZGQlhWX0tadTZSWFg0MWVkbzlRSzZOTlpzYWdybWNFMFBvXzFFSWk0aE5kNlNKQl9udGNIZXBtai1GbXJHQlrSAbYBQVVfeXFMT3BlWnVnYTBNdGQ1NkJCdkRkdU1scGNFVktGSlZLczh4OXBucGMxcThDMXRlaFNjRTlRYnd5RUdMX1hoODdIeEVZdThOZzRFdjBJLWR4aXFpZXBTNDczTjFUSFBFQ3pfSGtlNmRFWUtNQjRNZzBUVHNZd3Z2dzdkd3I3R0t2T3N6aEwtaU56RWZYcmxuR2Y3VXpxZlFFYnd2aFRyOVM2SXkxaDJBbko4T0FTN2RDdlE?oc=5" target="_blank">Члена правления «Казатомпрома» задержали по делу о коррупционной схеме, связанной с «Самрук-Казына» - Казинформ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 06:27</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Члена правления «Казатомпрома» задержали по делу о коррупционной схеме, связанной с «Самрук-Казына» - Казинформ</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQMXhQa2h5ZTk2UEt1NGFPelViVktGaWcxc2pDaWh0RlgtOU9yTmFfd0FULWZrRVBUQklOOWh6M3pONXV6QjUwZkNyeHhLdmxmY0c3N1BUdVFqNGFyU0dubzd5d2Y4TktrMjFSVEZhTnBocVhudzdpLWJnb01neGhIbTRuMXR6WnQwVnh5NzdSUUpvd3JHUFAybWtOOGJZcFlraHU2UkNB?oc=5" target="_blank">Три топ-менеджера и “Казатомпром“: как пересеклись карьеры задержанных руководителей - TengriNews</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 08:41</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Три топ-менеджера и “Казатомпром“: как пересеклись карьеры задержанных руководителей - TengriNews</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMkE2aS1pNHBrM1Y5dDRlSVhDVmx1NXl1VDZPV3BnN3JQQ1E5bzdQR1pCMnFzVk8zUy0wdHlMNHVLZW1yMHdRZW85X0M4SXlDOXo4ZWQ4blpIbTg1TDJGd2QwclVObVRrTUdSSmVydWdqUTV2aWh0Z0lfMERtNXpMVlJhekYxdkI4ZVc0Y0ZlX0VMVmUtYkVZd1JaRlhQOGI5VlhFUEtUVkVTaUdPVGg2RFFfNDFqZDM1R2ZCcXhEekVPSm9uUnVDekdhZFc0MV93VzR6aFlsSEEzSlNx?oc=5" target="_blank">Задержаны по подозрению в причастности к коррупционной схеме, организованной бывшим руководством «Самрук-Казына» - Жайық Пресс</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 07:15</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">Задержаны по подозрению в причастности к коррупционной схеме, организованной бывшим руководством «Самрук-Казына» - Жайық Пресс</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOQ1kxSlg1d2Y1S0JFMXhBLWFhUE9VY3pwbXBhUDVsY2NBY2NLdEh6eTRISndfVE1oV0F6NjF2U0pBempJQnhrcmFtUi05cDdjdHVmMmJyZmJfU3gxdWo2TkphN2lsS3VhYWR2NktaVUR4SW1nMHRSdnFUUEVYUWY3aHhEeFoweDc4cVhzQXBjRUdjMGNHbkxLd3RDRVpBd3ZaeXFsZWNvS0wyWkZGcExfZWY2NA?oc=5" target="_blank">По делу о коррупции в фонде «Самрук-Казына» задержали топ-менеджера Казатомпрома - Ratel.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 08:47</span>
-        
-        <span class="tag">Самрук-Казына</span>
-      </div>
-      <div class="art-summary">По делу о коррупции в фонде «Самрук-Казына» задержали топ-менеджера Казатомпрома - Ratel.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR0xmd0FFNV9rT0JtRHpHc1hWYkpJVlZ0NHZKclFSMm5Zam1IWVRWM1FPM2lxQUhGcllqaGx5eXkwSDZodGg3S1haU1E0b2MyY1dvb1VjSllIdmo5Nzc5NzhaVVctYTN0cE9wV3hnODJhOXJYX3N6aC1HNUd2WXl2NEJJcF9Ed1pLLWlTdjRVZXI1OEJfUmhwb1ZuSFNfTjI3N18xb0ljQXdnQVU?oc=5" target="_blank">КНБ задержал Куаныша Омарбекова: «Казатомпром» сменил двух членов правления - Businessfm.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNZVlSQnFJaGNkSTZsa00zeVBGYWlkcXQwcGhGWTVJcFdTTGhPdmVwTWk2bkxoQ2VjVXYtV1BzMUJtU2p6T3Z4THpwcW5seTNfVkQwS3drdE1HWXNQSlE0ZUk4UkxPVEI1SlNhbHdYbHprTWFlcWhlS1RaYnBnNDM4c2hheHNxZkZJaWpyMDVYTTVzblk0WWtvdDRqbzVjS01DeURSRDV3?oc=5" target="_blank">Дело «Самрук-Казына»: задержан топ-менеджер «Казатомпрома» - Bairaqmedia.kz.</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
         <span class="date">📅 25.11.2026 06:54</span>
         
-        <span class="tag">Казатомпром</span>
+        <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">КНБ задержал Куаныша Омарбекова: «Казатомпром» сменил двух членов правления - Businessfm.kz</div>
+      <div class="art-summary">Дело «Самрук-Казына»: задержан топ-менеджер «Казатомпрома» - Bairaqmedia.kz.</div>
     </div>
     
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNVjVkM29iNEFrNklJTURld3JSQWFabFFXZ2stWWlZUnRaek5jTTRjbWRNNWJQSlBRUUJqbkdTb1dHWDlsbXc5ZFRTTmhvUzY4ZVI2ZGNmQXZPZ2RndHlWUEpWdE53YW5VWG5aZ2pObHpFVUpRak9KU3NiRG5Hbmd5YXdWUTFRelFwU3JmMWVzT3JMUmgwZzVEUFlrbmNhamJmbEJCRmJFNnFTUUtJeU9jS2h2VdIBuAFBVV95cUxPY1JlRWFJZFpUWUlpdDFCekhRNWFMWnFjbDlES0h5ZC1vRkdlSTdCMld3ODMxc1R0aXRaeXhWZFNSV3NralBWdzBtVFYzczVRNDFjMHJhTndRWmZyM3FncnllY0ZGb25tWWVqSjVEV18tVHZFeVBvUlgyY1lQS2lGaVpCSjRfaVprdkp5d0hGbUg1MS1vZjktNmc3eEpLWnVEakE5X1lRTENUbFQ3TmdKRk5sSjV0UTJQ?oc=5" target="_blank">«Казатомпром» выступил с заявлением после задержания топ-менеджера - Qaz365.kz</a></div>
+    <div class="article" data-date="2026-11-24" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPX1I1RWlteEktcmxwOGdURC1wMnB1eENEcmxhaW0tdlZ2NDY3TXRJTW1aeVJjVmRRWEduVkpaOHRGek9nRFZlSTNWQ1JEbDIwcGtiZ0lURVkwbEF5T21XWXdnT1E1NzFCbUVZaUw4OVJURVAyT1FUWDBrQ2U3Q3ZSLUJKS2Y?oc=5" target="_blank">Айгуль Орынбек предложила ликвидировать фонд «Самрук-Казына» - Ertenmedia.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 09:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» выступил с заявлением после задержания топ-менеджера - Qaz365.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Peml2SjRWcld5d0EyZWhlMW1xcTBNY2lZOU9pSHE5bEljbUZJYUFDLVE3N294dkdRcWtiWS1nT19PX0RteXRFc3hKNEZicElkMHpkaXFNS0I?oc=5" target="_blank">«Казатомпром» сделал официальное заявление после задержания руководства - The Tenge</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 08:47</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» сделал официальное заявление после задержания руководства - The Tenge</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Самрук-Казына" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxPaU1FNjRCSktFVHZxSGMtTG5OV1k0Wk9UVWpKamhPbnVHQXlmdF9tanl3SHM3WGd3Wlp6QUhXQ2lvOXpxY1BMUmlzaUVzTXBtMHZzS0dzY0hJVmhpYkthRUlrOFhNczc4OWdJdW1JXzVNZ2I3ZmRQc0tHbktJUkVscGtiazVHbTlzUUxkdnFJa2d0TEhPUDJBeXVPc2Q5SC1RSmxhV1pXcXRqOVdyTjdaRGVFU0pSbkRkNlZkU2tWWFUyNmdFWDVVQ0ZoWl9LRVRJeHFCUml0a0RYNUw5ZzBjdzgyTQ?oc=5" target="_blank">КНБ задержал топ-менеджера «Казатомпрома» по подозрению в причастности к коррупционной схеме в «Самрук-Казына» - Уральская неделя</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 07:25</span>
+        <span class="date">📅 24.11.2026 04:59</span>
         
         <span class="tag">Самрук-Казына</span>
       </div>
-      <div class="art-summary">КНБ задержал топ-менеджера «Казатомпрома» по подозрению в причастности к коррупционной схеме в «Самрук-Казына» - Уральская неделя</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5mU3hfcEhEWWxDS2Y1eFktOFJGUUtySEtjemJUV2RxZENJUE80NEY3YTFkSWpnWmpDUjU3TV9QVUpRVFZFVDdLRGQ5NzUtbGw3NlRSOXR3bkY?oc=5" target="_blank">Казатомпром» первым сообщил рынку о кадровых изменениях - The Tenge</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 25.11.2026 08:47</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Казатомпром» первым сообщил рынку о кадровых изменениях - The Tenge</div>
+      <div class="art-summary">Айгуль Орынбек предложила ликвидировать фонд «Самрук-Казына» - Ertenmedia.kz</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPdlRZYTFxcDRIZTVjYjdrQkdZVGlEWWdLMGk5Y0NGYzVyVjhLeWsxZkZRc1F0dU5yUkN3WUZQdUxEU2lmR0FjV0t0dzZJNE9zUnpZQUVqQ3VCb1A4RVoyNHY1TnhHRmVHckhyMVUtY08wb2p0NEdEVGFBMEpqSFZ6Y0xJdUhkd0dkU2JZMDlqRFlRMmJGUlQ5M1d5VjhBcGs2dU44VlVvUzljWkRfR0UtZA?oc=5" target="_blank">Как азербайджанская SOCAR обошла «КазМунайГаз» по выручке — мнение эко� - Shyndyk.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxNTkR3dFJHaXhJMWdnUnlaX0lkeWhYaUxJTG5zOVE3UVpKU293VDdPTExLZXhIVXYyWW1rV05OWlBldzhpQzgxQi01UVA0eXhZZ01XQWJYcHJlWVRxU0E1OWdfUW1LUlgxekF1SzdyVy1PRWtVOW1MNE55dkg2REk3cGduVGxCUFNLaE91Q0dwQnFONGJBdHpQV29CYW91VHM2ZE0wTktXa2JRYlhiRWdUMWlpZENJN3VjR2JNT3BTdTU1RkQ4T0tFTkh5ZFNfOUZjVldoZmtiMU4?oc=5" target="_blank">«А вам Родину не жалко?»: экс-замглавы «КазМунайГаз Сервис Компас» требует проверить сделки предприятия - Shyndyk.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 25.11.2026 08:51</span>
+        <span class="date">📅 25.11.2026 11:42</span>
         
         <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Как азербайджанская SOCAR обошла «КазМунайГаз» по выручке — мнение эко� - Shyndyk.kz</div>
+      <div class="art-summary">«А вам Родину не жалко?»: экс-замглавы «КазМунайГаз Сервис Компас» требует проверить сделки предприятия - Shyndyk.kz</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNdm5qTmZMNmtBbkQ2Ujg2NDhlWFBkcVkxYzdhR1VRMGZHTVRFQlB5UmotMmVlTXk2eEFHZTEyaFNEM05PUmxKT2FFOXd6aUllM1YwbEhkbXRVX1JsTXNxaldkZVpxWnVtLWpuaHlaRkdCanZGRHBNV2tLellxOEpsREctbTdvazZ5amg3MHU2LUpZaGZjS1VQdlZ1NEtEWTNPUkdHU2tMQTAwaC0zeUpVemNvbGlEUdIBtAFBVV95cUxQTGFYVXdtSkdCek5zWl9sbENTYTZvb2JURnF0U09fSlBnR01kVlQ2emxRTksyY2pWcU82WVJJN3NwYzA4RWhHbVIwd0VER3lKQkZMN3JSVnZ2Y01CTVZqMkpjN3NYVkN5SWt6WGFTVmhlQmlmeDRvdjVldXYybG42aUlqS05WZmtlS1AtcV9meWo1cEtLUEF0M1J2RVF6RURnekt4NFo4RmJjWkpveFcwLUwxN3Y?oc=5" target="_blank">&#34;Казатомпром&#34; выступил с заявлением после начала расследования в отношении топ-менеджера - BES.media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBDZmNlbnM3dlRDb3owWHd4aUwxRUdXSWtyZU15WFhxYzlUVTdtRUNjRElrYmhJM1lVU1ZuRzRrMGtHUXBOaGFoU1ZhbWFNclVqV0J6TGwyeDFuaElvQkVKNw?oc=5" target="_blank">«Казатомпром» заявил о задержании КНБ главного директора по производству Куаныша Омарбекова - Атомная энергия 2.0</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 07:51</span>
+        <span class="date">📅 25.11.2026 09:23</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">&#34;Казатомпром&#34; выступил с заявлением после начала расследования в отношении топ-менеджера - BES.media</div>
+      <div class="art-summary">«Казатомпром» заявил о задержании КНБ главного директора по производству Куаныша Омарбекова - Атомная энергия 2.0</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNaHBQaG5kbGNYbTZUZVJGNnZiN0xhREo4SWxvdFlzWGx5NTRnYWxPeTQyVGozbDAzMm1nQXhMeHg0dzQ1LXFJX1hkeVAtUUhfa1pyRENSa1VURXhxcU1aT3A1a3I0eThvbi1ndEJkTWNSWU5MVXo1ck1KSHFUN3hHaEFiMlBLclNuWk96ekhyZlRPM05mXzdOdDRObnpSQXFlUjhaNEZfSTMydw?oc=5" target="_blank">«Казатомпром» готов помочь следствию после задержания Омарбекова - Kursiv Media</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQSVlsd09XaEJEdnM1S1ltdWZWNWNsY1NNTkhDVWpxWGR3NWo4UngzZ1BYaGxJYllqQmcyOWZEY0NLOGFPTVpYdHVEbjRXRzV0Tk41QUE3bldlM2FLQTFJMW96eFJmQVBTYzU5NGZkM18tMlJ1VVZrenY5cFZQUl9NTkNDdzBZSVJ2d0lqOQ?oc=5" target="_blank">«Казатомпром»: минус 41% от максимума при стоимости урана в $90 - Forbes.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 08:33</span>
+        <span class="date">📅 25.11.2026 09:37</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«Казатомпром» готов помочь следствию после задержания Омарбекова - Kursiv Media</div>
+      <div class="art-summary">«Казатомпром»: минус 41% от максимума при стоимости урана в $90 - Forbes.kz</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQS1Rxc2FRUldoS25vRUtFZk40dk8xaUV3ZmVkdm40UHJEaGJ6R3htdXBPWk5ncFNOTG9HQWtvZ1Z2Unhxc3pVaGc3UDNYSU1GNUlJWDRESEJMUm1hUUt0UW9NUFhCeWI1ZU9XMFFpc0RrT2p4ZG9GeUNyZ0VaUVhTTWs2djhOXzMzX21ROU5WNWNXX3p6TFJhOWp6QTVmRHVjOFRzcEtNaHMyNmZJNXZabFE4aG5zODlFNnZoQw?oc=5" target="_blank">«Казатомпром» выступил с заявлением после задержания топ-менеджера Куаныша Омарбекова - Mail.KZ</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wSWw5TEZ4RXlZWHhrTG9mNndVVU9LSVM1UHlhRlNSUWtnakswYUxycDJIUVpJQ25lVkI3cUJzVUpKREJINGNmZEdpbWh5QXllNTJGWm13?oc=5" target="_blank">Член Правления АО «НАК «Казатомпром» задержан по подозрению в коррупции - Check-point.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:45</span>
+        <span class="date">📅 25.11.2026 06:46</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«Казатомпром» выступил с заявлением после задержания топ-менеджера Куаныша Омарбекова - Mail.KZ</div>
+      <div class="art-summary">Член Правления АО «НАК «Казатомпром» задержан по подозрению в коррупции - Check-point.kz</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQZGU4czlSdl9PT0cteGhYQnUxX0ZhUzJoRXc2QVZ2RVhVcDJlX3c5VFl0dUNLQXVYN3l3ZmQtNGw0NkJkbU00cHVuajRLZ05OU05maW9SRnYwbTN0eVlyZHhXV1UtS1dTTG5NMWRKNXllZTVrM1lEMVZPeU16REhRQmxVcUxTcGJnZWpTTDUzM2l6NzZlT051dXRTR0s0dlpt?oc=5" target="_blank">КНБ Казахстана сообщил о задержании членов правления &#34;Казатомпром&#34; - Report.az</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE5GREpHdmtjaXJScExZMDQwdTlDZERLRmptWEsyYU56WGhuN3RCT3dDUU8wMDlFLWZvSE83QnRaR2RnTmd6SnJaNUJqaV9vSjkzWUxWbDRMeElTYW5jQmc?oc=5" target="_blank">В «Казатомпром» сделали заявление после задержания своего ТОП-менеджера - Bestnews.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 07:43</span>
+        <span class="date">📅 25.11.2026 10:37</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">КНБ Казахстана сообщил о задержании членов правления &#34;Казатомпром&#34; - Report.az</div>
+      <div class="art-summary">В «Казатомпром» сделали заявление после задержания своего ТОП-менеджера - Bestnews.kz</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNdGlXWElZMy1CWWdqbjhBOWNIZXJwVVRobGhZOXNpeTQwMkFaLWVSdjNmX2RKU295dU1fRzRqUTc4VzJ2UjVidmJVLTFiWE9XZjVINElVa3Y0MHdvckpkSjdmREUzVWZwbzVadWhFX0t6ZTctVzBoc04yMlY0S3QyX1RuX1F3X3F0TVdVdnlKcEZmTXBnQVBNaXJCMkdING1pLWc?oc=5" target="_blank">&#34;Казатомпром&#34; сделал заявление после задержания своего топ-менеджера - Inbusiness.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPVk1OYng5R2FWeDZRZ3ptTDNpeW9RQnFzOFlJZE5NUTVoX3ZGVUNENHFPNnloUTk4b0dmc3E5a2FxeDlaWWQ3WGYweTZUUEpCc2gyMW5VeUc2My1Td3QzT3dUanVvMHlOMlNidVNxTUp6SVZkSnBuY2ZfekdDQnlrbzJ5YTRNdXBFQ3I0VXcwaw?oc=5" target="_blank">«Казатомпром» выступил с заявлением после задержания Омарбекова. - Exclusive.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 08:29</span>
+        <span class="date">📅 25.11.2026 09:50</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">&#34;Казатомпром&#34; сделал заявление после задержания своего топ-менеджера - Inbusiness.kz</div>
+      <div class="art-summary">«Казатомпром» выступил с заявлением после задержания Омарбекова. - Exclusive.kz</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQSjNTOVVxQ2MzRHhhbTBhNGZLV1MyVnBRV3MyT2FWcExqOUhYaTZHSlZtaUdKdU03aGVKVnM5NEpna1Y0RnhwenVrWHRySUozVlRRdElGeG5WcjlpdmhtaXM2SWYyVElhNUppRm11dEs1aGViSlB2WmVETkZUQlRaUWg4Unc2SlZIWUs4NTJCTExCZzd0azhXbmZsUnplaVZCaVcybDdBdTFSN3h6NHh2ZGptZEzSAbYBQVVfeXFMT2JZcGRkaTg0cm1vdzE5SmhicGJyTl9wUW95ZVpSMzByOUJzTmpoS0VVWGNpX1psZnlhZWE5VGpHVDA4VTBoQTV4WU5XMVM3WVpNQlVmZWtpMUJOUlVUNkxEbHQxejlVa1gzM1NybGlWSGFza0ZPeXQzSE9ldm5SYnBRUXIySHlMaUhsRnM0RElrTzRLcW1FWFdiU3pNVkI0RVBnVVJZUFNsVXkyelFjcUlWX2stZlE?oc=5" target="_blank">«Казатомпром» выступил с заявлением о будущем компании после задержания топ-менеджера - Казинформ</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9uVTluRGMzemtVbHJuS2I3ankzbFZmazYwZnBLcU44VFUyazRRcDRJS3l4UVdoMDdzb2ZEdTlZVkJxMTBjcnN3alM3XzZJS3Vpa3hyNVRUbzFENUxuRGFVblJ6Z3ZibF9wRkpxMA?oc=5" target="_blank">Казатомпром заявляет о штатной операционной деятельности на фоне задержаний - Интерфакс-Казахстан</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:57</span>
+        <span class="date">📅 25.11.2026 06:06</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«Казатомпром» выступил с заявлением о будущем компании после задержания топ-менеджера - Казинформ</div>
+      <div class="art-summary">Казатомпром заявляет о штатной операционной деятельности на фоне задержаний - Интерфакс-Казахстан</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE5YQkpKeldBZS1jNzBKeWFybG9oTHdxQjFFeEUxNmZwMllBakZWUVdIZ1c3cUFGWkNfbHY3UG5heUwzNlhvUlgyQ0FB?oc=5" target="_blank">«Казатомпром» сделал официальное заявление после задержания топ-менеджера - Ак Жайык</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9UY3ktR0Z5RWpyaUFhbHIzYWEyMjFQbHNnalZYU3R4ZHgyUGVhTUV5Q0hZajdiX0FfS1ZQa0tKNWFnSzZVUktzU3RiSHh3TzFuZWtfV3A3LUVFODhFRUppUXUyYnRVekE5YjZkNQ?oc=5" target="_blank">Казатомпром объявил о досрочном прекращении полномочий двух членов правления на фоне слухов о задержаниях в компании - Интерфакс-Казахстан</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 07:58</span>
+        <span class="date">📅 25.11.2026 05:25</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">«Казатомпром» сделал официальное заявление после задержания топ-менеджера - Ак Жайык</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBEbnd2Wnh4OFBHRmx2Z05LbmVsZnBkR0FkdmJwa1lLTkJqTVRLUnVYZXVDLWdseW5FbXVfNFBXaVRKQ2NmT1llQ1BuT0FMZlE0TkZ4TTJTNElHcTh0MUE?oc=5" target="_blank">КНБ задержал члена правления АО «Казатомпром» - Bestnews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 07:26</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">КНБ задержал члена правления АО «Казатомпром» - Bestnews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxQdmE0TjV1UjVmbGE2TUJsSHVGckVodkxQZ1NTbEdpb0syZFZiaWR4MmF3ZWVRWnhieHV5LWhzNi1SUm5pRUNfdU9ncVZ4RVNEUkM1UWRRYWNPR1Yyd0JpV3JtLTdvSDBESkJKSGFfcUUxTndkVlNZN1dja0tSeHRkWVZERm5BSkJKNmZpTzQxQllyMW52RE50ZkI2U0RuQ3PSAZ8BQVVfeXFMUHZhNE41dVI1ZmxhNk1CbEh1RnJFaHZMUGdTU2xHaW9LMmRWYmlkeDJhd2VlUVp4Ynh1eS1oczYtUlJuaUVDX3VPZ3FWeEVTRFJDNVFkUWFjT0dWMndCaVdybS03b0gwREpCSkhhX3FFMU53ZFZTWTdXY2tLUnh0ZFlWREZuQUpCSjZmaU80MUJZcjFudkROdGZCNlNEbkNz?oc=5" target="_blank">КНБ заявил о задержании топ-менеджера &#34;Казатомпром&#34; - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 05:26</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">КНБ заявил о задержании топ-менеджера &#34;Казатомпром&#34; - Новости Zakon.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNWXZvc2Y1SksxNGZfNGV3R0VYZWk0Wkl2TVRxSC1YaUFFRk1zM2FqVjI0X0E2bWN2bUpuT2dNcnJIQ2ttbFNNeUUyWXFrQWV0VXlEWWNXWG9jalMyR1Z4clRwTjBtRVA5RV9uUFFXb2lWeXNWcVhPbUhaaVY0VURLTDZEdE1NWG44cHhLcUxUSEdyZjdEdUgw0gGcAUFVX3lxTE1aNFNZWHctQk9KU3liWXZsZGNaSjB4bFJpRGVJcW1kajZDaDNOLUdNWTFScTdBc2NkeDQ1ZG42RERWYmZ2Mm80ZGF2cmRoY3A3WEhQU2JJRzBlUTc2VUxoRHZZYUZ4N1dPeVZuVUVCTFA5MDJuVnFtRU43dVNsMjZ5VVVIdnlYTTdQbzNYclE4dmVXOWk1S0lueVRlMg?oc=5" target="_blank">&#34;Казатомпром&#34; сделал заявление после задержания топ-менеджеров - Liter.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 08:48</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">&#34;Казатомпром&#34; сделал заявление после задержания топ-менеджеров - Liter.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxPc0lETnlTR29LOVhZZUR5eXMyRHJFalB0elRwNURlYUJ6Q0hyVy1RTVpJRjdqZ082SWVEVVUtZ3lwaVhKcHV3Mm5sQjRIY1RNbFUxa1RWUGpBNVZrS3dhODJxNTZka3Rza0RXcWhyUFlPTThNZXVwS1I2U0FEOU52VnJQSDc1TndqVjJUUU5fT0w1Qy10ak9keTc3LVhfSThHaW9JSzlwdGkxT1NlVm5SMl9OdTAzdUZ1S1dTOTlndmpfRDFDUU84cEJUaFZEUQ?oc=5" target="_blank">Казатомпром: Досрочно прекращены полномочия Куаныша Омарбекова и Владислава Байгужина - Kapital.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:37</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Казатомпром: Досрочно прекращены полномочия Куаныша Омарбекова и Владислава Байгужина - Kapital.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNbG5tZmxpUkZzQ0t5Nk5seHdmX0NiZlg4QnQ4azRUcE1GcXQxZ3hwWU9QSFdFOHotZmJhT2QwOG9CTm1oTkppaE1yVzZCcjZFbG5nSUdSYnZwUXVFTnJKSVFqY0piRXMwcWhqLVdKSDVDZ3BaZmUzYnN1VmxGcnd3cmZZRFhPOFFETEpwTjVoYVppcnRvaDZTX3VJS2NVTDNhY3lv?oc=5" target="_blank">Задержания в &#34;Казатомпром&#34;: компания заявила о сотрудничестве со следствием - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 08:00</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Задержания в &#34;Казатомпром&#34;: компания заявила о сотрудничестве со следствием - Qumash.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1POUVUMmVqT2FIbFV1MWpMVkRreURxenI3R1pJMWQ0UzNtMWpIZFNlT182VHphOWxCY29DVmNUXzJfNnZnSGIzWktCTWJUbHdWTGJhelVYdUw2TE40cWxiTHRVbzBzajFwbndKSEU4a1NDeUtO?oc=5" target="_blank">Члена правления «Казатомпром» задержал КНБ - Мой ГОРОД</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:36</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Члена правления «Казатомпром» задержал КНБ - Мой ГОРОД</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNnVla1BpT1F5ZnJ5bzNrekF6UUZ3QXZ2XzlVQnFhdG5qQVYyQXVFTXBGcF90WXNtazhiUHpOXzN2N0dFLVI0NFFmOUhUWnJBeHk0UFNheWVZXzlmajdBR1c1dndrdjV1ZlRSWjUwSFRLTEhzT19UeldHS1lhcHRtME9weUlJQ1hsUk1PcloxUUdpSUZVQ0tWd3Z1eFZLZXRSZ2Yxc2dKeEthQQ?oc=5" target="_blank">Акции &#34;Казатомпром&#34; оказались в лидерах падения на фоне задержания топ-менеджера - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 07:54</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Акции &#34;Казатомпром&#34; оказались в лидерах падения на фоне задержания топ-менеджера - Qumash.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOM2h4LVZHV1lPYVozWGFUdENZMnNNZnBxRGRzcW5KM1lxRHlLQ3ZnR25hRzRZTTJTSkxRc1Q5Y09SbXpYaDgzWUE0V3lIT240YlhocjhpN1l3MHQxZWdMV2swSWxVbl93ZFhzdGs5Q1dEVWRLbGtSSWNsUm1EZmoyWnlDRFU2R1VXYlZ2SXF5bEdhREdwVU9QQ3lFNTVWOGlodllSbjg4NGVlMDZV?oc=5" target="_blank">&#34;Казатомпром&#34; объявил о перестановках в руководстве компании - NUR.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:22</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">&#34;Казатомпром&#34; объявил о перестановках в руководстве компании - NUR.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOMkVSTzMwb3A4YWVnVFpydW1DT0FveE9Nc3NaQjJkcnowV2RoRGh6OXJoa2Q3X2pMUjgyOXBEY21JZVJZRl9aMk4zQ3l1ZHJVbnZ5WHFiZV8tTldKUFh2QS16aldGRUtPQ2ZkWFl1eW1DckhEdG9ndjhFQVVqblgxcG9IcUh6ZUxvMzNuODNxYVBzVTQ2NW03SURPaWU?oc=5" target="_blank">«Казатомпром» досрочно прекратил полномочия двух членов правления - Toppress.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:37</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» досрочно прекратил полномочия двух членов правления - Toppress.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNbXpuc3FNWU9RLTZIUXZkWmlabWVYVHd1bTduS0lPSlFWOFZ0QVFKMEdjTTdkQkxxdlhLdGJZSTdIOHBJZFhlVWVrZnFOOWpsUUExcTRjejJpRDIxYjVSM0RUbUNsVnY3UmYwWDk3TWJwSURoNzJpbjItTFJ6Y1dhd1pHaWdpNlJaRnpnTU1LVFhtb1VVd2NlVm1KQXlUcDA0bm0tUXhPSmhmRFlqa2FJ?oc=5" target="_blank">&#34;Казатомпром&#34; прекратил полномочия топ-менеджеров после их задержаний - Время — общественно-политическая газета</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 08:44</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">&#34;Казатомпром&#34; прекратил полномочия топ-менеджеров после их задержаний - Время — общественно-политическая газета</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQRkdqWEsxanQ2M1JCekltUFhFbkFSYVlwVXFHbThUN1hhREdyRm9HODJSeVB4N2JmY3lFZjMtZURoN01NbzFTU0E4LXotWlFUV2Njb1l0Vkk1UTlXU19TXzFXQ05aX0Y3UUp5UENLY1ZKOWNGLVRRMzhaVFJiU1dxVHBjbjhDSlFmZGxKdzJxa05hTGR0VXN4ZFZ0Y3hYTFpNZVVKQ2tGOWFhUjh4dzVBWmtSV1Q5VUxZVkt1blJHZHNjSWo0Qkw3Zlp30gHPAUFVX3lxTE1lSF9VcTd2VUgwN1lUeGdZc0hnNDdwSzRFeEVUT2ptUVV2TTMzandoV3BoZVpfTXdMbHlaSjRZR1pCY1NYY3Z0MlRfb2NjSHRfYXVJVFVxMTQzV3poRDhCYXJHNXZlaktNMWlHejFxS2JqdUtwSkp6c0ZQMWp1MUdrdDl3cmlSMjhfM3l6R21RejFDQzV3ZC0xWXlkdWpQd2c3LTFjX01KWVE0VG82TEdVRnk0QlFUbXluMmEtNmdqUlBjdXZEdWFEMGdyYmp2bw?oc=5" target="_blank">&#34;Казатомпром&#34; выступил с заявлением после задержания топ-менеджера Куаныша Омарбекова - Новости Zakon.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:45</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">&#34;Казатомпром&#34; выступил с заявлением после задержания топ-менеджера Куаныша Омарбекова - Новости Zakon.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBZZDUwWmpoaVB5elBMUTgwamhSVzk2RzNnOFFpV1I0ckZ0T1ViaVNkbWgtamx3WTcyQmRTaHpDTFVsSWcyWjJRUERpVDdSemlSU1oxWFlaZ3g?oc=5" target="_blank">Казатомпром» досрочно освободил двух членов правления - The Tenge</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:27</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Казатомпром» досрочно освободил двух членов правления - The Tenge</div>
+      <div class="art-summary">Казатомпром объявил о досрочном прекращении полномочий двух членов правления на фоне слухов о задержаниях в компании - Интерфакс-Казахстан</div>
     </div>
     
     <div class="article" data-date="2026-11-25" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUVVJT0NWMzIyb05aczhuVmtsVS1qNlNqVVVzeW9IR294NGJmeFBJRmFPMVRoWjVqcnVySThyNGVic19wbTltYkpXMGtsbjFPMzhVWVg0bVhUemd6d1BDZWxhbUZuY0Vab2tOS1Z0Mk95SnRlMXd4akdSazJVY0l1OUpLbDBwZy1sMmtFT0E3TDdPVm13UE1QT2V0UklibXpUeU56SFNqbHVWRjdfNlYtTWw5ck1qYXRKbHlwSkN1YndSUdIBxgFBVV95cUxQNXdxM1MyLXNwRUdicTQwV1RQb0NpeU54T0stTTlZM3ZrS2QyMDM4a1pZQW95QWFMaURsWEtLNlg4NUpjMk1YTlZVSHlXbFhQTjBhb0V2czd4U0xZbFU5cDBKZ1k2aGhCaUthNEhzRmdFb0Jxem5peVlmQjUya2FOOGtRdVI3c3h5MFFhTTRLbmhDWnhfN1RZSUJzWW9hWVJXNmhMckdmcWQ2cFkzMW14aWJBSkFYZnFaN3B5aXBucEZLUllrMkE?oc=5" target="_blank">Вслед за «Самрук-Қазыной» и КТЖ: двух директоров «Казатомпрома» досрочно вывели из правления - Ulysmedia.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:26</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Вслед за «Самрук-Қазыной» и КТЖ: двух директоров «Казатомпрома» досрочно вывели из правления - Ulysmedia.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQdzBrMmFpaWIxdUVZWkpfUTBobkxrWEhKcEdRYjBla29ZbU9WRkZ1ZDlXblQ4WEhhTjNSc3VQLXR4bWhrMmZHcjlfQ001VTRmMDluaWRKTERPLUNTOERWRFJHSkQxWGhGZlFXVkZ0T05nR0oyOEg1b1NtZTFQRWZTaFZfZlVkOExseGJrOHI0cURQd0ZyUTNiMlE0ak5oaUtuMFJLcA?oc=5" target="_blank">«Казатомпром» досрочно прекратил полномочия двух членов правления - Shyndyk.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:45</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» досрочно прекратил полномочия двух членов правления - Shyndyk.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPcFpodDhLV2hIQXFxNWhrVFdlTHZzdFlTWkgxcWJSZVdPR19NMmV4YTFSZmc0bC1XelMxUEhFMm1GU3lEMHAwbFBMWktLYnh4MG8yU1hWZWVsVDRCdF9NV3ByNk5XTmRfUVBOSlhwbzBrbEFfYjBhaVJ5eTUyakFQOUFycWxoRl93MUpPRUJqTGQ2S0py?oc=5" target="_blank">&#34;Казатомпром&#34; и задержания: что известно о Байгужине и Омарбекове - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 08:45</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">&#34;Казатомпром&#34; и задержания: что известно о Байгужине и Омарбекове - Qumash.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9xNlFpN0V2LXhuXzBYbnhkWXBDbnpQeGpuOG5YWXd1MkJIT1Y4RDIwRmgtMHd1aGFhVF8xWnJjSFdWWkJvcXo2a2ZfTmVSQko1WWpEd0hhLXIxTEduZFFWYjRuUV85TW9PS3c?oc=5" target="_blank">«Казатомпром» подтвердил следствие по делу топ-менеджера Омарбекова - 365Info.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 07:58</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» подтвердил следствие по делу топ-менеджера Омарбекова - 365Info.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9OZ1l4MHRsdkJlcFNKbUZhSmk4TUFxWkNEV2pndUptM1N4czlUVVZ3Sl94a1FhTWk1SGdQRmc4WVZMcV9XdUtDUlAzWGMyQS0zNUtjbEtubkltWkZScXFTSEdsWFNKMS1tMnNnTTR1WVRUdjVmVW4w?oc=5" target="_blank">КНБ заявил о задержаниях в «Казатомпром» - 365Info.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:40</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">КНБ заявил о задержаниях в «Казатомпром» - 365Info.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNTHBnV0hpOVE1aGVkYno0SUxQNUtwUXVJeTg5bHU1SG1GYWItbGFSaUs5Q3ZZUGJvOWRDSDduQWNVREJzTGVHcF9uUm5vTG9fME03a2pGWVlHeUJ2RVZ0OTUxblp2WVB1N1lJZUZyZGdVa2x1cTRwdy1aOC1pZjV5aw?oc=5" target="_blank">«Казатомпром» досрочно освободил от должностей двух членов правления - 365Info.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:26</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">«Казатомпром» досрочно освободил от должностей двух членов правления - 365Info.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNa282MFU5X05ET1hHX3g3QnJ1b3FMZ0ZYam9LR0lxT29DVmprWnk5ZVRmZ3VRUHpCYkhvSkhRRmtIY3dZRm9CZkZqWUZINUQ1cWJyMlg0LW5sVWdoU2dabGVXRjd3MDhQZy1OZkFSMjB6WVhvNDBWekVXajFES1hYUnlxYnRrQXc?oc=5" target="_blank">Задержан член правления &#34;Казатомпром&#34; Куаныш Омарбеков - Qumash.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 06:35</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Задержан член правления &#34;Казатомпром&#34; Куаныш Омарбеков - Qumash.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-07-12" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNDNVQmFsU3NRaXY3UFpPVnRqcUlGcXBwUi1CTnByLTlzTk1xdTBsTnRtQi00Rm15OEJLQXdTaDdrOXhfUEdST1pCWm1xVERCaVBaajFnVzMzdHdYeFdUT3czQ2RlLWJROVg5TXY1aXcwcHR5eGExbjY0d1FscE9JXzJGOTBGY0ZQd3kxV1B6S3UzSG5Nc3lPNlllelU1T29yWkY0RnNQazZ0SWpWVE9RaEcxOEtoeVgyckJkZWVPVXlrQQ?oc=5" target="_blank">Air Astana приостанавливает авиасообщение с Дубаем из-за ситуации на Ближнем Востоке - Azərtac</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 12.07.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana приостанавливает авиасообщение с Дубаем из-за ситуации на Ближнем Востоке - Azərtac</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPWU8yZ1d3bGs5RTIyVlUyUXdCZHpEWTJOeXgwX2lVbk1lZS1MMUVQVEV0Y3V6Mjl3SjRua3FnaDBBWXNyM1hXSnN4SGEtTm83LTV2dXhmSVk1VFpYUnJmc05obWFyWE9QZ3FkT2MzX2hldWc2VWxiNnRVanlpc082TklhcWlIbW9nVTllbGZNMHFXMHRQYmNGUmp5NDlKb2RPdGdzRENIUXVkaktXSmR5Q0trSXY2c2FOYnc?oc=5" target="_blank">На столичном терминале КТЖ обработан 1000-й контейнерный поезд - Қазақстан теміржолшысы</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9fM05adG9LUGRiVXNEMmZPTEpTVmdqczVGdlNObmJKd0plc09PYUlsVUJ2VkRKVjMzVjlfbmZ1VEdfTHBuVnkxMXVyRjhWOGRqRGxwcnRTaE9mU3EwVDI4RDRRQ0swbjBuWDl3WENmcEwzcXI1cWVSNjN5ZVNSMzQ?oc=5" target="_blank">КТЖ запустит три дополнительных поезда на новогодние праздники - airpress.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 25.11.2026 03:46</span>
+        <span class="date">📅 25.11.2026 09:28</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">На столичном терминале КТЖ обработан 1000-й контейнерный поезд - Қазақстан теміржолшысы</div>
+      <div class="art-summary">КТЖ запустит три дополнительных поезда на новогодние праздники - airpress.kz</div>
     </div>
     
-    <div class="article" data-date="2026-11-25" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPclJnYjNqaWg5X2JCX2VlNnN5S3Q2WkZCUWdTdjBoRGZyLUhSbkxrRUMzLTF0U1BwWHZLNkZXVHROcjF2TXp2MnNrTEp0alB4eWZhRUN0WnI0eERMaFctV1JuU2ZIU0xzQzJLM0kyYVJNNHcyenRNN2FjZlpVNVRzSDFUcm5PSWFmQXJ1akM4MWpvNTRqeXBlNg?oc=5" target="_blank">Купить акции КТЖ пока не получится: в нацкомпании объяснили, что происходит с IPO - TengriNews</a></div>
+    <div class="article" data-date="2026-11-24" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxNcEFqZ0JBZnJNdUhtQTd5c1dkdzNtc1NoYVhudDFIWVNOZEw1WmZUY3AxaXdCYnhBbUlyaG1GVXc4TEVidXFFSEkzTHV0WHkwYlJvekFxTktNblRJYy02VU8tS3FCSm1HSEpFYV91TjdEQ2JYXzhZMzhpTVhjZ05TS25jemFDTWt3UGpoMGZsNXlDOElMZ3g1Ui02eElFamM4U29TME8tc1NwVkxEYVpraWpncVB6MzdPWE9OVndn0gHDAUFVX3lxTE1QRjBPQ1Y5dkRVZ280M0pzbmZVQ3VhaVRyOFRieHozQVUzbWdUdXVuM3llSmxSUUpuOGFNUldnUVBnajNGSkRKcTJDdjBiVUVsZmlVWXZ5eUx0cnpyQTZlLTdDT2htWnVyNkRpdzl2ZWNWYTVka2xLdUlwTjFiUXZ2RVpkNlg4MUpPZHFDcS1IS2tXVFhtS0lraWFWdmN5V2pFN0trSDJ6Z3B2UmFyLWxJNGpCR0NUUlNzaEZ4NHV0aVpRYw?oc=5" target="_blank">«Необходимо навести порядок»: Бектенов поставил задачи перед новым руководством КТЖ - Qaz365.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 25.11.2026 07:32</span>
+        <span class="date">📅 24.11.2026 09:01</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">Купить акции КТЖ пока не получится: в нацкомпании объяснили, что происходит с IPO - TengriNews</div>
+      <div class="art-summary">«Необходимо навести порядок»: Бектенов поставил задачи перед новым руководством КТЖ - Qaz365.kz</div>
     </div>
     
-    <div class="article" data-date="2026-11-25" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE16d0pfOElIMHZVRXN5QjdXMEFqSkljV2FYeGxCRHJua0JJUTRadVBPVFJ4VzZ0RElnVHJGVl9VbWVhcTdYSWRqTWlHWVhxSEVqT0NUYUZhb0puSW1XaE1GOXdtVERsb01Ick5qajAxM2VFUjhOaW9IcFo3WXg?oc=5" target="_blank">111 вагонов для КТЖ произведены в Астане - Вечерняя Астана</a></div>
+    <div class="article" data-date="2026-11-24" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPM2dFRllfVi1ONVBreVdkakVvTEtOaUZ1UFJOZUZXVGRMcmFsZnN6U081VjgteDZJQVNESTM4a21YRWw0NVNnUmJ0ZjZJTmM1d29VRFJGd21pdUhoWDloLTFjMURJNXBEcHBFdERralpXUmlXX2F1blRxVllkeXo0Xzd6Q0tHUURCX21CYzAxSVdfWG1nSkpaZklNSHVXOTBNT3MyMXNzejZhWEZYZ0hRY3NKV3p1WEFObzd6NGZn0gG-AUFVX3lxTE8zZ0VGWV9WLU41UGt5V2RqRW9MS05pRnVQUk5lRldUZExyYWxmc3pTTzVWOC14NklBU0RJMzhrbVhFbDQ1U2dSYnRmNklOYzV3b1VEUkZ3bWl1SGhYOWgtMWMxREk1cERwcEV0RGtqWldSaVdfYXVuVHFWWWR5ejRfN3pDS0dRREJfbUJjMDFJV19YbWdKSlpmSU1IdVc5ME1PczIxc3N6NmFYRlhnSFFjc0pXenVYQU5vN3o0Zmc?oc=5" target="_blank">Олжас Бектенов представил коллективу КТЖ нового председателя правления - Новости Zakon.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 25.11.2026 09:00</span>
+        <span class="date">📅 24.11.2026 07:08</span>
         
         <span class="tag">Казахстан Темір Жолы</span>
       </div>
-      <div class="art-summary">111 вагонов для КТЖ произведены в Астане - Вечерняя Астана</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-26" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPWWtoaElCdVBVTlYzcUpuSS00eHVqaHhpV29RNEQtNmpNQVNHbER0NUpDX1h5ZklQZHRQVDhnMXltNjhhemJYcEJPZ3J6a1o4Q2JCNWxiNFY2Vm5zbV8yUXVqYVNQcHpZRUJnUVd0SzE5SUFmZmJIcF9rUE5oWWpsWjJ3UG5WSENrOTJhRHM2NkpDVmVzWk0zRWhVbTF2VG5uQmFWa2VJdjBRdGl0cnpCUUUzcmJaNjlySFpBMERndUlZMFZtekE?oc=5" target="_blank">КТЖ представило перспективы ТМТМ на Азербайджанском международном инвестиционном форуме - Қазақстан теміржолшысы</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 26.09.2026 07:00</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КТЖ представило перспективы ТМТМ на Азербайджанском международном инвестиционном форуме - Қазақстан теміржолшысы</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5zU2JRV0dSLUdtNEd6TTM1cDRjY1Njenl6bEgzcWJxMlhiR1FuaVNhWkRGS1hCQjhSYkVMekZ2N1R0ZXdjWFo3ZldSbXV0NExsdUVMc2FYSzktTVZLX2tQUXlENjlsUTdHdjhWMGpiNmQ?oc=5" target="_blank">«Казахтелеком»: интернет появился уже в 1 183 селах Казахстана - 365Info.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 25.11.2026 07:27</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком»: интернет появился уже в 1 183 селах Казахстана - 365Info.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-09-26" data-co="Казахтелеком" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxNSU9XRjhXbWVSekhIRW5Cc0VoZ2NDeWxFNjQwXzJ4OWZDRU1kYjFMUWtoaXA1c0EzVnZ6UE9ZR1FSOGlOa3lwaF9WQU1uNmx3cVhJVEYtMHl5ZWN5Ull0Mkl0TURYSDFrcjBJLXJBclJSbzFralh5M1lXR0treU00Sjhqb2FsVlM0cWRUcVE2UlNXbVpJYm02NUxZQ09idlVxZGpQckZ0V0dVeVp5anZacDBZSDFvQnNQa0RHcm5vZFdpUDQ3VTBSektpSS1NSE05ckFCNUhSTlNRNEp6cUxFZVc0enh4c3M?oc=5" target="_blank">«Казахтелеком» готов платить?»: как Tele2 и Altel поссорились с Kcell и при чем тут Катар - Total.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 26.09.2026 07:00</span>
-        
-        <span class="tag">Казахтелеком</span>
-      </div>
-      <div class="art-summary">«Казахтелеком» готов платить?»: как Tele2 и Altel поссорились с Kcell и при чем тут Катар - Total.kz</div>
+      <div class="art-summary">Олжас Бектенов представил коллективу КТЖ нового председателя правления - Новости Zakon.kz</div>
     </div>
     
   </div>
   
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(5)</span></div>
-    
-    <div class="article" data-date="2026-11-25" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPS08wUWxjN0pTWmxrdXRiS0JEdWhybmltcUFYeU1XZThkb0h4bWFDNmJqMTAzeWcyY0RtaW5UcTZjdHA5aVJPZzZVWjJ5M0JxeVJrcWFmRDBXNWNmbE51S1Rrc21UMmlhMm9nbmVMTno5UWkwUkNpNTF1UFlHZG5UQ0dxbHdhLWt5RjI1VElnYm9KTEpxTjdjU0ZfVlNxaVkwS3ZqWGZBanZwQXBFZGMtNE9XMHNNN2J3WlE?oc=5" target="_blank">КазМунайГаз и Eni завершили строительство газовой электростанции в Жанаозене - Neftegaz.RU</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 25.11.2026 04:02</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз и Eni завершили строительство газовой электростанции в Жанаозене - Neftegaz.RU</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-24" data-co="КазМунайГаз" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTFBXNml2NE5jRlJybjA0NUVEd29DRm5KT2JMVWVMS0hMNnRoc3hjNXU5OXdXdlkwTWg2QmtqNmhUdE8tSDhsTV95QkxycEFsUQ?oc=5" target="_blank">КазМунайГаз и Eni ввели в Жанаозене газовую электростанцию — Тазабек CA - Tazabek.KG</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 24.11.2026 21:27</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз и Eni ввели в Жанаозене газовую электростанцию — Тазабек CA - Tazabek.KG</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNdEpJdGxrc0xzSVU3b2FBVTRLYTByZGlESzJQZjFsZml6UUdERzM4ZWNnOURkZ2tfdElFZVdqQ0xubUdvVmZwTDZJY0NQNU4wbHpQaUNQSGhBZk9VLUVnbGJHUUhienZDbVd4TkJGdEZtOXVUcHdpbTl4UjZZY09wNmhydnRqZ0c4bndWSGNNQlZYWGpWenRqdXlEcWhoRTJWejdwR2VqSV9tNHI0anc?oc=5" target="_blank">Air Astana рассматривает запуск прямых авиарейсов из Казахстана в Албанию - Новости Албании</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 25.11.2026 06:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana рассматривает запуск прямых авиарейсов из Казахстана в Албанию - Новости Албании</div>
-    </div>
-    
-    <div class="article" data-date="2026-10-05" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9BLW1xWWtpXzlVdURYMXpQN2RVajN0X2JXcmdnZFZJVmM5S2doTGlZUUlGekRhMVNQbDlLS0J5OGJidWMwUWtUcjBieVVuSzRFTklxakdKNnRGWkFya2RKNTlPRDFvVkdhckgzclZMaE0weEhuRUpUT2tB0gF4QVVfeXFMTVQtRVBEUXZZd1VYek1XRzA3N2NyVTF1c0hGX2VuczhxZnQzMzVsU1g5emtLa1J2WjlKYm9ULWxwR3A0RHZrUDN0cnZJY3JUT244STNkN2c3RFhZRDFtTUdRd2xjSFJxVmRtaHNTZlNDMEE4d0ZYMGcz?oc=5" target="_blank">Air Astana запускает прямые рейсы в Токио - SKNEWS.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 05.10.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana запускает прямые рейсы в Токио - SKNEWS.kz</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казахстан Темір Жолы" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNNEt3cXV3ZHhjSHppRXZKR2ViWk55YTJ2Zk5WdEE2LUhFR0hYOEh1bC1fOUdhYkhINUlRTEJDTGNzc1FWbHZQZF9hREVwcDBDNDZmZXBmenBFdU1feDFEdlVwajlteDBWWUpoT19jakoxb000OXVJd01lYkd4QmtGRVRWXzlrc09XT1lnSTZscXpzYnlmZFhHaHFfSXp4cWgtemN6TWJvZ3U3TjZmMUFFRVpoME13QUFsR19WZmczWDg3QWpRNUplWWJn?oc=5" target="_blank">Дайджест NBK: новый глава КТЖ, убыточные активы Боранбаева и повышение тарифов на связь - National Business</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 25.11.2026 03:27</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">Дайджест NBK: новый глава КТЖ, убыточные активы Боранбаева и повышение тарифов на связь - National Business</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -980,7 +399,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-12';
+  document.getElementById('date-from').value = '2026-11-24';
   document.getElementById('date-to').value   = '2026-11-25';
   applyFilters();
 }
