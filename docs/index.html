@@ -60,21 +60,21 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 27.11.2026 21:50</div>
+  <div class="meta">4 источников · Обновлено: 27.11.2026 23:48</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">9</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">8</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-11-27">
+      <input type="date" id="date-from" value="2026-02-27">
       <span style="color:#bbb;font-size:13px">—</span>
       <input type="date" id="date-to" value="2026-11-27">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
@@ -85,9 +85,15 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
+      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
+      
       <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
       <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
+      
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
+      
+      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
       
     </div>
   </div>
@@ -104,52 +110,118 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-11-27" data-co="Казатомпром" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5pZmNpQkhUUzI5SWtnQ1kxUFhJWEdreWNISXg5Z2Zkam1Jci0zdnhUX1NhNEpGdDdBOVc1Z0RvcDg2RDQtcklKalVCdmlreTZ4VWxmdFY4bWFVLVFPNFpmZ191WUdJUk0xX3NUOVdCLXc1ZEZR?oc=5" target="_blank">Казатомпром: суд арестовал Омарбекова и Байкулова на два месяца - airpress.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 27.11.2026 14:30</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">Казатомпром: суд арестовал Омарбекова и Байкулова на два месяца - airpress.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(8)</span></div>
     
-    <div class="article" data-date="2026-11-27" data-co="Казахстан Темір Жолы" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVExtemJhYjgySjktSXRQSUxBc3ljUlNUS29xYUw2dkFrRTJzUFhOdERaR2V1VDJNd3ZNSlUzR0hQcXlSWko2RnNYRnh3RHJyVGVlUUg4YmgtbzFkLWJvQlBPaTRoQW43NEFpUmNnSjVoQlIzV1BmMXdiNVRNcEVsMlNLd2tPS0hfbXl1UDNMdGJaMVo1U0tmV2hFYkNHR0hURXhmTlM0UjU?oc=5" target="_blank">Экс-руководство ТОО «КТЖ–Грузовые перевозки» задержали по подозрению в коррупции - Казахстанская правда</a></div>
+    <div class="article" data-date="2026-03-26" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9IVHkwUTNNSWRHNFQzRDRjREFqcHhKSWJkdi15SGZVVHRmTVBDUTQxWWE1TGZOVUxKRHRoakdLUlhxYkM4Tm9GSVNhalFKRy1XV3pwSXBsTkhJWjZIaXVmeXViSGxWNlU3TS11WjhEbw?oc=5" target="_blank">Финансовые результаты АО НК «КазМунайГаз» за 2025 год - ҚазМұнайГаз» ҰК АҚ</a></div>
       <div class="art-meta">
-        <span class="src">📰 Google News — Самрук-Казына</span>
-        <span class="date">📅 27.11.2026 17:48</span>
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 26.03.2026 07:00</span>
         
-        <span class="tag">Казахстан Темір Жолы</span>
+        <span class="tag">КазМунайГаз</span>
       </div>
-      <div class="art-summary">Экс-руководство ТОО «КТЖ–Грузовые перевозки» задержали по подозрению в коррупции - Казахстанская правда</div>
+      <div class="art-summary">Финансовые результаты АО НК «КазМунайГаз» за 2025 год - ҚазМұнайГаз» ҰК АҚ</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-02" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPVzc1V3pmT0lvbUhCYjZIU29pekZnbWQtdnRlZkY0Wjl1ZDFKVFhlbWZWb3NraFVhOVVBWlZsZlN3MlN3YVRkN0ZVRlZjaU1NeTF4M0ZpS1FQN3JROTZ3ZHYxVzJHaXZqeEVueERkRWRSQWNpMTVBSEs2S0Q4Wk1DTkp0c1o0cDg0N1VpTQ?oc=5" target="_blank">КазМунайГаз и British Petroleum планируют сотрудничать в геологоразведке - ҚазМұнайГаз</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 02.04.2026 07:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">КазМунайГаз и British Petroleum планируют сотрудничать в геологоразведке - ҚазМұнайГаз</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-27" data-co="КазМунайГаз" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9OMWUzMW5KcFFGN1VpeWxGdmtHMzJhRXYyaWJUdElxV0tRdzNkano5UHBpSVpIWU0zSFFaQUt2RWpoVFIyd2djcWlVQVFmakR5azJkRlFVRUEyeVNCZnBiTEx5UVVnendMNEE?oc=5" target="_blank">Производственные результаты АО НК «КазМунайГаз» за 2025 год - ҚазМұнайГаз» ҰК АҚ</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КазМунайГаз</span>
+        <span class="date">📅 27.02.2026 08:00</span>
+        
+        <span class="tag">КазМунайГаз</span>
+      </div>
+      <div class="art-summary">Производственные результаты АО НК «КазМунайГаз» за 2025 год - ҚазМұнайГаз» ҰК АҚ</div>
     </div>
     
     <div class="article" data-date="2026-11-27" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE5JTi0tdlpvbjBCa0tqTG5TVmRuTW5YbFJMR0RRbE16SjRObzdENVZlVUF5Sm43bFlsWGNpX1lQN0p1enBOaEFuNldVVTBvNjFmT01obkdaeHNLbkZNYmc?oc=5" target="_blank">Двух представителей «Казатомпром» взяли под стражу - Bestnews.kz</a></div>
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNOWloSFFZMENBcTk4VFJNNF9XZmljTzA3REZhRndqUHdpTW1HeXhoZkY3ZlhkTVJYNGpqaG1iVjU3dW5GMWdCd0hXMGpVaWJOSTFfY3BiYllUWUcwcGVpb2EwdUhqbE9BMGxPMkU2LW81Qk9pUThJM29nZ3JUWVFqSE5VMWNsQ0HSAYgBQVVfeXFMUDZRQ1ZfWERIVnlDbnhCOU1RZ0gzM25SRVZaeDZhSi1HYVdzUk1STWF4OWpEMGluYWxVQ3J5MkIwN3VrVW1tRGlCbHhJSThjS2M4bUZDSDFEbjhKVHFkaHJCX3l4U0l5YmZGUU92M29TdmwwdUdCVUpLX1BrbGJ4SGJfZGotbTM5SQ?oc=5" target="_blank">Третий за неделю топ-менеджер покинул «Казатомпром» - Казинформ</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 27.11.2026 14:28</span>
+        <span class="date">📅 27.11.2026 07:36</span>
         
         <span class="tag">Казатомпром</span>
       </div>
-      <div class="art-summary">Двух представителей «Казатомпром» взяли под стражу - Bestnews.kz</div>
+      <div class="art-summary">Третий за неделю топ-менеджер покинул «Казатомпром» - Казинформ</div>
+    </div>
+    
+    <div class="article" data-date="2026-07-09" data-co="Казахстан Темір Жолы" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZ3o1dk9iX2ROMi1LQmlCSmtsNHMxR3k3SkJZWHZyTVJnUS1LTUt6ZXJUUDJXeUlDdjRBUHRIbDd0WXp0SmRxSm1SdkxVVEZKbnFFZFpCZGJrU1BUclVaM1NwSXlYTXEtTzJYc3lLRWN0Tld5QnFBYkhRSW92dTRvWHh2aDE5MHY0ZFBXdmNrN1ItTHhleHhZT29UQVJmUXBSVFk5OVVlWGwya3M?oc=5" target="_blank">КТЖ продолжает обновление стрелочных переводов на магистральной сети - Қазақстан теміржолшысы</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — КТЖ</span>
+        <span class="date">📅 09.07.2026 07:00</span>
+        
+        <span class="tag">Казахстан Темір Жолы</span>
+      </div>
+      <div class="art-summary">КТЖ продолжает обновление стрелочных переводов на магистральной сети - Қазақстан теміржолшысы</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-19" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxQd1pWUHhQcmg3YmNobERhaUJ5UERwSWhHenhmbHlSMi00aFdLWTU0TWhDNGdCeDYzSU1PLWtVc1lqajhSSmpoUjh5NmxMNTduSU9jWkZSLUllcVhHU2UwMU1yb3BrR2tmUjM0UHVQcnZKZ0kxX3duQmFNNzdyWERYVnZYOG45THV3ZFlnVWZzamJfSEgtcUNpemtPYWozZEp1a1ZaQTVxVjJfSGlFV2c5bFluc3Y4bEhDbUc5OVhORUpHcWdFR3pr?oc=5" target="_blank">«Казахтелеком» станет оператором национальной системы видеомониторинга — но не с 19 октября - KZ24.NEWS</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 19.10.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">«Казахтелеком» станет оператором национальной системы видеомониторинга — но не с 19 октября - KZ24.NEWS</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-20" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOX3ZlNzNvdzBqRDNxS1ZHaTk3UzBvOGFKVURlMFRBTEFhenkzeHh1NUJoeFkybFZFQXpTSlB0bDZJcklwWTFrTVNRcUlQS19xSjBGcDRoUXhzZFFjbmVpMmdBR3lxZ2VLal96ZVVBSTRoS2drWUdtQmlkTEw1MVF4OS05ZHlwZk5aZ0N30gGKAUFVX3lxTE5ad0FxaENBT3RWdWRWMGRZcFNkVTVMbnVXd3U5TFpsVHR1OVdaUUUyXy10RFNMMldSUF9NTmxKci14a0d4b3JncmJ1VktvM1hYY0JfTzBDRmM4a05LSlNJaUNsYUtuUkhRZV8zOHB0Mkk3UzlfaFlYRlY2VHVkZV9NUG5WeHBZOEFUUQ?oc=5" target="_blank">&#34;Казахтелеком&#34; сообщил о мерах против телефонных мошенников - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 20.04.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">&#34;Казахтелеком&#34; сообщил о мерах против телефонных мошенников - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-04-29" data-co="Самрук-Казына" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxNSFY0alZpVTFxYkdvanpTbGJJRDVXVFp0X2xTMEJRODVtT2NiSFI5b3pCX1d2NktKbE1OUzBjRUtpQm43T3RoNjFJUjZEczBfTTVzMThvbDUzdmtJYWJhWXdhY0lLTkJvazF1ZDcxdjlmMXJJV1pRQV9LRWNFaWxpem15enNHNE9WRUHSAYgBQVVfeXFMUExCRVNHMWR6V0JzQXFkTGxybWp5VVA0eDN4NVIySkd3ME8wTVdkV1pJRkNPWkVidVdQU1dKYnJvZ1BpVGJyeXBfTk8zeG80dzliNmRTT2FQeFhGc1M1NEoyMy1ZaXNpZGFKMGlSV0lnSzZkeWdmQVJ2WTJTd3prOVl6MHRTaEItdg?oc=5" target="_blank">Фонд &#34;Самрук-Казына&#34; увеличил долю в Казахтелекоме до 91,28% - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 29.04.2026 07:00</span>
+        
+        <span class="tag">Самрук-Казына</span>
+      </div>
+      <div class="art-summary">Фонд &#34;Самрук-Казына&#34; увеличил долю в Казахтелекоме до 91,28% - BES.media</div>
     </div>
     
   </div>
   
 
+  
+  <div class="section" id="sec-pos">
+    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+    
+    <div class="article" data-date="2026-05-05" data-co="Казахтелеком" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNVmF6Q2VtaVpYWHlCN1B1OEdUZW9SNWZ1NjUxeW93STViYlV3VURHV3YxckpXcWMwY2FxX1ppMUV6ajh1X0RKTGlxSERnc1BGMEsyei1PNDRsdVFHb25lQnA0YnR5SVkzZlZLblA4T0FpVUNWM3ZkZUE2M2pHZ0Y1RnZYQ0FmM3RpU1ltaDFOUnl1Vi0zb2p3bnlmUkdFQVVvWlE?oc=5" target="_blank">Казахтелеком выплатит дивиденды, которые в 82 раза меньше прошлогодних - PROFIT.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 05.05.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">Казахтелеком выплатит дивиденды, которые в 82 раза меньше прошлогодних - PROFIT.kz</div>
+    </div>
+    
+  </div>
   
 </div>
 
@@ -208,7 +280,7 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-11-27';
+  document.getElementById('date-from').value = '2026-02-27';
   document.getElementById('date-to').value   = '2026-11-27';
   applyFilters();
 }
