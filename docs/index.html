@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">2 источников · Обновлено: 26.11.2026 22:09</div>
+  <div class="meta">1 источников · Обновлено: 27.11.2026 00:08</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">3</div><div class="lbl">Всего</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
   <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">2</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-08-07">
+      <input type="date" id="date-from" value="2026-01-10">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-11-25">
+      <input type="date" id="date-to" value="2026-01-10">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -86,8 +86,6 @@ input[type=date]:focus{outline:none;border-color:#00538C}
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
       <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="Казатомпром" onclick="toggleCo(this)">Казатомпром</button>
       
     </div>
   </div>
@@ -106,47 +104,20 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   
 
   
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(2)</span></div>
-    
-    <div class="article" data-date="2026-11-25" data-co="Казатомпром" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQVldEeGVkUmJQYllibVVMVnJJLS1TVVEwYW94SGVRMV9DaElNakpKY2QzSFduOHBBdDdQU2FTNXI4aHg4TEN0dWRTZHowMHVRUnNqdU54V3pTYU9XUlB1c1pkRU5SQ196MnVINlBXNll5V0hLLVVSWVVtNE5kdU41YkJhMDVJZHh1YkFhdQ?oc=5" target="_blank">КНБ заявил о задержании топ-менеджера «Казатомпром» - Mail.KZ</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Казатомпром</span>
-        <span class="date">📅 25.11.2026 05:26</span>
-        
-        <span class="tag">Казатомпром</span>
-      </div>
-      <div class="art-summary">КНБ заявил о задержании топ-менеджера «Казатомпром» - Mail.KZ</div>
-    </div>
-    
-    <div class="article" data-date="2026-08-07" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOSHJ6ZEx4YXJ4OFZtbWphbWlERWZ6NGZzYWNKQ2dVck9GSjJhazhoMDR5Zml5N3JSZEZrQnhrSUc1UE5jY1VocXUtSXlHYzRfMWpwWFYweG9vY2dnYWNIMFphcV9meHVFaTI3Q3FuM0h4ZmozYmc2aHZXcWxGQ3J6a3VaZjRacGNKc2RVaUp2dFk4VlRDVDJTdzFMLUZIZmlVQmZ0UHJ0MWhnNDNSUDJz?oc=5" target="_blank">Как акции Air Astana отреагировали на публикацию отчетности авиакомпании - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 07.08.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Как акции Air Astana отреагировали на публикацию отчетности авиакомпании - Forbes.kz</div>
-    </div>
-    
-  </div>
-  
 
   
   <div class="section" id="sec-pos">
     <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-10-27" data-co="Air Astana" data-s="positive">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWmd5VTlieFVCN3JETDJST01SaHVjWmRTNUhCYVFpSXluLWk3blQ0STZwNXFJOE5qbWZUZm5kSEptdzBFdFd0TnN4R1d5LWpMOXhndkx6NUJULVc0S0NnYVB6OTRxNWVfQVRvY0N6Ml9Dc2pVQ29sSVpkUFlVSkQtZ09oaWJfV0FqSzRHazJ5OGdGU2Zwa21XWHYzTm9aZFNIWXBQRXU0R3NXeWw1bVZ6TUNveDJUX3NDQnFmampndHR0NjN6VGNtcHVfdTdXYUdzb3ZCZ0UxWnNnMmPSAeABQVVfeXFMTWgzVkN0TXZveVdGX0VoRFRMVHNoSmJURWhlZUZENnUxb0N5SmVGWkdsdDUtd0IzVGNTRlJXMm1EWDJvQUotN1k2MmNnVmp3anZUS0syNjlya09nY3Y2WDlDNmZDVDRfcEx5cC1SbXB3YkM3MXJmdTFhQ1l6alJhY3E4NTJMY1l2MWJkeUcxbWloMXFfTHprQzFIcFllX18wMFctYmZ1cDc1ekxKNjZ4bDJYaFNnS3FNamRhMFBsVDhJcUlXQ0E1TDRYMzR3cmJRb3NZcFdHR0ZfazlzQS1URk0?oc=5" target="_blank">Air Astana запускает новые маршруты и увеличивает количество рейсов на популярные международные направления - Vlast.kz</a></div>
+    <div class="article" data-date="2026-01-10" data-co="Air Astana" data-s="positive">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQQ1ZQSUhDSlNFdTNoSTdaeWMzUi11Y0RudWlqbERWSXV6UGNFNG82VloxdEFnQzRiUTVoSXZiSHhlRXRFWlp1Q05ZUFJXWEdfa2lMbXBhVFRIX1F5bmVxbkFNTnMxb3RfX0FzUVJFNTlzZENNLXRQZlh2N1NCRFlCZzRkMlFhSTRNV1FmQzJlTUQ1QQ?oc=5" target="_blank">Air Astana прокомментировала заявления сотрудника, распространяемые в соцсетях - DKNews.kz</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 27.10.2026 07:00</span>
+        <span class="date">📅 10.01.2026 08:00</span>
         
         <span class="tag">Air Astana</span>
       </div>
-      <div class="art-summary">Air Astana запускает новые маршруты и увеличивает количество рейсов на популярные международные направления - Vlast.kz</div>
+      <div class="art-summary">Air Astana прокомментировала заявления сотрудника, распространяемые в соцсетях - DKNews.kz</div>
     </div>
     
   </div>
@@ -208,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-08-07';
-  document.getElementById('date-to').value   = '2026-11-25';
+  document.getElementById('date-from').value = '2026-01-10';
+  document.getElementById('date-to').value   = '2026-01-10';
   applyFilters();
 }
 
