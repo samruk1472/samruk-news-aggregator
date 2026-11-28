@@ -60,13 +60,13 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">1 источников · Обновлено: 28.11.2026 15:55</div>
+  <div class="meta">2 источников · Обновлено: 28.11.2026 17:57</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">4</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">0</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">4</div><div class="lbl">Нейтральных</div></div>
   <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
@@ -74,9 +74,9 @@ input[type=date]:focus{outline:none;border-color:#00538C}
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2026-07-07">
+      <input type="date" id="date-from" value="2026-02-25">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-07-07">
+      <input type="date" id="date-to" value="2026-10-29">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -84,6 +84,8 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <label>🏢 Компания</label>
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
+      
+      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
       
       <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
@@ -102,23 +104,56 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div id="content">
   
-  <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
+
+  
+  <div class="section" id="sec-neu">
+    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(4)</span></div>
     
-    <div class="article" data-date="2026-07-07" data-co="Казахтелеком" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQQXBaY3NBRXdRSzVDdVk3eExVVE4wMEtLNXpmWGNRbWlCa29zQ2JmZVhHT3JHXzN3OG5tb1BKSFN5Z2VUb0NzUWpiUm1fWWZZX0pBSmE5Z0VjVGNCQ1BFcHhYb2FPeE5mbXNJay0ydEoxZjZCNEF4eTZJMWFlSVRlMm1uS0VlQUxfX182cEI4b2lvdTNLYVpwVEFrT29QQjJpck5Zb0hWTExTcXBXbEVWcGVtYnk5UQ?oc=5" target="_blank">Казахтелеком поддержал крупнейший киберспортивный турнир Центральной Азии - Kapital.kz</a></div>
+    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxON3ZZVmFwX3UtZTdUN1c4Q0xZY0I0LW9Sb0pSS2d0azQzRkpSNFVJY2xUQVI3STV2ZUpIeXpBSlFUclNCdkxQYWRRc2M3TDFUMW5zZVdZa04yV1F3Z2hzVk5QRDhtbi1sTDJ2VUlvSEFZbXRzUmQ5bE5qaFVPQzFwYVR1RHpVUUhXODYxYi04eXpZZkd5VG9LQ3VTN0VkZw?oc=5" target="_blank">Air Astana запустила спутниковый Wi-Fi на борту своего самолета - Forbes.kz</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 29.10.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустила спутниковый Wi-Fi на борту своего самолета - Forbes.kz</div>
+    </div>
+    
+    <div class="article" data-date="2026-10-29" data-co="Air Astana" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQlJtcEgwaDZxYXdRRUxPR09MZ213cW82NGNjYVAtLUF3eWtPUnZrZFFkVnkwWlhZVXh6a2hKeDl2NUFHVjhFU0t1eDZheHhsTG9FUHVfVXFnNzhncnZXQ2VtdXU2R2pCcUlxZG80WXgwT2hJd3AzdmlWVm00bzlTUjNtMTQxa0Jwb2RzUW1Ha1hhb2hOU3BWT0ZyRlp3d0wyY1Z1ZFJ6SkNiT0FYLWJhdmdSN3V0dXFic0EyTldMUDBMRVHSAcIBQVVfeXFMTWNXUHkwOWhYQWNCR0dNeXk4X1FjVVpMRnhYSGMxWEh1emRzb0hpeUtFOE5JM2Jmc1JneC1wN2JhZjR3QnhBVGJoMWFkTWNieDJfWk95NWF5SGdabnA1cnkzaUZ5TjcyY2U4N2RYQVVvWHpvUlozNHp6a0dIVVc5TGtvUlRCa2p5X094ODFsbFhkOVRLNFVkazA2aFM5STNKZXFYTFZRMjI1TkRDS0wwa2RzeFJ1S2VkV3g1Mkk2cmpLZGc?oc=5" target="_blank">Air Astana запустила спутниковый интернет на борту самолёта: до конца января Wi-Fi будет бесплатным - BES.media</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Air Astana</span>
+        <span class="date">📅 29.10.2026 07:00</span>
+        
+        <span class="tag">Air Astana</span>
+      </div>
+      <div class="art-summary">Air Astana запустила спутниковый интернет на борту самолёта: до конца января Wi-Fi будет бесплатным - BES.media</div>
+    </div>
+    
+    <div class="article" data-date="2026-02-25" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPVkdxVjFuT1M5ZTAwSzNRWi1SZWR4eVluSmxJQ1A3Ym1NWFlaR2ljTC0wYTZJQWU2a1p1engyUVhZTlZVZnNFNE9uSEtZSkpnZDRrZ2cweXl2UkpqbWZVcE5lUlhzNWZiYVE2ejMwMFFxc0tnUXVIaHV4OGpxMFhZMWJyMDRDRFVZd0ZYS09SRk5CQnJCWmI5MmVRaW5iZC1yY2lJa0NGc09nRVNnWmpJ?oc=5" target="_blank">«Казахтелеком» превращается из оператора связи в провайдера ИИ-экономики - Kursiv Media Казахстан: последние новости Казахстана и мира</a></div>
       <div class="art-meta">
         <span class="src">📰 Google News — Казахтелеком</span>
-        <span class="date">📅 07.07.2026 07:00</span>
+        <span class="date">📅 25.02.2026 08:00</span>
         
         <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">Казахтелеком поддержал крупнейший киберспортивный турнир Центральной Азии - Kapital.kz</div>
+      <div class="art-summary">«Казахтелеком» превращается из оператора связи в провайдера ИИ-экономики - Kursiv Media Казахстан: последние новости Казахстана и мира</div>
+    </div>
+    
+    <div class="article" data-date="2026-08-13" data-co="Казахтелеком" data-s="neutral">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQMTZqTGoycHYxeUJLZ1NFSVNuakxzOGhpMlktNEJqb3lyREU1VjVXM1NTcElReDgwZWFNZ05oV3NFSjBGeXN0c1RyOEZBbVFvTVNxZTJIVFZINWFQUVNhcDA5UjhrVlpGUEdmLVhrZ2xIb3I2UUpoSE0tWkd6cDFhVmh0UE1SNkFWbGEwVGV5UjlEUWJhMmxJX3V4aURTTnpXejdWSURwTQ?oc=5" target="_blank">“Казахтелеком“ объяснил сбой в работе Telegram в Казахстане - TengriNews</a></div>
+      <div class="art-meta">
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 13.08.2026 07:00</span>
+        
+        <span class="tag">Казахтелеком</span>
+      </div>
+      <div class="art-summary">“Казахтелеком“ объяснил сбой в работе Telegram в Казахстане - TengriNews</div>
     </div>
     
   </div>
-  
-
   
 
   
@@ -179,8 +214,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2026-07-07';
-  document.getElementById('date-to').value   = '2026-07-07';
+  document.getElementById('date-from').value = '2026-02-25';
+  document.getElementById('date-to').value   = '2026-10-29';
   applyFilters();
 }
 
