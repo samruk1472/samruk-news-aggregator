@@ -60,23 +60,23 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 
 <div class="header">
   <h1>САМРУК-КАЗЫНА · Мониторинг новостей</h1>
-  <div class="meta">5 источников · Обновлено: 28.11.2026 12:37</div>
+  <div class="meta">1 источников · Обновлено: 28.11.2026 15:55</div>
 </div>
 
 <div class="stats">
-  <div class="stat all"><div class="num" id="cnt-all">10</div><div class="lbl">Всего</div></div>
-  <div class="stat neg"><div class="num" id="cnt-neg">3</div><div class="lbl">Негативных</div></div>
-  <div class="stat neu"><div class="num" id="cnt-neu">6</div><div class="lbl">Нейтральных</div></div>
-  <div class="stat pos"><div class="num" id="cnt-pos">1</div><div class="lbl">Позитивных</div></div>
+  <div class="stat all"><div class="num" id="cnt-all">1</div><div class="lbl">Всего</div></div>
+  <div class="stat neg"><div class="num" id="cnt-neg">1</div><div class="lbl">Негативных</div></div>
+  <div class="stat neu"><div class="num" id="cnt-neu">0</div><div class="lbl">Нейтральных</div></div>
+  <div class="stat pos"><div class="num" id="cnt-pos">0</div><div class="lbl">Позитивных</div></div>
 </div>
 
 <div class="controls">
   <div class="ctrl-group">
     <label>📅 Период</label>
     <div class="date-row">
-      <input type="date" id="date-from" value="2025-10-09">
+      <input type="date" id="date-from" value="2026-07-07">
       <span style="color:#bbb;font-size:13px">—</span>
-      <input type="date" id="date-to" value="2026-11-28">
+      <input type="date" id="date-to" value="2026-07-07">
       <button class="reset-btn" onclick="resetDates()">↺ Сбросить</button>
     </div>
   </div>
@@ -85,15 +85,7 @@ input[type=date]:focus{outline:none;border-color:#00538C}
     <div class="btn-group" id="company-btns">
       <button class="btn active" data-co="all" onclick="toggleCo(this)">Все</button>
       
-      <button class="btn" data-co="Air Astana" onclick="toggleCo(this)">Air Astana</button>
-      
-      <button class="btn" data-co="КазМунайГаз" onclick="toggleCo(this)">КазМунайГаз</button>
-      
-      <button class="btn" data-co="Казахстан Темір Жолы" onclick="toggleCo(this)">Казахстан Темір Жолы</button>
-      
-      <button class="btn" data-co="Самрук-Казына" onclick="toggleCo(this)">Самрук-Казына</button>
-      
-      <button class="btn" data-co="Самрук-Энерго" onclick="toggleCo(this)">Самрук-Энерго</button>
+      <button class="btn" data-co="Казахтелеком" onclick="toggleCo(this)">Казахтелеком</button>
       
     </div>
   </div>
@@ -111,133 +103,24 @@ input[type=date]:focus{outline:none;border-color:#00538C}
 <div id="content">
   
   <div class="section" id="sec-neg">
-    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(3)</span></div>
+    <div class="sec-head neg">🔴 ТРЕБУЮТ ВНИМАНИЯ <span id="lbl-neg" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
     
-    <div class="article" data-date="2026-11-28" data-co="Самрук-Казына" data-s="negative">
-      <div class="art-title"><a href="https://vlast.kz/obsshestvo/71774-nedela-v-kazahstane-za-ubijstvo-daut-mense.html" target="_blank">​Неделя в Казахстане: «За убийство дают меньше»</a></div>
+    <div class="article" data-date="2026-07-07" data-co="Казахтелеком" data-s="negative">
+      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQQXBaY3NBRXdRSzVDdVk3eExVVE4wMEtLNXpmWGNRbWlCa29zQ2JmZVhHT3JHXzN3OG5tb1BKSFN5Z2VUb0NzUWpiUm1fWWZZX0pBSmE5Z0VjVGNCQ1BFcHhYb2FPeE5mbXNJay0ydEoxZjZCNEF4eTZJMWFlSVRlMm1uS0VlQUxfX182cEI4b2lvdTNLYVpwVEFrT29QQjJpck5Zb0hWTExTcXBXbEVWcGVtYnk5UQ?oc=5" target="_blank">Казахтелеком поддержал крупнейший киберспортивный турнир Центральной Азии - Kapital.kz</a></div>
       <div class="art-meta">
-        <span class="src">📰 Vlast.kz</span>
-        <span class="date">📅 28.11.2026 15:28</span>
+        <span class="src">📰 Google News — Казахтелеком</span>
+        <span class="date">📅 07.07.2026 07:00</span>
         
-        <span class="tag">Самрук-Казына</span>
+        <span class="tag">Казахтелеком</span>
       </div>
-      <div class="art-summary">​Неделя в Казахстане: «За убийство дают меньше»</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-28" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOR01MQkY1ZmlPM09DM3lqcHpsNDh4a05KSjJ6ZGxwWHktOFdoNUJJREVxcGhzejBkeERkWXZCdjdvSFVaQnVkX2lFNlBUSWFDaEcyb0FZbEI0azBaMGtJWElvZy02ZDl1dTdLbjlUNVlvTEQwLVZYLXR5VzFReVh4c2hlSnJqMlhFVW9xUlhBYlhQSFV4MUlQTXlLX1VGN0hO0gGjAUFVX3lxTE1hY2VEalZMcTZmekxlMmpEa1NQbUlOUmNTMk40SEE0aGw0YzZtUF9ucGFrR2Y4alNTLTNfby12TzRLdW91aFVvajhHaTNTTVVvM0w4bUJoSVVtbl9xV3hKcm1VZUNic3I5cHdsd2hZTGhvczZScUpiRjJZMElvc2dOUGZMc0dXcVlYalFiWHh2N05jS2M3aDY3aUZ0M3RXTzlvN00?oc=5" target="_blank">КНБ подтвердил задержание бывших топ-менеджеров КТЖ - Азаттык Азия</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 28.11.2026 08:35</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КНБ подтвердил задержание бывших топ-менеджеров КТЖ - Азаттык Азия</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-27" data-co="Казахстан Темір Жолы" data-s="negative">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWDJraWEwVkJUeWJ3R1VGaHNQcE9JMGNva1hIRHQ5RWJsQjVveFVtT3U5SUx1TFBSaklJLUhNUUxQMjNmOUFNQ3lDQWFLYkVKaF9iYUhGbDMzaHhLTmxKMjJQdzQ2RmxIV0RUNzd4RVZ3SGRsRE1HeDBwWlZUQWp6WEZVUS1EM0pScUtWdlBRUTlfMHFTbTV3aVdLLWU1Qy1tNVhsOWhCX0d0UQ?oc=5" target="_blank">КНБ подтвердил задержание бывших топ-менеджеров «КТЖ-Грузовые перевозки» » Лента новостей Казахстана - Kazlenta.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КТЖ</span>
-        <span class="date">📅 27.11.2026 13:52</span>
-        
-        <span class="tag">Казахстан Темір Жолы</span>
-      </div>
-      <div class="art-summary">КНБ подтвердил задержание бывших топ-менеджеров «КТЖ-Грузовые перевозки» » Лента новостей Казахстана - Kazlenta.kz</div>
+      <div class="art-summary">Казахтелеком поддержал крупнейший киберспортивный турнир Центральной Азии - Kapital.kz</div>
     </div>
     
   </div>
   
 
   
-  <div class="section" id="sec-neu">
-    <div class="sec-head neu">⚪ НЕЙТРАЛЬНЫЕ <span id="lbl-neu" style="font-weight:400;margin-left:4px;font-size:12px">(6)</span></div>
-    
-    <div class="article" data-date="2026-11-23" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQQjdlZmhPTWZnNWwxSVY3WFJjaTVaSEV4NENtaEoxaDNGUE42aEV1cnk5c3daYnJNNVI4UXVSeHZ0UjctR1JSa3FtR0FmOV9nN3d0bi1BNVhDT2tmRG9ITVd3QWYzdmFKdWdzN3l1VnVzckRvYk83THIxNnBxOFNYVXJNX0d3N2FMbkkteTJ3aTgxcXEtbHd5TlFVNk5oUTVNMVNnMnk0YjBpQzYybGpGU0ZERmw5YXh4ZDRBUg?oc=5" target="_blank">Президент встретился с председателем правления АО НК «КазМунайГаз» Асхатом Хасеновым - Almaty.tv</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 23.11.2026 08:50</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">Президент встретился с председателем правления АО НК «КазМунайГаз» Асхатом Хасеновым - Almaty.tv</div>
-    </div>
-    
-    <div class="article" data-date="2026-03-26" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DMlNMS05NU1hxdXlVbFdwNHZfZ3YxUFZCY095dzJvU1dnNWVJRG44MmM4MXBaenBEeGlVS3pkVENPcGZHZElNejdnWUpQRUhqX3fSAUtBVV95cUxQX2RZZXRIQnViTy1kUVpkeHRLV3JSNTZGb19lWllfTVJ3SGtsc3ZkT25tNEk5VFk5cHpvTXpGd3JVcGxDWUhCRi1ISGM?oc=5" target="_blank">&#34;КазМунайГаз&#34; остановил разработку каспийских месторождений с &#34;ЛУКОЙЛом&#34; из-за санкций - Интерфакс</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 26.03.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">&#34;КазМунайГаз&#34; остановил разработку каспийских месторождений с &#34;ЛУКОЙЛом&#34; из-за санкций - Интерфакс</div>
-    </div>
-    
-    <div class="article" data-date="2026-04-22" data-co="КазМунайГаз" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9iQkJYSGZlRV83ck9TNFduRFoxbTM5ZW5QUGpWR014Qkl2TnZ5X2hJZHNta3BpSkRGMFZESTdkTGIyWlRfNXNpN2o1U2NVcUtSbnRFRUc3R21icjVSS0QwcmMxcXhSMUE?oc=5" target="_blank">КазМунайГаз, KBR и KazFoodProducts договорились о сотрудничестве в сфере производства SAF - ҚазМұнайГаз</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — КазМунайГаз</span>
-        <span class="date">📅 22.04.2026 07:00</span>
-        
-        <span class="tag">КазМунайГаз</span>
-      </div>
-      <div class="art-summary">КазМунайГаз, KBR и KazFoodProducts договорились о сотрудничестве в сфере производства SAF - ҚазМұнайГаз</div>
-    </div>
-    
-    <div class="article" data-date="2026-11-28" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFA4NWhqYlp6WlZvU2RPcUVnRzJSbmRaUHVCQUp0UDdlYUNxZXBFU0xGV3d2Qk0tZkFVNlExanlZbnJwb2hZc3RWb2hBWkd0dngxTVdnTjRSbmZlQQ?oc=5" target="_blank">Wi-Fi появится еще в 20 самолетах Air Astana - Новости Караганды</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 28.11.2026 10:04</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Wi-Fi появится еще в 20 самолетах Air Astana - Новости Караганды</div>
-    </div>
-    
-    <div class="article" data-date="2026-06-09" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPUnJ5blBKMFhXR1h1NFE5a2dWNFpMTkY4eHJHT0laZGlublNua3YtZndocmdTa2k3TzRVZW5xOUdkMWt6TUVUb3FXMFVhejlFUmVwOU9lcE9mbF93WXNXa3FfeGpId05WQWllZE8xbUZMNjVERGszdHlLUUFNUE5Ka3NQS3FsUQ?oc=5" target="_blank">Air Astana увеличивает авиасообщение с крупнейшими городами Китая - DKNews.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 09.06.2026 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Air Astana увеличивает авиасообщение с крупнейшими городами Китая - DKNews.kz</div>
-    </div>
-    
-    <div class="article" data-date="2025-10-09" data-co="Air Astana" data-s="neutral">
-      <div class="art-title"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQVmw3ZzdUanhUY2xhMDh1ZWZJZTlPOW96U3hldDhyUUhWR2Z4WGJuZkFZNFFqWFhydlNlQjZJcmYzakZhUmt4T0lDMm9POTlPbWtvRVpwd01fQ0tMcUg2aG02eHN2bmFyUkFRY0FjQTVwdWF1NUdDbXVwVU9OOXF5aFJ2bGhXNkJuU0dNZmdRejgxWnpyeW1LTXF5WVd4bldiWjdqODNn?oc=5" target="_blank">Что известно о человеке, который заменит Питера Фостера в Air Astana - Forbes.kz</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Google News — Air Astana</span>
-        <span class="date">📅 09.10.2025 07:00</span>
-        
-        <span class="tag">Air Astana</span>
-      </div>
-      <div class="art-summary">Что известно о человеке, который заменит Питера Фостера в Air Astana - Forbes.kz</div>
-    </div>
-    
-  </div>
-  
 
-  
-  <div class="section" id="sec-pos">
-    <div class="sec-head pos">🟢 ПОЗИТИВНЫЕ <span id="lbl-pos" style="font-weight:400;margin-left:4px;font-size:12px">(1)</span></div>
-    
-    <div class="article" data-date="2026-11-28" data-co="Самрук-Энерго" data-s="positive">
-      <div class="art-title"><a href="https://kz.kursiv.media/2026-11-28/svan-slozhnyj-grunt-zaderzhivaet-stroitelstvo-tec-3-posle-otstavki-v-samruk-energo/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=svan-slozhnyj-grunt-zaderzhivaet-stroitelstvo-tec-3-posle-otstavki-v-samruk-energo" target="_blank">Сложный грунт задерживает строительство ТЭЦ-3 после отставки в «Самрук-Энерго»</a></div>
-      <div class="art-meta">
-        <span class="src">📰 Kursiv.kz</span>
-        <span class="date">📅 28.11.2026 09:55</span>
-        
-        <span class="tag">Самрук-Энерго</span>
-      </div>
-      <div class="art-summary">Сложный грунт задерживает строительство ТЭЦ-3 после отставки в «Самрук-Энерго»</div>
-    </div>
-    
-  </div>
   
 </div>
 
@@ -296,8 +179,8 @@ function toggleS(btn) {
 }
 
 function resetDates() {
-  document.getElementById('date-from').value = '2025-10-09';
-  document.getElementById('date-to').value   = '2026-11-28';
+  document.getElementById('date-from').value = '2026-07-07';
+  document.getElementById('date-to').value   = '2026-07-07';
   applyFilters();
 }
 
